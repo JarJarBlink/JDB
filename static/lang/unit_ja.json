@@ -1,0 +1,19 @@
+{
+"map_title": "にゃんこデータ",
+"fetch_button":"検索",  
+"checkSecond_txt":"秒単位",
+"hp":"体力",
+"pre":"攻発生",
+"cooldown":"再生産",
+"expl":"説明",
+"combo_txt":"コンボ",
+"layer_txt":"レイヤー",
+"post_txt":"BSwing",
+"treasure-btn":"お宝＆レベル",
+"talent_txt":"本能",
+"range_to_castle":"敵城感知射程",
+"atktimes":"攻撃回数",
+"min_txt":"最小位置",
+"hitbox_txt":"体幅",
+"t_range_txt": "射程"
+}
