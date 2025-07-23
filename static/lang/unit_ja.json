@@ -15,5 +15,6 @@
 "atktimes":"攻撃回数",
 "min_txt":"最小位置",
 "hitbox_txt":"体幅",
-"t_range_txt": "射程"
+"t_range_txt": "射程",
+"t_calculate1": "推定"
 }
