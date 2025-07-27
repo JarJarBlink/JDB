@@ -1,1 +1,0 @@
-import{game_data1}from'./data1.js';import{game_data2}from'./data2.js';import{game_data3_1}from'./data3_1.js';const globalcc='tw';const game_data3={"ImageDataLocal":Object.assign({},game_data3_1["ImageDataLocal"],)};const gameData={...game_data1,...game_data2,...game_data3};export{gameData,globalcc};
