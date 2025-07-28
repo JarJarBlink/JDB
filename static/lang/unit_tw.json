@@ -16,5 +16,6 @@
 "min_txt":"最小位置",
 "hitbox_txt":"體寬",
 "t_range_txt": "射程",
-"t_calculate1": "計算"
+"t_calculate1": "計算",
+"cost": "成本"
 }
