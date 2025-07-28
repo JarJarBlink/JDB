@@ -1463,7 +1463,7 @@ mission_receive_bulk_item_chara_evolve2	角色「${charaName}」第4進化
 mission_receive_bulk_item_xp	${itemName} +${itemNum}
 mission_receive_bulk_not_all	<color=255,255,0>持有數量已達上限<br>無法領取任務獎勵</color>
 mission_txt	達成任務${missionNum}個！
-scratch_SNS_004	在 #貓咪刮刮樂 中獲得%d個貓罐頭啦！<br>期間中每週都可挑戰！每週來玩刮刮樂帶走更多貓罐頭吧～！<br><br>#貓咪大戰爭 #貓咪刮刮樂 #貓咪暑假2024
+scratch_SNS_004	在 #貓咪刮刮樂 中獲得%d個貓罐頭啦！<br>期間中每週都可挑戰！每週來玩刮刮樂帶走更多貓罐頭吧～！<br><br>#貓咪大戰爭 #貓咪刮刮樂 #貓咪暑假2025
 SpecialRuleExplanation004	【特賣活動　激稀有】<br>我方的激稀有角色的生產成本減半<br>生產速度變成2倍
 SpecialRuleName004	特賣活動　激稀有
 stage_restriction_limit_7	各稀有度的同時生產數量：<color=255,255,0>%@</color>
@@ -1619,12 +1619,23 @@ treasure_box_redrow_probability	※各道具的出現機率都相同<br>※已�
 treasure_box_result	<color=255,255,0>取得「${itemName}」了！</color><br>可以使用貓罐頭重試一次
 treasure_box_result_2	※重試之後將無法獲得此道具
 treasure_box_result_last_one	<color=255,255,0>取得「${itemName}」了！</color><br>已無法繼續重試
-gama_collabo_05_popup	
-gama_collabo_05_name	
-gama_collabo_05_charatext	
+gama_collabo_05_popup	<flash>索尼克合作進行中！</flash><br>「巧歐」臨時加入加碼多多探險隊！<br>合作期間中將帶來更多量的獎勵<br>※貓罐頭除外
+gama_collabo_05_name	巧歐
+gama_collabo_05_charatext	加碼多多探險隊中臨時加入的巧歐<br>將在合作期間中帶來更多量的獎勵。<br>※貓罐頭除外
 GiftMessage_023	<flash>通關獎勵第十一彈</flash><br>只要通過「引誘萬物真理的大渦」的最後關卡<br>就有機會獲得超稀有的角色「理之賢者扭頓」喔
 SpecialRuleExplanation009	【等速直線運動】<br>可移動的敵我方所有角色<br>都會變成相同的移動速度
 SpecialRuleExplanation010	【好事成雙　EX】 <br>生產EX角色時<br>出現的數量會變2隻
 SpecialRuleName009	等速直線運動
 SpecialRuleName010	好事成雙　EX
 talk_005_push	繼續來參加貓咪對談喔～
+BonusExplanationLabel001	【加分項目：打飛敵人】<br>將敵人打飛<br>※角色的攻擊對象屬性越少，可以獲得的分數越高<br>詳細請參考畫面左下方的「什麼是極排行賽會場？」
+BonusNameLabel001	打飛敵人
+hidden_rarity_3	奇幻的地圖
+nyancombo_error1	<color=255,255,0>因為列表有固定中的角色<br>無法將發動貓咪聯組<br>所需的角色設定到隊伍裡</color>
+SpecialRuleExplanation011	【限定超特賣　超激稀有】<br>場上我方的超激稀有角色只能有1隻<br>生產成本打0.5折，生產速度變成2倍
+SpecialRuleName011	限定超特賣　超激稀有
+slot_autoset_error_1	<color=255,255,0>這是還不能確認到出現敵人的關卡</color>
+slot_autoset_error_2	<color=255,255,0>沒有可以出擊的角色了</color>
+slot_autoset_error_3	<color=255,255,0>沒有可以更換角色的欄位</color>
+slot_tutorial_txt1	<color=255,255,0>自動編成功能</color><br>點擊這個按鈕，貓型CPU就會自動<br>編組應該適合這個關卡的角色！<br>在已可確認到出現敵人的關卡才能使用！
+slot_tutorial_txt2	<color=255,255,0>固定角色功能</color><br>點擊角色就能在自動編成時將他保留在隊伍中！<br>再次點擊角色就可以解除固定！
