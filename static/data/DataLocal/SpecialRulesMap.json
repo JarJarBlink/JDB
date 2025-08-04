@@ -353,6 +353,23 @@
           ]
         }
       }
+    },
+    "36014": {
+      "ContentsType": 0,
+      "RuleNameLabel": "SpecialRuleName012",
+      "RuleExplanationLabel": "SpecialRuleExplanation012",
+      "RuleType": {
+        "1": {
+          "Parameters": [
+            500
+          ]
+        },
+        "7": {
+          "Parameters": [
+            50
+          ]
+        }
+      }
     }
   }
 }

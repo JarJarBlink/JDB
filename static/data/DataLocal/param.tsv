@@ -75,3 +75,4 @@ autoset_level_param	5
 autoset_chara_score	50
 autoset_must_param	5
 autoset_cut_score	0
+battle_powerup_kill_enemy	10

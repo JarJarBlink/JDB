@@ -1668,6 +1668,16 @@
       "grade": 2,
       "line": 912,
       "chara": 1071
+    },
+    {
+      "condition": {
+        "limit": 3
+      },
+      "grade": 3,
+      "line": 270,
+      "map": [
+        1406
+      ]
     }
   ]
 }

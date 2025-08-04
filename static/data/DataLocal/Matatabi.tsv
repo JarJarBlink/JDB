@@ -21,10 +21,10 @@ gatyaID	seed	group	sort	require	guidetext	text	growup
 168	1	9	201	10	cube_guide	cube_growup_1	1	180
 169	1	9	202	10	cube_guide	cube_growup_1	1	181
 170	1	9	203	10	cube_guide	cube_growup_1	1	182
-171	1	9	204	10	cube_guide	cube_growup_1	1	183
+171	1	9	204	10	cube_guide_yellow	cube_growup_1	1	183
 179	0	9	300	-1	cube_guide
 180	0	9	301	-1	cube_guide
 181	0	9	302	-1	cube_guide
 182	0	9	303	-1	cube_guide
-183	0	9	304	-1	cube_guide
+183	0	9	304	-1	cube_guide_yellow
 184	0	9	205	-1	matatabi_guide_guerrilla

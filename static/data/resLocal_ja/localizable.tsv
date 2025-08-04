@@ -41,7 +41,7 @@ clear_adreward_1	獲得経験値アップのチャンスにゃ!!<br>動画を見
 reward_freegatya	1日1回、動画視聴で福引ガチャを<br>無料でまわすことができます。<br>動画を視聴しますか？
 Itemshop_ad_popup1	動画視聴で「XP+${xp}」を獲得できます<br>動画を視聴しますか？
 receive_energy	統率力が%d回復しました。
-clear_adreward_2	<flash>「XP+${xp}」</flash> を獲得しました
+clear_adreward_2	<flash>「経験値 ${xp}」</flash> を獲得しました
 lose_retry_ad	｢お金MAX｣､｢にゃんこ砲発射可能｣な状態で復活！
 Itemshop_ad_popup2	「XP+${xp}」をゲットしました！
 receive_energy_full	統率力が全回復しました。
@@ -820,13 +820,15 @@ filter_option_description1	<color=0,0,0>出撃条件が設定されているス�
 filter_option_description2	<color=0,0,0>「ターゲット」「効果/能力」の絞り込み方法を切り替えます<br>OR：条件に一部でも一致するキャラを表示<br>AND：条件に全て一致するキャラを表示</color>
 filter_option_description3	<color=0,0,0>「進化ボタン」が表示されている<br>キャラクターを表示します</color>
 filter_option_description4	<color=0,0,0>「本能ボタン」が解放されている<br>キャラクターを表示します</color>
+filter_option_description5	<color=0,0,0>進化などのパワーアップによって<br>絞り込み条件の「ターゲット」「効果/能力」が<br>解放されるキャラクターも含めて表示します</color>
 sort_tutorial_txt1	<flash>絞り込み機能と並び替え機能が解放されました！</flash><br>画面中央の右側のボタンでキャラクターの絞り込み、<br>画面中央の左側のボタンでキャラクターの並び替えが可能です
 item_pack_purchased_chara	%@キャラクター<color=255,255,0>「%@」</color><br>
 enemy_list_title	出現する敵
 enemy_name_question	？？？
 calendar_title	通知予約していたイベントが開催されたにゃ！
 calendar_error	サーバーと通信が行われていないか、<br>端末時刻にずれが発生しています。<br>通信環境と端末時刻をご確認ください。
-calendar_99h	99h以上
+calendar_day	${day}日
+calendar_limit	99日以上
 legendquest_tutorial1	レジェンドクエストにようこそ！<br>ここではステージと編成の内容が<br>ランダムに選ばれるにゃ！
 legendquest_tutorial2	ステージの挑戦には王冠が必要にゃ！<br>王冠はレジェンドマップのステージレベル1～4を<br>それぞれクリアすると獲得できるにゃ！
 legendquest_tutorial3	レジェンドクエストではバトル中離脱すると<br>王冠、統率力、アイテムが戻ってこないから<br>注意して挑戦するにゃ！
@@ -873,6 +875,7 @@ talk_005_push	にゃんこトークの続きをやるにゃ～
 talk_006_push	クイズの続きをやるにゃ～
 talk_007_push	「第3章 ネコの結婚」の続きをやるにゃ～
 talk_008_push	「ネコからの援軍要請」の続きをやるにゃ～
+talk_009_push	経営するリゾートについてお話を聞いて欲しいにゃ～
 DL_permission	最新のゲームデータをダウンロードします。<br>Wi-Fi環境など通信環境のよい場所でのダウンロードをおすすめします。<br>データサイズ：%s MB
 map_minutes	【やる気回復中にゃ…】<br>ネコビタンAを${itemNum}個使用しますか？<br>クリア可能回数が1回復します<br><color=255,255,0>クリア可能回数 0/${countNum}（あと${minutes1}分で1回復）</color>
 map_minutes_empty	【やる気がゼロでもう挑戦できないにゃ…】<br>ネコビタンAを${itemNum}個使用しますか？<br>クリア可能回数が1回復します<br><color=255,255,0>クリア可能回数 0/${countNum}（あと${minutes1}分で1回復）</color>
@@ -923,6 +926,7 @@ potential_name	本能
 potential_name1	超本能
 potential_storge	現在、貯蔵庫に%d個所持しています
 equipment_error	この本能玉は「%@に%@」の効果を持つ<br>キャラクターにのみ装備可能です
+equipment_error2	この本能玉は「%@」の能力を持つ<br>キャラクターには装備できません
 slotunlock_medal_txt1	解放条件を満たしていません<br>解放条件：にゃんこメダル%d個以上獲得
 collabo_send_message1	「%@」を起動しますか？
 collabo_send_title_31	にゃんこ大泥棒
@@ -1051,6 +1055,7 @@ scratch_SNS_001	#新春にゃんこスクラッチくじ でネコカン%d個ゲ
 scratch_SNS_002	#にゃんこ学園購買部特製スクラッチくじ でネコカン%d個ゲットしたにゃ！<br>期間中、毎週チャレンジ可能！毎週参加してたくさんネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #にゃんこスクラッチ #トキメキにゃんこ学園
 scratch_SNS_003	#ぷちにゃんこスクラッチくじ でネコカン%d個ゲットしたにゃ！<br>今すぐ参加してネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #ぷちにゃんこスクラッチ
 scratch_SNS_004	#にゃんこスクラッチくじ でネコカン%d個ゲットしたにゃ！<br>期間中、毎週チャレンジ可能！毎週参加していっぱいネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #にゃんこスクラッチ #ねこなつ2025
+scratch_SNS_005	#にゃんこスクラッチくじ でネコカン%d個ゲットしたにゃ！<br>期間中、毎週チャレンジ可能！毎週参加していっぱいネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #にゃんこスクラッチ #ねこなつ2025
 unlock_popup_message_108	<flash>ネコビタンステージ「ブルーインパクト」が解放！</flash><br>ネコビタンを使っていつでも挑戦することができます
 unlock_popup_message_109	<flash>ネコビタンステージ「狂乱のもねこ降臨」が解放！</flash><br>ネコビタンを使っていつでも挑戦することができます
 unlock_popup_message_110	<flash>ネコビタンステージ「緊急暴風警報」が解放！</flash><br>ネコビタンを使っていつでも挑戦することができます
@@ -1172,7 +1177,7 @@ item_pack_name_89	プラチナチケット ダブル販売 1回目 購入
 item_pack_name_90	プラチナチケット ダブル販売 2回目 購入
 ScatCPU_info1	${itemName1}を<flash>${itemNum1}個</flash>使用して<br>戦闘スキップを開始しますか？<br>（本日のスキップ可能回数残り ${itemNum2}回）
 ScatCPU_info2	<flash>ニャンピュータ使い放題中はニャンピュータの消費なし！</flash><br>戦闘スキップを開始しますか？<br>（本日のスキップ可能回数残り ${itemNum}回）
-ScatCPU_XPdrop	<color=255,255,0>完全勝利!!</color><br>ステージクリア経験値<flash>ゲット！！</flash><br>「${itemName}+${itemNum}」
+ScatCPU_XPdrop	<color=255,255,0>完全勝利!!</color><br>ステージクリア経験値<flash>ゲット！！</flash><br>「経験値 ${itemNum}」
 ScatCPU_message	<color=255,0,255>ニャンピュータ</color><br><color=0,0,0>ネコ型CPUが戦闘をやってくれます<br>ネコ型なので性能は期待できない<br>アイコンを追加タップすると性能が超アップして<br>「CLEAR!」ステージの戦闘をスキップできます</color>
 ScatCPU_error1	戦闘スキップ可能回数が上限に達しています<br>スキップ可能回数は翌日の0時に全回復します
 ScatCPU_error2	端末時刻が変更された可能性があります<br>しばらくの間、戦闘スキップは使用できません
@@ -1183,6 +1188,8 @@ ScatCPU_error6	${itemName1}を<flash>${itemNum1}個</flash>使用して<br>戦�
 ScatCPU_error7	ニャンピュータ使い放題中はニャンピュータの消費なし！<br>戦闘スキップを開始しますか？<br><color=255,255,0>戦闘スキップではEXステージは発生しません</color><br>（本日のスキップ可能回数残り ${itemNum2}回）
 ScatCPU_error8	未クリアステージのため戦闘スキップは使用できません
 ScatCPU_error9	このステージは戦闘スキップできないにゃ<br>自分の力でがんばるにゃ
+ScatCPU_ad_confirm	経験値アップのチャンスにゃ！<br>ゲットしたステージクリア経験値を<br>動画視聴で<flash>「経験値 ${xp}」×2</flash>にしますか？
+ScatCPU_ad_result	ステージクリア経験値<flash>アップ！！</flash><br>「経験値 <flash>${xp}</flash>」
 push_permission	アラームとリマインダーの端末設定をONにすると<br>正確な時刻に通知を受け取ることができます<br><color=255,255,0>Androidの端末設定画面を開きますか？</color>
 stage_SPChara_warning	このキャラクターはまだ出撃できません！
 enemy_info_unknown	<color=255,255,0>未確認の敵キャラクターのため<br>図鑑へ移動できません<br>勝利・敗北・10秒後の離脱で確認できます</color>
@@ -1199,6 +1206,7 @@ SpecialRuleName008	にゃんこ砲超強化
 SpecialRuleName009	等速直線運動
 SpecialRuleName010	プラスワン EX
 SpecialRuleName011	限定超特売 超激レア
+SpecialRuleName012	現品限り
 SpecialRuleExplanation000	【おこづかい制】<br>最初にお金をたくさんもらえます<br>ただし、時間経過や敵の撃破などで<br>所持金が増えることはありません
 SpecialRuleExplanation001	【生産スピード統一】<br>すべての味方キャラクターの<br>生産スピードが同じになり固定されます
 SpecialRuleExplanation002	【レア度代表戦】<br>各レア度ごとに1体ずつしか生産できません<br>編成は自由に行う事ができます
@@ -1211,10 +1219,13 @@ SpecialRuleExplanation008	【にゃんこ砲超強化】 <br>にゃんこ砲の�
 SpecialRuleExplanation009	【等速直線運動】<br>移動可能な敵味方すべてのキャラクターの<br>移動速度が同じになります
 SpecialRuleExplanation010	【プラスワン EX】 <br>レア度：EXの味方キャラクター生産時の<br>出現数が2体になります
 SpecialRuleExplanation011	【限定超特売 超激レア】<br>レア度：超激レアの味方キャラクターは1体ずつしか生産できませんが<br>生産コストが95%OFF、生産スピードが倍になります
+SpecialRuleExplanation012	【現品限り】<br>１回の戦闘で生産できるキャラ数が50体までになり<br>すべての味方キャラクターの生産スピードが同じになります
 BonusNameLabel000	攻撃力ダウン
 BonusNameLabel001	ふっとばす
+BonusNameLabel002	めっぽう強い
 BonusExplanationLabel000	【スコアボーナス：攻撃力ダウン】<br> 敵に攻撃力ダウンを付与する<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
 BonusExplanationLabel001	【スコアボーナス：ふっとばす】<br> 敵をふっとばす<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
+BonusExplanationLabel002	【スコアボーナス：めっぽう強い】<br> めっぽう強いキャラクターで対象属性の敵を攻撃する<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
 Account_iOS13_error	iOS 13未満の方はAppleでサインインがご利用頂けません
 treasure_get	ダブルタップでゲットできるステージへ移動します
 treasure_geterror	ステージが解放されていないため移動できません
@@ -1231,6 +1242,7 @@ matatabi_guide_common	※ネコビタンステージは毎日開催されます
 matatabi_guide_special	※一定確率で虹マタタビがドロップします
 matatabi_guide_guerrilla	「${stageName}」は<br>ゲリラで開催されます<br>詳しくはイベントカレンダーをチェック！
 cube_guide	超獣討伐ステージは<br>毎日ゲリラで開催されます<br>詳しくはイベントカレンダーをチェック！
+cube_guide_yellow	「アシビニ砂漠」「ジャンフォレ火山」は<br>毎日ゲリラで開催されます<br>詳しくはイベントカレンダーをチェック！
 gamatotoBonus	ガマトトは感覚を研ぎ澄ました！
 gamatoto_popup1	${areaName}<br>${timeText}に再び出発します<br>${bonuspop}
 gamatoto_popup2	にゃんこ隊員とオトート開発隊の助手が<br>定員オーバーしています<br>${gamatotoName}隊員【${gamatotoRarity}】<br>とお別れしますか？
@@ -1286,3 +1298,5 @@ slot_autoset_error_2	<color=255,255,0>出撃可能なキャラクターが見つ
 slot_autoset_error_3	<color=255,255,0>変更可能なキャラクターがいません</color>
 slot_tutorial_txt1	<color=255,255,0>自動編成機能</color><br>ボタンをタップするとネコ型CPUがステージに<br>合いそうなキャラを自動で編成してくれるぞ！<br>出現する敵を確認できるステージで使用可能！
 slot_tutorial_txt2	<color=255,255,0>ピン留め機能</color><br>キャラをタップすると自動編成時にキープできるぞ！<br>再度タップすることでオン・オフ切り替え可能！
+filter_equipment_err1	<color=255,255,0>絞り込みの結果、該当する<br>本能玉を装着したキャラクターは<br>見つかりませんでした。</color>
+filter_equipment_tutorial	本能玉を装着したキャラクターを表示できます<br>「等級」「ターゲット」「効果/能力」の<br>条件で絞り込むこともできます
