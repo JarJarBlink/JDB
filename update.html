@@ -16,6 +16,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="static/js/home/lang.js"></script>
 <script src="static/js/update/update.js"></script>
+<script src="static/js/update/scroll.js"></script>
 <meta name="color-scheme" content="dark light"/>
 <meta name="theme-color" content=""/>
 <link rel="stylesheet" href="static/dark-mode-toggle/dark.css" media="(prefers-color-scheme: dark)"/>
@@ -60,10 +61,49 @@
     border-radius: 4px;
     object-fit: cover;
 }
+
+#pagetop{
+	width:8%;
+	max-width: 110px;
+	min-width: 60px;
+	position: fixed;
+	bottom:-30%;
+	right: -14%;
+	z-index: 200;
+}
+
+#pagetop a{
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  cursor:pointer;
+}
+.move_up01{
+	animation:ani_move_up01 0.4s ease-in-out 0.1s forwards;
+}
+
+@keyframes ani_move_up01{
+	0% { bottom: -30%; right: 0.5%;}
+	100% { bottom: 1%; right: 0.5%;}
+}
+
+.move_fly01{
+	animation:ani_move_fly01 0.7s ease-in-out forwards;
+}
+
+@keyframes ani_move_fly01{
+	0% { bottom: 1%; right: 0.5%;}
+	100% { bottom: 120%; right: 0.5%;}
+}
 </style>
 <body>
 <article>
 <h2 class="top" id="title"></h2><div id="update"></div>
+<div id="pagetop">
+    <a href="#">
+        <img src="static/img/others/pagetop_02.png" alt="">
+        <br>
+        <img src="static/img/others/pagetop_01.png" alt="">
+    </a>
+</div>
 <br>
 <br>
 <br>
