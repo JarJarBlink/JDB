@@ -1,0 +1,4 @@
+export const daf={tw:"${from}% 降攻至${to}% (${frameStart} ~ ${frameEnd})",ja:"${from}%の確率で ${frameStart} ~ ${frameEnd} 攻撃力${to}%に低下",en:"xxx"};export const stf={tw:"善於攻擊 (傷害x1.5 ~ 1.8, 受到傷害x0.4 ~ 0.5)",ja:"めっぽう強い (与1.5～1.8倍・被0.5～0.4倍)",en:"xxx"};export const unr={tw:"※100% 全屬性攻擊無效",ja:"※100% 全ての敵に攻撃無効",en:"※100% xxx"}
+export const ff={tw:"${from}% 停止 ${frameStart} ~ ${frameEnd}",ja:"${from}% 動きを止める ${frameStart} ~ ${frameEnd}",en:"xxx"}
+export const sf={tw:"${from}% 變慢 ${frameStart} ~ ${frameEnd}",ja:"${from}%の確率 ${frameStart} ~ ${frameEnd} 動きを遅くする",en:"xxx"}
+export const aof={tw:"只能攻擊",ja:"ターゲット限定",en:"xxx"}
