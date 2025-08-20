@@ -1,2 +1,2 @@
-# JAR-Battlecats-Database 
+# JDB
 Developed by JAR
