@@ -19,5 +19,6 @@
   "tlimit": "出撃制限",
   "ex_stage": "EXステージ",
   "gift_item_drop": "ドロップ",
-  "hp_bgm_text": "城体力 < {threshold}%"
+  "hp_bgm_text": "城体力 < {threshold}%",
+  "pop": "表示・挑戦条件"
 }

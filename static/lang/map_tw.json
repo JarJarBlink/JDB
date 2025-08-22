@@ -19,5 +19,6 @@
   "tlimit": "出擊限制",
   "ex_stage": "EX關卡",
   "gift_item_drop": "獎勵",
-  "hp_bgm_text": "塔血 < {threshold}%"
+  "hp_bgm_text": "塔血 < {threshold}%",
+  "pop": "表示・挑戰條件"
 }
