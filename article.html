@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1">
+    <title>JAR Battle Cats Database</title>
+    <link rel="icon" href="static/favicon.ico">
+    <link rel="stylesheet" href="static/css/database/style.css">
+    <link rel="stylesheet" href="static/css/database/origin.css">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="noindex">
+    <noscript><style>body { display: none; }</style></noscript>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <meta name="color-scheme" content="dark light"/>
+    <meta name="theme-color" content=""/>
+    <link rel="stylesheet" href="static/dark-mode-toggle/dark.css" media="(prefers-color-scheme: dark)"/>
+    <link rel="stylesheet" href="static/dark-mode-toggle/light.css" media="(prefers-color-scheme: light)"/>
+    <link rel="stylesheet" href="static/dark-mode-toggle/common.css"/>
+    <link rel="stylesheet" href="static/dark-mode-toggle/slider.css"/>
+    <script type="module" src="static/dark-mode-toggle/dark-mode-toggle-playground.js"></script>
+    <script type="module" src="static/dark-mode-toggle/dark-mode-toggle.js"></script>
+    <style>
+        /* ----------------------------------------
+           Article: Formal English Style
+        ---------------------------------------- */
+
+        #jar-details {
+            max-width: 850px; 
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.7;
+            font-family: "Georgia", "Times New Roman", serif;
+            font-size: 1rem;
+            color: #222;
+        }
+ 
+        #jar-details .collapsible-inner {
+            padding: 1em 1.5em;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        /*
+        #jar-details h3 {
+            font-size: 1.4rem;
+            margin-top: 1.8em;
+            margin-bottom: 0.6em;
+            font-weight: 600;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.3em;
+        }
+
+        #jar-details h4 {
+            font-size: 1.15rem;
+            margin-top: 1.2em;
+            margin-bottom: 0.5em;
+            font-weight: 600;
+            color: #333;
+        }*/
+
+        #jar-details p {
+            margin-bottom: 1.2em;
+            text-align: justify;
+        }
+
+        #jar-details ul,
+        #jar-details ol {
+            margin: 1em 0 1em 2em;
+        }
+
+        #jar-details li {
+            margin-bottom: 0.5em;
+        }
+
+        #jar-details dl {
+            margin: 1em 0;
+            padding-left: 1em;
+        }
+
+        #jar-details h4 {
+            font-weight: bold;
+            margin-top: 0.6em;
+            color: #000;
+        }
+
+        #transcription-date {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1.2em;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<article id="about-section">
+    <h2 class="top">Diving into the Depths of Battle Cats</h2>
+    <div id="jar-details" class="collapsible">
+        <div class="collapsible-inner">
+            <p id="transcription-date">4 September 2025</p>
+
+            <h3>The Hidden Timing of *The Battle Cats*</h3>
+            <p>
+                <em>The Battle Cats</em> has been around for over a decade, yet the developers have never released
+                official character statistics. All numerical data circulating today is the result of community research
+                and in-game testing. However, few have questioned the accuracy of these long-standing numbers, terms,
+                and conventions. Even those who provide the data have rarely given rigorous explanations or definitions
+                that faithfully match the game’s actual mechanics.
+            </p>
+            <p>
+                While such numerical discrepancies do not significantly impact casual gameplay, they become problematic
+                for those who seek a deeper understanding of the game. For them, vague or inconsistent terminology makes
+                it impossible to give precise explanations. Thus, I will attempt to provide a clear guide and framework
+                that resolves these inconsistencies. This is a challenging task, since I must ensure that the definitions
+                are both logically sound and faithful to in-game behavior, requiring a holistic view of
+                <em>The Battle Cats</em>’ mechanics.
+            </p>
+
+            <h3>What Is a Frame (F)?</h3>
+            <p>
+            <em>The Battle Cats</em> runs at 30 FPS, with each frame (1F) corresponding to 1/30 of a second. 
+            We define 1F as the duration of a single frame. It is important to note that, unlike continuous physical time, 
+            frames are discrete units whose counting inherently represents both a temporal length and a point in time 
+            (i.e., each 1F is a discrete duration on the timeline and simultaneously a specific moment). 
+            In contrast, seconds are generally treated as a continuous measure of duration, 
+            while when referred to as points in time, they are described as temporal instants. 
+            This particular nature of frames will influence the conceptual understanding of FSwing and BSwing discussed later.
+            In short, a "frame" is the smallest unit of in-game logic, whereas a "second" is merely an abstract measure of continuous time.
+            </p>
+
+            <h3>Terminology and Definitions</h3>
+            <dl>
+                <h4>Real Attack Frequency</h4>
+                <dd>The actual attack frequency of a unit in-game. This is the duration (in frames) from the attack
+                    judgment frame of one attack to the attack judgment frame of the next attack.</dd>
+
+                <h4>Attack Frequency</h4>
+                <dd>The base attack frequency of a unit. If the attack animation loops seamlessly, this is measured
+                    from one attack judgment frame to the next.</dd>
+
+                <h4>Pre-attack Animation (FSwing)</h4>
+                <dd>The number of frames before an attack (excluding the attack judgment frame).</dd>
+
+                <h4>Post-attack Animation (BSwing)</h4>
+                <dd>The number of frames following the pre-attack phase, including the attack judgment frame itself.</dd>
+
+                <h4>Standby Animation (Wait)</h4>
+                <dd>The animation played after the attack animation ends, before the next attack animation begins.</dd>
+
+                <h4>X Time</h4>
+                <dd>A placeholder term: <strong>X Time = BSwing + Wait</strong></dd>
+            </dl>
+
+            <h3>Example Case</h3>
+            <p><strong>Unit No.71-3, 飛翔の武神・真田幸村</strong></p>
+            <ul>
+                <li>Attack animation begins at 0F</li>
+                <li>Attack finishes at 136F</li>
+                <li>Next attack animation begins at 137F</li>
+                <li>Second attack lands at 138F</li>
+            </ul>
+            <p><strong>Attack Frequency = 138F – 1F = 137F</strong></p>
+
+            <p><strong>Unit No.59-4, ネコベビーワールド</strong></p>
+            <ul>
+                <li>Attack starts at 0F, attack lands at 60F</li>
+                <li>Next attack animation begins at 299F</li>
+            </ul>
+            <p><strong>Attack Frequency = 299F – 0F = 299F</strong></p>
+
+            <p>
+                飛翔の武神・真田幸村 actually waits <strong>1F</strong> before restarting the next attack animation. This pause is
+                extremely short and often overlooked. Therefore:
+            </p>
+            <ul>
+                <li>Database value: 137F (incorrect)</li>
+                <li>Correct value: <strong>Real Attack Frequency = 138F</strong></li>
+            </ul>
+
+            <h3>The TBA Problem</h3>
+            <p>
+                The community has long used the term <strong>TBA (Time Between Attacks)</strong>. For 飛翔の武神・真田幸村 ,
+                databases show TBA = 0F. But in fact:
+            </p>
+            <p>
+                <strong>TBA = Real Attack Frequency = 138F</strong>  
+                (or alternatively, TBA = 130F if measured as the time between the previous attack landing and the next attack animation start)
+            </p>
+            <p>
+                This shows that TBA is only meaningful when <strong>TBA &gt; BSwing</strong>. When
+                <strong>TBA &lt; BSwing</strong>, the definition breaks down, leading to contradictions. I propose
+                instead defining such timings as <strong>X Time = BSwing + Wait</strong>.
+            </p>
+
+            <h3>FSwing and BSwing: The Definition Problem</h3>
+            <p>
+                In common understanding, FSwing is often considered to include the attack judgment frame itself.  
+                For example, in unit No.71-3 <em>飛翔の武神・真田幸村</em>, the attack sequence proceeds as 0F, 1F, 2F, …, with the hit occurring at 1F.
+            </p>
+            <ul>
+                <li>Frames: 0F, 1F, 2F…</li>
+                <li>Attack occurs at 1F</li>
+                <li>FSwing length: 1F − 0F = 1F (attack frame included)</li>
+            </ul>
+            <p>
+                However, to remain consistent with existing database conventions, FSwing should instead be defined as spanning from 0F through 1F, making its length 2F.  
+                Yet the first frame (0F) is hidden and not rendered in-game, leaving only one visible frame.  
+                This distinction reflects a subtle game mechanic: attack animations in <em>The Battle Cats</em> always begin displaying from the second frame, even though the first frame exists and is counted internally.
+            </p>
+            <p>
+                Although defining FSwing in this manner can match observed in-game behavior, it creates a discrepancy between the theoretical and displayed frame count.  
+                Treating FSwing as 2F requires introducing a “virtual” frame to reconcile it with the database value of 1F.  
+                This method is ultimately unsatisfactory, as it obscures the distinction between FSwing and BSwing and adds unnecessary complexity.
+            </p>
+
+            <h3>Why Define FSwing This Way?</h3>
+            <p>
+                Let us explain why FSwing is defined this way. Pre-attack Animation (FSwing) represents the number of frames before the attack judgment frame, excluding the attack frame itself.  
+                This definition is grounded in a concrete game mechanic observable in <em>The Battle Cats</em>. Careful gameplay reveals that a unit may react differently when knocked back (KB) at different phases of its attack animation:
+            </p>
+            <ul>
+                <li>If a unit is knocked back during FSwing → the attack sequence restarts.</li>
+                <li>If a unit is knocked back during BSwing → the attack animation is canceled and the unit transitions to the Wait animation.</li>
+                <li>If a unit is knocked back exactly on the attack judgment frame → it is counted as BSwing, and the unit transitions to Wait rather than restarting the attack.</li>
+            </ul>
+            <p>
+                Some may ask: “Doesn’t No.71-3 <em>飛翔の武神・真田幸村</em> immediately re-attack if knocked back on the attack frame?”  
+                Remember, even in that case there is a hidden 1F delay before the unit begins the next attack. This 1F is extremely short, so it often goes unnoticed.  
+                Furthermore, the game designers deliberately rendered this 1F as visually identical to the first frame of the attack animation and display the animation starting from the second frame, ensuring a seamless visual experience.  
+                As a result, the attack judgment frame retains the unique properties of BSwing. Defining FSwing in this manner allows us to accurately describe the underlying mechanics of <em>The Battle Cats</em> without ambiguity.
+            </p>
+
+            <h3>Conclusion</h3>
+            <p>
+                These findings are based on years of observation and in-game testing. While they may not affect casual
+                play, consistent and accurate terminology is essential for researchers, database maintainers, and
+                players who wish to fully understand the mechanics of <em>The Battle Cats</em>.
+            </p>
+            <p>
+                Feel free to cite this work — I hope it serves as a foundation for more accurate and consistent
+                representations of the game’s underlying mechanics.
+            </p>
+        </div>
+    </div>
+    <dark-mode-toggle class="slider" mode="dark"></dark-mode-toggle>
+</article>
+</body>
+</html>
