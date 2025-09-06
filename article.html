@@ -160,7 +160,7 @@
             <ul>
                 <li>Attack animation begins at 0F</li>
                 <li>Attack finishes at 136F</li>
-                <li>Next attack animation begins at 137F</li>
+                <li>Next attack animation begins at 137F (Inconsistent with the empirical facts of the game)</li>
                 <li>Second attack lands at 138F</li>
             </ul>
             <p><strong>Attack Frequency = 138F – 1F = 137F</strong></p>
@@ -176,9 +176,15 @@
                 飛翔の武神・真田幸村 actually waits <strong>1F</strong> before restarting the next attack animation. This pause is
                 extremely short and often overlooked. Therefore:
             </p>
+            <p><strong>Accurate calculation method</strong></p>
+            <li>Attack animation begins at 0F</li>
+            <li>First attack lands at 1F</li>
+            <li>Attack finishes at 136F</li>
+            <li>Next attack animation begins at 138F</li>
+            <li>Second attack lands at 138F</li>
             <ul>
-                <li>Database value: 137F (incorrect)</li>
-                <li>Correct value: <strong>Real Attack Frequency = 138F</strong></li>
+                <li>Database value: 137F</li>
+                <li>Correct value: <strong>Real Attack Frequency = 138F-1F = 137F</strong></li>
             </ul>
 
             <h3>The TBA Problem</h3>
