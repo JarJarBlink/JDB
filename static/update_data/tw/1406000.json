@@ -38,20 +38,28 @@
   "sCombo_id_list": [
     "372"
   ],
-  "sNew_stageND_list": [],
+  "sNew_stageND_list": [
+    "34022"
+  ],
   "sNew_stageS_list": [
     "1406",
     "1407",
     "1408"
   ],
-  "sNew_stageSR_list": [],
+  "sNew_stageSR_list": [
+    "36014"
+  ],
   "sNew_stageC_list": [],
   "sNew_stageCA_list": [],
   "sNew_stageB_list": [],
   "sNew_stageEX_list": [],
-  "sNew_stageA_list": [],
+  "sNew_stageA_list": [
+    "24073"
+  ],
   "sNew_stageV_list": [],
-  "sNew_stageR_list": [],
+  "sNew_stageR_list": [
+    "11035"
+  ],
   "sNew_stageH_list": [],
   "sNew_stageG_list": [],
   "sNew_stageT_list": [],
