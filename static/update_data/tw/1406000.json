@@ -1,0 +1,165 @@
+{
+  "date": "2025/9/8",
+  "sCat_id_list": [
+    "817",
+    "819",
+    "820",
+    "822"
+  ],
+  "sCat_sprite_id_list": [
+    "818",
+    "821"
+  ],
+  "sTrue_form_new_id_list": [
+    "715"
+  ],
+  "sTrue_4form_new_id_list": [],
+  "sNew_skill_id_list": [
+    "261",
+    "632"
+  ],
+  "sUnitbuy_change_list": [
+    "776"
+  ],
+  "sGatya_names_Rlist": [
+    "gatya_bnr1004.png",
+    "gatya_bnr1005.png",
+    "gatya_bnr1006.png",
+    "gatya_bnr1007.png",
+    "gatya_bnr1008.png",
+    "gatya_bnr1009.png",
+    "gatya_bnr1012.png",
+    "gatya_bnr1014.png"
+  ],
+  "sGatya_names_Nlist": [],
+  "sGatya_names_Elist": [
+    "gatya_e_bnr42.png",
+    "gatya_e_bnr43.png"
+  ],
+  "sCombo_id_list": [
+    "372"
+  ],
+  "sNew_stageND_list": [
+    "34022"
+  ],
+  "sNew_stageS_list": [
+    "1406",
+    "1407",
+    "1408",
+    "1409",
+    "1410"
+  ],
+  "sNew_stageSR_list": [
+    "36014"
+  ],
+  "sNew_stageC_list": [],
+  "sNew_stageCA_list": [],
+  "sNew_stageB_list": [],
+  "sNew_stageEX_list": [],
+  "sNew_stageA_list": [
+    "24073",
+    "24074"
+  ],
+  "sNew_stageV_list": [],
+  "sNew_stageR_list": [
+    "11035"
+  ],
+  "sNew_stageH_list": [],
+  "sNew_stageG_list": [],
+  "sNew_stageT_list": [],
+  "sNew_4star_stage_list": [],
+  "sNew_3star_stage_list": [],
+  "sEnemy_id_list": [
+    "741",
+    "742",
+    "743"
+  ],
+  "sEnemy_change_list": [
+    "186"
+  ],
+  "sNew_medal_list": [
+    "123"
+  ],
+  "sCastle_ids": [
+    "scratchbutton_005",
+    "scratch_005"
+  ],
+  "sMission_id_list": [
+    949,
+    950,
+    951,
+    971,
+    972,
+    973,
+    974,
+    975,
+    976,
+    977,
+    978,
+    979,
+    980,
+    981,
+    982,
+    983,
+    984,
+    985,
+    1065,
+    1066,
+    1067,
+    1068,
+    1069,
+    1070,
+    1071,
+    1072,
+    1073,
+    1074,
+    1075,
+    1076,
+    1077,
+    1078,
+    1079,
+    1080,
+    1081
+  ],
+  "sRankgift_des": [
+    "&nbsp;UR25600\t獲得5個貓眼石【EX】\n",
+    "&nbsp;UR25700\t獲得5個貓眼石【稀有】\n",
+    "&nbsp;UR25800\t獲得5個貓眼石【激稀有】"
+  ],
+  "sMusic_id_list": [],
+  "sSoundEffect_ids": [],
+  "sNew_bg_list": [
+    "bg244",
+    "bg245",
+    "bg246",
+    "bg247"
+  ],
+  "combo_list": [
+    "&nbsp;無法忍耐食慾 — 「使動作停止」的效果\n【小】<br><a href=\"/JAR-Battlecats-Database/u000.html?cc=tw&unit=725\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni725_c00.png\" width=64 title=\"725(2階)\"></a>"
+  ],
+  "mission_list": [
+    "&nbsp;4. (特別任務) 統一天下之路完成①⑥的所有任務br來獲得白金券吧 <br>&nbsp;報酬：白金券 +1\n<br>",
+    "&nbsp;5. (特別任務) 統一天下之路完成①④的所有任務br將見習武士貓加入夥伴 <br>&nbsp;報酬：見習い武者ネコ +1\n<br>",
+    "&nbsp;6. (特別任務) 統一天下之路①通過「統一天下之路前篇」關卡5 <br>&nbsp;報酬：稀有券 +1\n<br>",
+    "&nbsp;7. (特別任務) 統一天下之路②通過前篇的「狗仔之亂」關卡1次吧br在已通關的「統一天下之路前篇」關卡中經過一段時間後會出現 <br>&nbsp;報酬：貓咪轉蛋券 +1\n<br>",
+    "&nbsp;8. (特別任務) 統一天下之路③通過「合戰武將貓彈」關卡1 <br>&nbsp;報酬：貓咪轉蛋券 +1\n<br>",
+    "&nbsp;9. (特別任務) 統一天下之路④花4天和貓咪基地的貓咪對話br完成貓咪的援軍請求吧 <br>&nbsp;報酬：稀有券 +1\n<br>",
+    "&nbsp;10. (特別任務) 統一天下之路⑤通過「統一天下之路後篇」關卡1 <br>&nbsp;報酬：貓咪轉蛋券 +1\n<br>",
+    "&nbsp;11. (特別任務) 統一天下之路任務⑥通過「決戰反叛的戰國魔王」關卡1 <br>&nbsp;報酬：稀有券 +1\n<br>",
+    "&nbsp;12. (主要任務) 統一天下之路任務br活動期間中世界篇第1章通關後即可達成 <br>&nbsp;報酬：白金券 +1\n<br>",
+    "&nbsp;13. (特別任務) 統一天下之路任務編成生產成本都是1000元以上的角色br通過真傳奇關卡「原始旅居魂」關卡1次吧 <br>&nbsp;報酬：貓眼石【傳說】 +3\n<br>",
+    "&nbsp;14. (特別任務) 統一天下之路任務編成9隻以上基本角色br通過真傳奇關卡「豁命一把鏟」關卡1次吧 <br>&nbsp;報酬：貓眼石【傳說】 +3\n<br>",
+    "&nbsp;15. (特別任務) 統一天下之路任務編成8隻以上激稀有角色br通過真傳奇關卡「獲得神面的人物」關卡1次吧 <br>&nbsp;報酬：貓眼石【傳說】 +3\n<br>",
+    "&nbsp;16. (特別任務) 統一天下之路任務編成生產成本都是2000元以下的角色br通過真傳奇關卡「獲得生命的山峰」關卡1次吧 <br>&nbsp;報酬：貓眼石【傳說】 +3\n<br>",
+    "&nbsp;17. (特別任務) 統一天下之路任務用5隻以下角色的編成br通過真傳奇關卡「起源的覺醒」關卡1次吧 <br>&nbsp;報酬：貓眼石【闇】 +3\n<br>",
+    "&nbsp;18. (特別任務) 統一天下之路任務編成9隻以上稀有角色br通過傳奇故事0「初始的世界」關卡1次吧 <br>&nbsp;報酬：貓眼石【闇】 +3\n<br>",
+    "&nbsp;19. (特別任務) 經營渡假勝地【第1彈】夢幻天堂計畫①br通過「貓咪的暑假 享樂天堂」關卡5次吧（完成度5/5） <br>&nbsp;報酬：傳說的鈔票 +5\n<br>",
+    "&nbsp;20. (特別任務) 經營渡假勝地【第1彈】夢幻天堂計畫②br通過「貓咪的暑假 享樂天堂」關卡10次吧（完成度10/10） <br>&nbsp;報酬：傳說的鈔票 +10\n<br>",
+    "&nbsp;21. (特別任務) 經營渡假勝地【第1彈】夢幻天堂計畫③br通過「貓咪的暑假 享樂天堂」關卡15次吧（完成度15/15） <br>&nbsp;報酬：稀有券 +1\n<br>",
+    "&nbsp;22. (特別任務) 經營渡假勝地【第1彈】與經營夥伴簽約①br從活動轉蛋中獲得1隻「顧問貓」吧 <br>&nbsp;報酬：貓咪轉蛋券 +1\n<br>",
+    "&nbsp;23. (特別任務) 經營渡假勝地【第1彈】與經營夥伴簽約②br從活動轉蛋中獲得3隻「顧問貓」吧 <br>&nbsp;報酬：貓咪轉蛋券 +1\n<br>",
+    "&nbsp;25. (特別任務) 經營渡假勝地【第2彈】成功人士的名流生活br通過「渡假樂園盡情揮霍」關卡1 <br>&nbsp;報酬：傳說的鈔票 +5\n<br>",
+    "&nbsp;26. (特別任務) 經營渡假勝地【第3彈】療癒身心的幸福時光br通過「三溫暖烤箱蒸舒服」關卡5次吧（完成度5/5） <br>&nbsp;報酬：貓咪轉蛋券 +1\n<br>"
+  ],
+  "sundries": []
+}

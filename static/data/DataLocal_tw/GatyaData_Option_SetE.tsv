@@ -40,3 +40,6 @@ GatyaSetID	BannerON_OFF	ItemID_Ticket	animeID	btnCutID	seriesID	menuCutID
 38	1	214	8	0	14	4
 39	1	215	6	0	15	4
 40	1	216	6	0	12	4
+41	0	220	6	0	16	4
+42	0	221	8	0	17	4
+43	1	220	6	0	16	4

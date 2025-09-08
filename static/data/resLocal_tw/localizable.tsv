@@ -770,7 +770,6 @@ enemy_list_title	出現敵人
 enemy_name_question	？？？
 calendar_title	事先設定的活動通知開始啦！
 calendar_error	無法連接到伺服器或是<br>行動裝置產生時差。<br>請確認網路連線狀態和行動裝置的時間。
-calendar_99h	99小時以上
 legendquest_tutorial1	歡迎來到傳奇尋寶記！<br>在這裡的關卡跟編成內容<br>都是隨機選出的唷！
 legendquest_tutorial2	需要有王冠才可以挑戰！<br>王冠可在傳奇故事地圖的關卡等級1～4<br>中各通關後可以獲得！
 legendquest_tutorial3	在傳奇尋寶記中脫離戰鬥時<br>王冠、統率力、道具皆不會歸還<br>準備好後再開始挑戰吧！
@@ -1227,7 +1226,7 @@ fragment_message	蒐集白金券碎片<br>10片即可兌換白金券1張<br>現�
 fragment_bonus	只有現在使用${gatyaNumber}次連續轉蛋<br>就可獲得白金券碎片1片！<br>蒐集10片<flash>白金券</flash>1張即可入手喔
 equipment_error	這個本能珠珠只可裝著於有對<br>「%@ %@」效果的角色上
 scratch_message	「%s」%d個已入手！
-scratch_SNS_000	在 #貓咪刮刮樂 中獲得%d個貓罐頭啦！<br>期間中每週都可挑戰！每週來玩刮刮樂帶走更多貓罐頭吧～！<br><br>#貓咪大戰爭 #貓咪刮刮樂 #貓咪暑假2024
+scratch_SNS_000	在 #貓咪刮刮樂 中獲得%d個貓罐頭啦！<br>期間中每週都可挑戰！每週來玩刮刮樂帶走更多貓罐頭吧～！<br><br>#貓咪大戰爭 #貓咪刮刮樂
 item_pack_name_39	購買 感謝禮包
 potential_skill_name57	屬性　惡魔
 assault_skip	【貓咪稍微恢復精神了】<br><flash>可通關次數回復1次！</flash><br>將前往關卡選擇畫面<br><color=255,255,0>可通關次數 1/${countNum}${assaultWord}</color>
@@ -1396,7 +1395,7 @@ stageskip_message_8	已通過巨大三惡魔強襲 ${stageName1}！<br>下次挑
 unlock_popup_message_138	<flash>「貓型電腦」的跳過戰鬥功能開放了！</flash><br>在點選兩次貓型電腦的狀態下，<br>選擇已通關的關卡並出擊<br>就可跳過戰鬥並獲得獎勵。<br>※部分關卡不適用此功能。
 ScatCPU_info1	要使用<flash>${itemNum1}個</flash>${itemName1}來跳過戰鬥嗎？<br>（今天還可以使用：${itemNum2}次）
 ScatCPU_info2	<flash>貓型電腦無限使用期間，將不會消費貓型電腦！</flash><br>要跳過戰鬥嗎？<br>（今天還可以使用：${itemNum}次）
-ScatCPU_XPdrop	<color=255,255,0>大獲全勝！！</color><br>通關經驗值<flash>入手啦！！</flash><br>「${itemName}+${itemNum}」
+ScatCPU_XPdrop	<color=255,255,0>大獲全勝！！</color><br>通關經驗值<flash>入手啦！！</flash><br>「XP ${itemNum}」
 ScatCPU_message	<color=255,0,255>貓型電腦</color><br><color=0,0,0>貓型CPU會幫你進行戰鬥<br>因為是貓型所以不能抱持太大期望<br>點擊2次時可大幅加強其功能<br>能在標示「CLEAR!」的關卡跳過戰鬥</color>
 ScatCPU_error1	跳過戰鬥功能的使用次數已達上限<br>使用次數將於明天的0點重置
 ScatCPU_error2	由於行動裝置的時間有所更動<br>您暫時無法使用跳過戰鬥功能
@@ -1436,10 +1435,10 @@ slot_SNS_002	在 #貓咪拉霸 中獲得%s個貓罐頭啦！ #貓咪大戰爭 #9
 slot_SNS_003	在 #貓咪拉霸 中獲得%s個貓罐頭啦！ #貓咪大戰爭 #10週年
 stageskip_message_9	已通過大型陶器埴輪巨犬強襲 ${stageName1}！<br>下次挑戰將可從<flash>${stageName2}</flash>開始
 talk_004_push	繼續來玩貓咪基地○×對決喔～
-clear_adreward_1	讓經驗值倍增的好機會！<br>要觀看影片來獲得<flash>「經驗值${xp}」×2</flash>嗎？
+clear_adreward_1	讓經驗值倍增的好機會！<br>要觀看影片來獲得<flash>「XP ${xp}」×2</flash>嗎？
 reward_freegatya	每天都可以觀看一次影片<br>來免費轉招福轉蛋。<br>要觀看影片嗎？
 Itemshop_ad_popup1	觀看影片可以獲得「XP+${xp}」，<br>要觀看影片嗎？
-clear_adreward_2	獲得<flash>「XP+${xp}」</flash> 了！
+clear_adreward_2	獲得<flash>「XP ${xp}」</flash> 了！
 lose_retry_ad	在「金錢MAX」，「可發射貓咪砲」的狀態下復活了！
 Itemshop_ad_popup2	獲得「XP+${xp}」了！
 stage_restriction_limit_6	${rarity}${value}隻以下
@@ -1639,3 +1638,19 @@ slot_autoset_error_2	<color=255,255,0>沒有可以出擊的角色了</color>
 slot_autoset_error_3	<color=255,255,0>沒有可以更換角色的欄位</color>
 slot_tutorial_txt1	<color=255,255,0>自動編成功能</color><br>點擊這個按鈕，貓型CPU就會自動<br>編組應該適合這個關卡的角色！<br>在已可確認到出現敵人的關卡才能使用！
 slot_tutorial_txt2	<color=255,255,0>固定角色功能</color><br>點擊角色就能在自動編成時將他保留在隊伍中！<br>再次點擊角色就可以解除固定！
+BonusExplanationLabel002	【加分項目：善於攻擊】<br>使用有善於攻擊效果的角色攻擊對象屬性的敵人<br>※角色的攻擊對象屬性越少，可以獲得的分數越高<br>詳細請參考畫面左下方的「什麼是極排行賽會場？」
+BonusNameLabel002	善於攻擊
+calendar_day	${day}天
+calendar_limit	99天以上
+cube_guide_yellow	「亞蜥比沙漠」「將弗裂火山」<br>會於每天不定時舉辦<br>詳細可至活動日程確認！
+equipment_error2	這個本能珠珠無法裝著於<br>有「%@」能力的角色上
+filter_equipment_err1	<color=255,255,0>進行篩選的結果，找不到<br>裝著符合條件的<br>本能珠珠的角色。</color>
+filter_equipment_tutorial	將從裝著本能珠珠的角色中進行篩選<br>可從「等級」、「攻擊對象」和「效果/能力」<br>當中選擇希望的條件
+filter_option_description5	<color=0,0,0>篩選結果將包含可透過進化等<br>方式，來解放「攻擊對象」或<br>「效果/能力」的角色。</color>
+ScatCPU_ad_confirm	提升經驗值的好機會！<br>要觀看影片讓通關經驗值<br>變成<flash>「XP ${xp}」×2</flash>嗎？
+ScatCPU_ad_result	通關經驗值<flash>提升啦！！</flash><br>「XP <flash>${xp}</flash>」
+scratch_SNS_005	
+SpecialRuleExplanation012	【只有現貨】<br>1次的戰鬥中最多只能生產50隻角色<br>所有我方角色都會變成相同的生產速度
+SpecialRuleName012	只有現貨
+talk_008_push	「貓咪請求援軍」趕快回來支援啊～
+talk_009_push	
