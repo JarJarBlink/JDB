@@ -22,14 +22,18 @@
     <link rel="stylesheet" href="static/dark-mode-toggle/slider.css"/>
     <script type="module" src="static/dark-mode-toggle/dark-mode-toggle-playground.js"></script>
     <script type="module" src="static/dark-mode-toggle/dark-mode-toggle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" 
+            onload="renderMathInElement(document.body);"></script>
     <style>
         /* ----------------------------------------
            Article: Formal English Style
         ---------------------------------------- */
-
+        
         #jar-details {
-            max-width: 850px; 
-            margin: 0 auto;
+            /* max-width: 850px; 
+            margin: 0 auto;*/
             text-align: left;
             line-height: 1.7;
             font-family: "Georgia", "Times New Roman", serif;
@@ -94,6 +98,18 @@
             margin-bottom: 1.2em;
             display: block;
         }
+    
+        .math-small {
+            font-size: 0.85em;
+            line-height: 1.2;  
+        }
+
+        @media (max-width: 600px) {
+            .math-small {
+                font-size: 0.70em;
+            }
+        }
+     
     </style>
 </head>
 <body>
@@ -134,42 +150,70 @@
 
             <h3>Terminology and Definitions</h3>
             
-            <p>From the animation design view:<br>
+            <p>
+                <h4>From the animation design view</h4>
                 <ul>
-                0F, 1F, 2F, 3F, ... nF,<br>
-                <strong>攻発生(attack judgment frame)</strong>: the first attack frame index<br>
-                <strong>攻発生2nd</strong>: the second attack frame index<br>
-                <strong>攻発生nth</strong>: the nth attack frame index = nF<br>
-                <strong>攻撃頻度(Atk Freq)</strong>: total atk animation frames<br>
+                <dt>0F, 1F, 2F, 3F, ... nF,...</dt>
+                    <strong>攻発生(1st atk)</strong>: 1st attack occurs at this frame, i.e., attack judgment frame index<br>
+                    <strong>攻発生2nd(2nd atk)</strong>: 2nd attack occurs at this frame, i.e., 2nd attack judgment frame index<br>
+                    <strong>攻発生nth(nth atk)</strong>: the nth attack frame index = nF<br>
+                    <strong>攻撃頻度(Atk Freq)</strong>: total atk animation frames<br>
                 </ul>  
             </p>
             <p>   
-                From the official code view:<br>
+                <h4>From the official code view</h4>
                 <ul>
-                <dt><strong>FSwing</strong></dt><dd>the number of frames before an attack (excluding the attack judgment frame).</dd>
-                <dt><strong>BSwing</strong></dt><dd>the number of frames after FSwing, including the attack judgment frame itself.</dd>
-                <dt><strong>WSwing</strong></dt><dd>the number of frames after FSwing, including the attack judgment frame itself; it controls the total Standby animation frames to display.  If WSwing is greater than BSwing by more than 1, the Normal Standby time is shown(Standby animation).</dd>
+                    <dt><strong>FSwing</strong></dt><dd>the number of frames before an attack (excluding the attack judgment frame).</dd>
+                    <dt><strong>BSwing</strong></dt><dd>the number of frames after FSwing, including the attack judgment frame itself.</dd>
+                    <dt><strong>WSwing</strong></dt><dd>the number of frames after FSwing, including the attack judgment frame itself; it controls the total Standby animation frames to display.  If WSwing is greater than BSwing by more than 1, the Normal Standby time is shown(Standby animation).</dd>
 
-                <dt><strong>wait</strong></dt><dd>the time between animations = 1F (Displayed with the Standby animation).</dd>
-                <dt><strong>Normal Standby time</strong></dt><dd>min(abs(WSwing - BSwing -1), 0)</dd>
-                <dt><strong>Wait</strong></dt><dd>the time the Standby animation is shown when no KB occurs = Normal Standby time + wait</dd>
-                <dt><strong>実攻撃頻度(Real Atk Freq)</strong></dt><dd>the attack index of the 2nd attack animation − the attack index of the 1st attack animation = 2nd 攻発生 - 1st 攻発生 = 2nd FSwing - 1st FSwing</dd>
+                    <dt><strong>wait</strong></dt><dd>the time between animations = 1F (Displayed with the Standby animation).</dd>
+
+                   
+                    <dt><strong>Normal Standby Time</strong></dt>
+                    <dd class="math-small">
+                        $$
+                        \text{t} = 
+                        \begin{cases} 
+                        WSwing - BSwing - 1 & \text{if } WSwing > BSwing + 1 \\
+                        0 & \text{otherwise}
+                        \end{cases}
+                        $$
+                    </dd>
+ 
+                    <dt><strong>Wait</strong></dt><dd>the time the Standby animation is shown when no KB occurs = Normal Standby time + wait</dd>
+                    <dt><strong>実攻撃頻度(Real Atk Freq)</strong></dt><dd>the attack index of the 2nd attack animation − the attack index of the 1st attack animation = 2nd 攻発生 - 1st 攻発生 = 2nd FSwing - 1st FSwing</dd>
                 </ul>  
                 <p>Note: 攻発生 ≠ FSwing. 攻発生 is not a "time length"; it indicates which frame the attack occurs on.</p>
             </p>  
             <p> 
-                Example: No.71-3 飛翔の武神・真田幸村
+                <h4>Example: No.71-3 飛翔の武神・真田幸村</h4>
                 <ul>
-                攻発生 = 1F<br>
-                攻発生2nd = 8F<br>
-                攻撃頻度(Atk Freq) = 137F<br>
-                実攻撃頻度(Real Atk Freq) = 137F<br>
-                FSwing = 8F  (Not shown in JDB)<br>
-                BSwing = 129F<br>
-                WSwing = 0F<br>
-                wait = 1F  (Not shown in JDB)<br>
-                Normal Standby time = 0F  (Not shown in JDB)<br>
-                Wait = 1F<br>
+                    攻発生 = 1F<br>
+                    攻発生2nd = 8F<br>
+                    攻撃頻度(Atk Freq) = 137F<br>
+                    実攻撃頻度(Real Atk Freq) = 137F<br>
+                    FSwing = 8F  (Not shown in JDB)<br>
+                    BSwing = 129F<br>
+                    WSwing = 0F<br>
+                    wait = 1F  (Not shown in JDB)<br>
+                    Normal Standby time = 0F  (Not shown in JDB)<br>
+                    Wait = 1F<br>
+                </ul>
+            </p>
+
+            <p> 
+                <h4>No.47-3	マキシマムファイター</h4>
+                <ul>
+                    攻発生 = 16F<br>
+                    攻撃頻度(Atk Freq) = 25F<br>
+                    実攻撃頻度(Real Atk Freq) = 25F<br>
+                    FSwing = 16F  (Not shown in JDB)<br>
+                    BSwing = 9F<br>
+                    WSwing = 10F<br>
+                    wait = 1F  (Not shown in JDB)<br>
+                    Normal Standby time = 0F  (Not shown in JDB)<br>
+                    Wait = 1F<br>
                 </ul>
             </p>
             
@@ -185,9 +229,8 @@
                 (or alternatively, TBA = 130F if measured as the time between the previous attack landing and the next attack animation start)
             </p>
             <p>
-                This shows that TBA is only meaningful when <strong>TBA &gt; BSwing</strong>. When
-                <strong>TBA &lt; BSwing</strong>, the definition breaks down, leading to contradictions. I propose
-                instead defining such timings as <strong>X Time = BSwing + Wait</strong>.
+                This indicates that TBA is only meaningful when <strong>TBA &gt; BSwing</strong>. When <strong>TBA &lt; BSwing</strong>, the definition becomes inconsistent, leading to contradictions. 
+                Therefore, I propose adopting the term <strong>WSwing</strong> instead, which more accurately reflects the intended measurement.
             </p>
 
             <h3>Why Define FSwing This Way?</h3>
