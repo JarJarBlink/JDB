@@ -20,8 +20,8 @@
 "t_range_txt": "射程",
 "t_calculate1": "推定",
 "cost": "コスト",
-"ball1": "本能玉:",
-"ball2": "本能玉:",
+"ball1": "本能玉 ",
+"ball2": "本能玉 ",
 "equi_select1": "なし",
 "equi11": "ダメージアップ",
 "equi21": "ダメージ軽減",
@@ -61,5 +61,69 @@
 "equi_trait210": "【魔】",
 "equi_trait211": "【使】",
 "equi_trait212": "【悪】",
-"equi_level2": "レベル"
+"equi_level2": "レベル",
+
+"combo_select1": "なし",
+"comboAtk1": "キャラクターの攻撃力",
+"comboHp1": "キャラクターの体力",
+"comboStronge15": "「めっぽう強い」効果",
+"comboMasive16": "「超ダメージ」効果",
+"comboResis17": "「打たれ強い」効果",
+
+"combo_levelSelect1": "なし",
+"combo11": "小",
+"combo12": "中",
+"combo13": "大",
+"combo14": "究極",
+
+"combo_levelSelect2": "なし",
+"combo21": "小",
+"combo22": "中",
+"combo23": "大",
+"combo24": "究極",
+
+"combo_levelSelect3": "なし",
+"combo31": "小",
+"combo32": "中",
+"combo33": "大",
+"combo34": "究極",
+
+"combo_levelSelect4": "なし",
+"combo41": "小",
+"combo42": "中",
+"combo43": "大",
+"combo44": "究極",
+
+
+"combo_select2": "なし",
+"comboAtk2": "キャラクターの攻撃力",
+"comboHp2": "キャラクターの体力",
+"comboStronge215": "「めっぽう強い」効果",
+"comboMasive216": "「超ダメージ」効果",
+"comboResis217": "「打たれ強い」効果",
+
+"combo_levelSelect21": "なし",
+"combo211": "小",
+"combo212": "中",
+"combo213": "大",
+"combo214": "究極",
+
+"combo_levelSelect22": "なし",
+"combo221": "小",
+"combo222": "中",
+"combo223": "大",
+"combo224": "究極",
+
+"combo_levelSelect23": "なし",
+"combo231": "小",
+"combo232": "中",
+"combo233": "大",
+"combo234": "究極",
+
+"combo_levelSelect24": "なし",
+"combo241": "小",
+"combo242": "中",
+"combo243": "大",
+"combo244": "究極"
+
 }
