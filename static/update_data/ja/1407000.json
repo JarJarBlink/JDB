@@ -136,14 +136,13 @@
     "bg250"
   ],
   "combo_list": [
-    "&nbsp;めぐりあう戦士\n — 初期所持金\n【中】<br><a href=\"u000.html?cc=ja&unit=733\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni733_f00.png\" width=64 title=\"733(1階)\"></a>",
-    "&nbsp;めぐりあう戦士\n — 初期所持金\n【中】<br><a href=\"u000.html?cc=ja&unit=078\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni078_c00.png\" width=64 title=\"078(2階)\"></a>"
+    "&nbsp;めぐりあう戦士\n — 初期所持金\n【中】<br><a href=\"u000.html?cc=ja&unit=733\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni733_f00.png\" width=64 title=\"733(1階)\"></a><a href=\"u000.html?cc=ja&unit=078\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni078_c00.png\" width=64 title=\"078(2階)\"></a>"
   ],
   "mission_list": [
-    "&nbsp;1. (Special) ストリートファイター6コラボステージを5回クリアしようbrコラボの全ステージがクリアカウントの対象（進行度5/5） <br>&nbsp;Reward：にゃんこチケット +1\n<br>",
-    "&nbsp;2. (Special) ストリートファイター6コラボステージを15回クリアしようbrコラボの全ステージがクリアカウントの対象（進行度15/15） <br>&nbsp;Reward：にゃんこチケット +1\n<br>",
-    "&nbsp;3. (Special) ストリートファイター6コラボステージを30回クリアしようbrコラボの全ステージがクリアカウントの対象（進行度30/30） <br>&nbsp;Reward：にゃんこチケット +1\n<br>",
-    "&nbsp;4. (Special) ストリートファイター6コラボステージを50回クリアしようbrコラボの全ステージがクリアカウントの対象（進行度50/50） <br>&nbsp;Reward：にゃんこチケット +1\n<br>"
+    "&nbsp;1. (Special) ストリートファイター6コラボステージを5回クリアしよう。コラボの全ステージがクリアカウントの対象（進行度5/5） <br>&nbsp;Reward：にゃんこチケット +1\n<br>",
+    "&nbsp;2. (Special) ストリートファイター6コラボステージを15回クリアしよう。コラボの全ステージがクリアカウントの対象（進行度15/15） <br>&nbsp;Reward：にゃんこチケット +1\n<br>",
+    "&nbsp;3. (Special) ストリートファイター6コラボステージを30回クリアしよう。コラボの全ステージがクリアカウントの対象（進行度30/30） <br>&nbsp;Reward：にゃんこチケット +1\n<br>",
+    "&nbsp;4. (Special) ストリートファイター6コラボステージを50回クリアしよう。コラボの全ステージがクリアカウントの対象（進行度50/50） <br>&nbsp;Reward：にゃんこチケット +1\n<br>"
   ],
   "sundries": []
 }
