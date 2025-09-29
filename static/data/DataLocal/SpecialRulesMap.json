@@ -370,6 +370,40 @@
           ]
         }
       }
+    },
+    "36015": {
+      "ContentsType": 0,
+      "RuleNameLabel": "SpecialRuleName014",
+      "RuleExplanationLabel": "SpecialRuleExplanation014",
+      "RuleType": {
+        "0": {
+          "Parameters": [
+            266730
+          ]
+        },
+        "6": {
+          "Parameters": [
+            100,
+            100,
+            100,
+            100,
+            20,
+            100
+          ]
+        }
+      }
+    },
+    "36016": {
+      "ContentsType": 0,
+      "RuleNameLabel": "SpecialRuleName013",
+      "RuleExplanationLabel": "SpecialRuleExplanation013",
+      "RuleType": {
+        "4": {
+          "Parameters": [
+            10
+          ]
+        }
+      }
     }
   }
 }

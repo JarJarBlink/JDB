@@ -458,6 +458,7 @@
 1408,サウナスパで極楽
 1409,1億1000万ダウンロード記念 ハッピープレゼント！
 1410,大花火大会開催！
+1411,ここはにゃんこ大商店！
 2000,ふるさと自衛隊
 2001,魅惑のプリンセス
 2002,ケリ姫ステージ
@@ -596,31 +597,31 @@
 2135,ストリートファイター EASY
 2136,ストリートファイター NORMAL
 2137,ストリートファイター HARD
-2138,New Challenger
-2139,New Challenger
-2140,New Challenger
-2141,New Challenger
-2142,New Challenger
-2143,New Challenger
-2144,New Challenger
-2145,New Challenger
-2146,New Challenger
-2147,New Challenger
-2148,New Challenger
-2149,New Challenger
-2150,New Challenger
-2151,New Challenger
-2152,New Challenger
-2153,New Challenger
-2154,New Challenger
-2155,New Challenger
-2156,New Challenger
-2157,New Challenger
-2158,New Challenger
-2159,New Challenger
-2160,New Challenger
-2161,New Challenger
-2162,New Challenger
+2138,New Challenger(旧)
+2139,New Challenger(旧)
+2140,New Challenger(旧)
+2141,New Challenger(旧)
+2142,New Challenger(旧)
+2143,New Challenger(旧)
+2144,New Challenger(旧)
+2145,New Challenger(旧)
+2146,New Challenger(旧)
+2147,New Challenger(旧)
+2148,New Challenger(旧)
+2149,New Challenger(旧)
+2150,New Challenger(旧)
+2151,New Challenger(旧)
+2152,New Challenger(旧)
+2153,New Challenger(旧)
+2154,New Challenger(旧)
+2155,New Challenger(旧)
+2156,New Challenger(旧)
+2157,New Challenger(旧)
+2158,New Challenger(旧)
+2159,New Challenger(旧)
+2160,New Challenger(旧)
+2161,New Challenger(旧)
+2162,New Challenger(旧)
 2163,SNOW MIKU
 2164,波乱！天道道場
 2165,伝説の呪泉郷
@@ -647,10 +648,10 @@
 2186,対決！玉狛第２のリーダー
 2187,対決！玉狛第２のエース
 2188,VS訓練用モールモッド
-2189,New Challenger
-2190,New Challenger
-2191,New Challenger
-2192,New Challenger
+2189,New Challenger(旧)
+2190,New Challenger(旧)
+2191,New Challenger(旧)
+2192,New Challenger(旧)
 2193,ストリートファイター VERY HARD
 2194,激闘！セイバー襲来！
 2195,激闘！ランサー襲来！
@@ -688,6 +689,39 @@
 2227,第９の使徒、襲来
 2228,第１０の使徒、襲来
 2229,エヴァ第１３号機、襲来
+2230,New Challenger
+2231,New Challenger
+2232,New Challenger
+2233,New Challenger
+2234,New Challenger
+2235,New Challenger
+2236,New Challenger
+2237,New Challenger
+2238,New Challenger
+2239,New Challenger
+2240,New Challenger
+2241,New Challenger
+2242,New Challenger
+2243,New Challenger
+2244,New Challenger
+2245,New Challenger
+2246,New Challenger
+2247,New Challenger
+2248,New Challenger
+2249,New Challenger
+2250,New Challenger
+2251,New Challenger
+2252,New Challenger
+2253,New Challenger
+2254,New Challenger
+2255,New Challenger
+2256,New Challenger
+2257,New Challenger
+2258,New Challenger
+2259,New Challenger
+2260,New Challenger
+2261,New Challenger
+2262,New Challenger
 3000,日本編第1章
 3001,日本編第2章
 3002,日本編第3章
@@ -805,7 +839,7 @@
 11015,ランキングの間
 11016,ランキングの間
 11017,超・ランキングの間
-11018,ランキングの間
+11018,ランキングの間(旧)
 11019,ランキングの間
 11020,ランキングの間【外伝】
 11021,ランキングの間【外伝】
@@ -823,6 +857,8 @@
 11033,極ランキングの間
 11034,超ランキングの間
 11035,極ランキングの間
+11036,極ランキングの間
+11037,ランキングの間
 12000,チャレンジバトル
 13000,真・伝説のはじまり
 13001,まんぷく秘境
@@ -934,6 +970,7 @@
 21002,未来編第3章（ゾンビ）
 22000,宇宙編第1章（ゾンビ）
 22001,宇宙編第2章（ゾンビ）
+22002,宇宙編第3章（ゾンビ）
 23000,宇宙編第3章（フィリバスター）
 24000,ヒュージゴマ強襲 !(旧)
 24001,ヒュージゴマ強襲 !!(旧)
@@ -1136,6 +1173,8 @@
 34020,新たな時を刻む旅路
 34021,甘味自然公園
 34022,リバース聖墓
+34023,眠りの深淵
+34024,忘却共和国
 36000,異次元コロシアム
 36001,異次元コロシアム
 36002,異次元コロシアム
@@ -1151,6 +1190,8 @@
 36012,異次元コロシアム
 36013,異次元コロシアム
 36014,異次元コロシアム
+36015,異次元コロシアム
+36016,異次元コロシアム
 37000,にゃんこ道検定 初段
 37001,にゃんこ道検定 二段
 37002,にゃんこ道検定 三段
@@ -1163,3 +1204,4 @@
 37009,にゃんこ道検定 十段
 37010,にゃんこ道検定 十一段
 37011,にゃんこ道検定 十二段
+38000,宇宙編第3章（ゾンビフィリバスター）
