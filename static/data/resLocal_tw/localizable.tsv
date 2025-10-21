@@ -727,7 +727,7 @@ potential_skill_name21	抗飛耐性
 potential_skill_name22	抗波耐性
 potential_skill_name23	波動滅止
 potential_skill_name24	抗傳耐性
-potential_skill_name25	成本減少
+potential_skill_name25	生產成本減少
 potential_skill_name26	生產加快
 potential_skill_name27	移動加快
 potential_skill_name28	增加擊退
@@ -1587,8 +1587,8 @@ potential_skill_name67	爆波攻擊
 slot_SNS_006	在 #貓咪拉霸Ⅱ 中獲得%s個貓罐頭啦！ #貓咪大戰爭
 SpecialRuleExplanation007	【好事成雙　超激稀有】 <br>生產超激稀有角色時<br>出現的數量會變2隻
 SpecialRuleName007	好事成雙　超激稀有
-unlock_popup_message_153	<flash>「瓦爾基麗貓・聖」的本能解放了！</flash><br>通過試煉後喚醒了新的力量<br>進化至第3型態且到達Lv30後<br>就可以在升級畫面解放、強化能力
-unlock_popup_message_154	<flash>「覺醒姆特貓」的本能解放了！</flash><br>通過試煉後喚醒了新的力量<br>進化至第3型態且到達Lv30後<br>就可以在升級畫面解放、強化能力
+unlock_popup_message_153	<flash>「瓦爾基麗貓・聖」的本能解放了！</flash><br>通過試煉後喚醒了新的力量<br>進化至第3型態且到達Lv30後<br>就可以在升級畫面解放及強化能力
+unlock_popup_message_154	<flash>「覺醒姆特貓」的本能解放了！</flash><br>通過試煉後喚醒了新的力量<br>進化至第3型態且到達Lv30後<br>就可以在升級畫面解放及強化能力
 assault_skip_battle_result	【貓咪稍微恢復精神了】<br><flash>可通關次數回復1次！</flash><br>將回到關卡選擇畫面
 assault_skip_battle_skip	【貓咪稍微恢復精神了】<br><flash>可通關次數回復1次！</flash><br>可以立刻挑戰關卡
 BonusExplanationLabel000	【加分項目：攻擊力下降】<br>使敵人攻擊力下降<br>※角色的攻擊對象屬性越少，可以獲得的分數越高<br>詳細請參考畫面左下方的「什麼是極排行賽會場？」
@@ -1654,3 +1654,16 @@ SpecialRuleExplanation012	【只有現貨】<br>1次的戰鬥中最多只能生�
 SpecialRuleName012	只有現貨
 talk_008_push	「貓咪請求援軍」趕快回來支援啊～
 talk_009_push	
+BonusExplanationLabel003	【加分項目：動作停止】<br>使敵人動作停止<br>※角色的攻擊對象屬性越少，可以獲得的分數越高<br>詳細請參考畫面左下方的「什麼是極排行賽會場？」
+BonusNameLabel003	動作停止
+item_pack_name_91	購買 合作紀念禮包
+SpecialRuleExplanation013	【一律銅板價】<br>所有我方角色的生產成本都變成10元
+SpecialRuleExplanation014	【發薪日】<br>一開始就可以獲得大量金錢<br>但相反地，隨著時間經過或<br>打倒敵人時都無法增加金錢<br>超激稀有角色的生產時間會減少80%
+SpecialRuleName013	一律銅板價
+SpecialRuleName014	發薪日
+treasure_festival_default	<flash>「寶物嘉年華」活動中！</flash><br>收集寶物的絕佳機會☆<br>現在所有關卡的寶物出現率大幅上升中唷！
+treasure_festival_comeback	<flash>「寶物嘉年華」活動中！</flash><br>回鍋玩家限定的特別好機會☆<br>現在所有關卡的寶物出現率大幅上升中唷！
+treasure_festival_comeback_start	回鍋玩家限定！<br>「寶物嘉年華」活動中！
+unlock_popup_message_155	<flash>「異界阻撓貓」的本能解放了！</flash><br>打倒謎之生命體後喚醒了新的力量<br>進化至第3型態且到達Lv30後<br>就可以在升級畫面解放及強化能力
+unlock_popup_message_156	<flash>宇宙篇第3章出現了謎之生命體！</flash>
+unlock_popup_message_157	<flash>「超・金光閃閃神」的本能解放了！</flash><br>嘿！過得好嗎？<br>想知道我變得多強對吧？<br>那就趕快去升級畫面確認啦～

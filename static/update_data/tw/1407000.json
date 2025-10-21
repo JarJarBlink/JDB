@@ -1,0 +1,127 @@
+{
+  "date": "2025/10/21",
+  "sCat_id_list": [
+    "815",
+    "824"
+  ],
+  "sCat_sprite_id_list": [
+    "816",
+    "825"
+  ],
+  "sTrue_form_new_id_list": [
+    "517"
+  ],
+  "sTrue_4form_new_id_list": [
+    "360"
+  ],
+  "sNew_skill_id_list": [
+    "357",
+    "437",
+    "462",
+    "634"
+  ],
+  "sUnitbuy_change_list": [
+    "360",
+    "552",
+    "814",
+    "814",
+    "814",
+    "822"
+  ],
+  "sGatya_names_Rlist": [
+    "gatya_bnr1016.png",
+    "gatya_bnr1019.png",
+    "gatya_bnr1020.png"
+  ],
+  "sGatya_names_Nlist": [],
+  "sGatya_names_Elist": [
+    "gatya_e_bnr44.png"
+  ],
+  "sCombo_id_list": [
+    "373"
+  ],
+  "sNew_stageND_list": [
+    "34023",
+    "34024"
+  ],
+  "sNew_stageS_list": [],
+  "sNew_stageSR_list": [
+    "36015",
+    "36016"
+  ],
+  "sNew_stageC_list": [],
+  "sNew_stageCA_list": [],
+  "sNew_stageB_list": [],
+  "sNew_stageEX_list": [],
+  "sNew_stageA_list": [],
+  "sNew_stageV_list": [],
+  "sNew_stageR_list": [
+    "11036"
+  ],
+  "sNew_stageH_list": [],
+  "sNew_stageG_list": [],
+  "sNew_stageT_list": [],
+  "sNew_4star_stage_list": [],
+  "sNew_3star_stage_list": [],
+  "sEnemy_id_list": [
+    "744",
+    "745"
+  ],
+  "sEnemy_change_list": [],
+  "sNew_medal_list": [
+    "124",
+    "125"
+  ],
+  "sCastle_ids": [
+    "rc180"
+  ],
+  "sMission_id_list": [
+    92,
+    93,
+    94,
+    95,
+    96,
+    100,
+    960,
+    961,
+    962,
+    963,
+    964,
+    1082,
+    1083,
+    1084,
+    1085
+  ],
+  "sRankgift_des": [
+    "UR25900\t獲得5個貓眼石【超激稀有】\n",
+    "UR26000\t獲得1張稀有券\n",
+    "UR26100\t獲得5個貓眼石【傳說】"
+  ],
+  "sMusic_id_list": [
+    "182",
+    "183"
+  ],
+  "sSoundEffect_ids": [],
+  "sNew_bg_list": [
+    "bg248",
+    "bg249",
+    "bg250"
+  ],
+  "combo_list": [
+    "&nbsp;戰士相逢 — 初期所持金額\n【中】<br><a href=\"u000.html?cc=tw&unit=733\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni733_f00.png\" width=64 title=\"733(1階)\"></a><a href=\"u000.html?cc=tw&unit=078\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni078_c00.png\" width=64 title=\"078(2階)\"></a>"
+  ],
+  "mission_list": [
+    "1. (Special) 讓「小小真嗣」升等10級後進化吧！，需要在新世紀福音戰士合作期間內進化完成才算達成 <br>Reward：貓罐頭 +10\n<br>",
+    "2. (Special) 通過新世紀福音戰士合作關卡5次吧!，新世紀福音戰士的全合作關卡皆屬於累計對象（完成度5/5） <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "3. (Special) 通過新世紀福音戰士合作關卡10次吧!，新世紀福音戰士的全合作關卡皆屬於累計對象（完成度10/10） <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "4. (Special) 通過新世紀福音戰士合作關卡20次吧!，新世紀福音戰士的全合作關卡皆屬於累計對象（完成度20/20） <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "5. (Special) 在任一關卡發動「終結使徒的效果UP」的貓咪聯組並通過關卡，通過世界篇第1章之後，讓「小小真嗣」和「小小薰」一起出擊的話…… <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "6. (Special) 殲滅第10使徒，目標使徒可在關卡「最強的拒絕型 高級」中確認 <br>Reward：貓罐頭 +10\n<br>",
+    "7. (Special) 【新手應援活動】通過世界篇的關卡2次吧!，世界篇的所有關卡皆屬於累計對象（完成度2/2） <br>Reward：XP +40000\n<br>",
+    "8. (Special) 【新手應援活動】通過世界篇的關卡4次吧!，世界篇的所有關卡皆屬於累計對象（完成度4/4） <br>Reward：XP +60000\n<br>",
+    "9. (Special) 【新手應援活動】通過世界篇的關卡6次吧!，世界篇的所有關卡皆屬於累計對象（完成度6/6） <br>Reward：XP +100000\n<br>",
+    "10. (Special) 【新手應援活動】通過世界篇的日本，來獲得能轉稀有轉蛋的稀有券吧! <br>Reward：稀有券 +1\n<br>",
+    "11. (Special) 【新手應援活動】通過世界篇的日本，來獲得能恢復統率力的首領旗吧! <br>Reward：首領旗 +1\n<br>"
+  ],
+  "sundries": []
+}
