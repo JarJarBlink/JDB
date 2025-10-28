@@ -12,5 +12,12 @@
 "min_txt":"最小位置",
 "hitbox_txt":"体幅",
 "t_range_txt": "射程",
-"t_calculate1": "推定"
+"t_calculate1": "推定",
+"t_atk_txt": "攻撃力",
+"t_speed_txt": "速度",
+"t_atk_effect_txt":"攻擊特性",
+"hp_percent":"体力％：",
+"atk_percent":"攻撃％：",
+"all_percent":"統一％：",
+"t_effect_txt":"效果/能力"
 }
