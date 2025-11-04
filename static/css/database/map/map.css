@@ -1,0 +1,22 @@
+audio {height: 20px;}
+
+#star-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.map-name-label {
+    font-weight: bold;
+    font-size: 14px;
+}
+.star {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+.bg_canvas {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
