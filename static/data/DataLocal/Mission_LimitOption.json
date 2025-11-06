@@ -561,6 +561,15 @@
       "SlotOptionRule": [
         "More"
       ]
+    },
+    "47": {
+      "Map": [
+        34008
+      ],
+      "Stage": [
+        5
+      ],
+      "FormLvLimit": 1
     }
   }
 }

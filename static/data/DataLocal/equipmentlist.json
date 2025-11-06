@@ -2364,6 +2364,41 @@
       "value": [
         50
       ]
+    },
+    {
+      "gradeID": 0,
+      "content": 24,
+      "value": [
+        5
+      ]
+    },
+    {
+      "gradeID": 1,
+      "content": 24,
+      "value": [
+        10
+      ]
+    },
+    {
+      "gradeID": 2,
+      "content": 24,
+      "value": [
+        15
+      ]
+    },
+    {
+      "gradeID": 3,
+      "content": 24,
+      "value": [
+        25
+      ]
+    },
+    {
+      "gradeID": 4,
+      "content": 24,
+      "value": [
+        40
+      ]
     }
   ]
 }
