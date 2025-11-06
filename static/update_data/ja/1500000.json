@@ -136,12 +136,12 @@
     "bg252"
   ],
   "combo_list": [
-    "&nbsp;銃刀法\n — 「ふっとばし」効果アップ\n【中】<br><a href=\"u000.html?cc=ja&unit=754\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni754_f00.png\" width=64 title=\"754(1階)\"></a><a href=\"u000.html?cc=ja&unit=011\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni011_f00.png\" width=64 title=\"011(1階)\"></a>",
-    "&nbsp;レッドパワー\n — 「怪人特効」効果\n【付与】<br><a href=\"u000.html?cc=ja&unit=831\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni831_f00.png\" width=64 title=\"831(1階)\"></a>",
-    "&nbsp;ブルーパワー\n — 研究力アップ\n【究極】<br><a href=\"u000.html?cc=ja&unit=832\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni832_f00.png\" width=64 title=\"832(1階)\"></a>",
-    "&nbsp;イエローパワー\n — 「波動ダメージ無効」効果\n【付与】<br><a href=\"u000.html?cc=ja&unit=833\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni833_f00.png\" width=64 title=\"833(1階)\"></a>",
-    "&nbsp;グリーンパワー\n — 生産コスト割引【究極】<br><a href=\"u000.html?cc=ja&unit=834\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni834_f00.png\" width=64 title=\"834(1階)\"></a>",
-    "&nbsp;モモパワー\n — キャラクターの移動速度アップ\n【究極】<br><a href=\"u000.html?cc=ja&unit=835\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni835_f00.png\" width=64 title=\"835(1階)\"></a>"
+    "銃刀法 — 「ふっとばし」効果アップ【中】<br><a href=\"u000.html?cc=ja&unit=754\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni754_f00.png\" width=64 title=\"754(1階)\"></a><a href=\"u000.html?cc=ja&unit=011\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni011_f00.png\" width=64 title=\"011(1階)\"></a>",
+    "レッドパワー — 「怪人特効」効果【付与】<br><a href=\"u000.html?cc=ja&unit=831\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni831_f00.png\" width=64 title=\"831(1階)\"></a>",
+    "ブルーパワー — 研究力アップ【究極】<br><a href=\"u000.html?cc=ja&unit=832\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni832_f00.png\" width=64 title=\"832(1階)\"></a>",
+    "イエローパワー — 「波動ダメージ無効」効果【付与】<br><a href=\"u000.html?cc=ja&unit=833\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni833_f00.png\" width=64 title=\"833(1階)\"></a>",
+    "グリーンパワー — 生産コスト割引【究極】<br><a href=\"u000.html?cc=ja&unit=834\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni834_f00.png\" width=64 title=\"834(1階)\"></a>",
+    "モモパワー — キャラクターの移動速度アップ【究極】<br><a href=\"u000.html?cc=ja&unit=835\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni835_f00.png\" width=64 title=\"835(1階)\"></a>"
   ],
   "mission_list": [
     "1. (Special) 超高難易度ミッション①：「魂底からの帰化」のステージ6を。生産額1000円以上のキャラクターだけ編成して1回クリアしよう！ <br>Reward：キャッツアイ【伝説】 +3\n<br>",
