@@ -31,6 +31,47 @@
 <script>function toggleInputs() {const treasureDiv = document.getElementById("treasureInputs");if (treasureDiv.style.display === "none" || treasureDiv.style.display === "") {treasureDiv.style.display = "flex";} else {treasureDiv.style.display = "none";}}</script>
 <script>if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {document.documentElement.style.display = 'none';document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="static/dark-mode-toggle/light.css" onload="document.documentElement.style.display = ``">', );}
 </script>
+<style>
+.mapstage-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    gap: 0.1rem;     
+    padding-left: 0;        
+    margin-left: 0;
+}
+
+.img-wrapper {
+    width: 150px;
+    height: 60px;
+    position: relative;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.fake-btn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #605757;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+</style>
 <body>
 <article>
 <h2 class="top" id="title"></h2><div id="update"></div>
