@@ -19,5 +19,7 @@
 "hp_percent":"体力％：",
 "atk_percent":"攻撃％：",
 "all_percent":"統一％：",
-"t_effect_txt":"效果/能力"
+"t_effect_txt":"效果/能力",
+"t_drop_txt":"お金",
+"tspawn_txt":"出現"
 }

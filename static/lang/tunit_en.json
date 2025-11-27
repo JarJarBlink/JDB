@@ -3,7 +3,7 @@
   "fetch_button": "Search",
   "checkSecond_txt": "Seconds",
   "hp": "HP",
-  "t_freq_txt": "True Attack Frequency / Attack Frequency",
+  "t_freq_txt": "True Atk Freq / Atk Freq",
   "pre": "Attack At",
   "wait": "Wait",
   "expl": "Explanation",
@@ -19,5 +19,7 @@
   "hp_percent":"HP％：",
   "atk_percent":"ATK％：",
   "all_percent":"ALL％：",
-  "t_effect_txt":"Effect/Ability"
+  "t_effect_txt":"Effect/Ability",
+  "t_drop_txt":"Drop",
+  "tspawn_txt":"Spawn"
 }
