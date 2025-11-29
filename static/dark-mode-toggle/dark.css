@@ -1,0 +1,290 @@
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+:root {
+  color-scheme: dark; /* stylelint-disable-line property-no-unknown */
+
+  --background-color: rgb(20 20 20); 
+  --text-color: rgba(227 227 227 / 95%);
+  --shadow-color: rgb(240 240 240 / 50%);
+  --accent-color: rgb(0 0 240 / 50%);
+  
+  --color-button: rgba(227 227 227 / 95%);
+  --color-button-bc: rgb(40 40 40);
+
+  --color-base-bc : rgb(20 20 20);
+  --color-title-bc : #2c303d;
+  --color-h2 : rgb(227 227 227);
+  --color-h3 : rgb(227 227 227);
+  --color-h3-border : #2c303d;
+  --color-link-home : #99c3ff;
+  --color-white-227 : rgb(227 227 227);
+  
+  --color-article-bc : rgb(20 20 20); 
+  --color-desc-bc : rgb(20 20 20);
+  
+  --color-table-simple-th-bc : #2c303d;
+  
+  --color-table-linkpage-table_header-bc : #444444;
+  
+  --color-table-default-border: #373b3e;
+  --color-table-border2: #464B4F;
+  
+  --color-default-table-th-bc: #2c303d;
+  --color-default-border: #373b3e;
+  
+  --color-darkeye-bc : #362147;
+  --color-blue-bc : #9A9FFF;
+  --color-green-bc : #00D100;
+  --color-red-bc : #FF7E6A;
+  --color-pink-bc : #FF7BBB;
+  --color-fn-bc : #6B0C04;
+  --color-fn-ura-bc : #363636;
+  --color-fn : #FF5B99;
+  
+  --color-gr-bc : #602F2F;
+  
+  --color-eve-green-bc : #304D2C;
+  --color-eve-red-bc : #3B0C09;
+  --color-eve-red-kakutei-bc : #541712;
+  --color-eve-purple-bc : #33263B;
+  --color-eve-purple-kakutei-bc : #41314A;
+  
+  --color-rare-yellow-bc : #2E2C16;
+  --color-rare-salmon-bc : #994F46;
+  --color-rare-red-bc : #CC0000;
+  --color-rare-aqua-bc : #006B69;
+  --color-rare-hardlime-bc : #257B03;
+  --color-rare-lightlime-bc : #257B03;
+  
+  --color-mm-button-bc : rgb(18 18 18); 
+  --color-mm-button-active-bc : rgb(30 30 30); 
+  
+  --color-tab-head-card : #FFF;
+  --color-mm-fccece : #573731;
+  --color-mm-fddea1 : #826D46;
+  --color-mm-815c5c : #C48B8B;
+  --color-mmalready-selected : #4A4A4A;
+  
+  --color-gamatoto-title : #6B5757;
+  --color-gamatoto-blue-title : #42486B;
+  
+  --color-f5deb3 : #7D715B;
+  --color-c0c0c0 : #C0C0C0;
+  
+  --skd-tabclass-bc : #303030;
+  
+  --color-clickablespan-bc : #00008b;
+}
+
+a {
+  color: #99c3ff;
+}
+a:visited {
+    color: #99c3ff
+}
+
+.disable-tab-head {
+    opacity: 0.8;
+}
+
+.masked_copy {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  background-image:none;
+  -webkit-mask-image: url(../img/iconSite/copy.png);
+  mask-image: url(../img/iconSite/copy.png);
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 12px auto;
+  mask-size: 12px auto;
+  display: inline-block;
+}
+
+.masked_nikukyu {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  background-image:none;
+  -webkit-mask-image: url(../img/iconSite/nikukyu.png);
+  mask-image: url(../img/iconSite/nikukyu.png);
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 15px auto;
+  mask-size: 15px auto;
+  display: inline-block;
+}
+
+.masked_nikukyu_20 {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  background-image:none;
+  -webkit-mask-image: url(../img/iconSite/nikukyu.png);
+  mask-image: url(../img/iconSite/nikukyu.png);
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 20px auto;
+  mask-size: 20px auto;
+  display: inline-block;
+}
+
+.masked_dupe {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  background-image:none;
+  -webkit-mask-image: url(../img/iconSite/dupe.png);
+  mask-image: url(../img/iconSite/dupe.png);
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 10px auto;
+  mask-size: 10px auto;
+  display: inline-block;
+}
+.masked_movie {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  background-image:none;
+  -webkit-mask-image: url(../img/iconSite/movie.png);
+  mask-image: url(../img/iconSite/movie.png);
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 15px auto;
+  mask-size: 15px auto;
+  display: inline-block;
+}
+.masked_info {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  background-image:none;
+  -webkit-mask-image: url(../img/iconSite/info_icon.png);
+  mask-image: url(../img/iconSite/info_icon.png);
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 15px auto;
+  mask-size: 15px auto;
+  display: inline-block;
+}
+.masked_down {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  background-image:none;
+  -webkit-mask-image: url(../img/iconSite/arrow-down-square.svg);
+  mask-image: url(../img/iconSite/arrow-down-square.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 16px auto;
+  mask-size: 16px auto;
+  display: inline-block;
+}
+
+.masked_up {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  background-image:none;
+  -webkit-mask-image: url(../img/iconSite/arrow-up-square.svg);
+  mask-image: url(../img/iconSite/arrow-up-square.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 16px auto;
+  mask-size: 16px auto;
+  display: inline-block;
+}
+
+.masked_left {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  background-image:none;
+  -webkit-mask-image: url(../img/iconSite/arrow-left.svg);
+  mask-image: url(../img/iconSite/arrow-left.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 16px auto;
+  mask-size: 16px auto;
+  display: inline-block;
+}
+.masked_right {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  background-image:none;
+  -webkit-mask-image: url(../img/iconSite/arrow-right.svg);
+  mask-image: url(../img/iconSite/arrow-right.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 16px auto;
+  mask-size: 16px auto;
+  display: inline-block;
+}
+.masked_left_right {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  background-image:none;
+  -webkit-mask-image: url(../img/iconSite/arrow-left-right.svg);
+  mask-image: url(../img/iconSite/arrow-left-right.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 16px auto;
+  mask-size: 16px auto;
+  display: inline-block;
+}
+.masked_autorenew {
+  width: 16px;
+  height: 16px;
+  background-color: rgb(227 227 227);
+  background-image:none;
+  -webkit-mask-image: url(../img/iconSite/autorenew.svg);
+  mask-image: url(../img/iconSite/autorenew.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 16px auto;
+  mask-size: 16px auto;
+  display: inline-block;
+}
+.masked_dl {
+  width: 16px;
+  height: 16px;
+  background-color: rgb(227 227 227);
+  background-image:none;
+  -webkit-mask-image: url(../img/iconSite/dl.svg);
+  mask-image: url(../img/iconSite/dl.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: 16px auto;
+  mask-size: 16px auto;
+  display: inline-block;
+}

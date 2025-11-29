@@ -1,0 +1,95 @@
+<!DOCTYPE HTML> 
+<html lang="tw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1">
+<title>The Battle Cats Update</title>
+<link rel="icon" href="static/favicon.ico">
+<link rel="stylesheet" href='static/css/database/style.css'>
+<link rel="stylesheet" href='static/css/database/origin.css'>
+<link rel="stylesheet" href='static/css/database/mightycat.css'>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="noindex">
+<noscript><style>body { display: none; }</style></noscript>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="static/js/home/ga.js"></script>
+<script src="static/js/home/lang.js"></script>
+<script src="static/js/update/update.js"></script>
+<script src="static/js/update/scroll.js"></script>
+<meta name="color-scheme" content="dark light"/>
+<meta name="theme-color" content=""/>
+<link rel="stylesheet" href="static/dark-mode-toggle/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/common.css"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/slider.css"/>
+<script type="module" src="static/dark-mode-toggle/dark-mode-toggle-playground.js"></script>
+<script type="module" src="static/dark-mode-toggle/dark-mode-toggle.js"></script>
+</head>
+<script>function toggleInputs() {const treasureDiv = document.getElementById("treasureInputs");if (treasureDiv.style.display === "none" || treasureDiv.style.display === "") {treasureDiv.style.display = "flex";} else {treasureDiv.style.display = "none";}}</script>
+<script>if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {document.documentElement.style.display = 'none';document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="static/dark-mode-toggle/light.css" onload="document.documentElement.style.display = ``">', );}
+</script>
+<style>
+.mapstage-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    gap: 0.1rem;     
+    padding-left: 0;        
+    margin-left: 0;
+}
+
+.img-wrapper {
+    width: 150px;
+    height: 60px;
+    position: relative;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.fake-btn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #605757;
+    color: #fff;
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+</style>
+<body>
+<article>
+<h2 class="top" id="title"></h2><div id="update"></div>
+<div id="pagetop">
+    <a href="#">
+        <img src="static/img/others/pagetop_02.png" alt="">
+        <br>
+        <img src="static/img/others/pagetop_01.png" alt="">
+    </a>
+</div>
+<div style="height: 8rem;"></div>
+<div class="contact">
+    <ul>
+        <li id="contact1"><a href='table.html' rel="noopener"><img src="static/img/icon/bottom_bg01.png" width=18 class="icon"/>Table</a></li>
+        <li id="contact2"><a href="https://discord.gg/pHmwa4Ku5g"><img src="static/img/icon/bottom_bg01.png" width=18 class="icon"/>Discord</a></li>
+    </ul>
+</div>
+<dark-mode-toggle class="slider" mode="dark" style="display: none; pointer-events: none;"></dark-mode-toggle>
+</article>
+</body>
+</html>

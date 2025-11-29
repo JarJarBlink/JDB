@@ -1,0 +1,62 @@
+.img-wrapper {
+    margin-left: 26px;
+    position: relative;
+    display: inline-block;
+}
+
+.fake-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(242, 241, 241, 0.8); /* 半透明淺灰 */
+    color: black;
+    border-radius: 4px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    z-index: 0;
+}
+
+.img-wrapper img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+#pagetop{
+	width:8%;
+	max-width: 110px;
+	min-width: 60px;
+	position: fixed;
+	bottom:-30%;
+	right: -14%;
+	z-index: 200;
+}
+
+#pagetop a{
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+  cursor:pointer;
+}
+.move_up01{
+	animation:ani_move_up01 0.4s ease-in-out 0.1s forwards;
+}
+
+@keyframes ani_move_up01{
+	0% { bottom: -30%; right: 0.5%;}
+	100% { bottom: 1%; right: 0.5%;}
+}
+
+.move_fly01{
+	animation:ani_move_fly01 0.7s ease-in-out forwards;
+}
+
+@keyframes ani_move_fly01{
+	0% { bottom: 1%; right: 0.5%;}
+	100% { bottom: 120%; right: 0.5%;}
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1">
+    <title>JAR Battle Cats Database</title>
+    <link rel="icon" href="static/favicon.ico">
+    <link rel="stylesheet" href="static/css/database/style.css">
+    <link rel="stylesheet" href="static/css/database/origin.css">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="robots" content="noindex">
+    <noscript><style>body { display: none; }</style></noscript>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script>
+    <script src="static/js/home/ga.js"></script>
+    <meta name="color-scheme" content="dark light"/>
+    <meta name="theme-color" content=""/>
+    <link rel="stylesheet" href="static/dark-mode-toggle/dark.css" media="(prefers-color-scheme: dark)"/>
+    <link rel="stylesheet" href="static/dark-mode-toggle/light.css" media="(prefers-color-scheme: light)"/>
+    <link rel="stylesheet" href="static/dark-mode-toggle/common.css"/>
+    <link rel="stylesheet" href="static/dark-mode-toggle/slider.css"/>
+    <script type="module" src="static/dark-mode-toggle/dark-mode-toggle-playground.js"></script>
+    <script type="module" src="static/dark-mode-toggle/dark-mode-toggle.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" 
+            onload="renderMathInElement(document.body);"></script>
+    <style>
+        /* ----------------------------------------
+           Article: Formal English Style
+        ---------------------------------------- */
+        
+        #jar-details {
+            /* max-width: 850px; 
+            margin: 0 auto;*/
+            text-align: left;
+            line-height: 1.7;
+            font-family: "Georgia", "Times New Roman", serif;
+            font-size: 1rem;
+            color: #222;
+        }
+ 
+        #jar-details .collapsible-inner {
+            padding: 1em 1.5em;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        /*
+        #jar-details h3 {
+            font-size: 1.4rem;
+            margin-top: 1.8em;
+            margin-bottom: 0.6em;
+            font-weight: 600;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.3em;
+        }
+
+        #jar-details h4 {
+            font-size: 1.15rem;
+            margin-top: 1.2em;
+            margin-bottom: 0.5em;
+            font-weight: 600;
+            color: #333;
+        }*/
+
+        #jar-details p {
+            margin-bottom: 1.2em;
+            text-align: justify;
+        }
+
+        #jar-details ul,
+        #jar-details ol {
+            margin: 1em 0 1em 2em;
+        }
+
+        #jar-details li {
+            margin-bottom: 0.5em;
+        }
+
+        #jar-details dl {
+            margin: 1em 0;
+            padding-left: 1em;
+        }
+
+        #jar-details h4 {
+            font-weight: bold;
+            margin-top: 0.6em;
+            color: #000;
+        }
+
+        #transcription-date {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 1.2em;
+            display: block;
+        }
+    
+        .math-small {
+            font-size: 0.85em;
+            line-height: 1.2;  
+        }
+
+        @media (max-width: 600px) {
+            .math-small {
+                font-size: 0.70em;
+            }
+        }
+     
+    </style>
+</head>
+<body>
+<article id="about-section">
+    <h2 class="top">Diving into the Depths of Battle Cats</h2>
+    <div id="jar-details" class="collapsible">
+        <div class="collapsible-inner">
+            <p id="transcription-date">4 September 2025</p>
+
+            <h3>The Hidden Timing</h3>
+            <p>
+                <em>The Battle Cats</em> has been around for over a decade, yet the developers have never released
+                official character statistics. All numerical data circulating today is the result of community research
+                and in-game testing. However, few have questioned the accuracy of these long-standing numbers, terms,
+                and conventions. Even those who provide the data have rarely given rigorous explanations or definitions
+                that faithfully match the game’s actual mechanics.
+            </p>
+            <p>
+                While such numerical discrepancies do not significantly impact casual gameplay, they become problematic
+                for those who seek a deeper understanding of the game. For them, vague or inconsistent terminology makes
+                it impossible to give precise explanations. Thus, I will attempt to provide a clear guide and framework
+                that resolves these inconsistencies. This is a challenging task, since I must ensure that the definitions
+                are both logically sound and faithful to in-game behavior, requiring a holistic view of
+                <em>The Battle Cats</em>’ mechanics.
+            </p>
+
+            <h3>What Is a Frame (F)?</h3>
+            <p>
+            <em>The Battle Cats</em> runs at 30 FPS, with each frame (1F) corresponding to 1/30 of a second. 
+            We define 1F as the duration of a single frame. It is important to note that, unlike continuous physical time, 
+            frames are discrete units whose counting inherently represents both a temporal length and a point in time 
+            (i.e., each 1F is a discrete duration on the timeline and simultaneously a specific moment). 
+            In contrast, seconds are generally treated as a continuous measure of duration, 
+            while when referred to as points in time, they are described as temporal instants. 
+            This particular nature of frames will influence the conceptual understanding of FSwing and BSwing discussed later.
+            In short, a "frame" is the smallest unit of in-game logic, whereas a "second" is merely an abstract measure of continuous time.
+            </p>
+
+            <h3>Terminology and Definitions</h3>
+            
+            <p>
+                <h4>From the animation design view</h4>
+                <ul>
+                <dt>0F, 1F, 2F, 3F, ... nF,...</dt>
+                    <strong>攻発生(1st atk)</strong>: 1st attack occurs at this frame, i.e., attack judgment frame index<br>
+                    <strong>攻発生2nd(2nd atk)</strong>: 2nd attack occurs at this frame, i.e., 2nd attack judgment frame index<br>
+                    <strong>攻発生nth(nth atk)</strong>: the nth attack frame index = nF<br>
+                    <strong>攻撃頻度(Atk Freq)</strong>: total atk animation frames<br>
+                </ul>  
+            </p>
+            <p>   
+                <h4>From the official code view</h4>
+                <ul>
+                    <dt><strong>FSwing</strong></dt><dd>the number of frames before an attack (excluding the attack judgment frame).</dd>
+                    <dt><strong>BSwing</strong></dt><dd>the number of frames after FSwing, including the attack judgment frame itself.</dd>
+                    <dt><strong>WSwing</strong></dt><dd>the number of frames after FSwing, including the attack judgment frame itself; it controls the total Standby animation frames to display.  If WSwing is greater than BSwing by more than 1, the Normal Standby time is shown(Standby animation).</dd>
+
+                    <dt><strong>wait</strong></dt><dd>the time between animations = 1F (Displayed with the Standby animation).</dd>
+
+                   
+                    <dt><strong>Normal Standby Time</strong></dt>
+                    <dd class="math-small">
+                        $$
+                        \text{t} = 
+                        \begin{cases} 
+                        WSwing - BSwing - 1 & \text{if } WS > BS+1 \\
+                        0 & \text{otherwise}
+                        \end{cases}
+                        $$
+                    </dd>
+ 
+                    <dt><strong>Wait</strong></dt><dd>the time the Standby animation is shown when no KB occurs = Normal Standby time + wait</dd>
+                    <dt><strong>実攻撃頻度(Real Atk Freq)</strong></dt><dd>the attack index of the 2nd attack animation − the attack index of the 1st attack animation = 2nd 攻発生 - 1st 攻発生 = 2nd FSwing - 1st FSwing</dd>
+                </ul>  
+                <p>Note: 攻発生 ≠ FSwing. 攻発生 is not a "time length"; it indicates which frame the attack occurs on.</p>
+            </p>  
+            <p> 
+                <h4>Example: No.71-3 飛翔の武神・真田幸村</h4>
+                <ul>
+                    攻発生 = 1F<br>
+                    攻発生2nd = 8F<br>
+                    攻撃頻度(Atk Freq) = 137F<br>
+                    実攻撃頻度(Real Atk Freq) = 137F<br>
+                    FSwing = 8F  (Not shown in JDB)<br>
+                    BSwing = 129F<br>
+                    WSwing = 0F<br>
+                    wait = 1F  (Not shown in JDB)<br>
+                    Normal Standby time = 0F  (Not shown in JDB)<br>
+                    Wait = 1F<br>
+                </ul>
+            </p>
+
+            <p> 
+                <h4>No.47-3	マキシマムファイター</h4>
+                <ul>
+                    攻発生 = 16F<br>
+                    攻撃頻度(Atk Freq) = 25F<br>
+                    実攻撃頻度(Real Atk Freq) = 25F<br>
+                    FSwing = 16F  (Not shown in JDB)<br>
+                    BSwing = 9F<br>
+                    WSwing = 10F<br>
+                    wait = 1F  (Not shown in JDB)<br>
+                    Normal Standby time = 0F  (Not shown in JDB)<br>
+                    Wait = 1F<br>
+                </ul>
+            </p>
+            
+                
+
+            <h3>The TBA Problem</h3>
+            <p>
+                The community has long used the term <strong>TBA (Time Between Attacks)</strong>. For 飛翔の武神・真田幸村 ,
+                databases show TBA = 0F. But in fact:
+            </p>
+            <p>
+                <strong>TBA = Real Attack Frequency = 137F</strong>  
+                (or alternatively, TBA = 130F if measured as the time between the previous attack landing and the next attack animation start)
+            </p>
+            <p>
+                This indicates that TBA is only meaningful when <strong>TBA &gt; BSwing</strong>. When <strong>TBA &lt; BSwing</strong>, the definition becomes inconsistent, leading to contradictions. 
+                Therefore, I propose adopting the term <strong>WSwing</strong> instead, which more accurately reflects the intended measurement.
+            </p>
+
+            <h3>Why Define FSwing This Way?</h3>
+            <p>
+                Let us explain why FSwing is defined this way. Pre-attack Animation (FSwing) represents the number of frames before the attack judgment frame, excluding the attack frame itself.  
+                This definition is grounded in a concrete game mechanic observable in <em>The Battle Cats</em>. Careful gameplay reveals that a unit may react differently when knocked back (KB) at different phases of its attack animation:
+            </p>
+            <ul>
+                <li>If a unit is knocked back during FSwing → the attack sequence restarts.</li>
+                <li>If a unit is knocked back during BSwing → the attack animation is canceled and the unit transitions to the Wait animation.</li>
+                <li>If a unit is knocked back exactly on the attack judgment frame → it is counted as BSwing, and the unit transitions to Wait rather than restarting the attack.</li>
+            </ul>
+            <p>
+                Some may ask: “Doesn’t No.71-3 <em>飛翔の武神・真田幸村</em> immediately re-attack if knocked back on the attack frame?”  
+                Remember, even in that case there is a hidden 1F delay before the unit begins the next attack. This 1F is extremely short, so it often goes unnoticed.  
+                Furthermore, the game designers deliberately rendered this 1F as visually identical to the first frame of the attack animation and display the animation starting from the second frame, ensuring a seamless visual experience.  
+                As a result, the attack judgment frame retains the unique properties of BSwing. Defining FSwing in this manner allows us to accurately describe the underlying mechanics of <em>The Battle Cats</em> without ambiguity.
+            </p>
+
+            <h3>Conclusion</h3>
+            <p>
+                These findings are based on years of observation and in-game testing. While they may not affect casual
+                play, consistent and accurate terminology is essential for researchers, database maintainers, and
+                players who wish to fully understand the mechanics of <em>The Battle Cats</em>.
+            </p>
+            <p>
+                Feel free to cite this work — I hope it serves as a foundation for more accurate and consistent
+                representations of the game’s underlying mechanics.
+            </p>
+        </div>
+    </div>
+    <div class="contact">
+        <ul>
+            <li id="contact1"><a href='index.html' rel="noopener"><img src="static/img/icon/bottom_bg01.png" width=18 class="icon"/>Home</a></li>
+            <li id="contact2">　</li>
+            <!--<li id="contact3"><a href="">contact me</a></li>-->
+        </ul>
+    </div>
+    <dark-mode-toggle class="slider" mode="dark" style="display: none; pointer-events: none;"></dark-mode-toggle>
+</article>
+</body>
+</html>

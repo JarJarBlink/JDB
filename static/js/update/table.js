@@ -1,0 +1,2 @@
+$(document).ready(function(){$.getJSON('./static/update_data/ver.json',function(data){$.each(data,function(region,versions){var $ul=$('#'+region+' ul');$ul.empty();$.each(versions,function(index,ver){var major=ver.slice(0,2);var minor=ver.slice(3,4);var patch=ver.slice(5,6);var text='v'+parseInt(major,10)+'.'+parseInt(minor,10);if(parseInt(patch,10)!==0){text+='.'+parseInt(patch,10)+'(Minor)';}
+var $li=$('<li>');var $a=$('<a>').attr('href','./update.html?cc='+region+'&ver='+ver).text(text);$li.append($a);$ul.append($li);});});}).fail(function(err){});});
