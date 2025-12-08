@@ -20,3 +20,6 @@ Berserker %@	Increases attack power after defeating a<br>certain number of enemi
 Shortened Cooldown %@	Shortens cooldown time every two<br>deployments (does not stack)
 Resist Freeze %@	Reduces effects of Freeze from enemy attacks.
 Resist Weaken %@	Reduces effect of Weaken from enemy attacks.
+Cost Down %@	Reduces unit deployment cost after<br>every 2 deployments (Does not stack).
+Resist Surges %@	Reduces the damage received from enemy Surge attacks.
+First Bounty Up %@	Earn more Money for first defeated enemy after<br>every 2 deployments (Does not stack).

@@ -287,12 +287,12 @@ Arena of Honor (Still Alive at 9)	11023	0	-1
 Arena of Honor (10 Year Plan)	11024	0	-1
 Legend Quest	16000	0	3
 Underground Labyrinth: The Grand Deep	33000	0	3
-Evangelion Activates!	2065	0	0
+EVANGELION Activates!	2065	0	0
 Decisive Battle!	2066	0	3
 The 9th Angel Strikes!	2205	0	0
 The 10th Angel Strikes!	2206	0	1
-Eva Unit-13 Strikes!	2207	0	1
-Final Battle: Eva Unit-13	2208	0	3
+EVA Unit-13 Strikes!	2207	0	1
+Final Battle: EVA Unit-13	2208	0	3
 Bye-bye, all of the Cats	2209	0	3
 Heralds of The End	27007	0	3
 #01 The Ghost Chapel	24052	0	8
@@ -381,7 +381,7 @@ River City Three-Leg Race ③	1264	0	3
 River City Relay	1359	0	4
 #02 Sugar Struggle	1320	0	0
 #03 Demons' Night Out	24056	0	3
-#04 Mischevous Schemes	1321	0	3
+#04 Mischievous Schemes	1321	0	3
 The Malevolent Cat	1350	0	1
 The Malevolent Tank	1351	0	1
 The Malevolent Axe	1352	0	1
@@ -526,27 +526,81 @@ Chemical Plant Zone	2225	0	3
 Sky Sanctuary	2226	0	4
 Radical Highway	27023	0	3
 Arena of Honor (Sonic Battle!)	11032	0	-1
-	1324	0	2
+Chemical Plant Zone	2225	0	3
 Otherworld Colosseum	36013	0	3
 Arena of Destiny (Talent)	11033	0	6
 Arena of Power (Freeze in Fright)	11034	0	-1
 Summer Break Cats Castaway	24071	0	8
 Island Defenders!	24072	0	3
 Unprecedented Forecasts	1405	0	8
-	2227	0	0
-	2228	0	1
-	2229	0	1
-	27024	0	3
+The 9th Angel Strikes!	2227	0	0
+The 10th Angel Strikes!	2228	0	1
+EVA Unit-13 Strikes!	2229	0	1
+Mass Production EVA Strikes	27024	0	3
 	24057	0	8
 	1322	0	3
 	1323	0	4
 	1324	0	2
 Otherworld Colosseum	36014	0	3
-Arena of Destiny (Talent)	11035	0	6
+Arena of Destiny (Talent Tournament)	11035	0	6
 Jumbo Invasion	1406	0	0
 Summer Break Cats: Paradise	24073	0	8
 Extravagant Resort Land	1407	0	3
 Sauna of Paradise	1408	0	3
-	1409	0	2
-	24074	0	8
-	1410	0	3
+110M Celebration Gifts Galore!	1409	0	2
+110M Download Celebration!	24074	0	8
+Fireworks Spectacular!	1410	0	3
+Treasure Fest (All Chapters)	113	0	-1
+Otherworld Colosseum	36015	0	3
+Otherworld Colosseum	36016	0	3
+Arena of Destiny (Talent Tournament)	11036	0	6
+	1411	0	2
+New Challenger: VS RYU (Easy)	2230	0	4
+New Challenger: VS RYU (Expert)	2231	0	4
+New Challenger: VS CHUN-LI (Easy)	2232	0	4
+New Challenger: VS CHUN-LI (Expert)	2233	0	4
+New Challenger: VS GUILE (Easy)	2234	0	4
+New Challenger: VS GUILE (Expert)	2235	0	4
+New Challenger: VS ZANGIEF (Easy)	2236	0	4
+New Challenger: VS ZANGIEF (Expert)	2237	0	4
+New Challenger: VS BLANKA (Easy) 	2238	0	4
+New Challenger: VS BLANKA (Expert)	2239	0	4
+New Challenger: VS DHALSIM (Easy)	2240	0	4
+New Challenger: VS DHALSIM (Expert) 	2241	0	4
+New Challenger: VS KEN (Easy)	2242	0	4
+New Challenger: VS KEN (Expert)	2243	0	4
+New Challenger: VS E. HONDA (Easy)	2244	0	4
+New Challenger: VS E. HONDA (Expert)	2245	0	4
+New Challenger: VS BALROG (Normal)	2246	0	4
+New Challenger: VS BALROG (Insane)	2247	0	4
+New Challenger: VS VEGA(Normal) 	2248	0	4
+New Challenger: VS VEGA (Insane) 	2249	0	4
+New Challenger: VS SAGAT (Normal)	2250	0	4
+New Challenger: VS SAGAT (Insane)	2251	0	4
+New Challenger: VS M. BISON (Normal)	2252	0	4
+New Challenger: VS M. BISON (Insane)	2253	0	4
+New Challenger: VS SAKURA (Easy)	2254	0	4
+New Challenger: VS SAKURA (Expert)	2255	0	4
+New Challenger: VS LUKE (Easy)	2256	0	4
+New Challenger: VS LUKE (Expert)	2257	0	4
+New Challenger: VS CAMMY (Easy)	2258	0	4
+New Challenger: VS CAMMY (Expert)	2259	0	4
+New Challenger: VS JURI (Easy)	2260	0	4
+New Challenger: VS JURI (Expert)	2261	0	4
+New Challenger: VS AKUMA	2262	0	0
+Arena of Honor (I Seek the Strongest)	11037	0	-1
+Street Fighter - EASY -	2135	0	0
+Street Fighter - NORMAL -	2136	0	0
+Street Fighter - HARD -	2137	0	0
+Street Fighter - VERY HARD -	2193	0	3
+Otherworld Colosseum	36017	0	3
+Arena of Destiny (Talent Tournament)	11038	0	6
+	1412	0	8
+	24075	0	3
+	24076	0	3
+	1413	0	4
+	1414	0	3
+	1415	0	3
+	1416	0	3
+	11039	0	-1
+	1417	0	2

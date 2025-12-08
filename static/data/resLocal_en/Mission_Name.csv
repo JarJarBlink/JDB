@@ -90,15 +90,15 @@
 9047|Score more than 5000 points on the<br>Special Stage "Marzi Pain"!
 9048|Score more than 6000 points on the<br>Special Stage "Cavity Creeping"!
 9049|Upgrade Egg Cat to Level 10!<br>(You must evolve the Cat before the event ends!)|Check the Special Missions to access<br>limited Springtime challenges!
-9050|Upgrade Shinji & Cat to Level 10!<br>(You must evolve the Cat before the event ends!)|Check the Special Missions to access<br>limited Evangelion collab challenges!
-9051||
-9052|
-9053|
-9054||Check the Special Missions to access<br>Evangelion Collab missions!
+9050|Upgrade Shinji & Cat to Level 10!<br>(You must evolve the Cat before the event ends!)|Check the Special Missions to access<br>limited EVANGELION collab challenges!
+9051|Clear any EVANGELION collab<br>stage %d times! (%d of %d)|EVANGELION Collab Missions added<br>to the Special Missions!
+9052|Clear any EVANGELION collab<br>stage %d times! (%d of %d)
+9053|Clear any EVANGELION collab<br>stage %d times! (%d of %d)
+9054|Activate the EVA Angel Killer CatCombo and clear any stage.<br>Clear Empire of Cats Ch. 1 and deploy Shinji & Cat and Kaworu & Cat...|Check the Special Missions to access<br>EVANGELION Collab missions!
 9055|Destroy the 4th Angel<br>Encounter this enemy at "State of Emergency"
 9056|Destroy the 6th Angel<br>Encounter this enemy at "Futagoyama Fortress"
 9057|Destroy the 9th Angel<br>Encounter this enemy at "Asuka On Board (Easy)"
-9058|Destroy the 10th Angel<br>Encounter this enemy at "Refusal Type (Hard)"|Check the Special Missions to access<br>Evangelion Collab missions!
+9058|Destroy the 10th Angel<br>Encounter this enemy at "Refusal Type (Hard)"|Check the Special Missions to access<br>EVANGELION Collab missions!
 9059|Destroy all Angels<br>Complete %d Destroy Angel missions: %d of %d complete.
 9060|Evolve Pokota at Level 10!<br>This mission can only be completed during the LINE Pokopang! collab event!|Check the Special Missions to access<br>limited LINE Pokopang! challenges!
 9061|Evolve Ovis at Level 10!<br>This mission can only be completed during the LINE Pokopang! collab event!
@@ -958,11 +958,11 @@
 9528|Clear stages from "Halloween Event"<br>%d times! (Any event stage) (%d of %d)
 9529|Earn a Featured Item from<br>the Halloween Party Event Capsules!
 9530|Clear all Halloween Event Missions<br>to earn 1 Rare Ticket!
-9531|[Running Start Campaign] Clear any Empire<br>of Cats stage %d times! (%d of %d)|Check the Special Missions to access<br>limited "Running Start" challenges!
-9532|[Running Start Campaign] Clear any Empire<br>of Cats stage %d times! (%d of %d)
-9533|[Running Start Campaign] Clear any Empire<br>of Cats stage %d times! (%d of %d)
-9534|[Running Start Campaign] Clear Empire of Cats<br>Japan stage and earn a Rare Ticket!
-9535|[Running Start Campaign] Clear Empire of Cats<br>Japan stage and earn a Leadership!
+9531|[Beginner Campaign] Clear %d Empire of Cats stages.<br>(Any Empire of Cats stage) (%d of %d)|Check the Special Missions to access<br>limited "Beginner Campaign"!
+9532|[Beginner Campaign] Clear %d Empire of Cats stages.<br>(Any Empire of Cats stage) (%d of %d)
+9533|[Beginner Campaign] Clear %d Empire of Cats stages.<br>(Any Empire of Cats stage) (%d of %d)
+9534|[Beginner Campaign] Clear Empire of Cats Japan stage<br>and earn a Rare Ticket for the Rare Capsules!
+9535|[Beginner Campaign] Clear Empire of Cats Japan stage<br>and earn Leadership to recover Cat Energy!
 66|Defeat the lifeform in Ancient Forest Labyrinth<br>Lv.1 Stage 6.
 67|[Catclaw Championships] Clear %d stages of Catclaw Championships Rank 1.<br>Access Catclaw Dojo to visit this stage (%d of %d)|Catclaw Championships Missions<br>have been added to Main Missions!
 68|[Catclaw Championships] Get %d Legend Cats. Progress in Legend<br>Stages to collect them from special stages (%d of %d)|Catclaw Championships Missions<br>have been added to Main Missions!
@@ -978,12 +978,12 @@
 9542|Road to Unification ⑤：<br>Clear "Road to Unification Pt. 2", stage 1!|Road to Unification ⑤ Missions added<br>to the Special Missions!
 9543|Road to Unification ⑥：<br>Clear "Final Battle! The Rebellious King" stage 1!|Road to Unification ⑥ Missions added<br>to the Special Missions!
 72|Road to Unification Mission<br>Clear Empire of Cats Ch. 1 during the event to complete.
-9544|Road to Unification Mission: Clear Uncanny Legend stage<br>"Primitive Souls" with Cats that cost ¢1000 or more!|Road to Unification Missions added<br>to the Special Missions!
-9545|Road to Unification Mission: Clear Uncanny Legend stage<br>"Lifesaving Shovel" with 9 or more basic Cats!|Road to Unification Missions added<br>to the Special Missions!
-9546|Road to Unification Mission: Clear Uncanny Legend stage<br>"The Face of God" with 8 or more Super Rare Cats!|Road to Unification Missions added<br>to the Special Missions!
-9547|Road to Unification Mission: Clear Uncanny Legend stage<br>"Immortal Zenith" with Cats that cost ¢2000 or less!|Road to Unification Missions added<br>to the Special Missions!
-9548|Road to Unification Mission: Clear Uncanny Legend stage<br>"Revival of Origin" using 5 or fewer Cats!|Road to Unification Missions added<br>to the Special Missions!
-9549|Road to Unification Mission: Clear Zero Legend stage<br>"A Whole New World" with 9 or more Rare Cats!
+9544||
+9545||
+9546||
+9547||
+9548||
+9549||
 73|Double-tap a Treasure in the Treasure List to jump to that stage.<br>Open the Treasure List from the Cat Base.
 74|Tap an enemy icon on the stage select screen to jump to the<br>Enemy Guide. Tap the name of a cleared stage to show enemies. 
 75|Use Catamin A to restore stage attempts.<br>Use Catamin A on a Legend Stage.
@@ -1030,7 +1030,7 @@
 9584|[Premium Fair] Complete %d Gamatoto Expeditions.<br>Explore any 2 areas to complete (%d of %d)
 9585|[Premium Fair] Complete %d Gamatoto Expeditions.<br>Explore any one area to complete (%d of %d)
 9586|[Premium Fair] Clear %d Event stages.<br>Any Premium Fair stage counts toward the total (%d of %d)
-9587|[Premium Fair] Earn an item from<br>the Premium Fair Event Capsules!
+9587|[Premium Fair] Earn a Featured Item from<br>the Premium Fair Event Capsules!
 9588||
 9589|
 9590|
@@ -1071,12 +1071,33 @@
 9625|
 9626|Resort Dev. Part 2 - Celebrities:<br>Clear Extravagant Resort Land stage 1.|Resort Dev. Part 2 added<br>to the Special Missions!
 9627|Resort Dev. Part 3 - Restful Bliss:<br>Clear Sauna of Paradise %d times! (%d of %d)|Resort Dev. Part 3 added<br>to the Special Missions!
-9628||
-9629|
-9630|
-9631|
-9632|
-9633|
-9634|
-9635|
-9636|
+9628|【110M DL】Clear all of the event missions<br>and earn a Rare Ticket.|110M DL Missions added<br>to the Special Missions!
+9629|【110M DL】Send Gamatoto on %d successful expeditions!<br>(Complete 1 full expedition to any Gamatoto area: %d of %d)
+9630|【110M DL】Send Gamatoto on %d successful expeditions!<br>(Complete 3 full expeditions to any Gamatoto area: %d of %d)
+9631|【110M DL】Send Gamatoto on %d successful expeditions!<br>(Complete 5 full expeditions to any Gamatoto area: %d of %d)
+9632|【110M DL】Clear 110M Celebration Gifts Galore!<br>%d times! (%d of %d)
+9633|【110M DL】Clear 110M Celebration Gifts Galore!<br>%d times! (%d of %d)
+9634|【110M DL】Clear 110M Celebration Gifts Galore!<br>%d times! (%d of %d)
+9635|【110M DL】Clear %d stages in The Battle Cats. (%d of %d)
+9636|【110M DL】Clear %d stages in The Battle Cats.<br>(%d of %d)
+9637|Clear any Street Fighter 6 collab<br>stage %d times! (%d of %d)|Street Fighter 6 Collab Missions added<br>to the Special Missions!
+9638|Clear any Street Fighter 6 collab<br>stage %d times! (%d of %d)
+9639|Clear any Street Fighter 6 collab<br>stage %d times! (%d of %d)
+9640|Clear any Street Fighter 6 collab<br>stage %d times! (%d of %d)
+82|
+9641|
+9642|
+9643||
+9644|
+9645|
+9646||
+9647|
+9648||
+9649|
+9650|
+9651||
+9652|
+9653||
+9654|
+9655|
+9656||

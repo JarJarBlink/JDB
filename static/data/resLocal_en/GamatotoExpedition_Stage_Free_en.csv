@@ -1,6 +1,6 @@
 ＠|＠|＠|						//「0」の時の解放文章
-GAMATOTO Expeditions|must reach Level 3 to|venture into this area.|						//「1」の時の解放文章
-GAMATOTO Expeditions|must reach Level 6 to|venture into this area.|						//「2」の時の解放文章
+To venture into this area,|you must be user rank 200+|or GAMATOTO Level 3+.|						//「1」の時の解放文章
+To venture into this area,|you must be user rank 400+|or GAMATOTO Level 6+.|						//「2」の時の解放文章
 You must have User Rank 600|and GAMATOTO Level 10|to venture into this area.|						//「3」の時の解放文章
 You must have User Rank 900|and GAMATOTO Level 14|to venture into this area.|						//「4」の時の解放文章
 You must have User Rank 1600|and GAMATOTO Level 19|to venture into this area.|						//「5」の時の解放文章
@@ -15,3 +15,7 @@ GAMATOTO Expeditions|must reach Level 72 to|venture into this area.|						//「1
 GAMATOTO Expeditions|must reach Level 83 to|venture into this area.|						//「14」の時の解放文章
 To venture into this area,|GAMATOTO Level 88|is required.|//「15」の時の解放文章
 To venture into this area,|you must be user rank 5000+|and GAMATOTO Level 50+.|//「16」の時の解放文章
+To venture into this area,|you must be user rank 300+|or GAMATOTO Level 6+.|//「17」の時の解放文章
+To venture into this area,|you must be user rank 500+|or GAMATOTO Level 6+.|//「18」の時の解放文章
+To venture into this area,|you must be user rank 800+|and GAMATOTO Level 14+.|//「19」の時の解放文章
+To venture into this area,|you must be user rank 1000+|and GAMATOTO Level 14+.|//「20」の時の解放文章

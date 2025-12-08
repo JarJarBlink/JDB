@@ -368,7 +368,7 @@
 1318|Bug Sumo Finals
 1319|XP Bonanza!
 1320|#02 Sugar Struggle
-1321|#04 Mischevous Schemes
+1321|#04 Mischievous Schemes
 1322|Pt. 2: Enemy Maneuvers
 1323|Pt. 5 Musical Parade
 1324|B-Day Gifts
@@ -456,8 +456,15 @@
 1406|Jumbo Invasion
 1407|Extravagant Resort Land
 1408|Sauna of Paradise
-1409|
-1410|
+1409|110M Celebration Gifts Galore!
+1410|Fireworks Spectacular!
+1411|
+1412|
+1413|
+1414|
+1415|
+1416|
+1417|
 2000|ふるさと自衛隊
 2001|Alluring Princess
 2002|Princess Punt
@@ -523,7 +530,7 @@
 2062|Date Chance: Sairi
 2063|Date Chance: Ren
 2064|Mentori's Masterplan
-2065|Evangelion Activates!
+2065|EVANGELION Activates!
 2066|Decisive Battle!
 2067|The 9th Angel Strikes!
 2068|The 10th Angel Strikes!
@@ -593,34 +600,34 @@
 2132|にゃんこ大泥棒
 2133|U.F.O.襲来！
 2134|Hatsune Miku's Birthday!
-2135|Street Fighter (Easy)
-2136|Street Fighter (Normal)
-2137|Street Fighter (Hard)
-2138|New Challenger
-2139|New Challenger
-2140|New Challenger
-2141|New Challenger
-2142|New Challenger
-2143|New Challenger
-2144|New Challenger
-2145|New Challenger
-2146|New Challenger
-2147|New Challenger
-2148|New Challenger
-2149|New Challenger
-2150|New Challenger
-2151|New Challenger
-2152|New Challenger
-2153|New Challenger
-2154|New Challenger
-2155|New Challenger
-2156|New Challenger
-2157|New Challenger
-2158|New Challenger
-2159|New Challenger
-2160|New Challenger
-2161|New Challenger
-2162|New Challenger
+2135|Street Fighter - EASY -
+2136|Street Fighter - NORMAL -
+2137|Street Fighter - HARD -
+2138|
+2139|
+2140|
+2141|
+2142|
+2143|
+2144|
+2145|
+2146|
+2147|
+2148|
+2149|
+2150|
+2151|
+2152|
+2153|
+2154|
+2155|
+2156|
+2157|
+2158|
+2159|
+2160|
+2161|
+2162|
 2163|SNOW MIKU
 2164|Rumble in the Tendo Dojo
 2165|The Cursed Springs
@@ -647,11 +654,11 @@
 2186|Battle! Tamakoma Second's Leader
 2187|Battle! Tamakoma Second's Ace
 2188|Vs Training Marmod
-2189|New Challenger
-2190|New Challenger
-2191|New Challenger
-2192|New Challenger
-2193|Street Fighter: VERY HARD
+2189|
+2190|
+2191|
+2192|
+2193|Street Fighter - VERY HARD -
 2194|Holy War: Saber
 2195|Holy War: Lancer
 2196|Holy War: Archer
@@ -665,8 +672,8 @@
 2204|Redhead Yuki Cat Awakens!
 2205|The 9th Angel Strikes!
 2206|The 10th Angel Strikes!
-2207|Eva Unit-13 Strikes!
-2208|Final Battle: Eva Unit-13
+2207|EVA Unit-13 Strikes!
+2208|Final Battle: EVA Unit-13
 2209|Bye-bye, all of the Cats
 2210|Weekend Concert: Day 1
 2211|Weekend Concert: Day 2
@@ -685,9 +692,42 @@
 2224|Green Hill Zone
 2225|Chemical Plant Zone
 2226|Sky Sanctuary
-2227|
-2228|
-2229|
+2227|The 9th Angel Strikes!
+2228|The 10th Angel Strikes!
+2229|EVA Unit-13 Strikes!
+2230|New Challenger
+2231|New Challenger
+2232|New Challenger
+2233|New Challenger
+2234|New Challenger
+2235|New Challenger
+2236|New Challenger
+2237|New Challenger
+2238|New Challenger
+2239|New Challenger
+2240|New Challenger
+2241|New Challenger
+2242|New Challenger
+2243|New Challenger
+2244|New Challenger
+2245|New Challenger
+2246|New Challenger
+2247|New Challenger
+2248|New Challenger
+2249|New Challenger
+2250|New Challenger
+2251|New Challenger
+2252|New Challenger
+2253|New Challenger
+2254|New Challenger
+2255|New Challenger
+2256|New Challenger
+2257|New Challenger
+2258|New Challenger
+2259|New Challenger
+2260|New Challenger
+2261|New Challenger
+2262|New Challenger
 3000|Empire of Cats Ch. 1
 3001|Empire of Cats Ch. 2
 3002|Empire of Cats Ch. 3
@@ -775,6 +815,7 @@
 4074|
 4075|
 4076|
+4077|
 6000|Hall of Initiates
 6001|ニコニコの間
 7000|Heavenly Tower
@@ -806,7 +847,7 @@
 11015|Arena of Honor
 11016|Arena of Honor
 11017|Arena of Power
-11018|Arena of Honor
+11018|
 11019|Arena of Honor
 11020|Tales of Honor
 11021|Tales of Honor
@@ -824,6 +865,10 @@
 11033|Arena of Destiny
 11034|Arena of Power
 11035|Arena of Destiny
+11036|Arena of Destiny
+11037|Arena of Honor
+11038|Arena of Destiny
+11039|Arena of Honor
 12000|Challenge Battle
 13000|A New Legend
 13001|Here Be Dragons
@@ -935,6 +980,7 @@
 21002|Into the Future Ch. 3 (Zombie)
 22000|Cats of the Cosmos Ch. 1 (Zombie)
 22001|Cats of the Cosmos Ch. 2 (Zombie)
+22002|Cats of the Cosmos Ch. 3 (Zombie)
 23000|Cats of the Cosmos Ch. 3 (Filibuster)
 24000|Baron Seal Strikes!
 24001|Baron Seal Strikes!!
@@ -1010,7 +1056,9 @@
 24071|Summer Break Cats Castaway
 24072|Island Defenders!
 24073|Summer Break Cats: Paradise
-24074|
+24074|110M Download Celebration!
+24075|
+24076|
 25000|Aitum Fields
 25001|Vitamin Valley
 25002|Ticket Hunter
@@ -1108,7 +1156,7 @@
 27021|Vs Jack Hammer
 27022|Vs Baki Hanma
 27023|Radical Highway
-27024|
+27024|Mass Production EVA Strikes
 30000|The Aku Realms
 31000|Hidden Forest of Gapra
 31001|Ashvini Desert
@@ -1137,6 +1185,9 @@
 34020|A Journey of Moments
 34021|Patisserie Parklands
 34022|Reverse Royal Grave
+34023|Sleeping Chasm
+34024|Forgotten Republic
+34025|Booklet Islands
 36000|Otherworld Colosseum
 36001|Otherworld Colosseum
 36002|Otherworld Colosseum
@@ -1152,6 +1203,9 @@
 36012|Otherworld Colosseum
 36013|Otherworld Colosseum
 36014|Otherworld Colosseum
+36015|Otherworld Colosseum
+36016|Otherworld Colosseum
+36017|Otherworld Colosseum
 37000|Catclaw Championships Rank 1
 37001|Catclaw Championships Rank 2
 37002|Catclaw Championships Rank 3
@@ -1164,3 +1218,4 @@
 37009|Catclaw Championships Rank 10
 37010|Catclaw Championships Rank 11
 37011|Catclaw Championships Rank 12
+38000|Cats of the Cosmos Ch. 3 (Zombie Filibuster)

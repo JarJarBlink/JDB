@@ -1075,7 +1075,7 @@ terms_network_unavailable	Connection Error<br>Please check your network and try 
 item_pack_name_21	Thank-You Pack
 item_pack_name_22	Only Now: Buy a Platinum Ticket!
 zombie_sns	My Cat Army saved %@ from a Zombie invasion! %s %s
-Invasion_sns	My Cat Army saved the galaxy from attack by a all-powerful threat! %s %s
+Invasion_sns	My Cat Army saved the galaxy from attack by an all-powerful threat! %s %s
 labyrinth_SNS	My Cat Army raided %@ of the Underground Labyrinth! %s %s
 item_pack_name_23	Start-Up Pack
 item_pack_name_24	Super Start-Up Pack
@@ -1272,7 +1272,7 @@ unlock_popup_message_130	<flash>Zero Legends have been added to Stories of Legen
 unlock_popup_message_131	<flash>Stage Clear Bonus!</flash><br>Unlocked the True Form of Special Unit Filibuster Cat X!<br>After reaching Lv.30,<br>use XP and materials to evolve!
 unlock_popup_message_132	<flash>The Underground Labyrinth has been unlocked!</flash><br>It will appear on the title menu during the event.<br>Select "Underground Labyrinth" to play!
 drop_info_single	<color=0,0,0>The one-time drop for this stage</color><br><color=255,0,0>${dropContents}</color><color=0,0,0><br>${statusWord}</color>
-drop_info_multi	<color=0,0,0>A one-time drop for this stage</color><br><color=255,0,0>${dropContents}</color><color=0,0,0><br>${statusWord}</color>
+drop_info_multi	<color=0,0,0>A one-time drop for this stage</color><br><color=255,0,0>${dropContents}</color><color=0,0,0>, etc.<br>${statusWord}</color>
 drop_contents1	${itemName} +${itemNum}
 drop_contents2	Unit "${charaName}"
 drop_contents3	True Form of "${charaName}"
@@ -1596,3 +1596,28 @@ SpecialRuleExplanation012	【 Limited Stock 】<br>Only 50 Units total can be de
 SpecialRuleName012	Limited Stock
 talk_007_push	I've got news about the Cat Wedding!
 talk_009_push	
+BonusExplanationLabel003	【Score Bonus: Freeze】<br>Freeze an enemy.<br>※ Earn a higher score by Cats with fewer Target types.<br> Check "What is the Arena of Destiny?" at the bottom left of the menu for details.
+BonusNameLabel003	Freeze
+item_pack_name_91	Purchase: Collab Celebration Pack
+SpecialRuleExplanation013	【Dirt Cheap】<br>All allied units can be deployed<br>for 10￠.
+SpecialRuleExplanation014	【Pay Day】<br>Start with a huge amount of Money, but earn<br>none over time or after defeating enemies.<br>Uber Rare unit Cooldown reduced to 20%
+SpecialRuleName013	Dirt Cheap
+SpecialRuleName014	Pay Day
+treasure_festival_default	<flash>Treasure Fest on now!</flash><br>Now's your chance to grab tons of Treasure!☆<br>Treasure drop rate for all stages UP!
+treasure_festival_comeback	<flash>Treasure Fest on now!</flash><br>A special chance for returning players!☆<br>Treasure drop rate for all stages UP!
+treasure_festival_comeback_start	For returning players only!<br>Treasure Fest on now!
+unlock_popup_message_155	<flash>Metafilibuster's Talents unlocked!</flash><br>Clearing the trial has awakened a new power.<br>Evolve to True Form and reach Lv. 30 to<br>unlock/strengthen abilities from the Upgrade Menu.
+unlock_popup_message_156	<flash>A new life form has appeared<br>in Cats of the Cosmos Ch. 3!</flash>
+unlock_popup_message_157	<flash>Cat God the Golden's Talents unlocked!</flash><br>Hey! How's it going?!<br>Wanna see how strong I've gotten?<br>Check out the Upgrade Menu!
+BonusExplanationLabel004	【Score Bonus: Massive Damage】<br> Inflict Massive damage on target enemies.<br>※ Earn a higher score by Cats with fewer Target types.<br> Check "What is the Arena of Destiny?" at the bottom left of the menu for details.
+BonusNameLabel004	Massive Damage
+gamatotoSpReward_1	<flash>You got the ${rarity} Cat: 「${charaName}」!</flash><br>Activate it at the Upgrade menu!
+Nyancombo_charagroup_1	
+picBook_getNewCharacter	<flash>You unlocked "${charaName}"!</flash><br>and earned 5 Cat Food!
+scheme_item_param_114	
+scheme_popup_114	<flash>You unlocked Special Unit "%@"!</flash>
+scheme_popup_114_option_get	You've already collected this reward.<br>Please check the Upgrade Menu.
+slot_SNS_007	
+SpecialRuleExplanation015	【Grand Battle】<br>Uber Rares cost double, but<br>are deployed three-at-a-time.
+SpecialRuleName015	Grand Battle
+talk_010_push	

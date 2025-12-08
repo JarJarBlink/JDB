@@ -1,7 +1,7 @@
 %s|A Loving Shiba and Battle Cat's rival.|Trying to enter college this year.|Very thoughtful and sends|birthday gifts to Cat every year.|
 %s|Uses watercolours for body paint.|So… naturally weak against water.|This information has nothing to do|with the game content whatsoever.|
 %s|A bunch of wusses who like to gang up.|Found each other on the internet.|Suprisingly,|all of them are quite rich.|
-%s|This dangerous hippo has|confidence in its stamina and power.|(s)he? has a multi attack skill.|We don't know if it is a he or she.|
+%s|This dangerous hippo has unshakable|confidence in their stamina and power.|They have terrifying Area Attack skills|and a fiercely protective streak.|
 %s|Loves going to the tanning salon,|that's why her skin is red.|Born in an organic free range farm.|Did you know that pigs like to clean?|
 %s|Loves watching Kung Fu movies,|and aiming to get into Hollywood.|Uses self-taught Kung Fu.||
 %s|Managed to get kicked out of the zoo|because of his scary face.|Has no job or education,|so turned to alcohol and gambling.|
@@ -10,10 +10,10 @@
 %s|Has ridiculously long reach.|Likes his women curvy. Very curvy.|Collects lots of magazines|… don't ask what type.|
 %s|Always dreamed to be a boxer|Couldn't really get there|because it is… well, a kangaroo.|Sad sad truth.|
 %s|Loves to help people.|Works part time at a fire station.|However, as he is so slow on his feet,|he never makes it to the fire on time.|
-%s|A kindergarten teacher. He LOVES children.|His sharp claws are not suited for the job.|Not related to a certain other bear.|No one knows his real name.|
+%s|Strict teacher who adores their students, but|their sharp claws are not suited for the job.|Rains down fists upon anyone who|threatens the safety of their young charges.|
 %s|He was saved by Dundee.|Infatuated with correspondence learning.|Managed to obtain several qualifications.|Word Processing Cert. 2nd class.|
 %s|Quit a major company|and is managing 4 companies now.|Aspires to become city mayor someday.||
-%s|She speaks an old English dialect (?)|No, seriously, it sounds like English, but|it's too hard understand what she says.|Works at the English school near the station.|
+%s|Seems to speak an old English dialect?|No, seriously, it sounds like English, but|their pronunciation is almost unintelligible.|Works at an English school near the station.|
 %s|Licensed to kill.|The global financial crisis isn't helping|him much though. Please check the flyers.|He's offering one million per kill now.|
 %s|Ridiculously shy.|He loves to sing though, but|has never sang in front of anyone.|… does a mirror count? Solo Karaoke'r|
 %s|Too strict a diet resulted in no body.|No one knows why he is floating.|Seriously, anyone?|(Don't try this at home)|
@@ -234,7 +234,7 @@
 %s|||||
 %s|||||
 %s|I seek a worthy rival! #MoleFight is the only|Tweet from this aspiring martial artist on his|feed. His secret technique "Rising Mole Fist"|knocks back enemies from uber-long distance.|
-%s|A Category-5 storm that grew massive by|consuming lesser cyclones. Repels threats|from uber long distance. Meteoroloigists say|getting near its eye disables its knockback.|
+%s|A Category-5 storm that grew massive by|consuming lesser cyclones. Repels threats|from uber long distance. Meteorologists say|getting near its eye disables its knockback.|
 %s|仮1|仮2|仮3|仮4|
 %s|仮1|仮2|仮3|仮4|
 %s|仮1|仮2|仮3|仮4|
@@ -259,7 +259,7 @@
 %s|A wandering forest girl hired as an assassin|by the Dog Army. Feared by the Cat Army for|ruthlessly using any tactic necessary to|make the kill. Even a long-distance bazooka!|
 %s||||
 %s|||||
-%s|Executive assistant to heaven's most famous|recort label producer. Ghost-writer for two|one-hit wonders: "Cats Ain't No Sin" and|C.P.U. (Future Intelligence Pt. II)|
+%s|Executive assistant to heaven's most famous|record label producer. Ghost-writer for two|one-hit wonders: "Cats Ain't No Sin" and|C.P.U. (Future Intelligence Pt. II)|
 %s|||||
 %s|||||
 %s|仮1|仮2|仮3|仮4|
@@ -361,7 +361,7 @@
 %s|Officer-class Doge in the Alien Marines.|Received top marks in the academy|specializing in Warp attacks.|But the job market is tough these days.|
 %s|The originator of Warp-field tactics.|The Peng people are a proud warrior race|with advanced scientific knowledge,|thanks to a culture of daily sudoku.|
 %s|A mighty tactician who's still single thanks|to his scary face. He is actually an excellent|cook and has a six-octave vocal range,|but he is too shy to show anyone his talents.|
-%s|The mother of all Le'Boins, she will protect|her sweet children with her iron hide.|Invades at least new three planets a week|to maintain her lovely curves.|
+%s|The mother of all Le'Boins, she will protect|her sweet children with her iron hide.|Invades at least three new planets a week|to maintain her lovely curves.|
 %s|He can sense all your dirty thoughts.|Keep your mind pure around him, or|the lewd energies will make him stronger.|Has no real experience whatsoever.|
 %s|A proud soldier of the great Mole Army,|safeguarding peace and love throughout|the cosmos. His antimatter uppercut|catapults Cats to another dimension.|
 %s|A bioweapon bred by Space Doges for|surprise attacks on Cat outposts. Invisible|from the front, but since this game is in|landscape mode, its stealth is not effective.|
@@ -390,10 +390,10 @@
 %s|||||
 %s|||||
 %s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
+%s|
+%s|
+%s|
+%s|
 %s|||||
 %s|||||
 %s|||||
@@ -443,7 +443,7 @@
 %s|||||
 %s|Rumored to be the  secret lovechild of a |famous storm. It's impossible to guess who it|is though. Warps anyone who comes close.|Low stamina, so try going all-out!|
 %s|This mean gang of fishy bad boys have|had it with the Cats causing trouble in their|territory. Out of the dirt and ready to fight!|Don't call them snakes, they don't like that.|
-%s|A space salamander with a Cat allergy.|The powerful winds of its relentless sneezes|are should be avoided by small Cats who|could be blown into another dimension.|
+%s|A space salamander with a Cat allergy.|The powerful winds of its relentless sneezes|should be avoided by small Cats who|could be blown into another dimension.|
 %s|Oho, we meet again! Cat God isn't defeated|that easily! Yeah, you've done okay in that last|Cosmos chapter, I guess. Maybe you've|finally earned the right to be my sidekick...|
 %s|After millennia lost among the stars, a|strange force once again wreaks havoc|on the Galactic Cat Empire. The chaos| it wields may rewrite the laws of reality...|
 %s|仮1|仮2|仮3|仮4|
@@ -462,7 +462,7 @@
 %s||||
 %s|仮1|仮2|仮3|仮4|
 %s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
+%s|
 %s|仮1|仮2|仮3|仮4|
 %s|仮1|仮2|仮3|仮4|
 %s|仮1|仮2|仮3|仮4|
@@ -478,15 +478,15 @@
 %s|Branch manager of an undersea trading|company. Once known for his poisonous|personality, marriage has made him more|approachable in spite of his prickly looks.|
 %s|||||
 %s|An aspiring idol that appears once every|100 years, long mistaken for an asteroid.|His entourage of loyal fans form a shining|tail that can be seen from light-years away.|
+%s|
+%s|
+%s|
+%s|
+%s|
+%s|
+%s|
 %s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
+%s|
 %s|仮1|仮2|仮3|仮4|
 %s|仮1|仮2|仮3|仮4|
 %s|A malicious expression hides behind this|traditional image of innocent maidenhood.|Seeking revenge on everyone who has|taken advantage of youthful naivete.|
@@ -526,11 +526,11 @@
 %s|A secret lab used unethical genome editing to|create a superior Hyppoh of enormous size|with the ability to Slow those who resist.|Lethality increases with each battle.|
 %s|Subject 002   (Paleobacterial Lifeform)|Combat Potential: Immeasurable.|Despite appearance, Floating trait not present|Output corresponds to weakened capacity|
 %s|A bird so ripped that it can swim across|the River Styx whenever it wants to.|Upset that he can't stop the mass he|worked so hard to cultivate from rotting away.|
-%s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
+%s|
+%s|
+%s|
+%s|
+%s|
 %s|仮1|仮2|仮3|仮4|
 %s|仮1|仮2|仮3|仮4|
 %s|The promised lord of Cats, consumed by|pride in his mastery of elder forest sorceries.|Now the king of ruin, he lashes out at this|decadent world with furious Surges and Curses.|
@@ -620,8 +620,8 @@
 %s|仮1|仮2|仮3|仮4|
 %s|仮1|仮2|仮3|仮4|
 %s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
-%s|仮1|仮2|仮3|仮4|
+%s|
+%s|
 %s|Ancestral bird cloaked in thunder that lives in|a tower in the sky. Legends say that it is a|sight to behold, but hides a violent personality|that grows more fierce when cornered.|
 %s|||||
 %s|||||
@@ -645,7 +645,7 @@
 %s|仮1|仮2|仮3|仮4|
 %s|仮1|仮2|仮3|仮4|
 %s||||
-%s|仮1|仮2|仮3|仮4|
+%s|
 %s|仮1|仮2|仮3|仮4|
 %s|Otter that works as gatekeeper to Heaven.|Sends those unworthy of treading the heavens|to the underworld with its golden orb. Summons|monsters with the power of Surges.|
 %s|The ancestor to all invasive species. It was|expected to exterminate pests, but its|uncontrollable appetite made it hard to tame and|has become a danger to the world around it.|
@@ -742,3 +742,19 @@
 %s
 %s
 %s|A secret lab used unethical genome editing to|create a superior sunfish. It has grown so large|that stealth is no longer an option. Destroys all|that encounter it with Waves that Slow.
+%s|Shambles about in search of bones to gnaw|on. Its reach is too short to pull out the bone|impaling its belly, but every time it seeks|someone to help, they run away in fear.
+%s|Takes the place of the ball in many sports|matches to quietly change the outcome of|said games in an attempt to act the main|character... Soccer's a tough ask though.
+%s
+%s||||
+%s
+%s
+%s
+%s
+%s
+%s
+%s
+%s
+%s
+%s
+%s
+%s
