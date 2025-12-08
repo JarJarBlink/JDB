@@ -15,7 +15,7 @@ GatyaSetID	BannerON_OFF	ItemID_Ticket	animeID	btnCutID	seriesID	menuCutID	CharaI
 13	1	137	4	0	3	4	-1	0	-1
 14	0	158	5	0	4	4	-1	0	-1
 15	0	162	6	0	5	4	-1	0	-1
-16	0	163	6	0	6	4	-1	0	-1
+16	1	163	6	0	6	4	-1	0	-1
 17	0	185	6	0	7	4	-1	0	-1
 18	0	166	6	0	8	4	-1	0	-1
 19	0	172	6	0	9	4	-1	0	-1
@@ -24,7 +24,7 @@ GatyaSetID	BannerON_OFF	ItemID_Ticket	animeID	btnCutID	seriesID	menuCutID	CharaI
 22	1	185	6	0	7	4	-1	0	-1
 23	1	200	6	0	8	4	-1	0	-1
 24	0	195	6	0	9	4	-1	0	-1
-25	1	163	6	0	6	4	-1	0	-1
+25	0	163	6	0	6	4	-1	0	-1
 26	1	196	5	0	4	4	-1	0	-1
 27	0	198	6	0	11	4	-1	0	-1
 28	0	199	6	0	7	4	-1	0	-1
@@ -41,6 +41,6 @@ GatyaSetID	BannerON_OFF	ItemID_Ticket	animeID	btnCutID	seriesID	menuCutID	CharaI
 39	1	215	6	0	15	4	-1	0	-1
 40	1	216	6	0	12	4	-1	0	-1
 41	0	220	6	0	16	4	-1	0	-1
-42	0	221	8	0	17	4	-1	0	-1
+42	1	221	8	0	17	4	-1	0	-1
 43	1	220	6	0	16	4	-1	0	-1
 44	1	227	8	0	13	4	-1	0	-1

@@ -1,0 +1,151 @@
+{
+  "date": "2025/12/8",
+  "sCat_id_list": [
+    "827",
+    "829",
+    "830"
+  ],
+  "sCat_sprite_id_list": [],
+  "sTrue_form_new_id_list": [],
+  "sTrue_4form_new_id_list": [
+    "137"
+  ],
+  "sNew_skill_id_list": [
+    "271",
+    "584",
+    "633"
+  ],
+  "sUnitbuy_change_list": [
+    "137",
+    "375",
+    "381",
+    "689",
+    "826",
+    "826",
+    "826",
+    "826"
+  ],
+  "sGatya_names_Rlist": [
+    "gatya_bnr1011.png",
+    "gatya_bnr1022.png",
+    "gatya_bnr1031.png",
+    "gatya_bnr1032.png"
+  ],
+  "sGatya_names_Nlist": [],
+  "sGatya_names_Elist": [],
+  "sCombo_id_list": [
+    "369",
+    "375",
+    "376",
+    "377",
+    "378",
+    "379"
+  ],
+  "sNew_stageND_list": [
+    "34025"
+  ],
+  "sNew_stageS_list": [],
+  "sNew_stageSR_list": [
+    "36017"
+  ],
+  "sNew_stageC_list": [],
+  "sNew_stageCA_list": [],
+  "sNew_stageB_list": [],
+  "sNew_stageEX_list": [
+    "4077"
+  ],
+  "sNew_stageA_list": [],
+  "sNew_stageV_list": [],
+  "sNew_stageR_list": [
+    "11038"
+  ],
+  "sNew_stageH_list": [],
+  "sNew_stageG_list": [],
+  "sNew_stageT_list": [],
+  "sNew_4star_stage_list": [],
+  "sNew_3star_stage_list": [],
+  "sEnemy_id_list": [],
+  "sEnemy_change_list": [],
+  "sNew_medal_list": [],
+  "sCastle_ids": [],
+  "sMission_id_list": [
+    980,
+    981,
+    982,
+    983,
+    984,
+    985,
+    1074,
+    1075,
+    1076,
+    1077,
+    1078,
+    1079,
+    1080,
+    1081,
+    1082,
+    1083,
+    1084,
+    1085,
+    1086,
+    1087,
+    1088,
+    1089,
+    1090,
+    1091,
+    1092,
+    1093,
+    1094,
+    1095,
+    1096,
+    1097,
+    1098,
+    1099,
+    1100,
+    1101,
+    1102
+  ],
+  "sRankgift_des": [
+    "UR26200\t獲得5個貓眼石【EX】\n",
+    "UR26300\t獲得5個貓眼石【稀有】\n",
+    "UR26400\t獲得5個貓眼石【激稀有】"
+  ],
+  "sMusic_id_list": [
+    "184",
+    "185",
+    "186"
+  ],
+  "sSoundEffect_ids": [],
+  "sNew_bg_list": [
+    "bg251",
+    "bg252"
+  ],
+  "combo_list": [
+    "道路交通安全講習 — 「很耐打」的效果UP【中】<br><a href=\"u000.html?cc=tw&unit=715\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni715_f00.png\" width=64 title=\"715(1階)\"></a><a href=\"u000.html?cc=tw&unit=014\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni014_c00.png\" width=64 title=\"014(2階)\"></a><a href=\"u000.html?cc=tw&unit=017\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni017_c00.png\" width=64 title=\"017(2階)\"></a>",
+    " — 付与<br><a href=\"u000.html?cc=tw&unit=831\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni831_f00.png\" width=64 title=\"831(1階)\"></a>",
+    " — 研究力UP【究極】<br><a href=\"u000.html?cc=tw&unit=832\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni832_f00.png\" width=64 title=\"832(1階)\"></a>",
+    " — 「波動傷害無效」的效果付与<br><a href=\"u000.html?cc=tw&unit=833\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni833_f00.png\" width=64 title=\"833(1階)\"></a>",
+    " — 生產成本折扣【究極】<br><a href=\"u000.html?cc=tw&unit=834\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni834_f00.png\" width=64 title=\"834(1階)\"></a>"
+  ],
+  "mission_list": [
+    "1. (Special)  <br>Reward：貓眼石【傳說】 +3\n<br>",
+    "2. (Special)  <br>Reward：貓眼石【傳說】 +3\n<br>",
+    "3. (Special)  <br>Reward：貓眼石【傳說】 +3\n<br>",
+    "4. (Special)  <br>Reward：貓眼石【傳說】 +3\n<br>",
+    "5. (Special)  <br>Reward：貓眼石【闇】 +3\n<br>",
+    "6. (Special)  <br>Reward：貓眼石【闇】 +3\n<br>",
+    "7. (Special) 【1億1000萬下載紀念】讓加碼多多出發去探險1次吧!，完成任意區域探險1次後即可達成（完成度1/1） <br>Reward：XP +10000\n<br>",
+    "8. (Special) 【1億1000萬下載紀念】讓加碼多多出發去探險3次吧!，完成任意區域探險3次後即可達成（完成度3/3） <br>Reward：XP +30000\n<br>",
+    "9. (Special) 【1億1000萬下載紀念】讓加碼多多出發去探險5次吧!，完成任意區域探險5次後即可達成（完成度5/5） <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "10. (Special) 【1億1000萬下載紀念】通過「1億1000萬下載紀念 HAPPY大禮！」，1次吧!（完成度1/1） <br>Reward：XP +10000\n<br>",
+    "11. (Special) 【1億1000萬下載紀念】通過「1億1000萬下載紀念 HAPPY大禮！」，2次吧!（完成度2/2） <br>Reward：XP +30000\n<br>",
+    "12. (Special) 【1億1000萬下載紀念】通過「1億1000萬下載紀念 HAPPY大禮！」，3次吧!（完成度3/3） <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "13. (Special) 【1億1000萬下載紀念】通過貓咪大戰爭的關卡5次吧!（完成度5/5） <br>Reward：XP +15000\n<br>",
+    "14. (Special) 【1億1000萬下載紀念】通過貓咪大戰爭的關卡10次吧!（完成度10/10） <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "15. (Special) 通過快打旋風6合作關卡5次吧!，快打旋風6的全合作關卡皆屬於累計對象（完成度5/5） <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "16. (Special) 通過快打旋風6合作關卡15次吧!，快打旋風6的全合作關卡皆屬於累計對象（完成度15/15） <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "17. (Special) 通過快打旋風6合作關卡30次吧!，快打旋風6的全合作關卡皆屬於累計對象（完成度30/30） <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "18. (Special) 通過快打旋風6合作關卡50次吧!，快打旋風6的全合作關卡皆屬於累計對象（完成度50/50） <br>Reward：貓咪轉蛋券 +1\n<br>"
+  ],
+  "sundries": []
+}

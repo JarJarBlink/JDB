@@ -1667,3 +1667,15 @@ treasure_festival_comeback_start	回鍋玩家限定！<br>「寶物嘉年華」�
 unlock_popup_message_155	<flash>「異界阻撓貓」的本能解放了！</flash><br>打倒謎之生命體後喚醒了新的力量<br>進化至第3型態且到達Lv30後<br>就可以在升級畫面解放及強化能力
 unlock_popup_message_156	<flash>宇宙篇第3章出現了謎之生命體！</flash>
 unlock_popup_message_157	<flash>「超・金光閃閃神」的本能解放了！</flash><br>嘿！過得好嗎？<br>想知道我變得多強對吧？<br>那就趕快去升級畫面確認啦～
+BonusExplanationLabel004	【加分項目：超大傷害】<br>使用有超大傷害效果的角色攻擊對象屬性的敵人<br>※角色的攻擊對象屬性越少，可以獲得的分數越高<br>詳細請參考畫面左下方的「什麼是極排行賽會場？」
+BonusNameLabel004	超大傷害
+gamatotoSpReward_1	<flash>得到${rarity}角色「${charaName}」！</flash><br>可以在升級畫面中取得。
+Nyancombo_charagroup_1	
+picBook_getNewCharacter	<flash>找到「${charaName}」了！</flash><br>獲得貓罐頭5個！
+scheme_item_param_114	
+scheme_popup_114	<flash>得到EX角色「%@」！</flash>
+scheme_popup_114_option_get	您已經取得特典<br>請至升級畫面確認
+slot_SNS_007	
+SpecialRuleExplanation015	【乾坤一擲】<br>超激稀有角色的生產成本變成2倍<br>但生產超激稀有角色時出現的數量會變3隻
+SpecialRuleName015	乾坤一擲
+talk_010_push	
