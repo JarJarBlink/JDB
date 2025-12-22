@@ -46,9 +46,9 @@
   "sNew_stageCA_list": [],
   "sNew_stageB_list": [],
   "sNew_stageEX_list": [
-    "4080",
+    "4078",
     "4079",
-    "4078"
+    "4080"
   ],
   "sNew_stageA_list": [
     "24077"
@@ -66,7 +66,9 @@
   "sEnemy_id_list": [
     "760"
   ],
-  "sEnemy_change_list": [],
+  "sEnemy_change_list": [
+    "750"
+  ],
   "sNew_medal_list": [],
   "sCastle_ids": [],
   "sMission_id_list": [
