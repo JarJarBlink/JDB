@@ -438,6 +438,33 @@
           ]
         }
       }
+    },
+    "36018": {
+      "ContentsType": 0,
+      "RuleNameLabel": "SpecialRuleName009",
+      "RuleExplanationLabel": "SpecialRuleExplanation009",
+      "RuleType": {
+        "10": {
+          "Parameters": [
+            1,
+            25,
+            1,
+            25
+          ]
+        }
+      }
+    },
+    "36019": {
+      "ContentsType": 0,
+      "RuleNameLabel": "SpecialRuleName008",
+      "RuleExplanationLabel": "SpecialRuleExplanation008",
+      "RuleType": {
+        "9": {
+          "Parameters": [
+            20000
+          ]
+        }
+      }
     }
   }
 }

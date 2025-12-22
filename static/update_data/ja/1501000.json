@@ -1,0 +1,96 @@
+{
+  "date": "2025/12/22",
+  "sCat_id_list": [
+    "837"
+  ],
+  "sCat_sprite_id_list": [
+    "838",
+    "839"
+  ],
+  "sTrue_form_new_id_list": [
+    "712"
+  ],
+  "sTrue_4form_new_id_list": [],
+  "sNew_skill_id_list": [
+    "351",
+    "642"
+  ],
+  "sUnitbuy_change_list": [
+    "202",
+    "646",
+    "730"
+  ],
+  "sGatya_names_Rlist": [
+    "gatya_bnr1033.png",
+    "gatya_bnr1034.png",
+    "gatya_bnr1037.png"
+  ],
+  "sGatya_names_Nlist": [],
+  "sGatya_names_Elist": [],
+  "sCombo_id_list": [
+    "380"
+  ],
+  "sNew_stageND_list": [
+    "34026"
+  ],
+  "sNew_stageS_list": [
+    "1418",
+    "1419",
+    "1420"
+  ],
+  "sNew_stageSR_list": [
+    "36018",
+    "36019"
+  ],
+  "sNew_stageC_list": [],
+  "sNew_stageCA_list": [],
+  "sNew_stageB_list": [],
+  "sNew_stageEX_list": [
+    "4080",
+    "4079",
+    "4078"
+  ],
+  "sNew_stageA_list": [
+    "24077"
+  ],
+  "sNew_stageV_list": [],
+  "sNew_stageR_list": [
+    "11040",
+    "11041"
+  ],
+  "sNew_stageH_list": [],
+  "sNew_stageG_list": [],
+  "sNew_stageT_list": [],
+  "sNew_4star_stage_list": [],
+  "sNew_3star_stage_list": [],
+  "sEnemy_id_list": [
+    "760"
+  ],
+  "sEnemy_change_list": [],
+  "sNew_medal_list": [],
+  "sCastle_ids": [],
+  "sMission_id_list": [
+    1084,
+    1085,
+    1086
+  ],
+  "sRankgift_des": [
+    "UR1500\t「基本キャラ」の+レベルの上限解放+25までパワーアップ可能となります。",
+    "UR2300\t「レアキャラ」の+レベルの上限解放+40までパワーアップ可能となります。",
+    "UR26500\tキャッツアイ【超激レア】5個を獲得\n",
+    "UR26600\tキャッツアイ【伝説】5個を獲得\n",
+    "UR26700\tキャッツアイ【EX】5個を獲得\n"
+  ],
+  "sMusic_id_list": [],
+  "sSoundEffect_ids": [],
+  "sNew_bg_list": [],
+  "combo_list": [
+    "王国砲壊 — キャラクターの攻撃力アップ【中】<br><a href=\"u000.html?cc=ja&unit=760\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni760_f00.png\" width=64 title=\"760(1階)\"></a><a href=\"u000.html?cc=ja&unit=109\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni109_c00.png\" width=64 title=\"109(2階)\"></a><a href=\"u000.html?cc=ja&unit=020\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni020_c00.png\" width=64 title=\"020(2階)\"></a>"
+  ],
+  "mission_list": [
+    "1. (Special) バレンタインイベントステージを5回クリアしよう。バレンタインイベントの全ステージがクリアカウントの対象（進行度5/5） <br>Reward：XP +100000\n<br>",
+    "2. (Special) バレンタインイベントステージを15回クリアしよう。バレンタインイベントの全ステージがクリアカウントの対象（進行度15/15） <br>Reward：にゃんこチケット +1\n<br>",
+    "3. (Special) バレンタインイベントステージを30回クリアしよう。バレンタインイベントの全ステージがクリアカウントの対象（進行度30/30） <br>Reward：にゃんこチケット +1\n<br>"
+  ],
+  "sundries": []
+}

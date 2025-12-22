@@ -1,0 +1,82 @@
+{
+  "MapID": {
+    "1095": {
+      "0": {
+        "data": [
+          {
+            "DropItemID": -1,
+            "Quantity": 0
+          },
+          {
+            "DropItemID": 53,
+            "Quantity": 10
+          },
+          {
+            "DropItemID": 53,
+            "Quantity": 15
+          },
+          {
+            "DropItemID": 58,
+            "Quantity": 3
+          },
+          {
+            "DropItemID": 58,
+            "Quantity": 3
+          }
+        ]
+      }
+    },
+    "1117": {
+      "0": {
+        "data": [
+          {
+            "DropItemID": -1,
+            "Quantity": 0
+          },
+          {
+            "DropItemID": 53,
+            "Quantity": 10
+          },
+          {
+            "DropItemID": 53,
+            "Quantity": 15
+          },
+          {
+            "DropItemID": 58,
+            "Quantity": 3
+          },
+          {
+            "DropItemID": 58,
+            "Quantity": 3
+          }
+        ]
+      }
+    },
+    "1119": {
+      "0": {
+        "data": [
+          {
+            "DropItemID": -1,
+            "Quantity": 0
+          },
+          {
+            "DropItemID": 53,
+            "Quantity": 10
+          },
+          {
+            "DropItemID": 53,
+            "Quantity": 15
+          },
+          {
+            "DropItemID": 58,
+            "Quantity": 3
+          },
+          {
+            "DropItemID": 58,
+            "Quantity": 3
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1227,7 +1227,7 @@ SpecialRuleExplanation004	【特売セール　激レア】 <br>レア度：激�
 SpecialRuleExplanation005	【生産キャラ数制限】<br>１回の戦闘で生産できるキャラ数が<br>60体までになります
 SpecialRuleExplanation006	【超特売セール　EX】<br>レア度：EXの味方キャラクターの生産コストと<br>生産スピードが70％OFFになります
 SpecialRuleExplanation007	【プラスワン 超激レア】 <br>レア度：超激レアのキャラクター生産時<br>出現数が2体になります
-SpecialRuleExplanation008	【にゃんこ砲超強化】 <br>にゃんこ砲の攻撃力が100倍になります<br>※かみなり砲などの特殊な主砲の攻撃力は変わりません
+SpecialRuleExplanation008	【にゃんこ砲超強化】<br>にゃんこ砲の攻撃力が超強化されます<br>※かみなり砲などの特殊な主砲の攻撃力は変わりません
 SpecialRuleExplanation009	【等速直線運動】<br>移動可能な敵味方すべてのキャラクターの<br>移動速度が同じになります
 SpecialRuleExplanation010	【プラスワン EX】 <br>レア度：EXの味方キャラクター生産時の<br>出現数が2体になります
 SpecialRuleExplanation011	【限定超特売 超激レア】<br>レア度：超激レアの味方キャラクターは1体ずつしか生産できませんが<br>生産コストが95%OFF、生産スピードが倍になります
@@ -1240,11 +1240,13 @@ BonusNameLabel001	ふっとばす
 BonusNameLabel002	めっぽう強い
 BonusNameLabel003	動きを止める
 BonusNameLabel004	超ダメージ
+BonusNameLabel005	動きを遅くする
 BonusExplanationLabel000	【スコアボーナス：攻撃力ダウン】<br> 敵に攻撃力ダウンを付与する<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
 BonusExplanationLabel001	【スコアボーナス：ふっとばす】<br> 敵をふっとばす<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
 BonusExplanationLabel002	【スコアボーナス：めっぽう強い】<br> めっぽう強いキャラクターで対象属性の敵を攻撃する<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
 BonusExplanationLabel003	【スコアボーナス：動きを止める】<br> 敵に動きを止めるを付与する<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
 BonusExplanationLabel004	【スコアボーナス：超ダメージ】<br> 超ダメージキャラクターで対象属性の敵を攻撃する<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
+BonusExplanationLabel005	【スコアボーナス：動きを遅くする】<br> 敵に動きを遅くするを付与する<br>※キャラクターの持つ対象属性の数が少ないほどスコアアップ<br>　詳細は画面左下「極ランキングの間とは？」からご確認ください
 Account_iOS13_error	iOS 13未満の方はAppleでサインインがご利用頂けません
 treasure_get	ダブルタップでゲットできるステージへ移動します
 treasure_geterror	ステージが解放されていないため移動できません
@@ -1322,4 +1324,20 @@ filter_equipment_tutorial	本能玉を装着したキャラクターを表示で
 treasure_festival_default	<flash>『トレジャーフェスティバル』開催中</flash><br>お宝集めのビッグチャンス☆<br>今なら全ステージのお宝出現率が超UP！！
 treasure_festival_comeback	<flash>『トレジャーフェスティバル』開催中</flash><br>カムバック限定でスペシャルチャンス☆<br>今なら全ステージのお宝出現率が超UP！！
 treasure_festival_comeback_start	カムバック限定！<br>『トレジャーフェスティバル』開催中にゃ！
+backstage_unusable	<color=255,255,0>編成できないキャラクターが含まれています<br>編成できるキャラクターを編成してください</color>
+backstage_tutorial	ボタンをタップでクリア時の編成を確認！<br>リセットすると使用済みキャラクターが再び編成できる！
+backstage_slot_name	調査団
+backstage_reset1	<color=255,255,0>%d回目クリア時の編成</color>
+backstage_reset2	クリア回数を減らして<br>使用済みのキャラクターを<br>再び編成できるようにします
+backstage_reset3	<color=255,255,0>%d回目の編成をリセットしますか？<br>リセットすると元に戻すことができません</color>
+backstage_reset4	<color=255,255,0>クリア回数を0にして<br>全ての編成をリセットしますか？<br>リセットすると元に戻すことができません</color>
+backstage_result1	%d回目クリア報酬<flash>ゲット！！</flash>
+backstage_result2	<flash>報酬COMPLETE！</flash><br>※このステージでこれ以上報酬を<br>獲得することはできません
+backstage_clear	<color=255,255,0>今回使用したキャラクターは<br>次の挑戦から編成できません</color>
+backstage_clear_limit	<flash>アビスステージ完全クリア！</flash><br>※クリア回数が最大まで到達しました<br>以降クリア済み編成をリセットしない限り<br>新たにキャラクターが編成不可になることはありません
 Nyancombo_charagroup_1	にゃんこレンジャーのみ
+slot_autoset_confirm	選択中の編成を上書きして<br>自動編成を行いますか？
+clear_count_tutorial	<color=255,255,0>クリア回数報酬ステージ</color><br>ステージのクリア回数に応じて<br>報酬がゲット出来るステージにゃ！<br>画面左下の「回数報酬」ボタンで報酬リストを確認出来るにゃ！
+clear_count_reward	${clearNum}回
+clear_count_reward_title	クリア回数報酬
+clear_count_reward_title2	クリア
