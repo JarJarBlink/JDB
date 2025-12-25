@@ -1,0 +1,185 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1"><title>JAR Battle Cats Database</title><link rel=icon href=static/favicon.ico><meta http-equiv=Pragma content=no-cache><meta http-equiv=Cache-Control content=no-cache><meta http-equiv=Expires content=0><meta name=format-detection content="telephone=no"><meta name=robots content=noindex><noscript><style>body { display: none; }</style></noscript><script src=https://code.jquery.com/jquery-3.7.1.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js></script><style>
+    /* 基礎設定 */
+    html, body {
+        margin: 0; padding: 0; height: 100%; width: 100%;
+        background: #d2d2d2; overflow: hidden;
+        font-family: sans-serif;
+        display: flex; justify-content: center; align-items: center;
+    }
+
+    /* 動畫容器：自適應長寬比 */
+    .animation-container {
+        position: relative;
+        width: 100%;
+        max-width: 500px;      /* 桌面端最大寬度 */
+        aspect-ratio: 9 / 16;  /* 保持 9:16 */
+        background: #d2d2d2;
+        overflow: hidden;
+        box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        /* 增加抓取游標 */
+        cursor: grab;
+        touch-action: none; /* 防止手機瀏覽器預設滾動行為干擾拖拽 */
+    }
+
+    .animation-container:active {
+        cursor: grabbing;
+    }
+
+    /* Canvas 設定 */
+    .animation-canvas {
+        width: 100% !important;
+        height: 100% !important;
+        display: block;
+        pointer-events: none; /* 讓事件穿透到容器 */
+    }
+
+    /* ===== 選單樣式 (右上角) ===== */
+    .viewer-menu {
+        position: absolute;
+        top: 10px; right: 10px;
+        z-index: 100;
+        background: rgba(0,0,0,0.6);
+        padding: 6px;              
+        border-radius: 6px;
+        display: flex;
+        flex-direction: row;        
+        gap: 4px;                   
+        flex-wrap: wrap;            
+    }
+
+    /* 下拉選單 & 幀數輸入框 */
+    .select-mode,
+    .input-frame {
+        width: 70px;                
+        padding: 2px 4px;
+        font-size: 0.8em;           
+        box-sizing: border-box;
+        background: #333;
+        color: white;
+        border: 1px solid #555;
+        border-radius: 4px;
+    }
+
+    /* ===== 縮放控制 (左上角) ===== */
+    .zoom-controls {
+        position: absolute;
+        top: 10px; left: 10px;
+        z-index: 100;
+        display: flex;
+        flex-direction: column; 
+        gap: 4px;
+    }
+
+    .zoom-row {
+        display: flex;
+        gap: 4px; 
+    }
+
+    /* 按鈕樣式 */
+    .custom-btn {
+        padding: 4px 8px;           
+        font-size: 0.8em;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+        user-select: none;
+    }
+
+    .custom-btn:hover { background: #333; }
+
+    /* ===== 播放按鈕 (左下角) ===== */
+    .viewer-bottom-left {
+        position: absolute;
+        bottom: 10px; left: 10px;
+        z-index: 100;
+        display: flex; gap: 4px;
+    }
+
+    .viewer-button {
+        padding: 4px 8px;
+        font-size: 0.8em;
+        border-radius: 4px;
+        background: rgba(0,0,0,0.6);
+        color: white;
+        cursor: pointer;
+        text-align: center;
+    }
+    .viewer-button:hover { background: #333; }
+
+    /* 幀數控制群組 */
+    .frame-group {
+        display: flex;
+        align-items: center;
+        background: #555;
+        border: 1px solid #555;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .frame-adjust-btn {
+        background: #444;
+        color: white;
+        border: none;
+        padding: 0 8px;
+        height: 24px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .input-frame {
+        width: 45px !important;
+        height: 24px;
+        border: none !important;
+        background: transparent !important;
+        color: white;
+        text-align: center;
+        font-size: 0.85em;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+    }
+
+    .input-frame::-webkit-outer-spin-button,
+    .input-frame::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+
+    .form-group {
+        display: flex;
+        gap: 6px;
+        margin-bottom: 6px;
+    }
+
+    .form-btn {
+        padding: 4px 8px;
+        background: #444;
+        color: #ccc;
+        border: 1px solid #666;
+        cursor: pointer;
+    }
+
+    .form-btn.active {
+        background: #fff;
+        color: #000;
+        font-weight: bold;
+    }
+
+    .ui-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 8px; /* 兩行之間的間距 */
+        gap: 10px;         /* 元件之間的間距 */
+    }
+
+    .viewer-menu {
+        display: flex;
+        flex-direction: column; /* 強制所有內容垂直排列 */
+    }
+
+    </style></head><body><div class=animation-container><div class=zoom-controls><div class=zoom-row><div class=custom-btn id=zoom-in>🔍 Zoom In (+)</div></div><div class=zoom-row><div class=custom-btn id=zoom-out>🔍 Zoom Out (-)</div></div><div class=zoom-row><div class=custom-btn id=reset-view>🔄 Reset</div></div></div><div class=viewer-bottom-left></div></div><script src=static/js/anim/control.js></script><script src=static/js/anim/viewer.js></script></body></html>
