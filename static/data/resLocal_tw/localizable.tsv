@@ -1604,7 +1604,7 @@ leadershipreturn_pop3	這是戰敗或脫離戰鬥後<br>系統會退還統率力
 leadershipreturn_pop4	這是戰敗或脫離戰鬥後<br>系統會退還統率力的關卡
 map_minutes_empty	【貓咪精疲力盡無法再繼續挑戰了…】<br>要使用${itemNum}個喵力達A嗎？<br>通關次數可回復1次<br><color=255,255,0>可通關次數0/${countNum}（離回復1次還需${minutes1}分鐘）</color>
 receive_item_popup_annotation_1	※「神秘寶箱」將送至本能珠珠儲藏庫
-SpecialRuleExplanation008	【貓咪砲超強化】 <br>貓咪砲的攻擊力會變成100倍<br>※閃電砲等有特別效果的主砲，其攻擊力將不會改變
+SpecialRuleExplanation008	【貓咪砲超強化】 <br>貓咪砲的攻擊力會得到超強化<br>※閃電砲等有特別效果的主砲，其攻擊力將不會改變
 SpecialRuleName008	貓咪砲超強化
 SpecialRuleReset000	<color=255,255,0>軍事費用重置！</color><br>目前持有的生產角色時<br>所需要的軍事費用已經重置
 treasure_box_error_1	缺少${itemNum}個貓罐頭。<br>要前往貓罐頭商店嗎？
@@ -1679,3 +1679,46 @@ slot_SNS_007
 SpecialRuleExplanation015	【乾坤一擲】<br>超激稀有角色的生產成本變成2倍<br>但生產超激稀有角色時出現的數量會變3隻
 SpecialRuleName015	乾坤一擲
 talk_010_push	
+BonusExplanationLabel005	【加分項目：使動作變慢】<br>使敵人動作變慢<br>※角色的攻擊對象屬性越少，可以獲得的分數越高<br>詳細請參考畫面左下方的「什麼是極排行賽會場？」
+BonusNameLabel005	使動作變慢
+scheme_popup_115	<flash>感謝你來支援收禮！<br>獲得%@x%@</flash>
+scheme_popup_116	<flash>感謝你邀請朋友！<br>獲得%@x%@</flash>
+scheme_popup_117	<flash>感謝你來支援收禮！<br>獲得%@x%@</flash>
+scheme_popup_118	<flash>感謝你邀請朋友！<br>獲得%@x%@</flash>
+scheme_popup_119	<flash>感謝你來支援收禮！<br>獲得%@x%@</flash>
+scheme_popup_120	<flash>感謝你邀請朋友！<br>獲得%@x%@</flash>
+scheme_popup_121	<flash>感謝你來支援收禮！<br>獲得%@x%@</flash>
+scheme_popup_122	<flash>感謝你邀請朋友！<br>獲得%@x%@</flash>
+scheme_popup_115_get	已取得活動獎勵。
+scheme_popup_116_get	已取得活動獎勵。
+scheme_popup_117_get	已取得活動獎勵。
+scheme_popup_118_get	已取得活動獎勵。
+scheme_popup_119_get	已取得活動獎勵。
+scheme_popup_120_get	已取得活動獎勵。
+scheme_popup_121_get	已取得活動獎勵。
+scheme_popup_122_get	已取得活動獎勵。
+backstage_unusable	<color=255,255,0>隊伍中包含無法繼續使用的角色<br>請選擇可以使用的角色來編成隊伍</color>
+backstage_tutorial	點選此按鈕就可以確認過關時的隊伍！<br>重置隊伍之後就可以將使用過的角色再次編入隊伍！
+backstage_slot_name	調查團
+backstage_reset1	<color=255,255,0>第%d次過關時的隊伍</color>
+backstage_reset2	透過減少過關次數<br>就可以將使用過的角色<br>重新編入隊伍中
+backstage_reset3	<color=255,255,0>確定要重置第%d次的隊伍嗎？<br>一旦重置隊伍後便無法復原</color>
+backstage_reset4	<color=255,255,0>確定要將過關次數歸零<br>並重置所有過關隊伍嗎？<br>一旦重置隊伍後便無法復原</color>
+backstage_result1	第%d次過關獎勵<flash>入手啦！！</flash>
+backstage_result2	<flash>獲得所有獎勵了！</flash><br>※已無法在此關卡<br>獲得更多獎勵
+backstage_clear	<color=255,255,0>這次所使用的角色<br>已無法繼續編入隊伍使用</color>
+backstage_clear_limit	<flash>深淵關卡完全過關！</flash><br>※已到達過關次數上限<br>只要沒有重置通關的隊伍編成<br>剩下的角色將不會有使用限制
+slot_autoset_confirm	要使用自動編成功能<br>來取代編輯中的隊伍嗎？
+clear_count_tutorial	<color=255,255,0>過關次數獎勵關卡</color><br>這是可依照過關次數<br>來獲得獎勵的關卡！<br>點選畫面左下方的「次數獎勵」就可以確認獎勵表！
+clear_count_reward	${clearNum}次
+clear_count_reward_title	過關次數獎勵
+clear_count_reward_title2	過關
+scheme_sns_001	貓咪大戰爭要免費送你貓罐頭！<br>點選貓咪基地右上方的「請支援收禮」即可領取！<br>▼現在就下載遊戲！<br>https://thebattlecats-tw.go.link/lMyz3
+scheme_item_param_115	/2026inukan.html?v=lny01_Wf9JFcuV
+scheme_item_param_116	/2026inukan.html?v=lny02_B2w9GkEt
+scheme_item_param_117	/2026inukan.html?v=lny03_Va3Sqy9G
+scheme_item_param_118	/2026inukan.html?v=lny04_Wn2mvApM
+scheme_item_param_119	/2026inukan.html?v=lny05_Fc4DQsfv
+scheme_item_param_120	/2026inukan.html?v=lny06_sD8yNewP
+scheme_item_param_121	/2026inukan.html?v=lny07_Ma3VJkvR
+scheme_item_param_122	/2026inukan.html?v=lny08_Q9xtaK7s
