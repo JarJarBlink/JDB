@@ -1,0 +1,1 @@
+window.ANIM_DATA = "uMhZeUj/0QZrQsXKHYuerJ1P/nKmzB+OQB+AH1GUzZ2kqMdI+dBUBnruBzIwJYJ6p6aJ//xCYtZz0AaEzgQbherg8khttab633PpDbPRKlUpNB2pMvk=";
