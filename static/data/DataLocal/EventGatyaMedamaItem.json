@@ -91,6 +91,17 @@
           "weight": 2
         }
       ]
+    },
+    "48": {
+      "minCount": 30,
+      "data": [
+        {
+          "type": 2,
+          "id": 157,
+          "value": 10,
+          "weight": 1
+        }
+      ]
     }
   }
 }

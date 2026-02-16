@@ -71,9 +71,10 @@ battle_af_condition_production_3	2
 battle_af_condition_production_4	2
 battle_af_condition_production_5	2
 battle_af_condition_production_type	0
-autoset_level_param	5
-autoset_chara_score	50
+autoset_level_param	3
 autoset_must_param	5
-autoset_cut_score	0
+autoset_cut_score_rate	20
+autoset_non_target_offset	340
 battle_powerup_kill_enemy	10
 comeback_treasure_day	14
+update_version_notification_interval	8

@@ -180,8 +180,6 @@ scheme_item_param_50	nekohopper_4
 scheme_popup_50	GO!GO!ネコホッピング<br>コラボミッション達成報酬４<br><flash>%@%@個ゲット！</flash>
 scheme_item_param_51	nekohopper_5
 scheme_popup_51	GO!GO!ネコホッピング<br>コラボミッション達成報酬５<br><flash>%@%@個ゲット！</flash>
-scheme_item_param_65	odorobo1
-scheme_popup_65	<flash>EXキャラクター「%@」ゲット！</flash><br>パワーアップ画面から取得可能です
 scheme_item_param_70	nyankoTV/1/x673shf4
 scheme_popup_70	にゃんこTVチャンネル登録者数<br>55,555人突破記念！<flash><br>%@%@枚ゲット！</flash>
 scheme_item_param_76	nyankoTV/2/u9g3pzxe
@@ -815,6 +813,7 @@ potential_skill_name64	超獣特効
 potential_skill_name65	小烈波
 potential_skill_name66	超賢者特効
 potential_skill_name67	爆波攻撃
+potential_skill_name68	烈波カウンター
 return_stageselect_error00	このイベント期間が終了しました！<br>ネコ基地に戻ります！
 return_stageselect_error01	このイベントはこれ以上挑戦できません！<br>ネコ基地に戻ります！
 return_stageselect_error02	未受取の報酬があります！<br>ネコ基地へ移動します！
@@ -1219,6 +1218,7 @@ SpecialRuleName012	現品限り
 SpecialRuleName013	二束三文
 SpecialRuleName014	給料日
 SpecialRuleName015	大勝負
+SpecialRuleName016	ハイスピード
 SpecialRuleExplanation000	【おこづかい制】<br>最初にお金をたくさんもらえます<br>ただし、時間経過や敵の撃破などで<br>所持金が増えることはありません
 SpecialRuleExplanation001	【生産スピード統一】<br>すべての味方キャラクターの<br>生産スピードが同じになり固定されます
 SpecialRuleExplanation002	【レア度代表戦】<br>各レア度ごとに1体ずつしか生産できません<br>編成は自由に行う事ができます
@@ -1230,11 +1230,12 @@ SpecialRuleExplanation007	【プラスワン 超激レア】 <br>レア度：超
 SpecialRuleExplanation008	【にゃんこ砲超強化】<br>にゃんこ砲の攻撃力が超強化されます<br>※かみなり砲などの特殊な主砲の攻撃力は変わりません
 SpecialRuleExplanation009	【等速直線運動】<br>移動可能な敵味方すべてのキャラクターの<br>移動速度が同じになります
 SpecialRuleExplanation010	【プラスワン EX】 <br>レア度：EXの味方キャラクター生産時の<br>出現数が2体になります
-SpecialRuleExplanation011	【限定超特売 超激レア】<br>レア度：超激レアの味方キャラクターは1体ずつしか生産できませんが<br>生産コストが95%OFF、生産スピードが倍になります
+SpecialRuleExplanation011	【限定超特売 超激レア】<br>レア度：超激レアの味方キャラクターを<br>同時に場に出せる数が限られますが<br>生産コストが少なくなり生産スピードが上がります
 SpecialRuleExplanation012	【現品限り】<br>１回の戦闘で生産できるキャラ数が50体までになり<br>すべての味方キャラクターの生産スピードが同じになります
 SpecialRuleExplanation013	【二束三文】<br>すべての味方キャラクターが10円で生産できます
 SpecialRuleExplanation014	【給料日】<br>最初にお金をたくさんもらえます<br>ただし、時間経過や敵の撃破などで<br>所持金が増えることはありません<br>さらにレア度：超激レアの生産時間が20%に短縮されます
 SpecialRuleExplanation015	【大勝負】<br>超激レアのコストが２倍になりますが<br>超激レアキャラクター生産時の出現数が3体になります
+SpecialRuleExplanation016	【ハイスピード】<br>すべてのキャラクターの移動速度が上昇し<br>味方キャラクターの生産コストと生産時間が短縮されます
 BonusNameLabel000	攻撃力ダウン
 BonusNameLabel001	ふっとばす
 BonusNameLabel002	めっぽう強い
@@ -1254,12 +1255,6 @@ treasure_popup1	<color=255,255,0>${treasureRank}${treasureName}</color> ${stageN
 treasure_popup2	${treasureName} ${stageName}${text}
 treasure_popup3	${treasureName}
 matatabi_transition	「${itemName}」が必要です<br>どちらに移動しますか？
-matatabi_guide1	「${stageName}」は<br>毎週月曜日に開催されます<br>${commonText}
-matatabi_guide2	「${stageName}」は<br>毎週火曜日に開催されます<br>${commonText}
-matatabi_guide3	「${stageName}」は<br>毎週水曜日に開催されます<br>${commonText}
-matatabi_guide4	「${stageName}」は<br>毎週木曜日に開催されます<br>${commonText}
-matatabi_guide5	「${stageName}」は<br>毎週金曜日に開催されます<br>${commonText}
-matatabi_guide_common	※ネコビタンステージは毎日開催されます
 matatabi_guide_special	※一定確率で虹マタタビがドロップします
 matatabi_guide_guerrilla	「${stageName}」は<br>ゲリラで開催されます<br>詳しくはイベントカレンダーをチェック！
 cube_guide	超獣討伐ステージは<br>毎日ゲリラで開催されます<br>詳しくはイベントカレンダーをチェック！
@@ -1341,3 +1336,5 @@ clear_count_tutorial	<color=255,255,0>クリア回数報酬ステージ</color><
 clear_count_reward	${clearNum}回
 clear_count_reward_title	クリア回数報酬
 clear_count_reward_title2	クリア
+update_version_guide	<color=255,255,0>新しいバージョンが利用可能です。ストアを開きますか？</color><br>※イベント内容が表示されない場合、アプリを<br>最新版にアップデートする必要があります。
+Recommended_levelup_tutorial1	毎週水曜にゃんこDAYで選ばれたキャラは<br>通常より少ないXPで<br>パワーアップすることができます

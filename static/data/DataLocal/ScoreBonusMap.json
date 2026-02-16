@@ -76,6 +76,17 @@
           ]
         }
       }
+    },
+    "11043": {
+      "BonusNameLabel": "BonusNameLabel000",
+      "BonusExplanationLabel": "BonusExplanationLabel000",
+      "BonusType": {
+        "0": {
+          "Parameters": [
+            3000
+          ]
+        }
+      }
     }
   }
 }

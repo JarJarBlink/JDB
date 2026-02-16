@@ -127,7 +127,7 @@
       "BannerImgIMGCUT": "event_bnr00.imgcut",
       "PercentBanner": 50
     },
-    "24064": {
+    "24078": {
       "eventWeight": 1,
       "priority": 1,
       "FusumaOpenOffsetX": 0,
@@ -209,7 +209,8 @@
       "PercentBanner": 50
     },
     "2065": {
-      "priority": 1,
+      "eventWeight": 2,
+      "priority": 2,
       "FusumaOpenOffsetX": 0,
       "FusumaOpenOffsetY": 458,
       "FusumaImgPNG": "img009_C_065.png",
@@ -223,7 +224,7 @@
     },
     "2227": {
       "eventWeight": 1,
-      "priority": 1,
+      "priority": 2,
       "FusumaSE": [
         -1
       ],
@@ -242,7 +243,7 @@
     },
     "2228": {
       "eventWeight": 1,
-      "priority": 1,
+      "priority": 2,
       "FusumaSE": [
         -1
       ],
@@ -352,7 +353,7 @@
       "PercentTitle": 50
     },
     "2229": {
-      "eventWeight": 1,
+      "eventWeight": 2,
       "priority": 2,
       "FusumaSE": [
         -1
@@ -1060,8 +1061,6 @@
       "NekoBageImg": "S_285"
     },
     "24041": {
-      "eventWeight": 1,
-      "priority": 1,
       "FusumaOpenOffsetX": 0,
       "FusumaOpenOffsetY": 458,
       "FusumaImgPNG": "img009_A_041.png",
@@ -1251,6 +1250,7 @@
       "SelectStageImgReverseNekoDojo": 1
     },
     "1129": {
+      "eventWeight": 1,
       "priority": 1,
       "FusumaOpenOffsetX": 0,
       "FusumaOpenOffsetY": 458,
@@ -1634,6 +1634,7 @@
       "TitleImgLogo": "_"
     },
     "24074": {
+      "eventWeight": 2,
       "priority": 1,
       "FusumaOpenOffsetX": 0,
       "FusumaOpenOffsetY": 458,
