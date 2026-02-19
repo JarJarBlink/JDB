@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JAR Battle Cats Database</title>
+    <script src="static/js/drop/drop.js"></script>
+    <!--Coded by Exodia JAR-->
+    <style>
+        /* 顏色變量 */
+        :root {
+            /* Light Theme 預設值 */
+            --bg-body: #fdfdfd;
+            --bg-container: #f0f0f0;
+            --bg-table: #ffffff;
+            --bg-card: #ffffff;
+            --text-main: #333333;
+            --text-title: #000000;
+            --border-color: #444444;
+            --border-soft: #cccccc;
+            --shadow: rgba(0,0,0,0.15);
+            
+            /* 素材顏色 - 亮色版 */
+            --c-red: #e06666; --c-green: #93c47d; --c-grey: #76a5af; --c-blue: #6fa8dc;
+            --c-yellow: #ffd966; --c-dblue: #3d85c6; --c-purple: #8e7cc3; --c-ancient: #6aa84f;
+            --c-nodrop: #f4cccc; --c-star1: #d0e0e3; --c-star-others: #fff2cc;
+            --text-on-color: #000000;
+            --header-text: #000000;
+        }
+
+        /* Dark Theme 覆蓋值 */
+        body.dark-theme {
+            --bg-body: #121212;
+            --bg-container: #1e1e1e;
+            --bg-table: #1e1e1e;
+            --bg-card: #2d2d2d;
+            --text-main: #e0e0e0;
+            --text-title: #ffffff;
+            --border-color: #333333;
+            --border-soft: #444444;
+            --shadow: rgba(0,0,0,0.5);
+
+            /* 素材顏色 - 深色優化 */
+            --c-red: #8c3232; --c-green: #3e5e32; --c-grey: #3e565c; --c-blue: #2d506e;
+            --c-yellow: #856d2d; --c-dblue: #1e4466; --c-purple: #513e80; --c-ancient: #2d5c1a;
+            --c-nodrop: #3d2a2a; --c-star1: #2a3d40; --c-star-others: #3d3a2a;
+            --text-on-color: #ffffff;
+            --header-text: #ffffff;
+        }
+
+        body { 
+            font-family: "Microsoft JhengHei", sans-serif; 
+            background-color: var(--bg-body); 
+            color: var(--text-main);
+            display: flex; flex-direction: column; align-items: center; padding-bottom: 50px; 
+            transition: background-color 0.3s, color 0.3s;
+            margin: 0;
+        }
+
+        /* 主題切換按鈕 */
+        .theme-toggle {
+            position: fixed; top: 15px; right: 15px; z-index: 1000;
+            padding: 10px 20px; border-radius: 30px; border: 1px solid var(--border-soft);
+            background: var(--bg-card); color: var(--text-main);
+            cursor: pointer; font-size: 14px; font-weight: bold;
+            box-shadow: 0 4px 10px var(--shadow);
+            transition: all 0.2s ease;
+        }
+        .theme-toggle:hover { transform: scale(1.05); }
+
+        .title { font-size: 26px; font-weight: bold; margin: 40px 0 10px 0; color: var(--text-title); }
+        .table-container { width: 95%; overflow-x: auto; margin-bottom: 40px; }
+        
+        table { 
+            border-collapse: collapse; box-shadow: 0 4px 12px var(--shadow); 
+            font-size: 13px; text-align: center; width: 100%; min-width: 900px; 
+            background: var(--bg-table); color: var(--text-main);
+        }
+        th, td { border: 1px solid var(--border-color); padding: 6px 2px; }
+
+        .header-main { background-color: #000; color: #fff; width: 180px; }
+        .header-drop { background-color: #f6b26b; color: #000; font-weight: bold; }
+        .header-nodrop { background-color: #ea9999; color: #000; font-weight: bold; }
+        .header-draw { background-color: #b4a7d6; color: #000; font-weight: bold; }
+
+        /* 素材顏色 */
+        .c-red { background-color: var(--c-red); color: var(--text-on-color); }
+        .c-green { background-color: var(--c-green); color: var(--text-on-color); }
+        .c-grey { background-color: var(--c-grey); color: var(--text-on-color); }
+        .c-blue { background-color: var(--c-blue); color: var(--text-on-color); }
+        .c-yellow { background-color: var(--c-yellow); color: var(--text-on-color); }
+        .c-dblue { background-color: var(--c-dblue); color: var(--text-on-color); }
+        .c-purple { background-color: var(--c-purple); color: var(--text-on-color); }
+        .c-ancient { background-color: var(--c-ancient); color: var(--text-on-color); }
+
+        .c-nodrop { background-color: var(--c-nodrop); font-weight: bold; }
+        .c-star1 { background-color: var(--c-star1); font-weight: bold; white-space: nowrap; min-width: 65px; }
+        .c-star-others { background-color: var(--c-star-others); font-weight: bold; white-space: nowrap; min-width: 65px; }
+
+        .material-icon { width: 28px; height: auto; display: block; margin: 0 auto; }
+        .material-icon-small { width: 20px; height: 20px; vertical-align: middle; margin-right: 4px; }
+        .star-icon { width: 14px; height: auto; margin: 0 -1px; vertical-align: middle; }
+        .col-name { background-color: #000; color: #fff; text-align: left; padding-left: 12px; font-weight: bold; }
+        
+        tr:hover { filter: brightness(1.2); background-color: rgba(128,128,128,0.1); }
+
+        /* 最佳掉落區塊 */
+        .best-drop-container { 
+            width: 95%; background: var(--bg-container); border: 1px solid var(--border-soft); 
+            border-radius: 8px; padding: 15px; margin-top: 20px; box-sizing: border-box; 
+        }
+        .best-drop-title { 
+            font-weight: bold; font-size: 18px; margin-bottom: 12px; 
+            border-bottom: 2px solid var(--border-color); padding-bottom: 5px; color: var(--text-title);
+        }
+        .best-drop-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+        .best-item { 
+            background: var(--bg-card); padding: 10px; border-radius: 4px; 
+            border-left: 5px solid var(--c-yellow); box-shadow: 0 2px 4px var(--shadow); 
+        }
+        .best-item b { color: var(--c-red); font-size: 15px; }
+        .best-item small { display: block; color: var(--text-main); opacity: 0.8; margin-top: 4px; }
+
+
+        /* 關卡連結樣式 */
+        .stage-link {
+            color: #ffffff; /* 文字白色 */
+            text-decoration: none; /* 移除底線 */
+            display: block; /* 讓整個格子都可以點擊 */
+            width: 100%;
+        }
+
+        .stage-link:hover {
+            color: #ffd966; /* 滑鼠移上去變金色 */
+            text-decoration: underline; /* 滑鼠移上去顯示底線 */
+        }
+
+        /*深色模式 連結顏色 */
+        body.dark-theme .stage-link {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<button class="theme-toggle" id="themeBtn">☀️ Light Mode</button>
+
+<div id="bestDropsLegend" class="best-drop-container"></div>
+<div id="titleLegend" class="title"></div>
+<div class="table-container">
+    <table id="tableLegend">
+        <thead>
+            <tr>
+                <th rowspan="2" class="header-main">章節名稱</th>
+                <th colspan="8" class="header-drop">掉落機率</th>
+                <th rowspan="2" class="header-nodrop">未掉落</th>
+                <th colspan="4" class="header-draw">抽取次數</th>
+            </tr>
+            <tr class="iconRow"></tr>
+        </thead>
+        <tbody id="bodyLegend"></tbody>
+    </table>
+</div>
+
+<div id="bestDropsTrueLegend" class="best-drop-container"></div>
+<div id="titleTrueLegend" class="title"></div>
+<div class="table-container">
+    <table id="tableTrueLegend">
+        <thead>
+            <tr>
+                <th rowspan="2" class="header-main"></th>
+                <th colspan="8" class="header-drop"></th>
+                <th rowspan="2" class="header-nodrop"></th>
+                <th colspan="4" class="header-draw"></th>
+            </tr>
+            <tr class="iconRow"></tr>
+        </thead>
+        <tbody id="bodyTrueLegend"></tbody>
+    </table>
+</div>
+
+<div id="bestDropsZeroLegend" class="best-drop-container"></div>
+<div id="titleZeroLegend" class="title"></div>
+<div class="table-container">
+    <table id="tableZeroLegend">
+        <thead>
+            <tr>
+                <th rowspan="2" class="header-main"></th>
+                <th colspan="8" class="header-drop"></th>
+                <th rowspan="2" class="header-nodrop"></th>
+                <th colspan="4" class="header-draw"></th>
+            </tr>
+            <tr class="iconRow"></tr>
+        </thead>
+        <tbody id="bodyZeroLegend"></tbody>
+    </table>
+</div>
+
+<div style="height: 8rem;"></div>
+<div class="desc"></div>
+<div class="contact">
+    <ul style="list-style: none; padding: 0; margin: 0;">
+        <li id="contact1">
+            <a href='index.html' rel="noopener">
+                <img src="static/img/icon/bottom_bg01.png" width="18" class="icon"/>Home
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
