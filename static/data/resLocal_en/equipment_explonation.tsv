@@ -3,23 +3,24 @@ Defense Up %@: %@	Damage from %@ decreased.
 Strong Effect Up %@: %@	Strong Effect will improve vs %@
 Massive Damage Up %@: %@	Damage will improve vs %@
 Tough Effect Up %@: %@	Resistance to %@ attacks will improve.
-Mini-Deathsurge %@	Cats unleash a Mini-Surge upon<br>death after every 2 deployments (Does not stack)
+Mini-Death Surge %@	Cats unleash a Mini-Surge upon<br>death.  Activates every<br>2 deployments (Does not stack)
 Resist Waves %@	Reduces damage from enemy Wave attacks.
-Cash Back %@	Recover a portion of a fallen Cat's deployment cost.<br>Available after every 2 deployments.
+Cash Back %@	Recover a portion of a fallen Cat's deployment cost.<br> Activates every<br>2 deployments.
 Resist Knockback %@	Reduces the effect of enemy Knockback attacks.
 Boost Stories of Legend %@	Health and attack power boosted<br>in the Stories of Legend (Does not stack)
-Colossus Slayer %@	Colossus Slayer ability available<br>after every 2 deployments (Does not stack)
+Colossus Slayer %@	Gains Colossus Slayer ability.<br> Activates every<br>2 deployments (Does not stack)
 Cat Cannon Charge %@	Slightly charges Cannon when a Cat<br>with Talents is defeated. Activates every<br>2 deployments (Does not stack)
 Resist Toxic %@	Reduces damage from enemy Toxic attacks.
-Dodge Attack (All) %@	Grants every other deployed Cat<br>the Dodge Attack (All) ability.<br>(Does not stack)
-Resist Slow %@	Reduces damage from enemy Slow attacks.
-Resist Curse %@	Reduces damage from enemy Curse attacks.
+Dodge Attack (All) %@	Gains Dodge Attack (All) ability. Activates<br>every 2 deployments (Does not stack)
+Resist Slow %@	Reduces the effect of enemy Slow attacks.
+Resist Curse %@	Reduces the effect of enemy Curse attacks.
 Boost Uncanny Legends %@	Health and attack power boosted<br>in Uncanny Legends (Does not stack)
-Single Surge Counter %@	Counter with a Surge after being struck by<br>an enemy Surge attack once after <br>every two deployments (does not stack)
+Single Surge Counter %@	Counter with a Surge after being struck by<br>an enemy Surge attack. Activates<br>every 2 deployments (Does not stack)
 Berserker %@	Increases attack power after defeating a<br>certain number of enemies (does not stack)
-Shortened Cooldown %@	Shortens cooldown time every two<br>deployments (does not stack)
-Resist Freeze %@	Reduces effects of Freeze from enemy attacks.
+Shortened Cooldown %@	Shortens cooldown time. Activates<br>every 2 deployments (Does not stack)
+Resist Freeze %@	Reduces the effect of enemy Freeze attacks.
 Resist Weaken %@	Reduces effect of Weaken from enemy attacks.
-Cost Down %@	Reduces unit deployment cost after<br>every 2 deployments (Does not stack).
+Cost Down %@	Reduces unit deployment cost. Activates<br>every 2 deployments (Does not stack)
 Resist Surges %@	Reduces the damage received from enemy Surge attacks.
-First Bounty Up %@	Earn more Money for first defeated enemy after<br>every 2 deployments (Does not stack).
+First Bounty Up %@	Earn more Money for the first defeated enemy.<br>Activates every 2<br>deployments (Does not stack)
+Resists Explosions %@	Reduces damage from enemy Explosion attacks.

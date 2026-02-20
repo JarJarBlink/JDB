@@ -5,7 +5,7 @@
 1200	Rare Cats may be <br>upgraded to Level 30. <br><span class="fs76">※Upgrade Cats using XP</span>
 1300	Super Rare Cats may be <br>upgraded to Level 30. <br><span class="fs76">※Upgrade Cats using XP</span>
 1400	Uber Rare Cats may be <br>upgraded to Level 30. <br><span class="fs76">※Upgrade Cats using XP</span>
-1500	Normal Cats may be <br>upgraded to MAX+25. 
+1500	Normal Cats may be <br>upgraded to MAX+25. <br><span class="fs76">※Use Cat Capsules to upgrade</span>
 1600	Special Cats may be <br>upgraded to Level 30. <br><span class="fs76">※Upgrade Cats using XP</span>
 1700	Normal Cats may be <br>upgraded to MAX+30. <br><span class="fs76">※Use Cat Capsules to upgrade</span>
 1800	Rare Cats may be <br>upgraded to MAX+20. <br><span class="fs76">※Use Rare Capsules to upgrade</span>
@@ -325,3 +325,6 @@
 26200	Receive 5 Special Catseyes
 26300	Receive 5 Rare Catseyes
 26400	Receive 5 Super Rare Catseyes
+26500	Receive 5 Uber Rare Catseyes
+26600	Receive 5 Legend Catseyes
+26700	Receive 5 Special Catseyes

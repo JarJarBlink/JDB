@@ -1543,7 +1543,7 @@ leadershipreturn_pop3	Energy spent on this stage will be<br>restored after Defea
 leadershipreturn_pop4	Energy spent on this stage will be<br>restored after Defeat or Escape.
 map_minutes_empty	【No Energy... Can't go on...】<br>Use ${itemNum} Catamin A?<br>One clear chance will be restored.<br><color=255,255,0>Available Clear Chances: 0/${countNum}（Clear Chance restore in ${minutes1} min.)</color>
 receive_item_popup_annotation_1	※ Treasure Chests will be sent to Talent Orb Storage.
-SpecialRuleExplanation008	【Mega Cat Cannon】 <br>Cat Cannon Power is multiplied by 100!<br>※ Does not affect attack power of Special Cannon effects like Thunderbolt.
+SpecialRuleExplanation008	【Mega Cat Cannon】 <br>Cat Cannon Power is now SUPERPOWERED!<br>※ Does not affect attack power of Special Cannon effects like Thunderbolt.
 SpecialRuleName008	Mega Cat Cannon
 SpecialRuleReset000	<color=255,255,0>War Funds Reset!</color><br>Held Money used to deploy<br>Cats has been reset!
 treasure_box_error_1	Need ${itemNum} more Cat Food.<br>Visit the Cat Food Shop?
@@ -1621,3 +1621,22 @@ slot_SNS_007
 SpecialRuleExplanation015	【Grand Battle】<br>Uber Rares cost double, but<br>are deployed three-at-a-time.
 SpecialRuleName015	Grand Battle
 talk_010_push	
+BonusExplanationLabel005	【Score Bonus: Slow】<br> Inflict Slow on target enemies.<br>※ Earn a higher score by Cats with fewer Target types.<br> Check "What is the Arena of Destiny?" at the bottom left of the menu for details.
+BonusNameLabel005	Slow
+backstage_unusable	<color=255,255,0>An unequippable unit is included.<br>Please only include equippable units.</color>
+backstage_tutorial	Tap the button to see the units that cleared this stage.<br>Once recovered, exhausted units will become usable again.
+backstage_slot_name	Team
+backstage_reset1	<color=255,255,0>Survey Team #%d</color>
+backstage_reset2	Reduce the total<br>clear count to recover<br>exhausted units.
+backstage_reset3	<color=255,255,0>Recover Team #%d?<br>Recovery cannot be undone.</color>
+backstage_reset4	<color=255,255,0>Return the clear count to 0<br>and recover all Survey Teams?<br>Recovery cannot be undone.</color>
+backstage_result1	<flash>Receive</flash> Clear #%d Reward!
+backstage_result2	<flash>All rewards earned!</flash><br>※No more rewards are<br>available from this stage.
+backstage_clear	<color=255,255,0>Units equipped in this team cannot<br>be used on future Survey Teams.</color>
+backstage_clear_limit	<flash>All Abyssal Stages cleared!</flash><br>※Max clear count has been reached.<br>Future units on teams will not become<br>exhausted unless the clear count is reset.
+slot_autoset_confirm	Would you like to overwrite your<br>current team with a new one?
+clear_count_tutorial	<color=255,255,0>Abyssal Stage Clear Rewards</color><br>Earn rewards based on the number of times this<br>stage is cleared! Tap the button at the bottom-left<br>of the Stage Select screen for more info.
+clear_count_reward	${clearNum} times
+clear_count_reward_title	Clear Rewards
+clear_count_reward_title2	Clear
+									
