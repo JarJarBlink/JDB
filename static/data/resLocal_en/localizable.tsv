@@ -1639,4 +1639,3 @@ clear_count_tutorial	<color=255,255,0>Abyssal Stage Clear Rewards</color><br>Ear
 clear_count_reward	${clearNum} times
 clear_count_reward_title	Clear Rewards
 clear_count_reward_title2	Clear
-									
