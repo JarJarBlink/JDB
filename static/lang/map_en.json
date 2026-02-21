@@ -21,5 +21,6 @@
   "ex_stage": "EX Stage",
   "gift_item_drop": "Rewards",
   "hp_bgm_text": "Castle HP < {threshold}%",
-  "pop": "Display / Challenge Conditions"
+  "pop": "Display / Challenge Conditions",
+  "time_text": "Time (mins)"
 }

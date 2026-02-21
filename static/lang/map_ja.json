@@ -21,5 +21,6 @@
   "ex_stage": "EXステージ",
   "gift_item_drop": "ドロップ",
   "hp_bgm_text": "城体力 < {threshold}%",
-  "pop": "表示・挑戦条件"
+  "pop": "表示・挑戦条件",
+  "time_text": "タイム(mins)"
 }

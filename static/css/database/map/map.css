@@ -1,22 +1,97 @@
-audio {height: 20px;}
+/*by exodia jar base setting*/
+.table_style_db_unit {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* 必須固定，手機才不會亂跳 */
+}
 
+.row-short th, 
+.row-short td {
+    height: 40px !important;
+    padding: 2px 4px !important;
+    font-size: 10px;
+    vertical-align: middle !important;
+    box-sizing: border-box;
+}
+
+/* --- 數值字體修正 */
+.leadership_v, .chp_v, .stage_len_v, .tcount_v, 
+.spawn_min_v, .base_xp_v, .boss_spawn_v, .cshield_v, .conti_v, .time_text_v {
+    font-weight: normal !important; 
+    text-align: center;
+    font-size: 12px;
+}
+
+/* --- 圖片區域控制 (跨越兩行的高度) --- */
+.media-container-tall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px; /* 大約等於兩行 row-short 的總和 */
+    width: 100%;
+    overflow: hidden;
+}
+
+.bg_canvas, .castle_img {
+    max-height: 75px !important;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* --- 音樂播放器修正 --- */
+audio {
+    display: block;
+    width: 100%;
+    height: 28px !important; /* 強制所有播放器高度，避免撐開 row-short */
+    margin: 0 auto;
+}
+
+/* --- 手機版響應式優化 --- */
+@media screen and (max-width: 600px) {
+    .table_style_db_unit {
+        font-size: 11px;
+    }
+
+    .row-short th, .row-short td {
+        height: 36px !important; /* 手機上略微縮小 */
+        padding: 1px 2px !important;
+    }
+
+    .media-container-tall {
+        height: 72px; /* 36px * 2 */
+    }
+
+    .bg_canvas, .castle_img {
+        max-height: 68px !important;
+    }
+
+    /* 解決手機上文字太長溢出的問題 */
+    .leadership_v, .chp_v, .stage_len_v {
+        font-size: 11px !important;
+        letter-spacing: -0.5px;
+    }
+    .boss_spawn_v {
+        font-size: 9px !important;    /* 進一步縮小 */
+        letter-spacing: -0.8px;       /* 縮小字體間距，讓數字擠進去 */
+        padding: 0 2px !important;    /* 減少左右內距 */
+    }
+}
+
+/* 星級容器樣式保持 */
 #star-container {
     display: flex;
     align-items: center;
     gap: 6px;
 }
-.map-name-label {
-    font-weight: bold;
-    font-size: 14px;
-}
 .star {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
+    transition: transform 0.2s;
 }
-.bg_canvas {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    display: block;
+.star:hover {
+    transform: scale(1.2);
 }
