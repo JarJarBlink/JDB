@@ -56,18 +56,20 @@ audio {
         font-size: 11px;
     }
 
+    /*
     .row-short th, .row-short td {
-        height: 36px !important; /* 手機上略微縮小 */
+        height: 36px !important;
         padding: 1px 2px !important;
     }
+    
 
     .media-container-tall {
-        height: 72px; /* 36px * 2 */
+        height: 72px; 
     }
 
     .bg_canvas, .castle_img {
         max-height: 68px !important;
-    }
+    }*/
 
     /* 解決手機上文字太長溢出的問題 */
     .leadership_v, .chp_v, .stage_len_v {
