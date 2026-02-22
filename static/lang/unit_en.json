@@ -5,6 +5,7 @@
 "hp":"HP",
 "t_speedtxt":"Speed",
 "t_freq_txt":"True Atk Freq / Atk Freq",
+"pre_full":"Attack At/\nFSwing",
 "pre":"Attack At",
 "t_atktxt":"Attack",
 "wait":"Wait",

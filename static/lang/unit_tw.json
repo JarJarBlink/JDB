@@ -5,6 +5,7 @@
 "hp":"體力",
 "t_speedtxt":"速度",
 "t_freq_txt":"真攻頻度/攻頻度",
+"pre_full":"攻發生/\nFSwing",
 "pre":"攻發生",
 "t_atktxt":"攻擊力",
 "wait":"Wait",
