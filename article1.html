@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Exodia JAR - Battle Cats Mechanics</title>
+<title>JAR Battle Cats Database</title>
 <link rel="icon" href="static/favicon.ico">
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
@@ -12,7 +12,6 @@
 <meta name="robots" content="noindex">
 <noscript><style>body { display: none; }</style></noscript>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script>
-<script src="static/js/home/ga.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 <style>
@@ -175,19 +174,19 @@ font-size:.9rem;
 
 <header>
 <div id="nav-title" style="font-weight:bold;font-size:1.2rem;">
-<!--Battle Cats Mechanics Lab-->
+    Battle Cats Mechanics Lab
 </div>
 
 <div class="controls">
     <button class="btn" onclick="setLanguage('zh')">繁體中文</button>
     <button class="btn" onclick="setLanguage('en')">English</button>
     <button class="btn" onclick="setLanguage('jp')">日本語</button>
-    <button class="btn" onclick="toggleTheme()" id="themeBtn">切換深色模式</button>
+    <button class="btn" onclick="toggleTheme()" id="themeBtn">切換模式</button>
 </div>
 </header>
 
 <div class="container" id="content-area">
-    </div>
+</div>
 
 <footer id="footer-text">
 JAR Battle Cats Database © 2025 – 2026
@@ -200,111 +199,111 @@ const translations = {
     zh: {
         title: "Exodia JAR 貓戰動畫與戰鬥機制理論",
         abstract_h: "Abstract",
-        abstract_p: "本文系統性整理《にゃんこ大戰爭》（The Battle Cats）中動畫播放流程與攻擊幀邏輯之核心機制。透過實際遊戲觀察、幀級分析以及系統行為推導，建立一套描述角色攻擊循環與動畫顯示規則的理論模型，以形式化方式說明攻擊發生時間、動畫播放與等待機制之間的關係。<br><br>本內容整理自研究文章 <a href='https://jarjarblink.github.io/JDB/article.html' target='_blank'>Diving into the Depths of Battle Cats</a> 並進一步進行結構化整理。",
+        abstract_p: "本文系統性整理《にゃんこ大戰爭》（The Battle Cats）中動畫播放流程與攻擊幀邏輯之核心機制。透過實際遊戲觀察、幀級分析以及系統行為推導，建立一套描述角色攻擊循環與動畫顯示規則的理論模型。<br><br>本內容整理自研究文章 <a href='https://jarjarblink.github.io/JDB/article.html' target='_blank'>Diving into the Depths of Battle Cats</a>。",
         contents_h: "Contents",
         axioms_h: "Axioms（基本公理）",
         ax1: "<strong>Axiom 1 — Animation Omission Rule</strong><br><br>Walk、Standby 與 Knockback 狀態在動畫播放時 <strong>不會顯示最後一幀畫面</strong>。",
         ax2: "<strong>Axiom 2 — Attack Animation Rule</strong><br><br>Attack 狀態在動畫播放時 <strong>不顯示第一幀畫面</strong>，但<strong>能顯示最後一幀畫面</strong>。",
-        ax3: "<strong>Axiom 3 — Post-Attack Transition</strong><br><br>在不考慮勝利或失敗等特殊情況時，攻擊狀態結束後必然銜接 Standby（閒置）動畫，且該動畫的最短播放長度為 <strong>1F</strong>。",
-        ax4: "<strong>Axiom 4 — Knockback Transition</strong><br><br>當單位在攻擊過程中發生 Knockback 時，其後續狀態由攻擊所處的階段決定：<br><br>• <strong>FSwing</strong>: 攻擊序列會重新開始。<br><br>• <strong>BSwing</strong>: 當前攻擊動畫會被取消，單位轉入 <strong>Standby</strong>。<br><br>• <strong>Attack Judgment Frame</strong>: 若擊退發生於攻擊判定幀當下，系統將其視為 <strong>BSwing</strong>，因此單位會進入 <strong>Standby</strong>，而不會重新開始攻擊。<br><br>因此，<strong>攻擊判定幀被定義為 BSwing 的起點</strong>。",
+        ax3: "<strong>Axiom 3 — Post-Attack Transition</strong><br><br>攻擊狀態結束後必然銜接 Standby（閒置）動畫，且最短播放長度為 <strong>1F</strong>。",
+        ax4: "<strong>Axiom 4 — Knockback Transition</strong><br><br>當單位在攻擊過程中發生 Knockback 時，其後續狀態由攻擊階段決定：<strong>FSwing</strong> 則重啟；<strong>BSwing</strong> 則轉入 Standby。",
         theorems_h: "Theorems（理論推導）",
         t1_title: "Theorem 1 — Walk State",
-        t1_body: "動畫序列由 index 0 開始，但角色首次顯示時畫面會從 index 1 開始。同時動畫序列中的最後一個 index 不會被顯示。",
+        t1_body: "動畫序列由 index 0 開始，但顯示從 index 1 開始，且最後一個 index 不會被顯示。",
         t2_title: "Theorem 2 — Standby State",
-        t2_body: "待機動畫的實際播放長度由 WSwing 與攻擊循環銜接時間決定，但仍遵守基本公理，即最後一個 index 不會被顯示。",
+        t2_body: "待機長度由 WSwing 決定，但仍遵守最後一個 index 不會顯示的規則。",
         t3_title: "Theorem 3 — Attack State",
-        t3_body: "攻擊動畫具有不同的顯示規則。動畫序列中的 index 0 不會被顯示，但最後一個 index 會正常顯示。",
+        t3_body: "攻擊動畫 index 0 不會顯示，但最後一個 index 會正常顯示。",
         t4_title: "Theorem 4 — Knockback State",
-        t4_body: "Knockback 動畫的顯示規則與 Walk 與 Standby 相同，因此動畫序列中的最後一個 index 不會被顯示。",
+        t4_body: "Knockback 與 Walk 同理，最後一個 index 不會被顯示。",
         definitions_h: "Definitions（專有名詞定義）",
         def1_t: "真攻頻度（True Attack Frequency）",
         def1_d: "定義為第 n 輪攻擊發生時間減去第 n−1 輪攻擊發生時間。",
         def2_t: "攻擊頻度（Attack Frequency）",
         def2_d: "當 WSwing = 0 時所得到的真攻頻度。",
         def3_t: "前搖（FSwing）",
-        def3_d: "角色從進入攻擊狀態到攻擊判定發生所需的幀數，且不包含攻擊幀本身。若從程式邏輯角度，並以 index 0 為攻擊幀，則 FSwing 等於攻發值。然而實際畫面中 index 0 不會顯示，因此本文採用：<strong>FSwing = 攻發 − 1</strong>",
+        def3_d: "<strong>FSwing = 攻發 − 1</strong>",
         def4_t: "後搖（BSwing）",
-        def4_d: "角色從攻擊命中敵方開始，到攻擊狀態結束的幀數，並包含攻擊幀本身。",
+        def4_d: "從攻擊命中到攻擊狀態結束，包含攻擊幀本身。",
         def5_t: "閒置計算搖（WSwing）",
-        def5_d: "系統內部控制攻擊週期等待時間的邏輯幀數。",
+        def5_d: "內部控制攻擊週期等待時間的邏輯幀數。",
         def6_t: "閒置搖（Wait）",
-        def6_d: "攻擊動畫結束後，角色在畫面上停留的實際等待時間。",
+        def6_d: "角色在畫面上停留的實際等待時間。",
         def7_t: "攻發生點（Attack Point Index）",
-        def7_d: "以動畫 index 0 為基準，表示攻擊判定發生於動畫中的位置。例：真田幸村 (1F , 8F)",
+        def7_d: "判定發生於動畫中的位置。例：真田幸村 (1F, 8F)",
         theme_btn_light: "切換深色模式",
         theme_btn_dark: "切換亮色模式"
     },
     en: {
         title: "Exodia JAR Battle Cats Animation & Combat Mechanics Theory",
         abstract_h: "Abstract",
-        abstract_p: "This document systematically organizes the core mechanisms of animation playback and attack frame logic in 'The Battle Cats' (にゃんこ大戦争). Through in-game observation, frame-by-frame analysis, and system behavior derivation, it establishes a formal theoretical model describing the relationship between attack cycles, animation display rules, and waiting mechanisms.<br><br>Source material adapted from <a href='https://jarjarblink.github.io/JDB/article.html' target='_blank'>Diving into the Depths of Battle Cats</a>.",
+        abstract_p: "This document systematically organizes the core mechanisms of animation and attack frame logic in 'The Battle Cats'.<br><br>Source material adapted from <a href='https://jarjarblink.github.io/JDB/article.html' target='_blank'>Diving into the Depths of Battle Cats</a>.",
         contents_h: "Contents",
         axioms_h: "Axioms",
-        ax1: "<strong>Axiom 1 — Animation Omission Rule</strong><br><br>Walk, Standby, and Knockback states <strong>do not display the final frame</strong> of their animation sequence.",
-        ax2: "<strong>Axiom 2 — Attack Animation Rule</strong><br><br>The Attack state <strong>does not display the first frame (index 0)</strong>, but <strong>does display the final frame</strong>.",
-        ax3: "<strong>Axiom 3 — Post-Attack Transition</strong><br><br>Excluding victory/defeat scenarios, an Attack state always transitions into a Standby animation with a minimum duration of <strong>1F</strong>.",
-        ax4: "<strong>Axiom 4 — Knockback Transition</strong><br><br>When a unit is knocked back during an attack, the subsequent state depends on the current phase:<br><br>• <strong>FSwing</strong>: The attack sequence restarts.<br><br>• <strong>BSwing</strong>: The current animation is cancelled; unit enters <strong>Standby</strong>.<br><br>• <strong>Attack Judgment Frame</strong>: If knockback occurs on the hit frame, the system treats it as <strong>BSwing</strong>. The unit enters <strong>Standby</strong> and does not restart the attack.<br><br>Thus, the <strong>Attack Judgment Frame is defined as the start of BSwing</strong>.",
+        ax1: "<strong>Axiom 1 — Animation Omission Rule</strong><br><br>Walk, Standby, and Knockback states <strong>do not display the final frame</strong>.",
+        ax2: "<strong>Axiom 2 — Attack Animation Rule</strong><br><br>Attack state <strong>omits the first frame (index 0)</strong>, but <strong>displays the final frame</strong>.",
+        ax3: "<strong>Axiom 3 — Post-Attack Transition</strong><br><br>Attack state always transitions into Standby with a minimum duration of <strong>1F</strong>.",
+        ax4: "<strong>Axiom 4 — Knockback Transition</strong><br><br>Knockback during <strong>FSwing</strong> restarts the attack; during <strong>BSwing</strong>, it transitions to Standby.",
         theorems_h: "Theorems",
         t1_title: "Theorem 1 — Walk State",
-        t1_body: "Sequences start at index 0, but the first visual display begins at index 1. The last index of the sequence is omitted.",
+        t1_body: "Visual display begins at index 1. The last index is omitted.",
         t2_title: "Theorem 2 — Standby State",
-        t2_body: "Standby duration is determined by WSwing and cycle timing, but follows the rule where the last index is not displayed.",
+        t2_body: "Duration depends on WSwing; the last index is omitted.",
         t3_title: "Theorem 3 — Attack State",
-        t3_body: "Attack animations omit index 0 but successfully render the final index.",
+        t3_body: "Omits index 0 but renders the final index.",
         t4_title: "Theorem 4 — Knockback State",
-        t4_body: "Knockback animation follows the same rule as Walk/Standby: the last index is omitted.",
+        t4_body: "Same as Walk: the last index is omitted.",
         definitions_h: "Definitions",
         def1_t: "True Attack Frequency",
-        def1_d: "The time elapsed between the start of attack $n$ and attack $n-1$.",
+        def1_d: "Time between the start of attack $n$ and $n-1$.",
         def2_t: "Attack Frequency",
         def2_d: "The True Attack Frequency when WSwing = 0.",
         def3_t: "FSwing (Foreswing)",
-        def3_d: "Frames from entering attack state to hit realization (excluding the hit frame itself). In code logic where index 0 is the hit frame, FSwing equals the attack point. Visually: <strong>FSwing = Attack Point - 1</strong>.",
+        def3_d: "<strong>FSwing = Attack Point - 1</strong>",
         def4_t: "BSwing (Backswing)",
-        def4_d: "Frames from the hit realization to the end of the attack state, including the hit frame.",
+        def4_d: "Frames from hit to end of attack state.",
         def5_t: "WSwing (Waiting Swing)",
-        def5_d: "Internal logic frames controlling the delay between attack cycles.",
+        def5_d: "Internal logic frames controlling cycle delay.",
         def6_t: "Wait",
-        def6_d: "The actual visual duration a character stays in place after the attack animation ends.",
+        def6_d: "Actual visual duration stays in place after attack animation.",
         def7_t: "Attack Point Index",
-        def7_d: "The position of the hit frame relative to animation index 0. e.g., Yukimura (1F, 8F)",
+        def7_d: "Hit frame relative to index 0. e.g., Yukimura (1F, 8F)",
         theme_btn_light: "Switch to Dark Mode",
         theme_btn_dark: "Switch to Light Mode"
     },
     jp: {
         title: "Exodia JAR にゃんこ大戦争のモーションと戦闘メカニズム理論",
         abstract_h: "Abstract",
-        abstract_p: "本稿は『にゃんこ大戦争』におけるアニメーション再生フローと攻撃フレーム論理の核心メカニズムを体系的にまとめたものである。実機観察、フレーム単位の分析、およびシステム動作の推論を通じて、キャラの攻撃サイクルと描写規則を記述する理論モデルを構築し、攻撃発生、再生、待機メカニズムの関係を形式化する。<br><br>本内容は研究記事 <a href='https://jarjarblink.github.io/JDB/article.html' target='_blank'>Diving into the Depths of Battle Cats</a> を元に構造化したものである。",
+        abstract_p: "本稿は『にゃんこ大戦争』におけるアニメーション再生フローと攻撃フレーム論理の核心メカニズムを体系的にまとめたものである。<br><br>本内容は研究記事 <a href='https://jarjarblink.github.io/JDB/article.html' target='_blank'>Diving into the Depths of Battle Cats</a> を元に構造化したものである。",
         contents_h: "Contents",
         axioms_h: "Axioms（基本公理）",
-        ax1: "<strong>公理 1 — アニメーション省略規則</strong><br><br>Walk、Standby、Knockback 状態の再生時、<strong>最終フレームは表示されない</strong>。",
-        ax2: "<strong>公理 2 — 攻撃アニメーション規則</strong><br><br>Attack 状態の再生時、<strong>第1フレーム（Index 0）は表示されない</strong>が、<strong>最終フレームは表示される</strong>。",
-        ax3: "<strong>公理 3 — 攻撃後の遷移</strong><br><br>勝利・敗北等の特殊状況を除き、攻撃終了後は必ず Standby（待機）モーションに遷移し、その最短再生時間は <strong>1F</strong> である。",
-        ax4: "<strong>公理 4 — ノックバック遷移</strong><br><br>攻撃中にノックバック（KB）が発生した場合、その後の挙動は段階に依存する：<br><br>• <strong>FSwing</strong>: 攻撃シーケンスが最初からやり直しになる。<br><br>• <strong>BSwing</strong>: 現在の攻撃アニメがキャンセルされ、<strong>Standby</strong> に移行する。<br><br>• <strong>攻撃判定フレーム</strong>: 判定の瞬間にKBが発生した場合、システム上は <strong>BSwing</strong> と見なされ、攻撃は再開されず <strong>Standby</strong> に入る。<br><br>したがって、<strong>攻撃判定フレームは BSwing の起点</strong>と定義される。",
+        ax1: "<strong>公理 1 — アニメーション省略規則</strong><br><br>Walk、Standby、Knockback 再生時、<strong>最終フレームは表示されない</strong>。",
+        ax2: "<strong>公理 2 — 攻撃アニメーション規則</strong><br><br>Attack 再生時、<strong>Index 0 は表示されない</strong>が、<strong>最終フレームは表示される</strong>。",
+        ax3: "<strong>公理 3 — 攻撃後の遷移</strong><br><br>攻撃終了後は必ず Standby に遷移し、最短再生時間は <strong>1F</strong> である。",
+        ax4: "<strong>公理 4 — ノックバック遷移</strong><br><br><strong>FSwing</strong> 中のKBは最初からやり直し、<strong>BSwing</strong> 中のKBは Standby に移行する。",
         theorems_h: "Theorems（理論推導）",
         t1_title: "定理 1 — Walk 状態",
-        t1_body: "アニメーションは Index 0 から始まるが、初回の表示は Index 1 から行われる。また、シーケンスの最終 Index は表示されない。",
+        t1_body: "表示は Index 1 から行われ、シーケンスの最終 Index は表示されない。",
         t2_title: "定理 2 — Standby 状態",
-        t2_body: "待機時間は WSwing とサイクルに依存するが、基本公理に従い最終 Index は表示されない。",
-        t3_title: "定理 3 — Attack 状態",
-        t3_body: "攻撃アニメは特殊で、Index 0 は表示されないが、最終 Index は正常に表示される。",
-        t4_title: "定理 4 — Knockback 状態",
-        t4_body: "KB アニメの描写規則は Walk や Standby と同様に、最終 Index は表示されない。",
+        t2_body: "WSwing に依存するが、最終 Index は表示されない。",
+        t3_title: "定理 3 — Attack 狀態",
+        t3_body: "Index 0 は表示されないが、最終 Index は表示される。",
+        t4_title: "定理 4 — Knockback 狀態",
+        t4_body: "Walk と同様に、最終 Index は表示されない。",
         definitions_h: "Definitions（用語定義）",
         def1_t: "真の攻撃頻度（True Attack Frequency）",
-        def1_d: "第 n 回攻撃の発生時間から第 n-1 回の発生時間を引いた値。",
+        def1_d: "第 n 回攻撃と第 n-1 回の発生間隔。",
         def2_t: "攻撃頻度（Attack Frequency）",
-        def2_d: "WSwing = 0 の時の真の攻撃頻度。",
+        def2_d: "WSwing = 0 の時の頻度。",
         def3_t: "前搖(FSwing）",
-        def3_d: "攻撃状態に入ってから判定が発生するまでのフレーム数（判定フレームを含まない）。内部処理で Index 0 を判定とする場合、FSwing = 攻撃発生値。描写上は Index 0 が消えるため、<strong>FSwing = 攻撃発生 − 1</strong> となる。",
+        def3_d: "<strong>FSwing = 攻撃発生 − 1</strong>",
         def4_t: "後搖(BSwing）",
-        def4_d: "攻撃が命中した瞬間から攻撃状態が終了するまでのフレーム数（判定フレームを含む）。",
+        def4_d: "判定発生から攻撃終了まで（判定フレームを含む）。",
         def5_t: "待機計算用数値（WSwing）",
-        def5_d: "システム内部で攻撃周期の待機時間を制御する論理フレーム数。",
+        def5_d: "システム内部で周期を制御する論理フレーム数。",
         def6_t: "待機（Wait）",
-        def6_d: "攻撃アニメ終了後、実際に画面上でキャラが静止・待機する時間。",
-        def7_t: "攻撃発生点（Attack Point Index）",
-        def7_d: "アニメーション Index 0 を基準とした判定の位置。例：真田幸村 (1F, 8F)",
+        def6_d: "攻撃終了後に実際に画面上で静止する時間。",
+        def7_t: "攻撃発生點（Attack Point Index）",
+        def7_d: "アニメ Index 0 を基準とした判定の位置。例：真田幸村 (1F, 8F)",
         theme_btn_light: "ダークモード",
         theme_btn_dark: "ライトモード"
     }
@@ -312,8 +311,11 @@ const translations = {
 
 let currentLang = 'zh';
 
+// 1. 設定語言並儲存記憶
 function setLanguage(lang) {
     currentLang = lang;
+    localStorage.setItem("preferred_lang", lang); // 儲存語言
+    
     const t = translations[lang];
     
     document.getElementById('content-area').innerHTML = `
@@ -348,18 +350,13 @@ function setLanguage(lang) {
         <div class="theorem-box">
             <span class="theorem-title">${t.t2_title}</span>
             ${t.t2_body}
-            <div class="example">Attack Anim full index: 0, 1, 2, 3<br>Standby Anim full index: 0, 1, 2, 3<br>In Game (WSwing=8F, BSwing=3F): ... → A3 → S0 → S1 → S2 → S0 → S1 → A1 → ...</div>
+            <div class="example">Attack Anim: 0, 1, 2, 3 | Standby Anim: 0, 1, 2, 3<br>In Game (WSwing=8F, BSwing=3F): ... → A3 → S0 → S1 → S2 → S0 → S1 → A1 → ...</div>
         </div>
 
         <div class="theorem-box">
             <span class="theorem-title">${t.t3_title}</span>
             ${t.t3_body}
-            <div class="example">Attack Anim full index: 0, 1, 2, 3<br>In Game (WSwing=6F, BSwing=3F): ... S2 → A1 → A2 → A3 → S0 → S1 → S2 → A1 → ...</div>
-        </div>
-
-        <div class="theorem-box">
-            <span class="theorem-title">${t.t4_title}</span>
-            ${t.t4_body}
+            <div class="example">In Game (WSwing=6F, BSwing=3F): ... S2 → A1 → A2 → A3 → S0 → S1 → S2 → A1 → ...</div>
         </div>
 
         <h2>${t.definitions_h}</h2>
@@ -376,30 +373,43 @@ function setLanguage(lang) {
     updateThemeBtnText();
 }
 
-function updateThemeBtnText() {
-    const isDark = document.body.getAttribute("data-theme") === "dark";
-    const btn = document.getElementById("themeBtn");
-    btn.innerText = isDark ? translations[currentLang].theme_btn_dark : translations[currentLang].theme_btn_light;
-}
-
+// 2. 切換主題並儲存記憶
 function toggleTheme(){
     const body = document.body;
     const currentTheme = body.getAttribute("data-theme");
+    let targetTheme = "light";
 
     if(currentTheme === "dark"){
         body.removeAttribute("data-theme");
-        localStorage.setItem("theme","light");
+        targetTheme = "light";
     } else {
         body.setAttribute("data-theme","dark");
-        localStorage.setItem("theme","dark");
+        targetTheme = "dark";
     }
+    localStorage.setItem("theme", targetTheme); // 儲存主題
     updateThemeBtnText();
 }
 
+// 3. 更新按鈕顯示文字
+function updateThemeBtnText() {
+    const isDark = document.body.getAttribute("data-theme") === "dark";
+    const btn = document.getElementById("themeBtn");
+    if(btn) {
+        btn.innerText = isDark ? translations[currentLang].theme_btn_dark : translations[currentLang].theme_btn_light;
+    }
+}
+
+// 4. 初始化讀取記憶
 window.onload = () => {
+    // 優先恢復主題
     const savedTheme = localStorage.getItem("theme");
-    if(savedTheme === "dark") document.body.setAttribute("data-theme","dark");
-    setLanguage('zh');
+    if(savedTheme === "dark") {
+        document.body.setAttribute("data-theme","dark");
+    }
+    
+    // 恢復語言（這也會觸發內容生成與按鈕文字更新）
+    const savedLang = localStorage.getItem("preferred_lang") || 'zh';
+    setLanguage(savedLang);
 }
 </script>
 
