@@ -1,185 +1,188 @@
-<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1"><title>JAR Battle Cats Database</title><link rel=icon href=static/favicon.ico><meta http-equiv=Pragma content=no-cache><meta http-equiv=Cache-Control content=no-cache><meta http-equiv=Expires content=0><meta name=format-detection content="telephone=no"><meta name=robots content=noindex><noscript><style>body { display: none; }</style></noscript><script src=https://code.jquery.com/jquery-3.7.1.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js></script><style>
-    /* 基礎設定 */
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1"><title>Battle Cats Database | Animation Viewer</title><link rel=icon href=static/favicon.ico><script src=https://code.jquery.com/jquery-3.7.1.min.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js></script><style>
+    /* --- 核心變數設計 (極簡 Wiki 風格) --- */
+    :root {
+        --panel-bg: rgba(25, 25, 30, 0.9);      /* 紮實的深色面板底色 */
+        --btn-bg: rgba(60, 60, 65, 0.8);        /* 修正：不再使用全透明白色，改用深灰背景 */
+        --btn-hover: rgba(80, 80, 85, 1);       /* 懸停時變更亮 */
+        --accent-gold: #ffcc00;                 /* Reset 按鈕強調色 */
+        --text-main: #ffffff;
+        --text-dim: #999999;
+        --border-color: rgba(255, 255, 255, 0.2);
+        --glass-blur: blur(15px);
+    }
+
+    /* --- 基礎佈局 --- */
     html, body {
         margin: 0; padding: 0; height: 100%; width: 100%;
-        background: #d2d2d2; overflow: hidden;
-        font-family: sans-serif;
-        display: flex; justify-content: center; align-items: center;
+        background: #d2d2d2; 
+        overflow: hidden;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
 
-    /* 動畫容器：自適應長寬比 */
     .animation-container {
-        position: relative;
-        width: 100%;
-        max-width: 500px;      /* 桌面端最大寬度 */
-        aspect-ratio: 9 / 16;  /* 保持 9:16 */
-        background: #d2d2d2;
+        position: absolute;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: radial-gradient(circle at center, #f0f0f0 0%, #c2c2c2 100%);
         overflow: hidden;
-        box-shadow: 0 0 20px rgba(0,0,0,0.2);
-        /* 增加抓取游標 */
         cursor: grab;
-        touch-action: none; /* 防止手機瀏覽器預設滾動行為干擾拖拽 */
+        touch-action: none;
     }
 
-    .animation-container:active {
-        cursor: grabbing;
-    }
-
-    /* Canvas 設定 */
     .animation-canvas {
-        width: 100% !important;
-        height: 100% !important;
-        display: block;
-        pointer-events: none; /* 讓事件穿透到容器 */
+        width: 100% !important; height: 100% !important;
+        display: block; pointer-events: none;
     }
 
-    /* ===== 選單樣式 (右上角) ===== */
-    .viewer-menu {
-        position: absolute;
-        top: 10px; right: 10px;
+    /* --- UI 通用組件 --- */
+    .ui-element {
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         z-index: 100;
-        background: rgba(0,0,0,0.6);
-        padding: 6px;              
-        border-radius: 6px;
-        display: flex;
-        flex-direction: row;        
-        gap: 4px;                   
-        flex-wrap: wrap;            
+    }
+    
+    .ui-hidden {
+        opacity: 0 !important;
+        transform: translateY(15px);
+        pointer-events: none !important;
     }
 
-    /* 下拉選單 & 幀數輸入框 */
-    .select-mode,
-    .input-frame {
-        width: 70px;                
-        padding: 2px 4px;
-        font-size: 0.8em;           
+    /* Wiki 面板底座 */
+    .wiki-panel {
+        background: var(--panel-bg);
+        backdrop-filter: var(--glass-blur);
+        -webkit-backdrop-filter: var(--glass-blur);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        padding: 12px;
+        color: var(--text-main);
+    }
+
+    /* --- 區域定位 --- */
+    .zoom-controls { position: absolute; top: 20px; left: 20px; display: flex; flex-direction: column; gap: 8px; }
+    .viewer-menu { position: absolute; top: 20px; right: 20px; width: 220px; display: flex; flex-direction: column; gap: 8px; }
+    .viewer-bottom-left { position: absolute; bottom: 25px; left: 20px; }
+
+    /* --- 統一按鈕風格 (修正透明度問題) --- */
+    .custom-btn, .form-btn, .frame-adjust-btn, .viewer-button {
+        background: var(--btn-bg) !important; /* 確保按鈕有紮實底色 */
+        border: 1px solid var(--border-color) !important;
+        color: var(--text-main) !important;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.2s;
+        font-size: 13px;
+        display: inline-flex; align-items: center; justify-content: center;
+        outline: none;
         box-sizing: border-box;
-        background: #333;
-        color: white;
-        border: 1px solid #555;
-        border-radius: 4px;
     }
 
-    /* ===== 縮放控制 (左上角) ===== */
-    .zoom-controls {
-        position: absolute;
-        top: 10px; left: 10px;
-        z-index: 100;
-        display: flex;
-        flex-direction: column; 
-        gap: 4px;
+    .custom-btn:hover, .form-btn:hover, .frame-adjust-btn:hover, .viewer-button:hover {
+        background: var(--btn-hover) !important;
+        border-color: rgba(255, 255, 255, 0.5) !important;
     }
 
-    .zoom-row {
-        display: flex;
-        gap: 4px; 
-    }
-
-    /* 按鈕樣式 */
-    .custom-btn {
-        padding: 4px 8px;           
-        font-size: 0.8em;
-        background: rgba(0, 0, 0, 0.6);
-        color: white;
-        border-radius: 4px;
-        cursor: pointer;
-        text-align: center;
-        user-select: none;
-    }
-
-    .custom-btn:hover { background: #333; }
-
-    /* ===== 播放按鈕 (左下角) ===== */
-    .viewer-bottom-left {
-        position: absolute;
-        bottom: 10px; left: 10px;
-        z-index: 100;
-        display: flex; gap: 4px;
-    }
-
+    /* --- 特別強化的 Play/Stop 按鈕 --- */
     .viewer-button {
-        padding: 4px 8px;
-        font-size: 0.8em;
-        border-radius: 4px;
-        background: rgba(0,0,0,0.6);
-        color: white;
-        cursor: pointer;
-        text-align: center;
-    }
-    .viewer-button:hover { background: #333; }
-
-    /* 幀數控制群組 */
-    .frame-group {
-        display: flex;
-        align-items: center;
-        background: #555;
-        border: 1px solid #555;
-        border-radius: 4px;
-        overflow: hidden;
+        padding: 12px 30px !important;  /* 尺寸加大 */
+        font-size: 15px !important;     /* 字體加大 */
+        font-weight: 800 !important;    /* 字體加粗 */
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        /* 增加細微的亮色頂部邊框，讓按鈕看起來更立體不透明 */
+        border-top: 1px solid rgba(255,255,255,0.4) !important;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
     }
 
-    .frame-adjust-btn {
-        background: #444;
-        color: white;
-        border: none;
-        padding: 0 8px;
-        height: 24px;
-        cursor: pointer;
+    /* Reset 標記 */
+    #reset-view { color: var(--accent-gold) !important; border-color: rgba(255, 204, 0, 0.4) !important; }
+
+    /* 分段切換 (Form Selection) */
+    .form-group {
+        display: flex; background: rgba(0,0,0,0.4);
+        padding: 4px; border-radius: 10px; gap: 4px;
+    }
+    .form-btn { flex: 1; border: none !important; background: transparent !important; padding: 6px; font-size: 12px; }
+    .form-btn.active {
+        background: rgba(255, 255, 255, 0.2) !important;
         font-weight: bold;
-        font-size: 14px;
+        box-shadow: inset 0 0 5px rgba(255,255,255,0.1);
     }
 
-    .input-frame {
-        width: 45px !important;
-        height: 24px;
-        border: none !important;
-        background: transparent !important;
-        color: white;
-        text-align: center;
-        font-size: 0.85em;
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: textfield;
+    /* 下拉選單與幀數輸入 */
+    .select-mode, .input-frame {
+        background: rgba(10, 10, 15, 0.6) !important;
+        color: white !important;
+        border: 1px solid var(--border-color) !important;
+        border-radius: 8px; padding: 8px; font-size: 13px;
+        width: 100%;
     }
 
+    .frame-group {
+        display: flex; align-items: center;
+        background: rgba(10, 10, 15, 0.5); border-radius: 8px; border: 1px solid var(--border-color);
+    }
+    .frame-adjust-btn { border: none !important; background: transparent !important; font-size: 18px; padding: 4px 14px; }
+    .input-frame { border: none !important; text-align: center; width: 60px !important; background: transparent !important; }
+
+    /* --- 右下角顯示切換按鈕 (FAB) --- */
+    #toggle-ui-btn {
+        position: absolute; bottom: 25px; right: 20px;
+        width: 50px; height: 50px;
+        border-radius: 50%;
+        background: var(--panel-bg);
+        backdrop-filter: var(--glass-blur);
+        border: 1px solid var(--border-color);
+        color: white; font-size: 22px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+        display: flex; align-items: center; justify-content: center;
+        cursor: pointer; z-index: 1001;
+        transition: transform 0.2s;
+    }
+    #toggle-ui-btn:active { transform: scale(0.9); }
+
+    /* 輔助標籤文字 */
+    .ui-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; margin-bottom: 5px; letter-spacing: 1px; }
+
+    /* 手機適配 */
+    @media (max-width: 600px) {
+        .viewer-menu { width: 170px; right: 10px; top: 10px; }
+        .zoom-controls { left: 10px; top: 10px; }
+        .viewer-bottom-left { left: 10px; bottom: 20px; }
+        .viewer-button { padding: 10px 22px !important; font-size: 13px !important; }
+    }
+
+    /* 隱藏 Chrome, Safari, Edge, Opera 的內建箭頭 */
     .input-frame::-webkit-outer-spin-button,
     .input-frame::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
     }
 
-
-    .form-group {
-        display: flex;
-        gap: 6px;
-        margin-bottom: 6px;
+    /* 隱藏 Firefox 的內建箭頭 */
+    .input-frame[type=number] {
+    appearance: textfield;  
+    -moz-appearance: textfield;
     }
 
-    .form-btn {
-        padding: 4px 8px;
-        background: #444;
-        color: #ccc;
-        border: 1px solid #666;
-        cursor: pointer;
+    #toggle-ui-btn {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .form-btn.active {
-        background: #fff;
-        color: #000;
-        font-weight: bold;
+    #toggle-ui-btn:hover {
+        background: var(--btn-hover);
+        transform: scale(1.1);
     }
 
-    .ui-row {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-bottom: 8px; /* 兩行之間的間距 */
-        gap: 10px;         /* 元件之間的間距 */
+    /* SVG 圖示基礎設定 */
+    .icon-ui {
+        width: 24px;
+        height: 24px;
+        transition: transform 0.3s ease;
     }
 
-    .viewer-menu {
-        display: flex;
-        flex-direction: column; /* 強制所有內容垂直排列 */
+    /* 當 UI 隱藏時按鈕的特殊樣式 */
+    #toggle-ui-btn.is-hidden {
+        opacity: 0.5;
+        border-color: rgba(255, 255, 255, 0.1);
     }
-
-    </style></head><body><div class=animation-container><div class=zoom-controls><div class=zoom-row><div class=custom-btn id=zoom-in>🔍 Zoom In (+)</div></div><div class=zoom-row><div class=custom-btn id=zoom-out>🔍 Zoom Out (-)</div></div><div class=zoom-row><div class=custom-btn id=reset-view>🔄 Reset</div></div></div><div class=viewer-bottom-left></div></div><script src=static/js/anim/control.js></script><script src=static/js/anim/viewer.js></script></body></html>
+</style></head><body><div class=animation-container id=container><div class="zoom-controls ui-element"><div class=wiki-panel style="display:flex; flex-direction:column; gap:6px;"><div class=ui-label>Camera</div><div class=custom-btn id=zoom-in>＋ Zoom In</div><div class=custom-btn id=zoom-out>－ Zoom Out</div><div class=custom-btn id=reset-view>↺ Reset</div></div></div><div class="viewer-menu wiki-panel ui-element" id=main-menu></div><div class="viewer-bottom-left ui-element"><div class=wiki-panel id=bottom-controls style="display:flex; align-items:center; gap:12px; padding: 14px 20px;"></div></div><div id=toggle-ui-btn title="Toggle UI"><svg class=icon-ui viewbox="0 0 24 24" fill=none stroke=currentColor stroke-width=2 stroke-linecap=round stroke-linejoin=round><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx=12 cy=12 r=3></circle></svg></div></div><script src=static/js/anim/control.js></script><script src=static/js/anim/viewer.js></script></body></html>
