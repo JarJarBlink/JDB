@@ -11,10 +11,10 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
 </script><script src=static/js/anim/gifshot.min.js></script><style>
     /* --- 核心變數設計--- */
     :root {
-        --panel-bg: rgba(25, 25, 30, 0.9);      /* 紮實的深色面板底色 */
-        --btn-bg: rgba(60, 60, 65, 0.8);        /* 修正：不再使用全透明白色，改用深灰背景 */
-        --btn-hover: rgba(80, 80, 85, 1);       /* 懸停時變更亮 */
-        --accent-gold: #ffcc00;                 /* Reset 按鈕強調色 */
+        --panel-bg: rgba(25, 25, 30, 0.9);
+        --btn-bg: rgba(60, 60, 65, 0.8);
+        --btn-hover: rgba(80, 80, 85, 1);
+        --accent-gold: #ffcc00;
         --text-main: #ffffff;
         --text-dim: #999999;
         --border-color: rgba(255, 255, 255, 0.2);
@@ -24,7 +24,7 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
     /* --- 基礎佈局 --- */
     html, body {
         margin: 0; padding: 0; height: 100%; width: 100%;
-        background: #d2d2d2; 
+        background: #d2d2d2;
         overflow: hidden;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     }
@@ -48,7 +48,7 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
         transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         z-index: 100;
     }
-    
+
     .ui-hidden {
         opacity: 0 !important;
         transform: translateY(15px);
@@ -72,9 +72,9 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
     .viewer-menu { position: absolute; top: 20px; right: 20px; width: 220px; display: flex; flex-direction: column; gap: 8px; }
     .viewer-bottom-left { position: absolute; bottom: 25px; left: 20px; }
 
-    /* --- 統一按鈕風格 (修正透明度問題) --- */
+    /* --- 統一按鈕風格 --- */
     .custom-btn, .form-btn, .frame-adjust-btn, .viewer-button {
-        background: var(--btn-bg) !important; /* 確保按鈕有紮實底色 */
+        background: var(--btn-bg) !important;
         border: 1px solid var(--border-color) !important;
         color: var(--text-main) !important;
         border-radius: 8px;
@@ -84,14 +84,13 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
         display: inline-flex; align-items: center; justify-content: center;
         outline: none;
         box-sizing: border-box;
-
-        -webkit-touch-callout: none; /* 禁用 iOS 長按選單 */
-        -webkit-user-select: none;   /* 禁用 iOS 文字選取 */
-        -khtml-user-select: none;    /* 舊版 Safari */
-        -moz-user-select: none;      /* Firefox */
-        -ms-user-select: none;       /* IE/Edge */
-        user-select: none;           /* 現代瀏覽器通用 */
-        touch-action: none;          /* 禁用瀏覽器的手勢縮放/捲動，由 JS 接管 */
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        touch-action: none;
     }
 
     .custom-btn:hover, .form-btn:hover, .frame-adjust-btn:hover, .viewer-button:hover {
@@ -101,12 +100,11 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
 
     /* --- 特別強化的 Play/Stop 按鈕 --- */
     .viewer-button {
-        padding: 12px 30px !important;  /* 尺寸加大 */
-        font-size: 15px !important;     /* 字體加大 */
-        font-weight: 800 !important;    /* 字體加粗 */
+        padding: 12px 30px !important;
+        font-size: 15px !important;
+        font-weight: 800 !important;
         letter-spacing: 1px;
         text-transform: uppercase;
-        /* 增加細微的亮色頂部邊框，讓按鈕看起來更立體不透明 */
         border-top: 1px solid rgba(255,255,255,0.4) !important;
         box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
     }
@@ -161,51 +159,69 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
     /* 輔助標籤文字 */
     .ui-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; margin-bottom: 5px; letter-spacing: 1px; }
 
-    /* 手機適配 */
+    /* =====================================================
+       手機適配 (修正：右上角不再過寬、不與左上角重疊)
+       ===================================================== */
     @media (max-width: 600px) {
-        .viewer-menu { width: 170px; right: 10px; top: 10px; }
-        .zoom-controls { left: 10px; top: 10px; touch-action: none;}
+        /* 左上角：固定寬度，不要撐滿 */
+        .zoom-controls {
+            left: 10px;
+            top: 10px;
+            touch-action: none;
+            max-width: 130px;   /* 限制左側最大寬度 */
+        }
+
+        /* 右上角：改用固定寬度 + 限制不超過畫面一半 */
+        .viewer-menu {
+            right: 10px;
+            top: 10px;
+            width: 150px;           /* 比原本 170px 更窄 */
+            max-width: calc(50vw - 15px); /* 最多佔半屏，保留左側空間 */
+        }
+
         .viewer-bottom-left { left: 10px; bottom: 20px; }
         .viewer-button { padding: 10px 22px !important; font-size: 13px !important; }
+
+        /* 面板內字體縮小一點，適應窄寬度 */
+        .viewer-menu .ui-label { font-size: 10px; }
+        .viewer-menu .custom-btn,
+        .viewer-menu .form-btn,
+        .viewer-menu .select-mode,
+        .viewer-menu .input-frame { font-size: 11px !important; }
     }
 
-    /* 隱藏 Chrome, Safari, Edge, Opera 的內建箭頭 */
+    /* 隱藏瀏覽器內建數字箭頭 */
     .input-frame::-webkit-outer-spin-button,
     .input-frame::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+        -webkit-appearance: none;
+        margin: 0;
     }
-
-    /* 隱藏 Firefox 的內建箭頭 */
     .input-frame[type=number] {
-    appearance: textfield;  
-    -moz-appearance: textfield;
+        appearance: textfield;
+        -moz-appearance: textfield;
     }
 
     #toggle-ui-btn {
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
-
     #toggle-ui-btn:hover {
         background: var(--btn-hover);
         transform: scale(1.1);
     }
 
-    /* SVG 圖示基礎設定 */
     .icon-ui {
         width: 24px;
         height: 24px;
         transition: transform 0.3s ease;
     }
 
-    /* 當 UI 隱藏時按鈕的特殊樣式 */
     #toggle-ui-btn.is-hidden {
         opacity: 0.5;
         border-color: rgba(255, 255, 255, 0.1);
     }
 
     .animation-container.custom-bg {
-        background-image: none; /* 移除原本的 radial-gradient */
+        background-image: none;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
