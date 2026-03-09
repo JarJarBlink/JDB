@@ -1631,7 +1631,7 @@ BonusExplanationLabel001	【加分項目：打飛敵人】<br>將敵人打飛<br
 BonusNameLabel001	打飛敵人
 hidden_rarity_3	奇幻的地圖
 nyancombo_error1	<color=255,255,0>因為列表有固定中的角色<br>無法將發動貓咪聯組<br>所需的角色設定到隊伍裡</color>
-SpecialRuleExplanation011	【限定超特賣　超激稀有】<br>場上我方的超激稀有角色只能有1隻<br>生產成本打0.5折，生產速度變成2倍
+SpecialRuleExplanation011	【限定超特賣　超激稀有】<br>場上我方的超激稀有角色有數量限制<br>生產成本降低且生產速度加快
 SpecialRuleName011	限定超特賣　超激稀有
 slot_autoset_error_1	<color=255,255,0>這是還不能確認到出現敵人的關卡</color>
 slot_autoset_error_2	<color=255,255,0>沒有可以出擊的角色了</color>
@@ -1722,3 +1722,8 @@ scheme_item_param_119	/2026inukan.html?v=lny05_Fc4DQsfv
 scheme_item_param_120	/2026inukan.html?v=lny06_sD8yNewP
 scheme_item_param_121	/2026inukan.html?v=lny07_Ma3VJkvR
 scheme_item_param_122	/2026inukan.html?v=lny08_Q9xtaK7s
+potential_skill_name68	烈波反擊
+Recommended_levelup_tutorial1	在每週三的貓咪日<br>被選中的角色能以<br>比平常更少的XP來升級
+SpecialRuleExplanation016	【高速世界】<br>所有我方角色的移動速度提升<br>生產成本降低且生產速度加快
+SpecialRuleName016	高速世界
+update_version_guide	<color=255,255,0>有新的版本可以使用，要開啟應用程式商店嗎？</color><br>※如果遊戲內未顯示活動資訊<br>則需要將App更新至最新版本。
