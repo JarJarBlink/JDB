@@ -1,7 +1,6 @@
 {
 "cat_title": "貓咪數據",
 "fetch_button":"搜尋",
-"checkSecond_txt":"秒單位",
 "hp":"體力",
 "t_speedtxt":"速度",
 "t_freq_txt":"攻頻度",
@@ -18,7 +17,9 @@
 "layer_txt":"圖層",
 "post_txt":"WSwing",
 "treasure-btn":"寶物等級",
-"talent_txt":"含本能",
+"checkTalent_txt":"本能",
+"checkCalc_txt": "計算",
+"checkSecond_txt":"秒單位",
 "t_effect2_txt":"效果",
 "t_effect_txt":"能力",
 "t_fruit_txt":"素材",

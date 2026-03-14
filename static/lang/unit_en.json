@@ -1,7 +1,6 @@
 {
 "cat_title": "Cat Data",
 "fetch_button":"Search",
-"checkSecond_txt":"Seconds",
 "hp":"HP",
 "t_speedtxt":"Speed",
 "t_freq_txt":"Atk Freq",
@@ -18,7 +17,9 @@
 "layer_txt":"Layer",
 "post_txt":"WSwing",
 "treasure-btn":"Treasure",
-"talent_txt":"Talent",
+"checkTalent_txt":"Talent",
+"checkCalc_txt": "Calc",
+"checkSecond_txt":"Sec",
 "t_effect2_txt":"Effect",
 "t_effect_txt":"Ability",
 "t_fruit_txt":"Material",
