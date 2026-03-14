@@ -88,6 +88,15 @@
   --skd-tabclass-bc : #303030;
   
   --color-clickablespan-bc : #00008b;
+
+
+  --color-button: rgba(227 227 227 / 95%);
+  --color-button-bc: rgb(40 40 40);
+  --color-base-bc: rgb(20 20 20);
+  --color-title-bc: #2c303d;
+  --color-white-227: rgb(227 227 227);
+  --color-table-default-border: #373b3e;
+  --color-table-border2: #464B4F;
 }
 
 a {
