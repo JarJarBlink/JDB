@@ -24,7 +24,7 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
 </head>
 <body>
     <div class="animation-container" id="container">
-        
+
         <!-- Upload Overlay -->
         <div id="custom-upload-overlay" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:9999; display:flex; align-items:center; justify-content:center;">
             
@@ -56,16 +56,7 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
         <!-- 視角工具 (左上) -->
         <div class="zoom-controls ui-element">
             <!-- 手機用：Camera 圖示按鈕 -->
-            <div id="mobile-camera-btn" style="
-                display:none;
-                width:44px; height:44px; border-radius:50%;
-                background:var(--panel-bg); border:1px solid var(--border-color);
-                backdrop-filter:var(--glass-blur); -webkit-backdrop-filter:var(--glass-blur);
-                align-items:center; justify-content:center;
-                cursor:pointer; box-shadow:0 4px 12px rgba(0,0,0,0.3);
-                font-size:20px;
-            ">📷</div>
-
+            <div id="mobile-camera-btn">📷</div>
             <div class="wiki-panel" style="display:flex; flex-direction:column; gap:6px;">
                 <div class="ui-label">Camera</div>
                 <div class="custom-btn" id="zoom-in">＋ Zoom In</div>
