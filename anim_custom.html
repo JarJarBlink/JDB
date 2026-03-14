@@ -53,40 +53,26 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
             </div>
         </div>
 
-        <!-- 視角工具 (左上) -->
-        <div class="zoom-controls ui-element">
-            <!-- 手機用：Camera 圖示按鈕 -->
-            <div id="mobile-camera-btn">📷</div>
-            <div class="wiki-panel" style="display:flex; flex-direction:column; gap:6px;">
-                <div class="ui-label">Camera</div>
-                <div class="custom-btn" id="zoom-in">＋ Zoom In</div>
-                <div class="custom-btn" id="zoom-out">－ Zoom Out</div>
-                <div class="custom-btn" id="reset-view">↺ Reset</div>
-                <div class="ui-label" style="margin-top: 8px;">Background</div>
-                <div class="custom-btn" id="btn-upload-bg">🖼 Upload BG</div>
-                <div class="custom-btn" id="btn-reset-bg" style="display:none; color: #ff6666 !important; border-color: rgba(255,102,102,0.4) !important;">✕ Clear BG</div>
-                <input type="file" id="bg-input" accept="image/*" style="display: none;">
+        <!-- 隱藏但保留供 viewer.js 插入內容用 -->
+        <div class="zoom-controls" style="display:none !important;">
+            <div class="wiki-panel">
+                <div id="zoom-in"></div>
+                <div id="zoom-out"></div>
+                <div id="reset-view"></div>
+                <div id="btn-upload-bg"></div>
+                <div id="btn-reset-bg"></div>
             </div>
         </div>
+        <div class="viewer-menu" style="display:none !important;" id="main-menu"></div>
+        <div class="viewer-bottom-left" style="display:none !important;" id="bottom-controls"></div>
+        <input type="file" id="bg-input" accept="image/*" style="display:none;">
 
-        <!-- 數據面板 (右上) -->
-        <div class="viewer-menu wiki-panel ui-element" id="main-menu"></div>
-
-        <!-- 播放控制 (左下，桌面用) -->
-        <div class="viewer-bottom-left ui-element" id="bottom-controls"></div>
-
-        <!-- 隱藏開關 (右下，桌面用) -->
-        <div id="toggle-ui-btn" title="Toggle UI">
-            <svg class="icon-ui" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                <circle cx="12" cy="12" r="3"></circle>
-            </svg>
-        </div>
         <!-- ════════════════════════════════
-             手機底部控制列（手機專用）
+             底部控制列
         ════════════════════════════════ -->
         <div id="mobile-bottom-bar">
-            <!-- 把手：播放按鈕 + 幀數 + 收合箭頭 -->
+
+            <!-- 把手 -->
             <div id="mobile-bar-handle">
                 <div id="mobile-bar-quick">
                     <button id="mobile-play-btn">▶ Play</button>
@@ -97,10 +83,11 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
 
             <!-- 展開內容 -->
             <div id="mobile-bar-content">
-                <!-- Form 切換（viewer.js 動態填入，如有多 form）-->
+
+                <!-- Form 切換（動態填入）-->
                 <div id="mobile-form-row"></div>
 
-                <!-- 動畫選單 + 幀數控制 -->
+                <!-- 動畫選單 + 幀數 -->
                 <div id="mobile-frame-row">
                     <select class="select-mode" id="mobile-mode-select"></select>
                     <div class="frame-group">
@@ -110,13 +97,37 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
                     </div>
                 </div>
 
-                <!-- KB Soul 按鈕 -->
+                <!-- KB Soul -->
                 <div id="mobile-extra-row">
                     <button class="viewer-button" id="mobile-kb-btn">💀 KB → Soul</button>
                 </div>
+
+                <div class="bar-divider"></div>
+
+                <!-- Camera 控制 -->
+                <div id="mobile-camera-row">
+                    <div class="custom-btn" id="mb-zoom-in">＋ Zoom</div>
+                    <div class="custom-btn" id="mb-zoom-out">－ Zoom</div>
+                    <div class="custom-btn" id="mb-reset-view">↺ Reset</div>
+                    <div class="custom-btn" id="mb-upload-bg">🖼 BG</div>
+                    <div class="custom-btn" id="mb-reset-bg" style="display:none;">✕ BG</div>
+                </div>
+
+                <!-- 匯出 -->
+                <div id="mobile-export-row">
+                    <div class="custom-btn" id="mb-png-trans">📸 PNG</div>
+                    <div class="custom-btn" id="mb-png-full">🖼 PNG+BG</div>
+                    <div class="custom-btn" id="mb-webm-full">🎬 WebM</div>
+                    <div class="custom-btn" id="mb-gif-full">🎬 GIF</div>
+                </div>
+
+                <div id="mb-export-status"></div>
+
             </div>
         </div>
+
     </div>
+
     <script src="static/js/anim/viewer.js"></script>
     <script src="static/js/anim/control.js"></script>
 </body>
