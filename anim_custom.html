@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1">
 <title>JAR Battle Cats Database</title>
 <link rel="icon" href="static/favicon.ico">
+<link rel="stylesheet" href='static/css/database/anim/anim.css'>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script>
 <script src="static/js/home/ga.js"></script>
 <script>
 /*Coded by Exodia JAR. Contact me: https://x.com/eUqQxBRzSbCq7Uz */
-// Patch HTMLCanvasElement.getContext to always set willReadFrequently
 const _origGetContext = HTMLCanvasElement.prototype.getContext;
 HTMLCanvasElement.prototype.getContext = function(type, attributes) {
     if (type === '2d') {
@@ -21,212 +21,10 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
 };
 </script>
 <script src="static/js/anim/gifshot.min.js"></script>
-<style>
-    /* --- 核心變數設計--- */
-    :root {
-        --panel-bg: rgba(25, 25, 30, 0.9);      /* 紮實的深色面板底色 */
-        --btn-bg: rgba(60, 60, 65, 0.8);        /* 修正：不再使用全透明白色，改用深灰背景 */
-        --btn-hover: rgba(80, 80, 85, 1);       /* 懸停時變更亮 */
-        --accent-gold: #ffcc00;                 /* Reset 按鈕強調色 */
-        --text-main: #ffffff;
-        --text-dim: #999999;
-        --border-color: rgba(255, 255, 255, 0.2);
-        --glass-blur: blur(15px);
-    }
-
-    /* --- 基礎佈局 --- */
-    html, body {
-        margin: 0; padding: 0; height: 100%; width: 100%;
-        background: #d2d2d2; 
-        overflow: hidden;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    }
-
-    .animation-container {
-        position: absolute;
-        top: 0; left: 0; width: 100%; height: 100%;
-        background: radial-gradient(circle at center, #f0f0f0 0%, #c2c2c2 100%);
-        overflow: hidden;
-        cursor: grab;
-        touch-action: none;
-    }
-
-    .animation-canvas {
-        width: 100% !important; height: 100% !important;
-        display: block; pointer-events: none;
-    }
-
-    /* --- UI 通用組件 --- */
-    .ui-element {
-        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        z-index: 1000;
-    }
-    
-    .ui-hidden {
-        opacity: 0 !important;
-        transform: translateY(15px);
-        pointer-events: none !important;
-    }
-
-    /* Wiki 面板底座 */
-    .wiki-panel {
-        background: var(--panel-bg);
-        backdrop-filter: var(--glass-blur);
-        -webkit-backdrop-filter: var(--glass-blur);
-        border: 1px solid var(--border-color);
-        border-radius: 12px;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        padding: 12px;
-        color: var(--text-main);
-    }
-
-    /* --- 區域定位 --- */
-    .zoom-controls { position: absolute; top: 20px; left: 20px; display: flex; flex-direction: column; gap: 8px; }
-    .viewer-menu { position: absolute; top: 20px; right: 20px; width: 220px; display: flex; flex-direction: column; gap: 8px; }
-    .viewer-bottom-left { position: absolute; bottom: 25px; left: 20px; }
-
-    /* --- 統一按鈕風格 (修正透明度問題) --- */
-    .custom-btn, .form-btn, .frame-adjust-btn, .viewer-button {
-        background: var(--btn-bg) !important; /* 確保按鈕有紮實底色 */
-        border: 1px solid var(--border-color) !important;
-        color: var(--text-main) !important;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: all 0.2s;
-        font-size: 13px;
-        display: inline-flex; align-items: center; justify-content: center;
-        outline: none;
-        box-sizing: border-box;
-
-        -webkit-touch-callout: none; /* 禁用 iOS 長按選單 */
-        -webkit-user-select: none;   /* 禁用 iOS 文字選取 */
-        -khtml-user-select: none;    /* 舊版 Safari */
-        -moz-user-select: none;      /* Firefox */
-        -ms-user-select: none;       /* IE/Edge */
-        user-select: none;           /* 現代瀏覽器通用 */
-        touch-action: none;          /* 禁用瀏覽器的手勢縮放/捲動，由 JS 接管 */
-    }
-
-    .custom-btn:hover, .form-btn:hover, .frame-adjust-btn:hover, .viewer-button:hover {
-        background: var(--btn-hover) !important;
-        border-color: rgba(255, 255, 255, 0.5) !important;
-    }
-
-    /* --- 特別強化的 Play/Stop 按鈕 --- */
-    .viewer-button {
-        padding: 12px 30px !important;  /* 尺寸加大 */
-        font-size: 15px !important;     /* 字體加大 */
-        font-weight: 800 !important;    /* 字體加粗 */
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        /* 增加細微的亮色頂部邊框，讓按鈕看起來更立體不透明 */
-        border-top: 1px solid rgba(255,255,255,0.4) !important;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
-    }
-
-    /* Reset 標記 */
-    #reset-view { color: var(--accent-gold) !important; border-color: rgba(255, 204, 0, 0.4) !important; }
-
-    /* 分段切換 (Form Selection) */
-    .form-group {
-        display: flex; background: rgba(0,0,0,0.4);
-        padding: 4px; border-radius: 10px; gap: 4px;
-    }
-    .form-btn { flex: 1; border: none !important; background: transparent !important; padding: 6px; font-size: 12px; }
-    .form-btn.active {
-        background: rgba(255, 255, 255, 0.2) !important;
-        font-weight: bold;
-        box-shadow: inset 0 0 5px rgba(255,255,255,0.1);
-    }
-
-    /* 下拉選單與幀數輸入 */
-    .select-mode, .input-frame {
-        background: rgba(10, 10, 15, 0.6) !important;
-        color: white !important;
-        border: 1px solid var(--border-color) !important;
-        border-radius: 8px; padding: 8px; font-size: 13px;
-        width: 100%;
-    }
-
-    .frame-group {
-        display: flex; align-items: center;
-        background: rgba(10, 10, 15, 0.5); border-radius: 8px; border: 1px solid var(--border-color);
-    }
-    .frame-adjust-btn { border: none !important; background: transparent !important; font-size: 18px; padding: 4px 14px; }
-    .input-frame { border: none !important; text-align: center; width: 60px !important; background: transparent !important; }
-
-    /* --- 右下角顯示切換按鈕 (FAB) --- */
-    #toggle-ui-btn {
-        position: absolute; bottom: 25px; right: 20px;
-        width: 50px; height: 50px;
-        border-radius: 50%;
-        background: var(--panel-bg);
-        backdrop-filter: var(--glass-blur);
-        border: 1px solid var(--border-color);
-        color: white; font-size: 22px;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-        display: flex; align-items: center; justify-content: center;
-        cursor: pointer; z-index: 1001;
-        transition: transform 0.2s;
-    }
-    #toggle-ui-btn:active { transform: scale(0.9); }
-
-    /* 輔助標籤文字 */
-    .ui-label { font-size: 11px; color: var(--text-dim); text-transform: uppercase; margin-bottom: 5px; letter-spacing: 1px; }
-
-    /* 手機適配 */
-    @media (max-width: 600px) {
-        .viewer-menu { width: 170px; right: 10px; top: 10px; }
-        .zoom-controls { left: 10px; top: 10px; touch-action: none;}
-        .viewer-bottom-left { left: 10px; bottom: 20px; }
-        .viewer-button { padding: 10px 22px !important; font-size: 13px !important; }
-    }
-
-    /* 隱藏 Chrome, Safari, Edge, Opera 的內建箭頭 */
-    .input-frame::-webkit-outer-spin-button,
-    .input-frame::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-    }
-
-    /* 隱藏 Firefox 的內建箭頭 */
-    .input-frame[type=number] {
-    appearance: textfield;  
-    -moz-appearance: textfield;
-    }
-
-    #toggle-ui-btn {
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    #toggle-ui-btn:hover {
-        background: var(--btn-hover);
-        transform: scale(1.1);
-    }
-
-    /* SVG 圖示基礎設定 */
-    .icon-ui {
-        width: 24px;
-        height: 24px;
-        transition: transform 0.3s ease;
-    }
-
-    /* 當 UI 隱藏時按鈕的特殊樣式 */
-    #toggle-ui-btn.is-hidden {
-        opacity: 0.5;
-        border-color: rgba(255, 255, 255, 0.1);
-    }
-
-    .animation-container.custom-bg {
-        background-image: none; /* 移除原本的 radial-gradient */
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-</style>
 </head>
 <body>
     <div class="animation-container" id="container">
+        
         <!-- Upload Overlay -->
         <div id="custom-upload-overlay" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:9999; display:flex; align-items:center; justify-content:center;">
             
@@ -255,14 +53,24 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
             </div>
         </div>
 
-        <!-- Camera Controls (Left-Top) -->
+        <!-- 視角工具 (左上) -->
         <div class="zoom-controls ui-element">
+            <!-- 手機用：Camera 圖示按鈕 -->
+            <div id="mobile-camera-btn" style="
+                display:none;
+                width:44px; height:44px; border-radius:50%;
+                background:var(--panel-bg); border:1px solid var(--border-color);
+                backdrop-filter:var(--glass-blur); -webkit-backdrop-filter:var(--glass-blur);
+                align-items:center; justify-content:center;
+                cursor:pointer; box-shadow:0 4px 12px rgba(0,0,0,0.3);
+                font-size:20px;
+            ">📷</div>
+
             <div class="wiki-panel" style="display:flex; flex-direction:column; gap:6px;">
                 <div class="ui-label">Camera</div>
                 <div class="custom-btn" id="zoom-in">＋ Zoom In</div>
                 <div class="custom-btn" id="zoom-out">－ Zoom Out</div>
                 <div class="custom-btn" id="reset-view">↺ Reset</div>
-                <!-- Background Controls -->
                 <div class="ui-label" style="margin-top: 8px;">Background</div>
                 <div class="custom-btn" id="btn-upload-bg">🖼 Upload BG</div>
                 <div class="custom-btn" id="btn-reset-bg" style="display:none; color: #ff6666 !important; border-color: rgba(255,102,102,0.4) !important;">✕ Clear BG</div>
@@ -270,21 +78,54 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
             </div>
         </div>
 
-        <!-- Menu (Right-Top) -->
+        <!-- 數據面板 (右上) -->
         <div class="viewer-menu wiki-panel ui-element" id="main-menu"></div>
 
-        <!-- Playback (Left-Bottom) -->
+        <!-- 播放控制 (左下，桌面用) -->
         <div class="viewer-bottom-left ui-element" id="bottom-controls"></div>
 
-        <!-- UI Toggle (Right-Bottom) -->
+        <!-- 隱藏開關 (右下，桌面用) -->
         <div id="toggle-ui-btn" title="Toggle UI">
             <svg class="icon-ui" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                 <circle cx="12" cy="12" r="3"></circle>
             </svg>
         </div>
-    </div>
+        <!-- ════════════════════════════════
+             手機底部控制列（手機專用）
+        ════════════════════════════════ -->
+        <div id="mobile-bottom-bar">
+            <!-- 把手：播放按鈕 + 幀數 + 收合箭頭 -->
+            <div id="mobile-bar-handle">
+                <div id="mobile-bar-quick">
+                    <button id="mobile-play-btn">▶ Play</button>
+                    <span id="mobile-frame-display">Frame 0 / 0</span>
+                </div>
+                <div id="mobile-bar-toggle">▲</div>
+            </div>
 
+            <!-- 展開內容 -->
+            <div id="mobile-bar-content">
+                <!-- Form 切換（viewer.js 動態填入，如有多 form）-->
+                <div id="mobile-form-row"></div>
+
+                <!-- 動畫選單 + 幀數控制 -->
+                <div id="mobile-frame-row">
+                    <select class="select-mode" id="mobile-mode-select"></select>
+                    <div class="frame-group">
+                        <button class="frame-adjust-btn" id="mobile-frame-minus">-</button>
+                        <input class="input-frame" id="mobile-frame-input" type="number" value="0" min="0">
+                        <button class="frame-adjust-btn" id="mobile-frame-plus">+</button>
+                    </div>
+                </div>
+
+                <!-- KB Soul 按鈕 -->
+                <div id="mobile-extra-row">
+                    <button class="viewer-button" id="mobile-kb-btn">💀 KB → Soul</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="static/js/anim/viewer.js"></script>
     <script src="static/js/anim/control.js"></script>
 </body>
