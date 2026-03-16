@@ -1,7 +1,7 @@
 {
   "map_title": "Enemy Data",
   "fetch_button": "Search",
-  "checkSecond_txt": "Seconds",
+  "checkSecond_txt": "Sec",
   "hp": "HP",
   "t_freq_txt": "Atk Freq",
   "t_fswing_txt":"FSwing",
@@ -23,5 +23,7 @@
   "all_percent":"ALL％：",
   "t_effect_txt":"Effect/Ability",
   "t_drop_txt":"Drop",
-  "tspawn_txt":"Spawn"
+  "checkSpawnDetail_txt":"Spawn",
+  "tspawn_txt":"Spawn",
+  "tspawn_max_txt":"Max One"
 }
