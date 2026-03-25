@@ -10,15 +10,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script>
 <script src="static/js/home/ga.js"></script>
-<script type="module">
-import init, { AnimEngine } from './static/js/anim_wasm/anim_wasm.js';
-await init();
-window.AnimEngine = AnimEngine;
-window.__animWasm = true;
-if (typeof notifyWasmReady === 'function') {
-    notifyWasmReady();
-}
-</script>
 <script>
 /*Coded by Exodia JAR. Contact me: https://x.com/eUqQxBRzSbCq7Uz */
 const _origGetContext = HTMLCanvasElement.prototype.getContext;
@@ -139,5 +130,16 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
 
     <script src="static/js/anim/viewer_wasm.js" defer></script>
     <script src="static/js/anim/control.js"></script>
+    <script type="module">
+        console.log("Coded by Exodia JAR")
+        import init, { AnimEngine } from './static/js/anim_wasm/anim_wasm.js';
+        try {
+            await init();
+            window.AnimEngine = AnimEngine;
+            notifyWasmReady();
+        } catch (e) {
+            console.error('❌ using fallback');
+        }
+    </script>
 </body>
 </html>
