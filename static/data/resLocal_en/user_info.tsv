@@ -236,16 +236,16 @@
 17900	Receive 5 Uber Rare Catseyes.
 18000	Receive 1 Rare Ticket
 18100	Receive 1 Platinum Shard
-12001	Normal Cat: "Superfeline" can now be<br>upgraded up to level MAX+50!<br><span class="fs76">*Use Capsules to upgrade!*</span>
+12001	Superfeline's level cap unlocked!<br>Upgrades to +50 now available.<br><span class="fs76"> *Upgrade using Capsules*</span>
 18200	Receive 5 Catamin As.
 18300	Receive 5 Catamin Bs.
 18400	Receive 5 Catamin Cs.
-13001	Normal Cat: "Superfeline" can now be<br>upgraded up to level MAX+60!<br><span class="fs76">*Use Capsules to upgrade!*</span>
+13001	Superfeline's level cap unlocked!<br>Upgrades to +60 now available.<br><span class="fs76"> *Upgrade using Capsules*</span>
 18500	Receive 5 Legend Rare<br>Catseyes.
 18600	Receive 5 Special Catseyes
 18700	Receive 5 Rare Catseyes
-14001	Normal Cat: "Superfeline" can now be<br>upgraded up to level MAX+70!<br><span class="fs76">*Use Capsules to upgrade!*</span>
-15001	Normal Cat: "Superfeline" can now be<br>upgraded up to level MAX+80!<br><span class="fs76">*Use Capsules to upgrade!*</span>
+14001	Superfeline's level cap unlocked!<br>Upgrades to +70 now available.<br><span class="fs76"> *Upgrade using Capsules*</span>
+15001	Superfeline's level cap unlocked!<br>Upgrades to +80 now available.<br><span class="fs76"> *Upgrade using Capsules*</span>
 18800	Receive 5 Super Rare Catseyes
 18900	Receive 5 Uber Rare Catseyes
 19000	Receive 1 Rare Ticket
@@ -272,7 +272,7 @@
 21000	Receive 1 Rare Ticket
 21100	Receive 1 Platinum Shard
 21200	Receive 5 Catamin As.
-16001	Normal Cat: "Superfeline" can now be<br>upgraded up to level MAX+90!<br><span class="fs76">*Use Capsules to upgrade!*</span>
+16001	Superfeline's level cap unlocked!<br>Upgrades to +90 now available.<br><span class="fs76"> *Upgrade using Capsules*</span>
 21300	Receive 5 Catamin Bs
 21400	Receive 5 Catamin Cs
 21500	Receive 10 Cat CPUs
@@ -328,3 +328,6 @@
 26500	Receive 5 Uber Rare Catseyes
 26600	Receive 5 Legend Catseyes
 26700	Receive 5 Special Catseyes
+26800	Receive 5 Rare Catseyes
+26900	Receive 5 Super Rare Catseyes
+27000	Receive 1 Rare Ticket

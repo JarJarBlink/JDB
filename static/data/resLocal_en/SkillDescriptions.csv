@@ -9,7 +9,7 @@ textID|テキスト内容
 8|Gain the "Knockback" ability.<br>Level up to increase likelihood of Knockback!
 9|Gain the "Warp" ability.
 10|Gain the "Strengthen" ability.<br>Level up to further increase attack power when in effect!
-11|Gain the "Survive" ability.<br>Level up to improve chance of suriving a lethal strike!
+11|Gain the "Survive" ability.<br>Level up to improve chance of surviving a lethal strike!
 12|Gain the "Base Destroyer" ability.
 13|Gain the "Critical" ability.<br>Level up to increase likelihood of Critical attacks!
 14|Gain the "Zombie Killer" ability.
@@ -94,3 +94,4 @@ textID|テキスト内容
 93|Powers up Curse effects.<br>Level up to increase the duration of Curse effects.
 94|Gain the "Explosion" ability.<br>Level up to improve chance of explosive waves!
 95|Unlocks the "Dodge Metal" ability.<br>Level up to increase the chance of Dodging!
+96|Unlocks "Counter-Surge".<br>Fires Surge when hit by Surge.

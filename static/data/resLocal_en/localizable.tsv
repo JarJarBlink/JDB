@@ -1412,8 +1412,8 @@ Itemshop_ad_popup2	Earned XP +${xp}!
 stage_restriction_limit_6	${rarity}: ${value} or fewer
 SpecialRuleName000	Trust Fund
 SpecialRuleName001	Cooldown Equality
-SpecialRuleExplanation000	Trust Fund<br>Start the battle with a ton of Money,<br>but gain no Money over time<br>or by defeating enemies.
-SpecialRuleExplanation001	Cooldown Equality<br>Deploy cooldowns will be fixed<br>at the same rate for all friendly units.
+SpecialRuleExplanation000	【Trust Fund】<br>Start the battle with a ton of Money,<br>but gain no Money over time<br>or by defeating enemies.
+SpecialRuleExplanation001	【Cooldown Equality】<br>Deploy cooldowns will be fixed<br>at the same rate for all friendly units.
 treasure_get	Double-tap an icon to travel to a stage where that reward is available.
 treasure_geterror	You cannot travel to a not-yet unlocked stage.
 treasure_popup1	<color=255,255,0> ${treasureRank} ${treasureName}</color> ${text} ${stageName}
@@ -1571,7 +1571,7 @@ BonusExplanationLabel001	【Score Bonus: Knockback】<br>Knockback an enemy.<br>
 BonusNameLabel001	Knockback
 hidden_rarity_3	Illusory Map
 nyancombo_error1	<color=255,255,0>Units needed for this CatCombo cannot<br>be added because there are<br>pinned Cats in your lineup.</color>
-SpecialRuleExplanation011	【Uber Clearance】<br>Only 1 Uber Rare unit at a<br> time can be deployed, but at<br>5% cost and 50% recovery time.
+SpecialRuleExplanation011	【Uber Clearance】<br>The number of Uber Rare units<br>deployable is limited, but their cost<br>and recovery time are reduced.
 SpecialRuleName011	Uber Clearance
 slot_autoset_error_1	<color=255,255,0>Enemies appearing in this stage are not known...</color>
 slot_autoset_error_2	<color=255,255,0>No available units can attempt this stage.</color>
@@ -1592,7 +1592,7 @@ ScatCPU_ad_confirm	Stage Clear XP Boost Chance!<br>Get rewards of <flash>${xp} X
 ScatCPU_ad_result	Stage Clear XP <flash>UP!!!</flash><br><flash>${xp}</flash> XP
 scratch_SNS_005	
 slot_SNS_004	I got %d Cat Food from the Wildcat Slots in #TheBattleCats!<br><br>#BattleCats #11YearsOfBattleCats
-SpecialRuleExplanation012	【 Limited Stock 】<br>Only 50 Units total can be deployed<br>over the course of this battle, but<br>all Units have the same recovery time.
+SpecialRuleExplanation012	【Limited Stock】<br>Only 50 Units total can be deployed<br>over the course of this battle, but<br>all Units have the same recovery time.
 SpecialRuleName012	Limited Stock
 talk_007_push	I've got news about the Cat Wedding!
 talk_009_push	
@@ -1639,3 +1639,9 @@ clear_count_tutorial	<color=255,255,0>Abyssal Stage Clear Rewards</color><br>Ear
 clear_count_reward	${clearNum} times
 clear_count_reward_title	Clear Rewards
 clear_count_reward_title2	Clear
+potential_skill_name68	Counter-Surge
+Recommended_levelup_tutorial1	Every Wednesday on Meownesday,<br>a chosen Cat will be able to power<br>up for less XP than normal.
+SpecialRuleExplanation016	【High Speed】<br>All allied and enemy units' movement speed<br>is increased. Allied units' deployment cost<br>and recovery time is decreased.
+SpecialRuleName016	High Speed
+update_version_guide	<color=255,255,0>A new version is available. Open the store page?</color><br>※ If event content is not available,<br>please update to the latest version.
+
