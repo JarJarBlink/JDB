@@ -100,7 +100,6 @@ export class AnimEngine {
         return ret;
     }
     /**
-     * 設定 maxValues = [scaleMax, rotMax, opacityMax]
      * @param {number} scale
      * @param {number} rot
      * @param {number} opacity
