@@ -537,6 +537,54 @@
           ]
         }
       }
+    },
+    "36022": {
+      "ContentsType": 0,
+      "RuleNameLabel": "SpecialRuleName017",
+      "RuleExplanationLabel": "SpecialRuleExplanation017",
+      "RuleType": {
+        "5": {
+          "Parameters": [
+            100,
+            100,
+            100,
+            50,
+            100,
+            100
+          ]
+        },
+        "8": {
+          "Parameters": [
+            8,
+            1,
+            60
+          ]
+        }
+      }
+    },
+    "7011": {
+      "ContentsType": 2,
+      "Reset": {
+        "ResetFlag": 1,
+        "PopupLabel": "SpecialRuleReset001"
+      },
+      "RuleType": {
+        "0": {
+          "Parameters": [
+            4500
+          ]
+        }
+      }
+    },
+    "1428": {
+      "ContentsType": 2,
+      "RuleType": {
+        "0": {
+          "Parameters": [
+            4500
+          ]
+        }
+      }
     }
   }
 }

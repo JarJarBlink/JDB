@@ -14,4 +14,8 @@
 24038,9,9,stageskip_message_7
 24061,9,9,stageskip_message_8
 24065,9,9,stageskip_message_9
+7010,19,10,stageskip_message_10
+7010,29,20,stageskip_message_10
+7010,39,30,stageskip_message_10
+7010,49,40,stageskip_message_10
 //マップID,ステージID,スキップ上限値,表示文章ラベル

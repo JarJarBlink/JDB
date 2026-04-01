@@ -1806,6 +1806,60 @@
       "NekoBageImg": "C_263",
       "TitleImgBG": "_",
       "TitleImgLogo": "_"
+    },
+    "7011": {
+      "FusumaSE": [
+        -1
+      ],
+      "FusumaOpenOffsetX": 0,
+      "FusumaOpenOffsetY": 458,
+      "SelectStageImg": "S_412",
+      "SelectStageImgReverse": 1
+    },
+    "1428": {
+      "FusumaSE": [
+        -1
+      ],
+      "FusumaOpenOffsetX": 0,
+      "FusumaOpenOffsetY": 458,
+      "SelectStageImg": "S_412",
+      "SelectStageImgReverse": 1
+    },
+    "1430": {
+      "FusumaSE": [
+        -1
+      ],
+      "FusumaOpenOffsetX": 0,
+      "FusumaOpenOffsetY": 458,
+      "SelectStageImg": "S_412",
+      "SelectStageImgReverse": 1
+    },
+    "24080": {
+      "FusumaSE": [
+        -1
+      ],
+      "FusumaOpenOffsetX": 0,
+      "FusumaOpenOffsetY": 458,
+      "SelectStageImg": "S_412",
+      "SelectStageImgReverse": 1
+    },
+    "1431": {
+      "FusumaSE": [
+        -1
+      ],
+      "FusumaOpenOffsetX": 0,
+      "FusumaOpenOffsetY": 458,
+      "SelectStageImg": "S_412",
+      "SelectStageImgReverse": 1
+    },
+    "1432": {
+      "FusumaSE": [
+        -1
+      ],
+      "FusumaOpenOffsetX": 0,
+      "FusumaOpenOffsetY": 458,
+      "SelectStageImg": "S_412",
+      "SelectStageImgReverse": 1
     }
   }
 }
