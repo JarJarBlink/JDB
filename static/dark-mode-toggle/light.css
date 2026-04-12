@@ -117,3 +117,33 @@ a:visited {
   border-color: #bbb !important;
   color: rgb(15 15 15) !important;
 }
+
+/* ── Spawn Rate Chart modal ── */
+#spawnChartModal > div {
+  background: rgb(240 240 240) !important;
+  border-color: #bbb !important;
+  color: rgb(15 15 15) !important;
+}
+
+#spawnChartTitle {
+  color: rgb(15 15 15) !important;
+}
+
+#spawnChartClose {
+  color: rgb(80 80 80) !important;
+}
+
+#spawnChartTabs button {
+  border-color: #bbb !important;
+  color: rgb(80 80 80) !important;
+}
+
+#spawnChartTabs button.active,
+#spawnChartTabs button[style*="2a4a7a"] {
+  background: rgb(180 205 240) !important;
+  color: rgb(0 50 120) !important;
+}
+
+#spawnChartEmpty {
+  color: rgb(100 100 100) !important;
+}

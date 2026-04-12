@@ -297,3 +297,8 @@ a:visited {
   mask-size: 16px auto;
   display: inline-block;
 }
+
+#spawnChartTabs button.spawn-tab-active {
+  background: #2a4a7a !important;
+  color: #7af !important;
+}
