@@ -1,4 +1,42 @@
 
+/* ── Theme Variables (Light) ────────────────────────────────── */
+:root {
+  --ec-bg-cell:     rgb(240 240 240);
+  --ec-bg-other:    rgb(220 220 220);
+  --ec-bg-header:   rgb(210 210 210);
+  --ec-bg-btn:      rgb(210 210 210);
+  --ec-text:        rgb(15 15 15);
+  --ec-text-muted:  rgb(90 90 90);
+  --ec-border:      #bbb;
+  --ec-hover:       rgba(0, 0, 0, 0.08);
+  --ec-accent:      #0000EE;
+  --ec-chip-name:   #5a6a7a;
+  --ec-chip-id:     #778ca3;
+  --ec-chip-step:   #e67e22;
+  --ec-cat-bg:      rgba(0, 0, 180, 0.1);
+  --ec-cat-border:  rgba(0, 0, 180, 0.25);
+  --gc-bg:          rgb(240 240 240);
+}
+
+/* ── Theme Variables (Dark) ─────────────────────────────────── */
+.dark {
+  --ec-bg-cell:     rgb(28 28 28);
+  --ec-bg-other:    rgb(20 20 20);
+  --ec-bg-header:   rgb(44 48 61);
+  --ec-bg-btn:      rgb(40 40 40);
+  --ec-text:        rgba(227 227 227 / 95%);
+  --ec-text-muted:  rgba(180 180 180 / 80%);
+  --ec-border:      #373b3e;
+  --ec-hover:       rgba(255, 255, 255, 0.08);
+  --ec-accent:      #99c3ff;
+  --ec-chip-name:   #3a4a5a;
+  --ec-chip-id:     #4a5c6e;
+  --ec-chip-step:   #c0621a;
+  --ec-cat-bg:      rgba(100, 140, 220, 0.15);
+  --ec-cat-border:  rgba(100, 140, 220, 0.35);
+  --gc-bg:          rgb(28 28 28);
+}
+
 /* ── Root 容器 ──────────────────────────────────────────────── */
 #gc-root {
   max-width: 900px;
