@@ -1,0 +1,197 @@
+{
+  "date": "2026/4/1",
+  "sCat_id_list": [
+    "840",
+    "841",
+    "842",
+    "843",
+    "844",
+    "845",
+    "846",
+    "847",
+    "848",
+    "849",
+    "850",
+    "851",
+    "852",
+    "853"
+  ],
+  "sCat_sprite_id_list": [],
+  "sTrue_form_new_id_list": [
+    "449"
+  ],
+  "sTrue_4form_new_id_list": [],
+  "sNew_skill_id_list": [
+    "330",
+    "338",
+    "631"
+  ],
+  "sUnitbuy_change_list": [
+    "650",
+    "650",
+    "650",
+    "696"
+  ],
+  "sGatya_names_Rlist": [
+    "gatya_bnr1044.png",
+    "gatya_bnr1049.png",
+    "gatya_bnr1050.png",
+    "gatya_bnr880.png",
+    "gatya_bnr968.png"
+  ],
+  "sGatya_names_Nlist": [],
+  "sGatya_names_Elist": [
+    "gatya_e_bnr47.png",
+    "gatya_e_bnr48.png"
+  ],
+  "sCombo_id_list": [],
+  "sNew_stageND_list": [
+    "34027",
+    "34028"
+  ],
+  "sNew_stageS_list": [
+    "1421",
+    "1422",
+    "1423",
+    "1424",
+    "1425",
+    "1426",
+    "1427"
+  ],
+  "sNew_stageSR_list": [
+    "36020",
+    "36021"
+  ],
+  "sNew_stageC_list": [
+    "2263",
+    "2264",
+    "2265",
+    "2266",
+    "2267",
+    "2268",
+    "2269"
+  ],
+  "sNew_stageCA_list": [
+    "27025"
+  ],
+  "sNew_stageB_list": [],
+  "sNew_stageEX_list": [],
+  "sNew_stageA_list": [
+    "24078"
+  ],
+  "sNew_stageV_list": [],
+  "sNew_stageR_list": [
+    "11042",
+    "11043"
+  ],
+  "sNew_stageH_list": [],
+  "sNew_stageG_list": [],
+  "sNew_stageT_list": [],
+  "sNew_4star_stage_list": [],
+  "sNew_3star_stage_list": [],
+  "sEnemy_id_list": [
+    "186",
+    "761",
+    "762",
+    "763",
+    "764",
+    "765",
+    "766",
+    "767",
+    "768",
+    "769",
+    "770",
+    "771"
+  ],
+  "sEnemy_change_list": [],
+  "sNew_medal_list": [
+    "126"
+  ],
+  "sCastle_ids": [
+    "rc181"
+  ],
+  "sMission_id_list": [
+    894,
+    919,
+    1009,
+    1010,
+    1011,
+    1012,
+    1013,
+    1103,
+    1104,
+    1105,
+    1106,
+    1107,
+    1108,
+    1109,
+    1110,
+    1111,
+    1112,
+    1113,
+    1114,
+    1115,
+    1116,
+    1117,
+    1118,
+    1119,
+    1120,
+    1121,
+    1122,
+    1123
+  ],
+  "sRankgift_des": [
+    "UR12001\tSuperfeline's level cap unlocked!Upgrades to +50 now available.",
+    "UR13001\tSuperfeline's level cap unlocked!Upgrades to +60 now available.",
+    "UR14001\tSuperfeline's level cap unlocked!Upgrades to +70 now available.",
+    "UR15001\tSuperfeline's level cap unlocked!Upgrades to +80 now available.",
+    "UR16001\tSuperfeline's level cap unlocked!Upgrades to +90 now available.",
+    "UR26800\tReceive 5 Rare Catseyes\n",
+    "UR26900\tReceive 5 Super Rare Catseyes\n",
+    "UR27000\tReceive 1 Rare Ticket"
+  ],
+  "sMusic_id_list": [],
+  "sSoundEffect_ids": [],
+  "sNew_bg_list": [
+    "bg253",
+    "bg254",
+    "bg255",
+    "bg256",
+    "bg257",
+    "bg258",
+    "bg259",
+    "bg260"
+  ],
+  "combo_list": [],
+  "mission_list": [
+    "1. (Special) 【Final Battle: King Doge!】，Clear this stage and unveil the truth of the 11th anniv. <br>Reward：Cat Ticket +1\n<br>",
+    "2. (Special) Clear 50 Rurouni Kenshin collab stages.，All Rurouni Kenshin collab stages count toward the total. (50 of 50) <br>Reward：Cat Ticket +1\n<br>",
+    "3. (Special) 【Heartbeat Catcademy】Clear Season 1: School，Days 10 times! (10 of 10) <br>Reward：Love Letter +3\n<br>",
+    "4. (Special) 【Heartbeat Catcademy】Clear Season 2: Heartbeat，Festival 3 times! (3 of 3) <br>Reward：Love Letter +3\n<br>",
+    "5. (Special) 【Heartbeat Catcademy】Clear Season 3: Field，Trip 3 times! (3 of 3) <br>Reward：Love Letter +3\n<br>",
+    "6. (Special) 【Heartbeat Catcademy】Clear Season 4: Graduation，Day 3 times! (3 of 3) <br>Reward：Love Letter +3\n<br>",
+    "7. (Special) 【Heartbeat Catcademy】Clear Weekend: Confession，3 times! (3 of 3) <br>Reward：Love Letter +3\n<br>",
+    "8. (Special) Clear any Valentine's Event，stage 5 times! (5 of 5) <br>Reward：XP +100000\n<br>",
+    "9. (Special) Clear any Valentine's Event，stage 15 times! (15 of 15) <br>Reward：Cat Ticket +1\n<br>",
+    "10. (Special) Clear any Valentine's Event，stage 30 times! (30 of 30) <br>Reward：Cat Ticket +1\n<br>",
+    "11. (Special) Clear any Demon Slayer: Kimetsu no Yaiba，collab stage 5 times! (5 of 5) <br>Reward：Cat Ticket +1\n<br>",
+    "12. (Special) Clear any Demon Slayer: Kimetsu no Yaiba，collab stage 15 times! (15 of 15) <br>Reward：Cat Ticket +1\n<br>",
+    "13. (Special) Clear any Demon Slayer: Kimetsu no Yaiba，collab stage 30 times! (30 of 30) <br>Reward：Cat Ticket +1\n<br>",
+    "14. (Special) Clear Demon Slayer: Kimetsu no Yaiba，Special Missions ① - ④ and earn a Rare Ticket! <br>Reward：Rare Ticket +3\n<br>",
+    "15. (Special) Clear Demon Slayer: Kimetsu no Yaiba Special，Mission ①: Slay the Demon Teacher Bear! <br>Reward：Leadership +1\n<br>",
+    "16. (Special) Clear Demon Slayer: Kimetsu no Yaiba Special，Mission ②: Slay Rui! <br>Reward：XP +50000\n<br>",
+    "17. (Special) Clear Demon Slayer: Kimetsu no Yaiba Special，Mission ③: Slay Enmu! <br>Reward：Leadership +2\n<br>",
+    "18. (Special) Clear Demon Slayer: Kimetsu no Yaiba Special，Mission ④: Slay Akaza! <br>Reward：XP +100000\n<br>",
+    "19. (Special) 【Heartbeat Catcademy】Clear After School: Love Letters，10 times! (10 of 10) <br>Reward：Love Letter +10\n<br>",
+    "20. (Special) 【111M DL】Clear all event missions，to earn 1 Rare Ticket! <br>Reward：Rare Ticket +1\n<br>",
+    "21. (Special) 【111M DL】Send Gamatoto on 1 successful expeditions!，(Complete 1 full expedition to any Gamatoto area: 1 of 1) <br>Reward：XP +10000\n<br>",
+    "22. (Special) 【111M DL】Send Gamatoto on 3 successful expeditions!，(Complete 3 full expeditions to any Gamatoto area: 3 of 3) <br>Reward：XP +30000\n<br>",
+    "23. (Special) 【111M DL】Send Gamatoto on 5 successful expeditions!，(Complete 5 full expeditions to any Gamatoto area: 5 of 5) <br>Reward：Cat Ticket +1\n<br>",
+    "24. (Special) 【111M DL】Clear 111M Celebration Gifts Galore!，1 times! (1 of 1) <br>Reward：XP +10000\n<br>",
+    "25. (Special) 【111M DL】Clear 111M Celebration Gifts Galore!，2 times! (2 of 2) <br>Reward：XP +30000\n<br>",
+    "26. (Special) 【111M DL】Clear 111M Celebration Gifts Galore!，3 times! (3 of 3) <br>Reward：Cat Ticket +1\n<br>",
+    "27. (Special) 【111M DL】，Clear any 5 Battle Cats stage(s). (5 of 5) <br>Reward：XP +15000\n<br>",
+    "28. (Special) 【111M DL】，Clear any 10 Battle Cats stage(s). (10 of 10) <br>Reward：Cat Ticket +1\n<br>"
+  ],
+  "sundries": []
+}
