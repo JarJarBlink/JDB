@@ -1,99 +1,385 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1">
-    <title>JAR Battle Cats Database</title>
-    <link rel="icon" href="static/favicon.ico">
-    <link rel="stylesheet" href="static/css/database/style.css">
-    <link rel="stylesheet" href="static/css/database/origin.css">
-    <link rel="stylesheet" href='static/css/home/style_a.css'>
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="robots" content="noindex">
-    <noscript><style>body { display: none; }</style></noscript>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <meta name="color-scheme" content="dark light"/>
-    <meta name="theme-color" content=""/>
-    <link rel="stylesheet" href="static/dark-mode-toggle/dark.css" media="(prefers-color-scheme: dark)"/>
-    <link rel="stylesheet" href="static/dark-mode-toggle/light.css" media="(prefers-color-scheme: light)"/>
-    <link rel="stylesheet" href="static/dark-mode-toggle/common.css"/>
-    <link rel="stylesheet" href="static/dark-mode-toggle/slider.css"/>
-    <script type="module" src="static/dark-mode-toggle/dark-mode-toggle-playground.js"></script>
-    <script type="module" src="static/dark-mode-toggle/dark-mode-toggle.js"></script>
-    <style>
-        #jar-details .collapsible-inner {
-            padding-left: 1em;
-        }
-        #jar-details .collapsible-inner p {
-            margin-bottom: 1em;
-            font-size: 1rem;
-            text-indent: 0em;
-        }
-        #jar-details .collapsible-inner a {
-            text-decoration: none;
-        }
-        #jar-details .collapsible-inner a:hover {
-            text-decoration: underline;
-        }
-        #transcription-date {
-            font-size: 0.9rem;
-            color: #888;
-            margin-bottom: 1em;
-        }
-        #contact ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        #contact li {
-            display: inline-block;
-            margin-right: 1em;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1">
+<title>JAR Battle Cats Database</title>
+<link rel="icon" href="static/favicon.ico">
+<link rel="stylesheet" href="static/css/database/style.css">
+<link rel="stylesheet" href="static/css/database/origin.css">
+<link rel="stylesheet" href='static/css/home/style_a.css'>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="noindex">
+<noscript><style>body { display: none; }</style></noscript>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<meta name="color-scheme" content="dark light"/>
+<meta name="theme-color" content=""/>
+<link rel="stylesheet" href="static/dark-mode-toggle/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/common.css"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/slider.css"/>
+<script type="module" src="static/dark-mode-toggle/dark-mode-toggle-playground.js"></script>
+<script type="module" src="static/dark-mode-toggle/dark-mode-toggle.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script>
+<script type="module" src="static/js/home/ga.js"></script>
+<style>
+.lang-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 2rem;
+}
+.lang-btn {
+    padding: 4px 14px;
+    border: 0.5px solid #aaa;
+    border-radius: 8px;
+    background: transparent;
+    color: #888;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: inherit;
+}
+.lang-btn:hover, .lang-btn.active {
+    background: rgba(128,128,128,0.12);
+    color: inherit;
+    border-color: #666;
+}
+
+/* ── Historical Header ── */
+.hist-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.ornament {
+    display: block;
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 0.35em;
+    color: #aaa;
+    margin: 0.4rem 0;
+}
+.hist-divider {
+    border: none;
+    border-top: 0.5px solid rgba(128,128,128,0.3);
+    margin: 0.5rem auto;
+    width: 60%;
+}
+.hist-title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0.5rem 0 0.25rem;
+    line-height: 1.4;
+}
+.hist-subtitle {
+    font-size: 0.8rem;
+    color: #aaa;
+    letter-spacing: 0.06em;
+}
+.hist-date {
+    font-size: 0.8rem;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 1.5rem;
+}
+.hist-date::before, .hist-date::after {
+    content: '';
+    display: inline-block;
+    height: 0.5px;
+    width: 40px;
+    background: rgba(128,128,128,0.3);
+}
+
+/* ── yuki Portrait ── */
+.yuki-frame {
+    float: right;
+    margin: 0 0 1.5rem 2rem;
+    text-align: center;
+    width: 148px;
+}
+.yuki-img {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgba(128,128,128,0.4);
+    display: block;
+    margin: 0 auto;
+}
+.yuki-img-placeholder {
+    width: 124px;
+    height: 124px;
+    border-radius: 50%;
+    border: 1px dashed rgba(128,128,128,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: #aaa;
+    line-height: 1.4;
+    margin: 0 auto;
+}
+.yuki-caption {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 8px;
+    font-style: italic;
+}
+.yuki-credit {
+    font-size: 11px;
+    color: #bbb;
+    margin-top: 4px;
+}
+
+/* ── Body Text (Historical Typography) ── */
+#hist-body p {
+    margin-bottom: 1.2em;
+    font-size: 1rem;
+    text-indent: 2em;
+    line-height: 1.9;
+}
+/*
+#hist-body p:first-child {
+    text-indent: 0;
+}
+
+#hist-body p:first-child::first-letter {
+    font-size: 2.6em;
+    float: left;
+    line-height: 0.85;
+    margin-right: 6px;
+    margin-top: 4px;
+    color: #888;
+}*/
+
+/* ── Contact ── */
+.contact-row {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 0.5px solid rgba(128,128,128,0.25);
+    font-size: 0.9rem;
+    color: #888;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.contact-row a {
+    color: inherit;
+    text-decoration: none;
+}
+.contact-row a:hover { text-decoration: underline; }
+.contact-label {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #aaa;
+}
+
+/* ── Content Padding (all screens) ── */
+.collapsible-inner {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* ── Clearfix ── */
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* ── Mobile Layout ── */
+@media (max-width: 600px) {
+    .collapsible-inner {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .hist-title {
+        font-size: 1.3rem;
+    }
+
+    .yuki-frame {
+        float: none;
+        margin: 0 auto 1.5rem auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hist-body p {
+        font-size: 0.95rem;
+        text-indent: 2em;
+        line-height: 1.8;
+    }
+
+    .contact-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+}
+</style>
 </head>
 <body>
-    <article id="about-section">
-        <h2 class="top">The History of Databases</h2>
-        <div id="jar-details" class="collapsible">
-            <div class="collapsible-inner">
-                <p id="transcription-date">16 August 2025</p>
-                <p>
-                    About two years ago, several game updates brought a flood of information. In the midst of my busy life, I had to spend a lot of time searching for details on various community channels, but the information was scattered and hard to track. This inspired me to create a clear and streamlined format for update articles. I referred to the classification methods used by some information enthusiasts and began my journey of posting updates. Initially, I presented the content as simple information briefs.
-                </p>
+<article id="about-section">
+    <h2 class="top" id="page-heading" style="display:none;"></h2>
 
-                <p>
-                    Later, I had the privilege of discovering yuki's database, which made searching for information and data extremely easy. For someone who wants to deeply explore or design the game, having a clear and aesthetically pleasing layout is crucial, and the database provides more than just basic information.
-                </p>
+    <div id="jar-details" class="collapsible">
+        <div class="collapsible-inner">
 
-                <p>
-                    About a year ago, I started automating the production of these information briefs, but many problems still remained. I did not have enough time to maintain the complex code I had hastily written. To make updates more automated, I decided to build this website. Initially, I never intended to create a full-fledged database. However, recently I learned that yuki's database is retiring, which made it urgent for me to build a database to fill this huge gap.
-                </p>
-
-                <p>
-                    For me, reliance on database information goes far beyond simply playing the game, so I embarked on this massive project. Creating a database is not just about uploading data and formatting it—it requires building an entire ecosystem, including automated updates, maintainable code, effective information channels, and accurate parsing. It is an extremely demanding task. The key is not whether it is difficult or easy, but that this effort yields no tangible benefit; it is driven solely by passion.
-                </p>
-
-                <p>
-                    Fortunately, I was not starting from scratch. The groundbreaking example set by the strongest Battle Cats database reduced the difficulty of creation and enabled me to build this database. I started from my own requirements, and if the information provided by this database is helpful to others, I am more than happy. Welcome to use it.
-                </p>
-
-                <strong>Contact me</strong><br>
-                <a href="https://www.youtube.com/@JAR-CatW">Youtube</a><br>
-                <a href="https://discord.gg/qpKw9pr7my">Discord</a><br><br>
+            <!--
+            <div class="lang-bar">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="tw">中文</button>
+                <button class="lang-btn" data-lang="ja">日本語</button>
             </div>
+            -->
+
+            <div class="hist-header">
+                <span class="ornament">✦ &nbsp; ✦ &nbsp; ✦</span>
+                <hr class="hist-divider">
+                <h1 class="hist-title" id="main-title"></h1>
+                <p class="hist-subtitle" id="main-sub"></p>
+                <hr class="hist-divider">
+                <span class="ornament">✦ &nbsp; ✦ &nbsp; ✦</span>
+            </div>
+
+            <div class="hist-date" id="hist-date"></div>
+
+            <div class="clearfix">
+                <div class="yuki-frame" id="yuki-frame">
+                    <img class="yuki-img" src="static/img/yuki.png" alt="yuki">
+                    <p class="yuki-caption" id="yuki-cap"></p>
+                </div>
+
+                <div id="hist-body"></div>
+            </div>
+
+            <div class="contact-row">
+                <span class="contact-label" id="contact-label"></span>
+                <a href="https://discord.gg/qpKw9pr7my">Discord</a>
+            </div>
+
         </div>
-        <div id="stage0_block" class="block">
+    </div>
+
+    <!-- Bottom nav -->
+    <div id="stage0_block" class="block">
         <div class="contact">
             <ul>
-                <li id="contact1"><a href='index.html' rel="noopener"><img src="static/img/icon/bottom_bg01.png" width=18 class="icon"/>Home</a></li>
+                <li id="contact1"><a href='index.html' rel="noopener">
+                    <img src="static/img/icon/bottom_bg01.png" width=18 class="icon"/>
+                    <span id="nav-home"></span>
+                </a></li>
                 <li id="contact2">　</li>
-                <!--<li id="contact3"><a href="">contact me</a></li>-->
             </ul>
         </div>
         <dark-mode-toggle class="slider" mode="dark" style="display: none; pointer-events: none;"></dark-mode-toggle>
-        </div>
+    </div>
 </article>
+
+<script>
+const LANGS = {
+    en: {
+        title:      "The History of Databases",
+        sub:        "",
+        date:       "16 August 2025",
+        yukiCap:    "Mascot",
+        contact:    "Contact",
+        home:       "Home",
+        body: [
+            "About two years ago, several game updates brought a flood of information. In the midst of my busy life, I had to spend a lot of time searching for details on various community channels, but the information was scattered and hard to track. This inspired me to create a clear and streamlined format for update articles. I referred to the classification methods used by some information enthusiasts and began my journey of posting updates. Initially, I presented the content as simple information briefs.",
+            "Later, I had the privilege of discovering yuki's database, which made searching for information and data extremely easy. For someone who wants to deeply explore or design the game, having a clear and aesthetically pleasing layout is crucial, and the database provides more than just basic information.",
+            "About a year ago, I started automating the production of these information briefs, but many problems still remained. I did not have enough time to maintain the complex code I had hastily written. To make updates more automated, I decided to build this website. Initially, I never intended to create a full-fledged database. However, recently I learned that yuki's database is retiring, which made it urgent for me to build a database to fill this huge gap.",
+            "For me, reliance on database information goes far beyond simply playing the game, so I embarked on this massive project. Creating a database is not just about uploading data and formatting it — it requires building an entire ecosystem, including automated updates, maintainable code, effective information channels, and accurate parsing. It is an extremely demanding task. The key is not whether it is difficult or easy, but that this effort yields no tangible benefit; it is driven solely by passion.",
+            "Fortunately, I was not starting from scratch. The groundbreaking example set by the strongest Battle Cats database reduced the difficulty of creation and enabled me to build this database. I started from my own requirements, and if the information provided by this database is helpful to others, I am more than happy. Welcome, and enjoy exploring the database."
+        ]
+    },
+    tw: {
+        title:      "資料庫的歷史",
+        sub:        "",
+        date:       "2025年8月16日",
+        yukiCap:    "Mascot",
+        contact:    "聯絡方式",
+        home:       "首頁",
+        body: [
+            "大約兩年前，遊戲的幾次更新帶來了大量資訊。在忙碌的生活中，我必須花費許多時間在各個社群頻道中搜尋細節，但資訊零散、難以追蹤。這激發了我為更新文章建立清晰、簡潔格式的念頭。參考了一些資訊愛好者所使用的分類方式，開始了發布更新的旅程，起初僅以簡單的資訊摘要形式呈現內容。",
+            "後來，我有幸發現了 yuki 的資料庫，這讓查詢資訊與數據變得極為便利。對於想深入探索或設計遊戲的人來說，清晰美觀的介面至關重要，而這個資料庫所提供的遠不止基本資訊。",
+            "大約一年前，我開始嘗試自動化生產這些資訊摘要，但仍有許多問題懸而未決。我沒有足夠的時間維護那些匆忙寫成的複雜代碼。為了讓更新更加自動化，我決定建立這個網站。起初我從未打算打造一個完整的資料庫，然而近期得知 yuki 的資料庫即將退休，這讓建立一個資料庫填補這一巨大空缺變得刻不容緩。",
+            "對我而言，對資料庫資訊的依賴遠不止於遊玩遊戲，因此我踏上了這個龐大的計畫。建立一個資料庫並不只是上傳資料與格式化而已，它需要構建一整套生態系統，包括自動更新、可維護的代碼、有效的資訊管道以及準確的解析。這是一項極為耗費心力的工作。關鍵不在於它的難易，而在於這份努力沒有任何有形的回報，純粹是由熱忱驅動的。",
+            "幸運的是，我並非從零開始。史上最強的戰鬥貓資料庫所樹立的先例，降低了創作難度，使我得以建立這個資料庫。我從自身的需求出發，若這個資料庫所提供的資訊對他人也有所幫助，我感到由衷的榮幸。歡迎使用。"
+        ]
+    },
+    ja: {
+        title:      "データベースの歴史",
+        sub:        "",
+        date:       "2025年8月16日",
+        yukiCap:    "Mascot",
+        contact:    "連絡先",
+        home:       "ホーム",
+        body: [
+            "約2年前、ゲームのアップデートで大量の情報が出てきた時期がありました。忙しい日常の中で、色々なコミュニティを回って情報を探すのはかなり大変で、情報がバラバラで追い切れないことも多かったです。それがきっかけで、もっと見やすくて整理された更新記事を作りたいと思うようになり、有志の方々のまとめ方を参考にしながら、まずは簡単な情報まとめから発信を始めました。",
+            
+            "その後、ゆきさんのデータベースに出会ったのは本当にラッキーでした。おかげでデータ検索がすごく楽になったんです。ゲームを深くやり込んだり、自分で何かを設計したりする人にとって、あの綺麗で分かりやすいレイアウトは最高でした。単なるデータベース以上の価値があったと思います。",
+            
+            "1年ほど前からまとめ作業の自動化を試みましたが、急いで書いた複雑なコードを維持する時間が足りず、課題は山積みでした。そこで、もっとスムーズに更新できるようにこのサイトを立ち上げることにしました。最初は本格的なデータベースを作るつもりはなかったんですが、ゆきさんが引退すると聞いて、この大きな空白を埋めるために急いで形にする必要を感じました。",
+            
+            "僕にとってデータベースの情報は、ただゲームを遊ぶためだけのものではありません。だからこそ、この大きなプロジェクトに踏み切りました。データベース作りは、単にデータを載せるだけじゃなく、自動更新やコードの維持、情報の収集から解析まで、一つのエコシステムを作り上げるようなもので、正直かなりハードな作業です。でも、損得じゃなく、純粋に情熱だけで動いています。",
+            
+            "幸いなことに、ゼロからのスタートではありませんでした。最強のにゃんこデータベースという素晴らしい先例があったからこそ、自分でも作ることができました。もともとは自分が必要で始めたものですが、もしこのサイトの情報が他の誰かの役に立つのなら、これ以上の喜びはありません。まだ発展途上のサイトですが、今後も少しずつ改善していく予定です。ぜひ使ってみてください。"
+        ]
+    }
+};
+
+function setLang(lang) {
+    if (!LANGS[lang]) return;
+    const d = LANGS[lang];
+    document.getElementById('main-title').textContent  = d.title;
+    document.getElementById('main-sub').textContent    = d.sub;
+    document.getElementById('hist-date').textContent   = d.date;
+    document.getElementById('yuki-cap').textContent    = d.yukiCap;
+    document.getElementById('contact-label').textContent = d.contact;
+    document.getElementById('nav-home').textContent    = d.home;
+    document.getElementById('hist-body').innerHTML =
+        d.body.map(p => `<p>${p}</p>`).join('');
+    document.querySelectorAll('.lang-btn').forEach(b => {
+        b.classList.toggle('active', b.dataset.lang === lang);
+    });
+    document.documentElement.lang =
+        lang === 'ja' ? 'ja' : lang === 'tw' ? 'zh-TW' : 'en';
+    try { localStorage.setItem('jar-lang', lang); } catch(e) {}
+}
+
+/* ════════════════════════════════════════════════
+   1. ?cc=ja / tw / en  (URL param)
+   2. localStorage
+   3. Default: en
+   ════════════════════════════════════════════════ */
+function getLangFromURL() {
+    try {
+        const cc = new URLSearchParams(window.location.search).get('cc');
+        if (cc === 'ja' || cc === 'tw' || cc === 'en') return cc;
+    } catch(e) {}
+    return null;
+}
+
+(function init() {
+    let saved = null;
+    try { saved = localStorage.getItem('jar-lang'); } catch(e) {}
+    const lang = getLangFromURL() || saved || 'en';
+    setLang(lang);
+})();
+
+document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => setLang(btn.dataset.lang));
+});
+</script>
 </body>
 </html>
