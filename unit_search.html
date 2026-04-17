@@ -1,20 +1,52 @@
 <!DOCTYPE HTML><html lang=ja><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1"><title>JAR Battle Cats Database</title><link rel=icon href=static/favicon.ico><link rel=stylesheet href=static/css/database/style.css><link rel=stylesheet href=static/css/database/origin.css><link rel=stylesheet href=static/css/database/unit/u000_search.css><link rel=stylesheet href=static/css/home/style_a.css><meta name=format-detection content="telephone=no"><meta name=robots content=noindex><noscript><style>body { display: none; }</style></noscript><script src=https://code.jquery.com/jquery-3.7.1.min.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script><script type=module src=static/js/home/ga.js></script><script type=module src=static/js/unit/search_data1_ja.js></script><script type=module src=static/js/unit/search_data1_tw.js></script><script type=module src=static/js/unit/search_data1_en.js></script><script type=module type=module src=static/js/unit/unit_search.js></script><meta name=color-scheme content="dark light"><meta name=theme-color content><link rel=stylesheet href=static/dark-mode-toggle/dark.css media="(prefers-color-scheme: dark)"><link rel=stylesheet href=static/dark-mode-toggle/light.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=static/dark-mode-toggle/common.css><link rel=stylesheet href=static/dark-mode-toggle/slider.css><script type=module src=static/dark-mode-toggle/dark-mode-toggle-playground.js></script><script type=module src=static/dark-mode-toggle/dark-mode-toggle.js></script><link rel=stylesheet href=static/css/spine/spine-player.css><script src=static/js/spine/spine-player.js></script><script src=static/js/spine/spine-mascot-text.js></script><script src=static/js/spine/spine-mascot.js></script></head><style>
 /* 比較籃子樣式 - 底部浮動條 */
-.compare-basket {
+#compare_basket {
+  display: none; 
   position: fixed; 
   bottom: 20px; 
   left: 50%; 
-  transform: translateX(-50%);
-  /* 增加一點透明度 */
+  transform: translateX(-50%); 
   background: var(--color-title-bc); 
   color: var(--color-white-227); 
-  padding: 10px 20px;
+  padding: 8px 15px; /* 手機版縮減內邊距 */
   border-radius: 50px; 
   z-index: 9999; 
-  display: flex; 
-  align-items: center;
-  box-shadow: 0 4px 15px var(--shadow-color); 
-  border: 1px solid var(--color-table-default-border);
+  align-items: center; 
+  gap: 8px; /* 縮小物件間距 */
+  border: 1px solid var(--color-table-default-border); 
+  box-shadow: 0 4px 15px var(--shadow-color);
+  
+  /* 關鍵屬性：強制不換行 */
+  white-space: nowrap; 
+  width: max-content;
+  max-width: 95vw; /* 防止超出螢幕寬度 */
+}
+#btn_start_compare {
+  white-space: nowrap;
+  flex-shrink: 0; /* 防止按鈕被擠壓 */
+}
+
+#btn_clear_basket {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 480px) {
+  #compare_basket {
+    padding: 6px 12px;
+    gap: 6px;
+    font-size: 12px; /* 稍微縮小文字 */
+  }
+  
+  #btn_start_compare {
+    padding: 5px 10px !important;
+    font-size: 12px;
+  }
+  
+  #btn_clear_basket {
+    padding: 3px 8px !important;
+    font-size: 11px;
+  }
 }
 
 .basket-content { 
