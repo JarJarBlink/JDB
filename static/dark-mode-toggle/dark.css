@@ -302,3 +302,7 @@ a:visited {
   background: #2a4a7a !important;
   color: #7af !important;
 }
+/* ── Growth Chart tab active（對齊 spawn-tab-active） ── */
+#growth-form-tabs button.growth-tab-active {
+  opacity: 0.95;
+}

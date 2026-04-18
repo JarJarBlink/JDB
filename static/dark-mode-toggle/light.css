@@ -147,3 +147,44 @@ a:visited {
 #spawnChartEmpty {
   color: rgb(100 100 100) !important;
 }
+/* ── Growth Chart modal ── */
+#growth-modal {
+  background: rgb(240 240 240) !important;
+  color: rgb(15 15 15) !important;
+}
+
+/* header 列（background:var(--color-base-bc) → 灰色） */
+#growth-modal > div:first-child {
+  background: rgb(210 210 210) !important;
+  border-bottom-color: #bbb !important;
+}
+
+#growth-modal > div:first-child span {
+  color: rgb(15 15 15) !important;
+}
+
+#growth-modal-close {
+  color: rgb(15 15 15) !important;
+}
+
+/* tab / checkbox 列（background:var(--color-title-bc) → 灰色） */
+#growth-modal > div:nth-child(2) {
+  background: rgb(240 240 240) !important;
+  border-bottom-color: #bbb !important;
+}
+
+/* label 文字（color:var(--color-white-227) → 黑） */
+#growth-modal label {
+  color: rgb(15 15 15) !important;
+}
+
+/* chart body 背景 */
+#growth-modal-body {
+  background: rgb(240 240 240) !important;
+}
+
+/* 形態頁籤 active 狀態（對齊 spawnChartTabs 的 light 覆蓋風格） */
+#growth-form-tabs button.growth-tab-active {
+  filter: brightness(0.7) saturate(1.3) !important;
+  color: #111 !important;
+}
