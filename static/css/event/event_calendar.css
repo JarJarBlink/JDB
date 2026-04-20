@@ -180,7 +180,7 @@ html.dark .ec-popup-bg {
 }
 .ec-list-main { flex: 1; min-width: 0; }
 .ec-list-date { font-size: .75rem; color: var(--ec-text-muted); margin-bottom: 4px; }
-.ec-list-items { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px; }
+.ec-list-items { display: flex; gap: 5px; flex-wrap: wrap; margin-top: 4px;}
 .ec-chip {
   font-size: .68rem; border-radius: 4px;
   padding: 1px 6px; color: #fff; font-weight: 600;

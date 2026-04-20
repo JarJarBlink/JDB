@@ -292,3 +292,38 @@
   .ic-cell    { min-height: 54px; }
   .ic-cal-dot { font-size: .58rem; }
 }
+
+
+/* ── 常駐面板 ── */
+.ic-perm-section {
+  border: 1px solid var(--ic-border);
+  border-radius: 8px;
+  margin: 8px 0;
+  overflow: hidden;
+}
+.ic-perm-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background: var(--ic-bg-alt);
+  cursor: pointer;
+  user-select: none;
+}
+.ic-perm-header-title { font-weight: 600; flex: 1; }
+.ic-perm-toggle-icon  { font-size: .8rem; transition: transform .2s; }
+.ic-perm-body         { padding: 8px 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+.ic-perm-body.hidden  { display: none; }
+.ic-perm-card {
+  border: 1px solid var(--ic-border);
+  border-radius: 6px;
+  padding: 8px 10px;
+  min-width: 200px;
+  cursor: pointer;
+  background: var(--ic-bg);
+}
+.ic-perm-card:hover   { background: var(--ic-bg-alt); }
+.ic-perm-card-chips   { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.ic-perm-card-title   { font-size: .75rem; margin-top: 4px; color: var(--ic-text); }
+.ic-perm-schedule     { font-size: .72rem; color: var(--ic-text-muted); margin-top: 4px; }
+.ic-perm-years        { font-size: .68rem; color: var(--ic-text-muted); margin-top: 2px; }
