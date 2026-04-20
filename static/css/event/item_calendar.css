@@ -90,7 +90,14 @@
   white-space: nowrap;
 }
 .ic-chip-login { background: #e67e22; }
-.ic-chip-item  { background: var(--color-title-bc, #5a6a7a); color: var(--ic-text); }
+.ic-chip-item {
+  background: #d0d0d0;
+  color: var(--ic-text);
+}
+html.dark .ic-chip-item {
+  background: #2c303d;
+  color: var(--ic-text);
+}
 
 /* ── Calendar Grid ───────────────────────────────────────── */
 .ic-grid-wrap  { overflow-x: auto; -webkit-overflow-scrolling: touch; }
