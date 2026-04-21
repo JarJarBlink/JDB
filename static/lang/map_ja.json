@@ -13,7 +13,7 @@
   "chp": "城体力",
   "stage_len": "ステージ幅",
   "start_bgm": "開始BGM",
-  "boss_spawn": "ボス出現位置",
+  "boss_spawn": "ボス位置",
   "cshield": "城バリア",
   "base_xp": "基礎XP",
   "tlimit": "出撃制限",

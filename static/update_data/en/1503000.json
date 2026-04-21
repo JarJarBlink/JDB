@@ -1,0 +1,132 @@
+{
+  "date": "2026/4/21",
+  "sCat_id_list": [
+    "854",
+    "859"
+  ],
+  "sCat_sprite_id_list": [
+    "855",
+    "860"
+  ],
+  "sTrue_form_new_id_list": [
+    "719"
+  ],
+  "sTrue_4form_new_id_list": [
+    "427"
+  ],
+  "sNew_skill_id_list": [
+    "534",
+    "647"
+  ],
+  "sUnitbuy_change_list": [
+    "427",
+    "635",
+    "689",
+    "776"
+  ],
+  "sGatya_names_Rlist": [
+    "gatya_bnr1033.png",
+    "gatya_bnr1055.png",
+    "gatya_bnr969.png",
+    "gatya_bnr974.png"
+  ],
+  "sGatya_names_Nlist": [],
+  "sGatya_names_Elist": [],
+  "sCombo_id_list": [
+    "381",
+    "382"
+  ],
+  "sNew_stageND_list": [
+    "34029",
+    "34030"
+  ],
+  "sNew_stageS_list": [],
+  "sNew_stageSR_list": [
+    "36022"
+  ],
+  "sNew_stageC_list": [],
+  "sNew_stageCA_list": [],
+  "sNew_stageB_list": [],
+  "sNew_stageEX_list": [],
+  "sNew_stageA_list": [],
+  "sNew_stageV_list": [
+    "7011"
+  ],
+  "sNew_stageR_list": [
+    "11044",
+    "11045"
+  ],
+  "sNew_stageH_list": [],
+  "sNew_stageG_list": [],
+  "sNew_stageT_list": [],
+  "sNew_4star_stage_list": [],
+  "sNew_3star_stage_list": [],
+  "sEnemy_id_list": [
+    "772"
+  ],
+  "sEnemy_change_list": [],
+  "sNew_medal_list": [
+    "127"
+  ],
+  "sCastle_ids": [
+    "rc182",
+    "rc183",
+    "rc184"
+  ],
+  "sMission_id_list": [
+    1124,
+    1125,
+    1126,
+    1127,
+    1128,
+    1129,
+    1130,
+    1131,
+    1132,
+    1133,
+    1134,
+    1135,
+    1136,
+    1137,
+    1138,
+    1139,
+    1140,
+    1141,
+    1142,
+    1143,
+    1144,
+    1145,
+    1146,
+    1147,
+    1148,
+    1149
+  ],
+  "sRankgift_des": [
+    "UR27100\tReceive 5 Uber Rare Catseyes.\n",
+    "UR27200\tReceive 5 Legend Catseyes.\n",
+    "UR27300\tReceive 5 Special Catseyes."
+  ],
+  "sMusic_id_list": [
+    "187"
+  ],
+  "sSoundEffect_ids": [
+    "188",
+    "189",
+    "190"
+  ],
+  "sNew_bg_list": [
+    "bg261",
+    "bg262",
+    "bg263"
+  ],
+  "combo_list": [
+    " — Immunity to Surge付与<br><a href=\"u000.html?cc=en&unit=857\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni857_f00.png\" width=64 title=\"857(1階)\"></a><a href=\"u000.html?cc=en&unit=858\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni858_f00.png\" width=64 title=\"858(1階)\"></a>",
+    "Primal Fear — \"Resistant\" Effects Up【中】<br><a href=\"u000.html?cc=en&unit=769\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni769_c00.png\" width=64 title=\"769(2階)\"></a><a href=\"u000.html?cc=en&unit=531\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni531_s00.png\" width=64 title=\"531(3階)\"></a><a href=\"u000.html?cc=en&unit=697\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni697_s00.png\" width=64 title=\"697(3階)\"></a>"
+  ],
+  "mission_list": [
+    "1. (Special) Premium Fair (Week 1):，Clear any 20 Battle Cats stage(s). (20 of 20) <br>Reward：Cat Ticket +20\n<br>",
+    "2. (Special) Premium Fair (Week 2):，Clear any 20 Battle Cats stage(s). (20 of 20) <br>Reward：Cat Ticket +20\n<br>",
+    "3. (Special) Premium Fair (Week 3):，Clear any 20 Battle Cats stage(s). (20 of 20) <br>Reward：Cat Ticket +20\n<br>"
+  ],
+  "sundries": []
+}

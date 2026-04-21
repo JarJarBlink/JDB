@@ -1,6 +1,6 @@
 【Red Enemy】|＠
 【Floating Enemy】|＠
-【Black Enemy】|＠
+【Dark Enemy】|＠
 【Metal Enemy】|＠
 【Angel Enemy】|＠
 【Alien Enemy】|＠
@@ -97,3 +97,4 @@
 【Aku Shield】|Creates a Shield preventing attack|damage and effects. Destroyed with |Shield Piercing or damage.|＠
 【Explosion】|Unleashes a damaging explosion which spreads|to the left and right of a successful attack.|＠
 【Immune to Explosions】|Does not take damage from |the Explosion effect of attacks.|＠
+【Drain】|Being attacked by this unit extends target unit|type cooldowns by a set percentage.|＠

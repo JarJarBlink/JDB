@@ -35,7 +35,7 @@ gamatoto_connection	Updating Data…
 gamatoto_connection_failed	Error calculating Expedition time. Check your connection and reboot the app.
 gamatoto_fraud	Your device time may have been altered. Energy will not recover for a short time.
 reset_item_reward	<color=255,255,0>Reward Availability Restored!</color><br>Previously cleared Rewards are available once again.<br>Complete tasks to receive them again!
-reset_tower_state	<color=255,255,0>Rewards/Clear State reset!</color><br>Stage clear conditions have been reset, and<br>rewards are available to collect once again.
+reset_tower_state	<color=255,255,0>Clear State Reset!</color><br>Clear stages once more to collect <br>previously earned Rewards again!
 reward_energy	Energy Recovery Chance!<br>Watch a video to get %d Energy back?</flash>
 receive_energy	%d Energy recovered.
 receive_energy_full	All Energy recovered.
@@ -617,24 +617,24 @@ VAMPErrorCodeNoAdStock	Ad Content Not Available
 VAMPErrorCodeAdnetworkError	Connection Timeout
 VAMPIncentiveError	Cannot collect due to<br>read error...
 everyplay_community_url	https://everyplay.com/the-battle-cats/home
-GiftMessage_000	<flash>☆★☆ Bonus Item ☆★☆</flash><br>Clear "Empire of Cats" Ch. 2<br>and get Valkyrie Cat!
-GiftMessage_001	<flash>☆★☆ Bonus Item ☆★☆</flash><br>Clear "Empire of Cats" Ch. 3<br>and get Bahamut Cat!
+GiftMessage_000	<flash>☆★☆ Bonus Item ☆★☆</flash><br>Clear "Empire of Cats" Ch. 2 to unlock the<br>Special Unit "Valkyrie Cat"!
+GiftMessage_001	<flash>☆★☆ Bonus Item ☆★☆</flash><br>Clear "Empire of Cats" Ch. 3 to unlock the<br>Special Unit "Bahamut Cat"!
 GiftMessage_002	<flash>☆★☆ Bonus Item ☆★☆</flash><br>Clear "Into the Future" Ch. 2 to<br>unlock the True Form of Valkyrie Cat!
-GiftMessage_003	<flash>☆★☆ Bonus Item ☆★☆</flash><br>Clear the Greece stage to unlock<br>the Special Unit "Bean Cats"
-GiftMessage_004	<flash>☆★☆ Bonus Item ☆★☆</flash><br>Clear "Empire of Cats" Ch. 1 to unlock<br>the Special Unit "Moneko"
-GiftMessage_005	<flash>Stage Clear Reward 1</flash><br>Clear "The Great Escaper" for<br>a chance to get the Special unit<br>Ururun Wolf!
-GiftMessage_006	<flash>Stage Clear Reward 2</flash><br>Clear "Saint Red Fox" for a<br>chance to get the Special unit<br>Li'l Nyandam!
+GiftMessage_003	<flash>☆★☆ Bonus Item ☆★☆</flash><br>Clear the Greece stage to unlock the<br>Special Unit "Bean Cats"!
+GiftMessage_004	<flash>☆★☆ Bonus Item ☆★☆</flash><br>Clear "Empire of Cats" Ch. 1 to unlock the<br>Special Unit "Moneko"!
+GiftMessage_005	<flash>Stage Clear Reward ${progressText}</flash><br>Clear "The Great Escaper" for a<br>chance to get the<br>Special Unit "Ururun Wolf"!
+GiftMessage_006	<flash>Stage Clear Reward ${progressText}</flash><br>Clear "Saint Red Fox" for a<br>chance to get the<br>Special Unit "Li'l Nyandam"!
 GiftMessage_007	<flash>☆★☆ Bonus Item ☆★☆</flash><br>Clear "Into the Future" Ch. 3 to unlock<br>the True Form of Bahamut Cat!
-GiftMessage_008	<flash>Stage Clear Reward 3</flash><br>Clear "Learned to Love" for a<br>chance to get the Special unit<br>Red Riding Mina!
-GiftMessage_009	<flash>Stage Clear Reward 4</flash><br>Clear "Multiversal Studios" for a<br>chance to get the Special unit<br>Miyamoku Musashi!
-GiftMessage_010	<flash>☆★☆ Stage Clear Reward 1 ☆★☆</flash><br>Clear "Cats of the Cosmos" Ch. 1<br>and receive a mystery reward...
+GiftMessage_008	<flash>Stage Clear Reward ${progressText}</flash><br>Clear "Learned to Love" for a<br>chance to get the<br>Special Unit"Red Riding Mina"!
+GiftMessage_009	<flash>Stage Clear Reward ${progressText}</flash><br>Clear "Multiversal Studios" for a<br>chance to get the<br>Special Unit "Miyamoku Musashi"!
+GiftMessage_010	<flash>☆★☆ Stage Clear Reward ☆★☆</flash><br>Clear "Cats of the Cosmos" Ch. 1<br>and receive a mystery reward...
 GiftMessage_011	<flash>☆★☆ Bonus Item ☆★☆</flash><br>Clear "Into the Future" Ch. 1 to unlock<br>new CatCombos for use in battle!
-GiftMessage_012	<flash>Stage Clear Bonus!</flash><br>Clear the final stage of "A New Legend"<br>to unlock Mecha-Bun's True Form!
+GiftMessage_012	<flash>Stage Clear Reward!</flash><br>Clear the final stage of "A New Legend"<br>to unlock Mecha-Bun's True Form!
 GiftMessage_013	<flash>Stage Clear Bonus!</flash><br>Clear the final stage of "Passion of Catgod"<br>to unlock a mystery reward!
 GiftMessage_014	<flash>☆★☆ Stage Clear Bonus ☆★☆</flash><br>Clear the final stage of<br>Chapter 3 and earn<br>an incredible reward!
 GiftMessage_015	<flash>☆★☆ Stage Clear Bonus ☆★☆</flash><br>Defeat the almighty entity waiting<br> in Chapter 3 and earn<br>an incredible reward!
-GiftMessage_016	<flash>Stage Clear Reward 6</flash><br>Clear "Primitive Souls" for a<br>chance to get the Special unit<br>Dogumaru!
-GiftMessage_017	<flash>Stage Clear Bonus 7</flash><br>Clear the final stage of "The Gelatin Mines"<br>for a small chance to unlock the <br>Special Cat "Urs & Fenrir"!
+GiftMessage_016	<flash>Stage Clear Reward ${progressText}</flash><br>Clear "Primitive Souls" for a<br>chance to get the<br>Special Unit "Dogumaru"!
+GiftMessage_017	<flash>Stage Clear Reward ${progressText}</flash><br>Clear the final stage of "The Gelatin Mines"<br>for a chance to get the<br>Special Unit "Urs & Fenrir"!
 GiftMessage_018	<flash>A strange lifeform appears in<br>Laboratory of Relics (Level 4)!</flash>
 LvUpLimit_txt	This unit has reached the maximum level possible.
 LvUpLimitMax_txt	Max Level for Current Version has been reached.
@@ -732,7 +732,7 @@ potential_skill_name31	Attack Buff
 potential_skill_name32	Defense Buff
 potential_skill_name33	Target Red
 potential_skill_name34	Target Floating
-potential_skill_name35	Target Black
+potential_skill_name35	Target Dark
 potential_skill_name36	Target Metal
 potential_skill_name37	Target Angel
 potential_skill_name38	Target Alien
@@ -776,7 +776,7 @@ legend_sns	My Battle Cats invaded the Legend Quest "%@"! %s %s
 nekodojo_sns	My Battle Cats scored %d pts. at "%@" in the Catclaw Dojo! %s %s
 ranking_sns	My Battle Cats scored %d pts. at "%@" in the Ranking Stages! %s %s
 challenge_sns	My Battle Cats scored %d pts. at "%@" in the Challenge Battle! %s %s
-tower_sns	My Battle Cats conquered %@ of a Tower challenge! %s %s
+tower_sns	My Battle Cats invaded %@! %s %s
 sns_txt1	My Battle Cats invaded "%@" on their quest to conquer the world! %s %s
 gpp_item_popup	You received a reward!<br>Check your Mailbox to receive your items!
 age_confirmation	Due to changes to app store policy,<br>you must confirm your birth date<br>to ensure appropriate ad delivery.
@@ -1179,7 +1179,7 @@ item_pack_name_34	Support Sale: 3 Hours of Endless Sniper the Cats!
 otasuke_sale2	Endless Rich Cats for 3 hours!<br>
 otasuke_sale3	Endless Cat CPUs for 3 hours!<br>
 otasuke_sale5	Endless Sniper the Cats for 3 hours!<br>
-GiftMessage_019	<flash>Stage Clear Bonus 8</flash><br>Clear the final stage of "Ancient Forest Labyrinth"<br>for a small chance to unlock the <br>Special Cat "Elder Mask Doron"!
+GiftMessage_019	<flash>Stage Clear Reward ${progressText}</flash><br>Clear the final stage of "Ancient Forest Labyrinth"<br>for a chance to get the<br>Special Unit "Elder Mask Doron"!
 save_failed1	Not enough storage space. Data cannot be saved.
 save_failed2	Not enough storage space. Data cannot be saved.
 comeback_stamp_push01	Did you get your Comeback Stamp for the day? Get tons of bonus XP!
@@ -1244,7 +1244,7 @@ data_download_error_hash_mismatch	There is a problem with the save data. (Error 
 data_download_error_could_not_load	There is a problem with the save data. (Error Code TE02)<br>When sending an inquiry, please be sure to give your inquiry code and error code along with your request.
 data_download_error_could_not_read_local_backup	There is a problem with the save data. (Error Code TE03)<br>When sending an inquiry, please be sure to give your inquiry code and error code along with your request.
 data_download_error_could_not_load_local_backup	There is a problem with the save data. (Error Code TE04)<br>When sending an inquiry, please be sure to give your inquiry code and error code along with your request.
-GiftMessage_020	<flash>Stage Clear Bonus 9</flash><br>Clear the final stage of "Behemoth's Peak"<br>for a small chance to unlock the <br>Special Cat "Elder Beast Naala"!
+GiftMessage_020	<flash>Stage Clear Reward ${progressText}</flash><br>Clear the final stage of "Behemoth's Peak"<br>for a chance to get the<br>Special Unit "Elder Beast Naala"!
 unlock_popup_message_108	<flash>Catamin Stage: "Blue Impact" unlocked!</flash><br>※ Use Catamins at any time to challenge this stage!
 scratch_SNS_003	I got %d Cat Food from the Li'l Cat Scratcher! <br>Check it out now and get Cat Food! <br><br>#TheBattleCats #LilCatScratcher
 unlock_popup_message_109	<flash>Catamin Stage: "Crazed Moneko Strikes" unlocked!</flash><br>※ Use Catamins at any time to challenge this stage!
@@ -1389,7 +1389,7 @@ drop_contents4	Ultra Form of "${charaName}"
 drop_popup_chara_third_evolve2	%@<br>%@ "%@"'s<br>Ultra Form revealed!<br><flash>Unlock it after reaching Level 50!</flash>
 mission_receive_item_chara_evolve2	<color=255,255,0>Ultra Form Reward: "${charaName}"</color>
 receive_item_popup_chara_evolve2	Ultra Form: %s
-GiftMessage_021	<flash>Stage Clear Bonus 10</flash><br>Clear the final stage of Garden of Wilted Thoughts<br>for a small chance to<br>receive Master of Mind Soractes!
+GiftMessage_021	<flash>Stage Clear Reward ${progressText}</flash><br>Clear the final stage of "Garden of Wilted Thoughts"<br>for a chance to get<br>the Special Unit "Master of Mind Soractes"!
 potential_skill_name66	Sage Slayer
 item_pack_name_76	Cat CPU Pack
 stage_SPChara_warning	This unit cannot be deployed yet!
@@ -1486,7 +1486,7 @@ cert_tutorial2	View a hint before the start of battle<br>for stages with fixed l
 cert_tutorial3	Tap the icon to show more info!<br>You can check enemies, one-time rewards,<br>and other important bits of info!
 fixed_formation_popup	You must use a fixed lineup in this stage.<br>The formation cannot be changed.<br>※View formation details at the pause menu.
 fixed_formation_slot_name	Fixed
-hint_popup000	<color=0,0,0>There are many types of enemies including<br>Red, Black, and Alien enemies.<br>For Red enemies, <color=0,0,255>Axe Cat<color=0,0,0> and<br><color=0,0,255>Fish Cat<color=0,0,0> are effective.</color>
+hint_popup000	<color=0,0,0>There are many types of enemies including<br>Red, Dark, and Alien enemies.<br>For Red enemies, <color=0,0,255>Axe Cat<color=0,0,0> and<br><color=0,0,255>Fish Cat<color=0,0,0> are effective.</color>
 hint_popup001	<color=0,0,0>Against ranged attacker <color=0,0,255>Teacher Bear,<color=0,0,0><br>use Long-range units like <color=0,0,255>Lizard Cat<color=0,0,0>.<br>Versus hard-hitting enemies like <color=0,0,255>Le'boin<color=0,0,0>,<br>tough units like <color=0,0,255>Titan Cat<color=0,0,0> are the answer.<br>Leverage a Cat Unit's strengths to win!</color>
 hint_popup002	<color=0,0,0>Machine-like Metal enemies<br>take very little damage.<br>To deal with them, deploy units with the<br><color=0,0,255>Critical<color=0,0,0> ability</color>.
 hint_popup003	<color=0,0,0>Purple Zombie enemies<br>can revive even after being defeated.<br><color=0,0,255>Zombie Killer<color=0,0,0> units can defeat<br>Zombies and keep them from reviving</color>.
@@ -1560,7 +1560,7 @@ treasure_box_result_last_one	<color=255,255,0>You drew ${itemName}!</color><br>N
 gama_collabo_05_popup	<flash>Sonic the Hedgehog Collab!</flash><br>Chao joins the Gamatoto Expeditions!<br>Earn more items during the collab!<br>※Does not apply to Cat Food.
 gama_collabo_05_name	Chao
 gama_collabo_05_charatext	Chao has joined Gamatoto Expeditions!<br>Earn more item rewards during the collab!<br>※Does not apply to Cat Food.
-GiftMessage_023	<flash>Stage Clear Bonus 11</flash><br>Clear the final stage of<br>"Truth's Devouring Maw" for a chance<br>to receive Master of Logic Newton.
+GiftMessage_023	<flash>Stage Clear Reward ${progressText}</flash><br>Clear the final stage of<br>"Truth's Devouring Maw" for a chance to get the<br>Special Unit "Master of Logic Newton"!
 slot_SNS_005	I got %d Cat Food from the Wildcat Slots Ⅱ in #TheBattleCats!<br><br>#BattleCats
 SpecialRuleExplanation009	【Uniform Motion】<br>All ally and enemy units<br>move at the same speed.
 SpecialRuleExplanation010	【Plus One: Special】<br>Special units are automatically<br>deployed two at a time.
@@ -1579,8 +1579,8 @@ slot_autoset_error_3	<color=255,255,0>No units can be changed.</color>
 slot_tutorial_txt1	<color=255,255,0>Auto-Equip</color><br>Tap the button to set a recommended<br>lineup for a stage! Usable on stages<br>where enemies appearing are visible!
 slot_tutorial_txt2	<color=255,255,0>Pinning Units</color><br>Tap a unit to keep them Equipped even after<br>Auto-Equip! Tap again to unpin or re-pin!
 item_pack_name_84	Special Offer: Buy 3 Rare Tickets
-BonusExplanationLabel002	【Score Bonus: Strong Vs.】<br>Attack a target that a Cat is Strong against.<br>※ Earn a higher score by Cats with fewer Target types.<br> Check "What is the Arena of Destiny?" at the bottom left of the menu for details.
-BonusNameLabel002	Strong Vs.
+BonusExplanationLabel002	【Score Bonus: Strong vs. (Attack)】<br> Deal increased damage on target enemies via the Strong ability.<br>*Earn a higher score by deploying Cats with fewer Target types.<br> Check "What is the Arena of Destiny?" at the bottom left of the menu for details.
+BonusNameLabel002	Strong vs. (Attack)
 calendar_day	${day} Days
 calendar_limit	99+ Days
 cube_guide_yellow	Ashvini Desert/Jinfore Volcano are available<br>each day as Blitz events. Check the<br>Event Calendar for more details!
@@ -1644,3 +1644,15 @@ Recommended_levelup_tutorial1	Every Wednesday on Meownesday,<br>a chosen Cat wil
 SpecialRuleExplanation016	【High Speed】<br>All allied and enemy units' movement speed<br>is increased. Allied units' deployment cost<br>and recovery time is decreased.
 SpecialRuleName016	High Speed
 update_version_guide	<color=255,255,0>A new version is available. Open the store page?</color><br>※ If event content is not available,<br>please update to the latest version.
+BonusExplanationLabel006	【Score Bonus: Strong vs. (Def.)】<br> Take reduced damage from target enemies via the Strong ability.<br>* Earn a higher score by deploying Cats with fewer Target types.<br> Check "What is the Arena of Destiny?" at the bottom left of the menu for details.
+BonusNameLabel006	Strong vs. (Def.)
+GiftMessage_024	<flash>Stage Clear Reward ${progressText}</flash><br>Clear the final stage of<br>"Eden of Evolution" for a chance to get the<br>Special Unit "Master of Selection Darvin"!
+GiftMessage_progress_0	(${mapNum} more)
+GiftMessage_progress_1	(Challenge Now!)
+mission_receive_bulk_item_money	${itemName} ${itemNum}￠
+mission_receive_item_money	<color=255,255,0>Reward: ${itemName} ${itemNum}￠</color>
+slot_explanation	The formation used to earn victory on Crown Level 4<br>is saved separately from other saved formations.<br>If you have previously cleared Crown Level 4,<br>that saved formation can be used again.
+SpecialRuleExplanation017	【Half-Off: S. Rare】<br>Deploy cost of Super Rare Units is<br>halved, with two units deployed at once.
+SpecialRuleName017	Half-Off: S. Rare
+SpecialRuleReset001	
+stageskip_message_10	Cleared Golden Tower ${stageName1}!<br>Next time, you can restart from <flash>${stageName2}</flash>!

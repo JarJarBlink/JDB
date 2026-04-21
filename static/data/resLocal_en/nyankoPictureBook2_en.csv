@@ -1,6 +1,6 @@
 Effective against Red enemies.|＠
 Effective against Floating enemies.|＠
-Effective against Black enemies.|＠
+Effective against Dark enemies.|＠
 Effective against Metal enemies.|＠
 Effective against Angel enemies.|＠
 Effective against Alien enemies.|＠
@@ -63,7 +63,7 @@ Effective against enemies with no Trait.|＠
 【Insanely Tough】|Reduces damage taken from target enemies|by an incredible amount.|＠
 【Target Red】|Abilities will also affect Red enemies.|＠
 【Target Floating】|Abilities will also affect Floating enemies.|＠
-【Target Black】|Abilities will also affect Black enemies.|＠
+【Target Dark】|Abilities will also affect Dark enemies.|＠
 【Target Metal】|Abilities will also affect Metal enemies.|＠
 【Target Angel】|Abilities will also affect Angel enemies.|＠
 【Target Alien】|Abilities will also affect Alien enemies.|＠
@@ -97,3 +97,4 @@ Effective against enemies with no Trait.|＠
 ＠
 【Explosion】|Unleashes a damaging explosion which spreads|to the left and right of a successful attack.|＠
 【Immune to Explosions】|Does not take damage from enemy Explosions.|＠
+＠

@@ -144,11 +144,7 @@
 1094|Reindeer Fish Awakens!
 1095|Clionel Ascendant
 1096|Red Sky at Morning
-1097|Growing Green
-1098|Growing Purple
-1099|Growing Red
-1100|Growing Blue
-1101|Growing Yellow
+1097
 1102|Cat Maniac
 1103|Tank Maniac
 1104|Axe Maniac
@@ -475,6 +471,11 @@
 1425|After School: Love Letters
 1426|Discover Easter's Wonders!
 1427|111M Celebration Gifts Galore!
+1428|
+1429|
+1430|
+1431|
+1432|
 2000|ふるさと自衛隊
 2001|Alluring Princess
 2002|Princess Punt
@@ -839,7 +840,7 @@
 6001|ニコニコの間
 7000|Heavenly Tower
 7001|Red Citadel
-7002|Black Citadel
+7002|Dark Citadel
 7003|Angel Citadel
 7004|Alien Citadel
 7005|Zombie Citadel
@@ -848,6 +849,7 @@
 7008|Aku Citadel
 7009|Relic Citadel
 7010|Golden Tower
+7011|
 11000|Arena of Honor
 11001|Arena of Honor
 11002|Arena of Honor
@@ -892,6 +894,8 @@
 11041|Arena of Destiny
 11042|Arena of Honor
 11043|Arena of Destiny
+11044|Arena of Destiny
+11045|Arena of Destiny
 12000|Challenge Battle
 13000|A New Legend
 13001|Here Be Dragons
@@ -942,11 +946,11 @@
 13046|Between Truth and Lies
 13047|Humanity Catified
 13048|Sacred Forest
-14000|Growing Yellow
-14001|Growing Blue
-14002|Growing Red
-14003|Growing Purple
-14004|Growing Green
+14000|Growing Yellow (旧)
+14001|Growing Blue (旧)
+14002|Growing Red (旧)
+14003|Growing Purple (旧)
+14004|Growing Green (旧)
 14005|Facing Danger
 14006|Siege of Hippoe!
 14007|Cat Ticket Chance!
@@ -1069,7 +1073,7 @@
 24061|Attack of the Omens
 24062|Part 1: Adventurer Cats
 24063|A Colossal New Year!
-24064|Horde of Cats
+24064|Horde of Cats (旧)
 24065|Gigahaniwan Strikes!
 24066|Shadows over Doge Kingdom
 24067|Summer Break Cats Castaway
@@ -1084,6 +1088,8 @@
 24076|
 24077|A Colossal New Year!
 24078|Horde of Cats
+24079|
+24080|
 25000|Aitum Fields
 25001|Vitamin Valley
 25002|Ticket Hunter
@@ -1099,9 +1105,9 @@
 25012|Sky Cradle
 25013|Sky Summit
 25014|Sky Frontier
-25015|Black Cradle
-25016|Black Summit
-25017|Black Frontier
+25015|Dark Cradle
+25016|Dark Summit
+25017|Dark Frontier
 25018|Holy Cradle
 25019|Holy Summit
 25020|Holy Frontier
@@ -1123,9 +1129,9 @@
 25036|Sky Cradle
 25037|Sky Summit
 25038|Sky Frontier
-25039|Black Cradle
-25040|Black Summit
-25041|Black Frontier
+25039|Dark Cradle
+25040|Dark Summit
+25041|Dark Frontier
 25042|Holy Cradle
 25043|Holy Summit
 25044|Holy Frontier
@@ -1217,6 +1223,8 @@
 34026|Vainglorious Venture
 34027|Phantasmagoria
 34028|Muscle Empire
+34029|Artisan's Sanctum
+34030|Eden of Evolution
 36000|Otherworld Colosseum
 36001|Otherworld Colosseum
 36002|Otherworld Colosseum
@@ -1239,6 +1247,7 @@
 36019|Otherworld Colosseum
 36020|Otherworld Colosseum
 36021|Otherworld Colosseum
+36022|Otherworld Colosseum
 37000|Catclaw Championships Rank 1
 37001|Catclaw Championships Rank 2
 37002|Catclaw Championships Rank 3
@@ -1248,6 +1257,10 @@
 37006|Catclaw Championships Rank 7
 37007|Catclaw Championships Rank 8
 37008|Catclaw Championships Rank 9
+37009|Catclaw Championships Rank 10
+37010|Catclaw Championships Rank 11
+37011|Catclaw Championships Rank 12
+38000|Cats of the Cosmos Ch. 3 (Zombie Filibuster)
 37009|Catclaw Championships Rank 10
 37010|Catclaw Championships Rank 11
 37011|Catclaw Championships Rank 12
