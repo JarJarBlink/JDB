@@ -135,6 +135,37 @@
 "combo241": "小",
 "combo242": "中",
 "combo243": "大",
-"combo244": "究極"
+"combo244": "究極",
 
+"topbase0":"貓咪城",
+"topbase1":"低速砲",
+"topbase2":"鐵壁砲",
+"topbase3":"閃雷砲",
+"topbase4":"水喉砲",
+"topbase5":"天使砲",
+"topbase6":"斬盾砲",
+"topbase7":"詛咒砲",
+
+"resist": "耐性",
+"resist_slow": "動慢",
+"resist_wave": "抗波",
+"resist_freeze": "動止",
+"resist_surge": "抗烈波",
+"resist_weaken": "抗擊",
+"resist_toxic": "抗毒擊",
+"resist_curse": "抗古代詛咒",
+
+"bequi_trait_txt": "屬性",
+"bequi_trait1": "【紅】",
+"bequi_trait2": "【浮】",
+"bequi_trait3": "【黑】",
+"bequi_trait4": "【鋼】",
+"bequi_trait5": "【天】",
+"bequi_trait6": "【異】",
+"bequi_trait7": "【死】",
+"bequi_trait8": "【古】",
+"bequi_trait9": "【無】",
+"bequi_trait10": "【魔】",
+"bequi_trait11": "【使】",
+"bequi_trait12": "【惡】"
 }

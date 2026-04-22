@@ -135,6 +135,37 @@
 "combo241": "小",
 "combo242": "中",
 "combo243": "大",
-"combo244": "究極"
+"combo244": "究極",
 
+"topbase0":"にゃんこ城",
+"topbase1":"スロウ砲",
+"topbase2":"鉄壁砲",
+"topbase3":"かみなり砲",
+"topbase4":"水鉄砲",
+"topbase5":"エンジェル砲",
+"topbase6":"キャノンブレイク砲",
+"topbase7":"呪い砲",
+
+"resist": "耐性",
+"resist_slow": "動きを遅くする",
+"resist_wave": "波動ダメージ",
+"resist_freeze": "動きを止める",
+"resist_surge": "烈波ダメージ",
+"resist_weaken": "攻撃力ダウン",
+"resist_toxic": "毒撃ダメージ",
+"resist_curse": "古代の呪い",
+
+"bequi_trait_txt": "属性",
+"bequi_trait1": "【赤】",
+"bequi_trait2": "【浮】",
+"bequi_trait3": "【黒】",
+"bequi_trait4": "【メ】",
+"bequi_trait5": "【天】",
+"bequi_trait6": "【エ】",
+"bequi_trait7": "【ゾ】",
+"bequi_trait8": "【古】",
+"bequi_trait9": "【無】",
+"bequi_trait10": "【魔】",
+"bequi_trait11": "【使】",
+"bequi_trait12": "【悪】"
 }
