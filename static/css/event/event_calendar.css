@@ -223,14 +223,17 @@ html.dark .ec-popup-bg {
   overflow: hidden;
 }
 .ec-perm-header {
-  display: flex; align-items: center; gap: 8px;
-  background: var(--ec-surface); padding: 10px 16px;
+  display: flex; align-items: center; gap: 6px;
+  background: var(--ec-surface); padding: 8px 12px;
   cursor: pointer; user-select: none;
   border-bottom: 1px solid var(--ec-border);
+  font-weight: 600;
 }
+.ec-perm-header:hover { background: var(--ec-bg3); }
 .ec-perm-header-title {
   font-size: .85rem; font-weight: 700;
   color: var(--ec-accent); flex: 1;
+  line-height: 1.4;
 }
 .ec-perm-toggle-icon {
   font-size: .75rem; color: var(--ec-text-muted);
@@ -247,7 +250,7 @@ html.dark .ec-popup-bg {
   background: var(--ec-bg2); border: 1px solid var(--ec-border);
   border-radius: 8px; padding: 8px 12px;
   cursor: pointer; transition: border-color .15s, background .15s;
-  min-width: 160px; flex: 1;
+  min-width: 200px; flex: 1;
 }
 .ec-perm-card:hover { border-color: var(--ec-accent); background: var(--ec-bg3); }
 .ec-perm-card-items { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 5px; }
