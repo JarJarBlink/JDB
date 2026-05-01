@@ -21,6 +21,7 @@
   --text-color: rgb(15 15 15);
   --shadow-color: rgb(15 15 15 / 50%);
   --accent-color: rgb(240 0 0 / 50%);
+
 }
 a {
   color: #0000EE;
@@ -187,4 +188,71 @@ a:visited {
 #growth-form-tabs button.growth-tab-active {
   filter: brightness(0.7) saturate(1.3) !important;
   color: #111 !important;
+}
+
+/* ── Default Level Modal (Light Mode) ── */
+#defaultlv-modal {
+  background: rgb(240 240 240) !important;
+  color: rgb(15 15 15) !important;
+  border-color: #bbb !important;
+}
+
+/* Header */
+#defaultlv-modal > div:first-child {
+  background: rgb(210 210 210) !important;
+  border-bottom-color: #bbb !important;
+}
+
+#defaultlv-modal > div:first-child span {
+  color: rgb(15 15 15) !important;
+}
+
+#defaultlv-modal-close {
+  color: rgb(15 15 15) !important;
+}
+
+/* 描述文字與備註 */
+#defaultlv-modal > div:nth-child(2) {
+  color: rgb(60 60 60) !important;
+}
+
+/* 內層稀有度列 */
+#defaultlv-modal-body > div {
+  background: rgb(225 225 225) !important;
+  border-color: #bbb !important;
+}
+
+/* Uber 下方的黃色備註文字在亮色模式下調整顏色 */
+#defaultlv-modal-body > div:contains("Uber") + div, 
+#defaultlv-modal-body div[style*="d08aff"] {
+  color: #7b1fa2 !important; /* 深紫色，for亮色背景 */
+  opacity: 1 !important;
+}
+
+/* 輸入框與標籤 */
+#defaultlv-modal-body input[type="number"] {
+  background: rgb(255 255 255) !important;
+  border-color: #bbb !important;
+  color: rgb(15 15 15) !important;
+}
+
+#defaultlv-modal-body label {
+  color: rgb(15 15 15) !important;
+}
+
+/* 按鈕 */
+#defaultlv-modal-save {
+  background: rgb(210 210 210) !important;
+  color: rgb(15 15 15) !important;
+  border: 1px solid #bbb !important;
+}
+
+#defaultlv-modal-reset {
+  color: rgb(15 15 15) !important;
+  border-color: #bbb !important;
+  background: transparent !important;
+}
+
+#defaultlv-modal-save:hover {
+  background: rgb(190 190 190) !important;
 }
