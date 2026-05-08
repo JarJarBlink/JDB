@@ -41,6 +41,10 @@
             padding-bottom: 50px;
         }
 
+        article {
+            padding-top: 20px;
+        }
+
         /* h2 寬度與表格對齊 */
         article h2 {
             width: 95%;
@@ -196,6 +200,59 @@
         .best-item b     { color: var(--color-red-bc, #c40000); font-size: 14px; }
         .best-item small { display: block; color: var(--text-color, #333); opacity: 0.8; margin-top: 3px; font-size: 11px; line-height: 1.4; }
 
+        /* ── 收合區塊 ── */
+        article h2 {
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: background 0.15s, color 0.15s;
+            margin-top: 24px;
+        }
+        article h2.collapsed {
+            background-color: #000 !important;
+            color: #fff !important;
+        }
+        article h2.collapsed .title-text,
+        article h2.collapsed .toggle-arrow {
+            color: #fff !important;
+        }
+        article h2.collapsed .toggle-arrow {
+            transform: rotate(-90deg);
+        }
+        article h2:not(.collapsed) {
+            background-color: rgba(128,128,128,0.18) !important;
+        }
+        article h2:not(.collapsed) .title-text,
+        article h2:not(.collapsed) .toggle-arrow {
+            color: #fff !important;
+        }
+        article h2:not(.collapsed) .toggle-arrow {
+            transform: rotate(0deg);
+        }
+        article h2:hover {
+            filter: brightness(1.15);
+        }
+        article h2 .toggle-arrow {
+            font-size: 18px;
+            transition: transform 0.25s ease;
+            flex-shrink: 0;
+            margin-left: 8px;
+        }
+        .section-content {
+            overflow: hidden;
+            transition: max-height 0.35s ease, opacity 0.25s ease;
+            max-height: 20000px;
+            opacity: 1;
+        }
+        .section-content.collapsed {
+            max-height: 0 !important;
+            opacity: 0;
+        }
+
         /* ── 手機響應式 ── */
         @media (max-width: 600px) {
             .drop-table          { font-size: 11px; min-width: 700px; }
@@ -216,8 +273,9 @@
 <article>
 <div class="block">
 
+    <h2 id="titleLegend" class="collapsed"><span class="title-text"></span><span class="toggle-arrow">▼</span></h2>
+    <div class="section-content collapsed">
     <div id="bestDropsLegend"     class="best-drop-container"></div>
-    <h2 id="titleLegend"></h2>
     <div class="drop-table-wrap">
         <table id="tableLegend" class="drop-table">
             <thead>
@@ -232,9 +290,11 @@
             <tbody id="bodyLegend"></tbody>
         </table>
     </div>
+    </div><!-- /section-content -->
 
+    <h2 id="titleTrueLegend" class="collapsed"><span class="title-text"></span><span class="toggle-arrow">▼</span></h2>
+    <div class="section-content collapsed">
     <div id="bestDropsTrueLegend" class="best-drop-container"></div>
-    <h2 id="titleTrueLegend"></h2>
     <div class="drop-table-wrap">
         <table id="tableTrueLegend" class="drop-table">
             <thead>
@@ -249,9 +309,11 @@
             <tbody id="bodyTrueLegend"></tbody>
         </table>
     </div>
+    </div><!-- /section-content -->
 
+    <h2 id="titleZeroLegend" class="collapsed"><span class="title-text"></span><span class="toggle-arrow">▼</span></h2>
+    <div class="section-content collapsed">
     <div id="bestDropsZeroLegend" class="best-drop-container"></div>
-    <h2 id="titleZeroLegend"></h2>
     <div class="drop-table-wrap">
         <table id="tableZeroLegend" class="drop-table">
             <thead>
@@ -266,18 +328,15 @@
             <tbody id="bodyZeroLegend"></tbody>
         </table>
     </div>
+    </div><!-- /section-content -->
 
-    <div style="height: 8rem;"></div>
+    <div id="pagination" style="margin:10px 0;text-align:center;"></div>
 
-    <div class="desc"></div>
     <div class="contact">
-        <ul style="list-style: none; padding: 0; margin: 0;">
-            <li id="contact1">
-                <a href="index.html" rel="noopener">
-                    <img src="static/img/icon/bottom_bg01.png" width="18" class="icon"> Home
-                </a>
-            </li>
-        </ul>
+    <ul>
+        <li id="contact1"><a href='index.html' rel="noopener"><img src="static/img/icon/bottom_bg01.png" width=18 class="icon"/>Home</a></li>
+        <li id="contact2">　</li>
+    </ul>
     </div>
 
 </div>
