@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAR Battle Cats Database</title>
+<link rel="icon" href="static/favicon.ico">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script>
+<script defer src="static/js/home/ga.js"></script>
+<script src="static/js/anim/check_easing_fun.js" defer></script>
+<meta name="robots" content="noindex">
+<noscript><style>body { display: none; }</style></noscript>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script>
+<script defer src="static/js/home/ga.js"></script>
+<script src="static/js/home/lang.js"></script>
+<meta name="color-scheme" content="dark light"/>
+<meta name="theme-color" content=""/>
+<link rel="stylesheet" href="static/dark-mode-toggle/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/common.css"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/slider.css"/>
+<script type="module" src="static/dark-mode-toggle/dark-mode-toggle-playground.js"></script>
+<script type="module" src="static/dark-mode-toggle/dark-mode-toggle.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f5f3;
+    --text-primary: #1a1a1a;
+    --text-secondary: #666666;
+    --border: rgba(0,0,0,0.12);
+    --border-secondary: rgba(0,0,0,0.22);
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --blue: #378ADD;
+    --teal: #1D9E75;
+    --coral: #D85A30;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-primary: #1e1e1e;
+      --bg-secondary: #2a2a2a;
+      --text-primary: #e8e8e8;
+      --text-secondary: #999999;
+      --border: rgba(255,255,255,0.1);
+      --border-secondary: rgba(255,255,255,0.2);
+    }
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .container { max-width: 860px; margin: 0 auto; }
+
+  h1 { font-size: 20px; font-weight: 500; margin-bottom: 0.25rem; }
+  .subtitle { font-size: 13px; color: var(--text-secondary); margin-bottom: 1.5rem; }
+
+  .section {
+    background: var(--bg-primary);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 16px 18px;
+    margin-bottom: 14px;
+  }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+  }
+
+  .row { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-end; }
+
+  .field { display: flex; flex-direction: column; gap: 5px; }
+
+  .field label {
+    font-size: 11px;
+    color: var(--text-secondary);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  input[type="number"], select {
+    font-size: 14px;
+    padding: 6px 9px;
+    border-radius: var(--radius-md);
+    border: 0.5px solid var(--border-secondary);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    outline: none;
+  }
+
+  input[type="number"] { width: 88px; }
+  input[type="number"]:focus, select:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 2px rgba(55,138,221,0.15);
+  }
+
+  select { width: 210px; }
+
+  .param-row { display: flex; align-items: center; gap: 8px; }
+  input[type="range"] { width: 120px; accent-color: var(--blue); cursor: pointer; }
+  .param-val { font-size: 14px; font-weight: 600; min-width: 28px; color: var(--text-primary); }
+
+  .frame-slider-wrap { display: flex; flex-direction: column; gap: 5px; flex: 1; min-width: 200px; }
+  .frame-slider-wrap input[type="range"] { width: 100%; }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .card {
+    background: var(--bg-primary);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 11px 14px;
+  }
+
+  .card-label { font-size: 11px; color: var(--text-secondary); margin-bottom: 3px; }
+  .card-val { font-size: 22px; font-weight: 500; }
+  .card-val.small { font-size: 13px; line-height: 1.6; }
+  .card-val.highlight { color: var(--blue); }
+
+  .charts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+
+  @media (max-width: 560px) { .charts { grid-template-columns: 1fr; } }
+
+  .chart-box {
+    background: var(--bg-primary);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 14px;
+  }
+
+  .chart-title { font-size: 11px; color: var(--text-secondary); margin-bottom: 8px; font-weight: 500; }
+  .chart-wrap { position: relative; height: 210px; }
+
+  .lag-canvas-wrap {
+    position: relative;
+    width: 100%;
+    height: 230px;
+    border: 0.5px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: crosshair;
+    margin-bottom: 8px;
+  }
+
+  #lagrangeCanvas { display: block; width: 100%; height: 100%; }
+
+  .lag-btns { display: flex; gap: 8px; margin-bottom: 10px; }
+
+  .btn-sm {
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 0.5px solid var(--border-secondary);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    cursor: pointer;
+  }
+
+  .btn-sm:hover { background: var(--blue); color: #fff; border-color: var(--blue); }
+  .btn-sm.danger:hover { background: var(--coral); color: #fff; border-color: var(--coral); }
+
+  .pt-list { display: none; } /* legacy tag replaced by table */
+
+  .pt-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  .pt-table th {
+    text-align: left; font-size: 10px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.05em;
+    color: var(--text-secondary); padding: 0 4px 6px 4px;
+  }
+  .pt-table td { padding: 3px 4px; vertical-align: middle; }
+  .pt-table tbody tr:hover td { background: var(--bg-secondary); border-radius: 4px; }
+
+  .pt-num {
+    font-size: 11px; font-weight: 600; color: var(--text-secondary);
+    width: 22px; text-align: center;
+  }
+  .pt-inp {
+    width: 80px; font-size: 13px; padding: 3px 6px;
+    border-radius: 5px; border: 0.5px solid var(--border-secondary);
+    background: var(--bg-primary); color: var(--text-primary); outline: none;
+  }
+  .pt-inp:focus { border-color: var(--blue); box-shadow: 0 0 0 2px rgba(55,138,221,0.12); }
+  .pt-del {
+    font-size: 13px; line-height: 1; padding: 2px 7px;
+    border-radius: 5px; border: none; background: none;
+    color: var(--text-secondary); cursor: pointer; opacity: 0.5;
+  }
+  .pt-del:hover { opacity: 1; color: var(--coral); background: rgba(216,90,48,0.08); }
+
+  .lag-hint { font-size: 11px; color: var(--text-secondary); margin-bottom: 8px; }
+
+  .desc {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    padding: 12px 16px;
+    background: var(--bg-primary);
+    border: 0.5px solid var(--border);
+    border-left: 3px solid var(--blue);
+    border-radius: var(--radius-md);
+  }
+
+  .hidden { display: none !important; }
+  .warn { color: var(--coral); font-size: 12px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>動畫緩動函數探索器</h1>
+  <p class="subtitle"></p>
+
+  <!-- 關鍵幀區間 -->
+  <div class="section">
+    <div class="section-title">關鍵幀區間</div>
+    <div class="row">
+      <div class="field">
+        <label>起始幀 f0</label>
+        <input type="number" id="f0" value="0" min="0">
+      </div>
+      <div class="field">
+        <label>結束幀 f1</label>
+        <input type="number" id="f1" value="30" min="1">
+      </div>
+      <div class="field">
+        <label>起始值 v0</label>
+        <input type="number" id="v0" value="0">
+      </div>
+      <div class="field">
+        <label>結束值 v1</label>
+        <input type="number" id="v1" value="100">
+      </div>
+      <div class="field">
+        <label>緩動模式 ease</label>
+        <select id="easeMode">
+          <option value="0">0 — 線性插值 (linear)</option>
+          <option value="1">1 — 步進保持 (step hold)</option>
+          <option value="2" selected>2 — 冪次緩動 (power)</option>
+          <option value="3">3 — Lagrange 多項式</option>
+          <option value="4">4 — 正弦緩動 (sine)</option>
+        </select>
+      </div>
+      <div class="field" id="paramWrap">
+        <label>參數 p（整數）</label>
+        <div class="param-row">
+          <input type="range" id="paramSlider" min="-4" max="4" step="1" value="2">
+          <span class="param-val" id="paramDisplay">2</span>
+        </div>
+      </div>
+      <div class="field hidden" id="sineParamWrap">
+        <label>正弦類型 p</label>
+        <div class="param-row">
+          <input type="range" id="sineSlider" min="-1" max="1" step="1" value="0">
+          <span class="param-val" id="sineDisplay">0 (in-out)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 當前幀 -->
+  <div class="section">
+    <div class="section-title">當前幀</div>
+    <div class="row">
+      <div class="field frame-slider-wrap">
+        <label>fn　<span id="fnLabel" style="color:var(--blue);font-weight:600">15</span></label>
+        <input type="range" id="fnSlider" min="0" max="30" step="1" value="15">
+      </div>
+      <div class="field">
+        <label>直接輸入</label>
+        <input type="number" id="fnInput" value="15" min="0">
+      </div>
+    </div>
+    <div id="fnWarn" class="warn hidden">⚠️ fn 不在 f0~f1 之間，顯示範圍內推算值</div>
+  </div>
+
+  <!-- Lagrange 控制點編輯器 -->
+  <div class="section hidden" id="lagrangeEditor">
+    <div class="section-title">Lagrange 控制點（X = 幀數，Y = 輸出值）</div>
+    <div class="lag-hint">● 點擊畫布新增控制點，藍點可拖曳　● 2點=線性，3點=拋物線弧，4點以上可能震盪</div>
+    <div class="lag-btns">
+      <button class="btn-sm" id="btnAddPt">+ 新增點</button>
+      <button class="btn-sm danger" id="btnClearPts">重設為預設</button>
+    </div>
+    <div class="lag-canvas-wrap">
+      <canvas id="lagrangeCanvas"></canvas>
+    </div>
+    <table class="pt-table" id="ptTable">
+      <thead>
+        <tr>
+          <th style="width:28px">#</th>
+          <th id="thFrame">幀數 f</th>
+          <th id="thValue">輸出值 v</th>
+          <th style="width:32px"></th>
+        </tr>
+      </thead>
+      <tbody id="ptTbody"></tbody>
+    </table>
+    <div class="pt-list" id="ptList"></div>
+  </div>
+
+  <!-- Cards -->
+  <div class="cards">
+    <div class="card">
+      <div class="card-label">當前幀 fn</div>
+      <div class="card-val highlight" id="cardFn">—</div>
+    </div>
+    <div class="card">
+      <div class="card-label">原始進度 t</div>
+      <div class="card-val" id="cardRawT">—</div>
+    </div>
+    <div class="card">
+      <div class="card-label">插值比例 ti</div>
+      <div class="card-val" id="cardTi">—</div>
+    </div>
+    <div class="card">
+      <div class="card-label">輸出值</div>
+      <div class="card-val" id="cardOut">—</div>
+    </div>
+    <div class="card">
+      <div class="card-label">模式</div>
+      <div class="card-val small" id="cardMode">—</div>
+    </div>
+  </div>
+
+  <!-- Charts -->
+  <div class="charts">
+    <div class="chart-box">
+      <div class="chart-title">插值比例 ti（Y）對 幀數 fn（X）</div>
+      <div class="chart-wrap"><canvas id="cCurve"></canvas></div>
+    </div>
+    <div class="chart-box">
+      <div class="chart-title">輸出值（Y）對 幀數 fn（X）</div>
+      <div class="chart-wrap"><canvas id="cValue"></canvas></div>
+    </div>
+  </div>
+
+  <!--
+  <div class="contact">
+      <ul>
+        <li id="contact1"><a href='index.html' rel="noopener"><img src="static/img/icon/bottom_bg01.png" width=18 class="icon"/>Home</a></li>
+        <li id="contact2">　</li>
+      </ul>
+  </div>
+  <dark-mode-toggle class="slider" mode="dark" style="display: none; pointer-events: none;"></dark-mode-toggle>
+  </div>
+  -->
+
+</div>
+</body>
+</html>
