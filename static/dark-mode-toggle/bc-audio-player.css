@@ -1,0 +1,157 @@
+
+.bc-player {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--color-table-default-border, #C8A060);
+  background: var(--color-desc-bc, #FFF0CC);
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ── 播放/暫停按鈕 ── */
+.bc-play-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--color-table-default-border, #C8A060);
+  background: var(--color-article-bc, #FFF8E8);
+  color: var(--text-color, #2A1F0E);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 11px;
+  line-height: 1;
+  text-align: center;
+  font-family: sans-serif;
+  transition: background 0.15s;
+}
+.bc-play-btn:hover {
+  background: var(--color-table-simple-th-bc, #FFE8AA);
+}
+.bc-play-btn:not([aria-label="暫停"]) {
+  padding-left: 2px;
+}
+
+/* ── 進度條區域 ── */
+.bc-progress-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+.bc-track-name {
+  font-size: 11px;
+  color: var(--text-color, #2A1F0E);
+  opacity: 0.6;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Seek 滑桿 ── */
+.bc-seek {
+  width: 100%;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--color-table-default-border, #C8A060);
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  accent-color: var(--color-gamatoto-title, #C89060);
+}
+.bc-seek::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-gamatoto-title, #C89060);
+  cursor: pointer;
+}
+.bc-seek::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-gamatoto-title, #C89060);
+  cursor: pointer;
+  border: none;
+}
+
+/* ── 時間顯示 ── */
+.bc-time {
+  font-size: 10px;
+  color: var(--text-color, #2A1F0E);
+  opacity: 0.5;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-variant-numeric: tabular-nums;
+  min-width: 72px;
+  text-align: center;
+}
+
+/* ── 音量區域 ── */
+.bc-vol-wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.bc-vol-wrap i {
+  font-size: 14px;
+  color: var(--text-color, #2A1F0E);
+  opacity: 0.6;
+  cursor: pointer;
+}
+.bc-vol {
+  width: 48px;
+  height: 4px;
+  appearance: none;
+  background: var(--color-table-default-border, #C8A060);
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0;
+  accent-color: var(--color-gamatoto-title, #C89060);
+}
+.bc-vol::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-gamatoto-title, #C89060);
+  cursor: pointer;
+}
+.bc-vol::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-gamatoto-title, #C89060);
+  cursor: pointer;
+  border: none;
+}
+
+/* ── 手機版：縮小音量條 ── */
+@media (max-width: 480px) {
+  .bc-vol {
+    width: 30px;
+  }
+  .bc-time {
+    min-width: 56px;
+    font-size: 9px;
+  }
+}

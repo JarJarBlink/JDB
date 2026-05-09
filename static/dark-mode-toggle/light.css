@@ -1,258 +1,230 @@
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 :root {
-  color-scheme: light; /* stylelint-disable-line property-no-unknown */
+  color-scheme: light;
 
-  --background-color: rgb(240 240 240);
-  --text-color: rgb(15 15 15);
-  --shadow-color: rgb(15 15 15 / 50%);
-  --accent-color: rgb(240 0 0 / 50%);
+  --background-color:  #FFF8E8;
+  --text-color:        #2A1F0E;
+  --shadow-color:      rgba(42, 31, 14, 0.25);
+  --accent-color:      rgba(227, 48, 48, 0.5);
+  --color-button:               #2A1F0E;
+  --color-button-bc:            #FFF0CC;
+  --color-base-bc:              #FFF8E8;
+  --color-title-bc:             #3D6FBF;
+  --color-h2:                   #FFFFFF;
+  --color-h3:                   #2A1F0E;
+  --color-h3-border:            #2A1F0E;
+  --color-link-home:            #3D6FBF;
+  --color-white-227:            #2A1F0E;
+  --color-article-bc:           #FFF8E8;
+  --color-desc-bc:              #FFF0CC;
+  --color-table-simple-th-bc:   #FFE8AA;
+  --color-table-linkpage-table_header-bc: #FFE8AA;
+  --color-table-default-border: #C8A060;
+  --color-table-border2:        #D4B070;
+  --color-default-table-th-bc:  #FFE8AA;
+  --color-default-border:       #2A1F0E;
 
-}
-a {
-  color: #0000EE;
-}
-a:visited {
-    color: #0000EE
+  --color-darkeye-bc:           #EED8F8;
+  --color-blue-bc:              #3D6FBF;
+  --color-green-bc:             #2A8A3E;
+  --color-red-bc:               #CC2828;
+  --color-pink-bc:              #C0005A;
+  --color-fn-bc:                #FFD0E8;
+  --color-fn-ura-bc:            #FFF0CC;
+  --color-fn:                   #C0005A;
+  --color-gr-bc:                #FFE0D0;
+  --color-eve-green-bc:         #D8F0D8;
+  --color-eve-red-bc:           #FFD8D0;
+  --color-eve-red-kakutei-bc:   #FFBCB0;
+  --color-eve-purple-bc:        #EDD8F8;
+  --color-eve-purple-kakutei-bc:#E0C8F4;
+  --color-rare-yellow-bc:       #FFF5CC;
+  --color-rare-salmon-bc:       #FFD0C0;
+  --color-rare-red-bc:          #FFB0B0;
+  --color-rare-aqua-bc:         #C0EEF0;
+  --color-rare-hardlime-bc:     #D0F0C0;
+  --color-rare-lightlime-bc:    #D8F4C8;
+  --color-mm-button-bc:         #FFF0CC;
+  --color-mm-button-active-bc:  #FFE8AA;
+  --color-tab-head-card:        #2A1F0E;
+  --color-mm-fccece:            #FCCECE;
+  --color-mm-fddea1:            #FDDEA1;
+  --color-mm-815c5c:            #815C5C;
+  --color-mmalready-selected:   #FFE8AA;
+  --color-gamatoto-title:       #C89060;
+  --color-gamatoto-blue-title:  #3D6FBF;
+  --color-f5deb3:               #F5DEB3;
+  --color-c0c0c0:               #C8A060;
+  --skd-tabclass-bc:            #FFF0CC;
+  --color-clickablespan-bc:     #AACCFF;
+
+  --nyankoCastleBg:             #FFF8E8;
 }
 
+a         { color: #3D6FBF; }
+a:visited { color: #5A4020; }
+
+/* ── 通用輸入框 ── */
+input,
+input[type="text"],
+input[type="number"],
+input[type="search"],
+textarea,
+select {
+  background: #FFF8E8 !important;
+  border-color: #C8A060 !important;
+  color: #2A1F0E !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background: #FFF0CC !important;
+  outline-color: #3D6FBF !important;
+}
+
+/* ── lvslider 軌道 ── */
+input[type=range].lvslider::-webkit-slider-runnable-track,
+input[type=range].lvslider:focus::-webkit-slider-runnable-track {
+  background: #C8A060 !important;
+}
+input[type=range].lvslider::-webkit-slider-thumb {
+  background: #FFF8E8 !important;
+}
 
 /* ── float-menu ── */
 #float-menu-btn {
-  background: rgb(210 210 210);
-  color: rgb(15 15 15);
+  background: #FFE8AA;
+  color: #2A1F0E;
+  border: 2px solid #2A1F0E;
+  box-shadow: 2px 3px 0 #2A1F0E;
 }
-
 #float-menu-dropdown {
-  background: rgb(240 240 240);
-  color: rgb(15 15 15);
+  background: #FFF8E8;
+  color: #2A1F0E;
+  border: 2px solid #2A1F0E;
+  box-shadow: 3px 4px 0 #2A1F0E;
 }
-
 #float-menu-dropdown button {
-  background: rgb(210 210 210);
-  color: rgb(15 15 15);
-  border-color: #bbb;
+  background: #FFF0CC;
+  color: #2A1F0E;
+  border-color: #2A1F0E;
 }
+#float-menu-dropdown button:hover { background: #FFE8AA; }
 
-/* ── XP / Treasure modal 共用 ── */
+/* ── XP / Treasure modal ── */
 #xp-modal,
 #treasure-modal {
-  background: rgb(240 240 240) !important;
-  color: rgb(15 15 15) !important;
+  background: #FFF8E8 !important;
+  color: #2A1F0E !important;
+  border: 2px solid #2A1F0E !important;
+  box-shadow: 4px 5px 0 #2A1F0E !important;
 }
-
 #xp-modal > div:first-child,
 #treasure-modal > div:first-child {
-  background: rgb(210 210 210) !important;
-  border-bottom-color: #bbb !important;
+  background: #3D6FBF !important;
+  border-bottom: 2px solid #2A1F0E !important;
 }
-
 #xp-modal > div:first-child span,
-#treasure-modal > div:first-child span {
-  color: rgb(15 15 15) !important;
-}
-
+#treasure-modal > div:first-child span { color: #FFFFFF !important; }
 #xp-modal-close,
-#treasure-modal-close {
-  color: rgb(15 15 15) !important;
-}
+#treasure-modal-close { color: #FFFFFF !important; }
 
-/* ── XP modal body ── */
-#xp-modal-body {
-  background: rgb(240 240 240) !important;
-  color: rgb(15 15 15) !important;
-}
-
+#xp-modal-body { background: #FFF8E8 !important; color: #2A1F0E !important; }
 #xp-modal .xp-inner-table th,
-#xp-modal .xp-inner-table td {
-  border-color: #bbb;
-  color: rgb(15 15 15);
-}
-
+#xp-modal .xp-inner-table td { border-color: #C8A060; color: #2A1F0E; }
 #xp-modal .xp-inner-table thead th,
-#xp-modal .xp-inner-table tbody th {
-  background: rgb(200 200 200);
-  color: rgb(15 15 15);
-}
+#xp-modal .xp-inner-table tbody th { background: #FFE8AA; color: #2A1F0E; }
+#xp-modal .xp-sub       { color: #5A4020 !important; }
+#xp-modal .xp-total-sum { color: #3D6FBF !important; }
 
-#xp-modal .xp-sub {
-  color: rgb(15 15 15) !important;
-}
-
-#xp-modal .xp-total-sum {
-  color: #0000cc !important;
-}
-
-/* ── Treasure modal body ── */
-#treasure-modal-body {
-  background: rgb(240 240 240) !important;
-}
-
-#treasure-modal-confirm {
-  background: rgb(210 210 210) !important;
-  color: rgb(15 15 15) !important;
-}
-
+#treasure-modal-body    { background: #FFF8E8 !important; }
+#treasure-modal-confirm { background: #FFE8AA !important; color: #2A1F0E !important; }
 #treasureInputs .input-box {
-  background: rgb(225 225 225) !important;
-  border-color: #bbb !important;
-  color: rgb(15 15 15) !important;
+  background: #FFF0CC !important;
+  border-color: #C8A060 !important;
+  color: #2A1F0E !important;
 }
 
-#treasureInputs input {
-  background: rgb(240 240 240) !important;
-  border-color: #bbb !important;
-  color: rgb(15 15 15) !important;
-}
 
-/* ── Spawn Rate Chart modal ── */
+/* ── Spawn Chart modal ── */
 #spawnChartModal > div {
-  background: rgb(240 240 240) !important;
-  border-color: #bbb !important;
-  color: rgb(15 15 15) !important;
+  background: #FFF8E8 !important;
+  border-color: #2A1F0E !important;
+  color: #2A1F0E !important;
+  box-shadow: 4px 5px 0 #2A1F0E !important;
 }
-
-#spawnChartTitle {
-  color: rgb(15 15 15) !important;
-}
-
-#spawnChartClose {
-  color: rgb(80 80 80) !important;
-}
-
+#spawnChartTitle { color: #2A1F0E !important; }
+#spawnChartClose { color: #5A4020 !important; }
 #spawnChartTabs button {
-  border-color: #bbb !important;
-  color: rgb(80 80 80) !important;
+  border-color: #C8A060 !important;
+  color: #5A4020 !important;
+  background: #FFF0CC !important;
 }
-
 #spawnChartTabs button.active,
-#spawnChartTabs button[style*="2a4a7a"] {
-  background: rgb(180 205 240) !important;
-  color: rgb(0 50 120) !important;
+#spawnChartTabs button.spawn-tab-active {
+  background: #3D6FBF !important;
+  color: #FFFFFF !important;
+  border-color: #2A1F0E !important;
 }
+#spawnChartEmpty { color: #C8A060 !important; }
 
-#spawnChartEmpty {
-  color: rgb(100 100 100) !important;
-}
 /* ── Growth Chart modal ── */
-#growth-modal {
-  background: rgb(240 240 240) !important;
-  color: rgb(15 15 15) !important;
-}
-
-/* header 列（background:var(--color-base-bc) → 灰色） */
+#growth-modal { background: #FFF8E8 !important; color: #2A1F0E !important; }
 #growth-modal > div:first-child {
-  background: rgb(210 210 210) !important;
-  border-bottom-color: #bbb !important;
+  background: #3D6FBF !important;
+  border-bottom-color: #2A1F0E !important;
 }
-
-#growth-modal > div:first-child span {
-  color: rgb(15 15 15) !important;
-}
-
-#growth-modal-close {
-  color: rgb(15 15 15) !important;
-}
-
-/* tab / checkbox 列（background:var(--color-title-bc) → 灰色） */
+#growth-modal > div:first-child span { color: #FFFFFF !important; }
+#growth-modal-close                  { color: #FFFFFF !important; }
 #growth-modal > div:nth-child(2) {
-  background: rgb(240 240 240) !important;
-  border-bottom-color: #bbb !important;
+  background: #FFF0CC !important;
+  border-bottom-color: #C8A060 !important;
 }
-
-/* label 文字（color:var(--color-white-227) → 黑） */
-#growth-modal label {
-  color: rgb(15 15 15) !important;
-}
-
-/* chart body 背景 */
-#growth-modal-body {
-  background: rgb(240 240 240) !important;
-}
-
-/* 形態頁籤 active 狀態（對齊 spawnChartTabs 的 light 覆蓋風格） */
+#growth-modal label  { color: #2A1F0E !important; }
+#growth-modal-body   { background: #FFF8E8 !important; }
 #growth-form-tabs button.growth-tab-active {
-  filter: brightness(0.7) saturate(1.3) !important;
-  color: #111 !important;
+  filter: brightness(0.88) saturate(1.3) !important;
+  color: #2A1F0E !important;
 }
 
-/* ── Default Level Modal (Light Mode) ── */
+/* ── Default Level Modal ── */
 #defaultlv-modal {
-  background: rgb(240 240 240) !important;
-  color: rgb(15 15 15) !important;
-  border-color: #bbb !important;
+  background: #FFF8E8 !important;
+  color: #2A1F0E !important;
+  border: 2px solid #2A1F0E !important;
+  box-shadow: 4px 5px 0 #2A1F0E !important;
 }
-
-/* Header */
 #defaultlv-modal > div:first-child {
-  background: rgb(210 210 210) !important;
-  border-bottom-color: #bbb !important;
+  background: #3D6FBF !important;
+  border-bottom-color: #2A1F0E !important;
 }
-
-#defaultlv-modal > div:first-child span {
-  color: rgb(15 15 15) !important;
-}
-
-#defaultlv-modal-close {
-  color: rgb(15 15 15) !important;
-}
-
-/* 描述文字與備註 */
-#defaultlv-modal > div:nth-child(2) {
-  color: rgb(60 60 60) !important;
-}
-
-/* 內層稀有度列 */
+#defaultlv-modal > div:first-child span { color: #FFFFFF !important; }
+#defaultlv-modal-close                  { color: #FFFFFF !important; }
+#defaultlv-modal > div:nth-child(2)     { color: #5A4020 !important; }
 #defaultlv-modal-body > div {
-  background: rgb(225 225 225) !important;
-  border-color: #bbb !important;
+  background: #FFF0CC !important;
+  border-color: #C8A060 !important;
 }
 
-/* Uber 下方的黃色備註文字在亮色模式下調整顏色 */
-#defaultlv-modal-body > div:contains("Uber") + div, 
-#defaultlv-modal-body div[style*="d08aff"] {
-  color: #7b1fa2 !important; /* 深紫色，for亮色背景 */
-  opacity: 1 !important;
-}
-
-/* 輸入框與標籤 */
-#defaultlv-modal-body input[type="number"] {
-  background: rgb(255 255 255) !important;
-  border-color: #bbb !important;
-  color: rgb(15 15 15) !important;
-}
-
-#defaultlv-modal-body label {
-  color: rgb(15 15 15) !important;
-}
-
-/* 按鈕 */
+#defaultlv-modal-body label    { color: #2A1F0E !important; }
 #defaultlv-modal-save {
-  background: rgb(210 210 210) !important;
-  color: rgb(15 15 15) !important;
-  border: 1px solid #bbb !important;
+  background: #FFE8AA !important;
+  color: #2A1F0E !important;
+  border: 2px solid #2A1F0E !important;
+  box-shadow: 1px 2px 0 #2A1F0E !important;
 }
-
+#defaultlv-modal-save:hover    { background: #FFD880 !important; }
 #defaultlv-modal-reset {
-  color: rgb(15 15 15) !important;
-  border-color: #bbb !important;
+  color: #2A1F0E !important;
+  border-color: #2A1F0E !important;
   background: transparent !important;
 }
 
-#defaultlv-modal-save:hover {
-  background: rgb(190 190 190) !important;
+/* masked icons — 暖色底，icon 用深棕色 */
+.masked_copy, .masked_nikukyu, .masked_nikukyu_20,
+.masked_dupe, .masked_movie, .masked_info,
+.masked_down, .masked_up, .masked_left, .masked_right,
+.masked_left_right, .masked_autorenew, .masked_dl {
+  background-color: #2A1F0E;
+  background-image: none;
 }

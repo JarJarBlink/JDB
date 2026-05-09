@@ -1,308 +1,98 @@
-/**
- * @license
- * Copyright 2019 Google LLC
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     https://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 :root {
-  color-scheme: dark; /* stylelint-disable-line property-no-unknown */
+  color-scheme: dark;
 
-  --background-color: rgb(20 20 20); 
-  --text-color: rgba(227 227 227 / 95%);
-  --shadow-color: rgb(240 240 240 / 50%);
-  --accent-color: rgb(0 0 240 / 50%);
-  
-  --color-button: rgba(227 227 227 / 95%);
-  --color-button-bc: rgb(40 40 40);
+  --background-color:  #121417; /* 深板岩黑 */
+  --text-color:        #E0E4E8; /* 淺灰字，降低刺眼度 */
+  --shadow-color:      rgba(0, 0, 0, 0.7);
+  --accent-color:      #D4AF37; /* 官方金 */
 
-  --color-base-bc : rgb(20 20 20);
-  --color-title-bc : #2c303d;
-  --color-h2 : rgb(227 227 227);
-  --color-h3 : rgb(227 227 227);
-  --color-h3-border : #2c303d;
-  --color-link-home : #99c3ff;
-  --color-white-227 : rgb(227 227 227);
-  
-  --color-article-bc : rgb(20 20 20); 
-  --color-desc-bc : rgb(20 20 20);
-  
-  --color-table-simple-th-bc : #2c303d;
-  
-  --color-table-linkpage-table_header-bc : #444444;
-  
-  --color-table-default-border: #373b3e;
-  --color-table-border2: #464B4F;
-  
-  --color-default-table-th-bc: #2c303d;
-  --color-default-border: #373b3e;
-  
-  --color-darkeye-bc : #362147;
-  --color-blue-bc : #9A9FFF;
-  --color-green-bc : #00D100;
-  --color-red-bc : #FF7E6A;
-  --color-pink-bc : #FF7BBB;
-  --color-fn-bc : #6B0C04;
-  --color-fn-ura-bc : #363636;
-  --color-fn : #FF5B99;
-  
-  --color-gr-bc : #602F2F;
-  
-  --color-eve-green-bc : #304D2C;
-  --color-eve-red-bc : #3B0C09;
-  --color-eve-red-kakutei-bc : #541712;
-  --color-eve-purple-bc : #33263B;
-  --color-eve-purple-kakutei-bc : #41314A;
-  
-  --color-rare-yellow-bc : #2E2C16;
-  --color-rare-salmon-bc : #994F46;
-  --color-rare-red-bc : #CC0000;
-  --color-rare-aqua-bc : #006B69;
-  --color-rare-hardlime-bc : #257B03;
-  --color-rare-lightlime-bc : #257B03;
-  
-  --color-mm-button-bc : rgb(18 18 18); 
-  --color-mm-button-active-bc : rgb(30 30 30); 
-  
-  --color-tab-head-card : #FFF;
-  --color-mm-fccece : #573731;
-  --color-mm-fddea1 : #826D46;
-  --color-mm-815c5c : #C48B8B;
-  --color-mmalready-selected : #4A4A4A;
-  
-  --color-gamatoto-title : #6B5757;
-  --color-gamatoto-blue-title : #42486B;
-  
-  --color-f5deb3 : #7D715B;
-  --color-c0c0c0 : #C0C0C0;
-  
-  --skd-tabclass-bc : #303030;
-  
-  --color-clickablespan-bc : #00008b;
+  --color-button:               #E0E4E8;
+  --color-button-bc:            #2A2E35;
+  --color-base-bc:              #121417;
+  --color-title-bc:             #1A2533;   /* 深海軍藍標題 */
+  --color-h2:                   #FFFFFF;
+  --color-h3:                   #FFFFFF;
+  --color-h3-border:            #3D444D;
+  --color-link-home:            #5CC2FF;   /* 亮藍連結 */
+  --color-white-227:            #E0E4E8;
+  --color-article-bc:           #1C1F24;   /* 區塊深灰 */
+  --color-desc-bc:              #252930;
+  --color-table-simple-th-bc:   #2D333B;
+  --color-table-linkpage-table_header-bc: #2D333B;
+  --color-table-default-border: #3D444D;
+  --color-table-border2:        #444C56;
+  --color-default-table-th-bc:  #2D333B;
+  --color-default-border:       #3D444D;
 
+  /* 稀有度與屬性數據修正 */
+  --color-darkeye-bc:           #3D1B5E;   /* 闇眼/傳說紫 */
+  --color-blue-bc:              #2A5A9E;   /* 屬性藍 */
+  --color-green-bc:             #2D6A3E;   /* 屬性綠 */
+  --color-red-bc:               #A62D2D;   /* 屬性紅/超激 */
+  --color-pink-bc:              #B33077;
+  --color-fn-bc:                #5E1B3D;
+  --color-fn-ura-bc:            #2D2530;
+  --color-fn:                   #FF80BB;
+  --color-gr-bc:                #4A2D1F;
+  --color-eve-green-bc:         #1B331B;
+  --color-eve-red-bc:           #3D1B1B;
+  --color-rare-yellow-bc:       #4A3D10;   /* 稀有金 */
+  --color-rare-salmon-bc:       #5E3625;   /* 激稀有橘 */
+  --color-rare-red-bc:          #7A1A1A;   /* 超激紅 */
+  --color-rare-aqua-bc:         #104A4A;
+  --color-mm-button-bc:         #252930;
+  --color-mm-button-active-bc:  #3D444D;
+  --color-tab-head-card:        #D4AF37;
+  --skd-tabclass-bc:            #1C1F24;
+  --color-clickablespan-bc:     #2D4A7A;
 
-  --color-button: rgba(227 227 227 / 95%);
-  --color-button-bc: rgb(40 40 40);
-  --color-base-bc: rgb(20 20 20);
-  --color-title-bc: #2c303d;
-  --color-white-227: rgb(227 227 227);
-  --color-table-default-border: #373b3e;
-  --color-table-border2: #464B4F;
+  --nyankoCastleBg:             #222;
 }
 
-a {
-  color: #99c3ff;
-}
-a:visited {
-    color: #99c3ff
+a         { color: #5CC2FF; text-decoration: none; }
+a:hover   { text-decoration: underline; }
+a:visited { color: #A288E3; }
+
+.disable-tab-head { opacity: 0.5; }
+
+/* ── 遮罩圖示 ── */
+.masked_copy, .masked_nikukyu, .masked_nikukyu_20,
+.masked_dupe, .masked_movie, .masked_info,
+.masked_down, .masked_up, .masked_left, .masked_right,
+.masked_left_right, .masked_autorenew, .masked_dl, .masked_zetsu {
+  background-color: #D4AF37; /* 全部統一為金色系*/
+  background-image: none;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
 }
 
-.disable-tab-head {
-    opacity: 0.8;
+/* ── 彈窗與介面優化 ── */
+#float-menu-btn, #float-menu-dropdown, #xp-modal, #treasure-modal, #spawnChartModal > div, #defaultlv-modal {
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+  border: 1px solid #3D444D !important;
 }
 
-.masked_copy {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  background-image:none;
-  -webkit-mask-image: url(../img/iconSite/copy.png);
-  mask-image: url(../img/iconSite/copy.png);
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: 12px auto;
-  mask-size: 12px auto;
-  display: inline-block;
+#xp-modal > div:first-child, #treasure-modal > div:first-child, #growth-modal > div:first-child, #defaultlv-modal > div:first-child {
+  background: linear-gradient(90deg, #1A2533, #2A3A4A) !important;
+  border-bottom: 1px solid #3D444D !important;
 }
 
-.masked_nikukyu {
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
-  background-image:none;
-  -webkit-mask-image: url(../img/iconSite/nikukyu.png);
-  mask-image: url(../img/iconSite/nikukyu.png);
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: 15px auto;
-  mask-size: 15px auto;
-  display: inline-block;
-}
-
-.masked_nikukyu_20 {
-  width: 20px;
-  height: 20px;
-  background-color: #fff;
-  background-image:none;
-  -webkit-mask-image: url(../img/iconSite/nikukyu.png);
-  mask-image: url(../img/iconSite/nikukyu.png);
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: 20px auto;
-  mask-size: 20px auto;
-  display: inline-block;
-}
-
-.masked_dupe {
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  background-image:none;
-  -webkit-mask-image: url(../img/iconSite/dupe.png);
-  mask-image: url(../img/iconSite/dupe.png);
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: 10px auto;
-  mask-size: 10px auto;
-  display: inline-block;
-}
-.masked_movie {
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
-  background-image:none;
-  -webkit-mask-image: url(../img/iconSite/movie.png);
-  mask-image: url(../img/iconSite/movie.png);
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: 15px auto;
-  mask-size: 15px auto;
-  display: inline-block;
-}
-.masked_info {
-  width: 15px;
-  height: 15px;
-  background-color: #fff;
-  background-image:none;
-  -webkit-mask-image: url(../img/iconSite/info_icon.png);
-  mask-image: url(../img/iconSite/info_icon.png);
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: 15px auto;
-  mask-size: 15px auto;
-  display: inline-block;
-}
-.masked_down {
-  width: 16px;
-  height: 16px;
-  background-color: #fff;
-  background-image:none;
-  -webkit-mask-image: url(../img/iconSite/arrow-down-square.svg);
-  mask-image: url(../img/iconSite/arrow-down-square.svg);
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: 16px auto;
-  mask-size: 16px auto;
-  display: inline-block;
-}
-
-.masked_up {
-  width: 16px;
-  height: 16px;
-  background-color: #fff;
-  background-image:none;
-  -webkit-mask-image: url(../img/iconSite/arrow-up-square.svg);
-  mask-image: url(../img/iconSite/arrow-up-square.svg);
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: 16px auto;
-  mask-size: 16px auto;
-  display: inline-block;
-}
-
-.masked_left {
-  width: 16px;
-  height: 16px;
-  background-color: #fff;
-  background-image:none;
-  -webkit-mask-image: url(../img/iconSite/arrow-left.svg);
-  mask-image: url(../img/iconSite/arrow-left.svg);
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: 16px auto;
-  mask-size: 16px auto;
-  display: inline-block;
-}
-.masked_right {
-  width: 16px;
-  height: 16px;
-  background-color: #fff;
-  background-image:none;
-  -webkit-mask-image: url(../img/iconSite/arrow-right.svg);
-  mask-image: url(../img/iconSite/arrow-right.svg);
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: 16px auto;
-  mask-size: 16px auto;
-  display: inline-block;
-}
-.masked_left_right {
-  width: 16px;
-  height: 16px;
-  background-color: #fff;
-  background-image:none;
-  -webkit-mask-image: url(../img/iconSite/arrow-left-right.svg);
-  mask-image: url(../img/iconSite/arrow-left-right.svg);
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: 16px auto;
-  mask-size: 16px auto;
-  display: inline-block;
-}
-.masked_autorenew {
-  width: 16px;
-  height: 16px;
-  background-color: rgb(227 227 227);
-  background-image:none;
-  -webkit-mask-image: url(../img/iconSite/autorenew.svg);
-  mask-image: url(../img/iconSite/autorenew.svg);
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: 16px auto;
-  mask-size: 16px auto;
-  display: inline-block;
-}
-.masked_dl {
-  width: 16px;
-  height: 16px;
-  background-color: rgb(227 227 227);
-  background-image:none;
-  -webkit-mask-image: url(../img/iconSite/dl.svg);
-  mask-image: url(../img/iconSite/dl.svg);
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  -webkit-mask-size: 16px auto;
-  mask-size: 16px auto;
-  display: inline-block;
+#xp-modal .xp-inner-table thead th {
+  background: #2D333B !important;
+  color: #D4AF37 !important;
 }
 
 #spawnChartTabs button.spawn-tab-active {
-  background: #2a4a7a !important;
-  color: #7af !important;
+  background: #D4AF37 !important;
+  color: #121417 !important;
+  border-color: #D4AF37 !important;
 }
-/* ── Growth Chart tab active（對齊 spawn-tab-active） ── */
-#growth-form-tabs button.growth-tab-active {
-  opacity: 0.95;
+
+input[type="number"], .input-box {
+  border-radius: 4px;
+  background: #121417 !important;
+  border: 1px solid #3D444D !important;
 }
