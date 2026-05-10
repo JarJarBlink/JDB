@@ -1,3 +1,4 @@
+
 :root {
   color-scheme: dark;
 
@@ -47,6 +48,20 @@
   --color-clickablespan-bc:     #2D4A7A;
 
   --nyankoCastleBg:             #222;
+
+  /* ── update page tokens (dark) ── */
+  --bc-cream:      #1C1F24;
+  --bc-cream2:     #252930;
+  --bc-cream3:     #2D333B;
+  --bc-ink:        #E0E4E8;
+  --bc-ink-mid:    #A0A8B0;
+  --bc-border:     #3D444D;
+  --bc-title-bg:   #1A2533;
+  --bc-title-text: #E0E4E8;
+  --bc-h3-bg:      #1E3A5F;
+  --bc-h3-bg-alt:  #5E3A10;
+  --shadow-card:   3px 4px 0px #0A0C0F;
+  --shadow-btn:    2px 3px 0px #0A0C0F;
 }
 
 a         { color: #5CC2FF; text-decoration: none; }

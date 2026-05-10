@@ -29,53 +29,389 @@
 <script src="static/js/spine/spine-player.js"></script>
 <script src="static/js/spine/spine-mascot-text.js"></script>
 <script src="static/js/spine/spine-mascot.js"></script>
-</head>
-<script>function toggleInputs() {const treasureDiv = document.getElementById("treasureInputs");if (treasureDiv.style.display === "none" || treasureDiv.style.display === "") {treasureDiv.style.display = "flex";} else {treasureDiv.style.display = "none";}}</script>
-<script>if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {document.documentElement.style.display = 'none';document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" href="static/dark-mode-toggle/light.css" onload="document.documentElement.style.display = ``">', );}
-</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+
 <style>
+/* =====================================================
+   JAR BATTLE CATS UPDATE PAGE — OFFICIAL STYLE
+   手繪風格 / 奶油底色 / 粗黑描邊
+   ===================================================== */
+
+:root {
+    /* tag colors — same across both modes */
+    --bc-tag-new:    #E83030;
+    --bc-tag-misc:   #3D6FBF;
+    /* non-color design tokens */
+    --stroke:        2.5px;
+    --radius-card:   10px;
+    --radius-btn:    8px;
+    --font-head:     'Dela Gothic One', 'Noto Sans TC', sans-serif;
+    --font-body:     'Noto Sans TC', sans-serif;
+    /* --bc-cream / --bc-ink / --bc-border / --bc-title-bg / --bc-h3-bg
+       --shadow-card / --shadow-btn  etc. are defined in dark.css / light.css */
+}
+
+/* ── Reset overrides ── */
+html, body {
+    color: var(--bc-ink) !important;
+    font-family: var(--font-body) !important;
+    font-size: 13px;
+}
+
+article {
+    background: var(--bc-cream) !important;
+    max-width: 760px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* ── Page title banner ── */
+h2#title {
+    font-family: var(--font-head) !important;
+    font-size: 1.3rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.04em;
+    color: var(--bc-title-text) !important;
+    background: var(--bc-title-bg) !important;
+    border: none !important;
+    border-bottom: var(--stroke) solid var(--bc-border) !important;
+    padding: 12px 16px 10px !important;
+    text-shadow: 1px 2px 0 rgba(0,0,0,0.35);
+    position: relative;
+}
+h2#title::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0; right: 0;
+    height: 3px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--bc-border) 0px, var(--bc-border) 8px,
+        transparent 8px, transparent 14px
+    );
+}
+
+/* ── Section wrapper ── */
+#update section {
+    background: var(--bc-cream);
+    border: var(--stroke) solid var(--bc-border);
+    border-radius: var(--radius-card);
+    margin: 12px 10px 0 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow-card);
+    animation: popIn 0.25s cubic-bezier(0.34,1.56,0.64,1) both;
+}
+#update section:nth-child(1)  { animation-delay: 0.04s; }
+#update section:nth-child(2)  { animation-delay: 0.08s; }
+#update section:nth-child(3)  { animation-delay: 0.12s; }
+#update section:nth-child(4)  { animation-delay: 0.16s; }
+#update section:nth-child(5)  { animation-delay: 0.20s; }
+#update section:nth-child(6)  { animation-delay: 0.24s; }
+#update section:nth-child(7)  { animation-delay: 0.28s; }
+#update section:nth-child(8)  { animation-delay: 0.32s; }
+#update section:nth-child(9)  { animation-delay: 0.36s; }
+#update section:nth-child(10) { animation-delay: 0.40s; }
+#update section:nth-child(11) { animation-delay: 0.44s; }
+#update section:nth-child(12) { animation-delay: 0.48s; }
+
+@keyframes popIn {
+    from { opacity: 0; transform: scale(0.94) translateY(8px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ── Section headers (h3) ── */
+#update section > h3 {
+    font-family: var(--font-head) !important;
+    font-size: 0.95rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.06em;
+    color: var(--bc-title-text) !important;
+    background: var(--bc-h3-bg) !important;
+    border-top: none !important;
+    border-bottom: var(--stroke) solid var(--bc-border) !important;
+    padding: 7px 14px !important;
+    margin: 0;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+}
+
+/* ── Section content padding ── */
+#update section > div {
+    padding: 10px 12px;
+}
+
+/* ── Cat / Enemy icons ── */
+#newcat-container a img,
+#enemy-container  a img {
+    border-radius: 6px;
+    border: var(--stroke) solid var(--bc-border);
+    background: var(--bc-cream2);
+    transition: transform 0.12s, box-shadow 0.12s;
+    vertical-align: middle;
+    margin: 2px 2px;
+}
+#newcat-container a:hover img,
+#enemy-container  a:hover img {
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 2px 4px 0 var(--bc-border);
+}
+
+/* ── Gacha banners — 2欄置中，手機1欄置中 ── */
+.gatya-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;   /* 整個 grid 水平置中 */
+    gap: 10px;
+    padding: 4px 0;
+}
+
+/* 手機：寬度不夠放兩欄時改為 1 欄，仍然置中 */
+@media (max-width: 640px) {
+    .gatya-grid {
+        grid-template-columns: minmax(0, 300px);
+    }
+}
+
+.gatya-item {
+    text-align: center;
+}
+
+.gatya-grid img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    border: var(--stroke) solid var(--bc-border);
+    box-shadow: var(--shadow-btn);
+    transition: transform 0.12s, box-shadow 0.12s;
+    display: block;
+}
+.gatya-grid img:hover {
+    transform: translateY(-3px);
+    box-shadow: 3px 6px 0 var(--bc-border);
+}
+
+/* ── Map stage tiles — 最少2欄，不撐滿右邊 ── */
 .mapstage-flexbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start; 
-    gap: 0.1rem;     
-    padding-left: 0;        
-    margin-left: 0;
+    gap: 5px 0px;
+    padding: 4px 0;
 }
 
 .img-wrapper {
-    width: 150px;
-    height: 60px;
+    flex: 0 0 auto;
+    width: min(140px, calc(50% - 26px));
+    aspect-ratio: 4 / 1;
     position: relative;
-    text-align: center;
-    border-radius: 8px;
+    border-radius: 7px;
     overflow: hidden;
+    border: var(--stroke) solid var(--bc-border);
+    background: var(--bc-cream2);
+    box-shadow: 2px 3px 0 var(--bc-border);
+    transition: transform 0.12s, box-shadow 0.12s;
 }
-
+.img-wrapper:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 6px 0 var(--bc-border);
+}
 .img-wrapper img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
-
+.img-wrapper a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 .fake-btn {
     display: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #605757;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    background: var(--bc-h3-bg);
     color: #fff;
-    padding: 0.3rem 0.6rem;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    text-align: center;
+    border-radius: calc(var(--radius-btn) - 2px);
+    font-size: 0.78rem;
+    font-family: var(--font-head);
+    white-space: nowrap;
 }
+
+/* ── Map sub-section headers ── */
+.combo-header {
+    display: inline-block;
+    font-family: var(--font-head);
+    font-size: 0.72rem;
+    background: var(--bc-cream3);
+    border: 1.5px solid var(--bc-border);
+    border-radius: 5px;
+    padding: 1px 8px;
+    margin: 6px 0 4px;
+    box-shadow: 1px 2px 0 var(--bc-border);
+    color: var(--bc-ink);
+}
+.map-section + .map-section {
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1.5px dashed var(--bc-border);
+}
+
+/* ── Medal icons ── */
+#medal-container img {
+    border-radius: 50%;
+    border: var(--stroke) solid var(--bc-border);
+    background: var(--bc-cream2);
+    margin: 2px 2px;
+    box-shadow: 2px 2px 0 var(--bc-border);
+    transition: transform 0.12s, box-shadow 0.12s;
+}
+#medal-container img:hover {
+    transform: scale(1.18) rotate(-5deg);
+    box-shadow: 3px 3px 0 var(--bc-border);
+}
+
+/* ── Background previews ── */
+#bg-container img {
+    border-radius: 6px;
+    border: var(--stroke) solid var(--bc-border);
+    box-shadow: var(--shadow-btn);
+    margin: 3px;
+    transition: transform 0.12s;
+}
+#bg-container img:hover { transform: scale(1.04); }
+
+/* ── Music player ── */
+.music-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--bc-cream2);
+    border: var(--stroke) solid var(--bc-border);
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin: 5px 0;
+    box-shadow: 2px 3px 0 var(--bc-border);
+}
+.music-item p {
+    font-family: var(--font-head);
+    font-size: 0.75rem;
+    color: var(--bc-ink);
+    white-space: nowrap;
+    min-width: 60px;
+    margin: 0;
+}
+.music-item audio { flex: 1; height: 24px; }
+
+/* ── Text containers ── */
+#combo-container .block,
+#mission-container .block,
+#sundries-container,
+#rankgift-container .block {
+    color: var(--bc-ink);
+    line-height: 1.9;
+    font-size: 12px;
+}
+
+/* ── Date section ── */
+#updatetime-container { padding: 4px 0 !important; }
+
+/* ── Castle icons ── */
+#castle-container img {
+    border-radius: 5px;
+    border: var(--stroke) solid var(--bc-border);
+    margin: 2px;
+    box-shadow: 2px 2px 0 var(--bc-border);
+    background: var(--bc-cream2);
+}
+
+/* ── Spacing util ── */
+.litele_space { margin-bottom: 0.3rem; }
+
+/* ── Page-top button ── */
+#pagetop {
+    position: fixed;
+    bottom: 60px;
+    right: 14px;
+    z-index: 200;
+    opacity: 0.9;
+    transition: transform 0.15s, opacity 0.15s;
+    filter: drop-shadow(2px 3px 0 var(--bc-border));
+}
+#pagetop:hover { opacity: 1; transform: translateY(-3px); }
+
+/* ── Bottom contact bar ── */
+#stage0_block.block { position: static; padding-bottom: 12px; }
+
+.contact {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 100;
+}
+.contact ul { list-style: none; padding: 0; margin: 0; }
+.contact li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    font-family: var(--font-head);
+    color: var(--bc-ink) !important;
+    text-decoration: none;
+    background: var(--bc-cream2);
+    border: var(--stroke) solid var(--bc-border);
+    border-radius: var(--radius-btn);
+    padding: 3px 10px;
+    box-shadow: var(--shadow-btn);
+    transition: transform 0.12s, box-shadow 0.12s;
+}
+.contact li a:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 5px 0 var(--bc-border);
+}
+
+/* ── Dark-mode toggle hidden ── */
+dark-mode-toggle.slider { display: none !important; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bc-cream); }
+::-webkit-scrollbar-thumb { background: var(--bc-ink-mid); border-radius: 3px; border: 1px solid var(--bc-border); }
 </style>
+</head>
+
+<script>
+function toggleInputs() {
+    const treasureDiv = document.getElementById("treasureInputs");
+    if (treasureDiv.style.display === "none" || treasureDiv.style.display === "") {
+        treasureDiv.style.display = "flex";
+    } else {
+        treasureDiv.style.display = "none";
+    }
+}
+</script>
+<script>
+if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {
+    document.documentElement.style.display = 'none';
+    document.head.insertAdjacentHTML('beforeend',
+        '<link rel="stylesheet" href="static/dark-mode-toggle/light.css" onload="document.documentElement.style.display = ``">');
+}
+</script>
 
 <body>
     <article>
-        <h2 class="top" id="title"></h2><div id="update"></div>
+        <h2 class="top" id="title"></h2>
+        <div id="update"></div>
+
         <div id="pagetop">
             <a href="#">
                 <img src="static/img/others/pagetop_02.png" alt="">
@@ -83,17 +419,24 @@
                 <img src="static/img/others/pagetop_01.png" alt="">
             </a>
         </div>
+
         <div id="stage0_block" class="block">
-            <div style="height: 8rem;"></div>
+            <div style="height: 4rem;"></div>
             <div class="contact">
                 <ul>
-                    <li id="contact1"><a href='table.html' rel="noopener"><img src="static/img/icon/bottom_bg01.png" width=18 class="icon"/>Table</a></li>
-                    <li id="contact2">　</li>
+                    <li id="contact1">
+                        <a href='table.html' rel="noopener">
+                            <img src="static/img/icon/bottom_bg01.png" width=16 class="icon"/>
+                            Table
+                        </a>
+                    </li>
+                    <li id="contact2">&nbsp;</li>
                 </ul>
             </div>
-            <dark-mode-toggle class="slider" mode="dark" style="display: none; pointer-events: none;"></dark-mode-toggle>
+            <dark-mode-toggle class="slider" mode="light" style="display: none; pointer-events: none;"></dark-mode-toggle>
         </div>
     </article>
-    <div id="spine-mascot" style="position: fixed;bottom: 0;right: 0px;width: 250px;height: 250px;z-index: 9999;pointer-events: none;display: none;"></div>
+
+    <div id="spine-mascot" style="position:fixed;bottom:0;right:0;width:250px;height:250px;z-index:9999;pointer-events:none;display:none;"></div>
 </body>
 </html>

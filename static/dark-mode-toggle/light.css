@@ -1,3 +1,4 @@
+
 :root {
   color-scheme: light;
 
@@ -58,6 +59,20 @@
   --color-clickablespan-bc:     #AACCFF;
 
   --nyankoCastleBg:             #FFF8E8;
+
+  /* ── update page tokens (light) ── */
+  --bc-cream:      #FFF8E8;
+  --bc-cream2:     #FFF0CC;
+  --bc-cream3:     #FFE8AA;
+  --bc-ink:        #2A1F0E;
+  --bc-ink-mid:    #5A4020;
+  --bc-border:     #2A1F0E;
+  --bc-title-bg:   #3D6FBF;
+  --bc-title-text: #FFFFFF;
+  --bc-h3-bg:      #5A9BFF;
+  --bc-h3-bg-alt:  #FFB347;
+  --shadow-card:   3px 4px 0px #2A1F0E;
+  --shadow-btn:    2px 3px 0px #2A1F0E;
 }
 
 a         { color: #3D6FBF; }
