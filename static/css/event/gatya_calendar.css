@@ -24,8 +24,10 @@
   --ec-bg-other:    rgb(20 20 20);
   --ec-bg-header:   rgb(44 48 61);
   --ec-bg-btn:      rgb(40 40 40);
-  --ec-text:        rgba(227 227 227 / 95%);
-  --ec-text-muted:  rgba(180 180 180 / 80%);
+
+  --ec-text:         #ffffff; 
+  --ec-text-muted:   #ffffff;
+
   --ec-border:      #373b3e;
   --ec-hover:       rgba(255, 255, 255, 0.08);
   --ec-accent:      #99c3ff;

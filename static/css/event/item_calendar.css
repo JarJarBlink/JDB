@@ -7,7 +7,7 @@
   --ic-bg-header:   rgba(128,128,128,.1);
   --ic-bg-btn:      var(--color-button-bc, transparent);
   --ic-text:        var(--text-color, #0f0f0f);
-  --ic-text-muted:  color-mix(in srgb, var(--text-color, #0f0f0f) 55%, transparent);
+  --ic-text-muted:  var(--bc-ink-mid);
   --ic-border:      var(--color-table-default-border, #ccc);
   --ic-hover:       rgba(128,128,128,.12);
   --ic-accent:      var(--color-link-home, #0000EE);
@@ -16,6 +16,10 @@
   --ic-code-text:   var(--text-color, #0f0f0f);
 }
 
+.dark{
+  --ic-text:        #ffffff; 
+  --ic-text-muted:   #ffffff;
+}
 #ic-root {
   max-width: 900px;
   margin: 0 auto;
