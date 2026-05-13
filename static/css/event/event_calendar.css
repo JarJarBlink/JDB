@@ -56,50 +56,66 @@ html.dark {
 /* ============================================================
    元件樣式
    ============================================================ */
-
-#ec-root * { box-sizing: border-box; margin: 0; padding: 0; }
 #ec-root {
-  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo,
-               'Noto Sans TC', 'Segoe UI', sans-serif;
-  color: var(--ec-text);
-  background: var(--ec-bg);
-  border-radius: 12px;
-  padding: 20px;
-  min-height: 400px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 8px 12px 32px;
+  font-family: var(--font-main, sans-serif);
+  color: var(--ec-text, inherit);
 }
 
 /* ── toolbar ── */
 .ec-toolbar {
-  display: flex; align-items: center; gap: 12px;
-  margin-bottom: 7px !important;
+  display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 0;
+  margin-bottom: 4px;
 }
 .ec-title {
-  font-size: 1.25rem; font-weight: 700; color: var(--ec-accent);
+  font-size: 1.05rem; 
+  font-weight: 700; 
+  color: var(--ec-accent);
   letter-spacing: .03em;
+  flex: 1;
+  text-align: center;
 }
-.ec-nav { display: flex; gap: 6px; margin-left: auto; }
+.ec-nav { display: flex; gap: 2px;}
 .ec-btn {
-  background: var(--ec-surface); border: 1px solid var(--ec-border);
-  color: var(--ec-text); border-radius: 8px;
-  padding: 6px 14px; cursor: pointer; font-size: .85rem;
+  background: var(--ec-surface);
+  border: 1px solid var(--ec-border);
+  color: var(--ec-text);
+  border-radius: 4px;
+  padding: 4px 10px;  
+  cursor: pointer;
+  font-size: .8rem;  
+  line-height: 1.4;
   transition: background .15s, border-color .15s;
 }
+
 .ec-btn:hover { background: var(--ec-bg3); border-color: var(--ec-accent); }
 .ec-btn.active { background: var(--ec-accent); border-color: var(--ec-accent); color: #fff; }
 .ec-view-toggle { display: flex; gap: 4px; }
 
 /* ── filter bar ── */
 .ec-filter {
-  display: flex; gap: 8px;
-  margin-bottom: 18px !important;
+  display: flex; 
   flex-wrap: wrap;
+  gap: 6px;            
+  padding: 4px 0 8px;  
+  margin-bottom: 8px !important;
+  border-bottom: 1px solid var(--ec-border);
 }
 .ec-tag-filter {
-  padding: 3px 10px; border-radius: 20px;
+  padding: 3px 10px; 
+  border-radius: 12px;
   border: 1px solid var(--ec-border);
-  background: var(--ec-surface); color: var(--ec-text-muted);
-  font-size: .75rem; cursor: pointer; transition: all .15s;
+  background: var(--ec-surface); 
+  color: var(--ec-text-muted);
+  font-size: .75rem; 
+  cursor: pointer; 
+  transition: all .15s;
 }
 .ec-tag-filter.on { color: #fff; border-color: transparent; }
 
@@ -189,9 +205,14 @@ html.dark {
   text-align: left !important;
 }
 .ec-popup {
-  background: var(--ec-bg2); border: 1px solid var(--ec-border);
-  border-radius: 14px; padding: 24px; max-width: 500px; width: 90%;
-  max-height: 80vh; overflow-y: auto;
+  background: var(--ec-bg2); 
+  border: 1px solid var(--ec-border);
+  border-radius: 10px;
+  padding: 20px;   
+  max-width: 480px;   
+  width: 90%;
+  max-height: 80vh; 
+  overflow-y: auto;
   position: relative;
   text-align: left !important;
 }
@@ -221,9 +242,9 @@ html.dark {
 
 /* ── permanent stages panel ── */
 .ec-perm-section {
-  margin-bottom: 18px !important;
+  margin-bottom: 12px !important;
   border: 1px solid var(--ec-border);
-  border-radius: 12px;
+  border-radius: 8px;       
   overflow: hidden;
 }
 .ec-perm-header {
@@ -251,10 +272,14 @@ html.dark {
 }
 .ec-perm-body.hidden { display: none; }
 .ec-perm-card {
-  background: var(--ec-bg2); border: 1px solid var(--ec-border);
-  border-radius: 8px; padding: 8px 12px;
-  cursor: pointer; transition: border-color .15s, background .15s;
-  min-width: 200px; flex: 1;
+  background: var(--ec-bg2); 
+  border: 1px solid var(--ec-border);
+  border-radius: 6px;        
+  padding: 8px 10px;         
+  cursor: pointer; 
+  transition: border-color .15s, background .15s;
+  min-width: 200px; 
+  flex: 1;
 }
 .ec-perm-card:hover { border-color: var(--ec-accent); background: var(--ec-bg3); }
 .ec-perm-card-items { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 5px; }

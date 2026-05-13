@@ -6,8 +6,8 @@
   --ic-bg-other:    rgba(128,128,128,.07);
   --ic-bg-header:   rgba(128,128,128,.1);
   --ic-bg-btn:      var(--color-button-bc, transparent);
-  --ic-text:        var(--text-color, #0f0f0f);
-  --ic-text-muted:  var(--bc-ink-mid);
+  --ic-text:         #000000; 
+  --ic-text-muted:   #000000;
   --ic-border:      var(--color-table-default-border, #ccc);
   --ic-hover:       rgba(128,128,128,.12);
   --ic-accent:      var(--color-link-home, #0000EE);

@@ -5,8 +5,8 @@
   --ec-bg-other:    rgb(220 220 220);
   --ec-bg-header:   rgb(210 210 210);
   --ec-bg-btn:      rgb(210 210 210);
-  --ec-text:        rgb(15 15 15);
-  --ec-text-muted:  rgb(90 90 90);
+  --ec-text:         #000000; 
+  --ec-text-muted:   #000000;
   --ec-border:      #bbb;
   --ec-hover:       rgba(0, 0, 0, 0.08);
   --ec-accent:      #0000EE;
