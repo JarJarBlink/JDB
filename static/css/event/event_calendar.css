@@ -6,7 +6,7 @@
   --ec-bg3:          var(--color-table-simple-th-bc);   /* #FFE8AA */
   --ec-surface:      var(--color-mm-button-bc);         /* #FFF0CC */
   --ec-border:       var(--color-table-default-border); /* #C8A060 */
-
+  --ec-bg-btn:      var(--color-button-bc, transparent);
   --ec-accent:       var(--color-title-bc);             /* #3D6FBF */
   --ec-text:         var(--text-color);                 /* #2A1F0E */
   --ec-text-muted:   var(--bc-ink-mid);                 /* #5A4020 */
@@ -27,14 +27,13 @@
 }
 
 /* ── Dark mode ── */
-html.dark {
-  --ec-bg:           var(--background-color);           /* #121417 */
-  --ec-bg2:          var(--color-article-bc);           /* #1C1F24 */
-  --ec-bg3:          var(--color-desc-bc);              /* #252930 */
-  --ec-surface:      var(--color-table-simple-th-bc);   /* #2D333B */
-  --ec-border:       var(--color-table-default-border); /* #3D444D */
-  --ec-accent:       var(--color-link-home);            /* #5CC2FF */
-
+.dark {
+  --ec-bg:           var(--background-color); 
+  --ec-bg2:          var(--color-article-bc);      
+  --ec-bg3:          var(--color-desc-bc);         
+  --ec-surface:      var(--color-table-simple-th-bc);
+  --ec-border:       var(--color-table-default-border); 
+  --ec-accent:       var(--color-link-home);           
   --ec-text:         #ffffff; 
   --ec-text-muted:   #ffffff;
 
@@ -83,11 +82,11 @@ html.dark {
 }
 .ec-nav { display: flex; gap: 2px;}
 .ec-btn {
-  background: var(--ec-surface);
+  padding: 4px 10px; 
   border: 1px solid var(--ec-border);
-  color: var(--ec-text);
   border-radius: 4px;
-  padding: 4px 10px;  
+  background: var(--ec-bg-btn);
+  color: var(--ec-text);
   cursor: pointer;
   font-size: .8rem;  
   line-height: 1.4;
@@ -95,7 +94,11 @@ html.dark {
 }
 
 .ec-btn:hover { background: var(--ec-bg3); border-color: var(--ec-accent); }
-.ec-btn.active { background: var(--ec-accent); border-color: var(--ec-accent); color: #fff; }
+.ec-btn.active { 
+  background: var(--ec-accent); 
+  color: #fff;
+  border-color: var(--ec-accent);
+}
 .ec-view-toggle { display: flex; gap: 4px; }
 
 /* ── filter bar ── */
@@ -115,7 +118,7 @@ html.dark {
   color: var(--ec-text-muted);
   font-size: .75rem; 
   cursor: pointer; 
-  transition: all .15s;
+  transition: background .15s, color .15s;
 }
 .ec-tag-filter.on { color: #fff; border-color: transparent; }
 
@@ -128,12 +131,12 @@ html.dark {
 .ec-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 2px;
+  gap: 1px;
 }
-.ec-day {
+.ec-day { /*cell*/
   background: var(--ec-bg2); border-radius: 8px;
   border: 1px solid var(--ec-border);
-  min-height: 90px; padding: 4px;
+  min-height: 72px; padding: 4px;
   position: relative;
   transition: border-color .15s;
 }
@@ -249,7 +252,8 @@ html.dark {
 }
 .ec-perm-header {
   display: flex; align-items: center; gap: 6px;
-  background: var(--ec-surface); padding: 8px 12px;
+  background: var(--ec-surface);
+  padding: 8px 12px;
   cursor: pointer; user-select: none;
   border-bottom: 1px solid var(--ec-border);
   font-weight: 600;
@@ -305,4 +309,11 @@ html.dark {
 }
 .ec-spans-layer {
   z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .ec-toolbar { gap: 4px; }
+  .ec-btn     { padding: 3px 7px; font-size: .75rem; }
+  .ec-day     { min-height: 54px; }
+  .ec-span-bar { height: 16px; font-size: 0.55rem; } /* 活動頁面特有的調整 */
 }

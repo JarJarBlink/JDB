@@ -1,42 +1,46 @@
 
 /* ── Theme Variables (Light) ────────────────────────────────── */
 :root {
-  --ec-bg-cell:     rgb(240 240 240);
-  --ec-bg-other:    rgb(220 220 220);
-  --ec-bg-header:   rgb(210 210 210);
-  --ec-bg-btn:      rgb(210 210 210);
-  --ec-text:         #000000; 
-  --ec-text-muted:   #000000;
-  --ec-border:      #bbb;
-  --ec-hover:       rgba(0, 0, 0, 0.08);
-  --ec-accent:      #0000EE;
-  --ec-chip-name:   #5a6a7a;
-  --ec-chip-id:     #778ca3;
-  --ec-chip-step:   #e67e22;
-  --ec-cat-bg:      rgba(0, 0, 180, 0.1);
-  --ec-cat-border:  rgba(0, 0, 180, 0.25);
-  --gc-bg:          rgb(240 240 240);
+  --gc-bg:           var(--background-color);           /* #FFF8E8 */
+  --gc-bg2:          var(--color-desc-bc);              /* #FFF0CC */
+  --gc-bg3:          var(--color-table-simple-th-bc);   /* #FFE8AA */
+  --gc-surface:      var(--color-mm-button-bc);         /* #FFF0CC */
+  --gc-border:       var(--color-table-default-border); /* #C8A060 */
+  --gc-bg-btn:       var(--color-button-bc, transparent);
+  --gc-accent:       var(--color-title-bc);             /* #3D6FBF */
+  --gc-text:         var(--text-color);                 /* #2A1F0E */
+  --gc-text-muted:   var(--bc-ink-mid);                 /* #5A4020 */
+
+  --gc-bg-header:   rgb(210 210 210);
+  --gc-hover:       rgba(128,128,128,.12); 
+  --gc-accent:       var(--color-title-bc);
+  --gc-chip-name:   #5a6a7a;
+  --gc-chip-id:     #778ca3;
+  --gc-chip-step:   #e67e22;
+  --gc-cat-bg:      rgba(0, 0, 180, 0.1);
+  --gc-cat-border:  rgba(0, 0, 180, 0.25);
 }
 
 /* ── Theme Variables (Dark) ─────────────────────────────────── */
 .dark {
-  --ec-bg-cell:     rgb(28 28 28);
-  --ec-bg-other:    rgb(20 20 20);
-  --ec-bg-header:   rgb(44 48 61);
-  --ec-bg-btn:      rgb(40 40 40);
+  --gc-bg:           var(--background-color);    
+  --gc-bg2:          var(--color-article-bc);       
+  --gc-bg3:          var(--color-desc-bc);           
+  --gc-surface:      var(--color-table-simple-th-bc);      
+  --gc-border:       var(--color-table-default-border); 
+  --gc-bg-btn:       var(--color-button-bc, transparent);
+  --gc-accent:      var(--color-link-home);
+  --gc-text:         #ffffff; 
+  --gc-text-muted:   #ffffff;
 
-  --ec-text:         #ffffff; 
-  --ec-text-muted:   #ffffff;
-
-  --ec-border:      #373b3e;
-  --ec-hover:       rgba(255, 255, 255, 0.08);
-  --ec-accent:      #99c3ff;
-  --ec-chip-name:   #3a4a5a;
-  --ec-chip-id:     #4a5c6e;
-  --ec-chip-step:   #c0621a;
-  --ec-cat-bg:      rgba(100, 140, 220, 0.15);
-  --ec-cat-border:  rgba(100, 140, 220, 0.35);
-  --gc-bg:          rgb(28 28 28);
+  --gc-bg-header:   rgb(44 48 61);
+  --gc-hover:       rgba(255, 255, 255, 0.08);
+  --gc-chip-name:   #3a4a5a;
+  --gc-chip-id:     #4a5c6e;
+  --gc-chip-step:   #c0621a;
+  --gc-cat-bg:      rgba(100, 140, 220, 0.15);
+  --gc-cat-border:  rgba(100, 140, 220, 0.35);
+  --gc-bg-btn:      var(--color-button-bc, transparent);
 }
 
 /* ── Root 容器 ──────────────────────────────────────────────── */
@@ -45,7 +49,7 @@
   margin: 0 auto;
   padding: 8px 12px 32px;
   font-family: var(--font-main, sans-serif);
-  color: var(--ec-text, inherit);
+  color: var(--gc-text, inherit);
 }
 
 /* ── Toolbar ──────────────────────────────────────────────────── */
@@ -74,20 +78,20 @@
 /* ── 共用按鈕 ─────────────────────────────────────────────────── */
 .gc-btn {
   padding: 4px 10px;
-  border: 1px solid var(--ec-border, #888);
+  border: 1px solid var(--gc-border);
   border-radius: 4px;
-  background: var(--ec-bg-btn, transparent);
-  color: var(--ec-text, inherit);
+  background: var(--gc-bg-btn);
+  color: var(--gc-text);
   cursor: pointer;
   font-size: .8rem;
   line-height: 1.4;
   transition: background .15s, color .15s;
 }
-.gc-btn:hover  { background: var(--ec-hover, rgba(128,128,128,.15)); }
+.gc-btn:hover  { background: var(--gc-bg3); border-color: var(--gc-accent); }
 .gc-btn.active {
-  background: var(--ec-accent, #4a69bd);
+  background: var(--gc-accent);
   color: #fff;
-  border-color: transparent;
+  border-color: var(--gc-accent);
 }
 
 /* ── Filter Bar ───────────────────────────────────────────────── */
@@ -96,7 +100,7 @@
   flex-wrap: wrap;
   gap: 6px;
   padding: 4px 0 8px;
-  border-bottom: 1px solid var(--ec-border, #ccc);
+  border-bottom: 1px solid var(--gc-border, #ccc);
   margin-bottom: 8px;
 }
 
@@ -104,13 +108,15 @@
   padding: 3px 10px;
   border-radius: 12px;
   font-size: .75rem;
-  cursor: pointer;
-  border: 1px solid var(--ec-border, #aaa);
+  border: 1px solid var(--gc-border);
+  background: var(--gc-surface);
+  color: var(--gc-text-muted);
   user-select: none;
+  cursor: pointer;
   transition: background .15s, color .15s;
 }
 .gc-tag-filter.on { color: #fff; border-color: transparent; }
-.gc-tag-filter:not(.on):hover { background: var(--ec-hover, rgba(128,128,128,.15)); }
+.gc-tag-filter:not(.on):hover { background: var(--gc-hover, rgba(128,128,128,.15)); }
 
 /* ── Chip ─────────────────────────────────────────────────────── */
 .gc-chip {
@@ -122,13 +128,13 @@
   white-space: nowrap;
 }
 .gc-chip-name {
-  background: var(--ec-chip-name, #5a6a7a);
+  background: var(--gc-chip-name, #5a6a7a);
 }
 .gc-chip-id {
-  background: var(--ec-chip-id, #778ca3);
+  background: var(--gc-chip-id, #778ca3);
 }
 .gc-chip-step {
-  background: var(--ec-chip-step, #e67e22);
+  background: var(--gc-chip-step, #e67e22);
 }
 
 /* ── Cat Tags ─────────────────────────────────────────────────── */
@@ -143,14 +149,14 @@
   padding: 1px 7px;
   border-radius: 8px;
   font-size: .68rem;
-  background: var(--ec-cat-bg, rgba(100,120,180,.2));
-  border: 1px solid var(--ec-cat-border, rgba(100,120,180,.4));
-  color: var(--ec-text, inherit);
+  background: var(--gc-cat-bg, rgba(100,120,180,.2));
+  border: 1px solid var(--gc-cat-border, rgba(100,120,180,.4));
+  color: var(--gc-text, inherit);
   white-space: nowrap;
 }
 .gc-cat-more {
-  background: var(--ec-hover, rgba(128,128,128,.15));
-  color: var(--ec-text-muted, #888);
+  background: var(--gc-hover, rgba(128,128,128,.15));
+  color: var(--gc-text-muted, #888);
 }
 
 /* ── Calendar Grid ────────────────────────────────────────────── */
@@ -165,7 +171,6 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 1px;
-  background: var(--ec-border, #ddd);
 }
 .gc-grid-header {
   margin-bottom: 1px;
@@ -175,12 +180,14 @@
   font-size: .75rem;
   font-weight: 600;
   padding: 4px 0;
-  background: var(--ec-bg-header, rgba(128,128,128,.1));
-  color: var(--ec-text-muted, #888);
+  background: var(--gc-bg-header);
+  color: var(--gc-text-muted, #888);
 }
 
 .gc-cell {
-  background: var(--ec-bg-cell, #fff);
+  background: var(--gc-bg2);
+  border: 1px solid var(--gc-border);
+  border-radius: 8px;
   min-height: 72px;
   padding: 2px 3px 4px;
   cursor: default;
@@ -188,16 +195,16 @@
   overflow: hidden;
 }
 .gc-cell-other {
-  background: var(--ec-bg-other, rgba(128,128,128,.07));
+  background: var(--gc-bg); 
 }
-.gc-today { outline: 2px solid var(--ec-accent, #4a69bd); outline-offset: -2px; }
+.gc-today { outline: 2px solid var(--gc-accent, #4a69bd); outline-offset: -2px; }
 
 .gc-cell-num {
   font-size: .75rem;
   font-weight: 600;
   display: block;
   margin-bottom: 2px;
-  color: var(--ec-text-muted, #888);
+  color: var(--gc-text-muted, #888);
 }
 
 .gc-cal-dot {
@@ -213,7 +220,7 @@
 }
 .gc-cal-more {
   font-size: .62rem;
-  color: var(--ec-accent, #4a69bd);
+  color: var(--gc-accent, #4a69bd);
   cursor: pointer;
   padding: 0 2px;
 }
@@ -227,11 +234,11 @@
   gap: 8px;
   padding: 8px 10px;
   border-radius: 6px;
-  border: 1px solid var(--ec-border, #ddd);
+  border: 1px solid var(--gc-border, #ddd);
   cursor: pointer;
   transition: background .12s;
 }
-.gc-list-item:hover { background: var(--ec-hover, rgba(128,128,128,.08)); }
+.gc-list-item:hover { border-color: var(--gc-accent); background: var(--gc-bg3); }
 
 .gc-list-dot {
   width: 10px; height: 10px;
@@ -244,7 +251,7 @@
 
 .gc-list-date {
   font-size: .75rem;
-  color: var(--ec-text-muted, #888);
+  color: var(--gc-text-muted, #888);
   margin-bottom: 3px;
 }
 
@@ -258,19 +265,19 @@
 .gc-empty {
   text-align: center;
   padding: 40px 0;
-  color: var(--ec-text-muted, #888);
+  color: var(--gc-text-muted, #888);
   font-size: .9rem;
 }
 
 .gc-list-rate {
   font-size: .75rem;
-  color: var(--ec-text-muted, #888);
+  color: var(--gc-text-muted, #888);
   margin-top: 3px;
 }
 
 .gc-list-desc {
   font-size: .78rem;
-  color: var(--ec-text, inherit);
+  color: var(--gc-text, inherit);
   margin-top: 4px;
   line-height: 1.45;
 }
@@ -286,7 +293,7 @@
 /* ── Permanent Gacha Panel ────────────────────────────────────── */
 .gc-perm-section {
   margin-bottom: 12px;
-  border: 1px solid var(--ec-border, #ddd);
+  border: 1px solid var(--gc-border, #ddd);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -296,18 +303,22 @@
   align-items: center;
   gap: 6px;
   padding: 8px 12px;
-  background: var(--ec-bg-header, rgba(128,128,128,.1));
+  background: var(--gc-surface);
   cursor: pointer;
   user-select: none;
   font-weight: 600;
 }
-.gc-perm-header:hover { background: var(--ec-hover, rgba(128,128,128,.15)); }
+.gc-perm-header:hover { background: var(--gc-hover, rgba(128,128,128,.15)); }
 
-.gc-perm-header-title { flex: 1; font-size: .85rem; line-height: 1.4; }
+.gc-perm-header-title { 
+  font-size: .85rem; font-weight: 700;
+  color: var(--gc-accent); flex: 1;
+  line-height: 1.4;
+}
 
 .gc-perm-toggle-icon {
   font-size: .75rem;
-  color: var(--ec-text-muted, #888);
+  color: var(--gc-text-muted, #888);
 }
 
 .gc-perm-body {
@@ -315,6 +326,7 @@
   flex-direction: column;
   gap: 6px;
   padding: 8px 10px;
+  background: var(--gc-bg);
 }
 .gc-perm-body.hidden { display: none; }
 
@@ -323,11 +335,11 @@
   flex-direction: column;
   padding: 8px 10px;
   border-radius: 6px;
-  border: 1px solid var(--ec-border, #ddd);
-  background: var(--ec-bg-cell, #fff);
+  border: 1px solid var(--gc-border);
+  background: var(--gc-bg2);
   transition: background .12s;
 }
-.gc-perm-card:hover { background: var(--ec-hover, rgba(128,128,128,.08)); }
+.gc-perm-card:hover { background: var(--gc-accent);  background: var(--gc-bg3);}
 
 .gc-perm-card-chips {
   display: flex;
@@ -339,7 +351,7 @@
 
 .gc-perm-years {
   font-size: .72rem;
-  color: var(--ec-text-muted, #888);
+  color: var(--gc-text-muted, #888);
   margin-top: 4px;
 }
 
@@ -356,8 +368,8 @@
 }
 
 .gc-popup {
-  background: var(--ec-bg-cell, #fff);
-  color: var(--ec-text, inherit);
+  background: var(--gc-bg2, #fff);
+  color: var(--gc-text, inherit);
   border-radius: 10px;
   padding: 20px;
   max-width: 480px;
@@ -375,14 +387,14 @@
   border: none;
   font-size: 1.1rem;
   cursor: pointer;
-  color: var(--ec-text-muted, #888);
+  color: var(--gc-text-muted, #888);
   line-height: 1;
   padding: 4px;
 }
 
 .gc-popup-date {
   font-size: .78rem;
-  color: var(--ec-text-muted, #888);
+  color: var(--gc-text-muted, #888);
   margin-bottom: 8px;
 }
 
@@ -401,7 +413,7 @@
 
 .gc-popup-detail {
   font-size: .8rem;
-  color: var(--ec-text-muted, #888);
+  color: var(--gc-text-muted, #888);
   margin-bottom: 6px;
 }
 
@@ -409,7 +421,7 @@
   font-size: .8rem;
   font-weight: 600;
   margin: 10px 0 6px;
-  border-top: 1px solid var(--ec-border, #ddd);
+  border-top: 1px solid var(--gc-border, #ddd);
   padding-top: 8px;
 }
 

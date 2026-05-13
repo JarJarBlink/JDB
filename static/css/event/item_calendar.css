@@ -1,24 +1,35 @@
 
 /* ── 主題變數對應 ─────────────────────────────────────────── */
 :root {
-  --ic-bg:          var(--background-color, #f0f0f0);
-  --ic-bg-cell:     var(--background-color, #f0f0f0);
-  --ic-bg-other:    rgba(128,128,128,.07);
+  --ic-bg:           var(--background-color);           /* #FFF8E8 */
+  --ic-bg2:          var(--color-desc-bc);              /* #FFF0CC */
+  --ic-bg3:          var(--color-table-simple-th-bc);   /* #FFE8AA */
+  --ic-surface:      var(--color-mm-button-bc);         /* #FFF0CC */
+  --ic-border:       var(--color-table-default-border); /* #C8A060 */
+  --ic-bg-btn:       var(--color-button-bc, transparent);
+  --ic-accent:       var(--color-title-bc);             /* #3D6FBF */
+  --ic-text:         var(--text-color);                 /* #2A1F0E */
+  --ic-text-muted:   var(--bc-ink-mid);                 /* #5A4020 */
+
   --ic-bg-header:   rgba(128,128,128,.1);
-  --ic-bg-btn:      var(--color-button-bc, transparent);
-  --ic-text:         #000000; 
-  --ic-text-muted:   #000000;
-  --ic-border:      var(--color-table-default-border, #ccc);
   --ic-hover:       rgba(128,128,128,.12);
-  --ic-accent:      var(--color-link-home, #0000EE);
+  --ic-accent:       var(--color-title-bc);
   --ic-popup-bg:    var(--background-color, #f0f0f0);
   --ic-code-bg:     var(--color-title-bc, #e0e0e0);
   --ic-code-text:   var(--text-color, #0f0f0f);
 }
 
 .dark{
+  --ic-bg:           var(--background-color);       
+  --ic-bg2:          var(--color-article-bc);         
+  --ic-bg3:          var(--color-desc-bc);            
   --ic-text:        #ffffff; 
   --ic-text-muted:   #ffffff;
+  --ic-accent:      var(--color-link-home);
+  --ic-bg-btn:      var(--color-button-bc, transparent);
+  --ic-bg-header:   rgb(44 48 61); 
+  --ic-surface: var(--color-table-simple-th-bc);
+  --ic-border: var(--color-table-default-border);
 }
 #ic-root {
   max-width: 900px;
@@ -59,9 +70,12 @@
   line-height: 1.4;
   transition: background .15s, color .15s;
 }
-.ic-btn:hover  { background: var(--ic-hover); }
-.ic-btn.active { background: var(--ic-accent); color: #fff; border-color: transparent; }
-
+.ic-btn:hover  { background: var(--ic-bg3); border-color: var(--ic-accent); }
+.ic-btn.active { 
+  background: var(--ic-accent);
+  color: #fff; 
+  border-color: var(--ic-accent);
+}
 /* ── Filter Bar ──────────────────────────────────────────── */
 .ic-filter {
   display: flex;
@@ -77,7 +91,8 @@
   font-size: .75rem;
   cursor: pointer;
   border: 1px solid var(--ic-border);
-  color: var(--ic-text);
+  background: var(--ic-surface);
+  color: var(--ic-text-muted);
   user-select: none;
   transition: background .15s, color .15s;
 }
@@ -98,7 +113,7 @@
   background: #d0d0d0;
   color: var(--ic-text);
 }
-html.dark .ic-chip-item {
+.dark .ic-chip-item {
   background: #2c303d;
   color: var(--ic-text);
 }
@@ -110,7 +125,6 @@ html.dark .ic-chip-item {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 1px;
-  background: var(--ic-border);
 }
 .ic-grid-header { margin-bottom: 1px; }
 .ic-dow {
@@ -122,13 +136,15 @@ html.dark .ic-chip-item {
   color: var(--ic-text-muted);
 }
 .ic-cell {
-  background: var(--ic-bg-cell);
+  background: var(--ic-bg2);
+  border: 1px solid var(--ic-border);
+  border-radius: 8px;
   min-height: 72px;
   padding: 2px 3px 4px;
   position: relative;
   overflow: hidden;
 }
-.ic-cell-other { background: var(--ic-bg-other); }
+.ic-cell-other { background: var(--ic-bg); }
 .ic-today { outline: 2px solid var(--ic-accent); outline-offset: -2px; }
 .ic-cell-num {
   font-size: .75rem;
@@ -167,7 +183,7 @@ html.dark .ic-chip-item {
   cursor: pointer;
   transition: background .12s;
 }
-.ic-list-item:hover { background: var(--ic-hover); }
+.ic-list-item:hover { border-color: var(--ic-accent); background: var(--ic-bg3); }
 .ic-list-dot {
   width: 10px; height: 10px;
   border-radius: 50%;
@@ -220,7 +236,7 @@ html.dark .ic-chip-item {
   padding: 16px;
 }
 .ic-popup {
-  background: var(--ic-popup-bg);
+  background: var(--ic-bg2);
   color: var(--ic-text);
   border-radius: 10px;
   padding: 20px;
@@ -317,13 +333,17 @@ html.dark .ic-chip-item {
   align-items: center;
   gap: 6px;
   padding: 8px 12px;
-  background: var(--ic-bg-alt);
+  background: var(--ic-surface);
   cursor: pointer;
   user-select: none;
 }
-.ic-perm-header-title { font-weight: 600; flex: 1; font-size: .85rem; line-height: 1.4; }
+.ic-perm-header-title {   
+  font-size: .85rem; font-weight: 700;
+  color: var(--ic-accent); flex: 1;
+  line-height: 1.4;
+}
 .ic-perm-toggle-icon  { font-size: .8rem; transition: transform .2s; }
-.ic-perm-body         { padding: 8px 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+.ic-perm-body         { padding: 8px 12px; display: flex; flex-wrap: wrap; gap: 8px; background: var(--ic-bg);}
 .ic-perm-body.hidden  { display: none; }
 .ic-perm-card {
   border: 1px solid var(--ic-border);
@@ -331,9 +351,9 @@ html.dark .ic-chip-item {
   padding: 8px 10px;
   min-width: 200px;
   cursor: pointer;
-  background: var(--ic-bg);
+  background: var(--ic-bg2);
 }
-.ic-perm-card:hover   { background: var(--ic-bg-alt); }
+.ic-perm-card:hover   { background: var(--ic-accent);  background: var(--ic-bg3);}
 .ic-perm-card-chips   { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
 .ic-perm-card-title   { font-size: .75rem; margin-top: 4px; color: var(--ic-text); }
 .ic-perm-schedule     { font-size: .72rem; color: var(--ic-text-muted); margin-top: 4px; }
