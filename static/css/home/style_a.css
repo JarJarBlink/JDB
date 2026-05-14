@@ -35,4 +35,5 @@ article {
     font-size: 12px;
     color: var(--color-link-home, #00ACC1);
     text-decoration: none;
+    font-weight: normal;
 }
