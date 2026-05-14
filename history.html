@@ -258,12 +258,6 @@
 
                 <div id="hist-body"></div>
             </div>
-
-            <div class="contact-row">
-                <span class="contact-label" id="contact-label"></span>
-                <a href="https://discord.gg/qpKw9pr7my">Discord</a>
-            </div>
-
         </div>
     </div>
 
@@ -342,7 +336,6 @@ function setLang(lang) {
     document.getElementById('main-sub').textContent    = d.sub;
     document.getElementById('hist-date').textContent   = d.date;
     document.getElementById('yuki-cap').textContent    = d.yukiCap;
-    document.getElementById('contact-label').textContent = d.contact;
     document.getElementById('nav-home').textContent    = d.home;
     document.getElementById('hist-body').innerHTML =
         d.body.map(p => `<p>${p}</p>`).join('');
