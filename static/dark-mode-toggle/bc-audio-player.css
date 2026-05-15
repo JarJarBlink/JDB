@@ -1,13 +1,20 @@
+/**
+ * Battle Cats — bc-audio-player.css
+ * 自訂音樂播放器，自動跟隨 light/dark mode
+ * 需要搭配 Tabler Icons：
+ * <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.11.0/webfont/tabler-icons.min.css">
+ */
 
 .bc-player {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   padding: 5px 8px;
   border-radius: 6px;
   border: 1px solid var(--color-table-default-border, #C8A060);
   background: var(--color-desc-bc, #FFF0CC);
   width: 100%;
+  min-width: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
@@ -19,7 +26,7 @@
   border-radius: 50%;
   border: 1px solid var(--color-table-default-border, #C8A060);
   background: var(--color-article-bc, #FFF8E8);
-  color: var(--text-color, #2A1F0E);
+  color: var(--text-color-white, #2A1F0E);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -45,16 +52,23 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 2px;
   min-width: 0;
 }
 .bc-track-name {
   font-size: 11px;
-  color: var(--text-color, #2A1F0E);
+  color: var(--text-color-white, #2A1F0E);
   opacity: 0.6;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.bc-seek-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 
 /* ── Seek 滑桿 ── */
@@ -71,6 +85,9 @@
   padding: 0;
   margin: 0;
   accent-color: var(--color-gamatoto-title, #C89060);
+
+  flex: 1; 
+  min-width: 0; 
 }
 .bc-seek::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -93,7 +110,7 @@
 /* ── 時間顯示 ── */
 .bc-time {
   font-size: 10px;
-  color: var(--text-color, #2A1F0E);
+  color: var(--text-color-white, #2A1F0E);
   opacity: 0.5;
   white-space: nowrap;
   flex-shrink: 0;
@@ -111,7 +128,7 @@
 }
 .bc-vol-wrap i {
   font-size: 14px;
-  color: var(--text-color, #2A1F0E);
+  color: var(--text-color-white, #2A1F0E);
   opacity: 0.6;
   cursor: pointer;
 }

@@ -50,49 +50,6 @@ audio {
     margin: 0 auto;
 }
 
-/* ── 音樂播放器：無音量控制版 ── */
-.bc-player {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    width: 100%;
-    min-width: 0;
-}
-
-.bc-progress-wrap {
-    flex: 1;
-    min-width: 0;  /* 讓 flex 子元素可以縮小 */
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
-.bc-track-name {
-    font-size: 11px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;  /* 太長就顯示 ... */
-    max-width: 100%;
-}
-
-.bc-seek-row {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-.bc-seek { flex: 1; min-width: 0; }  /* 自動佔滿剩餘空間 */
-.bc-time {
-    font-size: 10px;
-    white-space: nowrap;
-    flex-shrink: 0;
-}
-
-/* 播放中：歌曲名稱加上 ▶ 前綴提示 */
-.bc-player.playing .bc-track-name::before {
-    content: '▶ ';
-    color: #4caf50;
-}
-
 /* --- 手機版響應式優化 --- */
 @media screen and (max-width: 600px) {
     .table_style_db_unit {

@@ -6,6 +6,9 @@
   --text-color:        #E0E4E8; /* 淺灰字，降低刺眼度 */
   --shadow-color:      rgba(0, 0, 0, 0.7);
   --accent-color:      #D4AF37; /* 官方金 */
+  --text-color-white:         #ffffff;
+
+  --color-gamatoto-title: #E0E4E8;
 
   --color-button:               #E0E4E8;
   --color-button-bc:            #2A2E35;
