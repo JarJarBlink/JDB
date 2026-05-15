@@ -1,9 +1,3 @@
-/**
- * Battle Cats — bc-audio-player.css
- * 自訂音樂播放器，自動跟隨 light/dark mode
- * 需要搭配 Tabler Icons：
- * <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.11.0/webfont/tabler-icons.min.css">
- */
 
 .bc-player {
   display: flex;
