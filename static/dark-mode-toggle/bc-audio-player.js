@@ -34,15 +34,24 @@
 
     /* 播放 / 暫停 */
     btn.addEventListener('click', () => {
-      if (!audio.src) return;
+      const latestSrc = container.dataset.src || '';
+      if (!latestSrc) return;
+
+      if (audio.src !== latestSrc) {
+        audio.src = latestSrc;
+        audio.load();
+      }
+
       if (playing) {
         audio.pause();
         playing = false;
+        setPlayIcon(false);
       } else {
-        audio.play().catch(() => {});
+        //audio.play().catch((e) => { console.warn('play failed:', e); });
+        audio.play().catch((e) => { });
         playing = true;
+        setPlayIcon(true);
       }
-      setPlayIcon(playing);
     });
 
     /* 進度更新 */
