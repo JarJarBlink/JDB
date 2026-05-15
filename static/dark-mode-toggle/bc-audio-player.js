@@ -1,3 +1,4 @@
+//Coded by Exodia JAR
 (function () {
   function fmt(s) {
     s = isNaN(s) || !isFinite(s) ? 0 : Math.floor(s);
@@ -17,11 +18,11 @@
     const volInput = container.querySelector('.bc-vol');
     const volIcon = container.querySelector('.bc-vol-icon');
 
-    if (!btn || !seek || !timeEl || !volInput) return;
+    if (!btn || !seek || !timeEl) return;
 
     const audio = new Audio();
     if (src) audio.src = src;
-    audio.volume = (volInput.value || 80) / 100;
+    audio.volume = volInput ? (volInput.value || 80) / 100 : 0.8;
     audio.preload = 'metadata';
 
     let playing = false;
@@ -73,10 +74,13 @@
     });
 
     /* 音量 */
-    volInput.addEventListener('input', () => {
-      audio.volume = volInput.value / 100;
-      if (volIcon) updateVolIcon(volIcon, volInput.value);
-    });
+    if (volInput) {
+      audio.volume = (volInput.value || 80) / 100;
+      volInput.addEventListener('input', () => {
+          audio.volume = volInput.value / 100;
+          if (volIcon) updateVolIcon(volIcon, volInput.value);
+      });
+    }
   }
 
   function initAll() {
