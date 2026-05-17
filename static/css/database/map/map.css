@@ -82,3 +82,48 @@ audio {
 .star:hover {
     transform: scale(1.2);
 }
+
+/* ── 敵人列表橫向滑動容器 ── */
+.enemy-scroll-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* iOS 慣性滑動 */
+    width: 100%;
+    border: 1px solid var(--color-table-default-border, #ccc);
+    border-top: none; /* 與上方主表格共用底部邊線 */
+    box-sizing: border-box;
+}
+
+.enemy-scroll-table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: max-content; /* 寬度跟著內容走，不撐滿容器 */
+    min-width: 100%;
+    font-size: 10px;
+    table-layout: auto; /* 欄位自動依內容縮緊 */
+}
+
+.enemy-scroll-table th,
+.enemy-scroll-table td {
+    padding: 4px;
+    border-right: 1px solid var(--color-table-default-border, #ccc);
+    border-bottom: 1px solid var(--color-table-default-border, #ccc);
+    vertical-align: middle;
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+    .enemy-scroll-table th,
+    .enemy-scroll-table td {
+        padding: 2px 3px;
+        font-size: 9px;
+    }
+}
+
+.enemy-scroll-table th {
+    background: var(--color-table-simple-th-bc, #f2f1f1);
+}
+
+.enemy-scroll-table td {
+    background: var(--color-article-bc, #FFF);
+}
