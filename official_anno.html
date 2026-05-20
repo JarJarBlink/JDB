@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script>
+    <script src="static/js/home/ga.js"></script>
+    <meta charset="UTF-8">
+    <title>JAR Battle Cats Database</title>
+    <link rel="icon" href="static/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="description" itemprop="description" content="にゃんこ大戦争からのお知らせ">
+    <meta name="robots" content="noindex,nofollow" />
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; }
+        #notice-frame {
+            width: 100%;
+            height: 100vh;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <iframe id="notice-frame" allowtransparency="true"></iframe>
+    <script>
+        <!-- URL and parameters provided by Exodia JAR. For academic use only. -->
+        const url = new URL('https://nyanko-announcement.ponosgames.com/v1/notices');
+        const params = new URLSearchParams(window.location.search);
+        const countryCode = params.get('cc') || 'ja';
+        url.searchParams.set('platform', 'google');
+        url.searchParams.set('clientVersion', '999999');
+        url.searchParams.set('countryCode', countryCode);
+        url.searchParams.set('clearedStageJapan', '300');
+        url.searchParams.set('clearedStageFuture', '300');
+        url.searchParams.set('clearedUniverse', '99999');
+        url.searchParams.set('timeDifference', '840');
+        document.getElementById('notice-frame').src = url.toString();
+    </script>
+</body>
+</html>
