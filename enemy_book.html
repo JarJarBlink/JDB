@@ -1,0 +1,363 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1">
+<title>JAR Battle Cats Database</title>
+<link rel="icon" href="static/favicon.ico">
+<link rel="stylesheet" href="static/css/database/style.css">
+<link rel="stylesheet" href="static/css/database/origin.css">
+<link rel="stylesheet" href='static/css/home/style_a.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="dark light">
+<meta name="theme-color" content="">
+<link rel="stylesheet" href="static/dark-mode-toggle/dark.css"   media="(prefers-color-scheme: dark)">
+<link rel="stylesheet" href="static/dark-mode-toggle/light.css"  media="(prefers-color-scheme: light)">
+<link rel="stylesheet" href="static/dark-mode-toggle/common.css">
+<link rel="stylesheet" href="static/dark-mode-toggle/slider.css">
+<script type="module" src="static/dark-mode-toggle/dark-mode-toggle-playground.js"></script>
+<script type="module" src="static/dark-mode-toggle/dark-mode-toggle.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<noscript><style>body { display: none; }</style></noscript>
+<style>
+#eb-header {
+  background: var(--color-title-bc, #383838);
+  border-bottom: 1px solid var(--color-default-border, #ccc);
+  padding: 8px 12px 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#eb-header h2 {
+  font-size: clamp(18px, 3.5vw, 28px);
+  font-weight: 900;
+  color: var(--color-h2, #fff);
+  padding: 5px 10px 8px;
+  margin: 0;
+  background: none;
+  flex: 1;
+  line-height: 1.2;
+  min-width: 0;
+}
+
+#eb-header h2 span {
+  color: var(--accent-color, #e84848);
+}
+
+/* Lang */
+.lang-switcher {
+  display: flex;
+  gap: 4px;
+  padding-bottom: 8px;
+  align-self: flex-end;
+}
+.lang-btn {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 3px 9px;
+  border-radius: 4px;
+  border: 1px solid var(--color-default-border, #ccc);
+  background: var(--color-button-bc, #e8e8e8);
+  color: var(--color-button, #090909);
+  cursor: pointer;
+  transition: all 0.15s;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+}
+.lang-btn:hover { opacity: 0.8; }
+.lang-btn.active {
+  background: var(--accent-color, #e84848);
+  border-color: var(--accent-color, #e84848);
+  color: #fff;
+}
+
+/* Controls bar */
+#eb-controls {
+  background: var(--color-desc-bc, #fff);
+  border-bottom: 1px solid var(--color-default-border, #ccc);
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+/* Stat badges — styled like desc block */
+.stat-badge {
+  font-size: 10px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  border: 1px solid var(--color-default-border, #ccc);
+  background: var(--color-table-simple-th-bc, #efe3e3);
+  color: var(--text-color, #000);
+  white-space: nowrap;
+}
+.stat-badge b { color: var(--color-title-bc, #383838); }
+
+/* Filter buttons */
+.filter-group { display: flex; gap: 4px; margin-left: auto; flex-wrap: wrap; }
+
+.filter-btn {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--color-default-border, #ccc);
+  background: var(--color-button-bc, #e8e8e8);
+  color: var(--color-button, #090909);
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.filter-btn:hover { opacity: 0.75; }
+.filter-btn.f-active {
+  background: var(--accent-color, #e84848);
+  border-color: var(--accent-color, #e84848);
+  color: #fff;
+}
+.filter-btn.f-active-limited {
+  background: var(--color-rare-salmon-bc, #ffe0c0);
+  border-color: var(--color-table-border2, #d4b070);
+  color: var(--text-color, #000);
+}
+.filter-btn.f-active-collab {
+  background: var(--color-darkeye-bc, #eed8f8);
+  border-color: var(--color-darkeye-bc, #eed8f8);
+  color: var(--text-color, #000);
+}
+
+/* Search */
+.search-wrap { position: relative; }
+.search-wrap input {
+  font-size: 12px;
+  padding: 3px 8px 3px 26px;
+  background: var(--color-base-bc, #fff) !important;
+  border: 1px solid var(--color-default-border, #ccc) !important;
+  border-radius: 3px;
+  color: var(--text-color, #000) !important;
+  width: 110px;
+  outline: none;
+  transition: border-color 0.2s, width 0.2s;
+}
+.search-wrap input:focus { border-color: var(--color-title-bc, #383838) !important; width: 150px; }
+.search-wrap::before {
+  content: '🔍';
+  position: absolute;
+  left: 6px; top: 50%; transform: translateY(-50%);
+  font-size: 10px;
+  pointer-events: none;
+}
+
+/* Main article wrapper */
+#eb-main {
+  text-align: left;
+  margin: 0 auto;
+  min-height: 100%;
+  background: var(--color-article-bc, #fff);
+}
+@media only screen and (min-width: 750px) { #eb-main { max-width: 740px; } }
+
+/* Legend */
+.eb-legend {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  padding: 8px 10px 6px;
+  font-size: 10px;
+  color: var(--text-color, #000);
+  border-bottom: 1px solid var(--color-default-border, #ccc);
+  background: var(--color-desc-bc, #fff);
+}
+.legend-item { display: flex; align-items: center; gap: 4px; }
+.legend-dot {
+  width: 10px; height: 10px;
+  border-radius: 2px;
+  flex-shrink: 0;
+  border: 1px solid var(--color-default-border, #ccc);
+}
+.dot-normal  { background: var(--color-article-bc, #fff); }
+.dot-limited { background: var(--color-rare-salmon-bc, #ffe0c0); border-color: var(--color-table-border2, #d4b070); }
+.dot-collab  { background: var(--color-darkeye-bc, #eed8f8); border-color: #b080d0; }
+
+/* Grid block */
+#eb-grid-wrap {
+  padding: 8px 8px 40px;
+}
+
+.eb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(58px, 1fr));
+  gap: 5px;
+}
+
+/* Enemy cards */
+.enemy-card {
+  position: relative;
+  background: var(--color-article-bc, #fff);
+  border: 1px solid var(--color-default-border, #ccc);
+  border-radius: 4px;
+  padding: 5px 3px 3px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.12s, border-color 0.12s, box-shadow 0.12s;
+  overflow: hidden;
+  animation: eb-fadeUp 0.22s ease both;
+}
+.enemy-card:hover {
+  transform: translateY(-2px) scale(1.04);
+  border-color: var(--color-title-bc, #383838);
+  box-shadow: var(--shadow-color, rgba(0,0,0,0.25)) 0 3px 10px;
+  z-index: 2;
+}
+.enemy-card.limited {
+  background: var(--color-rare-salmon-bc, #ffe0c0);
+  border-color: var(--color-table-border2, #d4b070);
+}
+.enemy-card.collab {
+  background: var(--color-darkeye-bc, #eed8f8);
+  border-color: #b080d0;
+}
+.enemy-card a { display: block; text-decoration: none; color: inherit; }
+.enemy-card img {
+  width: 36px; height: 36px;
+  image-rendering: pixelated;
+  display: block;
+  margin: 0 auto 2px;
+}
+
+/* dark mode: apply the glow from dark.css */
+@media (prefers-color-scheme: dark) {
+  .enemy-card img {
+    filter:
+      drop-shadow(-2px -2px 2px rgba(224, 228, 232, 1))
+      drop-shadow(-1px -1px 1px rgba(255, 255, 255, 0.4))
+      drop-shadow( 2px  2px 3px rgba(224, 228, 232, 1))
+      drop-shadow( 1px  1px 1px rgba(255, 255, 255, 0.4));
+  }
+}
+
+.enemy-card .id-label {
+  font-size: 8px;
+  color: var(--text-color, #333);
+  opacity: 0.55;
+  line-height: 1;
+}
+
+
+@keyframes eb-fadeUp {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Empty state */
+.empty-state {
+  grid-column: 1 / -1;
+  padding: 36px 0;
+  text-align: center;
+  color: var(--text-color, #333);
+  opacity: 0.45;
+  font-size: 12px;
+}
+
+/* Scroll-top button */
+#eb-scrollTop {
+  position: fixed;
+  bottom: 18px; right: 16px;
+  width: 36px; height: 36px;
+  background: var(--color-button-bc, #e8e8e8);
+  border: 1px solid var(--color-default-border, #ccc);
+  border-radius: 50%;
+  color: var(--color-button, #090909);
+  font-size: 14px;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; transition: opacity 0.2s;
+  z-index: 100;
+  box-shadow: var(--shadow-color, rgba(0,0,0,0.2)) 1px 2px 6px;
+}
+#eb-scrollTop.visible { opacity: 1; }
+#eb-scrollTop:hover { border-color: var(--color-title-bc, #383838); }
+
+@media (max-width: 600px) {
+  #eb-controls { gap: 4px; }
+  .filter-group { margin-left: 0; }
+  .eb-grid { grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); gap: 3px; }
+  #eb-header { flex-wrap: wrap; }
+  .lang-switcher { padding-bottom: 4px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ─── 全部包進 article，max-width: 740px 約束 ─── -->
+<article id="eb-main">
+
+  <!-- Header -->
+  <div id="eb-header">
+    <div style="flex:1; min-width:0;">
+      <h2 id="txt-title">敵キャラ<span id="txt-title2">図鑑</span></h2>
+    </div>
+    <div class="lang-switcher">
+      <a class="lang-btn" data-cc="ja" href="#" onclick="switchLang('ja');return false;">JA</a>
+      <a class="lang-btn" data-cc="tw" href="#" onclick="switchLang('tw');return false;">TW</a>
+      <a class="lang-btn" data-cc="en" href="#" onclick="switchLang('en');return false;">EN</a>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div id="eb-controls">
+    <div id="statAll"    class="stat-badge">-</div>
+    <div id="statNorm"   class="stat-badge">-</div>
+    <div id="statLim"    class="stat-badge">-</div>
+    <div id="statCollab" class="stat-badge">-</div>
+
+    <div class="filter-group">
+      <button class="filter-btn f-active"  data-filter="all"     onclick="setFilter(this,'all')">-</button>
+      <button class="filter-btn"           data-filter="normal"  onclick="setFilter(this,'normal')">-</button>
+      <button class="filter-btn"           data-filter="limited" onclick="setFilter(this,'limited')">-</button>
+      <button class="filter-btn"           data-filter="collab"  onclick="setFilter(this,'collab')">-</button>
+    </div>
+
+    <div class="search-wrap">
+      <input type="text" id="searchInput" placeholder="-" oninput="doSearch()" maxlength="6">
+    </div>
+  </div>
+
+  <!-- Legend -->
+  <div class="eb-legend">
+    <div class="legend-item"><div class="legend-dot dot-normal"></div><span id="leg-normal">-</span></div>
+    <div class="legend-item"><div class="legend-dot dot-limited"></div><span id="leg-limited">-</span></div>
+    <div class="legend-item"><div class="legend-dot dot-collab"></div><span id="leg-collab">-</span></div>
+  </div>
+
+  <!-- Grid -->
+  <div id="eb-grid-wrap">
+    <div id="enemyGrid" class="eb-grid"></div>
+  </div>
+
+  <!-- Contact -->
+  <div class="contact">
+    <ul>
+      <li id="contact1"><a href='index.html' rel="noopener"><img src="static/img/icon/bottom_bg01.png" width="18" class="icon"/>Home</a></li>
+      <li id="contact2">　</li>
+    </ul>
+  </div>
+
+  <dark-mode-toggle class="slider" mode="dark" style="display: none; pointer-events: none;"></dark-mode-toggle>
+
+</article>
+
+<button id="eb-scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲</button>
+
+<script src="static/js/book/enemy_book.js"></script>
+</body>
+</html>
