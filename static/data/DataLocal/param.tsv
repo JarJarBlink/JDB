@@ -79,3 +79,8 @@ battle_powerup_kill_enemy	10
 comeback_treasure_day	14
 update_version_notification_interval	8
 battle_sentai_recast	75
+tutorial_money	75
+tutorial_duration0	250
+tutorial_duration1	1500
+tutorial_duration2	150
+tutorial_duration3	1000
