@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAR Battle Cats Database</title>
+<link rel="icon" href="static/favicon.ico">
+<link rel="stylesheet" href='static/css/database/style.css'>
+<link rel="stylesheet" href='static/css/database/origin.css'>
+<link rel="stylesheet" href='static/css/home/style_a.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<meta name="color-scheme" content="dark light"/>
+<meta name="theme-color" content=""/>
+<link rel="stylesheet" href="static/dark-mode-toggle/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/common.css"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/slider.css"/>
+<script type="module" src="static/dark-mode-toggle/dark-mode-toggle-playground.js"></script>
+<script type="module" src="static/dark-mode-toggle/dark-mode-toggle.js"></script>
+<link rel="stylesheet" href='static/css/spine/spine-player.css'>
+<script src="static/js/spine/spine-player.js"></script>
+<script src="static/js/spine/spine-mascot-text.js"></script>
+<script src="static/js/spine/spine-mascot.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script>
+<script type="module" src="static/js/home/ga.js"></script>
+<script type="module" src="static/js/gamatoto/gamatoto.js"></script>
+</head>
+<style>
+    #stage0_block > div,
+    #stage0_block > div > div {
+        margin-bottom: 0.5em;
+    }
+    #stage0_block label {
+        display: inline-block;
+        min-width: 4em;
+        vertical-align: middle;
+    }
+    #stage0_block input[type="number"],
+    #stage0_block select {
+        vertical-align: middle;
+    }
+    .slider-row {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        margin-bottom: 0.5em;
+    }
+    .slider-row label {
+        min-width: 8em;
+        flex-shrink: 0;
+        display: block;
+    }
+    .slider-row input[type="number"] {
+        width: 52px;
+        flex-shrink: 0;
+    }
+    .slider-row input[type="range"].lvslider {
+        flex: 1;
+        width: auto;
+        margin: 0;
+        min-width: 0;
+        max-width: 150px;
+        align-self: center;
+    }
+    .slider-row input[type="range"].lvslider::-webkit-slider-thumb {
+        margin-top: -6.65px;
+    }
+    #map-img-wrap {
+        flex: 0 0 auto;
+        align-self: center;
+    }
+    @media (max-width: 600px) {
+        #map-img-wrap {/* 換行後讓圖片跟參數區塊左邊對齊，margin 補上 .block 的 padding */
+            margin-left: 0;
+            align-self: flex-start;
+        }
+    }
+    .level-row {
+        margin-top: 1.5em;
+    }
+    .slider-row button {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+</style>
+
+<body>
+<article>
+<h2 class="top">Gamatoto Area</h2>
+    <h3>Select</h3>
+    <div id="stage0_block" class="block" style="margin-top:0.75em;">
+        <div style="display:flex; align-items:flex-start; gap:1.5em; flex-wrap:wrap;">
+            <div style="flex:0 0 auto;">
+                <div>
+                    <label id="lbl_areaSelect" for="areaSelect"></label>
+                    <select id="areaSelect">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="slider-row level-row">
+                    <label id="lbl_level" for="level"></label>
+                    <input id="level" type="number" min="1" max="150" value="130">
+                    <button id="level-btn-minus">▼</button>
+                    <input type="range" class="lvslider" id="level-slider" min="1" max="150" value="130">
+                    <button id="level-btn-plus">▲</button>
+                </div> <!--Coded and designed by Exodia JAR-->
+                <div>
+                    <label id="lbl_helpers"></label>
+                    <div class="slider-row">
+                        <label id="lbl_legend" for="legend"></label>
+                        <input id="legend" type="number" min="0" max="10" value="10">
+                        <button id="legend-btn-minus">▼</button>
+                        <input type="range" class="lvslider" id="legend-slider" min="0" max="10" value="10">
+                        <button id="legend-btn-plus">▲</button>
+                    </div>
+                    <div class="slider-row">
+                        <label id="lbl_gold" for="gold"></label>
+                        <input id="gold" type="number" min="0" max="10" value="0">
+                        <button id="gold-btn-minus">▼</button>
+                        <input type="range" class="lvslider" id="gold-slider" min="0" max="10" value="0">
+                        <button id="gold-btn-plus">▲</button>
+                    </div>
+                    <div class="slider-row">
+                        <label id="lbl_silver" for="silver"></label>
+                        <input id="silver" type="number" min="0" max="10" value="0">
+                        <button id="silver-btn-minus">▼</button>
+                        <input type="range" class="lvslider" id="silver-slider" min="0" max="10" value="0">
+                        <button id="silver-btn-plus">▲</button>
+                    </div>
+                    <div class="slider-row">
+                        <label id="lbl_bronze" for="bronze"></label>
+                        <input id="bronze" type="number" min="0" max="10" value="0">
+                        <button id="bronze-btn-minus">▼</button>
+                        <input type="range" class="lvslider" id="bronze-slider" min="0" max="10" value="0">
+                        <button id="bronze-btn-plus">▲</button>
+                    </div>
+                    <div class="slider-row">
+                        <label id="lbl_white" for="white"></label>
+                        <input id="white" type="number" min="0" max="10" value="0">
+                        <button id="white-btn-minus">▼</button>
+                        <input type="range" class="lvslider" id="white-slider" min="0" max="10" value="0">
+                        <button id="white-btn-plus">▲</button>
+                    </div>
+                </div>
+            </div>
+            <div id="map-img-wrap" style="flex:0 0 auto; align-self:center;">
+                <canvas id="area-map-canvas" width="252" height="152"
+                        style="display:block; border-radius:8px; max-width:252px;"></canvas>
+            </div>
+        </div>
+    </div>
+    <h3 style="margin-top: 1.5em;">Probability and Expected Value</h3>
+    <div id="stage0_block" class="block" style="margin-top: 0.75em;">
+        <table class="table_style" id="results-table">
+            <thead>
+                <tr>
+                    <th id="th_label"></th>
+                    <th id="th_1h">1h</th>
+                    <th id="th_3h">3h</th>
+                    <th id="th_6h">6h</th>
+                </tr>
+            </thead>
+            <tbody id="results-tbody">
+            </tbody>
+        </table>
+    </div>
+<div style="height:8rem;"></div>
+<div class="contact">
+<ul>
+    <li id="contact1"><a href='index.html' rel="noopener"><img src="static/img/icon/bottom_bg01.png" width="18" class="icon"/>Home</a></li>
+    <li id="contact2">　</li>
+</ul>
+</div>
+<dark-mode-toggle class="slider" mode="dark" style="display: none; pointer-events: none;"></dark-mode-toggle>
+</article>
+<div id="spine-mascot" style="position: fixed;bottom: 0;right: 0px;width: 250px;height: 250px;z-index: 9999;pointer-events: none;display: none;"></div>
+</body>
+</html>
