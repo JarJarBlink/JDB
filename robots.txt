@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://jarjarblink.github.io/JDB/sitemap.xml
