@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Home -->
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- UPDATE -->
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/table.html</loc>
+  </url>
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/updateDays.html</loc>
+  </url>
+
+  <!-- SCHEDULE -->
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/event.html</loc>
+  </url>
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/gatya_event.html</loc>
+  </url>
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/item_event.html</loc>
+  </url>
+
+  <!-- LIST -->
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/unit_search.html</loc>
+  </url>
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/tunit_search.html</loc>
+  </url>
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/map_search.html</loc>
+  </url>
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/gatya_search.html</loc>
+  </url>
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/gatya_search_event.html</loc>
+  </url>
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/combo.html</loc>
+  </url>
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/drop.html</loc>
+  </url>
+
+  <!-- OTHERS -->
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/hidden.html</loc>
+  </url>
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/enemy_book.html</loc>
+  </url>
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/gamatoto.html</loc>
+  </url>
+  <url>
+    <loc>https://jarjarblink.github.io/JDB/author.html</loc>
+  </url>
+</urlset>
