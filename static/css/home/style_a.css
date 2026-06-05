@@ -1,10 +1,12 @@
 /* 1. 讓 article 作為定位基準，並撐滿螢幕 */
+/*Coded by Exodia JAR https://x.com/eUqQxBRzSbCq7Uz*/
 article {
     position: relative;
     min-height: 100vh;      /* 確保內容少時也能撐到螢幕底部 */
     display: block;         /* 確保是標準區塊，不影響 F/Sec 排版 */
     padding-bottom: 40px;   /* 預留一點空間給底部的 Home，防止重疊 */
     box-sizing: border-box;
+    background: var(--color-article-bc);
 }
 
 #stage0_block.block {
