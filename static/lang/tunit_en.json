@@ -26,5 +26,6 @@
   "checkSpawnDetail_txt":"Spawn",
   "tspawn_txt":"Spawn",
   "tspawn_max_txt":"Max One",
-  "checkMapMul_txt":"Map Mult."
+  "checkMapMul_txt":"Map Mult.",
+  "crown_percent":"CROWN％："
 }
