@@ -62,7 +62,7 @@ everyplay_not_supported	This device is not supported.
 everyplay_no_related_videos	No related media found.
 cat_challenge01	<flash>Welcome to the Catclaw Dojo!</flash><br>A countdown battle with endless enemies.<br>Beat down as many as you can for the top<br>score! (Defeated enemies give no money.)
 data_download_error_catfood_20000	Unauthorized Data Manipulation detected. This Save Data may not be transferred to another device. Please contact PONOS support.
-cat_challenge_item	Use as many free Speed-Ups and<br>Cat CPUs as you like while fighting<br>in the Catclaw Dojo!<br>※ Activating a speed boost will consume the item.
+cat_challenge_item	In the Catclaw Dojo, only the<br>Speed Up and Cat CPU items are usable!<br>* Use Cat CPU anytime you like! 
 zombie_clear00	<flash>${stageName} Outbreak Contained!</flash><br>Received 10 Cat Food!
 zombie_clear01	<flash>Quarantine Zone Secured!</flash><br>%@ Treasure Drop Rate increased!
 zombie_clear02	<flash> All Empire Quarantine Zones secured!</flash><br>Max Energy increased by ${EnergyNum}!
@@ -1291,7 +1291,7 @@ scheme_item_param_50	nekohopper_en4
 scheme_popup_50	Go! Go! Pogo Cat<br>Collab Mission Reward 4<br><flash>%@%@s！</flash>
 scheme_item_param_51	nekohopper_en5
 scheme_popup_51	Go! Go! Pogo Cat<br>Collab Mission Reward 5<br><flash>%@%@s！</flash>
-boost_message	<color=255,0,255>Speed-Up</color><br><color=0,0,0>Use this item to activate a speed boost<br>Tap item icon during battle to select<br>Off, 2x Speed or 3x Speed modes.</color>
+boost_message	<color=255,0,255>Speed Up</color><br><color=0,0,0>Increase battle speed at anytime!<br>Spend a Speed Up item for 2x speed!<br>Tap icon during battle to toggle<br>between OFF, 2x and 3x speed.</color>
 unusable_info	${unusableNum} Cats have been caught in traps!<br>Trapped units cannot be deployed in future battles.
 change_info	${unusableNum} Cats have been caught in traps!<br><color=255,255,0>Choose ${usableNum} trapped Cat unit(s)<br>to rescue!</color>
 change_limit	<color=255,255,0>No further Cats can be rescued.</color>
@@ -1301,7 +1301,7 @@ labyrinth_start	The Underground Labyrinth is now available! <br>(From: ${startDa
 labyrinth_announce1	★ Underground Labyrinth Results ★<br>(From: ${startDate} - ${endDate}) <br>Your Final Rank: ${rankingNum}％！<br>Rewards can be claimed from the Mailbox<br>(Unclaimed rewards expire after 1 month)
 labyrinth_announce2	★ Underground Labyrinth Results ★<br>(From: ${startDate} - ${endDate}) <br>Your Final Rank: ${rankingNum}％！<br>You didn't qualify for any rewards...<br>Try again next time!
 labyrinth_announce3	The Underground Labyrinth has ended!<br>Good luck on your next spelunking adventure!
-labyrinth_challenge_item	In the Underground Labyrinth,<br>Speed Up and Cat CPUs can be used as much as you'd like!<br>※Speed Ups will be consumed when activated.
+labyrinth_challenge_item	In the Underground Labyrinth, only the<br>Speed Up and Cat CPU items are usable!<br>* Use Cat CPU anytime you like! 
 labyrinth_play_error1	<color=255,255,0>Cleared Underground Labyrinth stages cannot be replayed.</color>
 labyrinth_play_error2	<color=255,255,0>Battle formation does not meet unit requirements.<br>Please set 10 Equippable Units.</color>
 labyrinth_slot_error	<color=255,255,0>Previously used formations cannot be reused in the Underground Labyrinth.</color>
@@ -1611,16 +1611,16 @@ unlock_popup_message_156	<flash>A new life form has appeared<br>in Cats of the C
 unlock_popup_message_157	<flash>Cat God the Golden's Talents unlocked!</flash><br>Hey! How's it going?!<br>Wanna see how strong I've gotten?<br>Check out the Upgrade Menu!
 BonusExplanationLabel004	【Score Bonus: Massive Damage】<br> Inflict Massive damage on target enemies.<br>※ Earn a higher score by Cats with fewer Target types.<br> Check "What is the Arena of Destiny?" at the bottom left of the menu for details.
 BonusNameLabel004	Massive Damage
-gamatotoSpReward_1	<flash>You got the ${rarity} Cat: 「${charaName}」!</flash><br>Activate it at the Upgrade menu!
-Nyancombo_charagroup_1	
+gamatotoSpReward_1	<flash>You recruited ${rarity} unit: ${charaName}!</flash><br>Activate it at the Upgrade menu!
+Nyancombo_charagroup_1	Only Nyanko Rangers
 picBook_getNewCharacter	<flash>You unlocked "${charaName}"!</flash><br>and earned 5 Cat Food!
-scheme_item_param_114	
+scheme_item_param_114	/nyankoranger_momo_charaget.html
 scheme_popup_114	<flash>You unlocked Special Unit "%@"!</flash>
 scheme_popup_114_option_get	You've already collected this reward.<br>Please check the Upgrade Menu.
-slot_SNS_007	
+slot_SNS_007	I won %d Cat Food at the WildCat Slots II!<br><br>#TheBattleCats #13YearsOfBattleCats #WildCatSlotsII
 SpecialRuleExplanation015	【Grand Battle】<br>Uber Rares cost double, but<br>are deployed three-at-a-time.
 SpecialRuleName015	Grand Battle
-talk_010_push	
+talk_010_push	The Nyanko Ranger Exams continue!
 BonusExplanationLabel005	【Score Bonus: Slow】<br> Inflict Slow on target enemies.<br>※ Earn a higher score by Cats with fewer Target types.<br> Check "What is the Arena of Destiny?" at the bottom left of the menu for details.
 BonusNameLabel005	Slow
 backstage_unusable	<color=255,255,0>An unequippable unit is included.<br>Please only include equippable units.</color>
@@ -1656,3 +1656,22 @@ SpecialRuleExplanation017	【Half-Off: S. Rare】<br>Deploy cost of Super Rare U
 SpecialRuleName017	Half-Off: S. Rare
 SpecialRuleReset001	
 stageskip_message_10	Cleared Golden Tower ${stageName1}!<br>Next time, you can restart from <flash>${stageName2}</flash>!
+battle_tutorial_0	Build up your money to deploy Cat Units<br>to march on and destroy the Enemy Base!
+battle_tutorial_1	Tap the icon at top right to speed up the battle!<br>Tap again to restore battle to normal speed.
+battle_tutorial_2	Tap the button at bottom left to increase your<br>max Money reserve cap and income speed!
+battle_tutorial_3	Tap the button at bottom right to fire<br>the Cat Cannon when the charge meter is full!<br>All enemies in range will be hit by the beam!
+BonusExplanationLabel007	【Score Bonus: Tough】<br> Take damage from target enemies via the Tough ability.<br>* Earn a higher score by deploying Cats with fewer Target types.<br> Check "What is the Arena of Destiny?" at the bottom left of the menu for details.
+BonusNameLabel007	Tough
+loginbonus_highlight	${dayNum} day(s)<br>to grab Featured Items!
+nyanko_club_gift_txt_clubitemID2	<flash>Officer's Club Gold Membership<br>For 30 days, skipping battle costs only one Cat CPU!</flash><br>
+potential_skill_name69	Immune to Explosions
+SpecialRuleExplanation018	【Inflation: Uber Rare】<br>Start with much more money, <br>but gain no income over time<br>or by defeating enemies. <br>Uber Rare deploy cost is also doubled!
+SpecialRuleName018	Inflation: Uber Rare
+speedup_message	<color=255,0,255>Speed Up</color><br><color=0,0,0>Doubles battle speed!<br>Tap icon during battle to toggle<br>between OFF and 2x speed.</color>
+tutorial_popup0	You cannot challenge this stage yet!<br>Clear "Mongolia" to continue!
+tutorial_popup1	You cannot challenge this stage yet!<br>Clear "China" to continue!
+tutorial_popup2	The Speed Up item has been selected.<br>With Speed Up selected, you can toggle<br>between OFF, 2x and 3x speed during battle.</color>
+tutorial_popup3	Tap the Lock icon on the right to<br>keep the item selected so<br>you won't have to select it every time!
+tutorial_popup4	You don't have enough XP...
+unlock_popup_message_158	<flash>A new hero has appeared!</flash><br>Activate it at the Upgrade menu!
+unlock_popup_message_159	

@@ -15,7 +15,7 @@
 %s|Quit a major company|and is managing 4 companies now.|Aspires to become city mayor someday.|
 %s|Seems to speak an old English dialect?|No, seriously, it sounds like English, but|their pronunciation is almost unintelligible.|Works at an English school near the station.
 %s|Licensed to kill.|The global financial crisis isn't helping|him much though. Please check the flyers.|He's offering one million per kill now.
-%s|Ridiculously shy.|He loves to sing though, but|has never sang in front of anyone.|… does a mirror count? Solo Karaoke'r
+%s|Ridiculously shy.|He loves to sing, but has never|actually performed in front of anyone.|… Does a mirror count? Solo Karaoke'r
 %s|Too strict a diet resulted in no body.|No one knows why he is floating.|Seriously, anyone?|(Don't try this at home)
 %s|仮1|仮2|仮3|仮4
 %s|仮1|仮2|仮3|仮4
@@ -771,6 +771,7 @@
 %s
 %s
 %s|Peered into our world from another dimension and|resolved to subject all life to the trials of selection.|Tracing the threads of causality, he now marches|upon the Cat Army for defying the laws of evolution.
+%s
 %s
 %s
 %s

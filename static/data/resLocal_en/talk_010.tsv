@@ -1,0 +1,88 @@
+			0	22	777	301	0
+		Oops! something's come up,<br>but I'll ask for more help later!<br>Take this for your help so far!	0	22	300
+1	0	Hey rookie!<br>Got an urgent mission for you!	2
+2	0	The Kaijin are growing<br>in power lately.	3
+3	0	With such a large Kaijin,<br>threat, the Nyanko Rangers<br>can't possibly handle them all.<br>We'll take any help we can get!	4
+4	0	And I thought, this is the<br>perfect test for an aspiring Ranger!<br>So how about it?<br>Up for the challenge?	5	20
+5	0	Thanks a ton!<br>Glad to have you on the team!	6
+6	0	First, you ought to take<br> the Ranger licensing exam, just<br>to make sure you got what it takes.	7
+7	0	I'm sure you'll pass easily<br> and become a fine Ranger!	8
+8	0	We'll have you safeguarding the<br>town's peace with us in no time!	9
+9	0	I'll help you prepare for<br>the test, and we'll make<br>sure you pass with flying colors!	10
+10	0	Also, please invite<br>your friends to play<br>The Battle Cats!	11
+11	0	The more Rangers<br>we have, the safer<br> the world will be, y'know?	12
+12	0	So it'd really help us out if<br>your friends signed up<br>to become Rangers too!	13
+13	0	The Battle Cats rages on!<br>The endless campaign continues,<br>so recruit your buddies<br>to join the Cat's cause!	14
+14	0	You know, just recruit<br>your friends directly!	15
+15	0	So just lend us a paw, and<br>there'll of course be<br><flash>tons of Cat Food rewards</flash><br>as repayment for you!	16
+16	0	Looking forward to<br>fighting evil alongside you<br>and your friends!	17
+17	0	So, future Ranger, you've<br>got your first test<br> coming up tomorrow!	18
+18	16	Don't forget to<br>invite your friends!<br>Tomorrow's a big day!	101
+20	0	Sheesh! I can't hear a thing<br>in this helmet! What was that<br>you said, future Ranger?	21
+21	0	Look, I've got a small<br>favor to ask of you.<br>Got a minute to hear me out?	5	20
+101	0	Thanks for coming!<br>Always happy to see you!	102
+102	0	You invited your friends to<br>try out The Battle Cats, yeah?	103	120
+103	0	Thanks a ton!<br>Just keep spreading the word<br>and we'll have a proper squad<br>of new Rangers in no time!	104
+104	0	But first things first...<br>we gotta get your paperwork<br>sorted for the aptitude screening<br>portion of the exam.	105
+105	0	This first test will<br>determine if you're truly<br>qualified to be a Ranger.	106
+106	0	Sheesh, this paperwork<br>is 222 pages long!<br>Who has time to fill all this out?<br>That's way too much!	107
+107	0	Don't worry, though.<br>I used Cat CPU's AI<br>to fill out everything...<br>Except for that last question.	108
+108	0	So your catchphrase is...<br>"Deep-Fried Donuts!"?<br>Well, good enough for now.	109
+109	0	Look, just give us a serious<br>answer for this last question.<br>It's REAL important!	110
+110	0	"Who is your favorite<br>Nyanko Ranger?"	111
+111	0	Wow, that's a stumper!<br>So, you got an answer in mind?	112
+112	0	The fierce 'n fiery<br>Red Nyanko Ranger<br>is your favorite, then?	113	130
+113	0	Aww, thanks!<br>I'm so honored!	114
+114	0	You didn't hesitate a second<br>before choosing me! Let's write<br> down "Red Ranger"  in HUGE<br>letters so it's real clear.	115
+115	0	Well, seems everything's in order!<br>I'll take it from here<br>and submit it on your behalf.	116
+116	0	I'll be back tomorrow<br>with the results of<br>this first exam.<br>Look forward to it!	117
+117	16	In the meantime, why not<br>invite a couple more friends<br>so we can fill out the squad?<br>Catch you later!	201
+120	0	Aww! Pretty please?<br>Won't you think of<br>the peace of the city?!	121
+121	0	Look, I'd consider it a<br>personal favor if you invited<br>a friend before tomorrow?	122
+122	0	Pinky promise, yeah?!<br>We're counting on your support!	104
+130	0	Is the never-say-die<br>spirit of the Red Ranger<br>your favorite?	113	150
+150	0	Hypothetically,<br>is the Red Nyanko Ranger<br>your favorite?	113	151
+151	0	…	152
+152	0	I'll ask you again from the start...<br>Look me in the eye<br>and answer truthfully!	112
+201	0	Thanks for comin' again today!<br>Been waiting for you!	202
+202	0	So, let's get to it.<br>Did you invite your friends?	203	230
+203	0	I knew I could count on you!<br>Now the Nyanko Rangers<br>will be even stronger!	204
+204	0	We're always recruiting<br>more Rangers, y'know, so<br>please keep trying to recruit<br>more friends!	205
+205	0	So, I've got your<br>aptitude test results<br>right here. You ready?	206
+206	0	It says here that…	207
+207	0	…	208
+208	0	You passed!<br>Right on, future Ranger!	209
+209	0	Your heartfelt answer must<br>have really resonated with<br>the Ranger committee!	210
+210	0	I'll be sure to thank you<br>with a Cat CPU properly later on.	211
+211	0	Now we're on to the real thing -<br>the final exam!<br>You can expect this test<br>to be SUPER difficult!	212
+212	0	In my day, they made<br>me demonstrate 100 signature<br>poses in a row, no slip-ups!	213
+213	0	100 poses in 1 minute<br> without being off by 1 inch!<br>Now that's a real challenge!	214
+214	0	I trained fiercely all night,<br>every night, for a month<br>before I finally passed!	215
+215	0	So this one should be<br>just as challenging, yeah?<br>Let's check what it is...	216
+216	0	This time, your exam format is...	217
+217	0	...	218
+218	0	A lottery!<br>Relying on nothing but<br>luck to see you through.<br>In a way, that's the hardest test!	219
+219	0	Don't worry, though!<br>You just leave the exam<br>prep to me, future Ranger!	220
+220	0	See, I've gotten Super Rares<br>from my last 5 Capsule draws!<br>We got this in the bag!	221
+221	16	See you tomorrow to<br>tell you the lottery results,<br>so drop in to see me!<br>We're all counting on you!	301
+230	0	Sheesh!<br>You didn't forget our<br>promise, did you?	231
+231	0	You SWORE to invite<br>your friends to fight<br>alongside us Rangers!	232
+232	0	I believe in my heart that<br>you'll invite them tomorrow<br> so we can at last defeat<br>that nasty Kaijin army!<br>Don't let me down!	205
+301	0	I've been waiting!<br>Are you prepared to hear<br>your final exam results?	302
+302	0	This will make or break<br>your future as a Ranger!<br>No pressure or anything!	303
+303	0	Before I announce the results...<br>I have a confession to<br>make... Don't get mad!	304
+304	0	Truth is... I didn't<br>make it in time to<br>enter you into the lottery.	305
+305	0	Just as I was about to<br>submit it to the Cat CPU,<br>an urgent call  for<br>Ranger backup came in.	306
+306	0	I was the only Ranger<br>available at the time,<br>so I had no choice but to rush<br>right over and help.	307
+307	0	Didn't want to cause<br>you any trouble, so I<br>rushed the mission a bit,<br>but I still didn't make it...	308
+308	0	And that's why I couldn't<br>enter you in the lottery.<br>I feel real bad about that...	309
+309	0	Huh?<br>Looks like I just got an email<br>that wasn't there before.<br>Let me check...	310
+310	0	...	311
+311	0	You passed?!<br>Says here you've been<br>accepted as a new Ranger recruit!	312
+312	0	"In addition to assisting the<br>Rangers in many good deeds,<br>you scouted potential recruits<br>to increase our numbers."	313
+313	0	Well, that's just great!!<br>I told ya, my motto's always<br>been "Good deeds reward<br>good Cats in turn"!	314
+314	0	Your hard work spreading<br>the word to your friends<br>really contributed to the good<br>results we've been getting!	315
+315	0	Thanks a million, Ranger!<br>At long last, you're<br>an official member of the<br>Nyanko Ranger team!	316
+316	0	With our strength combined,<br>we'll be able to take<br>down tons of Kaijin<br>and save the city!	317
+317	0	And while we're celebrating...<br>You've done us some real<br>favors, so here's something<br>extra, just from me!	318
+318	16	Nya-Nyah!<br><flash>777 Cat Food!</flash><br>Don't spend it all in one place!	-2
