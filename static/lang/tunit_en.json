@@ -25,5 +25,6 @@
   "t_drop_txt":"Drop",
   "checkSpawnDetail_txt":"Spawn",
   "tspawn_txt":"Spawn",
-  "tspawn_max_txt":"Max One"
+  "tspawn_max_txt":"Max One",
+  "checkMapMul_txt":"Map Mult."
 }
