@@ -19,7 +19,6 @@
     "674"
   ],
   "sUnitbuy_change_list": [
-    "496",
     "665_m",
     "713_m",
     "757_m"
@@ -63,6 +62,12 @@
   "sNew_stageT_list": [],
   "sNew_4star_stage_list": [],
   "sNew_3star_stage_list": [],
+  "sNew_2star_stage_list": [
+    "1343",
+    "2087",
+    "34007",
+    "34008"
+  ],
   "sEnemy_id_list": [
     "778"
   ],
