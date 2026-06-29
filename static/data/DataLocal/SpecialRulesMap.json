@@ -593,7 +593,8 @@
       "RuleType": {
         "0": {
           "Parameters": [
-            60000
+            60000,
+            0
           ]
         },
         "5": {
@@ -614,6 +615,59 @@
             100,
             70,
             100
+          ]
+        }
+      }
+    },
+    "36024": {
+      "ContentsType": 0,
+      "RuleNameLabel": "SpecialRuleName003",
+      "RuleExplanationLabel": "SpecialRuleExplanation003",
+      "RuleType": {
+        "4": {
+          "Parameters": [
+            500
+          ]
+        }
+      }
+    },
+    "36025": {
+      "ContentsType": 0,
+      "RuleNameLabel": "SpecialRuleName001",
+      "RuleExplanationLabel": "SpecialRuleExplanation001",
+      "RuleType": {
+        "1": {
+          "Parameters": [
+            500
+          ]
+        }
+      }
+    },
+    "24081": {
+      "ContentsType": 3,
+      "RuleNameLabel": "SpecialRuleName020",
+      "RuleType": {
+        "0": {
+          "Parameters": [
+            1000000,
+            75
+          ]
+        },
+        "6": {
+          "Parameters": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ]
+        },
+        "11": {
+          "Parameters": [
+            0,
+            200,
+            99999
           ]
         }
       }

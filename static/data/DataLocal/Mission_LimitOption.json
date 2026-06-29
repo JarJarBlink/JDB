@@ -570,6 +570,21 @@
         5
       ],
       "FormLvLimit": 1
+    },
+    "48": {
+      "Map": [
+        1226,
+        14039
+      ],
+      "RarityLimit": [
+        1
+      ],
+      "SlotLimit": [
+        10
+      ],
+      "SlotOptionRule": [
+        "More"
+      ]
     }
   }
 }
