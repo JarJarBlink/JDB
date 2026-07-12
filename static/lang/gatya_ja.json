@@ -1,8 +1,11 @@
 {
-  "chara_ttl_5": "▼伝説レアキャラクター",
-  "chara_ttl_4": "▼超激レアキャラクター",
-  "chara_ttl_3": "▼激レアキャラクター",
-  "chara_ttl_2": "▼レアキャラクター",
+  "chara_ttl_5": "▼伝説レア",
+  "chara_ttl_4": "▼超激レア",
+  "chara_ttl_3": "▼激レア",
+  "chara_ttl_2": "▼レア",
   "chara_ttl_1": "▼EX",
-  "chara_ttl_e3": "▼アイテム"
+  "chara_ttl_0": "▼基本",
+  "chara_ttl_e3": "▼アイテム",
+  "chara_ttl_flatall": "▼ユニット",
+  "rarity_group_toggle_text": "レア度別に表示"
 }

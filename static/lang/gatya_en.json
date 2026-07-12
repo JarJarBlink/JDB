@@ -4,5 +4,8 @@
   "chara_ttl_3": "▼Super Rare",
   "chara_ttl_2": "▼Rare",
   "chara_ttl_1": "▼EX",
-  "chara_ttl_e3": "▼Item"
+  "chara_ttl_0": "▼Normal",
+  "chara_ttl_e3": "▼Item",
+  "chara_ttl_flatall": "▼Units",
+  "rarity_group_toggle_text": "Group by Rarity"
 }
