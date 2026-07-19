@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAR Battle Cats Database</title>
+<link rel="icon" href="static/favicon.ico">
+<link rel="stylesheet" href='static/css/database/style.css'>
+<link rel="stylesheet" href='static/css/database/origin.css'>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<meta name="color-scheme" content="dark light"/>
+<meta name="theme-color" content=""/>
+<link rel="stylesheet" href="static/dark-mode-toggle/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/common.css"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/slider.css"/>
+<script type="module" src="static/dark-mode-toggle/dark-mode-toggle-playground.js"></script>
+<script type="module" src="static/dark-mode-toggle/dark-mode-toggle.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:wght@400;500;700;800&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
+<style>
+  :root{
+    /* 主色改抓站台 dark.css / light.css 的變數，原本的深色數值保留當 fallback */
+    --ink-950: var(--background-color, #0B0B09);
+    --ink-900: var(--color-article-bc, #15150F);
+    --ink-850: var(--color-desc-bc, #1B1B14);
+    --ink-800: var(--color-button-bc, #25251B);
+    --line: var(--color-table-default-border, #33321f66);
+    --stone: var(--bc-ink-mid, #8C8672);
+    --parchment: var(--text-color, #EDE7D8);
+    --parchment-dim: var(--color-white-227, #C9C3B0);
+    --amber: var(--accent-color, #E3A83B);
+    --amber-dim: var(--color-rare-yellow-bc, #8A6A2E);
+    --teal: var(--color-link-home, #49AFA0);
+    --teal-dim: var(--color-blue-bc, #2E6C63);
+    --danger: var(--color-red-bc, #C1503F);
+    --radius:2px;
+  }
+  @media (prefers-color-scheme: light){
+    :root{
+      --amber: #A5720F;
+      --amber-dim: #E8C468;
+    }
+  }
+  *{box-sizing:border-box;}
+  html,body{overflow-x:hidden;}
+
+  .display{font-family:'Chiron Sung HK','Noto Sans TC',serif;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+
+  .frame{
+    max-width:1180px;
+    margin:0 auto;
+    border:1px solid var(--line);
+    background:linear-gradient(180deg, var(--ink-900), var(--ink-950));
+    box-shadow: var(--shadow-card, 0 40px 80px -30px rgba(0,0,0,.7)), inset 0 0 0 1px color-mix(in srgb, var(--ink-950) 60%, transparent);
+  }
+
+  /* ===== Header : survey title block ===== */
+  .masthead{
+    display:flex; align-items:flex-end; justify-content:space-between;
+    gap:16px; flex-wrap:wrap;
+    padding:26px 30px 20px;
+    border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg, var(--ink-900), transparent);
+  }
+  .masthead .eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:11px; letter-spacing:.28em; text-transform:uppercase;
+    color:var(--amber); margin:0 0 8px;
+  }
+  .masthead h1{
+    margin:0; font-size:clamp(24px,3.4vw,34px); font-weight:800;
+    letter-spacing:.02em; color:var(--parchment);
+  }
+  .masthead h1 small{
+    display:block; font-family:'Noto Sans TC',sans-serif; font-weight:400;
+    font-size:13px; color:var(--stone); margin-top:6px; letter-spacing:.05em;
+  }
+  .masthead .refno{
+    text-align:right; font-family:'JetBrains Mono',monospace; font-size:11px;
+    color:var(--stone); line-height:1.7; white-space:normal; max-width:280px;
+  }
+  .masthead .refno b{color:var(--parchment-dim); font-weight:500;}
+
+  /* ===== Body grid: depth gauge | controls | results ===== */
+  .body-grid{
+    display:grid;
+    grid-template-columns:56px minmax(280px,340px) 1fr;
+    min-height:560px;
+  }
+  @media (max-width:860px){
+    .body-grid{grid-template-columns:1fr; }
+    .gauge{order:3; height:56px; width:100%; flex-direction:row !important;}
+  }
+
+  /* ---- depth gauge (signature element) ---- */
+  .gauge{
+    border-right:1px solid var(--line);
+    display:flex; flex-direction:column; align-items:center;
+    padding:18px 0; position:relative; background:var(--ink-950);
+    user-select:none;
+  }
+  .gauge .cap{font-family:'JetBrains Mono',monospace; font-size:9px; color:var(--stone); letter-spacing:.15em;}
+  .gauge-track{flex:1; width:2px; background:var(--ink-800); position:relative; margin:10px 0; border-radius:2px;}
+  .gauge-tick{
+    position:absolute; left:50%; transform:translate(-50%,50%);
+    width:10px; height:1px; background:var(--ink-800);
+  }
+  .gauge-tick.major{ width:16px; background:var(--amber-dim); height:2px; }
+  .gauge-tick .num{
+    position:absolute; left:14px; top:-6px; font-family:'JetBrains Mono',monospace;
+    font-size:9px; color:var(--stone); white-space:nowrap;
+  }
+  .gauge-tick.major .num{color:var(--amber);}
+  .gauge-fill{
+    position:absolute; left:50%; transform:translateX(-50%); width:2px;
+    background:linear-gradient(180deg, var(--teal), transparent);
+    opacity:.85; border-radius:2px; transition:height .5s ease, top .5s ease;
+  }
+  .gauge-marker{
+    position:absolute; left:50%; transform:translate(-50%,50%);
+    width:9px; height:9px; border-radius:50%;
+    background:var(--teal); box-shadow:0 0 10px 2px color-mix(in srgb, var(--teal) 65%, transparent);
+    transition:top .5s ease;
+  }
+
+  /* ---- control panel ---- */
+  .panel{
+    padding:26px 26px 30px;
+    border-right:1px solid var(--line);
+    display:flex; flex-direction:column; gap:20px;
+  }
+  .field-label{
+    font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--stone); margin-bottom:8px; display:block;
+  }
+  .mode-row{display:grid; gap:8px;}
+  .mode-btn{
+    display:flex; align-items:center; gap:10px;
+    background:var(--ink-850); border:1px solid var(--line); color:var(--parchment-dim);
+    padding:11px 12px; cursor:pointer; text-align:left; font-size:13px;
+    font-family:'Noto Sans TC',sans-serif; transition:all .15s ease; border-radius:var(--radius);
+  }
+  .mode-btn .idx{
+    font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--stone);
+    border:1px solid var(--line); width:20px; height:20px; display:flex; align-items:center; justify-content:center;
+    flex:none;
+  }
+  .mode-btn:hover{border-color:var(--amber-dim);}
+  .mode-btn.active{
+    background:linear-gradient(180deg, var(--ink-850), var(--ink-900)); border-color:var(--amber);
+    color:var(--parchment); box-shadow:inset 0 0 0 1px color-mix(in srgb, var(--amber) 13%, transparent);
+  }
+  .mode-btn.active .idx{border-color:var(--amber); color:var(--amber);}
+
+  .input-group{position:relative;}
+  .input-group input{
+    width:100%; background:var(--ink-850); border:1px solid var(--line);
+    color:var(--parchment); padding:12px 50px 12px 12px; font-size:16px;
+    font-family:'JetBrains Mono',monospace; border-radius:var(--radius); outline:none;
+    transition:border-color .15s ease;
+  }
+  .input-group input:focus{border-color:var(--teal); box-shadow:0 0 0 3px color-mix(in srgb, var(--teal) 13%, transparent);}
+  .input-group .unit{
+    position:absolute; right:12px; top:50%; transform:translateY(-50%);
+    font-size:11px; color:var(--stone); font-family:'JetBrains Mono',monospace; pointer-events:none;
+  }
+  .input-hint{font-size:11.5px; color:var(--stone); margin-top:6px; line-height:1.5;}
+
+  .calc-btn{
+    margin-top:6px; background:var(--amber); color:#1a1206; border:none;
+    padding:14px 16px; font-weight:700; font-size:14px; cursor:pointer;
+    font-family:'Noto Sans TC',sans-serif; letter-spacing:.04em; border-radius:var(--radius);
+    display:flex; align-items:center; justify-content:center; gap:8px;
+    transition:transform .1s ease, background .15s ease;
+  }
+  .calc-btn:hover{filter:brightness(1.12);}
+  .calc-btn:active{transform:scale(.98);}
+
+  /* ---- results ---- */
+  .results-pane{padding:26px 28px 28px; display:flex; flex-direction:column; min-width:0;}
+  .results-head{
+    display:flex; justify-content:space-between; align-items:center; gap:10px;
+    margin-bottom:6px; flex-wrap:wrap;
+  }
+  .results-head h2{font-size:16px; margin:0; font-weight:700; letter-spacing:.03em;}
+  .tabs{display:flex; gap:4px; background:var(--ink-850); border:1px solid var(--line); padding:3px; border-radius:var(--radius);}
+  .tab-btn{
+    background:transparent; border:none; color:var(--stone); font-size:11.5px;
+    padding:6px 12px; cursor:pointer; font-family:'JetBrains Mono',monospace; letter-spacing:.05em;
+    border-radius:1px; transition:all .15s ease;
+  }
+  .tab-btn.active{background:var(--ink-800); color:var(--amber);}
+
+  .stat-strip{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line);
+    border:1px solid var(--line); margin:16px 0 18px;
+  }
+  .stat-cell{background:var(--ink-900); padding:12px 14px; min-width:0; overflow-wrap:break-word;}
+  .stat-cell .k{font-size:10px; color:var(--stone); letter-spacing:.1em; text-transform:uppercase; font-family:'JetBrains Mono',monospace;}
+  .stat-cell .v{font-family:'JetBrains Mono',monospace; font-size:18px; color:var(--parchment); margin-top:4px;}
+  .stat-cell .v.amber{color:var(--amber);}
+  .stat-cell .v.teal{color:var(--teal);}
+
+  .empty{
+    flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    color:var(--stone); gap:10px; padding:60px 20px; text-align:center;
+  }
+  .empty .glyph{font-size:26px; opacity:.5;}
+  .empty p{margin:0; font-size:13px; max-width:280px; line-height:1.6;}
+
+  .log-list{display:flex; flex-direction:column; gap:6px; max-height:460px; overflow-y:auto; padding-right:6px;}
+  .log-list::-webkit-scrollbar{width:6px;}
+  .log-list::-webkit-scrollbar-thumb{background:var(--ink-800); border-radius:3px;}
+  .log-row{
+    display:flex; align-items:center; gap:12px;
+    background:var(--ink-900); border:1px solid var(--line); border-left:3px solid var(--ink-800);
+    padding:10px 14px; border-radius:1px;
+  }
+  .log-row.trap{border-left-color:var(--amber);}
+  .log-row .tag{
+    font-family:'JetBrains Mono',monospace; font-size:12px; color:var(--parchment-dim);
+    min-width:64px; flex:none; white-space:nowrap;
+  }
+  .log-row .bar-track{flex:1; height:6px; background:var(--ink-850); position:relative; border-radius:3px; overflow:hidden;}
+  .log-row .bar-fill{position:absolute; inset:0 auto 0 0; background:linear-gradient(90deg,var(--teal-dim),var(--teal)); border-radius:3px;}
+  .log-row.trap .bar-fill{background:linear-gradient(90deg,var(--amber-dim),var(--amber));}
+  .log-row .val{font-family:'JetBrains Mono',monospace; font-size:12.5px; color:var(--parchment); width:78px; text-align:right; flex:none;}
+
+  .chart-wrap{flex:1; min-height:380px; position:relative;}
+  .chart-controls{display:flex; gap:8px; margin-bottom:10px;}
+  .chip-btn{
+    background:var(--ink-850); border:1px solid var(--line); color:var(--stone);
+    font-family:'JetBrains Mono',monospace; font-size:10.5px; padding:5px 10px;
+    cursor:pointer; border-radius:12px; letter-spacing:.04em;
+  }
+  .chip-btn.active{border-color:var(--teal); color:var(--teal);}
+
+  footer{
+    padding:14px 30px; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; align-items:center;
+    font-family:'JetBrains Mono',monospace; font-size:10.5px; color:var(--stone); flex-wrap:wrap; gap:8px;
+  }
+  footer a{color:var(--stone); text-decoration:none; border-bottom:1px dotted var(--ink-800);}
+  footer a:hover{color:var(--amber);}
+
+  /* ---- language switch ---- */
+  .lang-switch{position:relative;}
+  .lang-btn{
+    display:flex; align-items:center; gap:6px;
+    background:var(--ink-850); border:1px solid var(--line); color:var(--parchment-dim);
+    padding:8px 12px; cursor:pointer; font-family:'JetBrains Mono',monospace; font-size:11px;
+    letter-spacing:.08em; border-radius:var(--radius); transition:all .15s ease;
+  }
+  .lang-btn:hover{border-color:var(--amber-dim);}
+  .lang-btn .caret{font-size:9px; color:var(--stone); transition:transform .15s ease;}
+  .lang-switch.open .lang-btn{border-color:var(--amber);}
+  .lang-switch.open .lang-btn .caret{transform:rotate(180deg); color:var(--amber);}
+  .lang-menu{
+    position:absolute; top:calc(100% + 6px); right:0; min-width:130px;
+    background:var(--ink-900); border:1px solid var(--line); border-radius:var(--radius);
+    box-shadow:0 12px 30px -10px rgba(0,0,0,.6);
+    display:none; flex-direction:column; padding:4px; z-index:20;
+  }
+  .lang-switch.open .lang-menu{display:flex;}
+  .lang-option{
+    background:transparent; border:none; color:var(--parchment-dim); text-align:left;
+    padding:8px 10px; font-size:12.5px; font-family:'Noto Sans TC',sans-serif; cursor:pointer;
+    border-radius:1px; transition:all .15s ease; width:100%;
+  }
+  .lang-option:hover{background:var(--ink-850); color:var(--amber);}
+  .lang-option.active{color:var(--amber);}
+</style>
+</head>
+<body>
+<article>
+<div class="frame">
+
+  <div class="masthead">
+    <div>
+      <p class="eyebrow">Underground Labyrinth: The Grand Deep</p>
+      <h1><span data-i18n="title">地底迷宮地下深淵</span>
+        <small data-i18n="subtitle">依樓層期望消耗量與四分支機率權重,逐層疊代推算角色存活分布</small>
+      </h1>
+    </div>
+    <div class="refno">
+      <span data-i18n-html="refnoLine1">門檻貓數 <b>10</b> ／ 最深樓層 <b>100</b></span><br>
+      <span data-i18n-html="refnoLine2">權重分佈 <b>+2 · +1 · 0 · −1</b></span>
+    </div>
+    <div class="lang-switch" id="langSwitch">
+      <button class="lang-btn" id="langBtn" type="button">
+        <span id="langCurrent">TW</span>
+        <span class="caret">▾</span>
+      </button>
+      <div class="lang-menu" id="langMenu">
+        <button class="lang-option" data-cc="tw">中文</button>
+        <button class="lang-option" data-cc="ja">日本語</button>
+        <button class="lang-option" data-cc="en">English</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="body-grid">
+    <!-- depth gauge -->
+    <div class="gauge" id="gauge">
+      <span class="cap">0F</span>
+      <div class="gauge-track" id="gaugeTrack"></div>
+      <span class="cap">100F</span>
+    </div>
+
+    <!-- control panel -->
+    <div class="panel">
+      <div>
+        <span class="field-label" data-i18n="modeLabel">選擇推算模式</span>
+        <div class="mode-row" id="modeRow">
+          <button class="mode-btn" data-mode="luck"><span class="idx">1</span><span data-i18n="mode1">理論模型預測</span></button>
+          <button class="mode-btn" data-mode="consumption"><span class="idx">2</span><span data-i18n="mode2">樓層消耗貓數預測</span></button>
+          <button class="mode-btn active" data-mode="arrival"><span class="idx">3</span><span data-i18n="mode3">樓層抵達預測</span></button>
+          <button class="mode-btn" data-mode="ranking"><span class="idx">4</span><span data-i18n="mode4">排名分布(即時)</span></button>
+        </div>
+      </div>
+
+      <div id="inputContainer" style="display:flex; flex-direction:column; gap:16px;"></div>
+
+      <button class="calc-btn" id="calcBtn" data-i18n="calcBtn">▸ 開始推算</button>
+    </div>
+
+    <!-- results -->
+    <div class="results-pane">
+      <div class="results-head">
+        <h2 id="resultsTitle" data-i18n="resultsTitleDefault">推算結果</h2>
+        <div class="tabs" id="viewTabs" style="display:none;">
+          <button class="tab-btn active" data-view="list" data-i18n="tabList">清單</button>
+          <button class="tab-btn" data-view="chart" data-i18n="tabChart">圖表</button>
+          <button class="tab-btn" data-view="trend" data-i18n="tabTrend" id="tabTrendBtn" style="display:none;">變化</button>
+        </div>
+      </div>
+
+      <div class="stat-strip" id="statStrip" style="display:none;"></div>
+
+      <div id="resultsBody">
+        <div class="empty">
+          <div class="glyph">◈</div>
+          <p data-i18n="emptyDefaultText">尚未執行推算。選擇模式、填入數值後按下「開始推算」,結果將以清單與圖表兩種形式呈現。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <span data-i18n="footerLeft">地底迷宮機率模型 · 四分支疊代法</span>
+    <a href="#" onclick="return false;" data-i18n="footerLink">計算原理說明</a>
+  </footer>
+</div>
+
+<script src="static/js/labyrinth/labyrinth_cal.js"></script>
+<dark-mode-toggle class="slider" mode="dark" style="display: none; pointer-events: none;"></dark-mode-toggle>
+</article>
+</body>
+</html>
