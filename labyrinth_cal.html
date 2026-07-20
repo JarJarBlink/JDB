@@ -73,12 +73,8 @@
     color:var(--amber); margin:0 0 8px;
   }
   .masthead h1{
-    margin:0; font-size:clamp(24px,3.4vw,34px); font-weight:800;
+    margin:0; font-size:clamp(20px,2.8vw,28px); font-weight:800;
     letter-spacing:.02em; color:var(--parchment);
-  }
-  .masthead h1 small{
-    display:block; font-family:'Noto Sans TC',sans-serif; font-weight:400;
-    font-size:13px; color:var(--stone); margin-top:6px; letter-spacing:.05em;
   }
   .masthead .refno{
     text-align:right; font-family:'JetBrains Mono',monospace; font-size:11px;
@@ -96,6 +92,24 @@
     .body-grid{grid-template-columns:1fr; }
     .gauge{order:3; height:56px; width:100%; flex-direction:row !important;}
   }
+
+  /* ===== Mobile masthead: keep nav-actions pinned to the right on its own
+     row, otherwise flex-wrap can leave it as a lone item on a line, and a
+     lone item under justify-content:space-between snaps to the LEFT edge —
+     which then makes the right-anchored .lang-menu (right:0) overflow off
+     the left side of the screen. ===== */
+  @media (max-width:640px){
+    .masthead{flex-direction:column; align-items:stretch;}
+    .masthead-right{
+      flex-direction:column; align-items:stretch; width:100%; gap:12px;
+    }
+    .masthead-right .refno{text-align:left; max-width:none;}
+    .masthead-right .nav-actions{justify-content:flex-end;}
+  }
+
+  /* Safety clamp: even if the switch ever sits close to an edge, never let
+     the menu itself exceed the viewport width. */
+  .lang-menu{max-width:calc(100vw - 24px);}
 
   /* ---- depth gauge (signature element) ---- */
   .gauge{
@@ -248,14 +262,19 @@
   footer a{color:var(--stone); text-decoration:none; border-bottom:1px dotted var(--ink-800);}
   footer a:hover{color:var(--amber);}
 
+  /* ---- shared nav button base (lang btn + home btn) ---- */
+  .nav-btn{
+    display:flex; align-items:center; justify-content:center; gap:6px;
+    background:var(--ink-850); border:1px solid var(--line); color:var(--parchment-dim);
+    width:64px; height:33px; box-sizing:border-box;
+    padding:0; cursor:pointer; font-family:'JetBrains Mono',monospace; font-size:11px;
+    letter-spacing:.08em; border-radius:var(--radius); transition:all .15s ease;
+    text-decoration:none;
+  }
+  .nav-btn:hover{border-color:var(--amber-dim); color:var(--amber);}
+
   /* ---- language switch ---- */
   .lang-switch{position:relative;}
-  .lang-btn{
-    display:flex; align-items:center; gap:6px;
-    background:var(--ink-850); border:1px solid var(--line); color:var(--parchment-dim);
-    padding:8px 12px; cursor:pointer; font-family:'JetBrains Mono',monospace; font-size:11px;
-    letter-spacing:.08em; border-radius:var(--radius); transition:all .15s ease;
-  }
   .lang-btn:hover{border-color:var(--amber-dim);}
   .lang-btn .caret{font-size:9px; color:var(--stone); transition:transform .15s ease;}
   .lang-switch.open .lang-btn{border-color:var(--amber);}
@@ -274,6 +293,17 @@
   }
   .lang-option:hover{background:var(--ink-850); color:var(--amber);}
   .lang-option.active{color:var(--amber);}
+
+  /* ---- nav actions (lang switch + home) ---- */
+  .nav-actions{display:flex; align-items:center; gap:8px; flex:none;}
+
+  /* ---- masthead right group: refno + nav-actions travel together,
+     sitting on one row when there's room, wrapping as a pair only when
+     space runs out ---- */
+  .masthead-right{
+    display:flex; align-items:center; flex-wrap:wrap;
+    justify-content:flex-end; gap:14px 16px;
+  }
 </style>
 </head>
 <body>
@@ -282,24 +312,27 @@
 
   <div class="masthead">
     <div>
-      <p class="eyebrow">Underground Labyrinth: The Grand Deep</p>
-      <h1><span data-i18n="title">地底迷宮地下深淵</span>
-        <small data-i18n="subtitle">依樓層期望消耗量與四分支機率權重,逐層疊代推算角色存活分布</small>
-      </h1>
+      <!--<p class="eyebrow">Underground Labyrinth: The Grand Deep</p>-->
+      <h1><span data-i18n="title">地底迷宮地下深淵</span></h1>
     </div>
-    <div class="refno">
-      <span data-i18n-html="refnoLine1">門檻貓數 <b>10</b> ／ 最深樓層 <b>100</b></span><br>
-      <span data-i18n-html="refnoLine2">權重分佈 <b>+2 · +1 · 0 · −1</b></span>
-    </div>
-    <div class="lang-switch" id="langSwitch">
-      <button class="lang-btn" id="langBtn" type="button">
-        <span id="langCurrent">TW</span>
-        <span class="caret">▾</span>
-      </button>
-      <div class="lang-menu" id="langMenu">
-        <button class="lang-option" data-cc="tw">中文</button>
-        <button class="lang-option" data-cc="ja">日本語</button>
-        <button class="lang-option" data-cc="en">English</button>
+    <div class="masthead-right">
+      <div class="refno">
+        <span data-i18n-html="refnoLine1">門檻貓數 <b>10</b> ／ 最深樓層 <b>100</b></span><br>
+        <span data-i18n-html="refnoLine2">權重分佈 <b>+2 · +1 · 0 · −1</b></span>
+      </div>
+      <div class="nav-actions">
+        <div class="lang-switch" id="langSwitch">
+          <button class="nav-btn lang-btn" id="langBtn" type="button">
+            <span id="langCurrent">TW</span>
+            <span class="caret">▾</span>
+          </button>
+          <div class="lang-menu" id="langMenu">
+            <button class="lang-option" data-cc="tw">中文</button>
+            <button class="lang-option" data-cc="ja">日本語</button>
+            <button class="lang-option" data-cc="en">English</button>
+          </div>
+        </div>
+        <a href="index.html" class="nav-btn home-btn">Home</a>
       </div>
     </div>
   </div>

@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<html lang=ja>
+
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1">
+    <title>JAR Battle Cats Database</title>
+    <link rel=icon href=static/favicon.ico>
+    <link rel=stylesheet href=static/css/database/style.css>
+    <link rel=stylesheet href=static/css/database/origin.css>
+    <link rel=stylesheet href=static/css/home/style_a.css>
+    <link rel=stylesheet href=static/css/database/map/pagination.css>
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css>
+    <meta name=format-detection content="telephone=no">
+    <script src=https://code.jquery.com/jquery-3.7.1.min.js></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script>
+    <script src=static/js/home/ga.js></script>
+    <meta name=color-scheme content="dark light">
+    <meta name=theme-color content>
+    <link rel=stylesheet href=static/dark-mode-toggle/dark.css media="(prefers-color-scheme: dark)">
+    <link rel=stylesheet href=static/dark-mode-toggle/light.css media="(prefers-color-scheme: light)">
+    <link rel=stylesheet href=static/dark-mode-toggle/common.css>
+    <link rel=stylesheet href=static/dark-mode-toggle/slider.css>
+    <script type=module src=static/dark-mode-toggle/dark-mode-toggle-playground.js></script>
+    <script type=module src=static/dark-mode-toggle/dark-mode-toggle.js></script>
+    <script type=module src=static/js/map/labyrinth_quick.js></script>
+    <style>
+        /* ── 沿用 map_search.html 的 filter-section 外觀 ── */
+        .filter-section {
+            border: 1px solid rgba(128, 128, 128, 0.25);
+            border-radius: 8px;
+            margin-bottom: 6px;
+            overflow: hidden;
+        }
+
+        .filter-section-header {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 7px 10px;
+            cursor: pointer;
+            user-select: none;
+            font-weight: 600;
+            font-size: .88rem;
+            background: rgba(128, 128, 128, 0.07);
+        }
+
+        .filter-section-body {
+            padding: 8px 10px 10px;
+        }
+
+        #stage0_block {
+            font-size: .88rem;
+        }
+
+        .labyrinth-hint {
+            font-size: .8rem;
+            opacity: .7;
+            margin: 2px 0 10px;
+        }
+
+        /* ── 樓層分類 chip ── */
+        .floor-group-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 2px 0;
+        }
+
+        .floor-chip {
+            font-size: .84rem;
+            padding: 5px 14px;
+            border-radius: 16px;
+            border: 1px solid rgba(128, 128, 128, 0.4);
+            background: transparent;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background .15s, border-color .15s, color .15s;
+        }
+
+        .floor-chip:hover {
+            background: rgba(35, 120, 195, .12);
+        }
+
+        .floor-chip-active {
+            background: #2378c3;
+            border-color: #2378c3;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .floor-chip[data-key="all"] {
+            border-style: dashed;
+        }
+
+        /* ── 結果區 ── */
+        #labyrinth_result_count {
+            font-size: .8rem;
+            opacity: .75;
+            margin: 10px 0 6px;
+        }
+
+        /* ── 表格：左側文字（第幾組 / 小關卡編號）、右側敵人 icon，一組一列 ── */
+        .labyrinth-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid rgba(128, 128, 128, 0.55);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .labyrinth-table td {
+            border-bottom: 1px solid rgba(128, 128, 128, 0.45);
+            border-right: 1px solid rgba(128, 128, 128, 0.45);
+        }
+
+        .labyrinth-table td:last-child {
+            border-right: none;
+        }
+
+        .labyrinth-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .labyrinth-row:nth-child(even) {
+            background: rgba(128, 128, 128, 0.045);
+        }
+
+        .labyrinth-row-label {
+            vertical-align: middle;
+            padding: 8px 10px;
+            font-size: .85rem;
+            font-weight: 600;
+            white-space: nowrap;
+            width: 1%;
+        }
+
+        .labyrinth-row-link {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .labyrinth-row-link:hover {
+            color: #2378c3;
+            text-decoration: underline;
+        }
+
+        .labyrinth-stage-id {
+            font-weight: 400;
+            opacity: .55;
+            font-size: .74rem;
+        }
+
+        .labyrinth-row-icons {
+            vertical-align: middle;
+            padding: 8px 10px;
+            width: 100%;
+        }
+
+        .labyrinth-detail-link {
+            font-size: .74rem;
+            font-weight: 400;
+            opacity: .85;
+            text-decoration: none;
+            border: 1px solid #2378c3;
+            color: #2378c3;
+            border-radius: 10px;
+            padding: 1px 9px;
+            white-space: nowrap;
+        }
+
+        .labyrinth-detail-link:hover {
+            background: rgba(35, 120, 195, .15);
+        }
+
+        .labyrinth-icon-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .labyrinth-icon-link {
+            display: inline-block;
+            line-height: 0;
+        }
+
+        .labyrinth-icon {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 6px;
+            border: 1px solid rgba(128, 128, 128, 0.25);
+            background: rgba(128, 128, 128, 0.06);
+            transition: transform .1s;
+        }
+
+        .labyrinth-icon:hover {
+            transform: scale(1.12);
+        }
+
+        /* Boss用金色外框跟其他一般敵人區隔開 */
+        .labyrinth-icon-boss {
+            border: 2px solid #d9a441;
+            box-shadow: 0 0 0 1px rgba(217, 164, 65, .35);
+        }
+
+        .labyrinth-empty {
+            font-size: .8rem;
+            opacity: .6;
+            font-style: italic;
+            padding: 6px 0;
+        }
+
+        .labyrinth-loading {
+            font-size: .82rem;
+            opacity: .65;
+            padding: 12px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <h2 id=labyrinth_title></h2>
+        <div id=stage0_block class=block>
+            <p class=labyrinth-hint id=labyrinth_hint></p>
+
+            <div class="filter-section open" id=section_floor>
+                <div class=filter-section-header>
+                    <span id=label_floor_section></span>
+                </div>
+                <div class=filter-section-body>
+                    <div id=floorGroupBar class=floor-group-bar></div>
+                </div>
+            </div>
+
+            <div id=labyrinth_result_count style="display:flex;align-items:center;gap:8px;"></div>
+            <div id=labyrinthOutput></div>
+        </div>
+        <div class=contact>
+            <ul>
+                <li id=contact1><a href=index.html rel=noopener><img src=static/img/icon/bottom_bg01.png width=18
+                            class=icon>Home</a></li>
+                <li id=contact2>　</li>
+            </ul>
+        </div>
+        <dark-mode-toggle class=slider mode=dark style=display:none;pointer-events:none;></dark-mode-toggle>
+    </article>
+</body>
+
+</html>
