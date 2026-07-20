@@ -93,11 +93,6 @@
     .gauge{order:3; height:56px; width:100%; flex-direction:row !important;}
   }
 
-  /* ===== Mobile masthead: keep nav-actions pinned to the right on its own
-     row, otherwise flex-wrap can leave it as a lone item on a line, and a
-     lone item under justify-content:space-between snaps to the LEFT edge —
-     which then makes the right-anchored .lang-menu (right:0) overflow off
-     the left side of the screen. ===== */
   @media (max-width:640px){
     .masthead{flex-direction:column; align-items:stretch;}
     .masthead-right{
@@ -297,9 +292,6 @@
   /* ---- nav actions (lang switch + home) ---- */
   .nav-actions{display:flex; align-items:center; gap:8px; flex:none;}
 
-  /* ---- masthead right group: refno + nav-actions travel together,
-     sitting on one row when there's room, wrapping as a pair only when
-     space runs out ---- */
   .masthead-right{
     display:flex; align-items:center; flex-wrap:wrap;
     justify-content:flex-end; gap:14px 16px;
