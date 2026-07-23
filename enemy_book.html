@@ -123,7 +123,6 @@
   z-index: 9;
 }
 
-/* Stat badges — styled like desc block */
 .stat-badge {
   font-size: 10px;
   padding: 3px 8px;
@@ -132,43 +131,37 @@
   background: var(--color-table-simple-th-bc, #efe3e3);
   color: var(--text-color, #000);
   white-space: nowrap;
-}
-.stat-badge b { color: var(--color-title-bc, #383838); }
-
-/* Filter buttons */
-.filter-group { display: flex; gap: 4px; margin-left: auto; flex-wrap: wrap; }
-
-.filter-btn {
-  font-size: 11px;
-  font-weight: 700;
-  padding: 3px 10px;
-  border-radius: 4px;
-  border: 1px solid var(--color-default-border, #ccc);
-  background: var(--color-button-bc, #e8e8e8);
-  color: var(--color-button, #090909);
   cursor: pointer;
+  user-select: none;
   transition: all 0.15s;
-  white-space: nowrap;
 }
-.filter-btn:hover { opacity: 0.75; }
-.filter-btn.f-active {
+.stat-badge:hover { opacity: 0.75; }
+.stat-badge b { color: var(--accent-color, #e84848); }
+
+.stat-badge.stat-active {
   background: var(--accent-color, #e84848);
   border-color: var(--accent-color, #e84848);
   color: #fff;
 }
-.filter-btn.f-active-limited {
+.stat-badge.stat-active b { color: #fff; }
+.stat-badge.stat-active-limited {
   background: var(--color-rare-salmon-bc, #ffe0c0);
   border-color: var(--color-table-border2, #d4b070);
   color: var(--text-color, #000);
 }
-.filter-btn.f-active-collab {
+.stat-badge.stat-active-collab {
   background: var(--color-darkeye-bc, #eed8f8);
   border-color: var(--color-darkeye-bc, #eed8f8);
   color: var(--text-color, #000);
 }
+.stat-badge.stat-active-overseas {
+  background: #cfe3f7;
+  border-color: #6fa8dc;
+  color: var(--text-color, #000);
+}
 
 /* Search */
-.search-wrap { position: relative; }
+.search-wrap { position: relative; margin-left: auto; }
 .search-wrap input {
   font-size: 12px;
   padding: 3px 8px 3px 26px;
@@ -189,7 +182,6 @@
   pointer-events: none;
 }
 
-/* Main article wrapper */
 #eb-main {
   text-align: left;
   margin: 0 auto;
@@ -198,29 +190,6 @@
 }
 @media only screen and (min-width: 750px) { #eb-main { max-width: 740px; } }
 
-/* Legend */
-.eb-legend {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-  padding: 8px 10px 6px;
-  font-size: 10px;
-  color: var(--text-color, #000);
-  border-bottom: 1px solid var(--color-default-border, #ccc);
-  background: var(--color-desc-bc, #fff);
-}
-.legend-item { display: flex; align-items: center; gap: 4px; }
-.legend-dot {
-  width: 10px; height: 10px;
-  border-radius: 2px;
-  flex-shrink: 0;
-  border: 1px solid var(--color-default-border, #ccc);
-}
-.dot-normal  { background: var(--color-article-bc, #fff); }
-.dot-limited { background: var(--color-rare-salmon-bc, #ffe0c0); border-color: var(--color-table-border2, #d4b070); }
-.dot-collab  { background: var(--color-darkeye-bc, #eed8f8); border-color: #b080d0; }
-
-/* Grid block */
 #eb-grid-wrap {
   padding: 8px 8px 40px;
 }
@@ -234,7 +203,6 @@
   background: var(--color-default-border, #e2e2e2);
 }
 
-/* Enemy cards — flat hairline table cells, not individually boxed */
 .enemy-card {
   position: relative;
   background: var(--color-article-bc, #fff);
@@ -326,7 +294,6 @@
 
 @media (max-width: 600px) {
   #eb-controls { gap: 4px; }
-  .filter-group { margin-left: 0; }
   .eb-grid { grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); gap: 3px; }
   #eb-header { flex-wrap: wrap; }
   .lang-switcher { padding-bottom: 4px; }
@@ -357,28 +324,15 @@
 
   <!-- Controls -->
   <div id="eb-controls">
-    <div id="statAll"    class="stat-badge">-</div>
-    <div id="statNorm"   class="stat-badge">-</div>
-    <div id="statLim"    class="stat-badge">-</div>
-    <div id="statCollab" class="stat-badge">-</div>
-
-    <div class="filter-group">
-      <button class="filter-btn f-active"  data-filter="all">-</button>
-      <button class="filter-btn"           data-filter="normal">-</button>
-      <button class="filter-btn"           data-filter="limited">-</button>
-      <button class="filter-btn"           data-filter="collab">-</button>
-    </div>
+    <div id="statAll"    class="stat-badge stat-active" data-filter="all">-</div>
+    <div id="statNorm"   class="stat-badge" data-filter="normal">-</div>
+    <div id="statLim"    class="stat-badge" data-filter="limited">-</div>
+    <div id="statCollab" class="stat-badge" data-filter="collab">-</div>
+    <div id="statOverseas" class="stat-badge" data-filter="overseas">-</div>
 
     <div class="search-wrap">
       <input type="text" id="searchInput" placeholder="-" maxlength="6">
     </div>
-  </div>
-
-  <!-- Legend -->
-  <div class="eb-legend">
-    <div class="legend-item"><div class="legend-dot dot-normal"></div><span id="leg-normal">-</span></div>
-    <div class="legend-item"><div class="legend-dot dot-limited"></div><span id="leg-limited">-</span></div>
-    <div class="legend-item"><div class="legend-dot dot-collab"></div><span id="leg-collab">-</span></div>
   </div>
 
   <!-- Grid -->
