@@ -176,35 +176,43 @@
         }
 
         .labyrinth-icon-grid {
-            display: flex;
+            display: inline-flex;
             flex-wrap: wrap;
             align-items: center;
-            gap: 6px;
+            border: 1px solid rgba(128, 128, 128, 0.35);
+            border-radius: 6px;
+            overflow: hidden;
+            background: rgba(128, 128, 128, 0.06);
         }
 
         .labyrinth-icon-link {
             display: inline-block;
             line-height: 0;
+            border-right: 1px solid rgba(128, 128, 128, 0.25);
+        }
+
+        .labyrinth-icon-link:last-child {
+            border-right: none;
         }
 
         .labyrinth-icon {
             width: 40px;
             height: 40px;
             object-fit: contain;
-            border-radius: 6px;
-            border: 1px solid rgba(128, 128, 128, 0.25);
-            background: rgba(128, 128, 128, 0.06);
+            display: block;
+            border: none;
+            border-radius: 0;
+            background: transparent;
             transition: transform .1s;
         }
 
         .labyrinth-icon:hover {
-            transform: scale(1.12);
+            transform: scale(1.06);
         }
 
-        /* Boss用金色外框跟其他一般敵人區隔開 */
+        /* Boss用金色內框跟其他一般敵人區隔開（改用 inset，不佔額外空間） */
         .labyrinth-icon-boss {
-            border: 2px solid #d9a441;
-            box-shadow: 0 0 0 1px rgba(217, 164, 65, .35);
+            box-shadow: inset 0 0 0 2px #d9a441;
         }
 
         .labyrinth-empty {

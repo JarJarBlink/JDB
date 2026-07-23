@@ -53,25 +53,59 @@
   padding-bottom: 8px;
   align-self: flex-end;
 }
-.lang-btn {
+.lang-dropdown { position: relative; }
+.lang-select {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 3px 9px;
+  padding: 4px 22px 4px 12px;
+  min-width: 52px;
+  text-align: center;
   border-radius: 4px;
   border: 1px solid var(--color-default-border, #ccc);
-  background: var(--color-button-bc, #e8e8e8);
+  background-color: var(--color-button-bc, #e8e8e8);
   color: var(--color-button, #090909);
   cursor: pointer;
-  transition: all 0.15s;
+  transition: opacity 0.15s;
   text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'><path d='M0 0l5 6 5-6z' fill='%23090909'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 9px 6px;
 }
-.lang-btn:hover { opacity: 0.8; }
-.lang-btn.active {
+.lang-select:hover { opacity: 0.8; }
+.lang-select:focus { outline: none; border-color: var(--accent-color, #e84848); }
+
+.lang-options {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+  background: var(--color-button-bc, #fff);
+  border: 1px solid var(--color-default-border, #ccc);
+  border-radius: 4px;
+  box-shadow: var(--shadow-color, rgba(0,0,0,0.2)) 0 4px 12px;
+  display: none;
+  z-index: 20;
+  overflow: hidden;
+}
+.lang-options.open { display: block; }
+.lang-options li {
+  padding: 6px 0;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-button, #090909);
+  cursor: pointer;
+}
+.lang-options li:hover { opacity: 0.75; }
+.lang-options li.active {
   background: var(--accent-color, #e84848);
-  border-color: var(--accent-color, #e84848);
   color: #fff;
 }
 
@@ -194,35 +228,40 @@
 .eb-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(58px, 1fr));
-  gap: 5px;
+  gap: 0;
+  border-top: 0.5px solid var(--color-default-border, #e2e2e2);
+  border-left: 0.5px solid var(--color-default-border, #e2e2e2);
+  background: var(--color-default-border, #e2e2e2);
 }
 
-/* Enemy cards */
+/* Enemy cards — flat hairline table cells, not individually boxed */
 .enemy-card {
   position: relative;
   background: var(--color-article-bc, #fff);
-  border: 1px solid var(--color-default-border, #ccc);
-  border-radius: 4px;
-  padding: 5px 3px 3px;
+  border-right: 0.5px solid var(--color-default-border, #e2e2e2);
+  border-bottom: 0.5px solid var(--color-default-border, #e2e2e2);
+  padding: 6px 3px 4px;
   text-align: center;
   cursor: pointer;
-  transition: transform 0.12s, border-color 0.12s, box-shadow 0.12s;
+  transition: background-color 0.12s;
   overflow: hidden;
   animation: eb-fadeUp 0.22s ease both;
 }
 .enemy-card:hover {
-  transform: translateY(-2px) scale(1.04);
-  border-color: var(--color-title-bc, #383838);
-  box-shadow: var(--shadow-color, rgba(0,0,0,0.25)) 0 3px 10px;
+  background: var(--color-table-simple-th-bc, #f2f2f2);
   z-index: 2;
 }
 .enemy-card.limited {
+  background: color-mix(in srgb, var(--color-rare-salmon-bc, #ffe0c0) 40%, var(--color-article-bc, #fff));
+}
+.enemy-card.limited:hover {
   background: var(--color-rare-salmon-bc, #ffe0c0);
-  border-color: var(--color-table-border2, #d4b070);
 }
 .enemy-card.collab {
+  background: color-mix(in srgb, var(--color-darkeye-bc, #eed8f8) 40%, var(--color-article-bc, #fff));
+}
+.enemy-card.collab:hover {
   background: var(--color-darkeye-bc, #eed8f8);
-  border-color: #b080d0;
 }
 .enemy-card a { display: block; text-decoration: none; color: inherit; }
 .enemy-card img {
@@ -305,9 +344,14 @@
       <h2 id="txt-title">敵キャラ<span id="txt-title2">図鑑</span></h2>
     </div>
     <div class="lang-switcher">
-      <a class="lang-btn" data-cc="ja" href="#">JA</a>
-      <a class="lang-btn" data-cc="tw" href="#">TW</a>
-      <a class="lang-btn" data-cc="en" href="#">EN</a>
+      <div class="lang-dropdown" id="langDropdown">
+        <button type="button" class="lang-select" id="langBtn" aria-haspopup="listbox" aria-expanded="false">JA</button>
+        <ul class="lang-options" id="langOptions" role="listbox">
+          <li role="option" data-cc="ja">JA</li>
+          <li role="option" data-cc="tw">TW</li>
+          <li role="option" data-cc="en">EN</li>
+        </ul>
+      </div>
     </div>
   </div>
 
