@@ -24,9 +24,9 @@
     themeColor.content = getComputedStyle(body).color;
     colorScheme.content = e.detail.colorScheme;
     if (e.detail.colorScheme === 'dark') {
-    	$('html').addClass('dark')
+    	document.documentElement.classList.add('dark')
     } else {
-    	$('html').removeClass('dark')
+    	document.documentElement.classList.remove('dark')
     }
     //icon.href = e.detail.colorScheme === 'dark' ? 'dark-mode-toggle/moon.png' : 'dark-mode-toggle/sun.png';
   });

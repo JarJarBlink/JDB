@@ -188,9 +188,9 @@ export class DarkModeToggle extends HTMLElement {
     }
     
     if (this.mode === DARK) {
-    	$('html').addClass('dark')
+    	document.documentElement.classList.add('dark')
     } else {
-    	$('html').removeClass('dark')
+    	document.documentElement.classList.remove('dark')
     }
 
     // Default to toggle appearance.
