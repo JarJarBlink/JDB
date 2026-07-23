@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1">
+<title>JAR Battle Cats Database</title>
+<link rel="icon" href="static/favicon.ico">
+<link rel="stylesheet" href='static/css/database/style.css'>
+<link rel="stylesheet" href='static/css/database/origin.css'>
+<meta name="format-detection" content="telephone=no">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<meta name="color-scheme" content="dark light"/>
+<meta name="theme-color" content=""/>
+<link rel="stylesheet" href="static/dark-mode-toggle/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/common.css"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/slider.css"/>
+<script type="module" src="static/dark-mode-toggle/dark-mode-toggle-playground.js"></script>
+<script type="module" src="static/dark-mode-toggle/dark-mode-toggle.js"></script>
+<script src="static/js/t_unit/tfavorites.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script>
+<script type="module" src="static/js/home/ga.js" defer></script>
+<style>
+/* ── 頁面主體 ── */
+.fav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.fav-header h2 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+/* ── 工具列 ── */
+.fav-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.fav-lang-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.fav-count {
+  font-size: 13px;
+  color: var(--text-color);
+  opacity: 0.65;
+}
+.btn-fav-clear-all {
+  background: transparent;
+  border: 1px solid #c0392b;
+  color: #c0392b;
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.btn-fav-clear-all:hover {
+  background: #c0392b;
+  color: #fff;
+}
+.btn-fav-search {
+  background: transparent;
+  border: 1px solid var(--color-table-default-border);
+  color: var(--text-color);
+  border-radius: 16px;
+  padding: 4px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s;
+  display: inline-block;
+}
+.btn-fav-search:hover {
+  background: var(--color-title-bc);
+}
+
+/* ── 排序 ── */
+.fav-sort-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.fav-sort-row select {
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  border: 1px solid var(--color-table-default-border);
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+/* ── 空狀態 ── */
+.fav-empty {
+  text-align: center;
+  padding: 60px 20px;
+  opacity: 0.5;
+}
+.fav-empty-icon { font-size: 3rem; }
+.fav-empty-text { margin-top: 8px; font-size: 14px; }
+
+/* ── 卡片網格 ── */
+.fav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 10px;
+}
+
+/* ── 單張卡片 ── */
+.fav-card {
+  position: relative;
+  background: var(--color-table-linkpage-table_header-bc);
+  border: 1px solid var(--color-table-default-border);
+  border-radius: 10px;
+  padding: 10px 8px 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.12s, box-shadow 0.12s;
+  text-decoration: none;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.fav-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
+}
+.fav-card__remove {
+  position: absolute;
+  top: 4px;
+  right: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: #f5c518;
+  line-height: 1;
+  padding: 0;
+  opacity: 0.7;
+  transition: opacity 0.12s, transform 0.1s;
+}
+.fav-card__remove:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+.fav-card__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 6px;
+  object-fit: cover;
+  display: block;
+}
+.fav-card__icon--placeholder {
+  width: 56px;
+  height: 56px;
+  border-radius: 6px;
+  background: rgba(128,128,128,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+.fav-card__id {
+  font-size: 10px;
+  opacity: 0.55;
+  line-height: 1;
+}
+.fav-card__name {
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 1.3;
+  word-break: break-all;
+  max-width: 100%;
+  /* 最多 2 行 */
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ── 分組標題 ── */
+.fav-group-title {
+  font-size: 11px;
+  font-weight: bold;
+  opacity: 0.55;
+  letter-spacing: 0.05em;
+  margin: 14px 0 6px;
+  padding-left: 2px;
+  border-left: 3px solid #f5c518;
+  padding-left: 6px;
+}
+
+/* ── 手機調整 ── */
+@media (max-width: 400px) {
+  .fav-grid {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 8px;
+  }
+}
+</style>
+</head>
+<body>
+<article>
+
+<div class="fav-header">
+  <h2 id="page-title">⭐ 我的最愛（敵人）</h2>
+</div>
+<div class="block">
+  <div class="fav-toolbar">
+    <a id="btn-goto-search" href="tunit_search.html?cc=tw" class="btn-fav-search">← 敵方一覽</a>
+    <span class="fav-count" id="fav-count"></span>
+    <button class="btn-fav-clear-all" id="btn-clear-all" style="display:none;">🗑 全部清除</button>
+  </div>
+
+  <div class="fav-sort-row">
+    <label id="sort-label">排序：</label>
+    <select id="fav-sort">
+      <option value="addedAt-desc" id="sort-new">最新加入</option>
+      <option value="addedAt-asc"  id="sort-old">最早加入</option>
+      <option value="id-asc"       id="sort-id-asc">ID 升序</option>
+      <option value="id-desc"      id="sort-id-desc">ID 降序</option>
+      <option value="name-asc"     id="sort-name">名稱排序</option>
+    </select>
+  </div>
+
+  <!-- 最愛內容區 -->
+  <div id="fav-content"></div>
+
+  <div style="height:8rem;"></div>
+  <div class="contact">
+    <ul>
+      <li id="contact1"><a href='index.html' rel="noopener"><img src="static/img/icon/bottom_bg01.png" width="18" class="icon"/>Home</a></li>
+      <li id="contact2">　</li>
+    </ul>
+  </div>
+  <dark-mode-toggle class="slider" mode="dark" style="display: none; pointer-events: none;"></dark-mode-toggle>
+</div>
+
+</article>
+</body>
+</html>
