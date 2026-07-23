@@ -117,10 +117,17 @@ input[type="number"], .input-box {
 
 /*********************************************************/
 /* 讓圖示容器「自帶背光」 目的:增強對比特別是dark enemies情況*/
+/* old
 img[src*="enemy_icon"] {
   filter:
   drop-shadow(-2px -2px 2px rgba(224, 228, 232, 1))
   drop-shadow(-1px -1px 1px rgba(255, 255, 255, 0.4))
   drop-shadow( 2px  2px 3px rgba(224, 228, 232,   1.0))
   drop-shadow( 1px  1px 1px rgba(255,   255,   255,   0.4));
+}*/
+
+img[src*="enemy_icon"] {
+  filter:
+    drop-shadow(0 0 1.5px rgba(255, 255, 255, 0.7))
+    drop-shadow(0 0 4px   rgba(224, 228, 232, 0.45));
 }
