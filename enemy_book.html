@@ -195,24 +195,21 @@
 }
 
 .eb-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(58px, 1fr));
-  gap: 0;
-  border-top: 0.5px solid var(--color-default-border, #e2e2e2);
-  border-left: 0.5px solid var(--color-default-border, #e2e2e2);
-  background: var(--color-default-border, #e2e2e2);
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
 }
 
 .enemy-card {
   position: relative;
   background: var(--color-article-bc, #fff);
-  border-right: 0.5px solid var(--color-default-border, #e2e2e2);
-  border-bottom: 0.5px solid var(--color-default-border, #e2e2e2);
+  border: 1px solid var(--color-default-border, #e2e2e2);
   padding: 6px 3px 4px;
   text-align: center;
   cursor: pointer;
   transition: background-color 0.12s;
   overflow: hidden;
+  box-sizing: border-box;
   animation: eb-fadeUp 0.22s ease both;
 }
 .enemy-card:hover {
@@ -233,7 +230,8 @@
 }
 .enemy-card a { display: block; text-decoration: none; color: inherit; }
 .enemy-card img {
-  width: 36px; height: 36px;
+  width: 70%;
+  aspect-ratio: 1 / 1;
   image-rendering: pixelated;
   display: block;
   margin: 0 auto 2px;
@@ -265,12 +263,20 @@
 
 /* Empty state */
 .empty-state {
-  grid-column: 1 / -1;
-  padding: 36px 0;
   text-align: center;
   color: var(--text-color, #333);
   opacity: 0.45;
   font-size: 12px;
+  padding: 36px 0;
+  border: 1px solid var(--color-default-border, #e2e2e2);
+}
+
+/* 補滿最後一列用的空白格，維持邊框但無互動效果 */
+.enemy-card-empty {
+  background: var(--color-article-bc, #fff);
+  border: 1px solid var(--color-default-border, #e2e2e2);
+  cursor: default;
+  pointer-events: none;
 }
 
 /* Scroll-top button */
@@ -294,7 +300,6 @@
 
 @media (max-width: 600px) {
   #eb-controls { gap: 4px; }
-  .eb-grid { grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); gap: 3px; }
   #eb-header { flex-wrap: wrap; }
   .lang-switcher { padding-bottom: 4px; }
 }
@@ -337,7 +342,7 @@
 
   <!-- Grid -->
   <div id="eb-grid-wrap">
-    <div id="enemyGrid" class="eb-grid"></div>
+    <table id="enemyGrid" class="eb-grid"><tbody></tbody></table>
   </div>
 
   <!-- Contact -->
