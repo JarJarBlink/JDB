@@ -931,7 +931,7 @@
 9502|[Invasion Stage] Limited event mission<br>Clear Z-Onel Rises!
 9503|[Invasion Stage] Limited event mission<br>Clear The Old Queen
 9504|[Invasion Stage] Limited event mission<br>Clear Papuu's Paradise
-9505|[Invasion Stage] Clear The Tortoise and the Baby<br>Clear all stages and EX stages to complete
+9505|[Invasion Stage] Clear The Mask and the Baby<br>Clear all stages and EX stages to complete
 9506|[Invasion Stage] Clear The Prince and the Revenant<br>Clear all stages and EX stages to complete
 9507|[Invasion Stage] Clear The Queen and the Saint<br>Clear all stages and EX stages to complete
 9508|Summer Homework ④: Finish a perfect report<br> Clear %d Summer Break Cats stages (%d/%d Cleared)
@@ -978,7 +978,7 @@
 9542|Road to Unification ⑤：<br>Clear "Road to Unification Pt. 2", stage 1!|Road to Unification ⑤ Missions added<br>to the Special Missions!
 9543|Road to Unification ⑥：<br>Clear "Final Battle! The Rebellious King" stage 1!|Road to Unification ⑥ Missions added<br>to the Special Missions!
 72|Road to Unification Mission<br>Clear Empire of Cats Ch. 1 during the event to complete.
-9544|Super Tough Mission 1: Clear Stage 6 of <br>"Depths of My Heart" using only units costing 1000¢ or less!|Super Tough Missions 1 & 2<br>added to the Special Missions!
+9544|Super Tough Mission 1: Clear Stage 6 of <br>"Depths of My Heart" using only units costing 1000¢ or more!|Super Tough Missions 1 & 2<br>added to the Special Missions!
 9545|Super Tough Mission 2: Clear Stage 6 of<br>"The Gelatin Mines" using 9+ Normal units!|
 9546|Super Tough Mission 3: Clear Stage 6 of<br>"Ancient Forest Labyrinth" using 8+ Super Rare units!|Super Tough Missions 3 & 4<br>added to the Special Missions!
 9547|Super Tough Mission 4: Clear Stage 6 of<br>"Behemoth's Peak" using only units of 2000¢ or less!|
@@ -1163,6 +1163,54 @@
 9721|[June Bride of the Devil] Clear %d "#03 ??? the 13th"<br>stage(s) during June Bride event. (%d of %d)
 9722|[June Bride of the Devil] Clear %d "#04 Yowling Village"<br>stage(s) during June Bride event. (%d of %d)|June Bride of the Devil missions added<br>to the Special Missions!
 9723|[June Bride of the Devil] Clear %d "#04 Yowling Village"<br>stage(s) during June Bride event. (%d of %d)
+9724||
+9725|
+9726|
+9727|
+9728|
+9729||
+9730||
+9731|Resort Tycoon ①: Project Crew ①<br>Get 3 characters from the Event Capsules!|Resort Tycoon ① has been added<br>to your Special Missions!
+9732|Resort Tycoon ①: Project Crew ②<br>Get 5 characters from the Event Capsules!
+9733|Resort Tycoon ①: Project Crew ③<br>Get 7 characters from the Event Capsules!
+9734|Resort Tycoon ①: Value Assessment ①<br>Clear "Billionaire's Bidding" %d times
+9735|Resort Tycoon ①: Value Assessment ②<br>Clear "Billionaire's Bidding" %d times (%d/%d)
+9736|Paradise, Wk. 1 ①: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9737|Paradise, Wk. 1 ②: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9738|Paradise, Wk. 1 ③: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9739|Resort Tycoon ②: Celeb Life ①<br>Clear "Extravagant Resort Land" %d times|Resort Tycoon ② has been added<br>to your Special Missions!
+9740|Resort Tycoon ②: Celeb Life ②<br>Clear "Extravagant Resort Land" %d times (%d/%d)
+9741|Resort Tycoon ②: Fateful Decision ①<br>Clear "Jackpot Junction" %d times
+9742|Resort Tycoon ②: Fateful Decision ②<br>Clear "Jackpot Junction" %d times (%d/%d)
+9743|Paradise, Wk. 2 ①: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9744|Paradise, Wk. 2 ②: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9745|Paradise, Wk. 2 ③: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9746|Resort Tycoon ③: Blissful Healing ①<br>Clear "Sauna of Paradise" %d times|Resort Tycoon ③ has been added<br>to your Special Missions!
+9747|Resort Tycoon ③: Blissful Healing ②<br>Clear "Sauna of Paradise" %d times (%d/%d)
+9748|Paradise, Wk. 3 ①: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9749|Paradise, Wk. 3 ②: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9750|Paradise, Wk. 3 ③: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9751|Science Project: Insectoids<br>Complete all missions up to ① - ④!|Science Project has been added<br>to your Special Missions!
+9752|Science Project: Insectoids ①<br>Get 1 Kabuto Cat from the Event Capsules!
+9753|Science Project: Insectoids ②<br>Get 1 Kuwagata Cat from the Event Capsules!
+9754|Science Project: Insectoids ③<br>Get 1 Ancient Egg: N202 from the Event Capsules!
+9755|Science Project: Insectoids ④<br>Get 1 Ancient Egg: N208 from the Event Capsules!
+9756|Summer Returns, Wk. 1 ①: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9757|Summer Returns, Wk. 1 ② : Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9758|Summer Returns, Wk. 1 ③: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9759|Summer Returns, Wk. 1 ④: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9760|Summer Returns, Wk. 2 ①: Clear %d stages<br>Clears from any stage will count! (%d/%d)|Summer Returns, Wk. 2 has been added<br>to your Special Missions!
+9761|Summer Returns, Wk. 2 ②: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9762|Summer Returns, Wk. 2 ③: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9763|Summer Returns, Wk. 2 ④: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9764|Extra Credit: Clear "The Mask and the Baby"<br>* Must clear the Continuation Stage.
+9765|Extra Credit: Clear "The Prince and the Revenant"<br>* Must clear the Continuation Stage.
+9766|Summer Returns, Wk. 3 ①: Clear %d stages<br>Clears from any stage will count! (%d/%d)|Summer Returns, Wk. 3 has been added<br>to your Special Missions!
+9767|Summer Returns, Wk. 3 ②: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9768|Summer Returns, Wk. 3 ③: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9769|Summer Returns, Wk. 3 ④: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9770|Extra Credit: Clear "The Queen and the Saint"<br>* Must clear the Continuation Stage.
+9771|Extra Credit: Clear "Bottom of the Swamp"<br>* Must clear with 10 Special Cats.
 9668|【Progression】Draw %d Cat Capsules! (%d of %d)<br>Get a free Cat Ticket each day.|Progression Missions added<br>to the Special Missions!
 9669|【Progression】<br>Clear any %d Battle Cats stage(s). (%d of %d)
 9670|【Progression】Send Gamatoto on %d successful expeditions!<br>(Complete 3 full expeditions to any Gamatoto area: %d of %d)

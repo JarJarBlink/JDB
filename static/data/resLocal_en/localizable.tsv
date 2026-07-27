@@ -1194,7 +1194,7 @@ fragment_bonus	Get a Platinum Shard gift<br>with each ${gatyaNumber}-Capsule Dra
 applang	en
 equipment_error	This Talent can only be used if Unit<br>already has the "%@: %@" ability.
 scratch_message	You got %s x%d
-scratch_SNS_000	I won %d Cat Food from the #BattleCatsScratcher!<br>Try once each week for a chance at an awesome prize!<br><br>#TheBattleCats #BattleCats #CatScratcher
+scratch_SNS_000	I won %d Cat Food from the #BattleCatsScratcher!<br>Try once each week for a chance at an awesome prize!<br><br>#TheBattleCats #BattleCats #CatScratcher #CatsOfSummer2026
 item_pack_name_39	Party Pack
 potential_skill_name57	Target Aku
 assault_skip	【Feeling a bit better...】<br><flash>One clear chance recovered!</flash><br>Returning to the Stage Select screen.<br><color=255,255,0>Clear chances available: 1/${countNum} ${assaultWord}</color>
@@ -1291,7 +1291,7 @@ scheme_item_param_50	nekohopper_en4
 scheme_popup_50	Go! Go! Pogo Cat<br>Collab Mission Reward 4<br><flash>%@%@s！</flash>
 scheme_item_param_51	nekohopper_en5
 scheme_popup_51	Go! Go! Pogo Cat<br>Collab Mission Reward 5<br><flash>%@%@s！</flash>
-boost_message	<color=255,0,255>Speed Up</color><br><color=0,0,0>Increase battle speed at anytime!<br>Spend a Speed Up item for 2x speed!<br>Tap icon during battle to toggle<br>between OFF, 2x and 3x speed.</color>
+boost_message	<color=255,0,255>Speed Up</color><br><color=0,0,0>Boost the battle speed at anytime!<br>Spend a Speed Up item for 3x speed!<br>Tap icon during battle to toggle<br>between OFF, 2x and 3x speed.</color>
 unusable_info	${unusableNum} Cats have been caught in traps!<br>Trapped units cannot be deployed in future battles.
 change_info	${unusableNum} Cats have been caught in traps!<br><color=255,255,0>Choose ${usableNum} trapped Cat unit(s)<br>to rescue!</color>
 change_limit	<color=255,255,0>No further Cats can be rescued.</color>
@@ -1590,7 +1590,7 @@ filter_equipment_tutorial	Filter display of Units with<br>equipped Talent Orbs b
 filter_option_description5	<color=0,0,0>Show Cats that will have<br>selected Target/Effect available<br>after being evolved/powered up.</color>
 ScatCPU_ad_confirm	Stage Clear XP Boost Chance!<br>Get rewards of <flash>${xp} XP ×2</flash><br>from this stage clear by watching an ad?
 ScatCPU_ad_result	Stage Clear XP <flash>UP!!!</flash><br><flash>${xp}</flash> XP
-scratch_SNS_005	
+scratch_SNS_005	I won %d Cat Food from the #BattleCatsScratcher!<br>Try once each week for a chance at an awesome prize!<br><br>#TheBattleCats #BattleCats #CatScratcher #CatsOfSummer2026
 slot_SNS_004	I got %d Cat Food from the Wildcat Slots in #TheBattleCats!<br><br>#BattleCats #11YearsOfBattleCats
 SpecialRuleExplanation012	【Limited Stock】<br>Only 50 Units total can be deployed<br>over the course of this battle, but<br>all Units have the same recovery time.
 SpecialRuleName012	Limited Stock
@@ -1636,7 +1636,7 @@ backstage_clear	<color=255,255,0>Units equipped in this team cannot<br>be used o
 backstage_clear_limit	<flash>All Abyssal Stages cleared!</flash><br>※Max clear count has been reached.<br>Future units on teams will not become<br>exhausted unless the clear count is reset.
 slot_autoset_confirm	Would you like to overwrite your<br>current team with a new one?
 clear_count_tutorial	<color=255,255,0>Abyssal Stage Clear Rewards</color><br>Earn rewards based on the number of times this<br>stage is cleared! Tap the button at the bottom-left<br>of the Stage Select screen for more info.
-clear_count_reward	${clearNum} times
+clear_count_reward	${clearNum}x
 clear_count_reward_title	Clear Rewards
 clear_count_reward_title2	Clear
 potential_skill_name68	Counter-Surge
@@ -1670,8 +1670,13 @@ SpecialRuleName018	Inflation: Uber Rare
 speedup_message	<color=255,0,255>Speed Up</color><br><color=0,0,0>Doubles battle speed!<br>Tap icon during battle to toggle<br>between OFF and 2x speed.</color>
 tutorial_popup0	You cannot challenge this stage yet!<br>Clear "Mongolia" to continue!
 tutorial_popup1	You cannot challenge this stage yet!<br>Clear "China" to continue!
-tutorial_popup2	The Speed Up item has been selected.<br>With Speed Up selected, you can toggle<br>between OFF, 2x and 3x speed during battle.</color>
+tutorial_popup2	<color=255,255,0>How to Use Items</color><br>Wanna use your hard-earned battle items?<br>Just tap the item icon below!<br>* Can only be selected before battle.
 tutorial_popup3	Tap the Lock icon on the right to<br>keep the item selected so<br>you won't have to select it every time!
 tutorial_popup4	You don't have enough XP...
 unlock_popup_message_158	<flash>A new hero has appeared!</flash><br>Activate it at the Upgrade menu!
 unlock_popup_message_159	
+item_pack_name_92	
+SpecialRuleName020	Spend a Million
+Stage_battle00	Retreat?<br>Quit now to have your items refunded! (Within 10s)
+Stage_lock00	Not enough items.
+unlock_popup_message_160	<flash>Cat God</flash> has appeared in the Special Cats section!<br>Unlock him from the Upgrade screen!<br>* Might be your salvation in a close battle...!

@@ -1,0 +1,207 @@
+{
+  "date": "2026/7/27",
+  "sCat_id_list": [
+    "869",
+    "870_m",
+    "871_m",
+    "872"
+  ],
+  "sCat_sprite_id_list": [],
+  "sTrue_form_new_id_list": [
+    "455",
+    "507",
+    "725",
+    "870",
+    "871"
+  ],
+  "sTrue_4form_new_id_list": [
+    "417"
+  ],
+  "sNew_skill_id_list": [
+    "173",
+    "336",
+    "649"
+  ],
+  "sUnitbuy_change_list": [
+    "3",
+    "18",
+    "342",
+    "375",
+    "507",
+    "615",
+    "670_m",
+    "822"
+  ],
+  "sGatya_names_Rlist": [
+    "gatya_bnr1002.png",
+    "gatya_bnr1068.png",
+    "gatya_bnr1075.png",
+    "gatya_bnr1076.png",
+    "gatya_bnr970.png",
+    "gatya_bnr971.png"
+  ],
+  "sGatya_names_Nlist": [],
+  "sGatya_names_Elist": [
+    "gatya_e_bnr51.png",
+    "gatya_e_bnr53.png"
+  ],
+  "sCombo_id_list": [
+    "383"
+  ],
+  "sNew_stageND_list": [
+    "34032",
+    "34033"
+  ],
+  "sNew_stageS_list": [
+    "1433",
+    "1434",
+    "1435"
+  ],
+  "sNew_stageSR_list": [
+    "36024",
+    "36025"
+  ],
+  "sNew_stageC_list": [],
+  "sNew_stageCA_list": [],
+  "sNew_stageB_list": [],
+  "sNew_stageEX_list": [
+    "4081"
+  ],
+  "sNew_stageA_list": [
+    "24081"
+  ],
+  "sNew_stageV_list": [],
+  "sNew_stageR_list": [],
+  "sNew_stageH_list": [],
+  "sNew_stageG_list": [],
+  "sNew_stageT_list": [],
+  "sNew_4star_stage_list": [],
+  "sNew_3star_stage_list": [],
+  "sNew_2star_stage_list": [
+    "1380",
+    "34009",
+    "34010"
+  ],
+  "sEnemy_id_list": [
+    "785"
+  ],
+  "sEnemy_change_list": [],
+  "sNew_medal_list": [],
+  "sCastle_ids": [],
+  "sMission_id_list": [
+    933,
+    980,
+    1165,
+    1166,
+    1167,
+    1168,
+    1169,
+    1170,
+    1171,
+    1172,
+    1173,
+    1174,
+    1175,
+    1176,
+    1177,
+    1178,
+    1179,
+    1180,
+    1181,
+    1182,
+    1183,
+    1184,
+    1185,
+    1186,
+    1187,
+    1188,
+    1189,
+    1190,
+    1191,
+    1192,
+    1193,
+    1194,
+    1195,
+    1196,
+    1197,
+    1198,
+    1199,
+    1200,
+    1201,
+    1202,
+    1203,
+    1204,
+    1205,
+    1206,
+    1207,
+    1208,
+    1209,
+    1210,
+    1211,
+    1212
+  ],
+  "sRankgift_des": [
+    "UR27700\tReceive 5 Legend Catseyes.\n",
+    "UR27800\tReceive 5 Special Catseyes.\n",
+    "UR27900\tReceive 5 Rare Catseyes"
+  ],
+  "sMusic_id_list": [],
+  "sSoundEffect_ids": [
+    "191",
+    "192"
+  ],
+  "sNew_bg_list": [
+    "bg266",
+    "bg267",
+    "bg268"
+  ],
+  "combo_list": [
+    "Wilderness Wail — \"Massive Damage\" Effects Up(Sm)<br><a href=\"u000.html?cc=en&unit=763\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni763_f00.png\" width=64 title=\"763(1階)\"></a><a href=\"u000.html?cc=en&unit=659\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni659_s00.png\" width=64 title=\"659(3階)\"></a>"
+  ],
+  "mission_list": [
+    "1. (Special) [Invasion Stage] Clear The Mask and the Baby，Clear all stages and EX stages to complete <br>Reward：Catseye [Dark] +1\n<br>",
+    "2. (Special) Super Tough Mission 1: Clear Stage 6 of ，\"Depths of My Heart\" using only units costing 1000¢ or more! <br>Reward：Catseye [Legend] +3\n<br>",
+    "10. (Special) Resort Tycoon ①: Project Crew ①，Get 3 characters from the Event Capsules! <br>Reward：XP +100000\n<br>",
+    "11. (Special) Resort Tycoon ①: Project Crew ②，Get 5 characters from the Event Capsules! <br>Reward：Cat Ticket +1\n<br>",
+    "12. (Special) Resort Tycoon ①: Project Crew ③，Get 7 characters from the Event Capsules! <br>Reward：Rare Ticket +1\n<br>",
+    "13. (Special) Resort Tycoon ①: Value Assessment ①，Clear \"Billionaire's Bidding\" 1 times <br>Reward：Legendary Banknote +5\n<br>",
+    "14. (Special) Resort Tycoon ①: Value Assessment ②，Clear \"Billionaire's Bidding\" 3 times (3/3) <br>Reward：Red B. Stone +3\n<br>",
+    "15. (Special) Paradise, Wk. 1 ①: Clear 10 stages，Clears from any stage will count! (10/10) <br>Reward：Legendary Banknote +5\n<br>",
+    "16. (Special) Paradise, Wk. 1 ②: Clear 15 stages，Clears from any stage will count! (15/15) <br>Reward：Legendary Banknote +10\n<br>",
+    "17. (Special) Paradise, Wk. 1 ③: Clear 20 stages，Clears from any stage will count! (20/20) <br>Reward：Legendary Banknote +15\n<br>",
+    "18. (Special) Resort Tycoon ②: Celeb Life ①，Clear \"Extravagant Resort Land\" 1 times <br>Reward：Legendary Banknote +5\n<br>",
+    "19. (Special) Resort Tycoon ②: Celeb Life ②，Clear \"Extravagant Resort Land\" 2 times (2/2) <br>Reward：Purple B. Stone +3\n<br>",
+    "20. (Special) Resort Tycoon ②: Fateful Decision ①，Clear \"Jackpot Junction\" 1 times <br>Reward：Legendary Banknote +5\n<br>",
+    "21. (Special) Resort Tycoon ②: Fateful Decision ②，Clear \"Jackpot Junction\" 2 times (2/2) <br>Reward：Red B. Stone +3\n<br>",
+    "22. (Special) Paradise, Wk. 2 ①: Clear 10 stages，Clears from any stage will count! (10/10) <br>Reward：Legendary Banknote +5\n<br>",
+    "23. (Special) Paradise, Wk. 2 ②: Clear 15 stages，Clears from any stage will count! (15/15) <br>Reward：Legendary Banknote +10\n<br>",
+    "24. (Special) Paradise, Wk. 2 ③: Clear 20 stages，Clears from any stage will count! (20/20) <br>Reward：Legendary Banknote +15\n<br>",
+    "25. (Special) Resort Tycoon ③: Blissful Healing ①，Clear \"Sauna of Paradise\" 1 times <br>Reward：Legendary Banknote +5\n<br>",
+    "26. (Special) Resort Tycoon ③: Blissful Healing ②，Clear \"Sauna of Paradise\" 3 times (3/3) <br>Reward：Purple B. Stone +3\n<br>",
+    "27. (Special) Paradise, Wk. 3 ①: Clear 10 stages，Clears from any stage will count! (10/10) <br>Reward：Legendary Banknote +5\n<br>",
+    "28. (Special) Paradise, Wk. 3 ②: Clear 15 stages，Clears from any stage will count! (15/15) <br>Reward：Legendary Banknote +10\n<br>",
+    "29. (Special) Paradise, Wk. 3 ③: Clear 20 stages，Clears from any stage will count! (20/20) <br>Reward：Legendary Banknote +15\n<br>",
+    "30. (Special) Science Project: Insectoids，Complete all missions up to ① - ④! <br>Reward：Rare Ticket +1\n<br>",
+    "31. (Special) Science Project: Insectoids ①，Get 1 Kabuto Cat from the Event Capsules! <br>Reward：Cat Ticket +1\n<br>",
+    "32. (Special) Science Project: Insectoids ②，Get 1 Kuwagata Cat from the Event Capsules! <br>Reward：Cat Ticket +1\n<br>",
+    "33. (Special) Science Project: Insectoids ③，Get 1 Ancient Egg: N202 from the Event Capsules! <br>Reward：Cat Ticket +1\n<br>",
+    "34. (Special) Science Project: Insectoids ④，Get 1 Ancient Egg: N208 from the Event Capsules! <br>Reward：Cat Ticket +1\n<br>",
+    "35. (Special) Summer Returns, Wk. 1 ①: Clear 5 stages，Clears from any stage will count! (5/5) <br>Reward：XP +100000\n<br>",
+    "36. (Special) Summer Returns, Wk. 1 ② : Clear 10 stages，Clears from any stage will count! (10/10) <br>Reward：Legend Net +3\n<br>",
+    "37. (Special) Summer Returns, Wk. 1 ③: Clear 15 stages，Clears from any stage will count! (15/15) <br>Reward：Legend Net +5\n<br>",
+    "38. (Special) Summer Returns, Wk. 1 ④: Clear 20 stages，Clears from any stage will count! (20/20) <br>Reward：Legend Net +10\n<br>",
+    "39. (Special) Summer Returns, Wk. 2 ①: Clear 5 stages，Clears from any stage will count! (5/5) <br>Reward：XP +100000\n<br>",
+    "40. (Special) Summer Returns, Wk. 2 ②: Clear 10 stages，Clears from any stage will count! (10/10) <br>Reward：Legend Net +3\n<br>",
+    "41. (Special) Summer Returns, Wk. 2 ③: Clear 15 stages，Clears from any stage will count! (15/15) <br>Reward：Legend Net +5\n<br>",
+    "42. (Special) Summer Returns, Wk. 2 ④: Clear 20 stages，Clears from any stage will count! (20/20) <br>Reward：Legend Net +10\n<br>",
+    "43. (Special) Extra Credit: Clear \"The Mask and the Baby\"，* Must clear the Continuation Stage. <br>Reward：Catseye [Dark] +1\n<br>",
+    "44. (Special) Extra Credit: Clear \"The Prince and the Revenant\"，* Must clear the Continuation Stage. <br>Reward：Catseye [Dark] +1\n<br>",
+    "45. (Special) Summer Returns, Wk. 3 ①: Clear 5 stages，Clears from any stage will count! (5/5) <br>Reward：XP +100000\n<br>",
+    "46. (Special) Summer Returns, Wk. 3 ②: Clear 10 stages，Clears from any stage will count! (10/10) <br>Reward：Legend Net +3\n<br>",
+    "47. (Special) Summer Returns, Wk. 3 ③: Clear 15 stages，Clears from any stage will count! (15/15) <br>Reward：Legend Net +5\n<br>",
+    "48. (Special) Summer Returns, Wk. 3 ④: Clear 20 stages，Clears from any stage will count! (20/20) <br>Reward：Legend Net +10\n<br>",
+    "49. (Special) Extra Credit: Clear \"The Queen and the Saint\"，* Must clear the Continuation Stage. <br>Reward：Catseye [Dark] +1\n<br>",
+    "50. (Special) Extra Credit: Clear \"Bottom of the Swamp\"，* Must clear with 10 Special Cats. <br>Reward：Catseye [Dark] +1\n<br>"
+  ],
+  "sundries": []
+}
