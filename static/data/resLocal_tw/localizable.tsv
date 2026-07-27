@@ -368,7 +368,7 @@ beacon_unsupported_device	この端末/OSバージョンには対応していま
 not_enough_space_left_on_device	裝置容量不足下載失敗。
 ranking_description	<flash>排行關卡</flash><br>排名會依照得分而變動的關卡喵！<br>※登錄得分需要網路連線<br>※活動結束後將會重置分數與排行
 ranking_unauthorized	貓罐頭不足<br>挑戰此關卡需要消費貓罐頭
-ranking_suspend	要中止挑戰嗎？
+ranking_suspend	要中止戰鬥嗎？
 ranking_error01	排行結果讀取失敗。
 ranking_default	―
 ranking_title01	傳說
@@ -773,7 +773,7 @@ calendar_error	無法連接到伺服器或是<br>行動裝置產生時差。<br>
 legendquest_tutorial1	歡迎來到傳奇尋寶記！<br>在這裡的關卡跟編成內容<br>都是隨機選出的唷！
 legendquest_tutorial2	需要有王冠才可以挑戰！<br>王冠可在傳奇故事地圖的關卡等級1～4<br>中各通關後可以獲得！
 legendquest_tutorial3	在傳奇尋寶記中脫離戰鬥時<br>王冠、統率力、道具皆不會歸還<br>準備好後再開始挑戰吧！
-legendquest_Cancel	確定要脫離戰鬥嗎？<br><color=255,0,0>王冠、統率力、道具皆不會歸還</color>
+legendquest_Cancel	要中止戰鬥嗎？<br><color=255,0,0>王冠、統率力、道具皆不會歸還</color>
 legendquest_warning	王冠不足<br>請挑戰傳奇故事中的關卡<br>通關來蒐集王冠吧！
 legendquest_popup	<flash>傳奇尋寶記</flash><br>以隨機選出的關卡與角色來出戰吧！<br>※可消費統率力與傳奇故事中獲得的王冠來挑戰<br>※所需的王冠數量會隨關卡增加<br>※脫離戰鬥時王冠、統率力、道具皆不會歸還
 score_sns	“貓咪軍團”在%@中，獲得了%d分！%s %s
@@ -1226,7 +1226,7 @@ fragment_message	蒐集白金券碎片<br>10片即可兌換白金券1張<br>現�
 fragment_bonus	只有現在使用${gatyaNumber}次連續轉蛋<br>就可獲得白金券碎片1片！<br>蒐集10片<flash>白金券</flash>1張即可入手喔
 equipment_error	這個本能珠珠只可裝著於有對<br>「%@ %@」效果的角色上
 scratch_message	「%s」%d個已入手！
-scratch_SNS_000	在 #貓咪刮刮樂 中獲得%d個貓罐頭啦！<br>期間中每週都可挑戰！每週來玩刮刮樂帶走更多貓罐頭吧～！<br><br>#貓咪大戰爭 #貓咪刮刮樂
+scratch_SNS_000	在 #貓咪刮刮樂 中獲得%d個貓罐頭啦！<br>期間中每週都可挑戰！每週來玩刮刮樂帶走更多貓罐頭吧～！<br><br>#貓咪大戰爭 #貓咪刮刮樂 #貓咪暑假2026
 item_pack_name_39	購買 感謝禮包
 potential_skill_name57	屬性　惡魔
 assault_skip	【貓咪稍微恢復精神了】<br><flash>可通關次數回復1次！</flash><br>將前往關卡選擇畫面<br><color=255,255,0>可通關次數 1/${countNum}${assaultWord}</color>
@@ -1338,7 +1338,7 @@ labyrinth_play_error2	<color=255,255,0>尚未編成好挑戰關卡所需的角�
 labyrinth_slot_error	<color=255,255,0>在地底迷宮裡無法使用前次通關時的編成</color>
 labyrinth_slot_name	調查團
 labyrinth_combo_error	<color=255,255,0>受到地底迷宮詛咒的影響<br>無法自動安排貓咪聯組</color>
-labyrinth_cancel	確定要脫離戰鬥嗎？<br><color=255,0,0>部分角色被陷阱困住了</color><br><color=178,178,178>※受困陷阱的角色將無法於下次挑戰時編入隊伍</color>
+labyrinth_cancel	要中止戰鬥嗎？<br><color=255,0,0>部分角色被陷阱困住了</color><br><color=178,178,178>※受困陷阱的角色將無法於下次挑戰時編入隊伍</color>
 labyrinth_result	通過${stageName}啦！目前是所有調查團中的前${rankingNum}%喵！
 item_pack_name_71	購買 超划算！經驗值禮包
 item_pack_name_72	購買 超划算！貓眼石＆戰力道具禮包
@@ -1649,7 +1649,7 @@ filter_equipment_tutorial	將從裝著本能珠珠的角色中進行篩選<br>�
 filter_option_description5	<color=0,0,0>篩選結果將包含可透過進化等<br>方式，來解放「攻擊對象」或<br>「效果/能力」的角色。</color>
 ScatCPU_ad_confirm	提升經驗值的好機會！<br>要觀看影片讓通關經驗值<br>變成<flash>「XP ${xp}」×2</flash>嗎？
 ScatCPU_ad_result	通關經驗值<flash>提升啦！！</flash><br>「XP <flash>${xp}</flash>」
-scratch_SNS_005	
+scratch_SNS_005	在 #貓咪刮刮樂 中獲得%d個貓罐頭啦！<br>期間中每週都可挑戰！每週來玩刮刮樂帶走更多貓罐頭吧～！<br><br>#貓咪大戰爭 #貓咪刮刮樂 #貓咪暑假2026
 SpecialRuleExplanation012	【只有現貨】<br>1次的戰鬥中最多只能生產50隻角色<br>所有我方角色都會變成相同的生產速度
 SpecialRuleName012	只有現貨
 talk_008_push	「貓咪請求援軍」趕快回來支援啊～
@@ -1753,8 +1753,13 @@ SpecialRuleName018	物價高漲 超激稀有
 speedup_message	<color=0,0,0>加速<br>戰鬥速度提高為2倍<br>在戰鬥中點擊圖示<br>即可切換ON、OFF</color>
 tutorial_popup0	目前無法挑戰這個關卡<br>先去攻略下一關「香港」吧！
 tutorial_popup1	目前無法挑戰這個關卡<br>先去攻略下一關「泰國」吧！
-tutorial_popup2	點擊圖示就能選擇道具使用<br>可在開始戰鬥前選擇倍速<br>只要使用道具<br>最快可切換至3倍速
+tutorial_popup2	<color=255,255,0>道具使用方法</color><br>想使用已獲得的道具時<br>請點選下方的道具圖示！<br>請注意，僅限戰鬥開始前可選擇
 tutorial_popup3	點擊右方的「解鎖」<br>即可保留目前的道具選擇狀態<br>不需要每次都重新選擇
 tutorial_popup4	經驗值不足。
 unlock_popup_message_158	<flash>新角色出現了！</flash><br>可以在升級畫面中取得
 unlock_popup_message_159	
+item_pack_name_92	
+SpecialRuleName020	100萬用光光
+Stage_battle00	要中止戰鬥嗎？<br>現在退出可退還道具（10秒內）
+Stage_lock00	道具不足。
+unlock_popup_message_160	<flash>EX角色「神」出現了！</flash><br>可以在升級畫面中取得<br>※戰鬥遇到困難時，或許可以向神祈求幫助…
