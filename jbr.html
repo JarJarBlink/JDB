@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-TW" id="htmlRoot">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="static/favicon.ico">
+<title id="pageTitle">轉蛋序列模擬器</title>
+<link rel="stylesheet" href='static/css/jbr/jbr.css'>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script>
+<script src="static/js/home/ga.js"></script>
+</head>
+<body>
+<!--Code and algorithms developed by Exodia JAR-->
+<!--コード・アルゴリズム開発：Exodia JAR-->
+<!--本程式之模擬功能僅供遊戲機制研究、分析及模擬用途，不得用於任何形式之作弊、規避遊戲機制或其他違反遊戲服務條款之行為。-->
+<!--This software is intended solely for the research, analysis, and simulation of game mechanics. Any use for cheating or activities that violate the game's Terms of Service is strictly prohibited.-->
+<div class="wrap">
+
+  <header>
+    <div class="header-top">
+      <p class="eyebrow">Gacha Sequence Simulator</p>
+      <div class="pool-select lang-select" id="uiLangSelect">
+        <button type="button" class="pool-select-trigger" aria-haspopup="listbox" aria-expanded="false"
+          aria-label="Interface language / 介面語言 / 表示言語">
+          <span class="pool-select-value"></span>
+          <span class="pool-select-arrow" aria-hidden="true">▾</span>
+        </button>
+        <ul class="pool-select-list" role="listbox" hidden></ul>
+      </div>
+    </div>
+    <h1 data-i18n="h1">轉蛋序列模擬器</h1>
+    <p class="sub">
+      
+    </p>
+  </header>
+
+  <div class="panel">
+    <h2 data-i18n="poolPanel">轉蛋池</h2>
+    <div class="grid">
+      <div>
+        <label for="cc" data-i18n="ccLabel">轉蛋池版本 cc</label>
+        <div class="pool-select" id="cc">
+          <button type="button" class="pool-select-trigger" aria-haspopup="listbox" aria-expanded="false">
+            <span class="pool-select-value"></span>
+            <span class="pool-select-arrow" aria-hidden="true">▾</span>
+          </button>
+          <ul class="pool-select-list" role="listbox" hidden></ul>
+        </div>
+      </div>
+      <div class="gacha-select-col">
+        <label for="gachaID" data-i18n="gachaIdLabel">轉蛋池編號</label>
+        <div class="pool-select" id="gachaID">
+          <button type="button" class="pool-select-trigger" aria-haspopup="listbox" aria-expanded="false" disabled>
+            <span class="pool-select-value"></span>
+            <span class="pool-select-arrow" aria-hidden="true">▾</span>
+          </button>
+          <ul class="pool-select-list" role="listbox" hidden></ul>
+        </div>
+      </div>
+    </div>
+    <p class="rate-hint" id="poolHint" data-i18n="poolHintDefault">尚未讀取轉蛋池。</p>
+  </div>
+
+  <div class="panel">
+    <h2 data-i18n="seedRollPanel">種子 / 抽數</h2>
+    <div class="grid">
+      <div>
+        <label for="seed" data-i18n="seedLabel">種子</label>
+        <div class="seed-row">
+          <input type="number" id="seed" value="1234567" min="0" max="4294967295" />
+          <button class="btn-ghost" id="randomSeed" data-i18n="random">隨機</button>
+        </div>
+      </div>
+      <div>
+        <label for="rollCount" data-i18n="rollCountLabel">要排出幾抽</label>
+        <input type="number" id="rollCount" value="20" min="1" max="500" />
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2 data-i18n="routePanel">最佳路線規劃</h2>
+    <div class="grid">
+      <div>
+        <label for="targetCat" data-i18n="targetLabel">目標角色</label>
+        <select id="targetCat" disabled></select>
+      </div>
+      <div style="align-self:end">
+        <button class="btn-ghost" id="planRoute" data-i18n="planRoute" disabled>規劃最佳路線</button>
+      </div>
+    </div>
+    <div class="grid route-cell-row">
+      <div>
+        <label for="targetCell" data-i18n="targetCellLabel">或直接指定欄位（例：25A、3A保底）</label>
+        <input type="text" id="targetCell" disabled data-i18n-attr-placeholder="targetCellPlaceholder" />
+      </div>
+      <div style="align-self:end">
+        <button class="btn-ghost" id="planRouteByCell" data-i18n="planRouteByCell" disabled>依欄位規劃路線</button>
+      </div>
+    </div>
+    <div class="route-toggle-group" id="routeToggleGroup" style="display:none;">
+      <label class="route-toggle-item route-toggle-item-A">
+        <input type="radio" name="routeToggle" class="route-toggle" value="A" />
+        <span data-i18n="routeToggleA">路線 A（只用稀有券）</span>
+      </label>
+      <label class="route-toggle-item route-toggle-item-B">
+        <input type="radio" name="routeToggle" class="route-toggle" value="B" />
+        <span data-i18n="routeToggleB">路線 B（+ 白金券/傳說券）</span>
+      </label>
+      <label class="route-toggle-item route-toggle-item-C" id="routeToggleItemC">
+        <input type="radio" name="routeToggle" class="route-toggle" value="C" checked />
+        <span data-i18n="routeToggleC">路線 C（+ 貓罐頭連抽保底，全開最佳）</span>
+      </label>
+    </div>
+    <p class="rate-hint" id="routeHint" data-i18n="routeHintDefault">請先讀取轉蛋池並選擇目標角色。</p>
+    <table class="route-breakdown" id="routeBreakdown" style="display:none;">
+      <caption data-i18n="routeBreakdownTitle"></caption>
+      <thead><tr id="routeBreakdownHead"></tr></thead>
+      <tbody id="routeBreakdownBody"></tbody>
+    </table>
+  </div>
+
+  <div class="actions">
+    <div class="legend">
+      <span><span class="dot dot-neutral"></span><span data-i18n="legendRare">稀有（不標色）</span></span>
+      <span><span class="dot" style="background:var(--supa)"></span><span data-i18n="legendSupa">激稀有</span></span>
+      <span><span class="dot" style="background:var(--uber)"></span><span data-i18n="legendUber">超激稀有</span></span>
+      <span><span class="dot" style="background:linear-gradient(90deg,var(--legend-a),var(--legend-b))"></span><span data-i18n="legendLegend">傳說稀有</span></span>
+      <span><span class="flag flag-reroll">R</span><span data-i18n="legendReroll">同稀有貓重抽（下方會顯示替換角色）</span></span>
+      <span><span class="flag flag-guar">G</span><span data-i18n="legendGuar">保底貓（A/B 軌各自獨立一欄顯示）</span></span>
+      <span><span class="dot" style="background:var(--flag)"></span><span data-i18n="legendRoute">最佳路線（紅色虛線）</span></span>
+      <span id="legendRouteGuarItem"><span class="dot" style="background:var(--route-guar)"></span><span data-i18n="legendRouteGuar">路線中靠保底達成的段落（橘色虛線）</span></span>
+      <span><span class="dot" style="background:var(--route-plat)"></span><span data-i18n="legendRoutePlat">路線中用白金券/傳說券避開重複貓換軌的段落（藍色虛線）</span></span>
+      <span><span class="dot" style="background:var(--target-mark)"></span><span data-i18n="legendTargetMark">目標角色出現的所有格子（規劃路線後標記）</span></span>
+    </div>
+    <div class="actions-controls">
+      <button class="btn-main" id="generate" data-i18n="generate">產生轉蛋序列</button>
+      <label class="details-toggle">
+        <input type="checkbox" id="showDetails" />
+        <span data-i18n="details">Details（Seed/Rarity/Slot）</span>
+      </label>
+      <label class="details-toggle">
+        <input type="checkbox" id="showTips" />
+        <span data-i18n="tips">Tips（超激/傳說速覽）</span>
+      </label>
+    </div>
+  </div>
+
+  <div class="tips-panel" id="tipsPanel" style="display:none">
+    <div class="tips-panel-head" id="tipsPanelHead">
+      <span class="tips-panel-title">
+        <span class="tips-chevron" id="tipsChevron">▾</span>
+        <span data-i18n="tipsTitle">超激 / 傳說 速覽</span><span class="tips-count" id="tipsCount"></span>
+      </span>
+      <button type="button" class="tips-close" id="tipsClose" data-i18n-attr-aria-label="tipsClose" aria-label="關閉 Tips">×</button>
+    </div>
+    <div class="tips-list" id="tipsList"></div>
+  </div>
+
+  <div class="table-scroll">
+    <table id="resultTable" style="display:none">
+      <colgroup>
+        <col class="col-seq">
+        <col class="col-track">
+        <col class="col-guar">
+        <col class="col-track">
+        <col class="col-guar">
+      </colgroup>
+      <thead>
+        <tr>
+          <th data-i18n="colSeq">#</th>
+          <th data-i18n="colA">A 軌</th>
+          <th data-i18n="colAGuar">A 保底</th>
+          <th data-i18n="colB">B 軌</th>
+          <th data-i18n="colBGuar">B 保底</th>
+        </tr>
+      </thead>
+      <tbody id="resultBody"></tbody>
+    </table>
+    <svg id="routeOverlay" xmlns="http://www.w3.org/2000/svg"></svg>
+  </div>
+
+  <footer>By Exodia JAR</footer>
+</div>
+
+<button type="button" class="back-to-top" id="backToTop" data-i18n-attr-aria-label="backToTop" aria-label="回到頂部">↑</button>
+
+<script src="static/js/jbr/gacha_sequence.js"></script>
+<script src="static/js/jbr/gacha_pool_loader.js"></script>
+<script src="static/js/jbr/jbr_main.js"></script>
+</body>
+</html>
