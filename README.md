@@ -1,2 +1,2 @@
 # JDB
-Developed by JAR
+Developed by Exodia JAR
