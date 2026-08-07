@@ -20,13 +20,16 @@
   <header>
     <div class="header-top">
       <p class="eyebrow">Gacha Sequence Simulator</p>
-      <div class="pool-select lang-select" id="uiLangSelect">
-        <button type="button" class="pool-select-trigger" aria-haspopup="listbox" aria-expanded="false"
-          aria-label="Interface language / 介面語言 / 表示言語">
-          <span class="pool-select-value"></span>
-          <span class="pool-select-arrow" aria-hidden="true">▾</span>
-        </button>
-        <ul class="pool-select-list" role="listbox" hidden></ul>
+      <div class="header-top-right">
+        <button type="button" class="btn-ghost" id="seedTrackerBtn">Seed Tracker</button>
+        <div class="pool-select lang-select" id="uiLangSelect">
+          <button type="button" class="pool-select-trigger" aria-haspopup="listbox" aria-expanded="false"
+            aria-label="Interface language / 介面語言 / 表示言語">
+            <span class="pool-select-value"></span>
+            <span class="pool-select-arrow" aria-hidden="true">▾</span>
+          </button>
+          <ul class="pool-select-list" role="listbox" hidden></ul>
+        </div>
       </div>
     </div>
     <h1 data-i18n="h1">轉蛋序列模擬器</h1>
@@ -34,6 +37,8 @@
       
     </p>
   </header>
+
+  <main id="gachaView" class="jbr-view">
 
   <div class="panel">
     <h2 data-i18n="poolPanel">轉蛋池</h2>
@@ -181,6 +186,49 @@
     <svg id="routeOverlay" xmlns="http://www.w3.org/2000/svg"></svg>
   </div>
 
+  </main>
+
+  <section id="seedTrackerView" class="jbr-view" hidden>
+    <div class="panel">
+      <h2>Advanced Seed Tracker</h2>
+      <p class="rate-hint">
+        You should go to
+        <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank" rel="noopener">
+          cors-anywhere demo page
+        </a>
+        and click "Request temporary access" first.
+      </p>
+      <div class="grid">
+        <div>
+          <label for="stCc">Country Code (cc)</label>
+          <select id="stCc">
+            <option value="ja">ja</option>
+            <option value="en">en</option>
+            <option value="tw" selected>tw</option>
+          </select>
+        </div>
+        <div>
+          <label for="stTransferCode">Transfer Code</label>
+          <input type="text" id="stTransferCode" />
+        </div>
+        <div>
+          <label for="stConfirmationCode">Confirmation Code</label>
+          <input type="text" id="stConfirmationCode" />
+        </div>
+      </div>
+      <div class="actions-controls" style="margin-top:14px">
+        <button class="btn-main" id="stBtnFetch">Fetch Seeds</button>
+        <button class="btn-ghost" id="stBackBtn">← Go Back</button>
+      </div>
+      <p class="rate-hint bad" id="stErrorMsg"></p>
+      <div id="stResult" style="display:none; margin-top:10px;">
+        <p>Rare Seed: <b id="stRareSeed"></b></p>
+        <p>Normal Seed: <b id="stNormalSeed"></b></p>
+        <p class="rate-hint" id="stSyncNote"></p>
+      </div>
+    </div>
+  </section>
+
   <footer>Developed by Exodia JAR for game mechanics research. Any use for cheating or activities that violate the game's Terms of Service is strictly prohibited.</footer>
 </div>
 
@@ -189,5 +237,24 @@
 <script src="static/js/jbr/gacha_sequence.js"></script>
 <script src="static/js/jbr/gacha_pool_loader.js"></script>
 <script src="static/js/jbr/jbr_main.js"></script>
+<script src="static/js/jbr/seed_tracker.js"></script>
+<script>
+(function () {
+  const gachaView = document.getElementById('gachaView');
+  const seedView = document.getElementById('seedTrackerView');
+  const openBtn = document.getElementById('seedTrackerBtn');
+  const backBtn = document.getElementById('stBackBtn');
+
+  openBtn.addEventListener('click', () => {
+    gachaView.hidden = true;
+    seedView.hidden = false;
+  });
+
+  backBtn.addEventListener('click', () => {
+    seedView.hidden = true;
+    gachaView.hidden = false;
+  });
+})();
+</script>
 </body>
 </html>
