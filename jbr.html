@@ -84,46 +84,76 @@
     </div>
   </div>
 
-  <div class="panel">
-    <h2 data-i18n="routePanel">最佳路線規劃</h2>
-    <div class="grid">
-      <div>
-        <label for="targetCat" data-i18n="targetLabel">目標角色</label>
-        <select id="targetCat" disabled></select>
+  <!-- 面板：序列幸運度檢定 -->
+  <div class="panel collapsible-section" id="biasSection">
+    <h2 id="biasPanelTitle" class="collapse-trigger">序列幸運度檢定</h2>
+    <div class="collapsible-content">
+      <p class="rate-hint" id="biasPanelDesc">檢查沿路線 A 實際抽出的稀有度組成，是否明顯偏離理論機率。</p>
+      <div class="grid">
+        <div style="align-self:end">
+          <button class="btn-ghost" id="analyzeSeedBias" disabled>分析目前種子</button>
+        </div>
       </div>
-      <div style="align-self:end">
-        <button class="btn-ghost" id="planRoute" data-i18n="planRoute" disabled>規劃最佳路線</button>
-      </div>
+      <p class="rate-hint" id="biasHint">請先讀取轉蛋池。</p>
+      <table class="route-breakdown" id="biasTable" style="display:none;">
+        <thead>
+          <tr>
+            <th id="biasColRarity">稀有度</th>
+            <th id="biasColExpected">理論機率</th>
+            <th id="biasColActual">實際機率</th>
+            <th id="biasColRatio">偏差倍率</th>
+            <th id="biasColPValue">p 值（精確二項式）</th>
+            <th id="biasColFlag">判定</th>
+          </tr>
+        </thead>
+        <tbody id="biasBody"></tbody>
+      </table>
     </div>
-    <div class="grid route-cell-row">
-      <div>
-        <label for="targetCell" data-i18n="targetCellLabel">或直接指定欄位（例：25A、3A保底）</label>
-        <input type="text" id="targetCell" disabled data-i18n-attr-placeholder="targetCellPlaceholder" />
+  </div>
+
+  <!-- 面板：最佳路線規劃 -->
+  <div class="panel collapsible-section" id="routeSection">
+    <h2 data-i18n="routePanel" class="collapse-trigger">最佳路線規劃</h2>
+    <div class="collapsible-content">
+      <div class="grid">
+        <div>
+          <label for="targetCat" data-i18n="targetLabel">目標角色</label>
+          <select id="targetCat" disabled></select>
+        </div>
+        <div style="align-self:end">
+          <button class="btn-ghost" id="planRoute" data-i18n="planRoute" disabled>規劃最佳路線</button>
+        </div>
       </div>
-      <div style="align-self:end">
-        <button class="btn-ghost" id="planRouteByCell" data-i18n="planRouteByCell" disabled>依欄位規劃路線</button>
+      <div class="grid route-cell-row">
+        <div>
+          <label for="targetCell" data-i18n="targetCellLabel">或直接指定欄位（例：25A、3A保底）</label>
+          <input type="text" id="targetCell" disabled data-i18n-attr-placeholder="targetCellPlaceholder" />
+        </div>
+        <div style="align-self:end">
+          <button class="btn-ghost" id="planRouteByCell" data-i18n="planRouteByCell" disabled>依欄位規劃路線</button>
+        </div>
       </div>
+      <div class="route-toggle-group" id="routeToggleGroup" style="display:none;">
+        <label class="route-toggle-item route-toggle-item-A">
+          <input type="radio" name="routeToggle" class="route-toggle" value="A" />
+          <span data-i18n="routeToggleA">路線 A（只用稀有券）</span>
+        </label>
+        <label class="route-toggle-item route-toggle-item-B">
+          <input type="radio" name="routeToggle" class="route-toggle" value="B" />
+          <span data-i18n="routeToggleB">路線 B（+ 白金券/傳說券）</span>
+        </label>
+        <label class="route-toggle-item route-toggle-item-C" id="routeToggleItemC">
+          <input type="radio" name="routeToggle" class="route-toggle" value="C" checked />
+          <span data-i18n="routeToggleC">路線 C（+ 貓罐頭連抽保底，全開最佳）</span>
+        </label>
+      </div>
+      <p class="rate-hint" id="routeHint" data-i18n="routeHintDefault">請先讀取轉蛋池並選擇目標角色。</p>
+      <table class="route-breakdown" id="routeBreakdown" style="display:none;">
+        <caption data-i18n="routeBreakdownTitle"></caption>
+        <thead><tr id="routeBreakdownHead"></tr></thead>
+        <tbody id="routeBreakdownBody"></tbody>
+      </table>
     </div>
-    <div class="route-toggle-group" id="routeToggleGroup" style="display:none;">
-      <label class="route-toggle-item route-toggle-item-A">
-        <input type="radio" name="routeToggle" class="route-toggle" value="A" />
-        <span data-i18n="routeToggleA">路線 A（只用稀有券）</span>
-      </label>
-      <label class="route-toggle-item route-toggle-item-B">
-        <input type="radio" name="routeToggle" class="route-toggle" value="B" />
-        <span data-i18n="routeToggleB">路線 B（+ 白金券/傳說券）</span>
-      </label>
-      <label class="route-toggle-item route-toggle-item-C" id="routeToggleItemC">
-        <input type="radio" name="routeToggle" class="route-toggle" value="C" checked />
-        <span data-i18n="routeToggleC">路線 C（+ 貓罐頭連抽保底，全開最佳）</span>
-      </label>
-    </div>
-    <p class="rate-hint" id="routeHint" data-i18n="routeHintDefault">請先讀取轉蛋池並選擇目標角色。</p>
-    <table class="route-breakdown" id="routeBreakdown" style="display:none;">
-      <caption data-i18n="routeBreakdownTitle"></caption>
-      <thead><tr id="routeBreakdownHead"></tr></thead>
-      <tbody id="routeBreakdownBody"></tbody>
-    </table>
   </div>
 
   <div class="actions">
@@ -238,6 +268,7 @@
 <script src="static/js/jbr/gacha_pool_loader.js"></script>
 <script src="static/js/jbr/jbr_main.js"></script>
 <script src="static/js/jbr/seed_tracker.js"></script>
+<script src="static/js/jbr/seed_bias_analyzer.js"></script>
 <script>
 (function () {
   const gachaView = document.getElementById('gachaView');
