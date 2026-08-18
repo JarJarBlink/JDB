@@ -44,6 +44,16 @@
     <h2 data-i18n="poolPanel">轉蛋池</h2>
     <div class="grid">
       <div>
+        <label for="gachaType" data-i18n="gachaTypeLabel">轉蛋種類</label>
+        <div class="pool-select" id="gachaType">
+          <button type="button" class="pool-select-trigger" aria-haspopup="listbox" aria-expanded="false">
+            <span class="pool-select-value"></span>
+            <span class="pool-select-arrow" aria-hidden="true">▾</span>
+          </button>
+          <ul class="pool-select-list" role="listbox" hidden></ul>
+        </div>
+      </div>
+      <div>
         <label for="cc" data-i18n="ccLabel">轉蛋池版本 cc</label>
         <div class="pool-select" id="cc">
           <button type="button" class="pool-select-trigger" aria-haspopup="listbox" aria-expanded="false">
@@ -138,7 +148,7 @@
           <input type="radio" name="routeToggle" class="route-toggle" value="A" />
           <span data-i18n="routeToggleA">路線 A（只用稀有券）</span>
         </label>
-        <label class="route-toggle-item route-toggle-item-B">
+        <label class="route-toggle-item route-toggle-item-B" id="routeToggleItemB">
           <input type="radio" name="routeToggle" class="route-toggle" value="B" />
           <span data-i18n="routeToggleB">路線 B（+ 白金券/傳說券）</span>
         </label>
@@ -166,8 +176,9 @@
       <span><span class="flag flag-guar">G</span><span data-i18n="legendGuar">保底貓（A/B 軌各自獨立一欄顯示）</span></span>
       <span><span class="dot" style="background:var(--flag)"></span><span data-i18n="legendRoute">最佳路線（紅色虛線）</span></span>
       <span id="legendRouteGuarItem"><span class="dot" style="background:var(--route-guar)"></span><span data-i18n="legendRouteGuar">路線中靠保底達成的段落（橘色虛線）</span></span>
-      <span><span class="dot" style="background:var(--route-plat)"></span><span data-i18n="legendRoutePlat">路線中用白金券/傳說券避開重複貓換軌的段落（藍色虛線）</span></span>
+      <span id="legendRoutePlatItem"><span class="dot" style="background:var(--route-plat)"></span><span data-i18n="legendRoutePlat">路線中用白金券/傳說券避開重複貓換軌的段落（藍色虛線）</span></span>
       <span><span class="dot" style="background:var(--target-mark)"></span><span data-i18n="legendTargetMark">目標角色出現的所有格子（規劃路線後標記）</span></span>
+      <span id="legendPityItem" style="display:none"><span class="dot" style="background:var(--pity-mark)"></span><span data-i18n="legendPity">自訂必中提醒（依你設定的抽數間隔標記必中位置）</span></span>
     </div>
     <div class="actions-controls">
       <button class="btn-main" id="generate" data-i18n="generate">產生轉蛋序列</button>
@@ -178,6 +189,10 @@
       <label class="details-toggle">
         <input type="checkbox" id="showTips" />
         <span data-i18n="tips">Tips（超激/傳說速覽）</span>
+      </label>
+      <label class="details-toggle" id="nextGuarWrap">
+        <span data-i18n="nextGuarLabel">下一次必中</span>
+        <select id="nextGuaranteedSelect" data-i18n-attr-aria-label="nextGuarLabel" aria-label="下一次必中"></select>
       </label>
     </div>
   </div>
@@ -253,7 +268,7 @@
       <p class="rate-hint bad" id="stErrorMsg"></p>
       <div id="stResult" style="display:none; margin-top:10px;">
         <p>Rare Seed: <b id="stRareSeed"></b></p>
-        <p>Normal Seed: <b id="stNormalSeed"></b></p>
+        <p id="stEventSeedRow">Event Seed: <b id="stEventSeed"></b></p>
         <p class="rate-hint" id="stSyncNote"></p>
       </div>
     </div>
@@ -267,6 +282,7 @@
 <script src="static/js/jbr/gacha_sequence.js"></script>
 <script src="static/js/jbr/gacha_pool_loader.js"></script>
 <script src="static/js/jbr/jbr_main.js"></script>
+<script src="static/js/jbr/save.js"></script>
 <script src="static/js/jbr/seed_tracker.js"></script>
 <script src="static/js/jbr/seed_bias_analyzer.js"></script>
 <script>
