@@ -1,0 +1,21 @@
+{
+  "PointID": {
+    "269": {
+      "serverSetting": [
+        41000,
+        41001,
+        41002,
+        41003
+      ],
+      "ReleasePoint": [
+        500000,
+        1500000,
+        2750000,
+        9999999
+      ],
+      "Popup": "Point_release_popup_001",
+      "PointReleaseHeadlineLabel": "PointReleaseHeadline001",
+      "PointReleaseExplanationLabel": "PointReleaseExplanation001"
+    }
+  }
+}

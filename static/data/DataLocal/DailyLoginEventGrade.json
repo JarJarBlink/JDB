@@ -1,0 +1,76 @@
+{
+  "DailyLoginStampID": {
+    "35052": {
+      "DailyLoginStampGroupID": 0,
+      "DailyLoginStampGrade": 0,
+      "ConditionType": {
+        "0": {
+          "Parameters": [
+            268,
+            0
+          ]
+        }
+      }
+    },
+    "35053": {
+      "DailyLoginStampGroupID": 0,
+      "DailyLoginStampGrade": 1,
+      "ConditionType": {
+        "0": {
+          "Parameters": [
+            268,
+            1
+          ]
+        }
+      }
+    },
+    "35054": {
+      "DailyLoginStampGroupID": 0,
+      "DailyLoginStampGrade": 2,
+      "ConditionType": {
+        "0": {
+          "Parameters": [
+            268,
+            2
+          ]
+        }
+      }
+    },
+    "35055": {
+      "DailyLoginStampGroupID": 0,
+      "DailyLoginStampGrade": 3,
+      "ConditionType": {
+        "0": {
+          "Parameters": [
+            268,
+            3
+          ]
+        }
+      }
+    },
+    "35056": {
+      "DailyLoginStampGroupID": 0,
+      "DailyLoginStampGrade": 4,
+      "ConditionType": {
+        "0": {
+          "Parameters": [
+            268,
+            4
+          ]
+        }
+      }
+    },
+    "35057": {
+      "DailyLoginStampGroupID": 0,
+      "DailyLoginStampGrade": 5,
+      "ConditionType": {
+        "0": {
+          "Parameters": [
+            268,
+            5
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "PointID": {
+    "269": {
+      "ResetMapID": 39000,
+      "Rewards": [
+        {
+          "RewardID": 0,
+          "Point": 10000,
+          "Type": 0,
+          "ID": 0,
+          "Quantity": 2,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 1,
+          "Point": 50000,
+          "Type": 0,
+          "ID": 20,
+          "Quantity": 1,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb00"
+        },
+        {
+          "RewardID": 2,
+          "Point": 100000,
+          "Type": 0,
+          "ID": 3,
+          "Quantity": 2,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 3,
+          "Point": 150000,
+          "Type": 0,
+          "ID": 20,
+          "Quantity": 1,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb00"
+        },
+        {
+          "RewardID": 4,
+          "Point": 200000,
+          "Type": 0,
+          "ID": 268,
+          "Quantity": 1,
+          "Label0": "PointReward02",
+          "Label1": "PointRewardWeb04"
+        },
+        {
+          "RewardID": 5,
+          "Point": 300000,
+          "Type": 0,
+          "ID": 2,
+          "Quantity": 2,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 6,
+          "Point": 350000,
+          "Type": 0,
+          "ID": 20,
+          "Quantity": 1,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb00"
+        },
+        {
+          "RewardID": 7,
+          "Point": 400000,
+          "Type": 0,
+          "ID": 5,
+          "Quantity": 2,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 8,
+          "Point": 450000,
+          "Type": 0,
+          "ID": 20,
+          "Quantity": 1,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb00"
+        },
+        {
+          "RewardID": 9,
+          "Point": 500000,
+          "Type": 0,
+          "ID": 268,
+          "Quantity": 1,
+          "Label0": "PointReward02",
+          "Label1": "PointRewardWeb04"
+        },
+        {
+          "RewardID": 10,
+          "Point": 600000,
+          "Type": 0,
+          "ID": 1,
+          "Quantity": 2,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 11,
+          "Point": 700000,
+          "Type": 0,
+          "ID": 21,
+          "Quantity": 1,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb00"
+        },
+        {
+          "RewardID": 12,
+          "Point": 800000,
+          "Type": 0,
+          "ID": 0,
+          "Quantity": 2,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 13,
+          "Point": 900000,
+          "Type": 0,
+          "ID": 20,
+          "Quantity": 1,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb00"
+        },
+        {
+          "RewardID": 14,
+          "Point": 1000000,
+          "Type": 0,
+          "ID": 268,
+          "Quantity": 1,
+          "Label0": "PointReward02",
+          "Label1": "PointRewardWeb04"
+        },
+        {
+          "RewardID": 15,
+          "Point": 1200000,
+          "Type": 0,
+          "ID": 3,
+          "Quantity": 2,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 16,
+          "Point": 1300000,
+          "Type": 0,
+          "ID": 20,
+          "Quantity": 2,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb00"
+        },
+        {
+          "RewardID": 17,
+          "Point": 1400000,
+          "Type": 0,
+          "ID": 4,
+          "Quantity": 2,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 18,
+          "Point": 1500000,
+          "Type": 0,
+          "ID": 157,
+          "Quantity": 1,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 19,
+          "Point": 1750000,
+          "Type": 0,
+          "ID": 268,
+          "Quantity": 1,
+          "Label0": "PointReward02",
+          "Label1": "PointRewardWeb04"
+        },
+        {
+          "RewardID": 20,
+          "Point": 2000000,
+          "Type": 0,
+          "ID": 105,
+          "Quantity": 2,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 21,
+          "Point": 2250000,
+          "Type": 0,
+          "ID": 20,
+          "Quantity": 2,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb00"
+        },
+        {
+          "RewardID": 22,
+          "Point": 2500000,
+          "Type": 0,
+          "ID": 55,
+          "Quantity": 3,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 23,
+          "Point": 2750000,
+          "Type": 0,
+          "ID": 157,
+          "Quantity": 1,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 24,
+          "Point": 3000000,
+          "Type": 0,
+          "ID": 268,
+          "Quantity": 1,
+          "Label0": "PointReward02",
+          "Label1": "PointRewardWeb04"
+        },
+        {
+          "RewardID": 25,
+          "Point": 3400000,
+          "Type": 0,
+          "ID": 54,
+          "Quantity": 1,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 26,
+          "Point": 3800000,
+          "Type": 0,
+          "ID": 56,
+          "Quantity": 3,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 27,
+          "Point": 4200000,
+          "Type": 0,
+          "ID": 54,
+          "Quantity": 1,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 28,
+          "Point": 4600000,
+          "Type": 0,
+          "ID": 57,
+          "Quantity": 3,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        },
+        {
+          "RewardID": 29,
+          "Point": 5000000,
+          "Type": 0,
+          "ID": 58,
+          "Quantity": 1,
+          "Label0": "PointReward00",
+          "Label1": "PointRewardWeb01"
+        }
+      ]
+    }
+  }
+}

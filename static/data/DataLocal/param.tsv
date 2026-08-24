@@ -84,3 +84,8 @@ tutorial_duration0	250
 tutorial_duration1	1500
 tutorial_duration2	150
 tutorial_duration3	1000
+option_vibration_power_ios	0.3
+option_vibration_power_android	0.3
+option_vibration_time_ios	100
+option_vibration_time_android	100
+option_vibration_sharpness_ios	0.5

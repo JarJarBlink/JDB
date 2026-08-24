@@ -102,6 +102,64 @@
           "weight": 1
         }
       ]
+    },
+    "54": {
+      "minCount": 20,
+      "data": [
+        {
+          "type": 2,
+          "id": 157,
+          "value": 2,
+          "weight": 1
+        },
+        {
+          "type": 2,
+          "id": 21,
+          "value": 1,
+          "weight": 1
+        },
+        {
+          "type": 2,
+          "id": 20,
+          "value": 1,
+          "weight": 2
+        },
+        {
+          "type": 2,
+          "id": 105,
+          "value": 2,
+          "weight": 2
+        },
+        {
+          "type": 2,
+          "id": 197,
+          "value": 3,
+          "weight": 4
+        }
+      ]
+    },
+    "55": {
+      "minCount": 30,
+      "data": [
+        {
+          "type": 2,
+          "id": 20,
+          "value": 3,
+          "weight": 5
+        },
+        {
+          "type": 2,
+          "id": 21,
+          "value": 1,
+          "weight": 1
+        },
+        {
+          "type": 2,
+          "id": 157,
+          "value": 1,
+          "weight": 1
+        }
+      ]
     }
   }
 }

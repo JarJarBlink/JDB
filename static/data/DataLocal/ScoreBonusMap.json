@@ -12,10 +12,10 @@
       }
     },
     "11033": {
-      "BonusNameLabel": "BonusNameLabel001",
-      "BonusExplanationLabel": "BonusExplanationLabel001",
+      "BonusNameLabel": "BonusNameLabel005",
+      "BonusExplanationLabel": "BonusExplanationLabel005",
       "BonusType": {
-        "3": {
+        "2": {
           "Parameters": [
             2000
           ]

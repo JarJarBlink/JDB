@@ -368,7 +368,23 @@
 	  },
 	"132": {
 	"condition":[101215,-114033]
+	  },
+	"133": {
+	"condition":[101260],
+	"stage":0
+	  },
+	"134": {
+	"condition":[101261],
+	"stage":0
+	  },
+	"135": {
+	"serverSetting": 40000,
+	"hidden": 1,
+	"limitMessage": "map_stage_limit_variable_001"
+	  },
+	"136": {
+	"serverSetting": 40001,
+	"hidden": 1,
+	"limitMessage": "map_stage_limit_variable_001"
 	  }
-	}
-	
-}
+}}

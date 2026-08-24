@@ -671,6 +671,85 @@
           ]
         }
       }
+    },
+    "36026": {
+      "ContentsType": 0,
+      "RuleNameLabel": "SpecialRuleName021",
+      "RuleExplanationLabel": "SpecialRuleExplanation021",
+      "RuleType": {
+        "5": {
+          "Parameters": [
+            100,
+            50,
+            100,
+            100,
+            100,
+            100
+          ]
+        },
+        "6": {
+          "Parameters": [
+            100,
+            70,
+            100,
+            100,
+            100,
+            100
+          ]
+        },
+        "8": {
+          "Parameters": [
+            2,
+            1,
+            60
+          ]
+        }
+      }
+    },
+    "36027": {
+      "ContentsType": 0,
+      "RuleNameLabel": "SpecialRuleName022",
+      "RuleExplanationLabel": "SpecialRuleExplanation022",
+      "RuleType": {
+        "2": {
+          "Parameters": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "8": {
+          "Parameters": [
+            63,
+            1,
+            60
+          ]
+        }
+      }
+    },
+    "39000": {
+      "ContentsType": 0,
+      "RuleNameLabel": "SpecialRuleName019",
+      "RuleExplanationLabel": "SpecialRuleExplanation019",
+      "RuleType": {
+        "12": {
+          "Parameters": [
+            0,
+            25000,
+            600,
+            6,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
     }
   }
 }

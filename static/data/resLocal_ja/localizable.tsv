@@ -860,6 +860,7 @@ nekodojo_sns	我らが「にゃんこ軍団」がネコ道場%@で、%d点を獲
 ranking_sns	我らが「にゃんこ軍団」がランキングステージ %@で、%d点を獲得しました。%s %s
 challenge_sns	我らが「にゃんこ軍団」がチャレンジバトル %@で、%d点を獲得しました。%s %s
 tower_sns	我らが「にゃんこ軍団」が%sの%@を侵略しました。%s %s
+point_sns	我らが「にゃんこ軍団」が%@で、%dポイントを獲得しました。%s %s
 sns_txt1	我らが「にゃんこ軍団」が%@を侵略しました。%s %s
 zombie_sns	我らが「にゃんこ軍団」が%@をゾンビから守りました。%s %s
 Invasion_sns	我らが「にゃんこ軍団」が謎の生命体から宇宙を守りました。%s %s
@@ -1076,6 +1077,7 @@ scratch_SNS_002	#にゃんこ学園購買部特製スクラッチくじ でネ�
 scratch_SNS_003	#ぷちにゃんこスクラッチくじ でネコカン%d個ゲットしたにゃ！<br>今すぐ参加してネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #ぷちにゃんこスクラッチ
 scratch_SNS_004	#にゃんこスクラッチくじ でネコカン%d個ゲットしたにゃ！<br>期間中、毎週チャレンジ可能！毎週参加していっぱいネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #にゃんこスクラッチ #ねこなつ2025
 scratch_SNS_005	#にゃんこスクラッチくじ でネコカン%d個ゲットしたにゃ！<br>期間中、毎週チャレンジ可能！毎週参加していっぱいネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #にゃんこスクラッチ #ねこなつ2026
+scratch_SNS_006	#にゃんこスクラッチくじ でネコカン%d個ゲットしたにゃ！<br>期間中、最大3回チャレンジ可能！いっぱいネコカンを手に入れるにゃ～！<br><br>#にゃんこ大戦争 #にゃんこスクラッチ #1億2000万ダウンロード記念
 unlock_popup_message_108	<flash>ネコビタンステージ「ブルーインパクト」が解放！</flash><br>ネコビタンを使っていつでも挑戦することができます
 unlock_popup_message_109	<flash>ネコビタンステージ「狂乱のもねこ降臨」が解放！</flash><br>ネコビタンを使っていつでも挑戦することができます
 unlock_popup_message_110	<flash>ネコビタンステージ「緊急暴風警報」が解放！</flash><br>ネコビタンを使っていつでも挑戦することができます
@@ -1242,7 +1244,10 @@ SpecialRuleName015	大勝負
 SpecialRuleName016	ハイスピード
 SpecialRuleName017	半額セット 激レア
 SpecialRuleName018	物価高騰 超激レア
+SpecialRuleName019	フィーバーラッシュ
 SpecialRuleName020	100万使い切り
+SpecialRuleName021	超半額セット EX
+SpecialRuleName022	レア度選抜+1
 SpecialRuleExplanation000	【おこづかい制】<br>最初にお金をたくさんもらえます<br>ただし、時間経過や敵の撃破などで<br>所持金が増えることはありません
 SpecialRuleExplanation001	【生産スピード統一】<br>すべての味方キャラクターの<br>生産スピードが同じになり固定されます
 SpecialRuleExplanation002	【レア度代表戦】<br>各レア度ごとに1体ずつしか生産できません<br>編成は自由に行う事ができます
@@ -1262,6 +1267,9 @@ SpecialRuleExplanation015	【大勝負】<br>超激レアのコストが２倍�
 SpecialRuleExplanation016	【ハイスピード】<br>すべてのキャラクターの移動速度が上昇し<br>味方キャラクターの生産コストと生産時間が短縮されます
 SpecialRuleExplanation017	【半額セット 激レア】<br>激レアの生産コストが50％OFFになり<br>生産時の出現数が2体になります
 SpecialRuleExplanation018	【物価高騰 超激レア】<br>最初にお金をたくさんもらえますが<br>時間経過と敵撃破で所持金が増えません<br>加えて、超激レアのコストが2倍になります
+SpecialRuleExplanation019	【フィーバーラッシュ】<br>戦闘中に獲得したイベントPtに応じてフィーバーゲージが貯まっていき、<br>満タンになると一定時間「フィーバー状態」に入ります。<br>フィーバー状態中、キャラクターの生産時間が0になります
+SpecialRuleExplanation021	【超半額セット EX】<br>EXの生産コストが50％OFFになり<br>生産スピードが30％OFFになります<br>加えて、生産時の出現数が2体になります
+SpecialRuleExplanation022	【レア度選抜+1】<br>各レア度ごとに1体ずつしか編成できません<br>各キャラクター生産時の出撃数が2体になります
 BonusNameLabel000	攻撃力ダウン
 BonusNameLabel001	ふっとばす
 BonusNameLabel002	めっぽう強い（攻）
@@ -1372,3 +1380,32 @@ Recommended_levelup_tutorial1	毎週水曜にゃんこDAYで選ばれたキャ�
 loginbonus_highlight	目玉報酬ゲットまで<br>あと${dayNum}日
 Stage_lock00	アイテムが不足しています。
 Stage_battle00	戦闘を中止しますか？<br>今ならアイテムが戻ります（10秒以内）
+vibration_error_popup	対応していない端末、またはOSの為、<br>振動機能をONにすることができません
+map_stage_limit_variable_001	これ以上先に進めないにゃ<br>他のステージを遊んで待っててにゃ<br><color=255,255,0>解放予定：${year}-${month}-${day} ${hour}:${minute}</color>
+map_stage_limit_variable_error	これ以上先に進めないにゃ<br>他のステージを遊んで待っててにゃ
+datetime_day	${day}日
+datetime_hour	${hour}時間
+datetime_minute	${minute}分
+PointRulePageHeadline001	こねこ音楽祭説明
+PointRuleHeadline001	こねこ音楽祭とは
+PointRuleHeadline002	【イベントPt 獲得方法】
+PointRuleHeadline003	【イベントPt 獲得倍率】
+PointRuleExplanation001	期間中に集めたイベントPtの累計数に応じて、さまざまな報酬を獲得できるイベントです。<br>イベントPtは専用のステージに挑戦することで獲得することができます。<br><br>イベントステージでは特別なルール【フィーバー：ベビーラッシュ】が設けられています。<br>ルールの詳細は下記をご確認ください。<br><br>【フィーバー：ベビーラッシュ】<br>戦闘中に獲得したイベントPtに応じてフィーバーゲージが上昇し、<br>フィーバーゲージがMAXになると一定時間フィーバーが発動します。<br>フィーバー中は全てのキャラクターの生産時間が0になります。
+PointRuleExplanation002	敵の撃破時と[生産コスト×イベントPt獲得倍率]に応じてイベントPtを獲得できます。<br>イベントPt獲得倍率は生産コスト、ステージ毎に異なっているため詳細は【イベントPt 獲得倍率】の表をご確認ください。<br>また、本能によって生産コストが減少している場合でも、減少前の生産コストに応じたイベントPtを獲得できます。
+Point_release_popup_001	こねこ音楽祭<br>イベントPtが${Point}まで獲得可能になりました
+PointReleaseHeadline001	【イベントPt上限解放日時】
+PointReleaseExplanation001	${year}-${month}-${day}（${hour}:${minute}）　イベントPt${Point}まで解放
+point_fraud_error	端末時間が変更された可能性があるため<br>イベントPtが獲得できません<br>ステージに挑戦しますか？
+PointReward00	イベントPt報酬<br>「${itemName}+${itemNum}」<br><flash>ゲット！！</flash>
+PointReward01	イベントPt報酬<br>キャラクター「${charaName}」<br><flash>ゲット！！</flash>
+PointReward02	イベントPt報酬<br>ログインボーナス<br><flash>グレードアップ！</flash>
+PointRewardWeb00	${itemName}${itemNum}枚を獲得
+PointRewardWeb01	${itemName}${itemNum}個を獲得
+PointRewardWeb02	${itemName}${itemNum}を獲得
+PointRewardWeb03	「${charaName}」を獲得
+PointRewardWeb04	ログインボーナスがグレードアップ　<span style='color: red;'>※詳細はイベント告知をご確認ください</span>
+point_stage_limit	イベントPtが上限に達しました<br>※上限を超えての獲得はできません
+PointRuletabletext001	ステージ${stageNo}<br>${stageName}
+PointRuletabletext002	${costNum1}円～${costNum2}円
+PointRuletabletext003	${costNum}円～
+PointRuletabletext004	Pt獲得無し

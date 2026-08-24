@@ -1,0 +1,104 @@
+{
+  "MapID": {
+    "39000": {
+      "StageIndex": {
+        "0": {
+          "RuleType": 0,
+          "PageHeadline": "PointRulePageHeadline001",
+          "RuleHeadlineLabel": [
+            "PointRuleHeadline001",
+            "PointRuleHeadline002",
+            "PointRuleHeadline003"
+          ],
+          "RuleExplanationLabel": [
+            "PointRuleExplanation001",
+            "PointRuleExplanation002",
+            -1
+          ],
+          "RuleExplanationTypeLabel": [
+            0,
+            0,
+            1
+          ],
+          "Parameters": [
+            7,
+            15,
+            2000,
+            17,
+            4500,
+            25,
+            5500,
+            30,
+            7000,
+            0,
+            10000
+          ]
+        },
+        "1": {
+          "RuleType": 0,
+          "PageHeadline": "PointRulePageHeadline001",
+          "RuleHeadlineLabel": [
+            "PointRuleHeadline001",
+            "PointRuleHeadline002",
+            "PointRuleHeadline003"
+          ],
+          "RuleExplanationLabel": [
+            "PointRuleExplanation001",
+            "PointRuleExplanation002",
+            -1
+          ],
+          "RuleExplanationTypeLabel": [
+            0,
+            0,
+            1
+          ],
+          "Parameters": [
+            9,
+            17,
+            2000,
+            19,
+            4500,
+            31,
+            5500,
+            37,
+            7000,
+            0,
+            10000
+          ]
+        },
+        "2": {
+          "RuleType": 0,
+          "PageHeadline": "PointRulePageHeadline001",
+          "RuleHeadlineLabel": [
+            "PointRuleHeadline001",
+            "PointRuleHeadline002",
+            "PointRuleHeadline003"
+          ],
+          "RuleExplanationLabel": [
+            "PointRuleExplanation001",
+            "PointRuleExplanation002",
+            -1
+          ],
+          "RuleExplanationTypeLabel": [
+            0,
+            0,
+            1
+          ],
+          "Parameters": [
+            10,
+            20,
+            2000,
+            22,
+            4500,
+            37,
+            5500,
+            45,
+            7000,
+            0,
+            10000
+          ]
+        }
+      }
+    }
+  }
+}
