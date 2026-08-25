@@ -23,6 +23,29 @@
     "726",
     "776"
   ],
+  "sUnitbuy_maxPlus_change_list": [
+    {
+      "unit": "504",
+      "old_max_level": "50",
+      "new_max_level": "50",
+      "old_max_plus": "0",
+      "new_max_plus": "5"
+    },
+    {
+      "unit": "726",
+      "old_max_level": "50",
+      "new_max_level": "50",
+      "old_max_plus": "20",
+      "new_max_plus": "25"
+    },
+    {
+      "unit": "776",
+      "old_max_level": "50",
+      "new_max_level": "50",
+      "old_max_plus": "5",
+      "new_max_plus": "10"
+    }
+  ],
   "sGatya_names_Rlist": [
     "gatya_bnr1077.png",
     "gatya_bnr1079.png",
