@@ -17,6 +17,7 @@
   "cshield": "城バリア",
   "base_xp": "基礎XP",
   "tlimit": "出撃制限",
+  "openlimit": "開放条件",
   "ex_stage": "EXステージ",
   "gift_item_drop": "ドロップ",
   "hp_bgm_text": "城体力 < {threshold}%",

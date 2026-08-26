@@ -17,6 +17,7 @@
   "cshield": "Castle Shield",
   "base_xp": "Castle XP",
   "tlimit": "Deploy Limit",
+  "openlimit": "Unlock Condition",
   "ex_stage": "EX Stage",
   "gift_item_drop": "Rewards",
   "hp_bgm_text": "Castle HP < {threshold}%",
