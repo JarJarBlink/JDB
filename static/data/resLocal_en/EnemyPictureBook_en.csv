@@ -366,13 +366,13 @@
 %s|A proud soldier of the great Mole Army,|safeguarding peace and love throughout|the cosmos. His antimatter uppercut|catapults Cats to another dimension.
 %s|A bioweapon bred by Space Doges for|surprise attacks on Cat outposts. Invisible|from the front, but since this game is in|landscape mode, its stealth is not effective.
 %s|Hey, it's me, Cat God.|You look like you're having a good|time reading my character text.|It's almost my bathtime, though, so...
-%s|仮1|仮2|仮3|仮4
-%s|仮1|仮2|仮3|仮4
-%s|仮1|仮2|仮3|仮4
-%s|仮1|仮2|仮3|仮4
-%s|仮1|仮2|仮3|仮4
-%s|仮1|仮2|仮3|仮4
-%s|仮1|仮2|仮3|仮4
+%s
+%s
+%s
+%s
+%s
+%s
+%s
 %s|A extra-confident bird named by parents who|wanted him to always believe in himself. His|arrogance is so extreme that it consumed|his home dimension and drove him to this one.
 %s|仮1|仮2|仮3|仮4
 %s|A tear in space time that opened up inside|a nebula. Manipulates the continuum to|warp Cats away. Victory is possible if you|attack it from long-distance...
@@ -439,7 +439,7 @@
 %s|The most ancient of cyclones, born from|the Big Bang itself. Hasn't weakened even|after devouring the dinosaurs. Inflicts Curse,|grows stronger after taking damage.
 %s
 %s
-%s|仮1|仮2|仮3|仮4
+%s
 %s
 %s|Rumored to be the  secret lovechild of a |famous storm. It's impossible to guess who it|is though. Warps anyone who comes close.|Low stamina, so try going all-out!
 %s|This mean gang of fishy bad boys have|had it with the Cats causing trouble in their|territory. Out of the dirt and ready to fight!|Don't call them snakes, they don't like that.
@@ -783,4 +783,6 @@
 %s
 %s
 %s
+%s
+%s|Fell into the Aku Realms through a rift in space|and time, absorbing an infernal stone. |Built immense wealth with the demonic sales|tactic: Freezing reluctant clients to force upsales!
 %s

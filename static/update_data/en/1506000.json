@@ -1,0 +1,209 @@
+{
+  "date": "2026/8/24",
+  "sCat_id_list": [
+    "873"
+  ],
+  "sCat_sprite_id_list": [
+    "875"
+  ],
+  "sTrue_form_new_id_list": [
+    "733"
+  ],
+  "sTrue_4form_new_id_list": [
+    "196"
+  ],
+  "sNew_skill_id_list": [
+    "302",
+    "439",
+    "655"
+  ],
+  "sTreasureBox_id_list": [
+    "272",
+    "273",
+    "274"
+  ],
+  "sUnitbuy_change_list": [
+    "504",
+    "726",
+    "776",
+    "864"
+  ],
+  "sUnitbuy_maxPlus_change_list": [
+    {
+      "unit": "504",
+      "old_max_level": "50",
+      "new_max_level": "50",
+      "old_max_plus": "0",
+      "new_max_plus": "5"
+    },
+    {
+      "unit": "726",
+      "old_max_level": "50",
+      "new_max_level": "50",
+      "old_max_plus": "15",
+      "new_max_plus": "25"
+    },
+    {
+      "unit": "776",
+      "old_max_level": "50",
+      "new_max_level": "50",
+      "old_max_plus": "5",
+      "new_max_plus": "10"
+    }
+  ],
+  "sGatya_names_Rlist": [
+    "gatya_bnr1077.png",
+    "gatya_bnr1081.png",
+    "gatya_bnr926.png"
+  ],
+  "sGatya_names_Nlist": [],
+  "sGatya_names_Elist": [
+    "gatya_e_bnr54.png",
+    "gatya_e_bnr55.png"
+  ],
+  "sCombo_id_list": [
+    "385",
+    "386",
+    "387",
+    "388"
+  ],
+  "sNew_stageND_list": [
+    "34034"
+  ],
+  "sNew_stageS_list": [],
+  "sNew_stageSR_list": [
+    "36026",
+    "36027"
+  ],
+  "sNew_stageC_list": [],
+  "sNew_stageCA_list": [],
+  "sNew_stageB_list": [],
+  "sNew_stageEX_list": [],
+  "sNew_stageA_list": [],
+  "sNew_stageV_list": [],
+  "sNew_stageR_list": [],
+  "sNew_stageH_list": [],
+  "sNew_stageG_list": [],
+  "sNew_stageT_list": [],
+  "sNew_stagePR_list": [
+    "39000"
+  ],
+  "sNew_4star_stage_list": [],
+  "sNew_3star_stage_list": [],
+  "sNew_2star_stage_list": [
+    "34011",
+    "34012"
+  ],
+  "sEnemy_id_list": [
+    "786",
+    "787"
+  ],
+  "sEnemy_change_list": [],
+  "sNew_medal_list": [],
+  "sCastle_ids": [],
+  "sMission_id_list": [
+    674,
+    677,
+    803,
+    804,
+    805,
+    806,
+    807,
+    837,
+    838,
+    839,
+    933,
+    934,
+    935,
+    1150,
+    1151,
+    1152,
+    1218,
+    1219,
+    1220,
+    1221,
+    1222,
+    1223,
+    1224,
+    1225,
+    1226,
+    1227,
+    1228,
+    1229,
+    1230,
+    1231,
+    1232,
+    1233,
+    1234
+  ],
+  "sRankgift_des": [
+    "UR3600\tSuper Rare Crazed Cats may be upgraded to Level 25. ",
+    "UR3650\tSuper Rare Crazed Cats may be upgraded to Level 30. ",
+    "UR1110\t??? Cats can now beupgraded up to Level 25.",
+    "UR1410\t??? Cats can now beupgraded up to Level 30.",
+    "UR28000\tReceive 1 Rare Ticket\n",
+    "UR28100\tReceive 5 Super Rare Catseyes\n",
+    "UR28200\tReceive 5 Uber Rare Catseyes"
+  ],
+  "sMusic_id_list": [
+    "193",
+    "195"
+  ],
+  "sSoundEffect_ids": [
+    "194"
+  ],
+  "sNew_bg_list": [],
+  "sMapStage_change_list": [
+    1260,
+    1261,
+    1263,
+    1264,
+    1286,
+    1321,
+    1359,
+    11033,
+    24068,
+    24074,
+    24078
+  ],
+  "combo_list": [
+    " — \"Resistant\" Effects Up(Sm)<br><a href=\"u000.html?cc=en&unit=866\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni866_f00.png\" width=64 title=\"866(1階)\"></a>",
+    " — Unit Speed Up(Sm)<br><a href=\"u000.html?cc=en&unit=874\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni874_f00.png\" width=64 title=\"874(1階)\"></a>",
+    " — Starting Money Up(Sm)<br><a href=\"u000.html?cc=en&unit=874\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni874_c00.png\" width=64 title=\"874(2階)\"></a>",
+    "Reserve Element — Cannon Recharge Up(M)<br><a href=\"u000.html?cc=en&unit=781\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni781_c00.png\" width=64 title=\"781(2階)\"></a><a href=\"u000.html?cc=en&unit=689\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni689_f00.png\" width=64 title=\"689(1階)\"></a>"
+  ],
+  "mission_list": [
+    "1. (Special) 【River City Cat Clash】④: Clear \"River City Challenge Course\"，1 times using only 9 Normal Cats. <br>Reward：XP +100000\n<br>",
+    "2. (Special) 【River City Cat Clash】Clear all event Missions，to earn a Rare Ticket reward! <br>Reward：Rare Ticket +1\n<br>",
+    "3. (Special) 【River City Cat Clash】①: Clear 10 River City Cat Clash，collab stages. All collab stages count for this mission. (10 of 10) <br>Reward：Cat Ticket +1\n<br>",
+    "4. (Special) 【River City Cat Clash】②: Clear 30 River City Cat Clash，collab stages. All collab stages count for this mission. (30 of 30) <br>Reward：Cat Ticket +1\n<br>",
+    "5. (Special) 【River City Cat Clash】②: Clear 50 River City Cat Clash，collab stages. All collab stages count for this mission. (50 of 50) <br>Reward：Cat Ticket +1\n<br>",
+    "6. (Special) 【River City Cat Clash】⑤: Clear \"River City Three-Leg Race\"，1 times using only 2 Rare Cats. <br>Reward：Rich Cat +1\n<br>",
+    "7. (Special) 【River City Cat Clash】⑥: Clear \"River City Three-Leg Race\"，1 times using only 2 Special Cats. <br>Reward：Sniper the Cat +1\n<br>",
+    "8. (Special) Clear 5 Fate/stay night [HF] collab stages.，All Fate/stay night [HF] stages count for this mission. (5 of 5) <br>Reward：Leadership +1\n<br>",
+    "9. (Special) Clear 15 Fate/stay night [HF] collab stages.，All Fate/stay night [HF] stages count for this mission. (15 of 15) <br>Reward：Leadership +1\n<br>",
+    "10. (Special) Clear 30 Fate/stay night [HF] collab stages.，All Fate/stay night [HF] stages count for this mission. (30 of 30) <br>Reward：Leadership +1\n<br>",
+    "11. (Special) [Invasion Stage] Clear The Mask and the Baby，You must also clear the Continuation Stage. <br>Reward：Catseye [Dark] +1\n<br>",
+    "12. (Special) [Invasion Stage] Clear The Prince and the Revenant，You must also clear the Continuation Stage. <br>Reward：Catseye [Dark] +1\n<br>",
+    "13. (Special) [Invasion Stage] Clear The Queen and the Saint，You must also clear the Continuation Stage. <br>Reward：Catseye [Dark] +1\n<br>",
+    "14. (Special) Clear 50 Fate/stay night [HF] collab stages.，All Fate/stay night [HF] stages count for this mission. (50 of 50) <br>Reward：Cat Ticket +1\n<br>",
+    "15. (Special) Clear the Fate/stay night [HF] collab stage:， \"The Hidden Grail War\" 1 times. <br>Reward：Cat Ticket +1\n<br>",
+    "16. (Special) Clear the Fate/stay night [HF] collab stage:， \"True Assassin's Gauntlet\" 1 times. <br>Reward：Cat Ticket +1\n<br>",
+    "17. (Special) 【120M DL】Clear all event Missions，to earn a Rare Ticket reward! <br>Reward：Rare Ticket +1\n<br>",
+    "18. (Special) 【120M DL】Send Gamatoto on 1 successful expedition!，(Complete 1 full expedition to any Gamatoto area: 1 of 1) <br>Reward：Legendary Starshine +3\n<br>",
+    "19. (Special) 【120M DL】Send Gamatoto on 3 successful expeditions!，(Complete 3 full expeditions to any Gamatoto area: 3 of 3) <br>Reward：Legendary Starshine +3\n<br>",
+    "20. (Special) 【120M DL】Send Gamatoto on 5 successful expeditions!，(Complete 5 full expeditions to any Gamatoto area: 5 of 5) <br>Reward：Legendary Starshine +5\n<br>",
+    "21. (Special) 【120M DL】Clear any 5 Battle Cats stage(s). (5 of 5) <br>Reward：Legendary Starshine +3\n<br>",
+    "22. (Special) 【120M DL】Clear any 10 Battle Cats stage(s). (10 of 10) <br>Reward：Legendary Starshine +3\n<br>",
+    "23. (Special) 【120M DL】Clear any 15 Battle Cats stage(s). (15 of 15) <br>Reward：Legendary Starshine +5\n<br>",
+    "24. (Special) 【120M DL】Clear any 20 Battle Cats stage(s). (20 of 20) <br>Reward：Legendary Starshine +5\n<br>",
+    "25. (Special) 【Halloween Party】Clear all event Missions to，earn a Rare Ticket Reward! <br>Reward：Rare Ticket +1\n<br>",
+    "26. (Special) 【Halloween Party】Earn a Featured Item from，the Special Event Capsules! <br>Reward：Cat Ticket +1\n<br>",
+    "27. (Special) 【Halloween Party】Clear any 5 Battle Cats stage(s). (5 of 5) <br>Reward：Legendary Spirit +3\n<br>",
+    "28. (Special) 【Halloween Party】Clear any 10 Battle Cats stage(s). (10 of 10) <br>Reward：Legendary Spirit +3\n<br>",
+    "29. (Special) 【Halloween Party】Clear any 15 Battle Cats stage(s). (15 of 15) <br>Reward：Legendary Spirit +3\n<br>",
+    "30. (Special) 【Halloween Party】Clear any 20 Battle Cats stage(s). (20 of 20) <br>Reward：Legendary Spirit +3\n<br>",
+    "31. (Special) 【Halloween Party】Clear any 25 Battle Cats stage(s). (25 of 25) <br>Reward：Legendary Spirit +3\n<br>"
+  ],
+  "sundries": []
+}

@@ -84,8 +84,8 @@ receivedBoxText	Items not claimed within 30 days will be disabled.
 receive_version_error	Update to the most recent version<br>before accepting your item rewards.
 receive_network_error	Connection Error<br>Items could not be receieved.
 receive_honor_popup	<flash>%s</flash>
-receive_item_popup	%d %s(s)
-receive_item_popup_xp	%d %s(s)
+receive_item_popup	%s x%d
+receive_item_popup_xp	%s x%d
 receive_item_popup_chara	Cat Unit: %s
 receive_item_popup_chara_evolve	True Form: %s
 receive_item_popup_last	received!
@@ -771,7 +771,7 @@ legendquest_tutorial3	Be aware that Crowns, Energy and<br>Items will not be retu
 legendquest_Cancel	Escape from Battle?<br><color=255,0,0>Crowns, Energy and Items will not be returned.</color>
 legendquest_warning	Not enough Crowns...<br>Collect Crowns by clearing<br>Legend Map stages.
 legendquest_popup	<flash>Legend Quest</flash><br>Take on a random stage with a randomized formation!<br>※ Use Crowns earned from Legend stages and Energy to challenge!<br>※ Each try of a stage will cost more Crowns to enter battle.<br>※Crowns, Energy and Items will not be refunded after escape from battle.
-score_sns	My Battle Cats scored %d pts. at "%@"! %s %s
+score_sns	My Battle Cats scored %d Pts. at "%@"! %s %s
 legend_sns	My Battle Cats invaded the Legend Quest "%@"! %s %s
 nekodojo_sns	My Battle Cats scored %d pts. at "%@" in the Catclaw Dojo! %s %s
 ranking_sns	My Battle Cats scored %d pts. at "%@" in the Ranking Stages! %s %s
@@ -1560,7 +1560,7 @@ treasure_box_result_last_one	<color=255,255,0>You drew ${itemName}!</color><br>N
 gama_collabo_05_popup	<flash>Sonic the Hedgehog Collab!</flash><br>Chao joins the Gamatoto Expeditions!<br>Earn more items during the collab!<br>※Does not apply to Cat Food.
 gama_collabo_05_name	Chao
 gama_collabo_05_charatext	Chao has joined Gamatoto Expeditions!<br>Earn more item rewards during the collab!<br>※Does not apply to Cat Food.
-GiftMessage_023	<flash>Stage Clear Reward ${progressText}</flash><br>Clear the final stage of<br>"Truth's Devouring Maw" for a chance to get the<br>Special Unit "Master of Logic Newton"!
+GiftMessage_023	<flash>Stage Clear Reward ${progressText}</flash><br>Clear the final stage of<br>"Truth's Devouring Maw" for a chance to get the<br>Special Unit "Master of Logic Newtone"!
 slot_SNS_005	I got %d Cat Food from the Wildcat Slots Ⅱ in #TheBattleCats!<br><br>#BattleCats
 SpecialRuleExplanation009	【Uniform Motion】<br>All ally and enemy units<br>move at the same speed.
 SpecialRuleExplanation010	【Plus One: Special】<br>Special units are automatically<br>deployed two at a time.
@@ -1680,3 +1680,40 @@ SpecialRuleName020	Spend a Million
 Stage_battle00	Retreat?<br>Quit now to have your items refunded! (Within 10s)
 Stage_lock00	Not enough items.
 unlock_popup_message_160	<flash>Cat God</flash> has appeared in the Special Cats section!<br>Unlock him from the Upgrade screen!<br>* Might be your salvation in a close battle...!
+scratch_SNS_006	I won %d Cat Food from the #BattleCatsScratcher!<br>Try once each week for a chance at an awesome prize!<br><br>#TheBattleCats #BattleCats #CatScratcher #BattleCats120M
+SpecialRuleExplanation019	【Metal Mania】<br>Your Metal Gauge will fill based on Event Points gained during battle,<br>and you'll enter Metal Mania for a set time once the gauge is full!<br>During Metal Mania, all deploy cooldowns will be set to zero!
+SpecialRuleExplanation021	【Half-Off+: Special】<br>Special Unit deploy costs are halved,<br>with deploy cooldowns shortened by 30%!<br>Plus, two units will be deployed at once!
+SpecialRuleExplanation022	【Rarity Draft: Duo】<br>Only one unit of each Rarity can be equipped in your lineup.<br>However, two units will be deployed at once!
+SpecialRuleName019	Metal Mania
+SpecialRuleName021	Half-Off+: Special
+SpecialRuleName022	Rarity Draft: Duo
+vibration_error_popup	Unsupported device or OS.<br>Vibration features are not available.
+map_stage_limit_variable_001	Nowhere to go from here...<br>Why not enjoy a different stage?<br><color=255,255,0>Next Unlock: ${month}-${day}-${year}（${hour}:${minute})</color>
+map_stage_limit_variable_error	Nowhere to go from here...<br>Why not enjoy a different stage?
+datetime_day	${day}d
+datetime_hour	${hour}h
+datetime_minute	${minute}m
+point_sns	My Battle Cats scored %d pts. at "%@"! %s %s
+PointRulePageHeadline001	About "Koneko Music Festival"
+PointRuleHeadline001	Koneko Music Festival
+PointRuleHeadline002	Gaining Event Points
+PointRuleHeadline003	Event Point Multiplier
+PointRuleExplanation001	Earn a variety of rewards based on the total number of Event Points collected during the event period.<br>Event Points are earned by challenging dedicated event stages.<br><br>Event stages feature a special Rule: "Sonic Fever"<br>See below for details on this Rule.<br><br>【Sonic Fever】<br>Your Fever Gauge will fill based on Event Points gained during battle,<br>and you'll enter Sonic Fever for a set time once the gauge is full!<br>During Sonic Fever, all deploy cooldowns will be set to zero!
+PointRuleExplanation002	Earn Event Points by defeating enemies, with Points earned based on Deploy Cost x Event Point Multiplier.<br>Event Point Multipliers vary based on unit deploy costs and stage, so please check the Event Point multiplier table for details.<br>Even if a unit's deploy cost has been reduced by a Talent, you will still earn Event Points based on the unit's standard (pre-Talent) deploy cost.
+Point_release_popup_001	Koneko Music Festival<br>Earn up to ${Point} Event Points!
+PointReleaseHeadline001	Event Point Unlock Timing
+PointReleaseExplanation001	${month}-${day}-${year}（${hour}:${minute}）　Until Event Point ${Point} Unlock
+point_fraud_error	Device time may have been altered.<br>Unable to receive Event Points.<br>Do you still wish to play the stage?
+PointReward00	Event Point Reward<br>${itemName} +${itemNum}<br><flash>received!</flash>
+PointReward01	Event Point Reward<br>Cat Unit: ${charaName}<br><flash>unlocked!</flash>
+PointReward02	Event Point Reward<br>Login Bonus<br><flash>Upgraded!</flash>
+PointRewardWeb00	Gained ${itemNum} ${itemName}(s)
+PointRewardWeb01	Gained ${itemNum} ${itemName}(s)
+PointRewardWeb02	Gained ${itemNum} ${itemName}(s)
+PointRewardWeb03	Unlocked Cat Unit: ${charaName}
+PointRewardWeb04	Login Bonus Upgraded!<span style='color: red;'>* Check event info for more details!</span>
+point_stage_limit	Event Point Cap Reached.<br>* No more points can be gained.
+PointRuletabletext001	Stage ${stageNo}<br>${stageName}
+PointRuletabletext002	${costNum1}¢ ~ ${costNum2}¢
+PointRuletabletext003	${costNum}¢ ~
+PointRuletabletext004	No Points Gained
