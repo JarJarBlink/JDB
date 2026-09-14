@@ -1,0 +1,208 @@
+{
+  "date": "2026/8/24",
+  "sCat_id_list": [
+    "873"
+  ],
+  "sCat_sprite_id_list": [
+    "875"
+  ],
+  "sTrue_form_new_id_list": [
+    "733"
+  ],
+  "sTrue_4form_new_id_list": [
+    "196"
+  ],
+  "sNew_skill_id_list": [
+    "302",
+    "439",
+    "655"
+  ],
+  "sTreasureBox_id_list": [
+    "272",
+    "273",
+    "274"
+  ],
+  "sUnitbuy_change_list": [
+    "504",
+    "726",
+    "776",
+    "864"
+  ],
+  "sUnitbuy_maxPlus_change_list": [
+    {
+      "unit": "504",
+      "old_max_level": "50",
+      "new_max_level": "50",
+      "old_max_plus": "0",
+      "new_max_plus": "5"
+    },
+    {
+      "unit": "726",
+      "old_max_level": "50",
+      "new_max_level": "50",
+      "old_max_plus": "15",
+      "new_max_plus": "25"
+    },
+    {
+      "unit": "776",
+      "old_max_level": "50",
+      "new_max_level": "50",
+      "old_max_plus": "5",
+      "new_max_plus": "10"
+    }
+  ],
+  "sGatya_names_Rlist": [
+    "gatya_bnr1077.png",
+    "gatya_bnr1081.png"
+  ],
+  "sGatya_names_Nlist": [],
+  "sGatya_names_Elist": [
+    "gatya_e_bnr54.png",
+    "gatya_e_bnr55.png"
+  ],
+  "sCombo_id_list": [
+    "385",
+    "386",
+    "387",
+    "388"
+  ],
+  "sNew_stageND_list": [
+    "34034"
+  ],
+  "sNew_stageS_list": [],
+  "sNew_stageSR_list": [
+    "36026",
+    "36027"
+  ],
+  "sNew_stageC_list": [],
+  "sNew_stageCA_list": [],
+  "sNew_stageB_list": [],
+  "sNew_stageEX_list": [],
+  "sNew_stageA_list": [],
+  "sNew_stageV_list": [],
+  "sNew_stageR_list": [],
+  "sNew_stageH_list": [],
+  "sNew_stageG_list": [],
+  "sNew_stageT_list": [],
+  "sNew_stagePR_list": [
+    "39000"
+  ],
+  "sNew_4star_stage_list": [],
+  "sNew_3star_stage_list": [],
+  "sNew_2star_stage_list": [
+    "34011",
+    "34012"
+  ],
+  "sEnemy_id_list": [
+    "786",
+    "787"
+  ],
+  "sEnemy_change_list": [],
+  "sNew_medal_list": [],
+  "sCastle_ids": [],
+  "sMission_id_list": [
+    671,
+    672,
+    673,
+    674,
+    675,
+    676,
+    677,
+    803,
+    804,
+    805,
+    806,
+    807,
+    837,
+    838,
+    839,
+    1150,
+    1151,
+    1152,
+    1218,
+    1219,
+    1220,
+    1221,
+    1222,
+    1223,
+    1224,
+    1225,
+    1226,
+    1227,
+    1228,
+    1229,
+    1230,
+    1231,
+    1232,
+    1233,
+    1234
+  ],
+  "sRankgift_des": [
+    "UR28000\t獲得1張稀有券\n",
+    "UR28100\t獲得5個貓眼石【激稀有】\n",
+    "UR28200\t獲得5個貓眼石【超激稀有】"
+  ],
+  "sMusic_id_list": [
+    "193",
+    "195"
+  ],
+  "sSoundEffect_ids": [
+    "194"
+  ],
+  "sNew_bg_list": [],
+  "sMapStage_change_list": [
+    1260,
+    1261,
+    1263,
+    1264,
+    1286,
+    1321,
+    1359,
+    11033,
+    24068,
+    24074,
+    24078
+  ],
+  "combo_list": [
+    " — 「很耐打」的效果UP【小】<br><a href=\"u000.html?cc=tw&unit=866\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni866_f00.png\" width=64 title=\"866(1階)\"></a>",
+    " — 角色移動速度UP【小】<br><a href=\"u000.html?cc=tw&unit=874\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni874_f00.png\" width=64 title=\"874(1階)\"></a>",
+    " — 初期所持金額UP【小】<br><a href=\"u000.html?cc=tw&unit=874\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni874_c00.png\" width=64 title=\"874(2階)\"></a>",
+    "留校察看組 — 貓咪砲充電速度UP【中】<br><a href=\"u000.html?cc=tw&unit=781\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni781_c00.png\" width=64 title=\"781(2階)\"></a><a href=\"u000.html?cc=tw&unit=689\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni689_f00.png\" width=64 title=\"689(1階)\"></a>"
+  ],
+  "mission_list": [
+    "1. (Special) 通過「熱血！滾大球比賽」關卡5次吧！，「熱血！滾大球比賽」內的全關卡皆屬於累計對象（完成度5/5） <br>Reward：XP +50000\n<br>",
+    "2. (Special) 通過「熱血！滾大球比賽」關卡10次吧！，「熱血！滾大球比賽」內的全關卡皆屬於累計對象（完成度10/10） <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "3. (Special) 通過「熱血！障礙物競走」關卡5次吧！，「熱血！障礙物競走」內的全關卡皆屬於累計對象（完成度5/5） <br>Reward：狙擊手 +1\n<br>",
+    "4. (Special) 【熱血！貓咪大運動會】④：用只由9隻基本角色編成的隊伍通過，「熱血！障礙物競走」關卡1次吧！※通過「熱血！滾大球比賽」的關卡1後開放 <br>Reward：XP +100000\n<br>",
+    "5. (Special) 在「熱血！兩人三腳賽」打倒【%@】吧！，「熱血！兩人三腳賽」全關卡皆為對象 <br>Reward：土豪貓 +1\n<br>",
+    "6. (Special) 在「熱血！兩人三腳賽」打倒【%@】吧！，「熱血！兩人三腳賽」全關卡皆為對象 <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "7. (Special) 【熱血！貓咪大運動會】通過①～⑥所有任務，來獲得稀有券吧！ <br>Reward：稀有券 +1\n<br>",
+    "8. (Special) 【熱血！貓咪大運動會】①：通過活動關卡10次吧！，「熱血！貓咪大運動會」活動的全關卡皆屬於累計對象（完成度10/10） <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "9. (Special) 【熱血！貓咪大運動會】②：通過活動關卡30次吧！，「熱血！貓咪大運動會」活動的全關卡皆屬於累計對象（完成度30/30） <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "10. (Special) 【熱血！貓咪大運動會】③：通過活動關卡50次吧！，「熱血！貓咪大運動會」活內的全關卡皆屬於累計對象（完成度50/50） <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "11. (Special) 【熱血！貓咪大運動會】⑤：用只由2隻稀有角色編成的隊伍，通過「熱血！兩人三腳賽！」關卡1次吧！ <br>Reward：土豪貓 +1\n<br>",
+    "12. (Special) 【熱血！貓咪大運動會】⑥：用只由2隻EX角色編成的隊伍，通過「熱血！兩人三腳賽！」1次吧！ <br>Reward：狙擊手 +1\n<br>",
+    "13. (Special) 【Fate/stay night [HF]】通過合作關卡5次吧！，全合作關卡皆屬於累計對象（完成度5/5） <br>Reward：首領旗 +1\n<br>",
+    "14. (Special) 【Fate/stay night [HF]】通過合作關卡15次吧！，全合作關卡皆屬於累計對象（完成度15/15） <br>Reward：首領旗 +1\n<br>",
+    "15. (Special) 【Fate/stay night [HF]】通過合作關卡30次吧！，全合作關卡皆屬於累計對象（完成度30/30） <br>Reward：首領旗 +1\n<br>",
+    "16. (Special) 【Fate/stay night [HF]】通過合作關卡50次吧！，全合作關卡皆屬於累計對象（完成度50/50） <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "17. (Special) 【Fate/stay night [HF]】通過合作關卡，「隱藏的聖杯戰爭」1次吧！ <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "18. (Special) 【Fate/stay night [HF]】通過合作關卡，「真Assassin強襲！」1次吧！ <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "19. (Special) 【1億2000萬下載紀念】完成所有活動任務，來獲得稀有券吧！ <br>Reward：稀有券 +1\n<br>",
+    "20. (Special) 【1億2000萬下載紀念】讓加碼多多出發去探險1次吧！，完成任意區域探險1次後即可達成（完成度1/1） <br>Reward：傳說的亮晶晶 +3\n<br>",
+    "21. (Special) 【1億2000萬下載紀念】讓加碼多多出發去探險3次吧！，完成任意區域探險3次後即可達成（完成度3/3） <br>Reward：傳說的亮晶晶 +3\n<br>",
+    "22. (Special) 【1億2000萬下載紀念】讓加碼多多出發去探險5次吧！，完成任意區域探險5次後即可達成（完成度5/5） <br>Reward：傳說的亮晶晶 +5\n<br>",
+    "23. (Special) 【1億2000萬下載紀念】通過《貓咪大戰爭》關卡5次吧！，《貓咪大戰爭》的全關卡皆屬於累計對象（完成度5/5） <br>Reward：傳說的亮晶晶 +3\n<br>",
+    "24. (Special) 【1億2000萬下載紀念】通過《貓咪大戰爭》關卡10次吧！，《貓咪大戰爭》的全關卡皆屬於累計對象（完成度10/10） <br>Reward：傳說的亮晶晶 +3\n<br>",
+    "25. (Special) 【1億2000萬下載紀念】通過《貓咪大戰爭》關卡15次吧！，《貓咪大戰爭》的全關卡皆屬於累計對象（完成度15/15） <br>Reward：傳說的亮晶晶 +5\n<br>",
+    "26. (Special) 【1億2000萬下載紀念】通過《貓咪大戰爭》關卡20次吧！，《貓咪大戰爭》的全關卡皆屬於累計對象（完成度20/20） <br>Reward：傳說的亮晶晶 +5\n<br>",
+    "27. (Special) 【萬聖節派對】通過所有活動任務，來獲得稀有券吧！ <br>Reward：稀有券 +1\n<br>",
+    "28. (Special) 【萬聖節派對】從特別活動轉蛋中，獲得主打道具吧！ <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "29. (Special) 【萬聖節派對】通過《貓咪大戰爭》關卡5次吧！，《貓咪大戰爭》的全關卡皆屬於累計對象（完成度5/5） <br>Reward：傳說的靈魂 +3\n<br>",
+    "30. (Special) 【萬聖節派對】通過《貓咪大戰爭》關卡10次吧！，《貓咪大戰爭》的全關卡皆屬於累計對象（完成度10/10） <br>Reward：傳說的靈魂 +3\n<br>",
+    "31. (Special) 【萬聖節派對】通過《貓咪大戰爭》關卡15次吧！，《貓咪大戰爭》的全關卡皆屬於累計對象（完成度15/15） <br>Reward：傳說的靈魂 +3\n<br>",
+    "32. (Special) 【萬聖節派對】通過《貓咪大戰爭》關卡20次吧！，《貓咪大戰爭》的全關卡皆屬於累計對象（完成度20/20） <br>Reward：傳說的靈魂 +3\n<br>",
+    "33. (Special) 【萬聖節派對】通過《貓咪大戰爭》關卡25次吧！，《貓咪大戰爭》的全關卡皆屬於累計對象（完成度25/25） <br>Reward：傳說的靈魂 +3\n<br>"
+  ],
+  "sundries": []
+}
