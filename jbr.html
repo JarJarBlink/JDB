@@ -19,9 +19,17 @@
 
   <header>
     <div class="header-top">
-      <p class="eyebrow">Gacha Sequence Simulator</p>
+      <div class="header-top-left">
+        <p class="eyebrow">Gacha Sequence Simulator</p>
+        <h1 data-i18n="h1">轉蛋序列模擬器</h1>
+      </div>
       <div class="header-top-right">
-        <button type="button" class="btn-ghost" id="seedTrackerBtn">Seed Tracker</button>
+        <div class="view-switch" id="viewSwitch" role="tablist" aria-label="View">
+          <button type="button" class="view-switch-btn is-active" data-view="gacha"
+            data-i18n="viewGacha" role="tab" aria-selected="true">轉蛋序列</button>
+          <button type="button" class="view-switch-btn" data-view="tracker"
+            data-i18n="viewTracker" role="tab" aria-selected="false">Seed Tracker</button>
+        </div>
         <div class="pool-select lang-select" id="uiLangSelect">
           <button type="button" class="pool-select-trigger" aria-haspopup="listbox" aria-expanded="false"
             aria-label="Interface language / 介面語言 / 表示言語">
@@ -32,10 +40,7 @@
         </div>
       </div>
     </div>
-    <h1 data-i18n="h1">轉蛋序列模擬器</h1>
-    <p class="sub">
-      
-    </p>
+    <p class="sub"></p>
   </header>
 
   <main id="gachaView" class="jbr-view">
@@ -74,7 +79,7 @@
         </div>
       </div>
     </div>
-    <p class="rate-hint" id="poolHint" data-i18n="poolHintDefault">尚未讀取轉蛋池。</p>
+    <p class="rate-hint" id="poolHint">尚未讀取轉蛋池。</p>
   </div>
 
   <div class="panel">
@@ -90,6 +95,17 @@
       <div>
         <label for="rollCount" data-i18n="rollCountLabel">要排出幾抽</label>
         <input type="number" id="rollCount" value="20" min="1" max="500" />
+      </div>
+    </div>
+    <div class="grid" style="margin-top:14px">
+      <div>
+        <label for="lastRollInput" data-i18n="lastRollInputLabel">手動設定上一抽角色（第0抽）id</label>
+        <div class="seed-row">
+          <input type="number" id="lastRollInput" min="0" step="1"
+            data-i18n-attr-placeholder="lastRollInputPlaceholder" placeholder="角色 id，例如 1234" />
+          <button class="btn-ghost" id="lastRollApply" data-i18n="lastRollApply">套用</button>
+          <button class="btn-ghost" id="lastRollClear" data-i18n="lastRollClear">清除</button>
+        </div>
       </div>
     </div>
   </div>
@@ -156,8 +172,12 @@
           <input type="radio" name="routeToggle" class="route-toggle" value="C" checked />
           <span data-i18n="routeToggleC">路線 C（+ 貓罐頭連抽保底，全開最佳）</span>
         </label>
+        <label class="route-toggle-item route-toggle-item-D" id="routeToggleItemD">
+          <input type="radio" name="routeToggle" class="route-toggle" value="D" />
+          <span data-i18n="routeToggleD">路線 D（+ 貓罐頭連抽保底，不用白金/傳說券）</span>
+        </label>
       </div>
-      <p class="rate-hint" id="routeHint" data-i18n="routeHintDefault">請先讀取轉蛋池並選擇目標角色。</p>
+      <p class="rate-hint" id="routeHint">請先讀取轉蛋池並選擇目標角色。</p>
       <table class="route-breakdown" id="routeBreakdown" style="display:none;">
         <caption data-i18n="routeBreakdownTitle"></caption>
         <thead><tr id="routeBreakdownHead"></tr></thead>
@@ -173,12 +193,11 @@
       <span><span class="dot" style="background:var(--uber)"></span><span data-i18n="legendUber">超激稀有</span></span>
       <span><span class="dot" style="background:linear-gradient(90deg,var(--legend-a),var(--legend-b))"></span><span data-i18n="legendLegend">傳說稀有</span></span>
       <span><span class="flag flag-reroll">R</span><span data-i18n="legendReroll">同稀有貓重抽（下方會顯示替換角色）</span></span>
-      <span><span class="flag flag-guar">G</span><span data-i18n="legendGuar">保底貓（A/B 軌各自獨立一欄顯示）</span></span>
+      <!--<span><span class="flag flag-guar">G</span><span data-i18n="legendGuar">保底貓（A/B 軌各自獨立一欄顯示）</span></span>-->
       <span><span class="dot" style="background:var(--flag)"></span><span data-i18n="legendRoute">最佳路線（紅色虛線）</span></span>
       <span id="legendRouteGuarItem"><span class="dot" style="background:var(--route-guar)"></span><span data-i18n="legendRouteGuar">路線中靠保底達成的段落（橘色虛線）</span></span>
       <span id="legendRoutePlatItem"><span class="dot" style="background:var(--route-plat)"></span><span data-i18n="legendRoutePlat">路線中用白金券/傳說券避開重複貓換軌的段落（藍色虛線）</span></span>
-      <span><span class="dot" style="background:var(--target-mark)"></span><span data-i18n="legendTargetMark">目標角色出現的所有格子（規劃路線後標記）</span></span>
-      <span id="legendPityItem" style="display:none"><span class="dot" style="background:var(--pity-mark)"></span><span data-i18n="legendPity">自訂必中提醒（依你設定的抽數間隔標記必中位置）</span></span>
+      <span><span class="dot dot-circle" style="background:var(--target-mark)"></span><span data-i18n="legendTargetMark">目標角色出現的所有格子（規劃路線後標記）</span></span>      <span id="legendPityItem" style="display:none"><span class="dot dot-circle" style="background:var(--pity-mark)"></span><span data-i18n="legendPity">自訂必中提醒（依你設定的抽數間隔標記必中位置）</span></span>
     </div>
     <div class="actions-controls">
       <button class="btn-main" id="generate" data-i18n="generate">產生轉蛋序列</button>
@@ -263,7 +282,6 @@
       </div>
       <div class="actions-controls" style="margin-top:14px">
         <button class="btn-main" id="stBtnFetch">Fetch Seeds</button>
-        <button class="btn-ghost" id="stBackBtn">← Go Back</button>
       </div>
       <p class="rate-hint bad" id="stErrorMsg"></p>
       <div id="stResult" style="display:none; margin-top:10px;">
@@ -287,20 +305,28 @@
 <script src="static/js/jbr/seed_bias_analyzer.js"></script>
 <script>
 (function () {
-  const gachaView = document.getElementById('gachaView');
-  const seedView = document.getElementById('seedTrackerView');
-  const openBtn = document.getElementById('seedTrackerBtn');
-  const backBtn = document.getElementById('stBackBtn');
+  const views = {
+    gacha: document.getElementById('gachaView'),
+    tracker: document.getElementById('seedTrackerView')
+  };
+  const buttons = Array.from(document.querySelectorAll('.view-switch-btn'));
 
-  openBtn.addEventListener('click', () => {
-    gachaView.hidden = true;
-    seedView.hidden = false;
-  });
+  function showView(name) {
+    if (!views[name]) return;
+    Object.keys(views).forEach((k) => { views[k].hidden = (k !== name); });
+    buttons.forEach((b) => {
+      const on = b.dataset.view === name;
+      b.classList.toggle('is-active', on);
+      b.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
-  backBtn.addEventListener('click', () => {
-    seedView.hidden = true;
-    gachaView.hidden = false;
-  });
+  buttons.forEach((b) => b.addEventListener('click', () => showView(b.dataset.view)));
+
+  // seed_tracker.js 同步完種子後可以直接跳回模擬頁
+  window.JBR = window.JBR || {};
+  window.JBR.showView = showView;
 })();
 </script>
 </body>
