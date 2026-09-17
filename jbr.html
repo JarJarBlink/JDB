@@ -186,6 +186,56 @@
     </div>
   </div>
 
+  <div class="sequence-sticky-zone" id="sequenceStickyZone">
+  <div class="sticky-float-row">
+    <div id="drawToolbarFloating" class="draw-toolbar draw-toolbar-float" style="display:none">
+      <button type="button" class="draw-toolbar-close-btn" id="drawToolbarFloatCloseBtn" data-i18n-attr-aria-label="drawToolbarClose" aria-label="關閉懸浮工具列">×</button>
+      <label class="draw-toggle">
+        <input type="checkbox" id="drawModeToggleFloat">
+        <span data-i18n="drawNoteToggle">手繪筆記</span>
+      </label>
+      <button type="button" class="draw-icon-btn" id="screenshotBtnFloat" data-i18n-attr-aria-label="screenshotSequence" aria-label="截圖目前的轉蛋序列" title="截圖目前的轉蛋序列">
+        <img src="static/img/icon/dl.svg" width="18" height="18" alt="screenshot">
+      </button>
+      <div class="draw-tools" id="drawToolsFloat">
+        <div class="draw-tool-group" role="group" id="drawToolGroupFloat">
+          <button type="button" class="draw-tool-btn" data-draw-tool="pen" data-i18n="drawToolPen">畫筆</button>
+          <button type="button" class="draw-tool-btn" data-draw-tool="text" data-i18n="drawToolText">文字</button>
+          <button type="button" class="draw-tool-btn" data-draw-tool="eraser" data-i18n="drawToolEraser">橡皮擦</button>
+        </div>
+        <div class="draw-color-group" role="group" id="drawColorGroupFloat">
+          <button type="button" class="draw-color-swatch" data-draw-color="#e63946" style="--sw:#e63946;" title="紅"></button>
+          <button type="button" class="draw-color-swatch" data-draw-color="#2563eb" style="--sw:#2563eb;" title="藍"></button>
+          <button type="button" class="draw-color-swatch" data-draw-color="#16a34a" style="--sw:#16a34a;" title="綠"></button>
+          <button type="button" class="draw-color-swatch" data-draw-color="#f59e0b" style="--sw:#f59e0b;" title="橙"></button>
+          <button type="button" class="draw-color-swatch" data-draw-color="#1f2937" style="--sw:#1f2937;" title="黑"></button>
+        </div>
+        <div class="draw-width-group" role="group" id="drawWidthGroupFloat">
+          <button type="button" class="draw-width-btn" data-draw-width="2" data-i18n="drawWidthThin">細</button>
+          <button type="button" class="draw-width-btn" data-draw-width="4" data-i18n="drawWidthMed">中</button>
+          <button type="button" class="draw-width-btn" data-draw-width="7" data-i18n="drawWidthThick">粗</button>
+        </div>
+        <button type="button" class="draw-action-btn" id="drawUndoBtnFloat" data-i18n="drawUndo">復原</button>
+        <button type="button" class="draw-action-btn" id="drawClearBtnFloat" data-i18n="drawClear">清除全部</button>
+      </div>
+    </div>
+
+    <button type="button" class="draw-toolbar-reopen" id="drawToolbarReopenBtn" style="display:none" data-i18n-attr-aria-label="drawToolbarReopen" aria-label="開啟手繪筆記工具列">✏️</button>
+
+    <div id="guarRollsFloating" class="guar-rolls-floating" style="display:none">
+      <label class="details-toggle" id="guarRollsFloatingWrap">
+        <span data-i18n="guarRollsLabel">保底抽數</span>
+        <div class="pool-select" id="guarRollsFloatingSelect" data-i18n-attr-aria-label="guarRollsLabel" aria-label="保底抽數">
+          <button type="button" class="pool-select-trigger" aria-haspopup="listbox" aria-expanded="false">
+            <span class="pool-select-value"></span>
+            <span class="pool-select-arrow" aria-hidden="true">▾</span>
+          </button>
+          <ul class="pool-select-list" role="listbox" hidden></ul>
+        </div>
+      </label>
+    </div>
+  </div>
+
   <div class="actions">
     <div class="legend">
       <span><span class="dot dot-neutral"></span><span data-i18n="legendRare">稀有（不標色）</span></span>
@@ -293,6 +343,8 @@
     <svg id="userDrawOverlay" xmlns="http://www.w3.org/2000/svg"></svg>
   </div>
 
+  </div><!-- /#sequenceStickyZone -->
+
   </main>
 
   <section id="seedTrackerView" class="jbr-view" hidden>
@@ -339,54 +391,6 @@
 </div>
 
 <button type="button" class="back-to-top" id="backToTop" data-i18n-attr-aria-label="backToTop" aria-label="回到頂部">↑</button>
-
-<div id="guarRollsFloating" class="guar-rolls-floating" style="display:none">
-  <label class="details-toggle" id="guarRollsFloatingWrap">
-    <span data-i18n="guarRollsLabel">保底抽數</span>
-    <div class="pool-select" id="guarRollsFloatingSelect" data-i18n-attr-aria-label="guarRollsLabel" aria-label="保底抽數">
-      <button type="button" class="pool-select-trigger" aria-haspopup="listbox" aria-expanded="false">
-        <span class="pool-select-value"></span>
-        <span class="pool-select-arrow" aria-hidden="true">▾</span>
-      </button>
-      <ul class="pool-select-list" role="listbox" hidden></ul>
-    </div>
-  </label>
-</div>
-
-<!-- 手繪筆記懸浮工具列：跟上面 #drawToolbar 是同一組控制項的第二份copy-->
-<div id="drawToolbarFloating" class="draw-toolbar draw-toolbar-float" style="display:none">
-  <button type="button" class="draw-toolbar-close-btn" id="drawToolbarFloatCloseBtn" data-i18n-attr-aria-label="drawToolbarClose" aria-label="關閉懸浮工具列">×</button>
-  <label class="draw-toggle">
-    <input type="checkbox" id="drawModeToggleFloat">
-    <span data-i18n="drawNoteToggle">手繪筆記</span>
-  </label>
-  <button type="button" class="draw-icon-btn" id="screenshotBtnFloat" data-i18n-attr-aria-label="screenshotSequence" aria-label="截圖目前的轉蛋序列" title="截圖目前的轉蛋序列">
-    <img src="static/img/icon/dl.svg" width="18" height="18" alt="screenshot">
-  </button>
-  <div class="draw-tools" id="drawToolsFloat">
-    <div class="draw-tool-group" role="group" id="drawToolGroupFloat">
-      <button type="button" class="draw-tool-btn" data-draw-tool="pen" data-i18n="drawToolPen">畫筆</button>
-      <button type="button" class="draw-tool-btn" data-draw-tool="text" data-i18n="drawToolText">文字</button>
-      <button type="button" class="draw-tool-btn" data-draw-tool="eraser" data-i18n="drawToolEraser">橡皮擦</button>
-    </div>
-    <div class="draw-color-group" role="group" id="drawColorGroupFloat">
-      <button type="button" class="draw-color-swatch" data-draw-color="#e63946" style="--sw:#e63946;" title="紅"></button>
-      <button type="button" class="draw-color-swatch" data-draw-color="#2563eb" style="--sw:#2563eb;" title="藍"></button>
-      <button type="button" class="draw-color-swatch" data-draw-color="#16a34a" style="--sw:#16a34a;" title="綠"></button>
-      <button type="button" class="draw-color-swatch" data-draw-color="#f59e0b" style="--sw:#f59e0b;" title="橙"></button>
-      <button type="button" class="draw-color-swatch" data-draw-color="#1f2937" style="--sw:#1f2937;" title="黑"></button>
-    </div>
-    <div class="draw-width-group" role="group" id="drawWidthGroupFloat">
-      <button type="button" class="draw-width-btn" data-draw-width="2" data-i18n="drawWidthThin">細</button>
-      <button type="button" class="draw-width-btn" data-draw-width="4" data-i18n="drawWidthMed">中</button>
-      <button type="button" class="draw-width-btn" data-draw-width="7" data-i18n="drawWidthThick">粗</button>
-    </div>
-    <button type="button" class="draw-action-btn" id="drawUndoBtnFloat" data-i18n="drawUndo">復原</button>
-    <button type="button" class="draw-action-btn" id="drawClearBtnFloat" data-i18n="drawClear">清除全部</button>
-  </div>
-</div>
-
-<button type="button" class="draw-toolbar-reopen" id="drawToolbarReopenBtn" style="display:none" data-i18n-attr-aria-label="drawToolbarReopen" aria-label="開啟手繪筆記工具列">✏️</button>
 
 <!-- 截圖序列功能用 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
