@@ -193,7 +193,6 @@
       <span><span class="dot" style="background:var(--uber)"></span><span data-i18n="legendUber">超激稀有</span></span>
       <span><span class="dot" style="background:linear-gradient(90deg,var(--legend-a),var(--legend-b))"></span><span data-i18n="legendLegend">傳說稀有</span></span>
       <span><span class="flag flag-reroll">R</span><span data-i18n="legendReroll">同稀有貓重抽（下方會顯示替換角色）</span></span>
-      <!--<span><span class="flag flag-guar">G</span><span data-i18n="legendGuar">保底貓（A/B 軌各自獨立一欄顯示）</span></span>-->
       <span><span class="dot" style="background:var(--flag)"></span><span data-i18n="legendRoute">最佳路線（紅色虛線）</span></span>
       <span id="legendRouteGuarItem"><span class="dot" style="background:var(--route-guar)"></span><span data-i18n="legendRouteGuar">路線中靠保底達成的段落（橘色虛線）</span></span>
       <span id="legendRoutePlatItem"><span class="dot" style="background:var(--route-plat)"></span><span data-i18n="legendRoutePlat">路線中用白金券/傳說券避開重複貓換軌的段落（藍色虛線）</span></span>
@@ -213,6 +212,16 @@
         <span data-i18n="nextGuarLabel">下一次必中</span>
         <select id="nextGuaranteedSelect" data-i18n-attr-aria-label="nextGuarLabel" aria-label="下一次必中"></select>
       </label>
+      <label class="details-toggle" id="guarRollsWrap" style="display:none">
+        <span data-i18n="guarRollsLabel">保底抽數</span>
+        <div class="pool-select" id="guarRollsSelect" data-i18n-attr-aria-label="guarRollsLabel" aria-label="保底抽數">
+          <button type="button" class="pool-select-trigger" aria-haspopup="listbox" aria-expanded="false">
+            <span class="pool-select-value"></span>
+            <span class="pool-select-arrow" aria-hidden="true">▾</span>
+          </button>
+          <ul class="pool-select-list" role="listbox" hidden></ul>
+        </div>
+      </label>
     </div>
   </div>
 
@@ -225,6 +234,35 @@
       <button type="button" class="tips-close" id="tipsClose" data-i18n-attr-aria-label="tipsClose" aria-label="關閉 Tips">×</button>
     </div>
     <div class="tips-list" id="tipsList"></div>
+  </div>
+
+  <div class="draw-toolbar" id="drawToolbar">
+    <label class="draw-toggle">
+      <input type="checkbox" id="drawModeToggle">
+      <span data-i18n="drawNoteToggle">手繪筆記</span>
+    </label>
+    <div class="draw-tools" id="drawTools" style="display:none;">
+      <div class="draw-tool-group" role="group" id="drawToolGroup">
+        <button type="button" class="draw-tool-btn active" data-draw-tool="pen" data-i18n="drawToolPen">畫筆</button>
+        <button type="button" class="draw-tool-btn" data-draw-tool="text" data-i18n="drawToolText">文字</button>
+        <button type="button" class="draw-tool-btn" data-draw-tool="eraser" data-i18n="drawToolEraser">橡皮擦</button>
+      </div>
+      <div class="draw-color-group" role="group" id="drawColorGroup">
+        <button type="button" class="draw-color-swatch" data-draw-color="#e63946" style="--sw:#e63946;" title="紅"></button>
+        <button type="button" class="draw-color-swatch" data-draw-color="#2563eb" style="--sw:#2563eb;" title="藍"></button>
+        <button type="button" class="draw-color-swatch" data-draw-color="#16a34a" style="--sw:#16a34a;" title="綠"></button>
+        <button type="button" class="draw-color-swatch" data-draw-color="#f59e0b" style="--sw:#f59e0b;" title="橙"></button>
+        <button type="button" class="draw-color-swatch" data-draw-color="#1f2937" style="--sw:#1f2937;" title="黑"></button>
+      </div>
+      <div class="draw-width-group" role="group" id="drawWidthGroup">
+        <button type="button" class="draw-width-btn" data-draw-width="2" data-i18n="drawWidthThin">細</button>
+        <button type="button" class="draw-width-btn" data-draw-width="4" data-i18n="drawWidthMed">中</button>
+        <button type="button" class="draw-width-btn" data-draw-width="7" data-i18n="drawWidthThick">粗</button>
+      </div>
+      <button type="button" class="draw-action-btn" id="drawUndoBtn" data-i18n="drawUndo">復原</button>
+      <button type="button" class="draw-action-btn" id="drawClearBtn" data-i18n="drawClear">清除全部</button>
+    </div>
+    <p class="rate-hint" id="drawNoteHint" data-i18n="drawNoteHint" style="display:none;"></p>
   </div>
 
   <div class="table-scroll">
@@ -248,6 +286,7 @@
       <tbody id="resultBody"></tbody>
     </table>
     <svg id="routeOverlay" xmlns="http://www.w3.org/2000/svg"></svg>
+    <svg id="userDrawOverlay" xmlns="http://www.w3.org/2000/svg"></svg>
   </div>
 
   </main>
@@ -296,6 +335,19 @@
 </div>
 
 <button type="button" class="back-to-top" id="backToTop" data-i18n-attr-aria-label="backToTop" aria-label="回到頂部">↑</button>
+
+<div id="guarRollsFloating" class="guar-rolls-floating" style="display:none">
+  <label class="details-toggle" id="guarRollsFloatingWrap">
+    <span data-i18n="guarRollsLabel">保底抽數</span>
+    <div class="pool-select" id="guarRollsFloatingSelect" data-i18n-attr-aria-label="guarRollsLabel" aria-label="保底抽數">
+      <button type="button" class="pool-select-trigger" aria-haspopup="listbox" aria-expanded="false">
+        <span class="pool-select-value"></span>
+        <span class="pool-select-arrow" aria-hidden="true">▾</span>
+      </button>
+      <ul class="pool-select-list" role="listbox" hidden></ul>
+    </div>
+  </label>
+</div>
 
 <script src="static/js/jbr/gacha_sequence.js"></script>
 <script src="static/js/jbr/gacha_pool_loader.js"></script>
