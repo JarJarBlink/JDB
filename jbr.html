@@ -193,6 +193,7 @@
       <span><span class="dot" style="background:var(--uber)"></span><span data-i18n="legendUber">超激稀有</span></span>
       <span><span class="dot" style="background:linear-gradient(90deg,var(--legend-a),var(--legend-b))"></span><span data-i18n="legendLegend">傳說稀有</span></span>
       <span><span class="flag flag-reroll">R</span><span data-i18n="legendReroll">同稀有貓重抽（下方會顯示替換角色）</span></span>
+      <!--<span><span class="flag flag-guar">G</span><span data-i18n="legendGuar">保底貓（A/B 軌各自獨立一欄顯示）</span></span>-->
       <span><span class="dot" style="background:var(--flag)"></span><span data-i18n="legendRoute">最佳路線（紅色虛線）</span></span>
       <span id="legendRouteGuarItem"><span class="dot" style="background:var(--route-guar)"></span><span data-i18n="legendRouteGuar">路線中靠保底達成的段落（橘色虛線）</span></span>
       <span id="legendRoutePlatItem"><span class="dot" style="background:var(--route-plat)"></span><span data-i18n="legendRoutePlat">路線中用白金券/傳說券避開重複貓換軌的段落（藍色虛線）</span></span>
@@ -348,6 +349,38 @@
     </div>
   </label>
 </div>
+
+<!-- 手繪筆記懸浮工具列：跟上面 #drawToolbar 是同一組控制項的第二份copy-->
+<div id="drawToolbarFloating" class="draw-toolbar draw-toolbar-float" style="display:none">
+  <button type="button" class="draw-toolbar-close-btn" id="drawToolbarFloatCloseBtn" data-i18n-attr-aria-label="drawToolbarClose" aria-label="關閉懸浮工具列">×</button>
+  <label class="draw-toggle">
+    <input type="checkbox" id="drawModeToggleFloat">
+    <span data-i18n="drawNoteToggle">手繪筆記</span>
+  </label>
+  <div class="draw-tools" id="drawToolsFloat">
+    <div class="draw-tool-group" role="group" id="drawToolGroupFloat">
+      <button type="button" class="draw-tool-btn" data-draw-tool="pen" data-i18n="drawToolPen">畫筆</button>
+      <button type="button" class="draw-tool-btn" data-draw-tool="text" data-i18n="drawToolText">文字</button>
+      <button type="button" class="draw-tool-btn" data-draw-tool="eraser" data-i18n="drawToolEraser">橡皮擦</button>
+    </div>
+    <div class="draw-color-group" role="group" id="drawColorGroupFloat">
+      <button type="button" class="draw-color-swatch" data-draw-color="#e63946" style="--sw:#e63946;" title="紅"></button>
+      <button type="button" class="draw-color-swatch" data-draw-color="#2563eb" style="--sw:#2563eb;" title="藍"></button>
+      <button type="button" class="draw-color-swatch" data-draw-color="#16a34a" style="--sw:#16a34a;" title="綠"></button>
+      <button type="button" class="draw-color-swatch" data-draw-color="#f59e0b" style="--sw:#f59e0b;" title="橙"></button>
+      <button type="button" class="draw-color-swatch" data-draw-color="#1f2937" style="--sw:#1f2937;" title="黑"></button>
+    </div>
+    <div class="draw-width-group" role="group" id="drawWidthGroupFloat">
+      <button type="button" class="draw-width-btn" data-draw-width="2" data-i18n="drawWidthThin">細</button>
+      <button type="button" class="draw-width-btn" data-draw-width="4" data-i18n="drawWidthMed">中</button>
+      <button type="button" class="draw-width-btn" data-draw-width="7" data-i18n="drawWidthThick">粗</button>
+    </div>
+    <button type="button" class="draw-action-btn" id="drawUndoBtnFloat" data-i18n="drawUndo">復原</button>
+    <button type="button" class="draw-action-btn" id="drawClearBtnFloat" data-i18n="drawClear">清除全部</button>
+  </div>
+</div>
+
+<button type="button" class="draw-toolbar-reopen" id="drawToolbarReopenBtn" style="display:none" data-i18n-attr-aria-label="drawToolbarReopen" aria-label="開啟手繪筆記工具列">✏️</button>
 
 <script src="static/js/jbr/gacha_sequence.js"></script>
 <script src="static/js/jbr/gacha_pool_loader.js"></script>
