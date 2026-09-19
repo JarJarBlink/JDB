@@ -1,0 +1,43 @@
+{
+  "id": "./",
+  "name": "JAR Battle Cats Database",
+  "short_name": "JDB",
+  "description": "A research-driven Battle Cats wiki and database: units, enemies, stages, gacha schedules and event tracking.",
+  "lang": "zh-TW",
+  "start_url": "./?source=pwa",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "static/img/icon/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "static/img/icon/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "static/img/screenshots/wide-1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "JDB home page on desktop"
+    },
+    {
+      "src": "static/img/screenshots/narrow-1.png",
+      "sizes": "720x1280",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "JDB home page on mobile"
+    }
+  ]
+}
