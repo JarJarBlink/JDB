@@ -89,7 +89,8 @@
       <div>
         <label for="seed" data-i18n="seedLabel">種子</label>
         <div class="seed-row">
-          <input type="number" id="seed" value="1234567" min="0" max="4294967295" />
+          <input type="number" id="seed" min="0" max="4294967295"
+            data-i18n-attr-placeholder="seedPlaceholder" placeholder="例如 1234567" />
           <button class="btn-ghost" id="randomSeed" data-i18n="random">隨機</button>
         </div>
       </div>
