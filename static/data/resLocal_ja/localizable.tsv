@@ -762,6 +762,7 @@ potential_exchange_error	これ以上、NPに<br>交換することはできま�
 potential_skill_get	この能力は解放済みです
 potential_acquisition_result	<flash>%@が解放されました！<flash>
 potential_levelup_result	<flash>%@がレベル%dに強化されました！<flash>
+potential_skill_MaxLevel	【最大レベル%d】
 potential_skill_name01	攻撃力ダウン
 potential_skill_name02	動きを止める
 potential_skill_name03	動きを遅くする
@@ -829,6 +830,9 @@ potential_skill_name66	超賢者特効
 potential_skill_name67	爆波攻撃
 potential_skill_name68	烈波カウンター
 potential_skill_name69	爆波ダメージ無効
+potential_skill_name70	基本攻撃力アップ＋
+potential_skill_name71	基本体力アップ＋
+potential_skill_name72	生産時間短縮
 return_stageselect_error00	このイベント期間が終了しました！<br>ネコ基地に戻ります！
 return_stageselect_error01	このイベントはこれ以上挑戦できません！<br>ネコ基地に戻ります！
 return_stageselect_error02	未受取の報酬があります！<br>ネコ基地へ移動します！
@@ -949,6 +953,7 @@ potential_name1	超本能
 potential_storge	現在、貯蔵庫に%d個所持しています
 equipment_error	この本能玉は「%@に%@」の効果を持つ<br>キャラクターにのみ装備可能です
 equipment_error2	この本能玉は「%@」の能力を持つ<br>キャラクターには装備できません
+equipment_error3	<color=255,255,0>※「%@」の能力が解放されると<br>本能玉「%@」の効果は発動しなくなります</color>
 slotunlock_medal_txt1	解放条件を満たしていません<br>解放条件：にゃんこメダル%d個以上獲得
 collabo_send_message1	「%@」を起動しますか？
 collabo_send_title_31	にゃんこ大泥棒
@@ -1131,6 +1136,7 @@ unlock_popup_message_157	<flash>「超・神さまゴールデン」の本能が
 unlock_popup_message_158	<flash>新たなキャラクターが出現しました！</flash><br>パワーアップ画面から取得可能です
 unlock_popup_message_159	※ポップアップを表示しないためテキスト記載なし※
 unlock_popup_message_160	<flash>EXキャラクターに「神さま」が出現しました！</flash><br>パワーアップ画面から取得可能です<br>※戦闘で困った時、神頼みできるかも...
+unlock_popup_message_161	<flash>お宝ゲージが解放！！</flash><br>ゲージがMAXになると<br>最高のお宝を確定でゲットできます
 drop_info_single	<color=0,0,0>このステージで<br>1回だけドロップする報酬</color><br><color=255,0,0>${dropContents}</color><color=0,0,0>は<br>${statusWord}</color>
 drop_info_multi	<color=0,0,0>このステージで<br>1回だけドロップする報酬</color><br><color=255,0,0>${dropContents}</color><color=0,0,0>等は<br>${statusWord}</color>
 drop_contents1	${itemName}+${itemNum}
@@ -1386,6 +1392,18 @@ map_stage_limit_variable_error	これ以上先に進めないにゃ<br>他のス
 datetime_day	${day}日
 datetime_hour	${hour}時間
 datetime_minute	${minute}分
+treasure_tutorial1	<flash>ネコからのプレゼント</flash><br>特別に大分県までの<br>粗悪なお宝をプレゼントにゃ！
+treasure_tutorial2	福岡県のお宝ゲットで<br>お宝効果「九州の男らしさ」が発動！<br>働きネコのお金生産量が大幅アップ！
+treasure_tutorial3	福岡県に挑戦してお宝をゲットしてみよう！
+treasure_gauge_tutorial1	お宝ゲージがMAX！<br>MAXの状態でステージをクリアすると<br>必ず最高のお宝をゲットできる！
+treasure_gauge_tutorial2	お宝ゲージをタップすると<br>お宝リストに移動できます<br>持っていないお宝を確認してみよう！
+treasure_gauge_tutorial3	お宝ゲージを使って<br>持っていないお宝を集めてみよう！<br><color=255,255,0>ダブルタップ</color>でステージへ移動！
+treasure_gauge_error1	レジェンドストーリーからは<br>お宝リストに移動できません
+treasure_gauge_error2	ネコ道場からは<br>お宝リストに移動できません
+treasure_gauge_error3	魔界の扉からは<br>お宝リストに移動できません
+treasure_gauge_error4	地底迷宮からは<br>お宝リストに移動できません
+treasure_gauge_error5	イベントステージからは<br>お宝リストに移動できません
+treasure_effect_popup	<color=255,255,0>お宝効果</color><br>${treasureEffectName}<br><flash>発動！！</flash>
 PointRulePageHeadline001	こねこ音楽祭説明
 PointRuleHeadline001	こねこ音楽祭とは
 PointRuleHeadline002	【イベントPt 獲得方法】
@@ -1409,3 +1427,8 @@ PointRuletabletext001	ステージ${stageNo}<br>${stageName}
 PointRuletabletext002	${costNum1}円～${costNum2}円
 PointRuletabletext003	${costNum}円～
 PointRuletabletext004	Pt獲得無し
+external_purchase_no_purchase_message	受け取れる商品がありません
+external_purchase_limit_message	所持上限のアイテムがあるため\n下記の商品を受け取れません
+external_purchase_version_message	アプリのバージョンが低いため\n下記の商品を受け取れません
+external_purchase_invalid_message	下記の商品は現在受け取りを一時中止しています
+external_purchase_received_message	にゃんこ大商店オンラインで購入したアイテムを受け取りました<br>詳細はネコカンショップの受け取りカウンターをご確認ください

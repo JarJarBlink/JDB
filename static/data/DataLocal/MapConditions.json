@@ -386,5 +386,9 @@
 	"serverSetting": 40001,
 	"hidden": 1,
 	"limitMessage": "map_stage_limit_variable_001"
+	  },
+	"137": {
+	"condition":[102274],
+	"stage":0
 	  }
 }}
