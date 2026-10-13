@@ -16,37 +16,24 @@
 const _origGetContext = HTMLCanvasElement.prototype.getContext;
 HTMLCanvasElement.prototype.getContext = function(type, attributes) {if (type === '2d') {attributes = Object.assign({ willReadFrequently: true }, attributes || {});}return _origGetContext.call(this, type, attributes);};
 </script>
+<style>
+#custom-upload-overlay{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:16px;box-sizing:border-box;background:rgba(0,0,0,.88);overflow:auto}
+#custom-upload-overlay .up-card{width:min(460px,100%);max-height:100%;overflow:auto;box-sizing:border-box;padding:22px;border-radius:16px;background:#1b1b1f;border:1px solid rgba(255,255,255,.12);box-shadow:0 0 50px rgba(0,0,0,.6);color:#ddd;font-size:13px}
+#custom-upload-overlay h3{margin:0 0 4px;color:#ffcc00;letter-spacing:1px;font-size:18px}
+#custom-upload-overlay .up-sub{margin:0 0 14px;color:#888;font-size:12px;line-height:1.5}
+#drop-zone{display:flex;flex-direction:column;align-items:center;gap:6px;padding:26px 12px;border:2px dashed rgba(255,255,255,.25);border-radius:12px;background:rgba(255,255,255,.04);text-align:center;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:.15s}
+#drop-zone.over,#drop-zone:active{border-color:#ffcc00;background:rgba(255,204,0,.08)}
+#drop-zone .dz-icon{font-size:30px}
+#drop-zone .dz-main{font-size:15px;color:#fff;font-weight:600}
+#drop-zone .dz-hint{font-size:11px;color:#888}
+#file-list-preview{margin-top:14px;padding:12px;min-height:64px;border-radius:8px;background:rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.1);font-family:'Courier New',monospace;font-size:12px;line-height:1.7;color:#ddd}
+#btn-build-asset{display:block;width:100%;margin-top:16px;padding:14px;border:0;border-radius:10px;background:#ffcc00;color:#000;font-size:15px;font-weight:700;cursor:pointer}
+#btn-build-asset:active{filter:brightness(.9)}
+#up-status{margin:10px 0 0;min-height:1.2em;text-align:center;font-size:12px;color:#ffcc00}
+</style>
 </head>
 <body>
     <div class="animation-container" id="container">
-        <!-- Upload Overlay -->
-        <div id="custom-upload-overlay" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:9999; display:flex; align-items:center; justify-content:center;">
-            
-            <div class="wiki-panel" style="width:450px; padding:25px; box-shadow: 0 0 50px rgba(0,0,0,0.5);">
-                <h3 style="margin-top:0; color:#ffcc00; letter-spacing:1px;">Battle Cats Asset Loader</h3>
-                
-                <div style="display:flex; flex-direction:column; gap:15px; font-size:13px;">
-                    <p style="color:#aaa; margin:0;">
-                        Select or drag all required files at once:<br>
-                        <span style="font-size:11px; color:#777;">(.png, .imgcut, .mamodel, .maanim)</span>
-                    </p>
-                    
-                    <!-- Batch Upload Input -->
-                    <div style="border: 2px dashed rgba(255,255,255,0.2); padding: 30px; text-align: center; border-radius: 12px; background: rgba(255,255,255,0.05);">
-                        <input type="file" id="batch-upload" multiple style="width:100%; cursor:pointer;">
-                    </div>
-
-                    <!-- File Detection Preview -->
-                    <div id="file-list-preview" style="background:rgba(0,0,0,0.4); padding:15px; border-radius:8px; min-height:100px; font-family:'Courier New', monospace; font-size:12px; color:#ddd; line-height:1.6; border:1px solid rgba(255,255,255,0.1);">
-                        <span style="color:#666;">Waiting for files...</span>
-                    </div>
-                </div>
-                
-                <button id="btn-build-asset" class="viewer-button" style="width:100%; margin-top:20px; padding:15px; background:var(--accent-gold) !important; color:black !important;">BUILD & PLAY</button>
-                <p id="up-status" style="font-size:12px; margin-top:10px; color:#ffcc00; text-align:center; min-height:1.2em;"></p>
-            </div>
-        </div>
-
         <input type="file" id="bg-input" accept="image/*" style="display:none;">
         <div id="gesture-hint">Drag to move · Scroll / pinch to zoom · Double-click to reset</div>
 
@@ -126,6 +113,40 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {if (type ==
         </div>
 
     </div>
+
+    <!-- Upload Overlay: kept outside #container so canvas drag / pointer capture cannot intercept it -->
+    <div id="custom-upload-overlay">
+        <div class="up-card">
+            <h3>Battle Cats Asset Loader</h3>
+            <p class="up-sub">Select all files at once: .png, .imgcut, .mamodel, .maanim<br>For multiple forms, include _f / _c / _s / _u in the file names</p>
+
+            <label id="drop-zone" for="batch-upload">
+                <span class="dz-icon">📁</span>
+                <span class="dz-main">Tap to choose files</span>
+                <span class="dz-hint">On desktop you can also drag &amp; drop files here</span>
+            </label>
+            <input type="file" id="batch-upload" multiple style="display:none;">
+
+            <div id="file-list-preview"><span style="color:#666;">Waiting for files...</span></div>
+
+            <button id="btn-build-asset" type="button">BUILD &amp; PLAY</button>
+            <p id="up-status" role="status"></p>
+        </div>
+    </div>
+    <script>
+    // Drag &amp; drop: put the files into the input and fire change so custom_upload.js handles them as usual
+    (function () {
+        const dz = document.getElementById('drop-zone'), inp = document.getElementById('batch-upload');
+        ['dragenter', 'dragover'].forEach(t => dz.addEventListener(t, e => { e.preventDefault(); dz.classList.add('over'); }));
+        ['dragleave', 'drop'].forEach(t => dz.addEventListener(t, e => { e.preventDefault(); dz.classList.remove('over'); }));
+        dz.addEventListener('drop', e => {
+            if (!e.dataTransfer.files.length) return;
+            inp.files = e.dataTransfer.files;
+            inp.dispatchEvent(new Event('change', { bubbles: true }));
+        });
+    })();
+    </script>
+
     <script src="static/js/anim/engine.js" defer></script>
     <script src="static/js/anim/viewer_wasm.js" defer></script>
     <script src="static/js/anim/viewer_export.js" defer></script>
