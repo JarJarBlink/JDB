@@ -1,3 +1,4 @@
+/* @ts-self-types="./anim_wasm.d.ts" */
 
 export class AnimEngine {
     __destroy_into_raw() {
@@ -11,6 +12,11 @@ export class AnimEngine {
         wasm.__wbg_animengine_free(ptr, 0);
     }
     /**
+     * 加入一個通道。keyframes_flat: [frame, value, ease, param, ...]（未正規化的原始幀）
+     *
+     * 正規化（官方 normalizeKeyFrames）：
+     *   loop != 1 或第一幀為負 → 整條軌道平移，讓第一個 keyframe 落在 frame 0，位移量記為 off。
+     *   之後 fir = 第一幀、smax = 最後一幀。
      * @param {number} anim_idx
      * @param {number} part_id
      * @param {number} mod_type
@@ -32,9 +38,13 @@ export class AnimEngine {
         wasm.animengine_add_imgcut(this.__wbg_ptr, x, y, w, h);
     }
     /**
-     * @param {number} id
+     * 加入一個部位（依 mamodel 列順序呼叫，index = 呼叫順序）。
+     * 參數就是 mamodel 一列的前 13 欄（原始整數）：
+     *   parent, id, imageIndex, zIndex, x, y, pivotX, pivotY, scaleX, scaleY, angle, opacity, glow
      * @param {number} parent
-     * @param {number} z
+     * @param {number} id
+     * @param {number} image_index
+     * @param {number} z_index
      * @param {number} x
      * @param {number} y
      * @param {number} pivot_x
@@ -44,13 +54,9 @@ export class AnimEngine {
      * @param {number} angle
      * @param {number} opacity
      * @param {number} glow
-     * @param {number} sprite_x
-     * @param {number} sprite_y
-     * @param {number} sprite_width
-     * @param {number} sprite_height
      */
-    add_sprite(id, parent, z, x, y, pivot_x, pivot_y, scale_x, scale_y, angle, opacity, glow, sprite_x, sprite_y, sprite_width, sprite_height) {
-        wasm.animengine_add_sprite(this.__wbg_ptr, id, parent, z, x, y, pivot_x, pivot_y, scale_x, scale_y, angle, opacity, glow, sprite_x, sprite_y, sprite_width, sprite_height);
+    add_sprite(parent, id, image_index, z_index, x, y, pivot_x, pivot_y, scale_x, scale_y, angle, opacity, glow) {
+        wasm.animengine_add_sprite(this.__wbg_ptr, parent, id, image_index, z_index, x, y, pivot_x, pivot_y, scale_x, scale_y, angle, opacity, glow);
     }
     /**
      * 第 anim_idx 個動畫的最大幀數（官方 maxFrame，至少 1）；索引不存在時回傳 0
@@ -62,40 +68,28 @@ export class AnimEngine {
         return ret;
     }
     /**
-     * 開始定義第 anim_idx 個動畫（若不存在則 push 新的）
      * @param {number} anim_idx
      */
     begin_anim(anim_idx) {
         wasm.animengine_begin_anim(this.__wbg_ptr, anim_idx);
     }
-    /**
-     * 清除所有動畫資料
-     */
     clear_anims() {
         wasm.animengine_clear_anims(this.__wbg_ptr);
     }
-    /**
-     * 清除並重設 imgcut 表
-     */
     clear_imgcut() {
         wasm.animengine_clear_imgcut(this.__wbg_ptr);
     }
-    /**
-     * 清除並重設 sprites
-     */
     clear_sprites() {
         wasm.animengine_clear_sprites(this.__wbg_ptr);
     }
     /**
+     * 計算第 anim_idx 動畫的第 frame 幀。frame 會對動畫總長取模並 floor（原生模式只在整數幀求值）。
      * @param {number} anim_idx
      * @param {number} frame
      */
     compute_frame(anim_idx, frame) {
         wasm.animengine_compute_frame(this.__wbg_ptr, anim_idx, frame);
     }
-    /**
-     * 建立新引擎實例
-     */
     constructor() {
         const ret = wasm.animengine_new();
         this.__wbg_ptr = ret >>> 0;
@@ -103,18 +97,26 @@ export class AnimEngine {
         return this;
     }
     /**
-     * 回傳完整的 sprite 輸出資料（wasm-bindgen 會一次 memcpy 成 JS Float32Array）
-     * 每個 sprite 佔 20 個 f32：
-     *   [0] parent  [1] id     [2] z
-     *   [3] pos_x   [4] pos_y
-     *   [5] pivot_x [6] pivot_y
-     *   [7] sprite_x [8] sprite_y [9] sprite_w [10] sprite_h
-     *   [11] opacity_acc [12] glow
-     *   [13] scale_x_acc [14] scale_y_acc
-     *   [15] angle_acc
-     *   [16] flip_x_acc  [17] flip_y_acc
-     *   [18] hidden (0/1) [19] reserved
-     * 必須在 compute_frame 之後呼叫（acc 由 update_positions 填入）。
+     * 本幀的繪製封包（已依 zOrder 排序、已過濾不可見部位、blendMode 已解析）。
+     * 每個封包 PACKET_STRIDE(15) 個 f32：
+     *   [0] partIndex  [1] blendMode(0–3)  [2] opacity(0–1)
+     *   [3..11) 四個頂點 (x0,y0, x1,y1, x2,y2, x3,y3)，順序 = 官方（左上、左下、右下、右上）
+     *           座標已減去模型錨點，且 y 軸翻成「向上為正」（整數）
+     *   [11..15) 該部位的 imgcut：x, y, w, h（UV 由 JS 以貼圖尺寸換算）
+     * @returns {Float32Array}
+     */
+    read_draw_packets() {
+        const ret = wasm.animengine_read_draw_packets(this.__wbg_ptr);
+        var v1 = getArrayF32FromWasm0(ret[0], ret[1]).slice();
+        wasm.__wbindgen_free(ret[0], ret[1] * 4, 4);
+        return v1;
+    }
+    /**
+     * 每個部位（依 mamodel 索引順序）佔 SPRITE_STRIDE(20) 個 f32：
+     *   [0] parent  [1] id  [2] zIndex  [3] pos_x  [4] pos_y（矩陣平移，減去錨點、y 向上）
+     *   [5] pivot_x [6] pivot_y  [7..11) imgcut x,y,w,h
+     *   [11] opacity(0–1)  [12] glow  [13] scale_x  [14] scale_y（原生縮放 / scaleUnit，含 flip 符號）
+     *   [15] angle（度，矩陣旋轉量）  [16] flip_x  [17] flip_y  [18] hidden(0/1)  [19] 保留
      * @returns {Float32Array}
      */
     read_sprites_output() {
@@ -124,7 +126,25 @@ export class AnimEngine {
         return v1;
     }
     /**
-     * 設定 maxValues = [scaleMax, rotMax, opacityMax]
+     * 模型錨點（官方 model.configs[0]）：enabled=false 表示沒有 config（錨點 = 0,0）
+     * target = config[0]、x = config[2]、y = config[3]
+     * @param {boolean} enabled
+     * @param {number} target
+     * @param {number} x
+     * @param {number} y
+     */
+    set_anchor_config(enabled, target, x, y) {
+        wasm.animengine_set_anchor_config(this.__wbg_ptr, enabled, target, x, y);
+    }
+    /**
+     * 官方 options.facing（>= 0 為朝右，< 0 為朝左）
+     * @param {number} facing
+     */
+    set_facing(facing) {
+        wasm.animengine_set_facing(this.__wbg_ptr, facing);
+    }
+    /**
+     * mamodel 的基準值：[scaleUnit, angleUnit, opacityUnit]
      * @param {number} scale
      * @param {number} rot
      * @param {number} opacity
@@ -133,15 +153,6 @@ export class AnimEngine {
         wasm.animengine_set_max_values(this.__wbg_ptr, scale, rot, opacity);
     }
     /**
-     * 設定原點偏移（對應 _updateSprites 裡的 ox/oy 計算）
-     * @param {number} ox
-     * @param {number} oy
-     */
-    set_origin_offset(ox, oy) {
-        wasm.animengine_set_origin_offset(this.__wbg_ptr, ox, oy);
-    }
-    /**
-     * 回傳 sprites_now 的數量
      * @returns {number}
      */
     sprite_count() {

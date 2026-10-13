@@ -7,25 +7,18 @@
 <link rel="icon" href="static/favicon.ico">
 <link rel="preload" href="./static/js/anim_wasm/anim_wasm_bg.wasm" as="fetch" crossorigin>
 <link rel="stylesheet" href='static/css/database/anim/anim.css'>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@msgpack/msgpack@3.0.0-beta2/dist.es5+umd/msgpack.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@msgpack/msgpack@3.0.0-beta2/dist.es5+umd/msgpack.min.js" defer></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script>
-<script src="static/js/home/ga.js"></script>
+<script src="static/js/home/ga.js" defer></script>
 <script>
 /*Coded by Exodia JAR. Contact me: https://x.com/eUqQxBRzSbCq7Uz */
 const _origGetContext = HTMLCanvasElement.prototype.getContext;
-HTMLCanvasElement.prototype.getContext = function(type, attributes) {
-    if (type === '2d') {
-        attributes = Object.assign({ willReadFrequently: true }, attributes || {});
-    }
-    return _origGetContext.call(this, type, attributes);
-};
+HTMLCanvasElement.prototype.getContext = function(type, attributes) {if (type === '2d') {attributes = Object.assign({ willReadFrequently: true }, attributes || {});}return _origGetContext.call(this, type, attributes);};
 </script>
-<script src="static/js/anim/gifshot.min.js"></script>
 </head>
 <body>
     <div class="animation-container" id="container">
-
         <!-- Upload Overlay -->
         <div id="custom-upload-overlay" style="position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:9999; display:flex; align-items:center; justify-content:center;">
             
@@ -54,83 +47,90 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
             </div>
         </div>
 
-        <!-- 隱藏但保留供 viewer.js 插入內容用 -->
-        <div class="zoom-controls" style="display:none !important;">
-            <div class="wiki-panel">
-                <div id="zoom-in"></div>
-                <div id="zoom-out"></div>
-                <div id="reset-view"></div>
-                <div id="btn-upload-bg"></div>
-                <div id="btn-reset-bg"></div>
-            </div>
-        </div>
-        <div class="viewer-menu" style="display:none !important;" id="main-menu"></div>
-        <div class="viewer-bottom-left" style="display:none !important;" id="bottom-controls"></div>
         <input type="file" id="bg-input" accept="image/*" style="display:none;">
+        <div id="gesture-hint">Drag to move · Scroll / pinch to zoom · Double-click to reset</div>
 
         <!-- ════════════════════════════════
-             底部控制列
+             底部 Dock
         ════════════════════════════════ -->
         <div id="mobile-bottom-bar">
 
-            <!-- 把手 -->
-            <div id="mobile-bar-handle">
-                <div id="mobile-bar-quick">
-                    <button id="mobile-play-btn">▶ Play</button>
-                    <span id="mobile-frame-display">Frame 0 / 0</span>
-                </div>
-                <div id="mobile-bar-toggle">▲</div>
+            <!-- 快捷列（收合時顯示）：型態 + 動作，不用展開就能切換 -->
+            <div id="mobile-quick-row">
+                <div id="quick-forms" role="group" aria-label="Form"></div>
+                <div id="quick-modes" role="group" aria-label="Animation"></div>
             </div>
 
-            <!-- 展開內容 -->
+            <!-- 常駐列：播放 / 時間軸 / 展開 -->
+            <div id="mobile-bar-handle">
+                <button id="mobile-play-btn" type="button" aria-label="Play / Pause">▶</button>
+                <input id="mobile-frame-slider" type="range" min="0" max="0" value="0" step="1" aria-label="Frame">
+                <span id="mobile-frame-display">0 / 0</span>
+                <div id="mobile-bar-toggle" aria-hidden="true">▲</div>
+            </div>
+
+            <!-- 展開內容（三個分頁） -->
             <div id="mobile-bar-content">
 
-                <!-- Form 切換（動態填入）-->
-                <div id="mobile-form-row"></div>
+                <div id="dock-tabs" role="tablist">
+                    <button class="dock-tab active" type="button" data-tab="anim">🎞 Animation</button>
+                    <button class="dock-tab" type="button" data-tab="view">View</button>
+                    <button class="dock-tab" type="button" data-tab="export">📤 Export</button>
+                </div>
 
-                <!-- 動畫選單 + 幀數 -->
-                <div id="mobile-frame-row">
-                    <select class="select-mode" id="mobile-mode-select"></select>
-                    <div class="frame-group">
-                        <button class="frame-adjust-btn" id="mobile-frame-minus">-</button>
-                        <input class="input-frame" id="mobile-frame-input" type="number" value="0" min="0">
-                        <button class="frame-adjust-btn" id="mobile-frame-plus">+</button>
+                <!-- Animation -->
+                <div class="dock-pane active" id="pane-anim">
+                    <div id="mobile-form-row"></div>
+                    <div id="mobile-frame-row">
+                        <select class="select-mode" id="mobile-mode-select"></select>
+                        <div class="frame-group">
+                            <button class="frame-adjust-btn" type="button" id="mobile-frame-minus" aria-label="Previous frame">-</button>
+                            <input class="input-frame" id="mobile-frame-input" type="number" value="0" min="0">
+                            <button class="frame-adjust-btn" type="button" id="mobile-frame-plus" aria-label="Next frame">+</button>
+                        </div>
                     </div>
                 </div>
 
-                <!-- KB Soul -->
-                <div id="mobile-extra-row">
-                    <button class="viewer-button" id="mobile-kb-btn">💀 KB → Soul</button>
+                <!-- View -->
+                <div class="dock-pane" id="pane-view">
+                    <div id="mobile-camera-row">
+                        <button class="custom-btn" type="button" id="mb-zoom-in">＋ Zoom</button>
+                        <button class="custom-btn" type="button" id="mb-zoom-out">－ Zoom</button>
+                        <button class="custom-btn" type="button" id="mb-reset-view">↺ Reset view</button>
+                        <button class="custom-btn" type="button" id="mb-upload-bg">Upload BG</button>
+                        <button class="custom-btn" type="button" id="mb-reset-bg" style="display:none;">✕ Delete BG</button>
+                    </div>
                 </div>
 
-                <div class="bar-divider"></div>
+                <!-- Export -->
+                <div class="dock-pane" id="pane-export">
+                    <div class="ui-label">Output size</div>
+                    <div class="seg" id="mb-fit-row" role="radiogroup">
+                        <button class="seg-btn active" type="button" data-fit="auto">✨ Auto-fit</button>
+                        <button class="seg-btn" type="button" data-fit="full">⛶ Full view</button>
+                        <button class="seg-btn" type="button" data-fit="manual">✂️ Manual crop</button>
+                    </div>
+                    <div id="mb-fit-hint"></div>
 
-                <!-- Camera 控制 -->
-                <div id="mobile-camera-row">
-                    <div class="custom-btn" id="mb-zoom-in">＋ Zoom</div>
-                    <div class="custom-btn" id="mb-zoom-out">－ Zoom</div>
-                    <div class="custom-btn" id="mb-reset-view">↺ Reset</div>
-                    <div class="custom-btn" id="mb-upload-bg">🖼 BG</div>
-                    <div class="custom-btn" id="mb-reset-bg" style="display:none;">✕ BG</div>
+                    <div id="mobile-export-row">
+                        <button class="custom-btn" type="button" id="mb-png-trans">PNG (Transparent)</button>
+                        <button class="custom-btn" type="button" id="mb-png-full">PNG (With BG)</button>
+                        <button class="custom-btn" type="button" id="mb-webm-full">🎬 WebM</button>
+                        <button class="custom-btn" type="button" id="mb-gif-full">🎬 GIF</button>
+                    </div>
+
+                    <div id="mb-export-status" role="status" aria-live="polite"></div>
                 </div>
-
-                <!-- 匯出 -->
-                <div id="mobile-export-row">
-                    <div class="custom-btn" id="mb-png-trans">📸 PNG</div>
-                    <div class="custom-btn" id="mb-png-full">🖼 PNG+BG</div>
-                    <div class="custom-btn" id="mb-webm-full">🎬 WebM</div>
-                    <div class="custom-btn" id="mb-gif-full">🎬 GIF</div>
-                </div>
-
-                <div id="mb-export-status"></div>
 
             </div>
         </div>
 
     </div>
-
+    <script src="static/js/anim/engine.js" defer></script>
     <script src="static/js/anim/viewer_wasm.js" defer></script>
-    <script src="static/js/anim/control.js"></script>
+    <script src="static/js/anim/viewer_export.js" defer></script>
+    <script src="static/js/anim/control.js" defer></script>
+    <script src="static/js/anim/custom_upload.js" defer></script>
     <script type="module">
         console.log("Coded by Exodia JAR")
         import init, { AnimEngine } from './static/js/anim_wasm/anim_wasm.js';
@@ -139,7 +139,7 @@ HTMLCanvasElement.prototype.getContext = function(type, attributes) {
             window.AnimEngine = AnimEngine;
             notifyWasmReady();
         } catch (e) {
-            console.error('❌ using fallback');
+            notifyWasmFailed(e);
         }
     </script>
 </body>
