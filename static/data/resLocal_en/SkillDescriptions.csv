@@ -25,7 +25,7 @@ textID|テキスト内容
 24|Gain the "Warp Resistant" ability.<br>Level up to further increase resistance!
 25|Gain the "Curse Immunity" ability.
 26|Gain the "Resist Curse" ability.<br>Level up to further increase resistance!
-27|Unit's defensive power will increase.<br>Level up to further increase defense!
+27|Unit's HP will increase.<br>Level up to further increase HP!
 28|Unit's attack power will increase.<br>Level up to further increase attack!
 29|Unit's movement speed will increase.<br>Level up to further increase speed!
 30|Unit's Knockback rate will improve.<br>Level up to further increase Knockback chance!
@@ -56,7 +56,7 @@ textID|テキスト内容
 55|Gain the "Immune to Slow" ability.
 56|Gain the "Immune to Knockback" ability.
 57|Gain the "Immune to Waves" ability.
-58|Gain the "Warp Blocker" ability.
+58|Gain the "Immune to Warp" ability.
 59|Unlocks the "Savage Blow" ability.<br>Level up to increase likelihood of Savage Blow attacks!
 60|Unlocks the "Dodge" ability.<br>Level up to increase the length of Dodge effects!
 61|Upgrades the "Savage Blow" ability.<br>Level up to increase likelihood of Savage Blow attacks!
@@ -101,3 +101,6 @@ textID|テキスト内容
 100|Gain the "Slow vs. All" ability.<br>Level up to Slow enemies for even longer!
 101|Gain the "Knockback vs. All" ability.<br>Level up to increase proc rate!
 102|Gain the "Curse vs. All" ability.<br>Level up to Curse enemies for even longer!
+103|Unit's HP will increase greatly.<br>Level up to increase it much further!
+104|Unit's attack power will increase greatly.<br>Level up to increase it much further!
+105|Upgrade the "Shortened Cooldown" ability.<br>Level up for a shorter cooldown!

@@ -1,0 +1,153 @@
+{
+  "date": "2026/10/26",
+  "sCat_id_list": [
+    "877"
+  ],
+  "sCat_sprite_id_list": [
+    "876"
+  ],
+  "sTrue_form_new_id_list": [
+    "746",
+    "754"
+  ],
+  "sTrue_4form_new_id_list": [
+    "401"
+  ],
+  "sNew_skill_id_list": [
+    "107",
+    "124",
+    "257",
+    "668"
+  ],
+  "sTreasureBox_id_list": [],
+  "sUnitbuy_change_list": [
+    "866",
+    "874"
+  ],
+  "sUnitbuy_maxPlus_change_list": [
+    {
+      "unit": "866",
+      "old_max_level": "50",
+      "new_max_level": "50",
+      "old_max_plus": "10",
+      "new_max_plus": "0"
+    }
+  ],
+  "sGatya_names_Rlist": [
+    "gatya_bnr1079.png",
+    "gatya_bnr1080.png",
+    "gatya_bnr1084.png",
+    "gatya_bnr452.png",
+    "gatya_bnr523.png",
+    "gatya_bnr696.png",
+    "gatya_bnr772.png",
+    "gatya_bnr915.png",
+    "gatya_bnr939.png"
+  ],
+  "sGatya_names_Nlist": [],
+  "sGatya_names_Elist": [],
+  "sCombo_id_list": [
+    "385",
+    "386",
+    "387",
+    "388"
+  ],
+  "sNew_stageND_list": [
+    "34035",
+    "34036"
+  ],
+  "sNew_stageS_list": [],
+  "sNew_stageSR_list": [
+    "36028"
+  ],
+  "sNew_stageC_list": [],
+  "sNew_stageCA_list": [],
+  "sNew_stageB_list": [],
+  "sNew_stageEX_list": [],
+  "sNew_stageA_list": [],
+  "sNew_stageV_list": [],
+  "sNew_stageR_list": [],
+  "sNew_stageH_list": [],
+  "sNew_stageG_list": [],
+  "sNew_stageT_list": [],
+  "sNew_stagePR_list": [],
+  "sNew_4star_stage_list": [],
+  "sNew_3star_stage_list": [],
+  "sNew_2star_stage_list": [
+    "34013",
+    "34014"
+  ],
+  "sEnemy_id_list": [],
+  "sEnemy_change_list": [],
+  "sNew_medal_list": [],
+  "sCastle_ids": [],
+  "sMission_id_list": [
+    1165,
+    1166,
+    1167,
+    1168,
+    1169,
+    1170,
+    1171,
+    1197,
+    1198,
+    1199,
+    1200,
+    1201,
+    1202,
+    1203,
+    1207,
+    1208,
+    1209,
+    1210,
+    1235,
+    1236,
+    1237
+  ],
+  "sRankgift_des": [
+    "UR28300\tReceive 5 Legend Catseyes.\n",
+    "UR28400\tReceive 5 Special Catseyes.\n",
+    "UR28500\tReceive 5 Rare Catseyes."
+  ],
+  "sMusic_id_list": [],
+  "sSoundEffect_ids": [],
+  "sNew_bg_list": [
+    "bg269",
+    "bg270",
+    "bg271",
+    "bg272"
+  ],
+  "sMapStage_change_list": [
+    2219,
+    2271,
+    11035,
+    27017
+  ],
+  "combo_list": [
+    "PAC-MAN Fever — \"Resistant\" Effects Up(Sm)<br><a href=\"u000.html?cc=en&unit=866\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni866_f00.png\" width=64 title=\"866(1階)\"></a>",
+    "Welcome! — Unit Speed Up(Sm)<br><a href=\"u000.html?cc=en&unit=874\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni874_f00.png\" width=64 title=\"874(1階)\"></a>",
+    "Only one of us leaves! — Starting Money Up(Sm)<br><a href=\"u000.html?cc=en&unit=874\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni874_c00.png\" width=64 title=\"874(2階)\"></a>",
+    "Reserve Element — Cannon Recharge Up(M)<br><a href=\"u000.html?cc=en&unit=781\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni781_c00.png\" width=64 title=\"781(2階)\"></a><a href=\"u000.html?cc=en&unit=689\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni689_f00.png\" width=64 title=\"689(1階)\"></a>"
+  ],
+  "mission_list": [
+    "1. (Special) [PAC-MAN] Clear all Special Missions ① - ④，to earn 1 Rare Ticket! <br>Reward：Rare Ticket +1\n<br>",
+    "2. (Special) [PAC-MAN] Special Mission ①:，Obtain a Blinky Cat from the Event Capsules! <br>Reward：Cat Ticket +1\n<br>",
+    "3. (Special) [PAC-MAN] Special Mission ②:，Obtain an Inky Cat from the Event Capsules! <br>Reward：Cat Ticket +1\n<br>",
+    "4. (Special) [PAC-MAN] Special Mission ③:，Obtain 3 Blinky Cats from the Event Capsules! <br>Reward：Cat Ticket +1\n<br>",
+    "5. (Special) [PAC-MAN] Special Mission ④:，Obtain 3 Inky Cats from the Event Capsules! <br>Reward：Cat Ticket +1\n<br>",
+    "6. (Special) [PAC-MAN] ，Clear the \"PAC-MAN & Cat\" map. <br>Reward：Leadership +1\n<br>",
+    "7. (Special) [PAC-MAN] ，Clear \"Giant PAC-MAN Strikes!\" map. <br>Reward：Leadership +1\n<br>",
+    "8. (Special) SBC: Revival, Wk. 1 ①: Clear 5 stages，Clears from any stage will count! (5/5) <br>Reward：XP +100000\n<br>",
+    "9. (Special) SBC: Revival, Wk. 1 ② : Clear 10 stages，Clears from any stage will count! (10/10) <br>Reward：Legend Net +3\n<br>",
+    "10. (Special) SBC: Revival, Wk. 1 ③: Clear 15 stages，Clears from any stage will count! (15/15) <br>Reward：Legend Net +5\n<br>",
+    "11. (Special) SBC: Revival, Wk. 1 ④: Clear 20 stages，Clears from any stage will count! (20/20) <br>Reward：Legend Net +10\n<br>",
+    "12. (Special) SBC: Revival, Wk. 2 ①: Clear 5 stages，Clears from any stage will count! (5/5) <br>Reward：XP +100000\n<br>",
+    "13. (Special) SBC: Revival, Wk. 2 ②: Clear 10 stages，Clears from any stage will count! (10/10) <br>Reward：Legend Net +3\n<br>",
+    "14. (Special) SBC: Revival, Wk. 2 ③: Clear 15 stages，Clears from any stage will count! (15/15) <br>Reward：Legend Net +5\n<br>",
+    "15. (Special) SBC: Revival, Wk. 3 ①: Clear 5 stages，Clears from any stage will count! (5/5) <br>Reward：XP +100000\n<br>",
+    "16. (Special) SBC: Revival, Wk. 3 ②: Clear 10 stages，Clears from any stage will count! (10/10) <br>Reward：Legend Net +3\n<br>",
+    "17. (Special) SBC: Revival, Wk. 3 ③: Clear 15 stages，Clears from any stage will count! (15/15) <br>Reward：Legend Net +5\n<br>",
+    "18. (Special) SBC: Revival, Wk. 3 ④: Clear 20 stages，Clears from any stage will count! (20/20) <br>Reward：Legend Net +10\n<br>"
+  ],
+  "sundries": []
+}

@@ -1675,7 +1675,7 @@ tutorial_popup3	Tap the Lock icon on the right to<br>keep the item selected so<b
 tutorial_popup4	You don't have enough XP...
 unlock_popup_message_158	<flash>A new hero has appeared!</flash><br>Activate it at the Upgrade menu!
 unlock_popup_message_159	
-item_pack_name_92	
+item_pack_name_92	Purchase limited unit PAC-MAN
 SpecialRuleName020	Spend a Million
 Stage_battle00	Retreat?<br>Quit now to have your items refunded! (Within 10s)
 Stage_lock00	Not enough items.
@@ -1711,9 +1711,32 @@ PointRewardWeb00	Gained ${itemNum} ${itemName}(s)
 PointRewardWeb01	Gained ${itemNum} ${itemName}(s)
 PointRewardWeb02	Gained ${itemNum} ${itemName}(s)
 PointRewardWeb03	Unlocked Cat Unit: ${charaName}
-PointRewardWeb04	Login Bonus Upgraded!<span style='color: red;'>* Check event info for more details!</span>
+PointRewardWeb04	Login Bonus Upgraded! <span style='color: red;'>*Check event info for more details!</span>
 point_stage_limit	Event Point Cap Reached.<br>* No more points can be gained.
 PointRuletabletext001	Stage ${stageNo}<br>${stageName}
 PointRuletabletext002	${costNum1}¢ ~ ${costNum2}¢
 PointRuletabletext003	${costNum}¢ ~
 PointRuletabletext004	No Points Gained
+equipment_error3	<color=255,255,0>* When %@'s Talents are unlocked, <br>the effects of the %@ Talent Orb will no longer be active.</color>
+external_purchase_invalid_message	
+external_purchase_limit_message	
+external_purchase_no_purchase_message	
+external_purchase_received_message	
+external_purchase_version_message	
+potential_skill_MaxLevel	【Max Level %d】
+potential_skill_name70	Attack Buff+
+potential_skill_name71	HP Buff+
+potential_skill_name72	Shortened Cooldown
+treasure_effect_popup	<color=255,255,0>Treasure Effect</color><br>${treasureEffectName}<br><flash>Activated!</flash>
+treasure_gauge_error1	Cannot go to the Treasure List<br>from Legend Stages.
+treasure_gauge_error2	Cannot go to the Treasure List<br>from Catclaw Dojo.
+treasure_gauge_error3	Cannot go to the Treasure List<br>from The Gates of Aku.
+treasure_gauge_error4	Cannot go to the Treasure List<br>from Underground Labyrinth.
+treasure_gauge_error5	Cannot go to the Treasure List<br>from Event Stages.
+treasure_gauge_tutorial1	The Treasure Gauge is full!<br>Clear a stage when the gauge is full<br>to get a guaranteed Superior Treasure!
+treasure_gauge_tutorial2	Tap the Treasure Gauge<br>to jump to the Treasure List<br>and confirm unobtained Treasures!
+treasure_gauge_tutorial3	Use the Treasure Gauge to<br>collect those last few Treasures!<br><color=255,255,0>Double-tap</color>to jump to that stage!
+treasure_tutorial1	<flash>A gift from Cat:</flash><br>All Inferior Treasure from stages<br>up to the Philippines!
+treasure_tutorial2	Collecting the Treasure from Japan<br>will activate the Energy Drink effect,<br> increasing Money production!
+treasure_tutorial3	Try to get the Treasure from Japan!
+unlock_popup_message_161	<flash>Treasure Gauge unlocked!</flash><br>Guarantee a Superior Treasure drop<br>when the gauge is full!

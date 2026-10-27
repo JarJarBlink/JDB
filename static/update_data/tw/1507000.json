@@ -1,0 +1,125 @@
+{
+  "date": "2026/10/26",
+  "sCat_id_list": [
+    "877"
+  ],
+  "sCat_sprite_id_list": [
+    "876"
+  ],
+  "sTrue_form_new_id_list": [
+    "746",
+    "754"
+  ],
+  "sTrue_4form_new_id_list": [
+    "401"
+  ],
+  "sNew_skill_id_list": [
+    "107",
+    "124",
+    "257",
+    "668"
+  ],
+  "sTreasureBox_id_list": [],
+  "sUnitbuy_change_list": [
+    "866",
+    "874"
+  ],
+  "sUnitbuy_maxPlus_change_list": [
+    {
+      "unit": "866",
+      "old_max_level": "50",
+      "new_max_level": "50",
+      "old_max_plus": "10",
+      "new_max_plus": "0"
+    }
+  ],
+  "sGatya_names_Rlist": [
+    "gatya_bnr1079.png",
+    "gatya_bnr1080.png",
+    "gatya_bnr1084.png"
+  ],
+  "sGatya_names_Nlist": [],
+  "sGatya_names_Elist": [],
+  "sCombo_id_list": [
+    "385",
+    "386",
+    "387",
+    "388"
+  ],
+  "sNew_stageND_list": [
+    "34035",
+    "34036"
+  ],
+  "sNew_stageS_list": [],
+  "sNew_stageSR_list": [
+    "36028"
+  ],
+  "sNew_stageC_list": [],
+  "sNew_stageCA_list": [],
+  "sNew_stageB_list": [],
+  "sNew_stageEX_list": [],
+  "sNew_stageA_list": [],
+  "sNew_stageV_list": [],
+  "sNew_stageR_list": [],
+  "sNew_stageH_list": [],
+  "sNew_stageG_list": [],
+  "sNew_stageT_list": [],
+  "sNew_stagePR_list": [],
+  "sNew_4star_stage_list": [],
+  "sNew_3star_stage_list": [],
+  "sNew_2star_stage_list": [
+    "34013",
+    "34014"
+  ],
+  "sEnemy_id_list": [],
+  "sEnemy_change_list": [],
+  "sNew_medal_list": [],
+  "sCastle_ids": [],
+  "sMission_id_list": [
+    1165,
+    1166,
+    1167,
+    1168,
+    1169,
+    1170,
+    1171,
+    1235,
+    1236,
+    1237
+  ],
+  "sRankgift_des": [
+    "UR28300\t獲得5個貓眼石【傳說】\n",
+    "UR28400\t獲得5個貓眼石【EX】\n",
+    "UR28500\t獲得5個貓眼石【稀有】"
+  ],
+  "sMusic_id_list": [],
+  "sSoundEffect_ids": [],
+  "sNew_bg_list": [
+    "bg269",
+    "bg270",
+    "bg271",
+    "bg272"
+  ],
+  "sMapStage_change_list": [
+    2219,
+    2271,
+    11035,
+    27017
+  ],
+  "combo_list": [
+    "PAC-MAN狂熱 — 「很耐打」的效果UP【小】<br><a href=\"u000.html?cc=tw&unit=866\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni866_f00.png\" width=64 title=\"866(1階)\"></a>",
+    "等你很久了！ — 角色移動速度UP【小】<br><a href=\"u000.html?cc=tw&unit=874\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni874_f00.png\" width=64 title=\"874(1階)\"></a>",
+    "休想全身而退！ — 初期所持金額UP【小】<br><a href=\"u000.html?cc=tw&unit=874\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni874_c00.png\" width=64 title=\"874(2階)\"></a>",
+    "留校察看組 — 貓咪砲充電速度UP【中】<br><a href=\"u000.html?cc=tw&unit=781\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni781_c00.png\" width=64 title=\"781(2階)\"></a><a href=\"u000.html?cc=tw&unit=689\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni689_f00.png\" width=64 title=\"689(1階)\"></a>"
+  ],
+  "mission_list": [
+    "1. (Special) 【PAC-MAN】通過特別任務①～④，來獲得稀有券吧！ <br>Reward：稀有券 +1\n<br>",
+    "2. (Special) 【PAC-MAN】特別任務①：從活動轉蛋中，獲得1隻「Blinky貓」吧！ <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "3. (Special) 【PAC-MAN】特別任務②：從活動轉蛋中，獲得1隻「Inky貓」吧！ <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "4. (Special) 【PAC-MAN】特別任務③：從活動轉蛋中，獲得3隻「Blinky貓」吧！ <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "5. (Special) 【PAC-MAN】特別任務④：從活動轉蛋中，獲得3隻「Inky貓」吧！ <br>Reward：貓咪轉蛋券 +1\n<br>",
+    "6. (Special) 【PAC-MAN】通過合作關卡，「PAC-MAN與貓咪」1次吧！ <br>Reward：首領旗 +1\n<br>",
+    "7. (Special) 【PAC-MAN】通過合作關卡，「強襲！巨大PAC-MAN」1次吧！ <br>Reward：首領旗 +1\n<br>"
+  ],
+  "sundries": []
+}

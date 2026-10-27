@@ -1163,13 +1163,13 @@
 9721|[June Bride of the Devil] Clear %d "#03 ??? the 13th"<br>stage(s) during June Bride event. (%d of %d)
 9722|[June Bride of the Devil] Clear %d "#04 Yowling Village"<br>stage(s) during June Bride event. (%d of %d)|June Bride of the Devil missions added<br>to the Special Missions!
 9723|[June Bride of the Devil] Clear %d "#04 Yowling Village"<br>stage(s) during June Bride event. (%d of %d)
-9724||
-9725|
-9726|
-9727|
-9728|
-9729||
-9730||
+9724|[PAC-MAN] Clear all Special Missions ① - ④<br>to earn 1 Rare Ticket!|Check the Special Missions to access<br>limited PAC-MAN collab Mission!
+9725|[PAC-MAN] Special Mission ①:<br>Obtain a Blinky Cat from the Event Capsules!
+9726|[PAC-MAN] Special Mission ②:<br>Obtain an Inky Cat from the Event Capsules!
+9727|[PAC-MAN] Special Mission ③:<br>Obtain 3 Blinky Cats from the Event Capsules!
+9728|[PAC-MAN] Special Mission ④:<br>Obtain 3 Inky Cats from the Event Capsules!
+9729|[PAC-MAN] <br>Clear the "PAC-MAN & Cat" map.|Check the Special Missions to access<br>limited PAC-MAN collab Mission!
+9730|[PAC-MAN] <br>Clear "Giant PAC-MAN Strikes!" map.|Check the Special Missions to access<br>limited PAC-MAN collab Mission!
 9731|Resort Tycoon ①: Project Crew ①<br>Get 3 characters from the Event Capsules!|Resort Tycoon ① has been added<br>to your Special Missions!
 9732|Resort Tycoon ①: Project Crew ②<br>Get 5 characters from the Event Capsules!
 9733|Resort Tycoon ①: Project Crew ③<br>Get 7 characters from the Event Capsules!
@@ -1195,20 +1195,20 @@
 9753|Science Project: Insectoids ②<br>Get 1 Kuwagata Cat from the Event Capsules!
 9754|Science Project: Insectoids ③<br>Get 1 Ancient Egg: N202 from the Event Capsules!
 9755|Science Project: Insectoids ④<br>Get 1 Ancient Egg: N208 from the Event Capsules!
-9756|Summer Returns, Wk. 1 ①: Clear %d stages<br>Clears from any stage will count! (%d/%d)
-9757|Summer Returns, Wk. 1 ② : Clear %d stages<br>Clears from any stage will count! (%d/%d)
-9758|Summer Returns, Wk. 1 ③: Clear %d stages<br>Clears from any stage will count! (%d/%d)
-9759|Summer Returns, Wk. 1 ④: Clear %d stages<br>Clears from any stage will count! (%d/%d)
-9760|Summer Returns, Wk. 2 ①: Clear %d stages<br>Clears from any stage will count! (%d/%d)|Summer Returns, Wk. 2 has been added<br>to your Special Missions!
-9761|Summer Returns, Wk. 2 ②: Clear %d stages<br>Clears from any stage will count! (%d/%d)
-9762|Summer Returns, Wk. 2 ③: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9756|SBC: Revival, Wk. 1 ①: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9757|SBC: Revival, Wk. 1 ② : Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9758|SBC: Revival, Wk. 1 ③: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9759|SBC: Revival, Wk. 1 ④: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9760|SBC: Revival, Wk. 2 ①: Clear %d stages<br>Clears from any stage will count! (%d/%d)|SBC: Revival, Wk. 2 has been added<br>to your Special Missions!
+9761|SBC: Revival, Wk. 2 ②: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9762|SBC: Revival, Wk. 2 ③: Clear %d stages<br>Clears from any stage will count! (%d/%d)
 9763|Summer Returns, Wk. 2 ④: Clear %d stages<br>Clears from any stage will count! (%d/%d)
 9764|Extra Credit: Clear "The Mask and the Baby"<br>* Must clear the Continuation Stage.
 9765|Extra Credit: Clear "The Prince and the Revenant"<br>* Must clear the Continuation Stage.
-9766|Summer Returns, Wk. 3 ①: Clear %d stages<br>Clears from any stage will count! (%d/%d)|Summer Returns, Wk. 3 has been added<br>to your Special Missions!
-9767|Summer Returns, Wk. 3 ②: Clear %d stages<br>Clears from any stage will count! (%d/%d)
-9768|Summer Returns, Wk. 3 ③: Clear %d stages<br>Clears from any stage will count! (%d/%d)
-9769|Summer Returns, Wk. 3 ④: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9766|SBC: Revival, Wk. 3 ①: Clear %d stages<br>Clears from any stage will count! (%d/%d)|SBC: Revival, Wk. 3 has been added<br>to your Special Missions!
+9767|SBC: Revival, Wk. 3 ②: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9768|SBC: Revival, Wk. 3 ③: Clear %d stages<br>Clears from any stage will count! (%d/%d)
+9769|SBC: Revival, Wk. 3 ④: Clear %d stages<br>Clears from any stage will count! (%d/%d)
 9770|Extra Credit: Clear "The Queen and the Saint"<br>* Must clear the Continuation Stage.
 9771|Extra Credit: Clear "Bottom of the Swamp"<br>* Must clear with 10 Special Cats.
 9668|【Progression】Draw %d Cat Capsules! (%d of %d)<br>Get a free Cat Ticket each day.|Progression Missions added<br>to the Special Missions!
@@ -1233,3 +1233,6 @@
 9786|【Halloween Party】Clear any %d Battle Cats stage(s). (%d of %d)
 9787|【River City Cat Clash】⑤: Clear "River City Three-Leg Race"<br>%d times using only 2 Rare Cats.|Check the Special Missions to access<br>limited "River City Cat Clash" challenges!
 9788|【River City Cat Clash】⑥: Clear "River City Three-Leg Race"<br>%d times using only 2 Special Cats.
+9789||
+9790|
+9791|

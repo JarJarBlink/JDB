@@ -1758,7 +1758,7 @@ tutorial_popup3	點擊右方的「解鎖」<br>即可保留目前的道具選擇
 tutorial_popup4	經驗值不足。
 unlock_popup_message_158	<flash>新角色出現了！</flash><br>可以在升級畫面中取得
 unlock_popup_message_159	
-item_pack_name_92	
+item_pack_name_92	購買限定角色「PAC-MAN」
 SpecialRuleName020	100萬用光光
 Stage_battle00	要中止戰鬥嗎？<br>現在退出可退還道具（10秒內）
 Stage_lock00	道具不足。
@@ -1782,7 +1782,7 @@ PointRuleHeadline001	什麼是俏喵音樂祭
 PointRuleHeadline002	【活動分數獲得方式】
 PointRuleHeadline003	【活動分數轉換率】
 PointRuleExplanation001	在本活動中，玩家可以依照期間內所收集的累計活動分數，來獲得各式各樣的獎勵。<br>活動分數可透過挑戰特定關卡來獲得。<br><br>活動關卡中設有特別規則【FEVER：嬰兒潮】。<br>詳細規則請參考以下說明。<br><br>【FEVER：嬰兒潮】<br>FEVER量表會隨著玩家在戰鬥中所獲得的分數上升，<br>量表充滿之後就會發動一定時間的「狂歡模式（FEVER TIME!）」。<br>在狂歡模式期間，所有角色的生產時間都會變成0。
-PointRuleExplanation002	打倒敵人時，玩家可以依照「角色的生產成本x活動分數轉換率」來獲得活動分數。<br>生產成本所對應的轉換率在每個關卡都不同，詳細請參考【活動分數轉換率】的表格。<br>另外，若角色已透過本能減少了生產成本，系統仍會以原始成本來計算活動分數。
+PointRuleExplanation002	玩家可以透過打倒敵人、以及依照「角色生產成本×活動分數轉換率」來獲得活動點數。<br>生產成本所對應的轉換率在每個關卡都不同，詳細請參考【活動分數轉換率】的表格。<br>另外，若角色已透過本能減少了生產成本，系統仍會以原始成本來計算活動分數。
 Point_release_popup_001	俏喵音樂祭活動<br>可獲得的活動分數上限已更新至${Point}
 PointReleaseHeadline001	【活動分數上限開放時間】
 PointReleaseExplanation001	${year}/${month}/${day}（${hour}:${minute}）　分數上限開放至${Point}
@@ -1800,3 +1800,30 @@ PointRuletabletext001	關卡${stageNo}<br>${stageName}
 PointRuletabletext002	${costNum1}元～${costNum2}元
 PointRuletabletext003	${costNum}元～
 PointRuletabletext004	不會獲得分數
+equipment_error3	<color=255,255,0>※解放「%@」的能力後，<br>將不會發動本能珠珠「%@」的效果</color>
+external_purchase_invalid_message	
+external_purchase_limit_message	
+external_purchase_no_purchase_message	
+external_purchase_received_message	
+external_purchase_version_message	
+potential_skill_MaxLevel	【最高等級%d】
+potential_skill_name70	基本攻擊力上升＋
+potential_skill_name71	基本體力上升＋
+potential_skill_name72	生產時間縮短
+scheme_item_param_123	/2026balloon.html?v=01_uU7yw4Td
+scheme_item_param_124	/2026balloon.html?v=01_Fe2fnvNR
+scheme_popup_123	<flash>你就是今天的幸運星！<br>獲得%@%@張！</flash>
+scheme_popup_124	<flash>你就是今天的幸運星！<br>獲得%@%@個！</flash>
+treasure_effect_popup	<color=255,255,0>寶物效果</color><br>${treasureEffectName}<br><flash>發動！！</flash>
+treasure_gauge_error1	無法從傳奇故事<br>前往寶物清單
+treasure_gauge_error2	無法從貓咪道場<br>前往寶物清單
+treasure_gauge_error3	無法從魔界之門<br>前往寶物清單
+treasure_gauge_error4	無法從地底迷宮<br>前往寶物清單
+treasure_gauge_error5	無法從活動關卡<br>前往寶物清單
+treasure_gauge_tutorial1	寶物量表充滿了！<br>在充滿的狀態下通關<br>必定能獲得最棒的寶物！
+treasure_gauge_tutorial2	點擊寶物量表<br>即可前往寶物清單<br>來確認看看未持有的寶物吧！
+treasure_gauge_tutorial3	利用寶物量表<br>來收集未持有的寶物吧！<br><color=255,255,0>點擊兩下</color>即可前往關卡！
+treasure_tutorial1	<flash>來自貓咪的禮物</flash><br>特別贈送至韓國關卡為止的<br>粗劣的寶物！
+treasure_tutorial2	獲得日本關卡的寶物<br>就可發動寶物效果「提神飲料」！<br>讓工作狂貓的金錢生產量大幅上升！
+treasure_tutorial3	挑戰日本關卡來獲得寶物吧！
+unlock_popup_message_161	<flash>寶物量表解放了！！</flash><br>量表充滿後<br>必定能獲得最棒的寶物

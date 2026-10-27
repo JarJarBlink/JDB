@@ -34,3 +34,5 @@ ID	type	TypeID	itemID	number	TypeID2	itemID2	number2	TypeID3	itemID3	number3
 120	1	0	22	100
 121	1	0	22	150
 122	1	0	22	150
+123	0	0	21	1
+124	0	0	22	150

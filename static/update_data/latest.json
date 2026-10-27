@@ -1,113 +1,74 @@
 {
-  "date": "2026/10/5",
-  "sCat_id_list": [
-    "877",
-    "878",
-    "879",
-    "880",
-    "881"
-  ],
-  "sCat_sprite_id_list": [
-    "876"
-  ],
-  "sTrue_form_new_id_list": [
-    "746",
-    "754"
-  ],
-  "sTrue_4form_new_id_list": [
-    "401"
-  ],
-  "sNew_skill_id_list": [
-    "107",
-    "124",
-    "257",
-    "668"
-  ],
+  "date": "2026/10/26",
+  "sCat_id_list": [],
+  "sCat_sprite_id_list": [],
+  "sTrue_form_new_id_list": [],
+  "sTrue_4form_new_id_list": [],
+  "sNew_skill_id_list": [],
   "sTreasureBox_id_list": [],
   "sUnitbuy_change_list": [],
   "sUnitbuy_maxPlus_change_list": [],
-  "sGatya_names_Rlist": [
-    "gatya_bnr1082.png",
-    "gatya_bnr1084.png"
-  ],
+  "sGatya_names_Rlist": [],
   "sGatya_names_Nlist": [],
   "sGatya_names_Elist": [],
-  "sCombo_id_list": [
-    "389",
-    "390"
-  ],
-  "sNew_stageND_list": [
-    "34035",
-    "34036"
-  ],
+  "sCombo_id_list": [],
+  "sNew_stageND_list": [],
   "sNew_stageS_list": [],
-  "sNew_stageSR_list": [
-    "36028"
-  ],
-  "sNew_stageC_list": [
-    "2273",
-    "2274",
-    "2275",
-    "2276"
-  ],
+  "sNew_stageSR_list": [],
+  "sNew_stageC_list": [],
   "sNew_stageCA_list": [],
   "sNew_stageB_list": [],
   "sNew_stageEX_list": [],
   "sNew_stageA_list": [],
   "sNew_stageV_list": [],
-  "sNew_stageR_list": [
-    "11049"
-  ],
+  "sNew_stageR_list": [],
   "sNew_stageH_list": [],
   "sNew_stageG_list": [],
   "sNew_stageT_list": [],
   "sNew_stagePR_list": [],
   "sNew_4star_stage_list": [],
   "sNew_3star_stage_list": [],
-  "sNew_2star_stage_list": [
-    "34013",
-    "34014"
-  ],
-  "sEnemy_id_list": [
-    "788",
-    "789",
-    "790",
-    "791"
-  ],
+  "sNew_2star_stage_list": [],
+  "sEnemy_id_list": [],
   "sEnemy_change_list": [],
   "sNew_medal_list": [],
   "sCastle_ids": [],
-  "sMission_id_list": [
-    1211,
-    1212,
-    1213
+  "sMission_id_list": [],
+  "sRankgift_des": [],
+  "sMusic_id_list": [
+    "000",
+    "034",
+    "174",
+    "175",
+    "176",
+    "177",
+    "178",
+    "179",
+    "180",
+    "181",
+    "182",
+    "183",
+    "184",
+    "185",
+    "186",
+    "187",
+    "193",
+    "195"
   ],
-  "sRankgift_des": [
-    "UR28300\tキャッツアイ【伝説】5個を獲得\n",
-    "UR28400\tキャッツアイ【EX】5個を獲得\n",
-    "UR28500\tキャッツアイ【レア】5個を獲得\n"
+  "sSoundEffect_ids": [
+    "065",
+    "137",
+    "139",
+    "188",
+    "189",
+    "190",
+    "191",
+    "192",
+    "194"
   ],
-  "sMusic_id_list": [],
-  "sSoundEffect_ids": [],
-  "sNew_bg_list": [
-    "bg269",
-    "bg270",
-    "bg271",
-    "bg272"
-  ],
-  "sMapStage_change_list": [
-    2219,
-    11035,
-    27017
-  ],
-  "combo_list": [
-    "物理で除霊 — 「動きを止める」効果アップ【小】<br><a href=\"u000.html?cc=ja&unit=799\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni799_f00.png\" width=64 title=\"799(1階)\"></a><a href=\"u000.html?cc=ja&unit=665\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni665_s00.png\" width=64 title=\"665(3階)\"></a>",
-    "地獄の国盗り — 「攻撃力上昇」効果アップ【小】<br><a href=\"u000.html?cc=ja&unit=880\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni880_f00.png\" width=64 title=\"880(1階)\"></a>"
-  ],
-  "mission_list": [
-    "1. (Special) 【比古清十郎の追い込み修業】にゃんこ大戦争のステージを5回クリアしよう。にゃんこ大戦争の全ステージがクリアカウントの対象（進行度5/5） <br>Reward：XP +1000000\n<br>",
-    "2. (Special) 【比古清十郎の追い込み修業】にゃんこ大戦争のステージを10回クリアしよう。にゃんこ大戦争の全ステージがクリアカウントの対象（進行度10/10） <br>Reward：レアチケット +1\n<br>",
-    "3. (Special) 【比古清十郎の追い込み修業】にゃんこ大戦争のステージを15回クリアしよう。にゃんこ大戦争の全ステージがクリアカウントの対象（進行度15/15） <br>Reward：XP +2000000\n<br>"
-  ],
+  "sNew_bg_list": [],
+  "sMapStage_change_list": [],
+  "combo_list": [],
+  "mission_list": [],
   "sundries": []
 }

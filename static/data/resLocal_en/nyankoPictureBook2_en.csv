@@ -20,7 +20,7 @@ Effective against enemies with no Trait.|＠
 【Slow】|Indicated enemy types will have their speed|reduced for a set amount of time.|＠
 【Survive】|After this unit's health falls below zero,|it may heal itself by a small amount.|＠
 【Base Destroyer】|If this unit is attacking an enemy Base,|its attacks will do much more damage.|＠
-【Critical】|Attacks by this unit have a set chance of|extra damage and can hurt Metal enemies.|＠
+【Critical】|Deals an armor-piercing hit,| inflicting doubled damage even to Metal enemies.|＠
 【Attacks Only】|Attacks by this unit will only cause damage|to a specific type of enemy target.|＠
 【Strong Against】|Indicated enemy types will take extra damage,|with damage received from that type also reduced.|＠
 【Resistant】|Damage received from indicated enemy|types will be reduced significantly.|＠
@@ -57,8 +57,8 @@ Effective against enemies with no Trait.|＠
 【Move Speed Up】|Unit will move faster.|＠
 【Improved Knockback】|Chance of Knockback is increased.|＠
 【Resist Curse】|Curse effects caused by enemies|are less likely to take effect.|＠
-【Attack Buff】|Base attack is permanently raised.|＠
-【Defense Buff】|Base defense is permanently raised.|＠
+【Attack Buff】|Base attack is raised permanently.|＠
+【HP Buff】|Base HP is raised permanently.|＠
 【Insane Damage】|Massively increases damage to target enemies|by an incredible amount.|＠
 【Insanely Tough】|Reduces damage taken from target enemies|by an incredible amount.|＠
 【Target Red】|Abilities will also affect Red enemies.|＠
@@ -99,3 +99,6 @@ Effective against enemies with no Trait.|＠
 【Immune to Explosions】|Does not take damage from enemy Explosions.|＠
 ＠
 【Immune to Drain】|Immune to status effects|inflicted by enemy Drain abilities.|＠
+【Attack Buff+】|Base attack is greatly raised permanently.|＠
+【HP Buff+】|Base HP is greatly raised permanently.|＠
+【Shortened Cooldown】|Reduces unit deployment cooldown.|Activates every 2 deployments. (Does not stack)|＠

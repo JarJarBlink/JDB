@@ -15,9 +15,9 @@ Dodge Attack (All) %@	Gains Dodge Attack (All) ability. Activates<br>every 2 dep
 Resist Slow %@	Reduces the effect of enemy Slow attacks.
 Resist Curse %@	Reduces the effect of enemy Curse attacks.
 Boost Uncanny Legends %@	Health and attack power boosted<br>in Uncanny Legends (Does not stack)
-Single Surge Counter %@	Counter with a Surge after being struck by<br>an enemy Surge attack. Activates<br>every 2 deployments (Does not stack)
+Single Surge Counter %@	Counter with a Surge after being struck by<br>an enemy Surge attack. Activates<br>every 2 deployments (Does not stack)	Single Surge Counter
 Berserker %@	Increases attack power after defeating a<br>certain number of enemies (does not stack)
-Shortened Cooldown %@	Shortens cooldown time. Activates<br>every 2 deployments (Does not stack)
+Shortened Cooldown %@	Reduces unit deployment cooldown.<br>Activates every 2 deployments. (Does not stack)	Shortened Cooldown
 Resist Freeze %@	Reduces the effect of enemy Freeze attacks.
 Resist Weaken %@	Reduces effect of Weaken from enemy attacks.
 Cost Down %@	Reduces unit deployment cost. Activates<br>every 2 deployments (Does not stack)
