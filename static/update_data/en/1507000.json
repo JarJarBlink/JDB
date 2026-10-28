@@ -82,7 +82,15 @@
     "34013",
     "34014"
   ],
-  "sEnemy_id_list": [],
+  "sEnemy_id_list": [
+    "779",
+    "780",
+    "781",
+    "782",
+    "783",
+    "784",
+    "785"
+  ],
   "sEnemy_change_list": [],
   "sNew_medal_list": [],
   "sCastle_ids": [],
