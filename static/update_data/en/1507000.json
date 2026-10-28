@@ -1,6 +1,9 @@
 {
   "date": "2026/10/26",
   "sCat_id_list": [
+    "866",
+    "867",
+    "868",
     "877"
   ],
   "sCat_sprite_id_list": [
@@ -45,7 +48,9 @@
     "gatya_bnr939.png"
   ],
   "sGatya_names_Nlist": [],
-  "sGatya_names_Elist": [],
+  "sGatya_names_Elist": [
+    "gatya_e_bnr52.png"
+  ],
   "sCombo_id_list": [
     "385",
     "386",
