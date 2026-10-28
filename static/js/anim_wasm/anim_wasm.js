@@ -90,6 +90,17 @@ export class AnimEngine {
     compute_frame(anim_idx, frame) {
         wasm.animengine_compute_frame(this.__wbg_ptr, anim_idx, frame);
     }
+    /**
+     * 標準的 in->loop 對應版本。
+     *   looping = true  ：frame 對動畫總長 + 1 取模（與舊版 compute_frame 相同）
+     *   looping = false ：frame 不取模（只播一次）；只有 loop == -1 的通道會折返
+     * @param {number} anim_idx
+     * @param {number} frame
+     * @param {boolean} looping
+     */
+    compute_frame_ex(anim_idx, frame, looping) {
+        wasm.animengine_compute_frame_ex(this.__wbg_ptr, anim_idx, frame, looping);
+    }
     constructor() {
         const ret = wasm.animengine_new();
         this.__wbg_ptr = ret >>> 0;
