@@ -4,6 +4,7 @@
     "866",
     "867",
     "868",
+    "874",
     "877"
   ],
   "sCat_sprite_id_list": [
@@ -25,17 +26,11 @@
   "sTreasureBox_id_list": [],
   "sUnitbuy_change_list": [
     "866",
+    "867",
+    "868",
     "874"
   ],
-  "sUnitbuy_maxPlus_change_list": [
-    {
-      "unit": "866",
-      "old_max_level": "50",
-      "new_max_level": "50",
-      "old_max_plus": "10",
-      "new_max_plus": "0"
-    }
-  ],
+  "sUnitbuy_maxPlus_change_list": [],
   "sGatya_names_Rlist": [
     "gatya_bnr1079.png",
     "gatya_bnr1080.png",
@@ -49,7 +44,7 @@
     "385",
     "386",
     "387",
-    "388"
+    "389"
   ],
   "sNew_stageND_list": [
     "34035",
@@ -82,8 +77,7 @@
     "781",
     "782",
     "783",
-    "784",
-    "785"
+    "784"
   ],
   "sEnemy_change_list": [],
   "sNew_medal_list": [],
@@ -123,7 +117,7 @@
     "PAC-MAN狂熱 — 「很耐打」的效果UP【小】<br><a href=\"u000.html?cc=tw&unit=866\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni866_f00.png\" width=64 title=\"866(1階)\"></a>",
     "等你很久了！ — 角色移動速度UP【小】<br><a href=\"u000.html?cc=tw&unit=874\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni874_f00.png\" width=64 title=\"874(1階)\"></a>",
     "休想全身而退！ — 初期所持金額UP【小】<br><a href=\"u000.html?cc=tw&unit=874\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni874_c00.png\" width=64 title=\"874(2階)\"></a>",
-    "留校察看組 — 貓咪砲充電速度UP【中】<br><a href=\"u000.html?cc=tw&unit=781\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni781_c00.png\" width=64 title=\"781(2階)\"></a><a href=\"u000.html?cc=tw&unit=689\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni689_f00.png\" width=64 title=\"689(1階)\"></a>"
+    "物理驅魔 — 「使動作停止」的效果UP【小】<br><a href=\"u000.html?cc=tw&unit=799\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni799_f00.png\" width=64 title=\"799(1階)\"></a><a href=\"u000.html?cc=tw&unit=665\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni665_s00.png\" width=64 title=\"665(3階)\"></a>"
   ],
   "mission_list": [
     "1. (Special) 【PAC-MAN】通過特別任務①～④，來獲得稀有券吧！ <br>Reward：稀有券 +1\n<br>",

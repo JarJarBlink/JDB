@@ -4,6 +4,7 @@
     "866",
     "867",
     "868",
+    "874",
     "877"
   ],
   "sCat_sprite_id_list": [
@@ -25,17 +26,11 @@
   "sTreasureBox_id_list": [],
   "sUnitbuy_change_list": [
     "866",
+    "867",
+    "868",
     "874"
   ],
-  "sUnitbuy_maxPlus_change_list": [
-    {
-      "unit": "866",
-      "old_max_level": "50",
-      "new_max_level": "50",
-      "old_max_plus": "10",
-      "new_max_plus": "0"
-    }
-  ],
+  "sUnitbuy_maxPlus_change_list": [],
   "sGatya_names_Rlist": [
     "gatya_bnr1079.png",
     "gatya_bnr1080.png",
@@ -55,7 +50,7 @@
     "385",
     "386",
     "387",
-    "388"
+    "389"
   ],
   "sNew_stageND_list": [
     "34035",
@@ -88,8 +83,7 @@
     "781",
     "782",
     "783",
-    "784",
-    "785"
+    "784"
   ],
   "sEnemy_change_list": [],
   "sNew_medal_list": [],
@@ -140,7 +134,7 @@
     "PAC-MAN Fever — \"Resistant\" Effects Up(Sm)<br><a href=\"u000.html?cc=en&unit=866\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni866_f00.png\" width=64 title=\"866(1階)\"></a>",
     "Welcome! — Unit Speed Up(Sm)<br><a href=\"u000.html?cc=en&unit=874\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni874_f00.png\" width=64 title=\"874(1階)\"></a>",
     "Only one of us leaves! — Starting Money Up(Sm)<br><a href=\"u000.html?cc=en&unit=874\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni874_c00.png\" width=64 title=\"874(2階)\"></a>",
-    "Reserve Element — Cannon Recharge Up(M)<br><a href=\"u000.html?cc=en&unit=781\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni781_c00.png\" width=64 title=\"781(2階)\"></a><a href=\"u000.html?cc=en&unit=689\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni689_f00.png\" width=64 title=\"689(1階)\"></a>"
+    "Physical Exorcism — \"Freeze\" Effects Up(Sm)<br><a href=\"u000.html?cc=en&unit=799\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni799_f00.png\" width=64 title=\"799(1階)\"></a><a href=\"u000.html?cc=en&unit=665\" target=\"_blank\">&nbsp;<img src=\"static/img/unit_icon\\uni665_s00.png\" width=64 title=\"665(3階)\"></a>"
   ],
   "mission_list": [
     "1. (Special) [PAC-MAN] Clear all Special Missions ① - ④，to earn 1 Rare Ticket! <br>Reward：Rare Ticket +1\n<br>",
