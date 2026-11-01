@@ -37,8 +37,28 @@
 .bc-play-btn:hover {
   background: var(--color-table-simple-th-bc, #FFE8AA);
 }
-.bc-play-btn:not([aria-label="暫停"]) {
-  padding-left: 2px;
+/* 播放 / 暫停圖示：用 CSS 繪製，確保在圓圈正中央 */
+.bc-play-btn::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  /* ▶ 三角形 */
+  border-style: solid;
+  border-width: 5px 0 5px 8px;
+  border-color: transparent transparent transparent currentColor;
+  transform: translateX(1.3px);
+}
+.bc-play-btn.is-playing::before {
+  /* ⏸ 兩條直線 */
+  width: 8px;
+  height: 10px;
+  border: none;
+  background: linear-gradient(90deg,
+    currentColor 0 3px,
+    transparent 3px 5px,
+    currentColor 5px 8px);
+  transform: none;
 }
 
 /* ── 進度條區域 ── */

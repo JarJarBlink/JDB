@@ -1,4 +1,4 @@
-//Coded by Exodia JAR
+// Coded by Exodia JAR
 (function () {
   function fmt(s) {
     s = isNaN(s) || !isFinite(s) ? 0 : Math.floor(s);
@@ -28,9 +28,11 @@
     let playing = false;
 
     function setPlayIcon(isPlaying) {
-      btn.textContent = isPlaying ? '⏸' : '▶';
+      btn.textContent = '';
+      btn.classList.toggle('is-playing', isPlaying);
       btn.setAttribute('aria-label', isPlaying ? 'Stop' : 'Play');
     }
+    setPlayIcon(false);
 
     /* 播放 / 暫停 */
     btn.addEventListener('click', () => {
