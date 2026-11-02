@@ -1,1 +1,104 @@
-<!DOCTYPE HTML><html lang=ja><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1"><title>JAR Battle Cats Database</title><link rel=icon href=static/favicon.ico><link rel=stylesheet href=static/css/database/style.css><link rel=stylesheet href=static/css/database/origin.css><link rel=stylesheet href=static/css/home/style_a.css><link rel=stylesheet href=static/css/database/map/pagination.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css><meta name=format-detection content="telephone=no"><script src=https://code.jquery.com/jquery-3.7.1.min.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script><script src=static/js/home/ga.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js></script><script src=https://cdn.jsdelivr.net/npm/dom-to-image-more@2.8.0/dist/dom-to-image-more.min.js></script><script src=https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js></script><script type=module src=static/js/combo/combo.js></script><meta name=color-scheme content="dark light"><meta name=theme-color content><link rel=stylesheet href=static/dark-mode-toggle/dark.css media="(prefers-color-scheme: dark)"><link rel=stylesheet href=static/dark-mode-toggle/light.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=static/dark-mode-toggle/common.css><link rel=stylesheet href=static/dark-mode-toggle/slider.css><script type=module src=static/dark-mode-toggle/dark-mode-toggle-playground.js></script><script type=module src=static/dark-mode-toggle/dark-mode-toggle.js></script><link rel=stylesheet href=static/css/spine/spine-player.css><script src=static/js/spine/spine-player.js></script><script src=static/js/spine/spine-mascot-text.js></script><script src=static/js/spine/spine-mascot.js></script><script defer src=pwa.js></script></head><body><article><h2></h2><div id=stage0_block class=block><p class=name></p><table id=comboTable class=table_style_linkpage><thead><tr><th>Name/Effect</th><th>Units</th></tr></thead><tbody></tbody></table><div class=contact><ul><li id=contact1><a href=index.html rel=noopener><img src=static/img/icon/bottom_bg01.png width=18 class=icon>Home</a></li><li id=contact2>　</li></ul></div><dark-mode-toggle class=slider mode=dark style="display: none; pointer-events: none;"></dark-mode-toggle></div></article><div id=spine-mascot style="position: fixed;bottom: 0;right: 0px;width: 250px;height: 250px;z-index: 9999;pointer-events: none;display: none;"></div></body></html>
+<!DOCTYPE HTML><html lang=ja><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1"><title>JAR Battle Cats Database</title><link rel=icon href=static/favicon.ico><link rel=stylesheet href=static/css/database/style.css><link rel=stylesheet href=static/css/database/origin.css><link rel=stylesheet href=static/css/home/style_a.css><link rel=stylesheet href=static/css/database/map/pagination.css><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css><meta name=format-detection content="telephone=no"><script src=https://code.jquery.com/jquery-3.7.1.min.js></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-4C7WJXPKMY"></script><script src=static/js/home/ga.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js></script><script src=https://cdn.jsdelivr.net/npm/dom-to-image-more@2.8.0/dist/dom-to-image-more.min.js></script><script src=https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js></script><script type=module src=static/js/combo/combo.js></script><meta name=color-scheme content="dark light"><meta name=theme-color content><link rel=stylesheet href=static/dark-mode-toggle/dark.css media="(prefers-color-scheme: dark)"><link rel=stylesheet href=static/dark-mode-toggle/light.css media="(prefers-color-scheme: light)"><link rel=stylesheet href=static/dark-mode-toggle/common.css><link rel=stylesheet href=static/dark-mode-toggle/slider.css><script type=module src=static/dark-mode-toggle/dark-mode-toggle-playground.js></script><script type=module src=static/dark-mode-toggle/dark-mode-toggle.js></script><link rel=stylesheet href=static/css/spine/spine-player.css><script src=static/js/spine/spine-player.js></script><script src=static/js/spine/spine-mascot-text.js></script><script src=static/js/spine/spine-mascot.js></script><script defer src=pwa.js></script><style>
+.combo-toolbar{display:flex;flex-direction:column;gap:10px;margin:8px 0 6px;}
+.combo-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 14px;align-items:end;}
+.combo-field{display:flex;flex-direction:column;gap:3px;min-width:0;}
+.combo-field label{font-size:.85em;color:var(--text-color,inherit);opacity:.75;}
+.combo-search-wrap{position:relative;}
+.combo-search-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%);color:var(--text-color,inherit);opacity:.5;pointer-events:none;}
+#comboSearch,#effectFilter,#levelFilter,#unitFilter{box-sizing:border-box;width:100%;padding:8px 10px;font-size:1em;border:1px solid var(--color-table-default-border,#C8A060);border-radius:8px;background:var(--color-article-bc,#FFF8E8);color:var(--text-color,#2A1F0E);}
+#comboSearch{padding-left:32px;}
+#comboSearch:focus,#effectFilter:focus,#levelFilter:focus,#unitFilter:focus{outline:2px solid var(--color-link-home,#3D6FBF);outline-offset:1px;background:var(--color-desc-bc,#FFF0CC);}
+#effectFilter option,#levelFilter option{color:var(--text-color,#2A1F0E);background:var(--color-article-bc,#FFF8E8);}
+/* 原生下拉（select）的配色由瀏覽器依 color-scheme 決定，
+   這裡明確跟著 JDB 的 dark/light 切換（<html> 的 dark class），不依賴系統設定 */
+#comboSearch,#effectFilter,#levelFilter,#unitFilter,#pageSizeSel{color-scheme:light;}
+html.dark #comboSearch,html.dark #effectFilter,html.dark #levelFilter,html.dark #unitFilter,html.dark #pageSizeSel{color-scheme:dark;}
+.combo-field-unit{position:relative;}
+.combo-suggest{position:absolute;left:0;right:0;top:100%;z-index:50;margin-top:2px;max-height:260px;overflow-y:auto;background:var(--color-article-bc,#FFF8E8);color:var(--text-color,#2A1F0E);border:1px solid var(--color-table-default-border,#C8A060);border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,.25);}
+.combo-suggest[hidden]{display:none;}
+.combo-suggest-item{display:flex;align-items:center;gap:8px;padding:4px 10px;cursor:pointer;}
+.combo-suggest-item img{width:28px;height:auto;flex-shrink:0;}
+.combo-suggest-name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.combo-suggest-id{font-size:.8em;opacity:.65;flex-shrink:0;}
+.combo-suggest-item:hover,.combo-suggest-item.active{background:var(--color-table-simple-th-bc,#FFE8AA);}
+.combo-clear{padding:2px 12px;font-size:.85em;line-height:1.5;border:1px solid var(--color-table-default-border,#C8A060);border-radius:999px;background:var(--color-button-bc,#FFF0CC);color:var(--color-button,#2A1F0E);cursor:pointer;opacity:.45;}
+.combo-clear.active{opacity:1;}
+.combo-clear.active:hover{background:var(--color-table-simple-th-bc,#FFE8AA);}
+.combo-count{margin:4px 0 8px;font-size:.9em;color:var(--text-color,inherit);opacity:.75;}
+.combo-name{font-weight:bold;margin-bottom:2px;}
+.combo-effect{font-size:.92em;opacity:.85;}
+.combo-unit-names{font-size:.85em;opacity:.7;margin-top:2px;}
+.combo-units{white-space:normal;}
+.combo-unit-img{width:40px;height:auto;margin:2px 3px 2px 0;cursor:pointer;}
+.combo-empty{text-align:center;padding:24px 8px;opacity:.7;}
+mark.combo-hit{background:var(--color-rare-yellow-bc,#FFF5CC);color:var(--text-color,#2A1F0E);box-shadow:0 0 0 1px var(--color-table-default-border,#C8A060);border-radius:2px;padding:0 1px;}
+#comboTable tbody tr:hover{background:var(--color-desc-bc,rgba(128,128,128,.12));}
+.combo-chip-row{margin:0;}
+.combo-chip{display:inline-flex;align-items:center;gap:6px;margin:4px 6px 4px 0;padding:3px 6px 3px 10px;border:1px solid var(--color-table-default-border,#C8A060);border-radius:999px;background:var(--color-desc-bc,#FFF0CC);color:var(--text-color,#2A1F0E);font-size:.9em;}
+.combo-chip a{display:inline-flex;align-items:center;}
+.combo-chip .combo-unit-img{width:28px;margin:0;}
+.combo-chip-ext{margin-left:6px;font-size:.75em;opacity:.7;}
+.combo-chip-x{border:none;background:transparent;color:inherit;cursor:pointer;font-size:1em;padding:2px 6px;border-radius:50%;}
+.combo-chip-x:hover{background:var(--color-table-simple-th-bc,#FFE8AA);}
+.combo-team{margin:2px 0 6px;}
+.combo-team-head{margin-bottom:4px;font-size:.85em;color:var(--text-color,inherit);opacity:.8;}
+.combo-team-status.over{color:#C0392B;font-weight:bold;}
+.combo-team-slots{display:flex;flex-wrap:wrap;gap:6px;}
+.combo-team-slot{box-sizing:border-box;display:block;width:clamp(44px,16vw,64px);aspect-ratio:110/85;padding:0;border-radius:6px;overflow:hidden;}
+.combo-team-slot.empty{border:2px dashed var(--color-table-default-border,#C8A060);opacity:.4;}
+.combo-team-slot.filled{border:2px solid var(--color-link-home,#3D6FBF);background:var(--color-desc-bc,#FFF0CC);cursor:pointer;}
+.combo-team-slot.filled:hover{filter:brightness(1.1);}
+.combo-team-slot.filled.over{border-color:#C0392B;}
+.combo-team-slot img{display:block;width:100%;height:100%;object-fit:contain;}
+.combo-active{margin:2px 0 8px;}
+.combo-active-head{margin-bottom:4px;font-size:.85em;color:var(--text-color,inherit);opacity:.8;}
+.combo-active-none{font-size:.85em;color:var(--text-color,inherit);opacity:.6;}
+.combo-active-list{max-height:180px;overflow-y:auto;border:1px solid var(--color-table-default-border,#C8A060);border-radius:8px;background:var(--color-desc-bc,#FFF0CC);color:var(--text-color,#2A1F0E);}
+.combo-active-item{display:flex;flex-wrap:wrap;gap:2px 10px;padding:4px 10px;}
+.combo-active-item + .combo-active-item{border-top:1px solid var(--color-table-default-border,#C8A060);}
+.combo-active-name{font-weight:bold;}
+.combo-active-title{display:inline-flex;align-items:center;gap:4px;}
+.combo-active-icons{display:inline-flex;align-items:center;gap:2px;flex-shrink:0;}
+.combo-active-icon{height:1.5em;width:auto;display:block;}
+.combo-active-effect{font-size:.92em;opacity:.85;}
+.combo-empty-hint{margin-top:8px;font-size:.9em;}
+.combo-empty-btn{padding:3px 14px;font-size:.9em;border:none;border-radius:999px;background:var(--color-link-home,#3D6FBF);color:#fff;cursor:pointer;}
+.combo-empty-btn:hover{filter:brightness(1.1);}
+.combo-mode{display:flex;width:fit-content;margin:4px 0 2px;border:1px solid var(--color-table-default-border,#C8A060);border-radius:999px;overflow:hidden;}
+.combo-mode-btn{padding:3px 14px;font-size:.85em;border:none;background:var(--color-button-bc,#FFF0CC);color:var(--color-button,#2A1F0E);cursor:pointer;}
+.combo-mode-btn:hover{background:var(--color-table-simple-th-bc,#FFE8AA);}
+.combo-mode-btn.active{background:var(--color-link-home,#3D6FBF);color:#fff;cursor:default;}
+.combo-match{display:inline-block;margin-top:3px;padding:0 8px;font-size:.75em;border:1px solid var(--color-table-default-border,#C8A060);border-radius:999px;opacity:.85;}
+.combo-match.full{background:var(--color-link-home,#3D6FBF);border-color:transparent;color:#fff;opacity:1;}
+.combo-unit-img.combo-unit-sel{outline:2px solid var(--color-link-home,#3D6FBF);outline-offset:1px;border-radius:4px;}
+.combo-meta{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:6px 12px;margin:4px 0 8px;}
+.combo-meta .combo-count{margin:0;}
+.combo-meta-left{display:flex;align-items:center;gap:10px;}
+.combo-pagesize{display:inline-flex;align-items:center;gap:6px;font-size:.9em;color:var(--text-color,inherit);}
+#pageSizeSel{padding:4px 8px;font-size:1em;border:1px solid var(--color-table-default-border,#C8A060);border-radius:8px;background:var(--color-article-bc,#FFF8E8);color:var(--text-color,#2A1F0E);cursor:pointer;}
+#pageSizeSel option{color:var(--text-color,#2A1F0E);background:var(--color-article-bc,#FFF8E8);}
+#effectFilter,#levelFilter,#pageSizeSel{min-width:0;max-width:100%;text-overflow:ellipsis;}
+#effectFilter,#levelFilter{width:100%!important;min-width:0!important;max-width:100%!important;box-sizing:border-box;}
+.combo-toolbar,.combo-row,.combo-field{max-width:100%;}
+.combo-row:first-child{position:relative;}
+.combo-row:last-child{grid-template-columns:minmax(0,1fr);}
+.combo-dd{position:static;min-width:0;max-width:100%;}
+.combo-dd-btn{display:flex;align-items:center;justify-content:space-between;gap:8px;box-sizing:border-box;width:100%;min-width:0;padding:8px 10px;font-size:1em;line-height:1.4;text-align:left;border:1px solid var(--color-table-default-border,#C8A060);border-radius:8px;background:var(--color-article-bc,#FFF8E8);color:var(--text-color,#2A1F0E);box-shadow:none;cursor:pointer;}
+.combo-dd-btn:active{box-shadow:none;color:var(--text-color,#2A1F0E);}
+.combo-dd-btn:focus{outline:2px solid var(--color-link-home,#3D6FBF);outline-offset:1px;background:var(--color-desc-bc,#FFF0CC);}
+.combo-dd-btn:disabled{opacity:.5;cursor:default;}
+.combo-dd-btn .combo-dd-text{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.combo-dd-btn::after{content:"";flex-shrink:0;width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:6px solid currentColor;opacity:.7;transition:transform .15s;}
+.combo-dd-btn[aria-expanded="true"]::after{transform:rotate(180deg);}
+.combo-dd-list{position:absolute;left:0;right:0;top:100%;z-index:60;box-sizing:border-box;width:100%;max-width:100%;margin:2px 0 0;padding:0;list-style:none;max-height:min(320px,50vh);overflow-y:auto;background:var(--color-article-bc,#FFF8E8);color:var(--text-color,#2A1F0E);border:1px solid var(--color-table-default-border,#C8A060);border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,.25);}
+.combo-dd-list[hidden]{display:none;}
+.combo-dd-inline{position:relative;display:inline-block;}
+.combo-dd-inline .combo-dd-btn{width:auto;min-width:72px;padding:4px 8px;}
+.combo-dd-inline .combo-dd-list{left:auto;right:0;width:max-content;min-width:100%;max-width:calc(100vw - 20px);}
+.combo-dd-item{padding:9px 10px;cursor:pointer;white-space:normal;overflow-wrap:anywhere;line-height:1.4;}
+.combo-dd-item.hot,.combo-dd-item:hover{background:var(--color-table-simple-th-bc,#FFE8AA);}
+.combo-dd-item.active{font-weight:bold;color:var(--color-link-home,#3D6FBF);}
+@media (max-width:600px){
+#effectFilter option,#levelFilter option{max-width:100%;}
+.combo-field{width:100%;}}
+</style></head><body><article><h2></h2><div id=stage0_block class=block><p class=name></p><table id=comboTable class=table_style_linkpage><thead><tr><th>Name/Effect</th><th>Units</th></tr></thead><tbody></tbody></table><div class=contact><ul><li id=contact1><a href=index.html rel=noopener><img src=static/img/icon/bottom_bg01.png width=18 class=icon>Home</a></li><li id=contact2>　</li></ul></div><dark-mode-toggle class=slider mode=dark style="display: none; pointer-events: none;"></dark-mode-toggle></div></article><div id=spine-mascot style="position: fixed;bottom: 0;right: 0px;width: 250px;height: 250px;z-index: 9999;pointer-events: none;display: none;"></div></body></html>
