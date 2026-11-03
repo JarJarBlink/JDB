@@ -1,29 +1,4 @@
-<!DOCTYPE HTML><html lang=ja><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1"><title>JAR Battle Cats Database</title><link rel=icon href=static/favicon.ico><link rel=preload as=fetch crossorigin href=static/lang/en.json><link rel=preload as=fetch crossorigin href=static/data/DataLocal/NyancomboData.csv><link rel=preload as=fetch crossorigin href=static/data/DataLocal/unitlevel.csv><link rel=preload as=fetch crossorigin href=static/data/DataLocal/SkillLevel.csv><link rel=preload as=fetch crossorigin href=static/data/DataLocal/SkillAcquisition.csv><link rel=preload as=fetch crossorigin href=static/data/DataLocal/equipmentslot.csv><link rel=preload as=fetch crossorigin href=static/data/DataLocal/NyancomboParam.tsv><link rel=preload as=fetch crossorigin href=static/data/DataLocal/unitexp.csv><script>
-(function () {
-  var q = new URLSearchParams(location.search);
-  var cc = q.get('cc'); if (cc === 'jp') cc = 'ja';
-  if (['tw', 'ja', 'en', 'kr'].indexOf(cc) < 0) cc = 'en'; // lang.js data-default="en"
-  var unit = parseInt(q.get('unit'), 10);
-  var urls = [];
-  if (cc !== 'en') urls.push('static/lang/' + cc + '.json');
-  if (!isNaN(unit) && unit >= 0) {
-    var rc = cc === 'kr' ? 'ko' : cc; // resLocal 檔名語言碼（與 meta.resCode 不同時請調整）
-    var s3 = String(unit).padStart(3, '0');
-    urls.push('static/data/DataLocal' + (cc === 'ja' ? '' : '_' + cc) + '/unitbuy.csv');
-    urls.push('static/data/DataLocal/unit' + String(unit + 1).padStart(3, '0') + '.csv');
-    urls.push('static/data/resLocal_' + cc + '/Unit_Explanation' + (unit + 1) + '_' + rc + '.csv');
-    ['f', 'c', 's', 'u'].forEach(function (f) {
-      urls.push('static/data/ImageDataLocal/' + s3 + '_' + f + '02.maanim');
-      urls.push('static/data/ImageDataLocal/' + s3 + '_' + f + '.mamodel');
-    });
-  }
-  urls.forEach(function (u) {
-    var l = document.createElement('link');
-    l.rel = 'preload'; l.as = 'fetch'; l.href = u; l.crossOrigin = 'anonymous';
-    document.head.appendChild(l);
-  });
-})();
-</script><link rel=stylesheet href=static/css/database/style.css><link rel=stylesheet href=static/css/database/origin.css><link rel=stylesheet href=static/css/database/unit/u000_style.css><meta name=format-detection content="telephone=no"><meta name=description content="JAR Battle Cats Database - unit stats, talents, combos and evolution materials."><style>
+<!DOCTYPE HTML><html lang=ja><head><meta charset=UTF-8><meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1"><title>JAR Battle Cats Database</title><link rel=icon href=static/favicon.ico><link rel=preload as=fetch crossorigin href=static/lang/en.json><link rel=stylesheet href=static/css/database/style.css><link rel=stylesheet href=static/css/database/origin.css><link rel=stylesheet href=static/css/database/unit/u000_style.css><meta name=format-detection content="telephone=no"><meta name=description content="JAR Battle Cats Database - unit stats, talents, combos and evolution materials."><style>
 img[src*="/ability_icon/"], img[src*="/unit_icon/"], .unit-icon-img { aspect-ratio: auto 1 / 1; }
 </style><script src=static/js/unit/lang.js data-default=en defer></script><script src=static/js/lib/jquery-3.7.1.min.js defer></script><script src=static/js/lib/decimal.min.js defer></script><script>
 addEventListener('load', function () { setTimeout(function () {
