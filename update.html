@@ -10,7 +10,7 @@
 <link rel="stylesheet" href='static/css/database/mightycat.css'>
 <link rel="stylesheet" href='static/css/home/style_a.css'>
 <meta name="format-detection" content="telephone=no">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="static/js/lib/jquery-3.7.1.min.js"></script>
 <script src="static/js/home/ga.js"></script>
 <script src="static/js/home/lang.js"></script>
 <script src="static/js/update/update.js"></script>
@@ -20,15 +20,8 @@
 <link rel="stylesheet" href="static/dark-mode-toggle/dark.css" media="(prefers-color-scheme: dark)"/>
 <link rel="stylesheet" href="static/dark-mode-toggle/light.css" media="(prefers-color-scheme: light)"/>
 <link rel="stylesheet" href="static/dark-mode-toggle/common.css"/>
-<link rel="stylesheet" href="static/dark-mode-toggle/slider.css"/>
-<script type="module" src="static/dark-mode-toggle/dark-mode-toggle-playground.js"></script>
-<script type="module" src="static/dark-mode-toggle/dark-mode-toggle.js"></script>
-<link rel="stylesheet" href='static/css/spine/spine-player.css'>
-<script src="static/js/spine/spine-player.js"></script>
-<script src="static/js/spine/spine-mascot-text.js"></script>
-<script src="static/js/spine/spine-mascot.js"></script>
+<script src="static/dark-mode-toggle/theme-init.js"></script>
 <script defer src="pwa.js"></script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
 
@@ -410,10 +403,7 @@ if (window.matchMedia('(prefers-color-scheme)').media === 'not all') {
                     <li id="contact2">&nbsp;</li>
                 </ul>
             </div>
-            <dark-mode-toggle class="slider" mode="light" style="display: none; pointer-events: none;"></dark-mode-toggle>
         </div>
     </article>
-
-    <div id="spine-mascot" style="position:fixed;bottom:0;right:0;width:250px;height:250px;z-index:9999;pointer-events:none;display:none;"></div>
 </body>
 </html>

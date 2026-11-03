@@ -10,15 +10,13 @@
 <link rel="stylesheet" href='static/css/home/style_a.css'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <meta name="format-detection" content="telephone=no">
-<meta name="color-scheme" content="dark light">
-<meta name="theme-color" content="">
-<link rel="stylesheet" href="static/dark-mode-toggle/dark.css"   media="(prefers-color-scheme: dark)">
-<link rel="stylesheet" href="static/dark-mode-toggle/light.css"  media="(prefers-color-scheme: light)">
-<link rel="stylesheet" href="static/dark-mode-toggle/common.css">
-<link rel="stylesheet" href="static/dark-mode-toggle/slider.css">
-<script type="module" src="static/dark-mode-toggle/dark-mode-toggle-playground.js"></script>
-<script type="module" src="static/dark-mode-toggle/dark-mode-toggle.js"></script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<meta name="color-scheme" content="dark light"/>
+<meta name="theme-color" content=""/>
+<link rel="stylesheet" href="static/dark-mode-toggle/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/common.css"/>
+<script src="static/dark-mode-toggle/theme-init.js"></script>
+<script src="static/js/lib/jquery-3.7.1.min.js" defer></script>
 <script defer src="pwa.js"></script>
 <style>
 #eb-header {
@@ -297,7 +295,7 @@
 </head>
 <body>
 
-<!-- ─── 全部包進 article，max-width: 740px 約束 ─── -->
+<!-- ─── 包進 article，max-width: 740px 約束 ─── -->
 <article id="eb-main">
 
   <!-- Header -->
@@ -342,13 +340,8 @@
       <li id="contact2">　</li>
     </ul>
   </div>
-
-  <dark-mode-toggle class="slider" mode="dark" style="display: none; pointer-events: none;"></dark-mode-toggle>
-
 </article>
-
 <button id="eb-scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">▲</button>
-
 <script src="static/js/book/enemy_book.js"></script>
 </body>
 </html>
