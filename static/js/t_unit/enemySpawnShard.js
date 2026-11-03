@@ -1,0 +1,2 @@
+(function(){const cache=new Map();window.enemySpawnData=window.enemySpawnData||{};window.enemySpawnDataMax=window.enemySpawnDataMax||{};window.EnemySpawn={load(id){id=String(id);if(!/^\d+$/.test(id))return Promise.resolve({max:{},list:{}});if(!cache.has(id)){cache.set(id,fetch(`static/data/enemySpawn/${id}.json`).then(r=>(r.ok?r.json():{})).catch(()=>({})).then(d=>{const max=d.max||{};const list=d.list||{};window.enemySpawnDataMax[id]=max;window.enemySpawnData[id]=list;return{max,list};}));}
+return cache.get(id);},};})();

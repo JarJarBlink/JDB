@@ -672,5 +672,32 @@
         }
       }
     }
+  },
+  "map": {
+    "map_title": "맵 스테이지",
+    "cleartimes": "클리어 가능 횟수",
+    "cooldowntime": "인터벌",
+    "labelSecond": "초 단위",
+    "hard": "★난이도",
+    "crownTable": "왕관 배율",
+    "hide": "클리어 후",
+    "dxp": "XP 2배 광고",
+    "rule": "규칙",
+    "leadership": "통솔력",
+    "tcount": "적 최대 수",
+    "chp": "성 체력",
+    "stage_len": "스테이지 길이",
+    "start_bgm": "시작 BGM",
+    "boss_spawn": "보스 위치",
+    "cshield": "성 배리어",
+    "base_xp": "기본 XP",
+    "tlimit": "출격 제한",
+    "openlimit": "개방 조건",
+    "ex_stage": "EX 스테이지",
+    "gift_item_drop": "보상",
+    "hp_bgm_text": "성 체력 < {threshold}%",
+    "pop": "표시·도전 조건",
+    "time_text": "시간(mins)",
+    "officialBtn": "공식"
   }
 }
