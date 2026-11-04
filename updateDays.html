@@ -26,14 +26,29 @@
     <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.2.0"></script>
     <script src="static/js/updateDays/updateDays.js"></script>
-    <style>canvas {max-width: 900px;max-height: 400px;margin-bottom: 50px;}</style>
+    <style>
+        canvas {
+            width: 100% !important;
+            max-width: 900px;
+            margin-bottom: 50px;
+        }
+        /* 電腦版限制高度；手機版由aspectRatio 決定 */
+        @media (min-width: 601px) {
+            canvas { max-height: 400px; }
+        }
+        /* 手機版：減少左右留白，圖表更寬 */
+        @media (max-width: 600px) {
+            article { padding-left: 4px; padding-right: 4px; }
+            canvas { margin-bottom: 30px; }
+        }
+    </style>
     <script defer src="pwa.js"></script>
 </head>
 <body>
 <article>
     <!--The Code is Written By JAR-->
     <h2 id="updateTitle"></h2>
-    <p class="litele_space" style="height:5px"  />
+    <p class="litele_space" style="height:5px"></p>
     <h3>JP Update Days</h3>
     <canvas id="chartJP"></canvas>
 
@@ -46,15 +61,6 @@
             <li id="contact2">　</li>
         </ul>
     </div>
-    </div>
 </article>
 </body>
 </html>
-
-
-
-
-
-
-
-
