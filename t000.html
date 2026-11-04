@@ -4,17 +4,15 @@
   var cc = q.get('cc'); if (cc === 'jp') cc = 'ja';
   if (['tw', 'ja', 'en', 'kr'].indexOf(cc) < 0) cc = 'en'; // lang.js data-default="en"
   var unit = parseInt(q.get('unit'), 10);
-  var urls = ['static/data/DataLocal/t_unit.csv'];
+  // 資料包：EnemyData/<cc>/<eid3>.json 已包含 t_unit 該列 / 圖鑑 / 名稱 / 攻擊頻率 / MP，
+  // 不再預載 t_unit.csv、EnemyPictureBook、Enemyname、maanim、mamodel
+  var urls = [];
   if (cc !== 'en') urls.push('static/lang/' + cc + '.json');
-  var rc = cc === 'kr' ? 'ko' : cc; // resLocal 檔名語言碼（與 meta.resCode 不同時調整）
-  urls.push('static/data/resLocal_' + cc + '/EnemyPictureBook_' + rc + '.csv');
-  urls.push('static/data/resLocal_' + cc + '/Enemyname.tsv');
   urls.push('static/data/resLocal_' + cc + '/Map_Name.csv');
   if (!isNaN(unit) && unit >= 0) {
     var s3 = String(unit).padStart(3, '0');
+    urls.push('static/data/EnemyData/' + cc + '/' + s3 + '.json');
     urls.push('static/data/enemySpawn/' + (unit + 2) + '.json');
-    urls.push('static/data/ImageDataLocal/' + s3 + '_e02.maanim');
-    urls.push('static/data/ImageDataLocal/' + s3 + '_e.mamodel');
   }
   urls.forEach(function (u) {
     var l = document.createElement('link');
