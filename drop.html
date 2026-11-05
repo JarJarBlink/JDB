@@ -2,12 +2,12 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1">
 <title>JAR Battle Cats Database</title>
 <link rel="icon" href="static/favicon.ico">
 <link rel="stylesheet" href="static/css/database/style.css">
 <link rel="stylesheet" href="static/css/database/origin.css">
-<link rel="stylesheet" href='static/css/home/style_a_drop.css'>
+<link rel="stylesheet" href="static/css/home/style_a_drop.css">
 <script src="static/js/lib/jquery-3.7.1.min.js" defer></script>
 <meta name="color-scheme" content="dark light"/>
 <meta name="theme-color" content=""/>
@@ -23,64 +23,8 @@
 <article>
 <div class="block">
 
-    <h2 id="titleLegend" class="collapsed"><span class="title-text"></span><span class="toggle-arrow">▼</span></h2>
-    <div class="section-content collapsed">
-    <div id="bestDropsLegend"     class="best-drop-container"></div>
-    <div class="drop-table-wrap">
-        <table id="tableLegend" class="drop-table">
-            <thead>
-                <tr>
-                    <th rowspan="2" class="header-main">章節名稱</th>
-                    <th colspan="8" class="header-drop">掉落機率</th>
-                    <th rowspan="2" class="header-nodrop">未掉落</th>
-                    <th colspan="4" class="header-draw">抽取次數</th>
-                </tr>
-                <tr class="iconRow"></tr>
-            </thead>
-            <tbody id="bodyLegend"></tbody>
-        </table>
-    </div>
-    </div><!-- /section-content -->
-
-    <h2 id="titleTrueLegend" class="collapsed"><span class="title-text"></span><span class="toggle-arrow">▼</span></h2>
-    <div class="section-content collapsed">
-    <div id="bestDropsTrueLegend" class="best-drop-container"></div>
-    <div class="drop-table-wrap">
-        <table id="tableTrueLegend" class="drop-table">
-            <thead>
-                <tr>
-                    <th rowspan="2" class="header-main"></th>
-                    <th colspan="8" class="header-drop"></th>
-                    <th rowspan="2" class="header-nodrop"></th>
-                    <th colspan="4" class="header-draw"></th>
-                </tr>
-                <tr class="iconRow"></tr>
-            </thead>
-            <tbody id="bodyTrueLegend"></tbody>
-        </table>
-    </div>
-    </div><!-- /section-content -->
-
-    <h2 id="titleZeroLegend" class="collapsed"><span class="title-text"></span><span class="toggle-arrow">▼</span></h2>
-    <div class="section-content collapsed">
-    <div id="bestDropsZeroLegend" class="best-drop-container"></div>
-    <div class="drop-table-wrap">
-        <table id="tableZeroLegend" class="drop-table">
-            <thead>
-                <tr>
-                    <th rowspan="2" class="header-main"></th>
-                    <th colspan="8" class="header-drop"></th>
-                    <th rowspan="2" class="header-nodrop"></th>
-                    <th colspan="4" class="header-draw"></th>
-                </tr>
-                <tr class="iconRow"></tr>
-            </thead>
-            <tbody id="bodyZeroLegend"></tbody>
-        </table>
-    </div>
-    </div><!-- /section-content -->
-
-    <div id="pagination" style="margin:10px 0;text-align:center;"></div>
+    <div id="dropTabs" class="dt-tabs" role="tablist"></div>
+    <div id="dropPanels"></div>
 
     <div class="contact">
         <ul>
@@ -90,30 +34,5 @@
     </div>
 </div>
 </article>
-<script>
-// 滑鼠拖動橫向捲動（pc）
-document.querySelectorAll('.drop-table-wrap').forEach(el => {
-    let isDown = false, startX, scrollLeft;
-
-    el.addEventListener('mousedown', e => {
-        isDown     = true;
-        startX     = e.pageX - el.offsetLeft;
-        scrollLeft = el.scrollLeft;
-        el.style.cursor = 'grabbing';
-        el.style.userSelect = 'none';
-    });
-
-    el.addEventListener('mouseleave', () => { isDown = false; el.style.cursor = 'grab'; });
-    el.addEventListener('mouseup',    () => { isDown = false; el.style.cursor = 'grab'; el.style.userSelect = ''; });
-
-    el.addEventListener('mousemove', e => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x    = e.pageX - el.offsetLeft;
-        const walk = (x - startX) * 1.2;    //1.2 加快速度
-        el.scrollLeft = scrollLeft - walk;
-    });
-});
-</script>
 </body>
 </html>
