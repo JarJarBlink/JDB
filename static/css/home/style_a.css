@@ -9,7 +9,8 @@ article {
     background: var(--color-article-bc);
 }
 
-#stage0_block.block {
+#stage0_block.block,
+#results_block.block {
     display: block;         /* 恢復成 block，讓 label (F/Sec) 恢復橫排 */
     position: static;       /* 恢復預設值 */
     padding-bottom: 20px;
