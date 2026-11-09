@@ -1,0 +1,908 @@
+{
+  "BuffSkillID": {
+    "0": {
+      "AbilityID": 32,
+      "MaxLevel": 5,
+      "Parameters": [
+        40,
+        200
+      ]
+    },
+    "1": {
+      "AbilityID": 32,
+      "MaxLevel": 5,
+      "Parameters": [
+        30,
+        150
+      ]
+    },
+    "2": {
+      "AbilityID": 32,
+      "MaxLevel": 5,
+      "Parameters": [
+        20,
+        100
+      ]
+    },
+    "3": {
+      "AbilityID": 31,
+      "MaxLevel": 5,
+      "Parameters": [
+        40,
+        200
+      ]
+    },
+    "4": {
+      "AbilityID": 31,
+      "MaxLevel": 5,
+      "Parameters": [
+        30,
+        150
+      ]
+    },
+    "5": {
+      "AbilityID": 31,
+      "MaxLevel": 5,
+      "Parameters": [
+        20,
+        100
+      ]
+    },
+    "6": {
+      "AbilityID": 1012,
+      "MaxLevel": 5,
+      "Parameters": [
+        15,
+        75
+      ]
+    },
+    "7": {
+      "AbilityID": 1013,
+      "MaxLevel": 5,
+      "Parameters": [
+        15,
+        75
+      ]
+    },
+    "8": {
+      "AbilityID": 7,
+      "MaxLevel": 1
+    },
+    "9": {
+      "AbilityID": 6,
+      "MaxLevel": 1
+    },
+    "10": {
+      "AbilityID": 5,
+      "MaxLevel": 1
+    },
+    "11": {
+      "AbilityID": 41,
+      "MaxLevel": 1
+    },
+    "12": {
+      "AbilityID": 33,
+      "MaxLevel": 1
+    },
+    "13": {
+      "AbilityID": 34,
+      "MaxLevel": 1
+    },
+    "14": {
+      "AbilityID": 35,
+      "MaxLevel": 1
+    },
+    "15": {
+      "AbilityID": 36,
+      "MaxLevel": 1
+    },
+    "16": {
+      "AbilityID": 37,
+      "MaxLevel": 1
+    },
+    "17": {
+      "AbilityID": 38,
+      "MaxLevel": 1
+    },
+    "18": {
+      "AbilityID": 39,
+      "MaxLevel": 1
+    },
+    "19": {
+      "AbilityID": 40,
+      "MaxLevel": 1
+    },
+    "20": {
+      "AbilityID": 57,
+      "MaxLevel": 1
+    },
+    "21": {
+      "AbilityID": 50,
+      "MaxLevel": 1,
+      "Parameters": [
+        100,
+        100,
+        200,
+        200
+      ]
+    },
+    "22": {
+      "AbilityID": 17,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        3,
+        3
+      ]
+    },
+    "23": {
+      "AbilityID": 31,
+      "MaxLevel": 1,
+      "Parameters": [
+        300,
+        300
+      ]
+    },
+    "24": {
+      "AbilityID": 31,
+      "MaxLevel": 1,
+      "Parameters": [
+        200,
+        200
+      ]
+    },
+    "25": {
+      "AbilityID": 32,
+      "MaxLevel": 1,
+      "Parameters": [
+        300,
+        300
+      ]
+    },
+    "26": {
+      "AbilityID": 32,
+      "MaxLevel": 1,
+      "Parameters": [
+        200,
+        200
+      ]
+    },
+    "27": {
+      "AbilityID": 9,
+      "MaxLevel": 1,
+      "Parameters": [
+        50,
+        50,
+        30,
+        30,
+        1200,
+        1200,
+        2000,
+        2000
+      ]
+    },
+    "28": {
+      "AbilityID": 1012,
+      "MaxLevel": 1,
+      "Parameters": [
+        60,
+        60
+      ]
+    },
+    "29": {
+      "AbilityID": 1013,
+      "MaxLevel": 1,
+      "Parameters": [
+        60,
+        60
+      ]
+    },
+    "30": {
+      "AbilityID": 3,
+      "MaxLevel": 1,
+      "Parameters": [
+        50,
+        50,
+        0,
+        0
+      ]
+    },
+    "31": {
+      "AbilityID": 2,
+      "MaxLevel": 1,
+      "Parameters": [
+        50,
+        50,
+        60,
+        60
+      ]
+    },
+    "32": {
+      "AbilityID": 50,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        200,
+        200
+      ]
+    },
+    "33": {
+      "AbilityID": 1009,
+      "MaxLevel": 3,
+      "Parameters": [
+        1,
+        3,
+        60,
+        60
+      ]
+    },
+    "34": {
+      "AbilityID": 1008,
+      "MaxLevel": 1,
+      "Parameters": [
+        100,
+        100
+      ]
+    },
+    "35": {
+      "AbilityID": 61,
+      "MaxLevel": 1,
+      "Parameters": [
+        80,
+        80
+      ]
+    },
+    "36": {
+      "AbilityID": 61,
+      "MaxLevel": 1,
+      "Parameters": [
+        68,
+        68
+      ]
+    },
+    "37": {
+      "AbilityID": 56,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        2,
+        2,
+        1200,
+        1200,
+        1600,
+        1600
+      ]
+    },
+    "38": {
+      "AbilityID": 56,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        2,
+        2,
+        880,
+        880,
+        1280,
+        1280
+      ]
+    },
+    "39": {
+      "AbilityID": 56,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        2,
+        2,
+        1560,
+        1560,
+        1960,
+        1960
+      ]
+    },
+    "40": {
+      "AbilityID": 56,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        2,
+        2,
+        2040,
+        2040,
+        2440,
+        2440
+      ]
+    },
+    "41": {
+      "AbilityID": 67,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        720,
+        720,
+        0,
+        0
+      ]
+    },
+    "42": {
+      "AbilityID": 67,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        1400,
+        1400,
+        0,
+        0
+      ]
+    },
+    "43": {
+      "AbilityID": 67,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        1780,
+        1780,
+        0,
+        0
+      ]
+    },
+    "44": {
+      "AbilityID": 32,
+      "MaxLevel": 1,
+      "Parameters": [
+        100,
+        100
+      ]
+    },
+    "45": {
+      "AbilityID": 31,
+      "MaxLevel": 1,
+      "Parameters": [
+        100,
+        100
+      ]
+    },
+    "46": {
+      "AbilityID": 1001,
+      "MaxLevel": 5,
+      "Parameters": [
+        15,
+        75
+      ]
+    },
+    "47": {
+      "AbilityID": 1002,
+      "MaxLevel": 5,
+      "Parameters": [
+        50,
+        250
+      ]
+    },
+    "48": {
+      "AbilityID": 1003,
+      "MaxLevel": 5,
+      "Parameters": [
+        15,
+        75
+      ]
+    },
+    "49": {
+      "AbilityID": 1004,
+      "MaxLevel": 5,
+      "Parameters": [
+        20,
+        100
+      ]
+    },
+    "50": {
+      "AbilityID": 1005,
+      "MaxLevel": 5,
+      "Parameters": [
+        20,
+        100
+      ]
+    },
+    "51": {
+      "AbilityID": 1006,
+      "MaxLevel": 5,
+      "Parameters": [
+        20,
+        100
+      ]
+    },
+    "52": {
+      "AbilityID": 1007,
+      "MaxLevel": 5,
+      "Parameters": [
+        20,
+        100
+      ]
+    },
+    "53": {
+      "AbilityID": 47,
+      "MaxLevel": 1
+    },
+    "54": {
+      "AbilityID": 46,
+      "MaxLevel": 1
+    },
+    "55": {
+      "AbilityID": 45,
+      "MaxLevel": 1
+    },
+    "56": {
+      "AbilityID": 44,
+      "MaxLevel": 1
+    },
+    "57": {
+      "AbilityID": 1,
+      "MaxLevel": 1,
+      "Parameters": [
+        50,
+        50,
+        90,
+        90,
+        50,
+        50
+      ]
+    },
+    "58": {
+      "AbilityID": 1,
+      "MaxLevel": 1,
+      "Parameters": [
+        30,
+        30,
+        90,
+        90,
+        50,
+        50
+      ]
+    },
+    "59": {
+      "AbilityID": 1,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        120,
+        120,
+        50,
+        50
+      ]
+    },
+    "60": {
+      "AbilityID": 67,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        1640,
+        1640,
+        0,
+        0
+      ]
+    },
+    "61": {
+      "AbilityID": 67,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        1800,
+        1800,
+        0,
+        0
+      ]
+    },
+    "62": {
+      "AbilityID": 67,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        720,
+        720,
+        0,
+        0
+      ]
+    },
+    "63": {
+      "AbilityID": 2,
+      "MaxLevel": 1,
+      "Parameters": [
+        50,
+        50,
+        90,
+        90
+      ]
+    },
+    "64": {
+      "AbilityID": 32,
+      "MaxLevel": 1,
+      "Parameters": [
+        100,
+        100
+      ]
+    },
+    "65": {
+      "AbilityID": 31,
+      "MaxLevel": 1,
+      "Parameters": [
+        100,
+        100
+      ]
+    },
+    "66": {
+      "AbilityID": 17,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        3,
+        3
+      ]
+    },
+    "67": {
+      "AbilityID": 17,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        3,
+        3
+      ]
+    },
+    "68": {
+      "AbilityID": 17,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        3,
+        3
+      ]
+    },
+    "69": {
+      "AbilityID": 14,
+      "MaxLevel": 1
+    },
+    "70": {
+      "AbilityID": 1,
+      "MaxLevel": 1,
+      "Parameters": [
+        50,
+        50,
+        90,
+        90,
+        50,
+        50
+      ]
+    },
+    "71": {
+      "AbilityID": 1,
+      "MaxLevel": 1,
+      "Parameters": [
+        60,
+        60,
+        90,
+        90,
+        50,
+        50
+      ]
+    },
+    "72": {
+      "AbilityID": 1,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        90,
+        90,
+        50,
+        50
+      ]
+    },
+    "73": {
+      "AbilityID": 8,
+      "MaxLevel": 1,
+      "Parameters": [
+        50,
+        50
+      ]
+    },
+    "74": {
+      "AbilityID": 8,
+      "MaxLevel": 1,
+      "Parameters": [
+        60,
+        60
+      ]
+    },
+    "75": {
+      "AbilityID": 8,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75
+      ]
+    },
+    "76": {
+      "AbilityID": 31,
+      "MaxLevel": 1,
+      "Parameters": [
+        500,
+        500
+      ]
+    },
+    "77": {
+      "AbilityID": 13,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75
+      ]
+    },
+    "78": {
+      "AbilityID": 50,
+      "MaxLevel": 1,
+      "Parameters": [
+        0,
+        0,
+        300,
+        300
+      ]
+    },
+    "79": {
+      "AbilityID": 67,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        1800,
+        1800,
+        0,
+        0
+      ]
+    },
+    "80": {
+      "AbilityID": 32,
+      "MaxLevel": 2,
+      "Parameters": [
+        100,
+        200
+      ]
+    },
+    "81": {
+      "AbilityID": 67,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        880,
+        880,
+        0,
+        0
+      ]
+    },
+    "82": {
+      "AbilityID": 1010,
+      "MaxLevel": 1
+    },
+    "83": {
+      "AbilityID": 1011,
+      "MaxLevel": 1
+    },
+    "84": {
+      "AbilityID": 16,
+      "MaxLevel": 1
+    },
+    "85": {
+      "AbilityID": 3,
+      "MaxLevel": 1,
+      "Parameters": [
+        50,
+        50,
+        60,
+        60
+      ]
+    },
+    "86": {
+      "AbilityID": 67,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        1180,
+        1180,
+        0,
+        0
+      ]
+    },
+    "87": {
+      "AbilityID": 56,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        2,
+        2,
+        480,
+        480,
+        1280,
+        1280
+      ]
+    },
+    "88": {
+      "AbilityID": 56,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        2,
+        2,
+        340,
+        340,
+        1140,
+        1140
+      ]
+    },
+    "89": {
+      "AbilityID": 67,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        1600,
+        1600,
+        0,
+        0
+      ]
+    },
+    "90": {
+      "AbilityID": 67,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        1400,
+        1400,
+        0,
+        0
+      ]
+    },
+    "91": {
+      "AbilityID": 32,
+      "MaxLevel": 1,
+      "Parameters": [
+        100,
+        100
+      ]
+    },
+    "92": {
+      "AbilityID": 56,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        2,
+        2,
+        1260,
+        1260,
+        2060,
+        2060
+      ]
+    },
+    "93": {
+      "AbilityID": 67,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        1460,
+        1460,
+        0,
+        0
+      ]
+    },
+    "94": {
+      "AbilityID": 67,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        1200,
+        1200,
+        0,
+        0
+      ]
+    },
+    "95": {
+      "AbilityID": 32,
+      "MaxLevel": 1,
+      "Parameters": [
+        100,
+        100
+      ]
+    },
+    "96": {
+      "AbilityID": 31,
+      "MaxLevel": 1,
+      "Parameters": [
+        100,
+        100
+      ]
+    },
+    "97": {
+      "AbilityID": 54,
+      "MaxLevel": 5,
+      "Parameters": [
+        20,
+        100
+      ]
+    },
+    "98": {
+      "AbilityID": 11,
+      "MaxLevel": 1,
+      "Parameters": [
+        100,
+        100
+      ]
+    },
+    "99": {
+      "AbilityID": 55,
+      "MaxLevel": 1
+    },
+    "100": {
+      "AbilityID": 32,
+      "MaxLevel": 2,
+      "Parameters": [
+        50,
+        100
+      ]
+    },
+    "101": {
+      "AbilityID": 31,
+      "MaxLevel": 2,
+      "Parameters": [
+        50,
+        100
+      ]
+    },
+    "102": {
+      "AbilityID": 11,
+      "MaxLevel": 1,
+      "Parameters": [
+        100,
+        100
+      ]
+    },
+    "103": {
+      "AbilityID": 27,
+      "MaxLevel": 1,
+      "Parameters": [
+        10,
+        10
+      ]
+    },
+    "104": {
+      "AbilityID": 67,
+      "MaxLevel": 1,
+      "Parameters": [
+        75,
+        75,
+        920,
+        920,
+        0,
+        0
+      ]
+    }
+  }
+}

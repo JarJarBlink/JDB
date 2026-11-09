@@ -1,0 +1,809 @@
+{
+  "BonusCharaID": {
+    "0": {
+      "Rarity": 0,
+      "CharaID": 882,
+      "Level": 5
+    },
+    "1": {
+      "Rarity": 0,
+      "CharaID": 883,
+      "Level": 20
+    },
+    "2": {
+      "Rarity": 0,
+      "CharaID": 884,
+      "Level": 20
+    },
+    "3": {
+      "Rarity": 0,
+      "CharaID": 885,
+      "Level": 20
+    },
+    "4": {
+      "Rarity": 10,
+      "CharaID": 24,
+      "Level": 20
+    },
+    "5": {
+      "Rarity": 10,
+      "CharaID": 25,
+      "Level": 20
+    },
+    "6": {
+      "Rarity": 10,
+      "CharaID": 37,
+      "Level": 20
+    },
+    "7": {
+      "Rarity": 10,
+      "CharaID": 38,
+      "Level": 20
+    },
+    "8": {
+      "Rarity": 10,
+      "CharaID": 41,
+      "Level": 20
+    },
+    "9": {
+      "Rarity": 10,
+      "CharaID": 47,
+      "Level": 20
+    },
+    "10": {
+      "Rarity": 10,
+      "CharaID": 48,
+      "Level": 20
+    },
+    "11": {
+      "Rarity": 10,
+      "CharaID": 376,
+      "Level": 20
+    },
+    "12": {
+      "Rarity": 10,
+      "CharaID": 55,
+      "Level": 20
+    },
+    "13": {
+      "Rarity": 10,
+      "CharaID": 58,
+      "Level": 20
+    },
+    "14": {
+      "Rarity": 10,
+      "CharaID": 145,
+      "Level": 20
+    },
+    "15": {
+      "Rarity": 10,
+      "CharaID": 147,
+      "Level": 20
+    },
+    "16": {
+      "Rarity": 10,
+      "CharaID": 495,
+      "Level": 20
+    },
+    "17": {
+      "Rarity": 10,
+      "CharaID": 197,
+      "Level": 20
+    },
+    "18": {
+      "Rarity": 10,
+      "CharaID": 32,
+      "Level": 20
+    },
+    "19": {
+      "Rarity": 10,
+      "CharaID": 40,
+      "Level": 20
+    },
+    "20": {
+      "Rarity": 10,
+      "CharaID": 522,
+      "Level": 20
+    },
+    "21": {
+      "Rarity": 10,
+      "CharaID": 151,
+      "Level": 20
+    },
+    "22": {
+      "Rarity": 10,
+      "CharaID": 377,
+      "Level": 20
+    },
+    "23": {
+      "Rarity": 10,
+      "CharaID": 284,
+      "Level": 20
+    },
+    "24": {
+      "Rarity": 10,
+      "CharaID": 199,
+      "Level": 20
+    },
+    "25": {
+      "Rarity": 10,
+      "CharaID": 39,
+      "Level": 20
+    },
+    "26": {
+      "Rarity": 10,
+      "CharaID": 92,
+      "Level": 20
+    },
+    "27": {
+      "Rarity": 10,
+      "CharaID": 93,
+      "Level": 20
+    },
+    "28": {
+      "Rarity": 10,
+      "CharaID": 33,
+      "Level": 20
+    },
+    "29": {
+      "Rarity": 10,
+      "CharaID": 260,
+      "Level": 20
+    },
+    "30": {
+      "Rarity": 5,
+      "CharaID": 75,
+      "Level": 20
+    },
+    "31": {
+      "Rarity": 5,
+      "CharaID": 76,
+      "Level": 20
+    },
+    "32": {
+      "Rarity": 5,
+      "CharaID": 105,
+      "Level": 20
+    },
+    "33": {
+      "Rarity": 5,
+      "CharaID": 106,
+      "Level": 20
+    },
+    "34": {
+      "Rarity": 5,
+      "CharaID": 107,
+      "Level": 20
+    },
+    "35": {
+      "Rarity": 5,
+      "CharaID": 159,
+      "Level": 20
+    },
+    "36": {
+      "Rarity": 5,
+      "CharaID": 351,
+      "Level": 20
+    },
+    "37": {
+      "Rarity": 5,
+      "CharaID": 502,
+      "Level": 20
+    },
+    "38": {
+      "Rarity": 5,
+      "CharaID": 619,
+      "Level": 20
+    },
+    "39": {
+      "Rarity": 5,
+      "CharaID": 647,
+      "Level": 20
+    },
+    "40": {
+      "Rarity": 5,
+      "CharaID": 733,
+      "Level": 20
+    },
+    "41": {
+      "Rarity": 5,
+      "CharaID": 830,
+      "Level": 20
+    },
+    "42": {
+      "Rarity": 5,
+      "CharaID": 83,
+      "Level": 20
+    },
+    "43": {
+      "Rarity": 5,
+      "CharaID": 84,
+      "Level": 20
+    },
+    "44": {
+      "Rarity": 5,
+      "CharaID": 85,
+      "Level": 20
+    },
+    "45": {
+      "Rarity": 5,
+      "CharaID": 86,
+      "Level": 20
+    },
+    "46": {
+      "Rarity": 5,
+      "CharaID": 87,
+      "Level": 20
+    },
+    "47": {
+      "Rarity": 5,
+      "CharaID": 177,
+      "Level": 20
+    },
+    "48": {
+      "Rarity": 5,
+      "CharaID": 396,
+      "Level": 20
+    },
+    "49": {
+      "Rarity": 5,
+      "CharaID": 505,
+      "Level": 20
+    },
+    "50": {
+      "Rarity": 5,
+      "CharaID": 620,
+      "Level": 20
+    },
+    "51": {
+      "Rarity": 5,
+      "CharaID": 660,
+      "Level": 20
+    },
+    "52": {
+      "Rarity": 5,
+      "CharaID": 760,
+      "Level": 20
+    },
+    "53": {
+      "Rarity": 5,
+      "CharaID": 861,
+      "Level": 20
+    },
+    "54": {
+      "Rarity": 10,
+      "CharaID": 50,
+      "Level": 20
+    },
+    "55": {
+      "Rarity": 10,
+      "CharaID": 149,
+      "Level": 20
+    },
+    "56": {
+      "Rarity": 10,
+      "CharaID": 52,
+      "Level": 20
+    },
+    "57": {
+      "Rarity": 10,
+      "CharaID": 56,
+      "Level": 20
+    },
+    "58": {
+      "Rarity": 10,
+      "CharaID": 146,
+      "Level": 20
+    },
+    "59": {
+      "Rarity": 10,
+      "CharaID": 148,
+      "Level": 20
+    },
+    "60": {
+      "Rarity": 10,
+      "CharaID": 676,
+      "Level": 20
+    },
+    "61": {
+      "Rarity": 10,
+      "CharaID": 303,
+      "Level": 20
+    },
+    "62": {
+      "Rarity": 10,
+      "CharaID": 663,
+      "Level": 20
+    },
+    "63": {
+      "Rarity": 10,
+      "CharaID": 198,
+      "Level": 20
+    },
+    "64": {
+      "Rarity": 10,
+      "CharaID": 145,
+      "Level": 20
+    },
+    "65": {
+      "Rarity": 10,
+      "CharaID": 658,
+      "Level": 20
+    },
+    "66": {
+      "Rarity": 10,
+      "CharaID": 30,
+      "Level": 20
+    },
+    "67": {
+      "Rarity": 10,
+      "CharaID": 31,
+      "Level": 20
+    },
+    "68": {
+      "Rarity": 10,
+      "CharaID": 150,
+      "Level": 20
+    },
+    "69": {
+      "Rarity": 10,
+      "CharaID": 153,
+      "Level": 20
+    },
+    "70": {
+      "Rarity": 10,
+      "CharaID": 445,
+      "Level": 20
+    },
+    "71": {
+      "Rarity": 10,
+      "CharaID": 36,
+      "Level": 20
+    },
+    "72": {
+      "Rarity": 10,
+      "CharaID": 35,
+      "Level": 20
+    },
+    "73": {
+      "Rarity": 10,
+      "CharaID": 97,
+      "Level": 20
+    },
+    "74": {
+      "Rarity": 10,
+      "CharaID": 61,
+      "Level": 20
+    },
+    "75": {
+      "Rarity": 5,
+      "CharaID": 42,
+      "Level": 20
+    },
+    "76": {
+      "Rarity": 5,
+      "CharaID": 43,
+      "Level": 20
+    },
+    "77": {
+      "Rarity": 5,
+      "CharaID": 44,
+      "Level": 20
+    },
+    "78": {
+      "Rarity": 5,
+      "CharaID": 57,
+      "Level": 20
+    },
+    "79": {
+      "Rarity": 5,
+      "CharaID": 59,
+      "Level": 20
+    },
+    "80": {
+      "Rarity": 5,
+      "CharaID": 143,
+      "Level": 20
+    },
+    "81": {
+      "Rarity": 5,
+      "CharaID": 427,
+      "Level": 20
+    },
+    "82": {
+      "Rarity": 5,
+      "CharaID": 519,
+      "Level": 20
+    },
+    "83": {
+      "Rarity": 5,
+      "CharaID": 617,
+      "Level": 20
+    },
+    "84": {
+      "Rarity": 5,
+      "CharaID": 668,
+      "Level": 20
+    },
+    "85": {
+      "Rarity": 5,
+      "CharaID": 763,
+      "Level": 20
+    },
+    "86": {
+      "Rarity": 5,
+      "CharaID": 869,
+      "Level": 20
+    },
+    "87": {
+      "Rarity": 5,
+      "CharaID": 71,
+      "Level": 20
+    },
+    "88": {
+      "Rarity": 5,
+      "CharaID": 72,
+      "Level": 20
+    },
+    "89": {
+      "Rarity": 5,
+      "CharaID": 73,
+      "Level": 20
+    },
+    "90": {
+      "Rarity": 5,
+      "CharaID": 124,
+      "Level": 20
+    },
+    "91": {
+      "Rarity": 5,
+      "CharaID": 125,
+      "Level": 20
+    },
+    "92": {
+      "Rarity": 5,
+      "CharaID": 158,
+      "Level": 20
+    },
+    "93": {
+      "Rarity": 5,
+      "CharaID": 338,
+      "Level": 20
+    },
+    "94": {
+      "Rarity": 5,
+      "CharaID": 496,
+      "Level": 20
+    },
+    "95": {
+      "Rarity": 5,
+      "CharaID": 618,
+      "Level": 20
+    },
+    "96": {
+      "Rarity": 5,
+      "CharaID": 649,
+      "Level": 20
+    },
+    "97": {
+      "Rarity": 5,
+      "CharaID": 754,
+      "Level": 20
+    },
+    "98": {
+      "Rarity": 5,
+      "CharaID": 850,
+      "Level": 20
+    },
+    "99": {
+      "Rarity": 10,
+      "CharaID": 523,
+      "Level": 20
+    },
+    "100": {
+      "Rarity": 10,
+      "CharaID": 308,
+      "Level": 20
+    },
+    "101": {
+      "Rarity": 10,
+      "CharaID": 325,
+      "Level": 20
+    },
+    "102": {
+      "Rarity": 10,
+      "CharaID": 675,
+      "Level": 20
+    },
+    "103": {
+      "Rarity": 10,
+      "CharaID": 697,
+      "Level": 20
+    },
+    "104": {
+      "Rarity": 10,
+      "CharaID": 324,
+      "Level": 20
+    },
+    "105": {
+      "Rarity": 10,
+      "CharaID": 307,
+      "Level": 20
+    },
+    "106": {
+      "Rarity": 10,
+      "CharaID": 377,
+      "Level": 20
+    },
+    "107": {
+      "Rarity": 10,
+      "CharaID": 706,
+      "Level": 20
+    },
+    "108": {
+      "Rarity": 10,
+      "CharaID": 447,
+      "Level": 20
+    },
+    "109": {
+      "Rarity": 10,
+      "CharaID": 444,
+      "Level": 20
+    },
+    "110": {
+      "Rarity": 10,
+      "CharaID": 152,
+      "Level": 20
+    },
+    "111": {
+      "Rarity": 10,
+      "CharaID": 287,
+      "Level": 20
+    },
+    "112": {
+      "Rarity": 5,
+      "CharaID": 134,
+      "Level": 20
+    },
+    "113": {
+      "Rarity": 5,
+      "CharaID": 135,
+      "Level": 20
+    },
+    "114": {
+      "Rarity": 5,
+      "CharaID": 136,
+      "Level": 20
+    },
+    "115": {
+      "Rarity": 5,
+      "CharaID": 137,
+      "Level": 20
+    },
+    "116": {
+      "Rarity": 5,
+      "CharaID": 138,
+      "Level": 20
+    },
+    "117": {
+      "Rarity": 5,
+      "CharaID": 203,
+      "Level": 20
+    },
+    "118": {
+      "Rarity": 5,
+      "CharaID": 322,
+      "Level": 20
+    },
+    "119": {
+      "Rarity": 5,
+      "CharaID": 525,
+      "Level": 20
+    },
+    "120": {
+      "Rarity": 5,
+      "CharaID": 633,
+      "Level": 20
+    },
+    "121": {
+      "Rarity": 5,
+      "CharaID": 692,
+      "Level": 20
+    },
+    "122": {
+      "Rarity": 5,
+      "CharaID": 769,
+      "Level": 20
+    },
+    "123": {
+      "Rarity": 5,
+      "CharaID": 877,
+      "Level": 20
+    },
+    "124": {
+      "Rarity": 5,
+      "CharaID": 257,
+      "Level": 20
+    },
+    "125": {
+      "Rarity": 5,
+      "CharaID": 258,
+      "Level": 20
+    },
+    "126": {
+      "Rarity": 5,
+      "CharaID": 259,
+      "Level": 20
+    },
+    "127": {
+      "Rarity": 5,
+      "CharaID": 271,
+      "Level": 20
+    },
+    "128": {
+      "Rarity": 5,
+      "CharaID": 272,
+      "Level": 20
+    },
+    "129": {
+      "Rarity": 5,
+      "CharaID": 316,
+      "Level": 20
+    },
+    "130": {
+      "Rarity": 5,
+      "CharaID": 439,
+      "Level": 20
+    },
+    "131": {
+      "Rarity": 5,
+      "CharaID": 534,
+      "Level": 20
+    },
+    "132": {
+      "Rarity": 5,
+      "CharaID": 642,
+      "Level": 20
+    },
+    "133": {
+      "Rarity": 5,
+      "CharaID": 723,
+      "Level": 20
+    },
+    "134": {
+      "Rarity": 5,
+      "CharaID": 811,
+      "Level": 20
+    },
+    "135": {
+      "Rarity": 10,
+      "CharaID": 664,
+      "Level": 20
+    },
+    "136": {
+      "Rarity": 10,
+      "CharaID": 659,
+      "Level": 20
+    },
+    "137": {
+      "Rarity": 10,
+      "CharaID": 51,
+      "Level": 20
+    },
+    "138": {
+      "Rarity": 10,
+      "CharaID": 684,
+      "Level": 20
+    },
+    "139": {
+      "Rarity": 10,
+      "CharaID": 91,
+      "Level": 20
+    },
+    "140": {
+      "Rarity": 5,
+      "CharaID": 334,
+      "Level": 20
+    },
+    "141": {
+      "Rarity": 5,
+      "CharaID": 335,
+      "Level": 20
+    },
+    "142": {
+      "Rarity": 5,
+      "CharaID": 336,
+      "Level": 20
+    },
+    "143": {
+      "Rarity": 5,
+      "CharaID": 357,
+      "Level": 20
+    },
+    "144": {
+      "Rarity": 5,
+      "CharaID": 358,
+      "Level": 20
+    },
+    "145": {
+      "Rarity": 5,
+      "CharaID": 607,
+      "Level": 20
+    },
+    "146": {
+      "Rarity": 5,
+      "CharaID": 682,
+      "Level": 20
+    },
+    "147": {
+      "Rarity": 5,
+      "CharaID": 725,
+      "Level": 20
+    },
+    "148": {
+      "Rarity": 5,
+      "CharaID": 824,
+      "Level": 20
+    },
+    "149": {
+      "Rarity": 5,
+      "CharaID": 194,
+      "Level": 20
+    },
+    "150": {
+      "Rarity": 5,
+      "CharaID": 195,
+      "Level": 20
+    },
+    "151": {
+      "Rarity": 5,
+      "CharaID": 196,
+      "Level": 20
+    },
+    "152": {
+      "Rarity": 5,
+      "CharaID": 212,
+      "Level": 20
+    },
+    "153": {
+      "Rarity": 5,
+      "CharaID": 226,
+      "Level": 20
+    },
+    "154": {
+      "Rarity": 5,
+      "CharaID": 261,
+      "Level": 20
+    },
+    "155": {
+      "Rarity": 5,
+      "CharaID": 431,
+      "Level": 20
+    },
+    "156": {
+      "Rarity": 5,
+      "CharaID": 533,
+      "Level": 20
+    },
+    "157": {
+      "Rarity": 5,
+      "CharaID": 634,
+      "Level": 20
+    },
+    "158": {
+      "Rarity": 5,
+      "CharaID": 698,
+      "Level": 20
+    },
+    "159": {
+      "Rarity": 5,
+      "CharaID": 774,
+      "Level": 20
+    },
+    "160": {
+      "Rarity": 5,
+      "CharaID": 543,
+      "Level": 20
+    }
+  }
+}

@@ -16,6 +16,23 @@
       "Popup": "Point_release_popup_001",
       "PointReleaseHeadlineLabel": "PointReleaseHeadline001",
       "PointReleaseExplanationLabel": "PointReleaseExplanation001"
+    },
+    "275": {
+      "serverSetting": [
+        41010,
+        41011,
+        41012,
+        41013
+      ],
+      "ReleasePoint": [
+        150000,
+        350000,
+        600000,
+        9999999
+      ],
+      "Popup": "Point_release_popup_002",
+      "PointReleaseHeadlineLabel": "PointReleaseHeadline001",
+      "PointReleaseExplanationLabel": "PointReleaseExplanation001"
     }
   }
 }

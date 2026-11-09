@@ -1879,6 +1879,48 @@
       "FusumaOpenOffsetY": 458,
       "SelectStageStartSE": 192,
       "BattleBGMPlayTiming": 30
+    },
+    "39001": {
+      "priority": 1,
+      "FusumaSE": [
+        -1
+      ],
+      "FusumaOpenOffsetX": 0,
+      "FusumaOpenOffsetY": 458,
+      "FusumaImgPNG": "img009_PR_001.png",
+      "FusumaImgIMGCUT": "img009_Event00.imgcut",
+      "NekoBageImg": "PR_001",
+      "TitleImgLogo": "_PR_001",
+      "PercentTitle": 100,
+      "SelectStageImg": "PR_001",
+      "SelectStageImgReverse": 1
+    },
+    "39002": {
+      "FusumaSE": [
+        -1
+      ],
+      "FusumaOpenOffsetX": 0,
+      "FusumaOpenOffsetY": 458,
+      "SelectStageImg": "PR_001",
+      "SelectStageImgReverse": 1
+    },
+    "39003": {
+      "FusumaSE": [
+        -1
+      ],
+      "FusumaOpenOffsetX": 0,
+      "FusumaOpenOffsetY": 458,
+      "SelectStageImg": "PR_001",
+      "SelectStageImgReverse": 1
+    },
+    "39004": {
+      "FusumaSE": [
+        -1
+      ],
+      "FusumaOpenOffsetX": 0,
+      "FusumaOpenOffsetY": 458,
+      "SelectStageImg": "PR_001",
+      "SelectStageImgReverse": 1
     }
   }
 }

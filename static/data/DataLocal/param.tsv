@@ -89,3 +89,10 @@ option_vibration_power_android	0.3
 option_vibration_time_ios	100
 option_vibration_time_android	100
 option_vibration_sharpness_ios	0.5
+roguelike_charabonus_plusvalue	5
+roguelike_charabonus_pointvalue0	100
+roguelike_charabonus_pointvalue1	100
+roguelike_charabonus_pointvalue2	102
+roguelike_charabonus_pointvalue3	103
+roguelike_charabonus_pointvalue4	105
+roguelike_charabonus_pointvalue5	100

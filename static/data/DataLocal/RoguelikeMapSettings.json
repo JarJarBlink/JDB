@@ -1,0 +1,53 @@
+{
+  "EventID": {
+    "0": {
+      "Data": [
+        {
+          "MapID": [
+            39001
+          ],
+          "Level": [
+            0,
+            1,
+            2
+          ],
+          "PresetFileName": "Certification011.preset"
+        },
+        {
+          "MapID": [
+            39002
+          ],
+          "Level": [
+            0,
+            1,
+            2
+          ],
+          "PresetFileName": "Certification012.preset"
+        },
+        {
+          "MapID": [
+            39003
+          ],
+          "Level": [
+            0,
+            1,
+            2
+          ],
+          "PresetFileName": "Certification013.preset"
+        },
+        {
+          "MapID": [
+            39004
+          ],
+          "Level": [
+            0,
+            1,
+            2
+          ],
+          "PresetFileName": "Certification014.preset"
+        }
+      ],
+      "ResetMapID": 39001
+    }
+  }
+}

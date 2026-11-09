@@ -45,12 +45,12 @@
       }
     },
     "11038": {
-      "BonusNameLabel": "BonusNameLabel004",
-      "BonusExplanationLabel": "BonusExplanationLabel004",
+      "BonusNameLabel": "BonusNameLabel002",
+      "BonusExplanationLabel": "BonusExplanationLabel002",
       "BonusType": {
-        "14": {
+        "13": {
           "Parameters": [
-            1500
+            1000
           ]
         }
       }

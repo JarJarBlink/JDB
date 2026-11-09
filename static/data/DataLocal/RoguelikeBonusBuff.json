@@ -1,0 +1,3980 @@
+{
+  "BonusBuffID": {
+    "0": {
+      "Rarity": 3,
+      "Limit": 5,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_000",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_00000",
+      "BuffType": 0,
+      "LevelUp": 5
+    },
+    "1": {
+      "Rarity": 10,
+      "Limit": 5,
+      "TargetRarity": 2,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10000",
+      "BuffType": 1,
+      "BuffSkillID": 0
+    },
+    "2": {
+      "Rarity": 10,
+      "Limit": 5,
+      "TargetRarity": 3,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10000",
+      "BuffType": 1,
+      "BuffSkillID": 1
+    },
+    "3": {
+      "Rarity": 10,
+      "Limit": 5,
+      "TargetRarity": 4,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10000",
+      "BuffType": 1,
+      "BuffSkillID": 2
+    },
+    "4": {
+      "Rarity": 10,
+      "Limit": 5,
+      "TargetRarity": 2,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10100",
+      "BuffType": 1,
+      "BuffSkillID": 3
+    },
+    "5": {
+      "Rarity": 10,
+      "Limit": 5,
+      "TargetRarity": 3,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10100",
+      "BuffType": 1,
+      "BuffSkillID": 4
+    },
+    "6": {
+      "Rarity": 10,
+      "Limit": 5,
+      "TargetRarity": 4,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10100",
+      "BuffType": 1,
+      "BuffSkillID": 5
+    },
+    "7": {
+      "Rarity": 8,
+      "Limit": 5,
+      "TargetRarity": 2,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10200",
+      "BuffType": 1,
+      "BuffSkillID": 6
+    },
+    "8": {
+      "Rarity": 8,
+      "Limit": 5,
+      "TargetRarity": 3,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10200",
+      "BuffType": 1,
+      "BuffSkillID": 6
+    },
+    "9": {
+      "Rarity": 8,
+      "Limit": 5,
+      "TargetRarity": 4,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10200",
+      "BuffType": 1,
+      "BuffSkillID": 6
+    },
+    "10": {
+      "Rarity": 8,
+      "Limit": 5,
+      "TargetRarity": 2,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_103",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10300",
+      "BuffType": 1,
+      "BuffSkillID": 7
+    },
+    "11": {
+      "Rarity": 8,
+      "Limit": 5,
+      "TargetRarity": 3,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_103",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10300",
+      "BuffType": 1,
+      "BuffSkillID": 7
+    },
+    "12": {
+      "Rarity": 8,
+      "Limit": 5,
+      "TargetRarity": 4,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_103",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10300",
+      "BuffType": 1,
+      "BuffSkillID": 7
+    },
+    "13": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 24,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 8
+    },
+    "14": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 25,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 21
+    },
+    "15": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 37,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 22
+    },
+    "16": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 37,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10101",
+      "BuffType": 1,
+      "BuffSkillID": 23
+    },
+    "17": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 38,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 27
+    },
+    "18": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 41,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10201",
+      "BuffType": 1,
+      "BuffSkillID": 28
+    },
+    "19": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 47,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "20": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 48,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 25
+    },
+    "21": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 48,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "22": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 376,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 25
+    },
+    "23": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 55,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "24": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 55,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 22
+    },
+    "25": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 58,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10101",
+      "BuffType": 1,
+      "BuffSkillID": 24
+    },
+    "26": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 58,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "27": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 145,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "28": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 145,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 25
+    },
+    "29": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 147,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 25
+    },
+    "30": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 147,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "31": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 495,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "32": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 495,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "33": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 197,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_500",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_50001",
+      "BuffType": 1,
+      "BuffSkillID": 30
+    },
+    "34": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 32,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 8
+    },
+    "35": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 40,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 31
+    },
+    "36": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 40,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "37": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 522,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 37
+    },
+    "38": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 151,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 38
+    },
+    "39": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 377,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 32
+    },
+    "40": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 284,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 22
+    },
+    "41": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 199,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "42": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 39,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 41
+    },
+    "43": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 39,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "44": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 92,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 95
+    },
+    "45": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 93,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "46": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 33,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "47": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 33,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 26
+    },
+    "48": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 260,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 27
+    },
+    "49": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 75,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "50": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 75,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "51": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 76,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_105",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10501",
+      "BuffType": 1,
+      "BuffSkillID": 35
+    },
+    "52": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 76,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "53": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 105,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 22
+    },
+    "54": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 105,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_103",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10301",
+      "BuffType": 1,
+      "BuffSkillID": 29
+    },
+    "55": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 106,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 26
+    },
+    "56": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 107,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "57": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 107,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_103",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10301",
+      "BuffType": 1,
+      "BuffSkillID": 29
+    },
+    "58": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 159,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "59": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 351,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 42
+    },
+    "60": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 502,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 26
+    },
+    "61": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 502,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10101",
+      "BuffType": 1,
+      "BuffSkillID": 24
+    },
+    "62": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 619,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_103",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10301",
+      "BuffType": 1,
+      "BuffSkillID": 29
+    },
+    "63": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 619,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "64": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 647,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_103",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10301",
+      "BuffType": 1,
+      "BuffSkillID": 29
+    },
+    "65": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 733,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "66": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 830,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 34
+    },
+    "67": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 83,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 39
+    },
+    "68": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 83,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 26
+    },
+    "69": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 84,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "70": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 84,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "71": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 85,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 43
+    },
+    "72": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 86,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "73": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 86,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 8
+    },
+    "74": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 87,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "75": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 87,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 22
+    },
+    "76": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 177,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "77": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 177,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 22
+    },
+    "78": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 396,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10201",
+      "BuffType": 1,
+      "BuffSkillID": 28
+    },
+    "79": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 396,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 94
+    },
+    "80": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 505,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 32
+    },
+    "81": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 505,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10101",
+      "BuffType": 1,
+      "BuffSkillID": 24
+    },
+    "82": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 620,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "83": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 660,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 40
+    },
+    "84": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 760,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_105",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10501",
+      "BuffType": 1,
+      "BuffSkillID": 36
+    },
+    "85": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 861,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_103",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10301",
+      "BuffType": 1,
+      "BuffSkillID": 29
+    },
+    "86": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 882,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 44
+    },
+    "87": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 882,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "88": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 882,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10101",
+      "BuffType": 1,
+      "BuffSkillID": 45
+    },
+    "89": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 882,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "90": {
+      "Rarity": 0,
+      "Limit": 6,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_000",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_00001",
+      "BuffType": 0,
+      "LevelUp": 5
+    },
+    "91": {
+      "Rarity": 10,
+      "Limit": 5,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_400",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_40002",
+      "BuffType": 1,
+      "BuffSkillID": 46
+    },
+    "92": {
+      "Rarity": 10,
+      "Limit": 5,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_400",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_40002",
+      "BuffType": 1,
+      "BuffSkillID": 47
+    },
+    "93": {
+      "Rarity": 10,
+      "Limit": 5,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_400",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_40002",
+      "BuffType": 1,
+      "BuffSkillID": 48
+    },
+    "94": {
+      "Rarity": 10,
+      "Limit": 5,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_400",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_40002",
+      "BuffType": 1,
+      "BuffSkillID": 49
+    },
+    "95": {
+      "Rarity": 10,
+      "Limit": 5,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_400",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_40002",
+      "BuffType": 1,
+      "BuffSkillID": 50
+    },
+    "96": {
+      "Rarity": 10,
+      "Limit": 5,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_400",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_40002",
+      "BuffType": 1,
+      "BuffSkillID": 51
+    },
+    "97": {
+      "Rarity": 10,
+      "Limit": 5,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_400",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_40002",
+      "BuffType": 1,
+      "BuffSkillID": 52
+    },
+    "98": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60002",
+      "BuffType": 1,
+      "BuffSkillID": 53
+    },
+    "99": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60002",
+      "BuffType": 1,
+      "BuffSkillID": 54
+    },
+    "100": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60002",
+      "BuffType": 1,
+      "BuffSkillID": 55
+    },
+    "101": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60002",
+      "BuffType": 1,
+      "BuffSkillID": 56
+    },
+    "102": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 24,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "103": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 25,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "104": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 50,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "105": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 50,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "106": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 149,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "107": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 149,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 57
+    },
+    "108": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 52,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "109": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 52,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "110": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 56,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10201",
+      "BuffType": 1,
+      "BuffSkillID": 28
+    },
+    "111": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 56,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "112": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 146,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "113": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 146,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "114": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 148,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "115": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 676,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "116": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 303,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 57
+    },
+    "117": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 663,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "118": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 198,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "119": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 145,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "120": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 145,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 57
+    },
+    "121": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 658,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "122": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 30,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "123": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 30,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10201",
+      "BuffType": 1,
+      "BuffSkillID": 28
+    },
+    "124": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 31,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "125": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 31,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 8
+    },
+    "126": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 150,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "127": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 153,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "128": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 153,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "129": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 260,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "130": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 151,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "131": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 445,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10101",
+      "BuffType": 1,
+      "BuffSkillID": 23
+    },
+    "132": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 97,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "133": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 36,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "134": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 35,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 8
+    },
+    "135": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 33,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "136": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 61,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "137": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 42,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "138": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 43,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "139": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 44,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 62
+    },
+    "140": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 44,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "141": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 57,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10101",
+      "BuffType": 1,
+      "BuffSkillID": 23
+    },
+    "142": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 57,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 32
+    },
+    "143": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 59,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "144": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 143,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 8
+    },
+    "145": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 427,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "146": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 427,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "147": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 519,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10201",
+      "BuffType": 1,
+      "BuffSkillID": 28
+    },
+    "148": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 617,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "149": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 617,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "150": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 668,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 27
+    },
+    "151": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 763,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "152": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 763,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 58
+    },
+    "153": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 869,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "154": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 71,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "155": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 72,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10201",
+      "BuffType": 1,
+      "BuffSkillID": 28
+    },
+    "156": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 72,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "157": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 73,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 60
+    },
+    "158": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 124,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "159": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 124,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "160": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 125,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "161": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 125,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 59
+    },
+    "162": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 158,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "163": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 338,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 61
+    },
+    "164": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 338,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "165": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 496,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "166": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 496,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 8
+    },
+    "167": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 618,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "168": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 649,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 22
+    },
+    "169": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 754,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 63
+    },
+    "170": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 850,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "171": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 850,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "172": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 883,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "173": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 883,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "174": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 883,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 8
+    },
+    "175": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 883,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "176": {
+      "Rarity": 3,
+      "Limit": 1,
+      "TargetRarity": 2,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60000",
+      "BuffType": 1,
+      "BuffSkillID": 22
+    },
+    "177": {
+      "Rarity": 3,
+      "Limit": 1,
+      "TargetRarity": 3,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60000",
+      "BuffType": 1,
+      "BuffSkillID": 22
+    },
+    "178": {
+      "Rarity": 3,
+      "Limit": 1,
+      "TargetRarity": 4,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60000",
+      "BuffType": 1,
+      "BuffSkillID": 22
+    },
+    "179": {
+      "Rarity": 3,
+      "Limit": 1,
+      "TargetRarity": 2,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60000",
+      "BuffType": 1,
+      "BuffSkillID": 69
+    },
+    "180": {
+      "Rarity": 3,
+      "Limit": 1,
+      "TargetRarity": 3,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60000",
+      "BuffType": 1,
+      "BuffSkillID": 69
+    },
+    "181": {
+      "Rarity": 3,
+      "Limit": 1,
+      "TargetRarity": 4,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60000",
+      "BuffType": 1,
+      "BuffSkillID": 69
+    },
+    "182": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 24,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 72
+    },
+    "183": {
+      "Rarity": 1,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 25,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10101",
+      "BuffType": 1,
+      "BuffSkillID": 24
+    },
+    "184": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 523,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "185": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 198,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "186": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 308,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "187": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 308,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "188": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 325,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "189": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 376,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "190": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 38,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 70
+    },
+    "191": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 38,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "192": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 675,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "193": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 676,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "194": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 697,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 70
+    },
+    "195": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 146,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "196": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 148,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "197": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 324,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_103",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10301",
+      "BuffType": 1,
+      "BuffSkillID": 29
+    },
+    "198": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 199,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "199": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 199,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 74
+    },
+    "200": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 307,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "201": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 377,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 32
+    },
+    "202": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 706,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "203": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 706,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "204": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 153,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "205": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 153,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 74
+    },
+    "206": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 150,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "207": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 260,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "208": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 447,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 32
+    },
+    "209": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 444,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "210": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 36,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "211": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 152,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 26
+    },
+    "212": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 152,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10101",
+      "BuffType": 1,
+      "BuffSkillID": 24
+    },
+    "213": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 30,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "214": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 30,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "215": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 134,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "216": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 135,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "217": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 135,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "218": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 136,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "219": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 137,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "220": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 137,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 34
+    },
+    "221": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 138,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "222": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 138,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "223": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 203,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "224": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 322,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "225": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 525,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 78
+    },
+    "226": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 525,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "227": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 633,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "228": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 633,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 72
+    },
+    "229": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 692,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "230": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 769,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "231": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 877,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "232": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 257,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 8
+    },
+    "233": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 257,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "234": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 258,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10201",
+      "BuffType": 1,
+      "BuffSkillID": 28
+    },
+    "235": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 258,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "236": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 259,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "237": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 271,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 34
+    },
+    "238": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 272,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 32
+    },
+    "239": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 272,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 77
+    },
+    "240": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 316,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "241": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 316,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_103",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10301",
+      "BuffType": 1,
+      "BuffSkillID": 29
+    },
+    "242": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 439,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 79
+    },
+    "243": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 534,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 26
+    },
+    "244": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 534,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10101",
+      "BuffType": 1,
+      "BuffSkillID": 24
+    },
+    "245": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 642,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "246": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 642,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "247": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 723,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 26
+    },
+    "248": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 723,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10101",
+      "BuffType": 1,
+      "BuffSkillID": 24
+    },
+    "249": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 811,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "250": {
+      "Rarity": 0,
+      "Limit": 2,
+      "TargetRarity": -1,
+      "TargetCharaID": 884,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 80
+    },
+    "251": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 884,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "252": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 884,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "253": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 445,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "254": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 150,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 81
+    },
+    "255": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_003",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_00300",
+      "BuffType": 3,
+      "ID": 1,
+      "Level": 20
+    },
+    "256": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_004",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_00400",
+      "BuffType": 3,
+      "ID": 3,
+      "Level": 20
+    },
+    "257": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_005",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_00500",
+      "BuffType": 3,
+      "ID": 5,
+      "Level": 20
+    },
+    "258": {
+      "Rarity": 0,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_001",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_00100",
+      "BuffType": 2,
+      "EffectID": 4,
+      "VolumeID": 1
+    },
+    "259": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_002",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_00200",
+      "BuffType": 2,
+      "EffectID": 4,
+      "VolumeID": 2
+    },
+    "260": {
+      "Rarity": 5,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 24,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 83
+    },
+    "261": {
+      "Rarity": 5,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 24,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 82
+    },
+    "262": {
+      "Rarity": 5,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 25,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 22
+    },
+    "263": {
+      "Rarity": 5,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 25,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 84
+    },
+    "264": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 38,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "265": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 38,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 57
+    },
+    "266": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 47,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "267": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 47,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 70
+    },
+    "268": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 48,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 31
+    },
+    "269": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 48,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "270": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 523,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "271": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 523,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 70
+    },
+    "272": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 51,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "273": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 51,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "274": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 676,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "275": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 676,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 85
+    },
+    "276": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 55,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "277": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 55,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 70
+    },
+    "278": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 664,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 73
+    },
+    "279": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 664,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "280": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 58,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "281": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 58,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "282": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 145,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 70
+    },
+    "283": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 145,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "284": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 146,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 31
+    },
+    "285": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 146,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "286": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 147,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 86
+    },
+    "287": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 147,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "288": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 148,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "289": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 148,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 8
+    },
+    "290": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 149,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "291": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 149,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 31
+    },
+    "292": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 197,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "293": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 197,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "294": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 198,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 26
+    },
+    "295": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 198,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "296": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 308,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "297": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 308,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "298": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 325,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 85
+    },
+    "299": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 325,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_200",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20001",
+      "BuffType": 1,
+      "BuffSkillID": 12
+    },
+    "300": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 659,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "301": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 659,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 32
+    },
+    "302": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 495,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "303": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 495,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 85
+    },
+    "304": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 30,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "305": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 30,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "306": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 31,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "307": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 31,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 8
+    },
+    "308": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 32,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 87
+    },
+    "309": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 32,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "310": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 33,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "311": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 33,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 74
+    },
+    "312": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 36,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "313": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 36,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 88
+    },
+    "314": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 39,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "315": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 39,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "316": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 40,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 89
+    },
+    "317": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 40,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "318": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 61,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "319": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 61,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 74
+    },
+    "320": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 93,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 98
+    },
+    "321": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 93,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 99
+    },
+    "322": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 150,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "323": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 150,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_200",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20001",
+      "BuffType": 1,
+      "BuffSkillID": 12
+    },
+    "324": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 151,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "325": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 151,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 32
+    },
+    "326": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 153,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 8
+    },
+    "327": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 153,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_200",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20001",
+      "BuffType": 1,
+      "BuffSkillID": 12
+    },
+    "328": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 199,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "329": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 199,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "330": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 307,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 90
+    },
+    "331": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 307,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "332": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 445,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "333": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 445,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 32
+    },
+    "334": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 447,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "335": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 447,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 26
+    },
+    "336": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 684,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "337": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 684,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 71
+    },
+    "338": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 706,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "339": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 706,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "340": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 91,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "341": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 284,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "342": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 284,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10201",
+      "BuffType": 1,
+      "BuffSkillID": 28
+    },
+    "343": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 334,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "344": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 334,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 72
+    },
+    "345": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 335,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "346": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 335,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 32
+    },
+    "347": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 336,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 26
+    },
+    "348": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 336,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_103",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10301",
+      "BuffType": 1,
+      "BuffSkillID": 29
+    },
+    "349": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 357,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 92
+    },
+    "350": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 357,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "351": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 358,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10101",
+      "BuffType": 1,
+      "BuffSkillID": 23
+    },
+    "352": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 358,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "353": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 607,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "354": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 607,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10201",
+      "BuffType": 1,
+      "BuffSkillID": 28
+    },
+    "355": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 682,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 85
+    },
+    "356": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 682,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10201",
+      "BuffType": 1,
+      "BuffSkillID": 28
+    },
+    "357": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 725,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "358": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 725,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "359": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 824,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 72
+    },
+    "360": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 824,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "361": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 194,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "362": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 194,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 75
+    },
+    "363": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 195,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "364": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 195,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10201",
+      "BuffType": 1,
+      "BuffSkillID": 28
+    },
+    "365": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 196,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "366": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 196,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 72
+    },
+    "367": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 212,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "368": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 212,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10201",
+      "BuffType": 1,
+      "BuffSkillID": 28
+    },
+    "369": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 226,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_205",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20501",
+      "BuffType": 1,
+      "BuffSkillID": 18
+    },
+    "370": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 226,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 31
+    },
+    "371": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 261,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 93
+    },
+    "372": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 261,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 72
+    },
+    "373": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 431,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "374": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 431,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 32
+    },
+    "375": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 533,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "376": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 533,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "377": {
+      "Rarity": 5,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 634,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_104",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10401",
+      "BuffType": 1,
+      "BuffSkillID": 33
+    },
+    "378": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 634,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 9
+    },
+    "379": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 698,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 10
+    },
+    "380": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 698,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 85
+    },
+    "381": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 774,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_203",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20301",
+      "BuffType": 1,
+      "BuffSkillID": 16
+    },
+    "382": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 774,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_200",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20001",
+      "BuffType": 1,
+      "BuffSkillID": 12
+    },
+    "383": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 885,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_200",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20001",
+      "BuffType": 1,
+      "BuffSkillID": 12
+    },
+    "384": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 885,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_202",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20201",
+      "BuffType": 1,
+      "BuffSkillID": 14
+    },
+    "385": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 885,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_204",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20401",
+      "BuffType": 1,
+      "BuffSkillID": 17
+    },
+    "386": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 885,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10001",
+      "BuffType": 1,
+      "BuffSkillID": 91
+    },
+    "387": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 203,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 85
+    },
+    "388": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 325,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 85
+    },
+    "389": {
+      "Rarity": 10,
+      "Limit": 5,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60002",
+      "BuffType": 1,
+      "BuffSkillID": 97
+    },
+    "390": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 884,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_201",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_20101",
+      "BuffType": 1,
+      "BuffSkillID": 13
+    },
+    "391": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_006",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_00600",
+      "BuffType": 2,
+      "EffectID": 4,
+      "VolumeID": 0
+    },
+    "392": {
+      "Rarity": 0,
+      "Limit": 4,
+      "TargetRarity": -1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_007",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_00700",
+      "BuffType": 2,
+      "EffectID": 3,
+      "VolumeID": 0
+    },
+    "393": {
+      "Rarity": 0,
+      "Limit": 2,
+      "TargetRarity": 1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_100",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10000",
+      "BuffType": 1,
+      "BuffSkillID": 100
+    },
+    "394": {
+      "Rarity": 0,
+      "Limit": 2,
+      "TargetRarity": 1,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_101",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10100",
+      "BuffType": 1,
+      "BuffSkillID": 101
+    },
+    "395": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 882,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 102
+    },
+    "396": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 884,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_106",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10601",
+      "BuffType": 1,
+      "BuffSkillID": 103
+    },
+    "397": {
+      "Rarity": 0,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 885,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_600",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_60001",
+      "BuffType": 1,
+      "BuffSkillID": 104
+    },
+    "398": {
+      "Rarity": 0,
+      "Limit": 3,
+      "TargetRarity": -1,
+      "TargetCharaID": 882,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_107",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10701",
+      "BuffType": 0,
+      "LevelUp": 5
+    },
+    "399": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 543,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_300",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_30001",
+      "BuffType": 1,
+      "BuffSkillID": 72
+    },
+    "400": {
+      "Rarity": 10,
+      "Limit": 1,
+      "TargetRarity": -1,
+      "TargetCharaID": 543,
+      "RoguelikeBonusBuffName": "RoguelikeBonusBuffName_102",
+      "RoguelikeBonusBuffExplanation": "RoguelikeBonusBuffExplanation_10201",
+      "BuffType": 1,
+      "BuffSkillID": 28
+    }
+  }
+}
