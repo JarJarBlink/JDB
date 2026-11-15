@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=1">
+<title>JAR Battle Cats Database</title>
+<link rel="icon" href="static/favicon.ico">
+<link rel="stylesheet" href="static/css/database/style.css">
+<link rel="stylesheet" href="static/css/database/origin.css">
+<link rel="stylesheet" href="static/css/home/style_mission.css">
+<script src="static/js/lib/jquery-3.7.1.min.js" defer></script>
+<meta name="color-scheme" content="dark light"/>
+<meta name="theme-color" content=""/>
+<link rel="stylesheet" href="static/dark-mode-toggle/dark.css" media="(prefers-color-scheme: dark)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/light.css" media="(prefers-color-scheme: light)"/>
+<link rel="stylesheet" href="static/dark-mode-toggle/common.css"/>
+<script src="static/dark-mode-toggle/theme-init.js"></script>
+<script src="static/js/mission/mission_enemy.js"></script>
+<script defer src="pwa.js"></script>
+<style>
+.me-row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.me-row select,.me-row input{flex:1;min-width:140px;padding:6px;font-size:1em}
+.me-row .me-clear{flex:none;padding:6px 14px;font-size:14px;cursor:pointer}
+.me-selrow{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 8px}
+.me-selrow .me-sel{flex:1;min-width:0}
+.me-mode{display:flex;gap:10px;flex:none;font-size:13px;white-space:nowrap}
+.me-mode label{display:inline-flex;align-items:center;gap:3px;cursor:pointer}
+.me-mode input[type=radio]{padding:0;border:0;margin:0;width:auto;font-size:inherit}
+.me-dd{position:relative;flex:1;min-width:140px}
+.me-row .me-dd-btn{display:block;width:100%;box-sizing:border-box;text-align:left;padding:6px;font-size:14px;border-radius:3px}
+.me-dd-list[hidden]{display:none}
+.me-dd-list{position:absolute;left:0;right:0;top:100%;z-index:10;max-height:50vh;overflow-y:auto;box-sizing:border-box;background:var(--color-article-bc,#fff);color:inherit;border:1px solid rgba(128,128,128,.5);border-radius:3px}
+.me-dd-item{padding:6px 8px;font-size:14px;cursor:pointer}
+.me-dd-item:hover{background:rgba(128,128,128,.2)}
+.me-dd-item.active{font-weight:bold}
+.me-sel{display:flex;flex-wrap:wrap;gap:2px;margin:8px 0;min-height:34px;align-items:center}
+.me-tag{display:inline-flex;cursor:pointer}
+.me-tag:hover{opacity:.7}
+.me-sel>span:last-child:not(.me-tag){margin-left:6px}
+.me-tag img,.me-en img{width:32px;height:32px;object-fit:contain}
+.me-picker{display:grid;grid-template-columns:repeat(auto-fill,minmax(40px,1fr));gap:2px;max-height:320px;overflow-y:auto;margin:8px 0}
+.me-toggle{display:block;width:100%;padding:6px;font-size:.9em;margin:4px 0;cursor:pointer}
+.me-picker[hidden]{display:none}
+.me-en{display:flex;flex-direction:column;align-items:center;gap:0;padding:0px;font-size:.7em;line-height:1.15;word-break:break-all;border:1px solid transparent;border-radius:6px;background:none;color:inherit;cursor:pointer}
+.me-en.on{border-color:currentColor;font-weight:bold}
+.me-en.off{opacity:.35;cursor:not-allowed}
+.me-list{list-style:decimal;margin:8px 0;padding-left:2em}
+.me-list li{padding:4px 0}
+.me-list a{color:inherit;text-decoration:underline}
+.me-meta{display:flex;flex-wrap:wrap;align-items:center;gap:4px;font-size:.85em;opacity:.85}
+.me-meta img{width:20px;height:20px;object-fit:contain}
+.me-sep{opacity:.4}
+</style>
+</head>
+<body>
+
+<article>
+<h2 id="meTitle">Mission</h2>
+<div class="block">
+    <div class="me-row">
+        <select id="meScope"></select>
+        <input id="meSearch" type="search" autocomplete="off">
+        <button id="meClear" type="button" class="me-clear"></button>
+    </div>
+    <div class="me-selrow">
+        <div id="meSelected" class="me-sel"></div>
+        <div class="me-mode">
+            <label><input type="radio" name="meMode" id="meAnd" value="and"><span id="meAndTxt"></span></label>
+            <label><input type="radio" name="meMode" id="meOr" value="or"><span id="meOrTxt"></span></label>
+        </div>
+    </div>
+    <button id="meToggle" type="button" class="me-toggle"></button>
+    <div id="mePicker" class="me-picker"></div>
+    <div id="meResult"></div>
+
+    <div class="contact">
+        <ul>
+            <li id="contact1"><a href='index.html' rel="noopener"><img src="static/img/icon/bottom_bg01.png" width=18 class="icon"/>Home</a></li>
+            <li id="contact2">　</li>
+        </ul>
+    </div>
+</div>
+</article>
+</body>
+</html>
