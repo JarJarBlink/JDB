@@ -3,6 +3,7 @@
 article {
     position: relative;
     min-height: 100vh;      /* 確保內容少時也能撐到螢幕底部 */
+    min-height: 100dvh;     /* 手機瀏覽器用實際可視高度，避免 100vh 多出網址列高度造成頁面變長 */
     display: block;         /* 確保是標準區塊，不影響 F/Sec 排版 */
     padding-bottom: 40px;   /* 預留一點空間給底部的 Home，防止重疊 */
     box-sizing: border-box;
