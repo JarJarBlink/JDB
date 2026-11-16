@@ -409,7 +409,7 @@
       "clear": "クリア"
     },
     "title": "ユニット一覧",
-    "colLabel": "表示列：",
+    "colLabel": "表示列",
     "traitAnd": "属性 OR",
     "placeholder": "検索ワード（キャラ名）/ ID1,ID2,ID3... / ID1-ID2",
     "talentLabels": {

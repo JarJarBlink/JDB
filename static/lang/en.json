@@ -378,7 +378,7 @@
       "clear": "Clear"
     },
     "title": "Cat List",
-    "colLabel": "Columns:",
+    "colLabel": "Columns",
     "traitAnd": "Trait OR",
     "placeholder": "Enter keyword (name) / ID1,ID2,ID3... / ID1-ID2",
     "talentLabels": {

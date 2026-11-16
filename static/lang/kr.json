@@ -409,7 +409,7 @@
       "clear": "초기화"
     },
     "title": "냥코 목록",
-    "colLabel": "표시 열:",
+    "colLabel": "표시 열",
     "traitAnd": "속성 OR",
     "placeholder": "검색어(캐릭터 이름) / ID1,ID2,ID3... / ID1-ID2",
     "talentLabels": {

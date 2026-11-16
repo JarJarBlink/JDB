@@ -409,7 +409,7 @@
       "clear": "清除"
     },
     "title": "貓咪一覽",
-    "colLabel": "顯示欄位：",
+    "colLabel": "顯示欄位",
     "traitAnd": "屬性 OR",
     "placeholder": "輸入搜尋詞（角色名稱）/ ID1,ID2,ID3... / ID1-ID2",
     "talentLabels": {
