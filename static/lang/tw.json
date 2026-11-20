@@ -35,6 +35,7 @@
     "checkTalent_txt": "本能",
     "checkCalc_txt": "計算",
     "checkSecond_txt": "秒單位",
+    "checkDiff_txt": "比較",
     "checkGatya_txt": "轉蛋",
     "t_effect2_txt": "效果",
     "t_effect_txt": "能力",
@@ -279,7 +280,18 @@
       "2攻",
       "3攻"
     ],
-    "comboFallback": "聯組 #{id}"
+    "comboFallback": "聯組 #{id}",
+    "formDiff": {
+      "title": "與{n}階差異",
+      "stats": "數值",
+      "abi": "能力",
+      "add": "新增",
+      "rem": "移除",
+      "chg": "變更",
+      "prev": "前階",
+      "noStat": "數值無變化",
+      "noAbi": "能力無變化"
+    }
   },
   "toggle": {
     "treasure": "寶物等級",
@@ -324,6 +336,11 @@
       "removed": "☆ 已移除",
       "tipAdd": "加入最愛",
       "tipRemove": "取消最愛"
+    },
+    "viewMode": {
+      "detail": "詳細",
+      "compact": "精簡",
+      "tip": "切換詳細 / 精簡顯示"
     }
   },
   "search": {

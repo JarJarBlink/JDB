@@ -35,6 +35,7 @@
     "checkTalent_txt": "본능",
     "checkCalc_txt": "계산",
     "checkSecond_txt": "초 단위",
+    "checkDiff_txt": "비교",
     "checkGatya_txt": "뽑기",
     "t_effect2_txt": "효과",
     "t_effect_txt": "능력",
@@ -279,6 +280,17 @@
       "timeDecrease": "공격 간격 단축",
       "vsText": "초현자 주는 x1.2, 받는 x0.5",
       "strongText": "주는 x1.5~1.8, 받는 x0.4~0.5"
+    },
+    "formDiff": {
+      "title": "{n}단계와의 차이",
+      "stats": "수치",
+      "abi": "능력",
+      "add": "추가",
+      "rem": "삭제",
+      "chg": "변경",
+      "prev": "이전",
+      "noStat": "수치 변화 없음",
+      "noAbi": "능력 변화 없음"
     }
   },
   "toggle": {
@@ -324,6 +336,11 @@
       "removed": "☆ 삭제됨",
       "tipAdd": "즐겨찾기에 추가",
       "tipRemove": "즐겨찾기 해제"
+    },
+    "viewMode": {
+      "detail": "상세",
+      "compact": "간단",
+      "tip": "상세 / 간단 보기 전환"
     }
   },
   "search": {

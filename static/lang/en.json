@@ -35,6 +35,7 @@
     "checkTalent_txt": "Talent",
     "checkCalc_txt": "Calc",
     "checkSecond_txt": "Sec",
+    "checkDiff_txt": "VS",
     "checkGatya_txt": "Gacha",
     "t_effect2_txt": "Effect",
     "t_effect_txt": "Ability",
@@ -279,7 +280,18 @@
       "2nd ATK ",
       "3rd ATK "
     ],
-    "comboFallback": "Combo #{id}"
+    "comboFallback": "Combo #{id}",
+    "formDiff": {
+      "title": "Diff vs Form {n}",
+      "stats": "Stats",
+      "abi": "Abilities",
+      "add": "New",
+      "rem": "Removed",
+      "chg": "Changed",
+      "prev": "Prev",
+      "noStat": "No stat change",
+      "noAbi": "No ability change"
+    }
   },
   "toggle": {
     "treasure": "Treasure",
@@ -324,6 +336,11 @@
       "removed": "☆ Removed",
       "tipAdd": "Add to Favorites",
       "tipRemove": "Remove from Favorites"
+    },
+    "viewMode": {
+      "detail": "Detail",
+      "compact": "Compact",
+      "tip": "Toggle detailed / compact view"
     }
   },
   "search": {
