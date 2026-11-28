@@ -685,7 +685,7 @@
     "start_bgm": "Intro BGM",
     "boss_spawn": "Boss Spawn Pos",
     "cshield": "Castle Shield",
-    "base_xp": "Castle XP",
+    "base_xp": "XP",
     "tlimit": "Deploy Limit",
     "openlimit": "Unlock Condition",
     "ex_stage": "EX Stage",
